@@ -14,7 +14,7 @@ For instance, let's go back to the "French Toast a la GA" recipe from Unit 4. Ev
 > 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
 >
 
-Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle this set of instruuctions for us, and simply call that function any time the bread slices need to be cooked.
+Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle this set of instructions for us, and simply call that function any time the bread slices need to be cooked.
 
 ## Problem Solving with Functions
 
@@ -265,4 +265,4 @@ Have fun!
 
 ---
 
-Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md) 
+Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md)

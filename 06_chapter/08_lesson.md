@@ -6,7 +6,7 @@
 
 ## Drawbacks of Ordinary Arrays
 
-So far, all of the arrays that we've seen so far have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:
+So far, all of the arrays that we've seen have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:
 
 Say we have a line of people waiting in line to buy the latest iPhone. We'll model these people using the array below.
 
