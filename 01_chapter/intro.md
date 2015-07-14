@@ -2,13 +2,13 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
+##### By the end of this Unit, you'll be able to:
 * Differentiate between a command line interface and a graphical user interface
 * Summarize a basic filesystem structure
 * Open a file in a text editor and make changes from the command line
 * Identify when you might want to use absolute versus relative paths
 
-##Think Like a Programmer
+## Think Like a Programmer
 
 Most computer users move their mouse, click on icons, drag and drop files from one folder to another.
 
@@ -30,20 +30,24 @@ We'll access the command line using a terminal application, which can be found o
 
 > If you're a Windows user, you must install an environment that will allow you to use Bash in order to continue. We recommend either installing and using Mac OS X or Ubuntu Linux. You may also install a program like Cygwin on Windows in order to follow along with the syntax we use here, but we won't be able to actively support you if you encounter any major challenges. Once you join us for WDI, you will need to use a Mac or Linux environment. Reach out to your local producer if you have any questions.
 
-##Get Started Using Terminal
+## Get Started Using Terminal
 
-When you open Terminal, you should see a window like this:
+When you open Terminal, you will see a window like this:
 
 ![:Blank Console](../assets/Graphics/terminal_blank.gif)
 
-This window is where you'll tell the computer what to do, and where the computer will display its reply.
+Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **Return**.
 
-The **prompt** is the `$` that automatically shows up on the end of the first
+> **NOTE** Practice using Spotlight to open files and applications on your computer. It'll make you efficient as you navigate back and forth often between Terminal, your text editor, and your browser.
+
+The Terminal window is where you'll tell the computer what to do, and where the computer will display its reply. Let's break this window down:
+
+- The **prompt** is the `$` that automatically shows up on the end of the first
 line. It's the command line equivalent of "stand-by" and indicates Terminal is
 ready to accept your **command**. We'll learn a few commands later in this lesson.
 
-The **cursor** follows the prompt and the text you type will appear here. Just
+- The **cursor** follows the prompt and the text you type will appear here. Just
 like in every other setting where you've ever seen a cursor.
 
-The **username** of the person logged in precedes the prompt, and as you can see
+- The **username** of the person logged in precedes the prompt, and as you can see
 above, this user is named *samspade*.
