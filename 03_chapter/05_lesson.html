@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
+<hr>
 <h1 id="expressions-with-variables">Expressions with Variables</h1>
 <p>One major calculator function that we haven&apos;t mentioned so far is <strong>memory</strong>. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript&apos;s answer to this is <strong>variables</strong>.</p>
 <p>Suppose that we wanted to save the result of our expression, <code>(99 * 746) - (837 * 23)</code>, and then multiply the whole thing by <code>2</code> later. We could store our first result in a variable <code>x</code> using <code>=</code> (the &apos;assignment&apos; operator) as follows:</p>
@@ -1183,12 +1180,12 @@ x = y + <span class="hljs-number">1</span>;
 y = <span class="hljs-number">2</span> * x;
 </code></pre>
 <p>Feeling dizzy? Don&apos;t worry, we&apos;ll step through this one together.</p>
-<p><strong>Line 1</strong>: We declare a new variable <code>x</code> and assign it the value <code>1</code>.</p>
-<p><strong>Line 2</strong>: We declare another new variable <code>y</code> and assign it the value 10.</p>
-<p><strong>Line 3</strong>: As of this point in the code, <code>y</code> has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to <code>x</code>.</p>
-<p><strong>Line 4</strong>: <code>x</code> now has a value of 20, so <code>y</code> gets assigned a new value of 21 (<code>20 + 1</code>).</p>
-<p><strong>Line 5</strong>: <code>y</code> was just changed to 21, so <code>x</code> becomes 22 (<code>21 + 1</code>).</p>
-<p><strong>Line 6</strong>: <code>x</code> is now 22, so <code>y</code> becomes <code>2 * 22</code>, or 44.</p>
+<p>  <strong>Line 1</strong>: We declare a new variable <code>x</code> and assign it the value <code>1</code>.</p>
+<p>  <strong>Line 2</strong>: We declare another new variable <code>y</code> and assign it the value 10.</p>
+<p>  <strong>Line 3</strong>: As of this point in the code, <code>y</code> has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to <code>x</code>.</p>
+<p>  <strong>Line 4</strong>: <code>x</code> now has a value of 20, so <code>y</code> gets assigned a new value of 21 (<code>20 + 1</code>).</p>
+<p>  <strong>Line 5</strong>: <code>y</code> was just changed to 21, so <code>x</code> becomes 22 (<code>21 + 1</code>).</p>
+<p>  <strong>Line 6</strong>: <code>x</code> is now 22, so <code>y</code> becomes <code>2 * 22</code>, or 44.</p>
 <p>One important thing to mention here is that <strong>at no point is any lasting relationship established between x and y</strong> (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Give these a try &#x2013; see if you can predict the final values of <code>x</code>, <code>y</code>, and <code>z</code>. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking <code>x</code>,<code>y</code>, and <code>z</code> in the repl.it terminal.</p>
@@ -1249,6 +1246,7 @@ z = z - <span class="hljs-number">1</span>;
 </tr>
 </tbody>
 </table>
+<hr>
 
                     
                     </section>
@@ -1271,22 +1269,6 @@ z = z - <span class="hljs-number">1</span>;
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1297,8 +1279,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

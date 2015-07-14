@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.2" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 5</strong></p>
+<hr>
 <h1 id="functional-javascript">Functional JavaScript</h1>
 <p>Functions can also be used as procedures &#x2013; miniature, self-contained programs that are executed one line at a time whenever the function is called.</p>
 <p>When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run.</p>
@@ -1152,11 +1149,10 @@
 <p>Let&apos;s look at a practical example. Say that we&apos;re working on a <a href="http://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">TicTacToe game</a>.</p>
 <p>We&apos;re not going to build the actual game, just write out the logic that would determine the winner.</p>
 <p>In TicTacToe, there are nine possible values (for every cell on the board):</p>
-<pre><code class="lang-undefined">| a | b | c |
+<pre><code>| a | b | c |
 | d | e | f |
 | g | h | i |
-</code></pre>
-<p>Each of these values will start as <code>null</code>, until a user assigns them a new value, either &apos;o&apos; or &apos;x&apos;</p>
+</code></pre><p>Each of these values will start as <code>null</code>, until a user assigns them a new value, either &apos;o&apos; or &apos;x&apos;</p>
 <p>To play around with this invisible TicTacToe board, we&apos;ve provided some code:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cellValue</span><span class="hljs-params">(key)</span> </span>{
   <span class="hljs-keyword">switch</span>(key) {
@@ -1174,11 +1170,10 @@
 }
 </code></pre>
 <p>To assign a value (<code>x</code>, <code>o</code>) to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:</p>
-<pre><code class="lang-undefined">| null | null |   x  |
+<pre><code>| null | null |   x  |
 | null |   o  | null |
 | null |   o  |   x  |
-</code></pre>
-<p>You would edit the switch statement like such:</p>
+</code></pre><p>You would edit the switch statement like such:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cellValue</span><span class="hljs-params">(key)</span> </span>{
   <span class="hljs-keyword">switch</span>(key) {
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;a&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
@@ -1203,7 +1198,7 @@
 <p>So where do we go from here?</p>
 <p>One way to determine the winner might be to check whether X has won and then to check whether O has won. What if two functions existed that would magically determine this for us?</p>
 <p>We could call them <code>winnerIsX</code> and <code>winnerIsO</code>.  <code>winnerIsX</code> could give us back <code>true</code> if X has won and <code>false</code> if it hasn&apos;t. If such functions existed, we could rewrite <code>getWinner</code> like this:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span><span class="hljs-params">()</span> </span>{
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">if</span> (winnerIsX()) {
       <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;x&apos;</span>;
     }
@@ -1332,6 +1327,7 @@
 </code></pre>
 <p>If you want, you can play around with this code in <a href="http://repl.it/aOU" target="_blank">this repl.it session</a>, which also contains some dummy code to mock up how <code>cells</code> might work. Try testing each of the different functions with different input values, and see what happens.</p>
 <p>Have fun!</p>
+<hr>
 <p>Nice job! <a href="07_exercise.html">Here&apos;s an exercise that should help you practice writing functions.</a></p>
 
                     
@@ -1355,22 +1351,6 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1381,8 +1361,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

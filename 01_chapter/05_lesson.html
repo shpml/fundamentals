@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,68 +1136,57 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 1</strong></p>
+<hr>
 <h2 id="navigating-the-command-line">Navigating the Command Line</h2>
 <p>We can perform actions using the command line by <strong>entering commands</strong>. There is a command to perform virtually any action you can imagine on your computer!</p>
 <p>There are commands to open an application, create new files, copy files from one place to another, and a lot more.</p>
 <p>Let&apos;s start typing commands together.  In your open Terminal window, type <code>hello?</code> and press enter:</p>
-<pre><code class="lang-undefined">$ hello?
-</code></pre>
-<p>Your terminal should respond rudely:</p>
-<pre><code class="lang-undefined">-bash: hello?: command not found
-</code></pre>
-<p>This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry. In
+<pre><code>$ hello?
+</code></pre><p>Your terminal should respond rudely:</p>
+<pre><code>-bash: hello?: command not found
+</code></pre><p>This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry. In
 due time, as we grow comfortable in this new environment, even these cryptic messages will be just as beautiful as any warning box you&apos;ll ever see.</p>
 <p>Try typing this into your terminal:</p>
-<pre><code class="lang-undefined">$ Where am I?
-</code></pre>
-<p>Again, a rude response:</p>
-<pre><code class="lang-undefined">-bash: Where: command not found
-</code></pre>
-<p>Great. We&apos;ve established that our command line doesn&apos;t understand plain English. We will have to use special words to make up our commands. Let&apos;s try
+<pre><code>$ Where am I?
+</code></pre><p>Again, a rude response:</p>
+<pre><code>-bash: Where: command not found
+</code></pre><p>Great. We&apos;ve established that our command line doesn&apos;t understand plain English. We will have to use special words to make up our commands. Let&apos;s try
 this one:</p>
-<pre><code class="lang-undefined">$ pwd
-</code></pre>
-<p>Whoa! It looks like our computer understood that one! It replied with a message:</p>
-<pre><code class="lang-undefined">/Users/corneliusfinch
-</code></pre>
-<p>What did we just do?</p>
+<pre><code>$ pwd
+</code></pre><p>Whoa! It looks like our computer understood that one! It replied with a message:</p>
+<pre><code>/Users/corneliusfinch
+</code></pre><p>What did we just do?</p>
 <p>The command <code>pwd</code> stands for &quot;Print Working Directory&quot;.
 This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.</p>
 <p>Just like the Finder on a mac, your command line interface places you in a particular folder
 of your computer. <code>pwd</code> tells you where you currently are. Usually, when you open the Terminal application, you start off in your &quot;home folder&quot;, which is the one that shares the name of your username on your computer.</p>
 <p>If we were using Finder, we&apos;d be able to see what things (files and folders) are present in this folder. In a CLI however, if we want to see what files and folders exist at the current location, we need to ask for it with another command.</p>
 <p>Let&apos;s find out what files are in the folder that we&apos;re in.</p>
-<pre><code class="lang-undefined">$ ls
-</code></pre>
-<p>Lo and behold, the contents of the folder you are in.</p>
-<pre><code class="lang-undefined">Applications       Desktop          Documents
+<pre><code>$ ls
+</code></pre><p>Lo and behold, the contents of the folder you are in.</p>
+<pre><code>Applications       Desktop          Documents
 Downloads          Library          Movies
 Music              Pictures         Public
-</code></pre>
-<p>The <code>ls</code> command, which loosely stands for &quot;list&quot;, lists the contents of a folder.</p>
+</code></pre><p>The <code>ls</code> command, which loosely stands for &quot;list&quot;, lists the contents of a folder.</p>
 <p>It looks like there are some folders in here. Let&apos;s find out what&apos;s inside our <code>Documents</code> folder. In order to do so, let&apos;s first navigate to the Documents folder.</p>
-<pre><code class="lang-undefined">$ cd Documents
-</code></pre>
-<p>We have now navigated to the Documents folder.</p>
+<pre><code>$ cd Documents
+</code></pre><p>We have now navigated to the Documents folder.</p>
 <p>The <code>cd</code> command, which stands for &quot;change directory&quot;, is used to navigate to a particular folder on your computer.</p>
 <p>This is equivalent to double-clicking the Documents folder in Finder to &quot;go
 inside it&quot;. We can check that we&apos;re in the right place by using <code>pwd</code>.</p>
-<pre><code class="lang-undefined">$ pwd
+<pre><code>$ pwd
 /Users/corneliusfinch/Documents
-</code></pre>
-<p>Excellent! Now let&apos;s find out what&apos;s in here, using <code>ls</code>.</p>
-<pre><code class="lang-undefined">$ ls
+</code></pre><p>Excellent! Now let&apos;s find out what&apos;s in here, using <code>ls</code>.</p>
+<pre><code>$ ls
 funny_cat_picture.jpg
 office_stuff
 world_domination_checklist.txt
-</code></pre>
-<p>It looks like the <code>Documents</code> folder contains a JPG file of a funny cat, a folder
+</code></pre><p>It looks like the <code>Documents</code> folder contains a JPG file of a funny cat, a folder
 full of &quot;office stuff&quot;, and a text file that supposedly contains a checklist for
 world domination. Your <code>Documents</code> folder probably contains something different.</p>
 <p>Now that we&apos;ve investigated our <code>Documents</code> folder, let&apos;s go back up to our home folder. Since the home folder contains the <code>Documents</code> folder, we can say that the home folder is the &quot;parent directory&quot; of the <code>Documents</code> folder.</p>
-<pre><code class="lang-undefined">$ cd ..
-</code></pre>
-<blockquote>
+<pre><code>$ cd ..
+</code></pre><blockquote>
 <p><code>..</code> (two periods, or &quot;dot-dot&quot;) is how we say to our command line &quot;parent
 directory&quot;.</p>
 </blockquote>
@@ -1227,22 +1212,6 @@ directory&quot;.</p>
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1253,8 +1222,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

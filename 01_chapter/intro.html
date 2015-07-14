@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 1</strong></p>
+<hr>
 <h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this Unit, you&apos;ll be able to:</h5>
 <ul>
 <li>Differentiate between a command line interface and a graphical user interface</li>
@@ -1153,25 +1150,34 @@
 <p>You are on a journey to transcend being an ordinary user of computers.
 You are on your way to becoming a developer, and developers like to interact with computers in a different way &#x2013; through the command line.</p>
 <p>Unlike the GUI, the command line is a <em>text-based interface</em>, where you communicate with your computer using text alone.</p>
-<p>Back in the day, the command line was the only way to interact with your computer, until the video display terminal was introduced in the mid-60s.</p>
-<p>We can perform actions using the command line by <strong>entering commands</strong>. There is a command to perform virtually any action you can imagine on your computer!
-There are commands to open an application, create new files, copy files from one place to another, and a lot more.</p>
-<p>We&apos;ll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as shells, and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: <strong>Bash</strong>.</p>
+<p>Until the video display terminal was introduced in the mid-1960s, the command line was the only way to interact with your computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
+fast... In fact, once you become comfortable using the CLI early in class, you&apos;ll be amazed at how much more productive you become!</p>
+<p>We can perform actions using the command line by <strong>entering commands</strong>. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and a lot more.</p>
+<p>We&apos;ll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as &quot;shells&quot;, and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: <strong>Bash</strong>.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a very different set of commands.</p>
+<p> There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a different set of commands.</p>
 <p>If you&apos;re a Windows user, you must install an environment that will allow you to use Bash in order to continue. We recommend either installing and using Mac OS X or Ubuntu Linux. You may also install a program like Cygwin on Windows in order to follow along with the syntax we use here, but we won&apos;t be able to actively support you if you encounter any major challenges. Once you join us for WDI, you will need to use a Mac or Linux environment. Reach out to your local producer if you have any questions.</p>
 </blockquote>
 <h2 id="get-started-using-terminal">Get Started Using Terminal</h2>
-<p>When you open Terminal, you should see a window like this:</p>
+<p>When you open Terminal, you will see a window like this:</p>
 <p><img src="../assets/Graphics/terminal_blank.gif" alt=":Blank Console"></p>
-<p>This window is where you&apos;ll tell the computer what to do, and where the computer will display its reply.</p>
-<p>The <strong>prompt</strong> is the <code>$</code> that automatically shows up on the end of the first
+<p>Open up a terminal with Bash. To do this on a Mac, press <strong>&#x2318; + Space</strong> to bring up Spotlight, then type in &quot;terminal&quot; and press <strong>Return</strong>.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> Practice using Spotlight to open files and applications on your computer. It&apos;ll make you efficient as you navigate back and forth often between Terminal, your text editor, and your browser.</p>
+</blockquote>
+<p>The Terminal window is where you&apos;ll tell the computer what to do, and where the computer will display its reply. Let&apos;s break this window down:</p>
+<ul>
+<li><p>The <strong>prompt</strong> is the <code>$</code> that automatically shows up on the end of the first
 line. It&apos;s the command line equivalent of &quot;stand-by&quot; and indicates Terminal is
 ready to accept your <strong>command</strong>. We&apos;ll learn a few commands later in this lesson.</p>
-<p>The <strong>cursor</strong> follows the prompt and the text you type will appear here. Just
+</li>
+<li><p>The <strong>cursor</strong> follows the prompt and the text you type will appear here. Just
 like in every other setting where you&apos;ve ever seen a cursor.</p>
-<p>The <strong>username</strong> of the person logged in precedes the prompt, and as you can see
+</li>
+<li><p>The <strong>username</strong> of the person logged in precedes the prompt, and as you can see
 above, this user is named <em>samspade</em>.</p>
+</li>
+</ul>
 
                     
                     </section>
@@ -1194,22 +1200,6 @@ above, this user is named <em>samspade</em>.</p>
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1220,8 +1210,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

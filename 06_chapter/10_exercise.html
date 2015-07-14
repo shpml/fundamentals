@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.3.1" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="6.3.1" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,13 +1136,14 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
+<hr>
 <h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <p>In this exercise, we&apos;ll return to our checkers game one last time. This time, however, we won&apos;t be writing a function; instead, your mission, should you choose to accept it, is to create a nested array called <code>pieces</code> to store the locations of every piece on the board.</p>
 <p><code>pieces</code> should be an associative array, with two keys : &apos;red&apos; and &apos;black&apos;. Each of these keys should correspond to a normal array listing out all of the different pieces for that color. Each piece should be represented as a two-element array in the pattern of <code>[row,col]</code>; for example, the list of red pieces would include <code>[0,0]</code>, <code>[0,2]</code>, <code>[0,4]</code>, etc.</p>
 <p>Here&apos;s that diagram again, in case you forgot how to set up the baord.</p>
 <p><img src="http://www.maniacworld.com/Checkers/checkers.jpg" alt="Picture of Checkerboard"></p>
 <p>To test your work, run each of the following two operations in the repli.it console</p>
-<pre><code class="lang-javascript">pieces[<span class="hljs-string">&apos;red&apos;</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
+<pre><code class="lang-javascript">  pieces[<span class="hljs-string">&apos;red&apos;</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
       <span class="hljs-keyword">var</span> row = piece[<span class="hljs-number">0</span>];
       <span class="hljs-keyword">var</span> col = piece[<span class="hljs-number">1</span>];
       <span class="hljs-keyword">return</span> checkerboard[row][col] === <span class="hljs-string">&apos;R&apos;</span>;
@@ -1159,6 +1156,7 @@
     });
 </code></pre>
 <p>Each of these operations should return an array full of boolean values. If both arrays&apos; values are all <code>true</code>, then congratulations - you&apos;re done!</p>
+<hr>
 <p>Feeling confident? <a href="09_quiz.html">Test your understanding of iteration with this next quiz.</a></p>
 
                     
@@ -1182,22 +1180,6 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1208,8 +1190,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

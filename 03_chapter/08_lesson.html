@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
+<hr>
 <h1 id="boolean-logic">Boolean Logic</h1>
 <p>At this point, we&apos;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, expecially related to boolean logic. Let&apos;s take a closer look at some of them.</p>
 <h3 id="undefined-and-null">Undefined and Null</h3>
@@ -1196,6 +1193,7 @@
 </ul>
 <p>One of the most common use cases of this is when you&apos;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&apos;ve gotten from a user. If the user hasn&apos;t given any input, <code>x</code> might be <code>null</code>.</p>
 <p>To compensate for this, we might write the expression <code>x = x || 10;</code>. If x has some &apos;truthy&apos; value, the OR operator will evaluate to <code>x</code>, so it would be as if we wrote <code>x = x</code>. However, if x were <code>null</code>, the OR operator would evaluate to 10 (because <code>null</code> is &apos;falsey&apos;). It&apos;s as if we&apos;ve said &quot;If x doesn&apos;t already have a value assigned, set it equal to 10&quot;. For that reason, this kind of operation is often called &apos;conditional assignment&apos;.</p>
+<hr>
 <p><a href="10_exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
 
                     
@@ -1219,22 +1217,6 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1245,8 +1227,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

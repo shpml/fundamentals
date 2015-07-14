@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
+<hr>
 <h1 id="iterating-over-arrays">Iterating Over Arrays</h1>
 <p>In the past few units, we&apos;ve only been able to operate on one value at a time. One of the most useful things about a collection (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on <em>each value within a collection</em>. This process is called <strong>iteration</strong> - doing something over and over and over again, for each element in a set.</p>
 <h2 id="iterating-with-loops">Iterating with Loops</h2>
@@ -1156,7 +1153,7 @@
 <pre><code class="lang-javascript">tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">0</span>]));
 </code></pre>
 <p>Then, we could run an almost identical command to operate on each element in <code>tempsInF</code> and push the converted value onto the <code>tempsInC</code> array.</p>
-<pre><code class="lang-javascript">tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">1</span>]));
+<pre><code class="lang-javascript">  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">1</span>]));
   tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">2</span>]));
   tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">3</span>]));
   tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">4</span>]));
@@ -1228,7 +1225,8 @@
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">.map()</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">.forEach()</a></li>
 </ul>
-<p>Nice job! <a href="07_exercise.html">Here&apos;s an exercise that should help you practice iteration.</a></p>
+<hr>
+<p>Nice job! <a href="07_exercise.html">Here&apos;s an exercise that should help you practice iteration.</a> </p>
 
                     
                     </section>
@@ -1251,22 +1249,6 @@
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1277,8 +1259,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

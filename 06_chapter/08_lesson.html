@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
+<hr>
 <h1 id="collections-associative-arrays">Collections - Associative Arrays</h1>
 <h2 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h2>
 <p>So far, all of the arrays that we&apos;ve seen have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:</p>
@@ -1157,26 +1154,26 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>Value</th>
+<th style="text-align:center">Label</th>
+<th style="text-align:center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Matt</td>
-<td>tuna sandwich</td>
+<td style="text-align:center">Matt</td>
+<td style="text-align:center">tuna sandwich</td>
 </tr>
 <tr>
-<td>Floyd</td>
-<td>salad</td>
+<td style="text-align:center">Floyd</td>
+<td style="text-align:center">salad</td>
 </tr>
 <tr>
-<td>Shannon</td>
-<td>soup</td>
+<td style="text-align:center">Shannon</td>
+<td style="text-align:center">soup</td>
 </tr>
 <tr>
-<td>Josh</td>
-<td>pasta</td>
+<td style="text-align:center">Josh</td>
+<td style="text-align:center">pasta</td>
 </tr>
 </tbody>
 </table>
@@ -1184,26 +1181,26 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <table>
 <thead>
 <tr>
-<th>Label</th>
-<th>Value</th>
+<th style="text-align:center">Label</th>
+<th style="text-align:center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Matt</td>
-<td>tuna sandwich</td>
+<td style="text-align:center">Matt</td>
+<td style="text-align:center">tuna sandwich</td>
 </tr>
 <tr>
-<td>Floyd</td>
-<td>null</td>
+<td style="text-align:center">Floyd</td>
+<td style="text-align:center">null</td>
 </tr>
 <tr>
-<td>Shannon</td>
-<td>soup</td>
+<td style="text-align:center">Shannon</td>
+<td style="text-align:center">soup</td>
 </tr>
 <tr>
-<td>Josh</td>
-<td>pasta</td>
+<td style="text-align:center">Josh</td>
+<td style="text-align:center">pasta</td>
 </tr>
 </tbody>
 </table>
@@ -1218,13 +1215,13 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
                 <span class="hljs-string">&apos;Shannon&apos;</span> : <span class="hljs-string">&apos;soup&apos;</span> };
 </code></pre>
 <p>Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (<code>[...]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type</p>
-<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Matt&apos;</span>]
+<pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Matt&apos;</span>]
 </code></pre>
 <p>If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.</p>
-<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Matt&apos;</span>] = <span class="hljs-string">&apos;turkey sandwich&apos;</span>
+<pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Matt&apos;</span>] = <span class="hljs-string">&apos;turkey sandwich&apos;</span>
 </code></pre>
 <p>Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.</p>
-<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Elena&apos;</span>] = <span class="hljs-string">&apos;meatloaf&apos;</span>
+<pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Elena&apos;</span>] = <span class="hljs-string">&apos;meatloaf&apos;</span>
 </code></pre>
 <p>Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here&apos;s an example of all of the above:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> candidateData = {
@@ -1260,6 +1257,7 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> What we&apos;ve called an associative array above are actually just JavaScript <em>objects</em>. You&apos;ll learn all about objects throughout WDI, and use them for far more complex use cases than tracking everyone&apos;s lunches.</p>
 </blockquote>
+<hr>
 <p><a href="10_exercise.html">One last exercise - this time on associative arrays.</a></p>
 
                     
@@ -1283,22 +1281,6 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1309,8 +1291,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>

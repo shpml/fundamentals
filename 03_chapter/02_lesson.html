@@ -34,10 +34,6 @@
     <link rel="stylesheet" href="../gitbook/style.css">
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-exercises/exercises.css">
-        
-    
-        
         <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
         
     
@@ -46,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="Mon Jul 13 2015 14:37:34 GMT+0000 (UTC)">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Tue Jul 14 2015 11:42:14 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1140,6 +1136,7 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
+<hr>
 <h1 id="data-operators-and-expressions">Data, Operators, and Expressions</h1>
 <p>You&apos;ve probably picked up a scientific calculator at some point in the past and
 started playing around with it. You punch in a big number (for example, 9876435),
@@ -1159,11 +1156,14 @@ two components: data and operators.</p>
 <p>Calculators can only operate on numbers, but computers can perform calculations
 on many different kinds of data, including:</p>
 <ul>
-<li><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&apos;re considered the same.<br>
-  <u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>, <code>99.99</code></li>
-<li><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&apos;single-quote&apos;</code> (also sometimes called &apos;string literals&apos;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>&apos;hello&apos;</code>, <code>&apos;goodbye&apos;</code>, <code>&apos;moc.liamg@gmail.com&apos;</code></li>
-<li><strong>Booleans</strong>: This one&apos;s probably new for you. Boolean-type data only has two
-  possible values, <code>true</code> and <code>false</code>.</li>
+<li><p><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&apos;re considered the same.<br>
+<u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>, <code>99.99</code></p>
+</li>
+<li><p><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&apos;single-quote&apos;</code> (also sometimes called &apos;string literals&apos;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>&apos;hello&apos;</code>, <code>&apos;goodbye&apos;</code>, <code>&apos;moc.liamg@gmail.com&apos;</code></p>
+</li>
+<li><p><strong>Booleans</strong>: This one&apos;s probably new for you. Boolean-type data only has two
+possible values, <code>true</code> and <code>false</code>.</p>
+</li>
 </ul>
 <p>If you forget what type of data you&apos;re dealing with, you can run the <code>typeof</code>
 command. Try typing the following lines into repl.it - what responses do you get?</p>
@@ -1201,12 +1201,15 @@ differently - it &apos;concatenates&apos; two strings together to make one big s
 <br><u>For example</u>: <code>&apos;Hello&apos; + &apos; &apos; + &apos;Bob&apos;</code> will evaluate to <code>&apos;Hello Bob&apos;</code>.</p>
 </blockquote>
 <ul>
-<li><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&apos;s leftover from the division.
-  <br><u>For example</u>: <code>15 % 4</code> will evaluate to <code>3</code>.</li>
-<li><strong>Inequality</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
-  <br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</li>
-<li><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &apos;strict equality&apos; - it will only evaluate <code>true</code> if both sides are completely identical in data type and value - while the second, the &apos;loose equality&apos;, has a little more wiggle room.
-  <br><u>For example</u>:</li>
+<li><p><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&apos;s leftover from the division.
+<br><u>For example</u>: <code>15 % 4</code> will evaluate to <code>3</code>.</p>
+</li>
+<li><p><strong>Inequality</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
+<br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</p>
+</li>
+<li><p><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &apos;strict equality&apos; - it will only evaluate <code>true</code> if both sides are completely identical in data type and value - while the second, the &apos;loose equality&apos;, has a little more wiggle room.
+<br><u>For example</u>:</p>
+</li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-number">5</span> === <span class="hljs-number">5</span>;
 <span class="hljs-comment">// =&gt; true</span>
@@ -1257,6 +1260,7 @@ differently - it &apos;concatenates&apos; two strings together to make one big s
 <p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1">
 <br></p>
 <p>While we&apos;ve covered what seems like a lot of math in this section, don&apos;t worry &#x2013; you&apos;re not going to be doing calculus in this course. It&apos;s important that we review these concepts because there will be many times that you&apos;ll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.</p>
+<hr>
 <p>Think you&apos;ve got it? <a href="04_exercise.html">Let&apos;s do an exercise to cement what we&apos;ve learned.</a></p>
 
                     
@@ -1280,22 +1284,6 @@ differently - it &apos;concatenates&apos; two strings together to make one big s
 <script src="../gitbook/app.js"></script>
 
     
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/ace.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-exercises/exercises.js"></script>
-    
-
-    
     <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
     
 
@@ -1306,8 +1294,7 @@ require(["gitbook"], function(gitbook) {
 });
 </script>
 
-        <script src="../gitbook/plugins/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
     </body>
     
 </html>
