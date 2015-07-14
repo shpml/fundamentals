@@ -19,14 +19,14 @@ You are on your way to becoming a developer, and developers like to interact wit
 
 Unlike the GUI, the command line is a *text-based interface*, where you communicate with your computer using text alone.
 
-Back in the day, the command line was the only way to interact with your computer, until the video display terminal was introduced in the mid-60s.
+Until the video display terminal was introduced in the mid-1960s, the command line was the only way to interact with your computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
+fast... In fact, once you become comfortable using the CLI early in class, you'll be amazed at how much more productive you become!
 
-We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer!
-There are commands to open an application, create new files, copy files from one place to another, and a lot more.
+We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and a lot more.
 
-We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as shells, and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: **Bash**.
+We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as "shells", and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: **Bash**.
 
-> **NOTE** There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a very different set of commands.
+> **NOTE** There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a different set of commands.
 
 > If you're a Windows user, you must install an environment that will allow you to use Bash in order to continue. We recommend either installing and using Mac OS X or Ubuntu Linux. You may also install a program like Cygwin on Windows in order to follow along with the syntax we use here, but we won't be able to actively support you if you encounter any major challenges. Once you join us for WDI, you will need to use a Mac or Linux environment. Reach out to your local producer if you have any questions.
 
