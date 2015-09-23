@@ -27,7 +27,3 @@ That's it for now!
 ---
 
 #### Well done! You've made it through six tough tutorials on JavaScript. Give yourself a pat on the back!
-
----
-
-Now that you've finished your project, we encourage you to [learn more about GA Mentors](../07_feedback/intro.md), and connect with a mentor to get feedback on your code before your course begins.
