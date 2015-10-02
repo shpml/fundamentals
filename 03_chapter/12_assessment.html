@@ -1128,8 +1128,9 @@
 <p>Go back into the project repo, wherever you&apos;ve decided to put it, and open up the file <code>RockPaperScissors.js</code> (inside the <code>app/js</code> directory).</p>
 <p>When you look inside the file you should first see a block of code that looks like this :</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getInput</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Please choose either &quot;rock&quot;, &quot;paper&quot;, or &quot;scissors&quot;.&apos;</span>);
-    <span class="hljs-keyword">return</span> prompt();
+   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Please choose either &apos;rock&apos;, &apos;paper&apos;, or &apos;scissors&apos;.&quot;</span>)
+   <span class="hljs-keyword">var</span> answer = prompt();
+   <span class="hljs-keyword">return</span> answer;
 }
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">randomPlay</span><span class="hljs-params">()</span> </span>{
