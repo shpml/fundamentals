@@ -8,7 +8,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 
 ## Conditionals
 ### Ternary Operator
-* The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.
+* The ternary operator takes in a condition; depending on whether that condition is truthy or falsey, the operator will evaluate to one of two specified values.
 
   ```javascript
   (x > 10) ? 'Greater than 10.' : 'Less than 10.';
