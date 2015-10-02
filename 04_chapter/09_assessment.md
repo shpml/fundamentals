@@ -33,7 +33,7 @@ If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/int
 
 4. **Write code, even if it's not the prettiest.** Don't worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.
 
-5. **'Refactor' your code.** Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.
+5. **'Refactor' your code.** Now that everything works, take some time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.
 
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository.
 
