@@ -118,7 +118,7 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 | `x = x * 2`      | `x *= 2` |
 | `x = x / 10`     | `x /= 10` |
 | `x = x % 10`     | `x %= 10` |
-| `x = x + 1`      | `x = x++` |
+| `x = x + 1`      | `x++` |
 
 ---
 
