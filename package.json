@@ -7,7 +7,12 @@
     "url": "https://github.com/generalassembly-wdi-materials/fundamentals"
   },
   "author": "General Assembly <immersiveadmins@generalassemb.ly>",
+  "scripts": {
+    "start": "gitbook serve",
+    "postinstall": "gitbook install"
+  },
   "dependencies": {
+    "gitbook-cli": "latest",
     "gitbook-plugin-exercises": "2.0.0-alpha.3",
     "gitbook-plugin-ga": "0.2.0",
     "gitbook-plugin-jsbin": "0.0.12",
