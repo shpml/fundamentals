@@ -133,7 +133,7 @@ We're going to cover how to submit a pull request in a later chapter.
 
 If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first. When you don't understand something, we encourage you to follow a three-step process:
 
-1. Search online for an answer (via Google or [Stack Overflow](www.stackoverflow.com))
+1. Search online for an answer (via Google or [Stack Overflow](stackoverflow.com))
 2. Ask classmates if they've solved a similar problem (via [Slack](ga-students.slack.com/wdi-fundamentals))
 3. Go to an instructor for help (instructors are also on Slack)
 
