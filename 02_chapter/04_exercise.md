@@ -20,7 +20,7 @@ This exercise will give you some practice using Git.
 
 4. Create a new file called `README.txt` and run `git status`. What output do you get?
 
-5. Use the `git add` command to add the new file to the staging area.  Run `git status` again - how has the output changed?
+5. Use the `git add . ` command to add the new file to the staging area.  Run `git status` again - how has the output changed?
 
 6. Now that you're satisfied with the changes that you've staged, commit them using <code>git commit -m "..."</code>. Give the commit an appropriate message - remember, it should be short but descriptive.
 
