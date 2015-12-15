@@ -16,11 +16,11 @@ var checkerboard = [[null, null, null, null, null, null, null, null],
                     [null, null, null, null, null, null, null, null],
                     [null, null, null, null, null, null, null, null]];
 
-function setSquare(player, row, col) {
+var setSquare = function(player, row, col) {
   // Your Code Here
 }
 
-function getPieceAt(row, col) {
+var getPieceAt = function(row, col) {
   // Your Code Here
 }
 ```
