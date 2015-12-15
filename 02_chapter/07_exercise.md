@@ -23,4 +23,3 @@ You are going to create your very own Github account!
 ---
 
 Ready for another quiz? [Let's go.](06_quiz.md)
-
