@@ -7,19 +7,13 @@ Fundamentals is a [GitBook](https://github.com/GitbookIO/gitbook).
 GitBook can be installed from NPM using:
 
 ```
-$ npm install gitbook-cli -g
-```
-
-Install Gitbook plugins
-
-```
-$ gitbook install
+$ npm install
 ```
 
 Run a local copy at http://localhost:4000 with:
 
 ```
-$ gitbook serve
+$ npm start
 ```
 
 Chapters are written in markdown files and compiled down to HTML inside `_book`
