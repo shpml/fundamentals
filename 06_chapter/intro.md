@@ -14,7 +14,7 @@ Congratulations, you've almost made it to the end of WDI Fundamentals!
 In Unit 5, you learned to create your own functions that could generate specific behaviors. If you wanted to get the average of three variables, `x`, `y`, and `z`, you could write the following:
 
 ```javascript
-function avgOfThree(x, y, z) {
+var avgOfThree = function(x, y, z) {
     return (x + y + z) / 3;
 }
 ```
@@ -22,7 +22,7 @@ function avgOfThree(x, y, z) {
 However, this is a *very* specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify [the code in repl.it](http://repl.it/bJM) like so:
 
 ```javascript
-function avgOfTen(a, b, c, d, e, f, g, h, i, j) {
+var avgOfTen = function(a, b, c, d, e, f, g, h, i, j) {
     return (a + b + c + d + e + f + g + h + i + j) / 10;
 }
 ```

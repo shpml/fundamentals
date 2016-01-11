@@ -14,7 +14,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 * Functions must be **defined** before they can be used. To define a function, use the following recipe:
 
 ```javascript
-function myFunctionName() {
+var myFunctionName = function() {
   // Body of the function
 }
 ```
@@ -30,7 +30,7 @@ myFunctionName()
 * In addition to specifying a final value for the function to give back as a result, a `return` statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not `x`.
 
 ```javascript
-function someFunc(x) {
+var someFunc = function(x) {
   if (x > 10) {
     return 15;
   }

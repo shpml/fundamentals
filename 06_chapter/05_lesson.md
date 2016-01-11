@@ -18,7 +18,7 @@ var tempsInC = [];
 The formula for converting between Fahrenheit and Celsius temperatures is **C = (F - 32) * 5/9**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
 
 ```javascript
-function fahrToCelc(degrees) {
+var fahrToCelc = function(degrees) {
   return (degrees - 32) * (5 / 9);
 }
 ```
@@ -92,7 +92,7 @@ Although using loops to iterate through arrays gives you a lot of flexibility an
 One of the most commonly used iterators is `.map()` - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more paramaters, `.map()` can be run with just one : a function. Take a look at the example below:
 
 ```javascript
-function square(x) {
+var square = function(x) {
   console.log(x * x);
   return x * x;
 }
@@ -108,7 +108,7 @@ As you can see, `.map()` takes in the function we've just defined, `square`, as 
 Another example of an iterator is `.forEach()`. `.forEach()` also takes a function as an argument, but unlike `.map()`, it doesn't create a new array and return it. However, it does still execute the function that gets passed for each element in the array.
 
 ```javascript
-function square(x) {
+var square = function(x) {
   console.log(x * x);
   return x * x;
 }

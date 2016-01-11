@@ -13,13 +13,13 @@ Go back into the project repo, wherever you've decided to put it, and open up th
 When you look inside the file you should first see a block of code that looks like this :
 
 ```javascript
-function getInput() {
+var getInput = function() {
    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
    var answer = prompt();
    return answer;
 }
 
-function randomPlay() {
+var randomPlay = function() {
     var randomNumber = Math.random();
     if (randomNumber < 0.33) {
         return 'rock';
@@ -36,14 +36,14 @@ We recommend you don't edit this code right now, but feel free to look at it clo
 When you're ready, skip ahead to the next section, shown below.
 
 ```javascript
-function getPlayerMove(move) {
+var getPlayerMove = function(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
     return /* Your Expression */;
 }
 
-function getComputerMove(move) {
+var getComputerMove = function(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.

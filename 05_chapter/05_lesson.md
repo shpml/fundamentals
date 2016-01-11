@@ -35,7 +35,7 @@ Each of these values will start as `null`, until a user assigns them a new value
 To play around with this invisible TicTacToe board, we've provided some code:
 
 ```javascript
-function cellValue(key) {
+var cellValue = function(key) {
   switch(key) {
     case 'a': return null;
     case 'b': return null;
@@ -62,7 +62,7 @@ To assign a value (`x`, `o`) to any cell on the board, edit the return value for
 You would edit the switch statement like such:
 
 ```javascript
-function cellValue(key) {
+var cellValue = function(key) {
   switch(key) {
     case 'a': return null;
     case 'b': return null;
@@ -85,7 +85,7 @@ Now, let's write a function that determines the winner based on the values of a,
 We'll call it `getWinner` and it will give us back either 'x' (if X has won), 'o' (if O has won), or `null` (if neither side has won).
 
 ```javascript
-function getWinner() {
+var getWinner = function() {
 }
 ```
 
@@ -96,7 +96,7 @@ One way to determine the winner might be to check whether X has won and then to 
 We could call them `winnerIsX` and `winnerIsO`.  `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
 
 ```javascript
-  function getWinner() {
+  var getWinner = function() {
     if (winnerIsX()) {
       return 'x';
     }
@@ -123,7 +123,7 @@ Wouldn't it be great if we had functions to determine these too? We could call t
 In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so to determine `winnerIsX` we could write the following:
 
 ```javascript
-function winnerIsX() {
+var winnerIsX = function() {
   return winsRowX() || winsColumnX() || winsDiagonalX();
 }
 ```
@@ -141,12 +141,12 @@ If any of these three sets are all equal to `x`, then X has won via a row.
 Let's dive just one level deeper, with a function to test if any one of the three rows are equal to `x` (let's call it `allThreeX`).
 
 ```javascript
-function winsRowX() {
+var winsRowX = function() {
   return allThreeX(cellValue('a'), cellValue('b'), cellValue('c')) ||
   		allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
   		allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
 }
-function allThreeX(cellOne, cellTwo, cellThree) {
+var allThreeX = function(cellOne, cellTwo, cellThree) {
 }
 ```
 
@@ -156,7 +156,7 @@ function allThreeX(cellOne, cellTwo, cellThree) {
 We can also use `allThreeX` to write functions for `winsColumnX` and `winsDiagonalX`. This would give us the following code:
 
 ```javascript
-function getWinner() {
+var getWinner = function() {
   if (isWinnerX()) {
     return 'x';
   }
@@ -166,35 +166,35 @@ function getWinner() {
   return null;
 }
 
-function isWinnerX() {
+var isWinnerX = function() {
   return winsRowX() || winsColumnX() || winsDiagonalX();
 }
 
-function winsRowX() {
+var winsRowX = function() {
   return allThreeX(cells('a'), cells('b'), cells('c')) ||
          allThreeX(cells('d'), cells('e'), cells('f')) ||
          allThreeX(cells('g'), cells('h'), cells('i'));
 }
 
-function winsColumnX() {
+var winsColumnX = function() {
   return allThreeX(cells('a'), cells('d'), cells('g')) ||
          allThreeX(cells('b'), cells('e'), cells('h')) ||
          allThreeX(cells('c'), cells('f'), cells('i'));
 }
 
-function winsDiagonalX() {
+var winsDiagonalX = function() {
   return allThreeX(cells('a'), cells('e'), cells('i')) ||
          allThreeX(cells('c'), cells('e'), cells('g'));
 }
 
-function allThreeX(cellOne, cellTwo, cellThree) {
+var allThreeX = function(cellOne, cellTwo, cellThree) {
 }
 ```
 
 Now that we've broken it into one much smaller problem, our `allThreeX` function is fairly easy to write!
 
 ```javascript
-function allThreeX(cellOne, cellTwo, cellThree) {
+var allThreeX = function(cellOne, cellTwo, cellThree) {
   return (cellOne === 'x') && (cellTwo === 'x') && (cellThree === 'x');
 }
 ```
@@ -210,7 +210,7 @@ There's a principle we'll emphasize in this course – one that is so universall
 Let's see what we can do.
 
 ```javascript
-function allThree(player, cellOne, cellTwo, cellThree) {
+var allThree = function(player, cellOne, cellTwo, cellThree) {
   return (cellOne === player) && (cellTwo === player) && (cellThree === player);
 }
 ```
@@ -222,7 +222,7 @@ Now `allThree` can be used to test for `x` **or** for `o`; by getting rid of our
 Let's do the same thing for all the other functions we wrote:
 
 ```javascript
-function getWinner() {
+var getWinner = function() {
   if (winnerIs('x')) {
     return 'x';
   }
@@ -232,28 +232,28 @@ function getWinner() {
   return null;
 }
 
-function winnerIs(player) {
+var winnerIs = function(player) {
   return winsRow(player) || winsColumn(player) || winsDiagonal(player);
 }
 
-function winsRow(player) {
+var winsRow = function(player) {
   return allThree(player, cells('a'), cells('b'), cells('c')) ||
          allThree(player, cells('d'), cells('e'), cells('f')) ||
          allThree(player, cells('g'), cells('h'), cells('i'));
 }
 
-function winsColumn(player) {
+var winsColumn = function(player) {
   return allThree(player, cells('a'), cells('d'), cells('g')) ||
          allThree(player, cells('b'), cells('e'), cells('h')) ||
          allThree(player, cells('c'), cells('f'), cells('i'));
 }
 
-function winsDiagonal(player) {
+var winsDiagonal = function(player) {
   return allThree(player, cells('a'), cells('e'), cells('i')) ||
          allThree(player, cells('c'), cells('e'), cells('g'));
 }
 
-function allThree(player, cellOne, cellTwo, cellThree) {
+var allThree = function(player, cellOne, cellTwo, cellThree) {
   return (cellOne === player) && (cellTwo === player) && (cellThree === player);
 }
 ```
