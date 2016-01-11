@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon Jan 11 2016 19:54:31 GMT+0000 (UTC)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Mon Jan 11 2016 22:50:28 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1123,8 +1123,46 @@
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
 <h1 id="boolean-logic">Boolean Logic</h1>
-<p>At this point, we&apos;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, expecially related to boolean logic. Let&apos;s take a closer look at some of them.</p>
-<h3 id="undefined-and-null">Undefined and Null</h3>
+<p>At this point, we&apos;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, especially related to boolean logic. Let&apos;s take a closer look at some of them.</p>
+<ul>
+<li>We&apos;ll start with <strong>undefined</strong> and <strong>null</strong> values. These two values represent a lack of data.</li>
+<li>Next, we will dive into <strong>truthy</strong> and <strong>falsey</strong> - the result of Javascript&apos;s attempt to convert values at runtime.</li>
+<li>Finally: a challenge!</li>
+</ul>
+<h3 id="undefined">Undefined</h3>
+<p>You&apos;ve just opened a Javascript console. You want to define a new variable but aren&apos;t sure what the value is <em>just yet</em>.  </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someData;
+</code></pre>
+<p>Without <strong>assigning</strong> a value to a variable, that variable becomes <code>undefined</code>. We can see this in real time:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(someData);
+</code></pre>
+<p>If we want to check to see if our variable is infact <code>undefined</code>, we may do so. Checking to see is a variable is <code>undefined</code> is important. It allows for you to verify that something exists before you use it (and thus keep from throwing errors).</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someData == <span class="hljs-literal">undefined</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
+  someData = <span class="hljs-string">&apos;We are now assigning a value.&apos;</span>;
+}
+</code></pre>
+<p>We can also check for <code>undefined</code> using <code>typeof()</code>! This is because <code>undefined</code> is an Object that is immutable. If you&apos;d like to learn more you should read [Mozilla&apos;s MDN entry for Undefined].</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// we need a new variable...</span>
+<span class="hljs-keyword">var</span> anotherData;
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span>(anotherData) == <span class="hljs-string">&apos;undefined&apos;</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
+}
+</code></pre>
+<h3 id="null">Null</h3>
+<p>Null values are values that your decide have <strong>no value</strong>. <em>But why would I want to do this? Why not use Undefined?</em> Well, every new variable that has no value is <code>undefined</code>, right? What if we could use a value that also has <strong>no value</strong> but you can check against? Perhaps you need to work with a lot of variables and you want to <em>know</em> that even though it is empty, it still matters?</p>
+<p>That&apos;s the purpose of <strong>null</strong>. It is designed to represent the <em>lack of a value</em>. Whenever variables are defined without any value, they are <code>undefined</code>. This can become tricky to troubleshoot over time and it is a catch-all for <em>everything without a value</em>. We can <strong>specficy</strong> our variables as <code>null</code> to represent there is no data.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// we will define a variable with no value, or null</span>
+<span class="hljs-keyword">var</span> playerScore = <span class="hljs-literal">null</span>;
+</code></pre>
+<p>We can then <strong>evaluate</strong> if our value is <code>null</code>:</p>
+<pre><code class="lang-javascript">playerScore == <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;The player has not scored anything.&apos;</span>
+</code></pre>
+<p>What if we are provided with a user&apos;s input to represent a player&apos;s actions on a timed game? In <em>Dance, Dance, Revolution</em> a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen and as they pass by the middle of the screen the player <em>must</em> perform an action (or they don&apos;t score a point). The game can evaluate the player&apos;s score in real time!</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> userInput = <span class="hljs-literal">null</span>;
+userInput == <span class="hljs-literal">null</span> <span class="hljs-comment">// no points.. this time</span>
+</code></pre>
+<h5 id="evaluating-undefined-and-null-values">Evaluating Undefined and Null Values</h5>
 <p>What happens if we try to evaluate a variable that we haven&apos;t created or assigned value to? The answer is that JavaScript will usually let us do this, but it will evaluate that variable to one of the following special values to indicate that something&apos;s gone wrong.</p>
 <ul>
 <li><strong><code>undefined</code></strong> is returned when a variable has been declared, but doesn&apos;t have any value assigned to it.</li>
@@ -1132,8 +1170,10 @@
 </ul>
 <h3 id="-falsey-truthy">&apos;falsey&apos; / &apos;truthy&apos;</h3>
 <p>We&apos;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&apos;Happy birthday, &apos; + &apos;Tom&apos;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
-<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&apos;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &apos;falsey&apos; and &apos;truthy&apos;.</p>
-<p>Here&apos;s a table to show you which kinds of values are considered truthy and falsey in JavaScript.</p>
+<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&apos;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &apos;falsey&apos; and &apos;truthy&apos;. But what do these words mean?</p>
+<p>To be <strong>truthy</strong>, a value is evaluated as true. The boolean value of <code>true</code> falls into this category. Any number that holds a value (greater than 0) will also be seen as true. If a string contains <em>any</em> contents, it will evaluate as true!</p>
+<p>To be <strong>falsey</strong>, a value is evaluated as false. The boolean value of <code>false</code> is falsey. So is the number 0. Empty strings, <code>null</code>, and <code>undefined</code> all will evaluate to false as well.</p>
+<p>In the real world, you&apos;ll sometimes need to evaluate values and you&apos;ll be given weird results. Perhaps if we want to check if we have a value from a user but we&apos;re not sure yet. That could evaluate as either truthy or falsey. What if we want to see if our user has added items to their shopping cart? That could also be truthy or falsy. While these may not come naturally at first they will feel like second nature before WDI is over. Here&apos;s a table to show you which kinds of values are considered truthy and falsey in JavaScript.</p>
 <table>
 <thead>
 <tr>
