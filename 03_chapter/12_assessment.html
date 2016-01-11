@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.6" data-basepath=".." data-revision="Mon Dec 21 2015 18:08:01 GMT+0000 (UTC)">
+    <div class="book" data-level="3.6" data-basepath=".." data-revision="Mon Jan 11 2016 19:48:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1127,13 +1127,13 @@
 <hr>
 <p>Go back into the project repo, wherever you&apos;ve decided to put it, and open up the file <code>RockPaperScissors.js</code> (inside the <code>app/js</code> directory).</p>
 <p>When you look inside the file you should first see a block of code that looks like this :</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getInput</span><span class="hljs-params">()</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getInput = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Please choose either &apos;rock&apos;, &apos;paper&apos;, or &apos;scissors&apos;.&quot;</span>)
    <span class="hljs-keyword">var</span> answer = prompt();
    <span class="hljs-keyword">return</span> answer;
 }
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">randomPlay</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-keyword">var</span> randomPlay = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">var</span> randomNumber = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.33</span>) {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;rock&apos;</span>;
@@ -1146,14 +1146,14 @@
 </code></pre>
 <p>We recommend you don&apos;t edit this code right now, but feel free to look at it closely and try to figure out how it works - learning to read code is an important step in learning how to write code.</p>
 <p>When you&apos;re ready, skip ahead to the next section, shown below.</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPlayerMove</span><span class="hljs-params">(move)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getPlayerMove = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(move)</span> </span>{
     <span class="hljs-comment">// Write an expression that operates on a variable called `move`</span>
     <span class="hljs-comment">// If a `move` has a value, your expression should evaluate to that value.</span>
     <span class="hljs-comment">// However, if `move` is not specified / is null, your expression should equal `getInput()`.</span>
     <span class="hljs-keyword">return</span> <span class="hljs-comment">/* Your Expression */</span>;
 }
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getComputerMove</span><span class="hljs-params">(move)</span> </span>{
+<span class="hljs-keyword">var</span> getComputerMove = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(move)</span> </span>{
     <span class="hljs-comment">// Write an expression that operates on a variable called `move`</span>
     <span class="hljs-comment">// If a `move` has a value, your expression should evaluate to that value.</span>
     <span class="hljs-comment">// However, if `move` is not specified / is null, your expression should equal `randomPlay()`.</span>

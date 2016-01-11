@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Mon Dec 21 2015 18:08:01 GMT+0000 (UTC)">
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="Mon Jan 11 2016 19:48:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1130,7 +1130,7 @@
 <span class="hljs-keyword">var</span> tempsInC = [];
 </code></pre>
 <p>The formula for converting between Fahrenheit and Celsius temperatures is <strong>C = (F - 32) * 5/9</strong>, where <code>F</code> is the temperature in degrees Fahrenheit and <code>C</code> is the temperature in degrees Celsius. Because this is an operation that we&apos;d like to do frequently, we might create a function for it like the one below.</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fahrToCelc</span><span class="hljs-params">(degrees)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> fahrToCelc = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(degrees)</span> </span>{
   <span class="hljs-keyword">return</span> (degrees - <span class="hljs-number">32</span>) * (<span class="hljs-number">5</span> / <span class="hljs-number">9</span>);
 }
 </code></pre>
@@ -1177,7 +1177,7 @@
 <h2 id="iterator-functions-map-and-foreach">Iterator Functions : <code>.map()</code> and <code>.forEach()</code></h2>
 <p>Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) <strong>iterators</strong>.</p>
 <p>One of the most commonly used iterators is <code>.map()</code> - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more paramaters, <code>.map()</code> can be run with just one : a function. Take a look at the example below:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">square</span><span class="hljs-params">(x)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> square = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-built_in">console</span>.log(x * x);
   <span class="hljs-keyword">return</span> x * x;
 }
@@ -1190,7 +1190,7 @@
 </blockquote>
 <p>As you can see, <code>.map()</code> takes in the function we&apos;ve just defined, <code>square</code>, as a parameter. It then applies that function to every element in our original array, and stores the result at that same position in a new array. Finally, the function returns the new array that it&apos;s just created. As you can see, this is both simpler and cleaner than trying to do the same thing with a loop.</p>
 <p>Another example of an iterator is <code>.forEach()</code>. <code>.forEach()</code> also takes a function as an argument, but unlike <code>.map()</code>, it doesn&apos;t create a new array and return it. However, it does still execute the function that gets passed for each element in the array.</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">square</span><span class="hljs-params">(x)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> square = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-built_in">console</span>.log(x * x);
   <span class="hljs-keyword">return</span> x * x;
 }

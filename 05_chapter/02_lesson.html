@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="Mon Dec 21 2015 18:08:01 GMT+0000 (UTC)">
+    <div class="book" data-level="5.1" data-basepath=".." data-revision="Mon Jan 11 2016 19:48:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1124,16 +1124,16 @@
 <hr>
 <h1 id="functions">Functions</h1>
 <h2 id="defining-javascript-functions">Defining JavaScript Functions</h2>
-<p>To create a new function, we must <em>declare</em> it as we would a variable.  A <strong>function declaration</strong> typically looks like this:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nameOfMyFunction</span><span class="hljs-params">(x)</span> </span>{
+<p>To create a new function, we must <em>declare</em> it as we would a variable.  A <strong>function expression</strong> typically looks like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> nameOfMyFunction = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-comment">// Body of the function &apos;nameOfMyFunction&apos;;</span>
 }
 </code></pre>
-<p>As you can see, the first line begins with the word <code>function</code> followed by <code>nameOfMyFunction</code>, which is how we&apos;d like to refer to that function later.</p>
+<p>As you can see, the first line begins with <code>nameOfMyFunction</code> followed by the word <code>function</code>, which is how we&apos;d like to refer to that function later.</p>
 <p>Next, we write a list of the input values we&apos;d like to use, enclosed in parentheses and separated by commas. These values are called <strong>parameters</strong> of the function.  Above, we only used one parameter, <code>x</code>.</p>
 <p>Finally, we write the body of our function, enclosed by a pair of curly braces (<code>{}</code>).</p>
 <p>Let&apos;s look at an example:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tripleIt</span><span class="hljs-params">(x)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> tripleIt = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-number">3</span> * x;
 }
 </code></pre>
@@ -1155,7 +1155,7 @@
 <p>To actually <em>evaluate</em> a function, we have to <strong>call</strong> that function as follows:</p>
 <pre><code class="lang-javascript">nameOfMyFunction();
 </code></pre>
-<p>In the case of <code>function tripleIt(x)</code>, if we wanted to call the function by passing the value 4, we would write:</p>
+<p>In the case of <code>var tripleIt = function(x)</code>, if we wanted to call the function by passing the value 4, we would write:</p>
 <pre><code class="lang-javascript">tripleIt(<span class="hljs-number">4</span>)
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
@@ -1169,7 +1169,7 @@
 </code></pre>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Suppose that we&apos;ve defined the function &apos;glorp&apos; as follows:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">glorp</span><span class="hljs-params">(someNumber)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> glorp = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(someNumber)</span> </span>{
   <span class="hljs-keyword">return</span> someNumber * <span class="hljs-number">5</span> - <span class="hljs-number">3</span>;
 }
 </code></pre>
@@ -1185,7 +1185,7 @@
 <h2 id="the-return-statement">The Return Statement</h2>
 <p>As mentioned above, <code>return</code> specifies the value of the function when it&apos;s executed. It has another important job - it tells the function to immediately stop whatever it&apos;s doing.</p>
 <p>Consider the following program:</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doAThing</span><span class="hljs-params">(x)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> doAThing = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
     <span class="hljs-keyword">return</span> x + <span class="hljs-number">10</span>;
   }
@@ -1196,7 +1196,7 @@
 <p>This will <em>immediately end the function</em> - that second <code>return</code> statement won&apos;t be reached.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Where will the function stop if <code>x</code> is 5? 10? 20? What value will be returned in each case?</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">categorize</span><span class="hljs-params">(x)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> categorize = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">8</span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-number">8</span>;
   }
