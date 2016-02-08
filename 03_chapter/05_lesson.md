@@ -25,6 +25,33 @@ Assume that `x` is equal to 10. What values do the following expressions evaluat
 
 We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
 
+Consider the following JavaScript code in a repl.it console.
+
+```javascript
+var x = 1
+x
+// => 1
+x = 2 + x
+// => 3
+x
+// => 3
+```
+
+On the first line, we are _assigning_ the variable `x` equal to the integer `1`.  Then, on the next line, we are _reassigning_ the variable `x` and setting it equal to the following: `2` plus the most recent value of x (in this case, `1`). `x` would now be equal to the integer `3`.  
+
+>**Caution** Beginners often confuse the assignment operator (`=`) and the equality operators (`==`, `===`). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.
+>```javascript
+> x
+> // => 3
+> x == 4
+> // => false
+> x = 4
+> // => 4
+> x == 4
+> // => true
+> ```
+
+
 Suppose we ran the following lines of code in order, one by one.
 
 ```javascript
@@ -121,4 +148,3 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 | `x = x + 1`      | `x++` |
 
 ---
-
