@@ -39,7 +39,7 @@ x
 
 On the first line, we are _assigning_ the variable `x` equal to the integer `1`.  Then, on the next line, we are _reassigning_ the variable `x` and setting it equal to the following: `2` plus the most recent value of x (in this case, `1`). `x` would now be equal to the integer `3`.  
 
->**Caution** Beginners often confuse the assignment operator (`=`) and the equality operators (`==`, `===`). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.
+>**Caution**  Beginners often confuse the assignment operator (`=`) and the equality operators (`==`, `===`). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.
 >```javascript
 > x
 > // => 3
