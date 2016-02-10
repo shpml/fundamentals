@@ -2,7 +2,7 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
+##### By the end of this Unit, you'll be able to:
 * Perform arithmetic and logical operations on data to produce new values
 * Concatenate two strings together in JavaScript
 * Write expressions that both assign and evaluate variables.
@@ -40,8 +40,6 @@ To start playing around with JavaScript, we'll be using a website called **[Repl
 
 As you can see in the screenshot above, repl.it features two main windows. On the right, with the black background, is the *console* - this tool (much like the Terminal on your computer) will accept a single instruction from the user and attempt to run it when the user hits "enter". On the left, with the white background, is the *editor*. The editor allows us to write several instructions in sequence; to execute these instructions, click the 'play' button near the top.
 
-To save your repl.it session, just click the 'save' button in the upper right - it'll generate a URL that you can bookmark and come back to any time you want.
-
-![repl.it Screenshot](../assets/chapter3/save_replit.png)
+To save your repl.it session, just click the 'save' button at the top - it'll generate a URL that you can bookmark and come back to any time you want.
 
 Ready to begin? [Let's go](02_lesson.md).
