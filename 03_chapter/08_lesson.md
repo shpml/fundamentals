@@ -7,7 +7,7 @@
 At this point, we've covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we've (until now) glossed over, especially related to boolean logic. Let's take a closer look at some of them.
 
 * We'll start with **undefined** and **null** values. These two values represent a lack of data.
-* Next, we will dive into **truthy** and **falsey** - the result of Javascript's attempt to convert values at runtime.
+* Next, we will dive into **truthy** and **falsey** - the result of Javascript's attempt to convert non-boolean values to booleans at runtime.
 * Finally: a challenge!
 
 ### Undefined
@@ -38,9 +38,13 @@ if (typeof(anotherData) == 'undefined') {
 
 
 ### Null
-Null values are values that your decide have **no value**. *But why would I want to do this? Why not use Undefined?* Well, every new variable that has no value is `undefined`, right? What if we could use a value that also has **no value** but you can check against? Perhaps you need to work with a lot of variables and you want to *know* that even though it is empty, it still matters?
+
+Null values are values that you decide have **no value**. But why would I want to do this? Why not use `undefined`? As it turns out, we can't - variables in JavaScript are only `undefined` until they've been assigned a variable for the first time. `null` gives us a way to 'reset' the value of a variable to nothing.
+
+Here's an example. Suppose you have an application for keeping track of your things. You might have a string called `locationOfKeys` which indicates where your keys are. Then, one day, your keys get lost. What's the value of `locationOfKeys` now? Well, it's 'nothing' - they're lost. If `null` didn't exist, we would have to invent a special string value (perhaps `"lost"`) to signify that the keys are missing. `null` gives us a standard way of handling that kind of situation where we can simply say `locationOfKeys = null;`
 
 That's the purpose of **null**. It is designed to represent the *lack of a value*. Whenever variables are defined without any value, they are `undefined`. This can become tricky to troubleshoot over time and it is a catch-all for *everything without a value*. We can **specficy** our variables as `null` to represent there is no data.
+
 ```javascript
 // we will define a variable with no value, or null
 var playerScore = null;
@@ -55,22 +59,19 @@ var userInput = null;
 userInput == null // no points.. this time
 ```
 
-##### Evaluating Undefined and Null Values
-What happens if we try to evaluate a variable that we haven't created or assigned value to? The answer is that JavaScript will usually let us do this, but it will evaluate that variable to one of the following special values to indicate that something's gone wrong.
-* **`undefined`** is returned when a variable has been declared, but doesn't have any value assigned to it.
-* **`null`** is actually a value that you can assign to a variable as a representation of "no value."
-
-
 ### 'falsey' / 'truthy'
+
 We've seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression <code>'Happy birthday, ' + 'Tom'</code>, the `+` operator is working with strings, so it performs a concatenation instead.
 
 Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (<code>&&</code>); although they're primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either 'falsey' and 'truthy'. But what do these words mean?
 
-To be **truthy**, a value is evaluated as true. The boolean value of `true` falls into this category. Any number that holds a value (greater than 0) will also be seen as true. If a string contains *any* contents, it will evaluate as true!
+* To be **falsey** means that boolean operators act in mostly the same way that they would if the value was `false`. For instance, using `!` (NOT) on a "falsey" value will evaluate to `true`, just as if you'd written `!false`. The "falsey" category of values includes: the number `0`, empty strings (`''`), `null`, and `undefined`. `false` is, of course, also "falsey".
 
-To be **falsey**, a value is evaluated as false. The boolean value of `false` is falsey. So is the number 0. Empty strings, `null`, and `undefined` all will evaluate to false as well.
+* Being **truthy** is exactly the opposite of being falsey; using `!` (NOT) on a "truthy" value would evaluate to `false`. Anything that isn't "falsey" is "truthy", including all strings, all non-zero numbers, and (of course) `true`.
 
-In the real world, you'll sometimes need to evaluate values and you'll be given weird results. Perhaps if we want to check if we have a value from a user but we're not sure yet. That could evaluate as either truthy or falsey. What if we want to see if our user has added items to their shopping cart? That could also be truthy or falsy. While these may not come naturally at first they will feel like second nature before WDI is over. Here's a table to show you which kinds of values are considered truthy and falsey in JavaScript.
+As they say, "_to a hammer (read: boolean operator), everything looks like a nail (read: boolean value)_".
+
+Below are the exact rules that the boolean operators follow when dealing with non-boolean input values.
 
 | 'Falsey'            |  'Truthy' |
 |-                    |-          |
