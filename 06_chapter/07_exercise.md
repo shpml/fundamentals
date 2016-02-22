@@ -14,7 +14,7 @@ Let's go back to the 'checkerboard' code we wrote for the last exercise. This ti
 
     This function will set up the red pieces on our checkerboard by setting the value of each cell that should hold a red piece to 'R'. For the purposes of this exercise, assume that the red pieces should be laid out at the 'top' of the board, just like in the picture below.
 
-    ![Picture of Checkerboard](http://www.maniacworld.com/Checkers/checkers.jpg)
+    ![Picture of Checkerboard](assets/Graphics/checkers.png)
 
 * `setUpBlack()`
 
