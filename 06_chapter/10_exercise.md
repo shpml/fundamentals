@@ -10,7 +10,7 @@ In this exercise, we'll return to our checkers game one last time. This time, ho
 
 Here's that diagram again, in case you forgot how to set up the board.
 
-![Picture of Checkerboard](assets/Graphics/checkers.png)
+![Picture of Checkerboard](../assets/Graphics/checkers.jpg)
 
 To test your work, run each of the following two operations in the repli.it console
 
