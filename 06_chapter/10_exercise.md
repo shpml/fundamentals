@@ -8,9 +8,9 @@ In this exercise, we'll return to our checkers game one last time. This time, ho
 
 `pieces` should be an associative array, with two keys : 'red' and 'black'. Each of these keys should correspond to a normal array listing out all of the different pieces for that color. Each piece should be represented as a two-element array in the pattern of `[row,col]`; for example, the list of red pieces would include `[0,0]`, `[0,2]`, `[0,4]`, etc.
 
-Here's that diagram again, in case you forgot how to set up the baord.
+Here's that diagram again, in case you forgot how to set up the board.
 
-![Picture of Checkerboard](http://www.maniacworld.com/Checkers/checkers.jpg)
+![Picture of Checkerboard](../assets/Graphics/checkers.jpg)
 
 To test your work, run each of the following two operations in the repli.it console
 
