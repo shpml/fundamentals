@@ -74,7 +74,7 @@ differently - it 'concatenates' two strings together to make one big string.
 * **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
 <br><u>For example</u>: `15 % 4` will evaluate to `3`.
 
-* **Inequality** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
+* **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
 <br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
 * **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
