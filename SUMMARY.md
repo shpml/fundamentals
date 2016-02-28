@@ -9,7 +9,7 @@
       * [Exercise](01_chapter/07_exercise.md)
 	* [Moving and Removing Things](01_chapter/08_lesson.md)
       * [Exercise](01_chapter/09_exercise.md)
-	* [Thinking Programmatically](01_chapter/10_lesson.md)
+	* [Think Like a Programmer](01_chapter/10_lesson.md)
       * [Exercise](01_chapter/11_exercise.md)
 	* [Quiz](01_chapter/13_quiz.md)
 	* [Cheat Sheet](01_chapter/14_cheatsheet.md)
