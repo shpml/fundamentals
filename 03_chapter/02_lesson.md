@@ -78,15 +78,10 @@ differently - it 'concatenates' two strings together to make one big string.
 <br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
 * **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
-<br><u>For example</u>:
+<br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
 
-```javascript
-5 === 5;
-// => true
-
-5 === '5';
-// => false
-```
+* **Inequality** (`!==`) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator — comparing two values to check that both the data type and value are *not* the same.
+<br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
 
 * **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
     * NOT (`!`) will reverse the value of any boolean.
