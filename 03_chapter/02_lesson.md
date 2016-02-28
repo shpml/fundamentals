@@ -77,7 +77,7 @@ differently - it 'concatenates' two strings together to make one big string.
 * **Inequality** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
 <br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
-* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical in data type and value - while the second, the 'loose equality', has a little more wiggle room.
+* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
 <br><u>For example</u>:
 
 ```javascript
@@ -86,12 +86,6 @@ differently - it 'concatenates' two strings together to make one big string.
 
 5 === '5';
 // => false
-
-5 == 5;
-// => true
-
-5 == '5';
-// => true
 ```
 
 * **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
