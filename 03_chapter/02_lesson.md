@@ -77,7 +77,7 @@ differently - it 'concatenates' two strings together to make one big string.
 * **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
 <br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
-* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
+* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
 <br><u>For example</u>:
 
 ```javascript
