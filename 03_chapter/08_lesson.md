@@ -86,6 +86,15 @@ In JavaScript, the boolean operators `!`, `||`, and <code>&&</code> follow the r
 * OR: Return the first "truthy" value; if both values are "falsey", return the last "falsey" value.
 * AND: Return the first "falsey" value; if both values are "truthy", return the last "truthy" value.
 
+
+
+|     A     |       B      |   A AND B  |   A OR B  |   NOT A  |
+|-          |-             |-           |-          |-         |
+| **False** |  **False**   |  False     |  False    |  True    |
+| **False** |  **True**    |  False     |  True     |  True    |
+| **True**  |  **False**   |  False     |  True     |  False   |
+| **True**  |  **True**    |  True      |  True     |  False   |
+
 ### Test Yourself
 Can you predict how the following expressions will be evaluated? Check your answers in repl.it.
 * `1 || true`
