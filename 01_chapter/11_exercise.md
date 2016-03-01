@@ -4,3 +4,4 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
+Write out pseudo code 
