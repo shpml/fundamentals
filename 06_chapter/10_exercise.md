@@ -35,4 +35,4 @@ Woohoo! You've done it! We now have a working contact book that allows us to sto
 
 ---
 
-[Ready for the last lesson? Here it comes!](08_lesson.md)
+Feeling confident? [Test your understanding of iteration with this next quiz.](09_quiz.md)
