@@ -9,7 +9,7 @@ Now it's your turn to get some practice writing pseudo code!
 We'd like to create a program that checks to see whether movie patrons are eligible for a discount and displays the appropriate ticket price.
 
 Here is the pricing structure:
-1. If a patron is over 65 they are eligible for a senior discount. The ticket price for seniors is $6.00.
+1. If a patron is 65 or over they are eligible for a senior discount. The ticket price for seniors is $6.00.
 2. If a patron is under 25 they are eligible for a student discount. The ticket price for students is $8.00.
 3. All other tickets cost $10.00.
 
