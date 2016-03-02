@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-In this unit you'll be building a contact book. We'll start out fairly simply with some practice exercises and add complexity in the next couple of chapters. By the end of the unit we'll have a contact book that will allow us to store contact information, list out contacts, and find a contact by first or last name.
+Time to give it a whirl! In this exercise you'll be getting some practice setting up and updating a contacts array. Later in this unit we'll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, add new contacts, list contacts, and search contacts by first or last name.
 
 Instructions
 
@@ -15,7 +15,7 @@ Instructions
 
 ### Let's get started!
 
-* Create an array `contacts`. This array should contain the names "Matt Smith", "Sam Davis", and "Ashley Jones"
+* Create an array `contacts`. This array should contain the names "Matt Smith", "Sam Davis", and "Ashley Jones".
 * Create a function `findContact`, which accepts one parameter, `index`. It should return the contact at that `index`.
 * Create a function `addContact`, which accepts one parameter, `name`. It should add that name to the end of the contacts array and return the contacts array.
 * Create a function `updateLastContact`, which accepts one parameter, `newName`. It should update the last contact in the contacts array with the `newName` and return the contacts array.
