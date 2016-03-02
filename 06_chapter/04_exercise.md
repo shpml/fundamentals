@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-In this unit you'll be building a contact book. We'll start out fairly simply and add complexity in the next couple of exercises. By the end of the unit we'll have a contact book that will allow us to store contact information, list out contacts, and find a contact by first or last name.
+In this unit you'll be building a contact book. We'll start out fairly simply with some practice exercises and add complexity in the next couple of chapters. By the end of the unit we'll have a contact book that will allow us to store contact information, list out contacts, and find a contact by first or last name.
 
 Instructions
 
@@ -20,7 +20,7 @@ Instructions
 * Create a function `addContact`, which accepts one parameter, `name`. It should add that name to the end of the contacts array and return the contacts array.
 * Create a function `updateLastContact`, which accepts one parameter, `newName`. It should update the last contact in the contacts array with the `newName` and return the contacts array.
 
-Once you're satisfied with the way things are working, feel free to move on to the next lesson.
+Once you're satisfied with the way things are working, feel free to move on to the next lesson. Be sure to save your repl.it session as you'll be using it in the next exercise as well.
 
 ---
 [Ready to move on? Here's the next lesson.](05_lesson.md)
