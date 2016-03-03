@@ -74,25 +74,14 @@ differently - it 'concatenates' two strings together to make one big string.
 * **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
 <br><u>For example</u>: `15 % 4` will evaluate to `3`.
 
-* **Inequality** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
+* **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
 <br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
-* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical in data type and value - while the second, the 'loose equality', has a little more wiggle room.
-<br><u>For example</u>:
+* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
+<br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
 
-```javascript
-5 === 5;
-// => true
-
-5 === '5';
-// => false
-
-5 == 5;
-// => true
-
-5 == '5';
-// => true
-```
+* **Inequality** (`!==`) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator — it compares two values to check that both the data type and value are *not* the same.
+<br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
 
 * **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
     * NOT (`!`) will reverse the value of any boolean.
