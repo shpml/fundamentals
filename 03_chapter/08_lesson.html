@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Thu Mar 03 2016 20:39:21 GMT+0000 (UTC)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Thu Mar 03 2016 20:57:05 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1206,6 +1206,48 @@ userInput == <span class="hljs-literal">null</span> <span class="hljs-comment">/
 <li>OR: Return the first &quot;truthy&quot; value; if both values are &quot;falsey&quot;, return the last &quot;falsey&quot; value.</li>
 <li>AND: Return the first &quot;falsey&quot; value; if both values are &quot;truthy&quot;, return the last &quot;truthy&quot; value.</li>
 </ul>
+<p>Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row. </p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A AND B</th>
+<th>A OR B</th>
+<th>NOT A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>False</strong></td>
+<td><strong>False</strong></td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr>
+<td><strong>False</strong></td>
+<td><strong>True</strong></td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<td><strong>True</strong></td>
+<td><strong>False</strong></td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<td><strong>True</strong></td>
+<td><strong>True</strong></td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Can you predict how the following expressions will be evaluated? Check your answers in repl.it.</p>
 <ul>
@@ -1216,8 +1258,6 @@ userInput == <span class="hljs-literal">null</span> <span class="hljs-comment">/
 <li><code>true &amp;&amp; !0</code></li>
 <li><code>null || 3</code></li>
 </ul>
-<p>One of the most common use cases of this is when you&apos;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&apos;ve gotten from a user. If the user hasn&apos;t given any input, <code>x</code> might be <code>null</code>.</p>
-<p>To compensate for this, we might write the expression <code>x = x || 10;</code>. If x has some &apos;truthy&apos; value, the OR operator will evaluate to <code>x</code>, so it would be as if we wrote <code>x = x</code>. However, if x were <code>null</code>, the OR operator would evaluate to 10 (because <code>null</code> is &apos;falsey&apos;). It&apos;s as if we&apos;ve said &quot;If x doesn&apos;t already have a value assigned, set it equal to 10&quot;. For that reason, this kind of operation is often called &apos;conditional assignment&apos;.</p>
 <hr>
 <p><a href="10_exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
 
