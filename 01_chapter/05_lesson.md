@@ -47,6 +47,13 @@ Whoa! It looks like our computer understood that one! It replied with a message:
 ```
 /Users/corneliusfinch
 ```
+
+If you're following along in **Git Bash on Windows**, this should look similar but slightly different:
+```
+/c/Users/corneliusfinch
+```
+
+
 What did we just do?
 
 The command `pwd` stands for "Print Working Directory".
@@ -70,6 +77,8 @@ Applications       Desktop          Documents
 Downloads          Library          Movies
 Music              Pictures         Public
 ```
+
+If you're following along in **Git Bash on Windows**, it's alright if the files and folders that are listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
 
 The `ls` command, which loosely stands for "list", lists the contents of a folder.
 
