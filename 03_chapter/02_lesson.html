@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="Mon Feb 22 2016 22:41:23 GMT+0000 (UTC)">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Thu Mar 03 2016 20:39:21 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1189,27 +1189,17 @@ differently - it &apos;concatenates&apos; two strings together to make one big s
 <li><p><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&apos;s leftover from the division.
 <br><u>For example</u>: <code>15 % 4</code> will evaluate to <code>3</code>.</p>
 </li>
-<li><p><strong>Inequality</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
+<li><p><strong>Comparison</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
 <br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</p>
 </li>
-<li><p><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &apos;strict equality&apos; - it will only evaluate <code>true</code> if both sides are completely identical in data type and value - while the second, the &apos;loose equality&apos;, has a little more wiggle room.
-<br><u>For example</u>:</p>
+<li><p><strong>Equality</strong> (<code>===</code>) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate <code>true</code> if both sides are completely identical in data type and value.
+<br><u>For example</u>: <code>5 === 5</code> will evaluate to <code>true</code>, while <code>5 === &apos;5&apos;</code> will evaluate to <code>false</code>.</p>
 </li>
-</ul>
-<pre><code class="lang-javascript"><span class="hljs-number">5</span> === <span class="hljs-number">5</span>;
-<span class="hljs-comment">// =&gt; true</span>
-
-<span class="hljs-number">5</span> === <span class="hljs-string">&apos;5&apos;</span>;
-<span class="hljs-comment">// =&gt; false</span>
-
-<span class="hljs-number">5</span> == <span class="hljs-number">5</span>;
-<span class="hljs-comment">// =&gt; true</span>
-
-<span class="hljs-number">5</span> == <span class="hljs-string">&apos;5&apos;</span>;
-<span class="hljs-comment">// =&gt; true</span>
-</code></pre>
+<li><p><strong>Inequality</strong> (<code>!==</code>) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator &#x2014; it compares two values to check that both the data type and value are <em>not</em> the same.
+<br><u>For example</u>: <code>5 !== 5</code> will evaluate to <code>false</code>, while <code>5 !== &apos;5&apos;</code> will evaluate to <code>true</code>.</p>
+</li>
+<li><p><strong>Logical Operators</strong> (<code>!</code>, <code>||</code>, <code>&amp;&amp;</code>): These operators both take and give back boolean values.</p>
 <ul>
-<li><strong>Logical Operators</strong> (<code>!</code>, <code>||</code>, <code>&amp;&amp;</code>): These operators both take and give back boolean values.<ul>
 <li>NOT (<code>!</code>) will reverse the value of any boolean.
   <code>!true</code> // <code>false</code></li>
 <li>OR  (<code>||</code>) takes in two boolean arguments; if at least one is <code>true</code>, then it will evaluate to <code>true</code>, but if both are <code>false</code> it will evaluate as <code>false</code>.</li>
