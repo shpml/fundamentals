@@ -43,7 +43,7 @@ Null values are values that you decide have **no value**. But why would I want t
 
 Here's an example. Suppose you have an application for keeping track of your things. You might have a string called `locationOfKeys` which indicates where your keys are. Then, one day, your keys get lost. What's the value of `locationOfKeys` now? Well, it's 'nothing' - they're lost. If `null` didn't exist, we would have to invent a special string value (perhaps `"lost"`) to signify that the keys are missing. `null` gives us a standard way of handling that kind of situation where we can simply say `locationOfKeys = null;`
 
-That's the purpose of **null**. It is designed to represent the *lack of a value*. Whenever variables are defined without any value, they are `undefined`. This can become tricky to troubleshoot over time and it is a catch-all for *everything without a value*. We can **specficy** our variables as `null` to represent there is no data.
+That's the purpose of **null**. It is designed to represent the *lack of a value*. Whenever variables are defined without any value, they are `undefined`. This can become tricky to troubleshoot over time and it is a catch-all for *everything without a value*. We can **specify** our variables as `null` to represent there is no data.
 
 ```javascript
 // we will define a variable with no value, or null
