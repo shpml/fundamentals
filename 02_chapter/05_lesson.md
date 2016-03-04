@@ -104,8 +104,6 @@ You can find the URL to clone on right side of the forked repo on Github:
 
 By issuing the clone command, you're asking GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
 
-> **HINT** If you're following along in Git Bash in Windows, the commands to copy and past are a little different than the default Windows copy/past commands. The command to copy is `control + insert` and the command to paste is `shift + insert`.
-
 
 ### 3 & 4. Editing and Committing
 

@@ -109,7 +109,7 @@ We could call them `winnerIsX` and `winnerIsO`.  `winnerIsX` could give us back 
 
 OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems – how do we determine whether X or O won?
 
-###Determining if `x` has won
+###Determing if `x` has won
 
 Let's focus on `winnerIsX` first.
 
