@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.1.1" data-basepath=".." data-revision="Fri Mar 04 2016 22:45:01 GMT+0000 (UTC)">
+    <div class="book" data-level="6.1.1" data-basepath=".." data-revision="Sat Mar 05 2016 05:45:26 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1123,30 +1123,22 @@
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
 <hr>
 <h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
-<p>Here&apos;s a link to some <a href="http://repl.it/agR" target="_blank">sample code</a> on repl.it :</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> checkerboard = [[<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>],
-                    [<span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>]];
-
-<span class="hljs-keyword">var</span> setSquare = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player, row, col)</span> </span>{
-  <span class="hljs-comment">// Your Code Here</span>
-}
-
-<span class="hljs-keyword">var</span> getPieceAt = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(row, col)</span> </span>{
-  <span class="hljs-comment">// Your Code Here</span>
-}
-</code></pre>
-<p>In this exercise, we&apos;ll be laying the groundwork for a Checkers game. Your task is to implement two functions:</p>
+<p>Time to give it a whirl! In this exercise you&apos;ll be getting some practice setting up and updating a contacts array. Later in this unit we&apos;ll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, add new contacts, list contacts, and search contacts by first or last name.</p>
+<p>Instructions</p>
+<ol>
+<li>Open a new session in <a href="https://repl.it/" target="_blank">repl.it</a>.</li>
+<li>Write the code to perform the actions listed below, using repl.it&apos;s editor window.</li>
+<li>Click &apos;play&apos; to run the code.</li>
+<li>Call each function from the console window. Try using different parameters to make sure they&apos;re working properly.</li>
+</ol>
+<h3 id="let-s-get-started">Let&apos;s get started!</h3>
 <ul>
-<li><code>setSquare</code>, which places a player (either &apos;R&apos; or &apos;B&apos;) at a particular row and column on the board.</li>
-<li><code>getPieceAt</code>, which returns the piece at a particular row and column; if there&apos;s no piece at that position, it should return <code>null</code>.</li>
+<li>Create an array <code>contacts</code>. This array should contain the names &quot;Matt Smith&quot;, &quot;Sam Davis&quot;, and &quot;Ashley Jones&quot;.</li>
+<li>Create a function <code>findContact</code>, which accepts one parameter, <code>index</code>. It should return the contact at that <code>index</code>.</li>
+<li>Create a function <code>addContact</code>, which accepts one parameter, <code>name</code>. It should add that name to the end of the contacts array and return the contacts array.</li>
+<li>Create a function <code>updateLastContact</code>, which accepts one parameter, <code>newName</code>. It should update the last contact in the contacts array with the <code>newName</code> and return the contacts array.</li>
 </ul>
-<p>Be sure to save your repl.it session - we&apos;ll be using it in a later exercise.</p>
+<p>Once you&apos;re satisfied with the way things are working, feel free to move on to the next lesson. Be sure to save your repl.it session as you&apos;ll be using it in the next exercise as well.</p>
 <hr>
 <p><a href="05_lesson.html">Ready to move on? Here&apos;s the next lesson.</a></p>
 
