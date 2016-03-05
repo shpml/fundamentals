@@ -1,61 +1,46 @@
-**WDI Fundamentals Unit 3**
+# Unit 3 Homework
 
----
+Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
-## Project
+## Exercise
 
-Now that we've learned a little bit about expressions, let's apply some of this material to our 'Rock Paper Scissors' project.
+#### Requirements
 
----
+- Create four variables that simulate the cards in your game
+    - they should be `String` types
+    - two should have a value of `"queen"` and the other two should be `"king"`
+    - name your variables `cardOne`, `cardTwo`, etc.
+- Check to see if your two queen variables are equal to one another
+- Check to see if one of your king variables and one of your queen variables are equal to one another
 
-Go back into the project repo, wherever you've decided to put it, and open up the file `RockPaperScissors.js` (inside the `app/js` directory).
+#### Below are the steps to complete the assignment.
 
-When you look inside the file you should first see a block of code that looks like this :
+1) Create four cards
 
-```javascript
-var getInput = function() {
-   console.log("Please choose either 'rock', 'paper', or 'scissors'.")
-   var answer = prompt();
-   return answer;
-}
+```js
+var cardOne = "queen";
 
-var randomPlay = function() {
-    var randomNumber = Math.random();
-    if (randomNumber < 0.33) {
-        return 'rock';
-    } else if (randomNumber < 0.66) {
-        return 'paper';
-    } else {
-        return 'scissors';
-    }
-}
+var cardTwo = "queen";
+
+var cardThree = "king";
+
+var cardFour = "king";
 ```
 
-We recommend you don't edit this code right now, but feel free to look at it closely and try to figure out how it works - learning to read code is an important step in learning how to write code.
+2) Compare two queen variables
 
-When you're ready, skip ahead to the next section, shown below.
-
-```javascript
-var getPlayerMove = function(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
-}
-
-var getComputerMove = function(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
-}
+```js
+cardOne == cardTwo
 ```
 
-Similar to how you've done this in your exercises, you will need to replace the `/* Your Expression */` comment with an expression of your own creation. Instructions for how this expression should behave are laid out in the single-line comments above.
+3) Compare a king variable with a queen variable
 
-> **CAUTION** For now, if you don't understand the `getInput()` or `randomPlay()` functions, you can safely ignore that stuff for now - we'll be covering all of that in depth in Chapter 5. Just focus on subbing in your new expressions.
+```js
+cardOne == cardFour
+```
 
-Go ahead and get started - once you've finished editing those two lines, save your code and make a commit to your project's repository.
+#### Deliverable
 
----
-[Next up: Chapter 4](../04_chapter/intro.md)
+When complete, you should have something that looks like this:
+
+![](https://s3.amazonaws.com/f.cl.ly/items/3k1e142n340Q1U2a2Q0C/Image%202016-03-04%20at%206.13.12%20PM.png?v=82705bbf)
