@@ -1,8 +1,8 @@
-# Create Cards and Check for Equality
+# Unit 3 Homework
 
 Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
-Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame), wherever you've decided to put it, and open up the file `main.js` (inside the `starter-code` directory).
+Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame), wherever you've decided to put it, and open up the file `main.js` (inside the `starter-code` directory). This is where you'll be writing all of your code for all homework assignments.
 
 ## Exercise
 
@@ -47,6 +47,8 @@ cardOne == cardTwo // true
 ```js
 cardOne == cardFour // false
 ```
+
+Once you've finished (and have tested your code), commit the changes you've made to the project's repository.
 
 **_just a reminder:_**
 
