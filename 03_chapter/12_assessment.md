@@ -24,7 +24,12 @@ In this section, you'll be working to create the cards that will make up your me
 
 #### Below are the steps to complete the assignment.
 
-1) Create four cards
+1) Create four variables that simulate the cards in your game
+
+- they should be `String` types
+- two should have a value of `"queen"` and the other two should be `"king"`
+- they will be representation of your cards (i.e. "queen" card)
+- name your variables `cardOne`, `cardTwo`, etc.
 
 ```js
 var cardOne = "queen";
