@@ -86,6 +86,15 @@ In JavaScript, the boolean operators `!`, `||`, and <code>&&</code> follow the r
 * OR: Return the first "truthy" value; if both values are "falsey", return the last "falsey" value.
 * AND: Return the first "falsey" value; if both values are "truthy", return the last "truthy" value.
 
+Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row. 
+
+|     A     |       B      |   A AND B  |   A OR B  |   NOT A  |
+|-          |-             |-           |-          |-         |
+| **False** |  **False**   |  False     |  False    |  True    |
+| **False** |  **True**    |  False     |  True     |  True    |
+| **True**  |  **False**   |  False     |  True     |  False   |
+| **True**  |  **True**    |  True      |  True     |  False   |
+
 ### Test Yourself
 Can you predict how the following expressions will be evaluated? Check your answers in repl.it.
 * `1 || true`
@@ -94,10 +103,6 @@ Can you predict how the following expressions will be evaluated? Check your answ
 * <code>false && undefined</code>
 * <code>true && !0</code>
 * `null || 3`
-
-One of the most common use cases of this is when you're not sure if a variable has been assigned a value. Suppose that `x` represents some input that you've gotten from a user. If the user hasn't given any input, `x` might be `null`.
-
-To compensate for this, we might write the expression `x = x || 10;`. If x has some 'truthy' value, the OR operator will evaluate to `x`, so it would be as if we wrote `x = x`. However, if x were `null`, the OR operator would evaluate to 10 (because `null` is 'falsey'). It's as if we've said "If x doesn't already have a value assigned, set it equal to 10". For that reason, this kind of operation is often called 'conditional assignment'.
 
 ---
 
