@@ -1,8 +1,6 @@
-# Organizing Code and Creating Dynamic HTML
+# Homework 6: Organizing Code and Creating Dynamic HTML
 
 Your code is slowly but surely starting to get more robust. To better organize the code you've already written as well as prepare for the code you will write, we will now take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
-
-**note:**
 
 JavaScript comes with built-in functions we can call upon JavaScript objects with dot notation. These functions are no different than the functions we just covered, but they are more commonly known as _methods_.
 
@@ -19,9 +17,7 @@ Besides `createElement`, the `document` object comes with various other methods 
 
 In order to complete this assignment you will need to utilize these methods.
 
-**hints:**
-
-In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp).
+>**Note:** In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp).
 
 ## Exercise
 
@@ -42,24 +38,18 @@ In order to append your card elements, you're going to need something to append 
 
 #### Below are the steps to complete the assignment.
 
-1) Find the board and set it to a variable
+1) Find the board and set it to a variable. See below.
 
 ```js
 var board = document.getElementsByClassName('board')[0];
 ```
 
-2) Create a `for loop` that will iterate four times
+2) Create a `for loop` that will iterate four times. No hints here!
+
+
+3) Create the required HTML for each card on each iteration and append to the board and place inside the `for loop`. See below for hint.
 
 ```js
-for (var i=0; i<5; i++) {
-
-}
-```
-
-3) Create the required HTML for each card on each iteration and append to the board
-
-```js
-for (var i=0; i<5; i++) {
 
   // create a div element which will be used as a card
   var cardElement = document.createElement('div');
@@ -73,41 +63,15 @@ for (var i=0; i<5; i++) {
 }
 ```
 
-4) Create `createBoard` function
+4) Create `createBoard` function.
 
-```js
-function createBoard() {
-
-}
-```
-
-5) Add your board creation logic to the function
-
-```js
-function createBoard() {
-
-  var board = document.getElementsByClassName('board')[0];
-
-  for (var i=0; i<5; i++) {
-
-    // create a div element which will be used as a card
-    var cardElement = document.createElement('div');
-
-    // add a class to the card element which will help link styling
-    cardElement.className = 'card';
-
-    // append the card to the board
-    board.appendChild(cardElement);
-
-  }
-
-}
-```
+5) Add your board creation logic to the function from Step 1, 2 & 3.
 
 6) Execute `createBoard`
 
-```js
-createBoard()
-```
+#### Deliverable
 
 Once you're happy with your work, save your code and make a commit to your project's repository.
+
+---
+[Next up: Chapter 6](../05_chapter/intro.md)
