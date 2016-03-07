@@ -5,7 +5,7 @@
 #####By the end of this Unit, you'll be able to:
 * Define a version control system and its benefits
 * Describe how Git works
-* Identify the Git commands used to set up a local respository and to record 'snapshots' of your project
+* Identify the Git commands used to set up a local repository and to record 'snapshots' of your project
 * Push local changes to a remote repository using the command line
 
 ---
@@ -33,7 +33,7 @@ While this method works (kinda), it has a number of major limitations.
 * It only allows you to track changes in one file; if your project consists of multiple files, you're out of luck.
 * It's extremely duplicative - before long, you might end up with 10, 20, or even 50 slightly-different copies of the same file.
 * It's extremely difficult (if not basically impossible) to see what has changed from one version to the next without opening each file and comparing changes line by line.
-* Keeping track of parallel versions (revision A vs revision B) is possible, but it's hard to compare one to the other, and integrating the two verions is a lot of work.
+* Keeping track of parallel versions (revision A vs revision B) is possible, but it's hard to compare one to the other, and integrating the two versions is a lot of work.
 
 Now imagine how much more complicated this process becomes once you start working with a team...
 
