@@ -89,7 +89,7 @@ These ones are a bit tricky, so don't get discouraged if the answers don't come 
 
 Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) **iterators**.
 
-One of the most commonly used iterators is `.map()` - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more paramaters, `.map()` can be run with just one : a function. Take a look at the example below:
+One of the most commonly used iterators is `.map()` - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more parameters, `.map()` can be run with just one : a function. Take a look at the example below:
 
 ```javascript
 var square = function(x) {

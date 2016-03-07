@@ -28,6 +28,13 @@ We made a text file called `joke.txt`! Let's open it up in our default text edit
 ```
 $ open joke.txt
 ```
+
+If you're following along using **Git Bash on Windows**, you'll want to use the following command to open the file:
+
+```
+$ write joke.txt
+```
+
 Your text editor should open up this file now. Go ahead and type a joke in there, save that file, quit your text editor application, and return to your command line.
 
 Let's see what's inside our `joke.txt` file now.
