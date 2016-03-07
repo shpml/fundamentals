@@ -85,49 +85,6 @@ How could you use iteration to generate a new array called `newArray` from `oldA
 
 These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
 
-## Iterator Functions : `.map()` and `.forEach()`
-
-Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) **iterators**.
-
-One of the most commonly used iterators is `.map()` - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more paramaters, `.map()` can be run with just one : a function. Take a look at the example below:
-
-```javascript
-var square = function(x) {
-  console.log(x * x);
-  return x * x;
-}
-
-var resultingArray = [1, 2, 3].map(square); // Prints out 1, 4, and 9, then
-// returns the array [1, 4, 9] and stores it in resultingArray
-```
-
->**WARNING** It's important that you *do not* include parentheses when passing in that function. Including `square` as an argument passes the whole function. Including `square()` as the argument would pass in the result of calling the function. That's not what you want, normally.
-
-As you can see, `.map()` takes in the function we've just defined, `square`, as a parameter. It then applies that function to every element in our original array, and stores the result at that same position in a new array. Finally, the function returns the new array that it's just created. As you can see, this is both simpler and cleaner than trying to do the same thing with a loop.
-
-Another example of an iterator is `.forEach()`. `.forEach()` also takes a function as an argument, but unlike `.map()`, it doesn't create a new array and return it. However, it does still execute the function that gets passed for each element in the array.
-
-```javascript
-var square = function(x) {
-  console.log(x * x);
-  return x * x;
-}
-
-var resultingArray = [1, 2, 3].forEach(square); // Prints out 1, 4, and 9, but
-// doesn't return an array. This means resultingArray is undefined :(
-```
-
-###Test Yourself
-
-Try to implement each of the following things in repl.it using `.map()` and `.forEach()`
-* Start with a variable `x` and an array of your choosing. Write an expression that will increase `x` by 10 once for every element in the array.
-* Create an array of masses in kilograms, and use it to produce an array of those same masses in pounds (hint: it's roughly 2.2 pounds to the kilogram).
-* Believe it or not, Strings have a `.length` property just like arrays do. Armed with this knowledge, create an array of strings, and use an iterator to produce an array containing the length of each string.
-
-If you're interested, you can read the full documentation on `.map()` and `.forEach()` here:
-* [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-* [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-
 ---
 
-Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md) 
+Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md)
