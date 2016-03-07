@@ -1,5 +1,7 @@
 # UNIT EXERCISES: SOLUTIONS
 
+The following solutions are for the Unit exercises. If you're looking for solutions for the unit homeworks, go to the [Memory Game repository](https://github.com/jeannyvaidya/wdi-fundamentals-memorygame) and look inside the `solution folder`for individual unit homework solutions.
+
 ### 1.2.1
 1. $ cd Downloads
 2. $ mv World .. (will move to parent directory, in this case the Desktop)
