@@ -23,6 +23,8 @@ This exercise may be familiar to some of you - your job is to write some code th
 
 To test your code, set a value for `x` in the editor and click 'play'. Did you get the result you expected? Try out a bunch of different values for `x`, just to be sure.
 
+> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+
 ---
 
 [Next: Loops](05_lesson.md)
