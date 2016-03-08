@@ -28,6 +28,8 @@ Instructions
 
 Feeling comfortable with these exercises? Take a look at the last lesson!
 
+> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+
 ---
 
 [Ready for the last lesson? Here it comes!](08_lesson.md)
