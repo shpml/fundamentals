@@ -26,3 +26,5 @@ Go ahead and correct this mistake straight from command line:
 
 9. Change the name of `North_America` to `Americas`
 
+> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+
