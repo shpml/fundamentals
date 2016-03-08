@@ -23,7 +23,7 @@ Test your expression for several different values of `x`, including `null` - doe
 
 Were you able to get all of your expressions to work? If so, nice job!
 
-> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
 ---
 
