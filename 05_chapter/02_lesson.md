@@ -6,7 +6,17 @@
 
 ## Defining JavaScript Functions
 
-To create a new function, we must *declare* it as we would a variable.  A **function expression** typically looks like this:
+Before we call, or "use", a function, we must define it. In JavaScript, functions can be defined in several ways. The two most common methods are **function declarations** and **function expressions**.
+
+A **function declaration** is a function that you can call later in your code typically looks like this:
+
+```javascript
+function nameOfMyFunction (x) {
+  // Body of the function 'nameOfMyFunction';
+}
+```
+
+And to create a new function with a **function expression** , we must *declare* it as we would a variable.
 
 ```javascript
 var nameOfMyFunction = function(x) {
@@ -19,6 +29,8 @@ As you can see, the first line begins with `nameOfMyFunction` followed by the wo
 Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are called **parameters** of the function.  Above, we only used one parameter, `x`.
 
 Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
+
+We'll focus on using **function expression** for these lessons. Let's look at an example:
 
 Let's look at an example:
 
