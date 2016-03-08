@@ -22,5 +22,7 @@ Instructions
 
 Once you're satisfied with the way things are working, feel free to move on to the next lesson. Be sure to save your repl.it session as you'll be using it in the next exercise as well.
 
+> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+
 ---
 [Ready to move on? Here's the next lesson.](05_lesson.md)
