@@ -34,5 +34,7 @@ if `x` is "David", the expression should evaluate to "Goodbye, David".
 Try testing out all of the different "test cases" mentioned above.
 If they all give you the answers that you expect, you're done!
 
+> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+
 ---
 [Next : Expression Oddballs](08_lesson.md)
