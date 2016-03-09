@@ -3,30 +3,33 @@
 The following solutions are for the Unit exercises. If you're looking for solutions for the unit homeworks, go to the [Memory Game repository](https://github.com/jeannyvaidya/wdi-fundamentals-memorygame) and look inside the `solution folder`for individual unit homework solutions.
 
 ### 1.2.1
-1. $ cd Downloads
-2. $ mv World .. (will move to parent directory, in this case the Desktop)
-3. $ ../ (move back to the parent directory)
-   $ ls
-4. $ cd World
-5. $ ls
-6. ***(# NEED SOLUTION)***
+1. `$ cd Downloads`
+2. `$ cd World`
+3. `$ ls`
+4.  ***(# NEED SOLUTION)***
 
 ### 1.3.1
 
+Part 1: 
 1. Command + Space. Inside search bar type "Terminal"
-2. $ cd World
-3. $ mkdir Antarctica
-4. $ ls
-5. $ cd World (only if pwd if not World)
-6. $ cd South America
-   $ ls
-7. $ mv Argentina ../North_America
-   $ mv Chile ../North_America
-   $ mv Brazil  ../North_America
-8. $../ (back to World Directory)
-   $ rm -r South_America
-9. $ mkdir Americas
-   mv North_America Americas
+2. `$ cd Downloads`
+2. `$ mv World ..` (will move to parent directory, in this case the Desktop)
+3. `$ ../` (move back to the parent directory) and then  `$ ls`
+
+Part 2: 
+2. `$ cd World`
+3. `$ mkdir Antarctica`
+4. `$ ls`
+5. `$ cd World (only if pwd if not World)`
+6. `$ cd South America`
+   `$ ls`
+7. `$ mv Argentina ../North_America`
+   `$ mv Chile ../North_America`
+   `$ mv Brazil  ../North_America`
+8. `$../ (back to World Directory)`
+   `$ rm -r South_America`
+9. `$ mkdir Americas`
+   `mv North_America Americas`
 
 ### 1.3.1
 
