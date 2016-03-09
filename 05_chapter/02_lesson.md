@@ -79,7 +79,7 @@ var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 ```
 ## Other Ways to Define Your Functions
 
-Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations. You may run into a **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
 
 ```javascript
 function nameOfMyFunction (x) {
