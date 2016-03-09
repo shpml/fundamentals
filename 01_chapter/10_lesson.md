@@ -23,6 +23,8 @@ When we write a program, we need to figure out a way to translate the ideas that
 
 As tempting as it may be to jump right into a problem and start writing code, you'll find that taking a few minutes to focus on your approach will save you valuable time as you start writing actual code. Often during the planning process you'll think of scenarios you hadn't originally anticipated. As the old proverb goes, "Measure twice and cut once."
 
+## Writing Pseudo Code
+
 Take, for example, a program that lets a player know whether he or she has passed the current level. Pseudo code for this program might look like the following:
 
 ```
@@ -51,7 +53,7 @@ repeat forever
     turn off heater
 
 ```
-We first need to have the user enter a target temperature (in this case it is 72). Then we will continually check to see if the current temperature is less than the target temperature minus 5. If it is, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater.
+We first need to have the user enter a target temperature (in this case it is 72). Then we will continually check to see if the current temperature is less than the target temperature minus 5. If it is, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater. And it's as simple as that! 
 
 Breaking down problems in this fashion will likely seem a little foreign in the beginning. Once you gain some practice, though, this will become second nature.
 
