@@ -1,4 +1,4 @@
-# Unit Homework 4: Game Logic
+# Unit 4 Homework: Game Logic
 
 In Unit 4 we covered some game-changing concepts (pun intended). For example, can you guess what type of feature we can now begin to implement in our memory card game? If you guessed game logic, you're right! For this section's homework, you will implement your knowledge of conditionals to help with the task of creating your game logic.
 
