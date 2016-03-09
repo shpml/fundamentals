@@ -6,14 +6,9 @@
 
 Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays. 
 
-Instructions
-
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
-
 ### Let's get started!
+
+Open a new session in [repl.it](https://repl.it/) and start performing the actions listed below using repl.it's editor window. You'll want to click 'play' to run the code. Also try to call each function from the console window using different parameters to make sure they're working properly!
 
 #### Part 1
 
