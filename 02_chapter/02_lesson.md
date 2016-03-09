@@ -73,7 +73,7 @@ $ git add .
 $ git commit -m "message"
 ```
 
-Why stage? So that if you make multiple changes you can commit them seperately or all at once (basically, it exists to help you better organize your project history).
+Why stage? So that if you make multiple changes you can commit them separately or all at once (basically, it exists to help you better organize your project history).
 
 ![Git Staging Area](../assets/chapter2/add_commit.png)
 
