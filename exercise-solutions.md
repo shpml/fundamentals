@@ -11,12 +11,14 @@ The following solutions are for the Unit exercises. If you're looking for soluti
 ### 1.3.1
 
 Part 1: 
+
 1. Command + Space. Inside search bar type "Terminal"
 2. `$ cd Downloads`
 2. `$ mv World ..` (will move to parent directory, in this case the Desktop)
 3. `$ ../` (move back to the parent directory) and then  `$ ls`
 
 Part 2: 
+
 2. `$ cd World`
 3. `$ mkdir Antarctica`
 4. `$ ls`
