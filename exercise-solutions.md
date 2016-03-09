@@ -6,7 +6,7 @@ The following solutions are for the Unit exercises. If you're looking for soluti
 1. `$ cd Downloads`
 2. `$ cd World`
 3. `$ ls`
-4.  ***(# NEED SOLUTION)***
+4. `$ ls -a Europe`
 
 ### 1.3.1
 
