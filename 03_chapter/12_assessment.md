@@ -1,4 +1,4 @@
-# Unit 3 Homework
+# Unit 3 Homework: Getting Our Cards in Order
 
 Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
