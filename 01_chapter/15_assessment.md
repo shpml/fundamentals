@@ -1,9 +1,5 @@
-**WDI Fundamentals Unit 1**
+# Unit 1 Homework: Getting Organized!
 
----
-
-
-##![Your Turn](../assets/exercise.png) Your Turn
 
 Close and restart your Terminal application.
 
