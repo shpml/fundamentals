@@ -100,30 +100,6 @@ if (x > 5) {
 
 Try copying that whole statement into repl.it, and testing out different values for `x`. Were your answers correct?
 
-## The Ternary Operator (` __ ? __ : __ `)
-
-One of the simplest type of conditional statement found in JavaScript involves the **ternary** operator. Its syntax is as follows:
-
-  `some_expression ? truthy_value : falsy_value`
-
-The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy.
-
-Here's an example of a ternary operator with some actual values plugged in.
-
-  `true ? 1 : 2`
-
-Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
-
-Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x > 5) ? 10 : 20) &#42; 10</code> will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
-
-### Test Yourself
-Suppose that we have two variables, `x` and `y`.
-To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* <code>(x % 2 === 0) ? 'even' : 'odd'</code>
-* <code>(x > y) ? 1 : 0</code>
-* <code>(3) ? 100 : -100</code>
-* <code>('') ? 'hello' : 'goodbye'</code>
-
 
 ## Switch Statement
 
