@@ -20,7 +20,7 @@ Instructions
 * Create a function `addContact`, which accepts one parameter, `name`. It should add that name to the end of the contacts array and return the contacts array.
 * Create a function `updateLastContact`, which accepts one parameter, `newName`. It should update the last contact in the contacts array with the `newName` and return the contacts array.
 
-Once you're satisfied with the way things are working, feel free to move on to the next lesson. Be sure to save your repl.it session as you'll be using it in the next exercise as well.
+Once you're satisfied with the way things are working, feel free to move on to the next lesson. Be sure to save your repl.it session and keep your link as you'll be using it in the next exercise as well.
 
 > *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
