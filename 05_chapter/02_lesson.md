@@ -77,6 +77,17 @@ var a = tripleIt(1);                         // a === 3
 var b = 100 * tripleIt(4);                   // b === 1200
 var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 ```
+## Other Ways to Define Your Functions
+
+Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations. You may run into a **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+
+```javascript
+function nameOfMyFunction (x) {
+  // Body of the function 'nameOfMyFunction';
+}
+```
+
+But don't worry about this right now. We'll focus on function expressions for now!
 
 
 ### Test Yourself
@@ -96,14 +107,6 @@ What will each of the following expressions evaluate to?
 * glorp(glorp(1))
 
 Test your answers in repl.it by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
-
->Note: Function Expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations. You may run into a **function declarations**, which is a function that you can call later in your code. It typically looks like this:
-
-```javascript
-function nameOfMyFunction (x) {
-  // Body of the function 'nameOfMyFunction';
-}
-```
 
 ---
 
