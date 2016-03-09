@@ -1,4 +1,4 @@
-# Git and GitHub Preparation
+# Unit 2 Homework: Git and GitHub Preparation
 
 As you move through the next several chapters, you will be charged with creating a memory card game as your final assignment from WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use them to complete the assignment. In order to accomplish this, you will need to be able to access code that is located in GitHub's cloud. Follow the instructions below to get started!
 
