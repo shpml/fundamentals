@@ -14,14 +14,10 @@ Using the command line alone,
 
 1. Navigate into your `Downloads` directory 
 
-2. Move the `World` directory from `Downloads` to your home directory
+2. Move into the `World` directory from the `Downloads` directory
 
-3. Check to see if you successfully moved the `World` directory by listing the contents of your home directory
+3. List the contents of the `World` directory
 
-4. Change your working directory to your home directory, and then change to `World`
-
-5. List the contents of the `World` directory
-
-6. In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`.  Using only the command line, find out where in the World is Carmen Sandiego.
+4. In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`.  Using only the command line, find out where in the World is Carmen Sandiego.
 
 > Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
