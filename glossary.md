@@ -182,7 +182,7 @@ We can use parentheses to change the order of operations for logical operators, 
 
 <a name="4"></a>
 
-### `if...else` statement syntax
+#### `if...else` statement 
 
 ```javascript
 if (condition1) {
@@ -199,7 +199,7 @@ if (condition1) {
 
 * With `else if`, each additional condition will only be checked if all of the prior conditions have failed.
 
-### `switch` statement syntax
+#### `switch` statement 
 
 ```javascript
 switch (expression) {
@@ -214,14 +214,14 @@ switch (expression) {
   }
 ```
 
-## Loops
+#### Loops
 * Loops are used to tell our programs to take repeated action.
 
-### `while` Loops
+#### `while` Loops
 * `while` loops can run indefinitely, so long as the condition remains true.
 * The loop's condition is re-evaluated each time the block finishes running.
 
-### `for` Loops
+#### `for` Loops
 * A 'for' loop will generally run a fixed number of times, not indefinitely.
 * The three parameters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
 
@@ -229,8 +229,7 @@ switch (expression) {
 
 <a name="5"></a>
 
-### Functions
-
+#### Functions
 * A **function** is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).
 * Functions must be **defined** before they can be used. To define a function, use the following recipe:
 
@@ -247,7 +246,7 @@ myFunctionName()
 ```
 
 
-### `return` Statements
+#### `return` Statements
 * In addition to specifying a final value for the function to give back as a result, a `return` statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not `x`.
 
 ```javascript
@@ -259,9 +258,7 @@ var someFunc = function(x) {
 }
 ```
 
-## Using Functions in the Field
-
-### Best Practices for Writing Functions
+#### Best Practices for Writing Functions
 * In addition to functionality, making your code readable is one of the most critical things to consider.
 * Here are some guidelines that you can keep in mind:
   * Keep you functions small - don't try to do too much in one step.
@@ -270,7 +267,7 @@ var someFunc = function(x) {
   * Generally, don't hard-code specific values into your program if you can help it.
 
 
-### Problem Solving with Functions
+#### Problem Solving with Functions
 * Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
 * Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this [decomposition](http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29).
 
@@ -278,9 +275,7 @@ var someFunc = function(x) {
 
 <a name="6"></a>
 
-## Collections - Arrays
-
-### What is an Array?
+#### Collections - Arrays
   * An array is an ordered list of values; these values can be strings, booleans,
   numbers... even other arrays.
   * The values within an array, called **elements**, are accessed by their
@@ -292,7 +287,7 @@ var someFunc = function(x) {
   * To edit the value at some index `i`, simply act as if you were assigning a
   variable. e.g. <code>myArray[1] = 'f'</code>
 
-### Adding Complexity - Nested Arrays
+#### Nested Arrays
   * As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called **nesting**.
   * To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element's index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,
 
@@ -304,15 +299,14 @@ var someFunc = function(x) {
   you could access the element 'f' by writing `myNestedArray[1][2]`.
   * Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change. e.g. <code>myNestedArray[0][3] = 'z';</code>
 
-### Additional Array Features
+#### Additional Array Features
   * In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.
   * `.length` gives you the length of the array you call it on.
   * `.push()` adds a new element to the end of an array, and returns that element.
   * `.pop()` removes the last element in an array, and returns that element.
   * `.indexOf()` searches within your array for the first element that matches its parameter, and returns the index of that match; if no match is found, it returns -1.
 
-## Iterating Over Arrays
-### Iterating with Loops
+#### Iterating with Loops
   * `for` loops are an easy way to iterate through an array. The following will execute an arbitrary function `someFunction` for every element in array `myArray`, from left to right.
 
     ```javascript
@@ -322,13 +316,13 @@ var someFunc = function(x) {
     ```
   * To change the way that you iterate through the array, just change the settings of your `for` loop.
 
-### Iterator Functions
+#### Iterator Functions
 
   * `.map()` creates a new array with the results of calling a provided function on every element in this array.
 
   * `.forEach()` executes some function once for each element in the array it's called on.
 
-### Drawbacks of Ordinary Arrays
+#### Drawbacks of Ordinary Arrays
   * A typical array works by referencing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.
   * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
 ### Associative Arrays in JavaScript
