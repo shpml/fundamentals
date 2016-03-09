@@ -182,7 +182,7 @@ We can use parentheses to change the order of operations for logical operators, 
 
 <a name="4"></a>
 
-#### `if...else` statement 
+#### if...else statement 
 
 ```javascript
 if (condition1) {
@@ -196,10 +196,9 @@ if (condition1) {
 }
 ```
 
-
 * With `else if`, each additional condition will only be checked if all of the prior conditions have failed.
 
-#### `switch` statement 
+#### Switch Statement 
 
 ```javascript
 switch (expression) {
@@ -246,7 +245,7 @@ myFunctionName()
 ```
 
 
-#### `return` Statements
+#### return Statements
 * In addition to specifying a final value for the function to give back as a result, a `return` statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not `x`.
 
 ```javascript
@@ -265,7 +264,6 @@ var someFunc = function(x) {
   * Use good naming for functions and variables. Call things what they are!
   * Avoid repetitive code, where possible.
   * Generally, don't hard-code specific values into your program if you can help it.
-
 
 #### Problem Solving with Functions
 * Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
@@ -331,5 +329,6 @@ var someFunc = function(x) {
   * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray['myKey'] = 'aValue'</code>
   * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray['someNewKey'] = 'someNewValue'</code>
   * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
+  
 ---
 
