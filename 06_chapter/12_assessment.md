@@ -80,4 +80,4 @@ function isTwoCards() {
 
 #### Deliverable
 
-When finished, push your code to your GitHub repository!
+When finished, don't forget to **Add**, **Commit** and **Push** your code to your GitHub repository!
