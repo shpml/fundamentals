@@ -1,4 +1,4 @@
-**WDI Fundamentals Glossary**
+# **WDI Fundamentals Glossary**
 
 
 |Unit Cheat Sheets |
@@ -12,7 +12,6 @@
 
 ---
 <a name="1"></a>
-# Command Line
 
 #### Command Line
 * A text-based interface.
@@ -63,7 +62,6 @@ Command | Description
 ---
 
 <a name="2"></a>
-# Git
 
 #### Git
 * An open source program for tracking changes in text files. It was written by the author of the Linux operating system, and is the core technology that GitHub, the social and user interface, is built on top of.
@@ -115,7 +113,6 @@ Command                                    | Description
 ---
 
 <a name="3"></a>
-# Expressions & Variables
 
 #### Expressions
   * An expression is a statement composed of values/data and operators
@@ -184,22 +181,6 @@ We can use parentheses to change the order of operations for logical operators, 
 ---
 
 <a name="4"></a>
-# Control Flow
-
-## Conditionals
-
-### Ternary Operator
-* The ternary operator takes in a condition; depending on whether that condition is truthy or falsey, the operator will evaluate to one of two specified values.
-
-  ```javascript
-  (x > 10) ? 'Greater than 10.' : 'Less than 10.';
-  ```
-
-* It can also be used inside larger expressions.
-
-  ```javascript
-  'Today is ' + ((temp > 70) ? '' : 'not') + ' hot.';
-  ```
 
 ### `if...else` statement syntax
 
@@ -247,11 +228,8 @@ switch (expression) {
 ---
 
 <a name="5"></a>
-# Functions
 
-## Functions
-
-### Defining and Using JavaScript Functions
+### Functions
 
 * A **function** is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).
 * Functions must be **defined** before they can be used. To define a function, use the following recipe:
@@ -299,9 +277,9 @@ var someFunc = function(x) {
 ---
 
 <a name="6"></a>
-# Collections Cheatsheet
 
 ## Collections - Arrays
+
 ### What is an Array?
   * An array is an ordered list of values; these values can be strings, booleans,
   numbers... even other arrays.
@@ -350,7 +328,6 @@ var someFunc = function(x) {
 
   * `.forEach()` executes some function once for each element in the array it's called on.
 
-## Collections - Associative Arrays
 ### Drawbacks of Ordinary Arrays
   * A typical array works by referencing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.
   * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
