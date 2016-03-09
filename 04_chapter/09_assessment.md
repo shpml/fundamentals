@@ -7,7 +7,7 @@ In Unit 4 we covered some game-changing concepts (pun intended). For example, ca
 #### Requirements
 
 Based on whether or not your user discovers a match, notify them with a winning or losing message in a popup message using `alert`.
-**Hint:** What's an `alert`? Check out the documentation [here](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert).
+**Hint:** What's an `alert`? Check out the documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>
 
 >**Note:** In some of our other exercises we have used `console.log` to give feedback from our code. However, as we start to have a more "user facing" mindset, we begin to code in a way that makes more sense for the user. For our game, this means notifying about a win or a loss with a popup rather than in the console where a user will most likely never look.
 
@@ -46,7 +46,7 @@ When the `alert`s are working properly, you should see:
 
 #### Deliverable
 
-You'll want to keep track of all your hard work, so don't forget to ACP. Add, Commit and Push that code to GitHub!
+You'll want to keep track of all your hard work, so don't forget to ACP. **Add**, **Commit** and **Push** that code to GitHub!
 
 ---
 [Next up: Chapter 5](../05_chapter/intro.md)
