@@ -9,6 +9,7 @@
 |[Control Flow](#4)|
 |[Functions](#5)|
 |[Arrays](#6)|
+
 ---
 <a name="1"></a>
 # Command Line
@@ -60,6 +61,7 @@ Command | Description
 
 
 ---
+
 <a name="2"></a>
 # Git
 
@@ -111,6 +113,7 @@ Command                                    | Description
 `git push origin master`                   | Send local changes to tracked remote repository
 
 ---
+
 <a name="3"></a>
 # Expressions & Variables
 
@@ -293,6 +296,8 @@ var someFunc = function(x) {
 * Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
 * Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this [decomposition](http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29).
 
+---
+
 <a name="6"></a>
 # Collections Cheatsheet
 
@@ -357,4 +362,3 @@ var someFunc = function(x) {
   * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
 ---
 
----
