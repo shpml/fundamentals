@@ -66,6 +66,3 @@
 
 ---
 [Project Time!](12_assessment.md)
-
-<p data-height="268" data-theme-id="0" data-slug-hash="GgMXEm" data-default-tab="result" data-user="nevan" class="codepen">See the Pen <a href="http://codepen.io/nevan/pen/GgMXEm/">Traffic Light JS</a> by Nevan Scott (<a href="http://codepen.io/nevan">@nevan</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
