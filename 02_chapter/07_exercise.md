@@ -8,7 +8,7 @@ GitHub enables you to host and share website files online, similar to the way Dr
 
 Let’s walk through this process:
 
-#### Create a GitHub account 
+### Create a GitHub account 
 
 1. To start, let’s head over to GitHub.com. The first thing we’ll do is create a username by clicking on the field at the top right of the screen. 
 
@@ -26,7 +26,7 @@ All we need to do on this page is make sure that “Free” is chosen as our per
 
 ***GitHub will send you an email asking you to verify your account. Take a moment to do this now. If you do not verify your email address, your page will not work.***
 
-#### Creating a New Repository
+### Creating a New Repository
 
 In GitHub, the public folder in the cloud where you can store, update, and share all the files that make up your website is called a “repository”. 
 
