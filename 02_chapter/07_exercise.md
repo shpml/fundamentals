@@ -22,9 +22,6 @@ Clicking that button brings us to the following page:
 
  ![Choose the Free Plan](../assets/chapter2/step2.png)
 
-	c. Congratulations! You're officially a Github user, with your very own dashboard:
- ![You're done!](../assets/chapter2/step3.png)
-
 All we need to do on this page is make sure that “Free” is chosen as our personal plan. It should be pre-selected; however, if it’s not, make sure to click on it. Then, press the “Finish Sign Up” button.
 
 ***GitHub will send you an email asking you to verify your account. Take a moment to do this now. If you do not verify your email address, your page will not work.***
@@ -41,11 +38,9 @@ To keep it really simple for this example, we’ll just name our first repositor
 
 After naming our new repository, we don’t need to adjust any other settings, so we’ll just click on “Create Repository.”
 
- ![Choose a Username](../assets/chapter2/step3.png)
+![You're done!](../assets/chapter2/step3.png)
  
 c. Congratulations! You're officially a Github user, with your very own dashboard and new repository!
-
-
 
 
 ---
