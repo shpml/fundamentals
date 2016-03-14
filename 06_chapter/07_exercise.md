@@ -4,23 +4,31 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Let's go back to the 'checkerboard' code we wrote for the last exercise. This time, you'll be tasked with using what you've just learned about iteration to write a couple of brand new functions:
+Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays. 
 
-* `clearBoard()`
+Instructions
 
-    This function will go through every cell in `checkerboard` (see previous exercise) and set that cell's value to `null`.
+1. Open a new session in [repl.it](https://repl.it/).
+2. Write the code to perform the actions listed below, using repl.it's editor window.
+3. Click 'play' to run the code.
+4. Call each function from the console window. Try using different parameters to make sure they're working properly.
 
-* `setUpRed()`
+### Let's get started!
 
-    This function will set up the red pieces on our checkerboard by setting the value of each cell that should hold a red piece to 'R'. For the purposes of this exercise, assume that the red pieces should be laid out at the 'top' of the board, just like in the picture below.
+#### Part 1
 
-    ![Picture of Checkerboard](../assets/Graphics/checkers.jpg)
+1. Create an array `cups` containing numbers 1 - 10.
+2. Create an empty array `ounces`.
+3. Write a function `convertToOunces`. It should iterate through the cups array, convert each item from cups to ounces, and then add that item to the ounces array. Return the value of ounces after looping through the items and before the function ends.
 
-* `setUpBlack()`
+#### Part 2
 
-    This function should work similarly to `setUpRed`, placing black pieces ('B') on the board at the positions indicated in the picture.
+1. Create an array `scores` containing the numbers 83, 40, 55, 72, 59, 88, and 99.
+2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array. 
 
-Feel free to use either loops or iterators to write these functions - just make sure that they act *exactly* like the descriptions.
+Feeling comfortable with these exercises? Take a look at the last lesson!
+
+> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
 ---
 

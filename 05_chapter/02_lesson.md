@@ -20,6 +20,8 @@ Next, we write a list of the input values we'd like to use, enclosed in parenthe
 
 Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
 
+We'll focus on using **function expression** for these lessons. Let's look at an example:
+
 Let's look at an example:
 
 ```javascript
@@ -75,6 +77,17 @@ var a = tripleIt(1);                         // a === 3
 var b = 100 * tripleIt(4);                   // b === 1200
 var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 ```
+## Other Ways to Define Your Functions
+
+Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+
+```javascript
+function nameOfMyFunction (x) {
+  // Body of the function 'nameOfMyFunction';
+}
+```
+
+But don't worry about this right now. We'll focus on function expressions for now!
 
 
 ### Test Yourself

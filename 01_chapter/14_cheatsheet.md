@@ -50,7 +50,7 @@ Command | Description
 `mv [-options] [path/to/file] [NEW_FILE_NAME]` | Renames a file or directory.
 
 
-Your Terminal comes with a manual, and to access more (*a lot more*) information about any command, type <code>man</code> followed by the command name and press <kbd>Enter</kbd>:
+On Mac, your Terminal comes with a manual, and to access more (*a lot more*) information about any command, type <code>man</code> followed by the command name and press <kbd>Enter</kbd>:
 
 ![manual](../assets/chapter1/terminal_man.gif)
 
@@ -58,4 +58,4 @@ You can scroll through a manual entry with the arrow keys or space bar. To quit 
 
 ---
 
-Feeling confident? [Let's take what we've learned and apply it to a project.](11_assessment.md)
+Feeling confident? [Let's take what we've learned and apply it to a project.](15_assessment.md)
