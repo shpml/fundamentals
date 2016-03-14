@@ -165,7 +165,8 @@ var addContact = function (name) {
 
  findContact(3);
  addContact("Suzie");
- updateLastContact("Sue Miller");```
+ updateLastContact("Sue Miller");
+ ```
  
 
 ### 6.2.1
@@ -197,7 +198,8 @@ convertToOunces();
  };
 
 
- passOrFail();```
+ passOrFail();
+ ```
 
 
 ### 6.3.1
@@ -229,4 +231,5 @@ var scores = [83, 40, 55, 72, 59, 88, 99];
  };
 
 
- passOrFail();```
+ passOrFail();
+ ```
