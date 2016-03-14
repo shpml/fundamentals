@@ -1,19 +1,42 @@
-# Unit 5 Homework: Organizing Code and Creating Dynamic HTML
+**WDI Fundamentals Unit 4**
 
-Your code is slowly but surely starting to get more robust. To better organize the code you've already written, as well as prepare for the code you will write, now, we will take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
+---
 
-JavaScript comes with several "built-in" functions that we can call on using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as _methods_.
+## Project
 
-For example, let's look at `document.createElement('div')` which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
+Now that we've learned a bit more about how Functions work in JavaScript, let's revisit our 'Rock Paper Scissors' project.
 
-- `document` is a readily available JS object. (An object is basically an associative array It stores key-value pairs, and unlike arrays, is not ordered).  
-- `createElement` is the method it comes with
-  - This method performs the functionality of creating a new HTML element.
-  - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
+---
 
-In this case, we passed `createElement` and argument of `'div'` so a `div` element is created. If you'd like, you can go ahead and run that line of code, `document.createElement('div')`, in your browser's console to get see it in action.
 
-Besides `createElement`, the `document` object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className), as well as one for adding innerHTML, [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). On top of those methods that allow you to construct an element, there's also the method [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) that aids in attaching the element to an element on your web page.
+Go back to `RockPaperScissors.js`, and scroll down to the following code:
+
+```javascript
+var playToFive = function() {
+  console.log('Let\'s play Rock Paper Scissors');
+  var playerWins = 0;
+  var computerWins = 0;
+  // This function should continue to play Rock Paper Scissors until either the
+  // player or the computer has won five times.
+  // After each 'round', display some text in the console indicating who played
+  // what, who won, and what the current scoreboard looks like.
+  // For example,
+  //  console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
+  //  console.log('The score is currently ' + playerWins + ' to ' + computerWins + '\n');
+  /* YOUR CODE HERE */
+  return [playerWins, computerWins];
+}
+```
+
+As you might infer from the title, the purpose of this function is to run the 'Rock Paper Scissors' game until either the player or the computer has won a total of five games.
+
+Please write whatever code will be necessary for this function to work.
+
+Once your code is working, you can commit your changes and move on to the next chapter.
+
+[Next up: Chapter 6](../06_chapter/intro.md)
+
+> If you are interested in an additional challenge, try writing another function called `playTo(x)` that allows us to play Rock Paper Scissors until either the player or the computer has won `x` times. Feel free to steal liberally from `playToFive()`.
 
 To complete this assignment, you will need to utilize these methods.
 
