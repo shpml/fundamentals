@@ -1,6 +1,6 @@
 # Unit 2 Homework: Git and GitHub Preparation
 
-As you move through the next several chapters, you will be charged with creating a memory card game as your final assignment from WDI Fundamentals.*The memory game build should take you approximately 2 hours to complete.* This includes going through all of the individual unit exercises as you work towards the final game. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use them to complete the assignment. In order to accomplish this, you will need to be able to access code that is located in GitHub's cloud. Follow the instructions below to get started!
+As you move through the next several chapters, you will be building parts of browser memory game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.*Building this memory game should take you approximately 2 hours* - this includes going through all of the individual unit exercises as you work towards the final game. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment. In order to accomplish this, you will need to access code that is located on GitHub's servers. Follow the instructions below to get started!
 
 ## Exercise
 
@@ -19,7 +19,7 @@ As you move through the next several chapters, you will be charged with creating
 
 3. Go take a look and confirm that you now have a copy of `wdi-fundamentals-memorygame` in your list of repositories.
 
-4. Open your fork of the repo (and note that Github lists your repo as a fork of the original).
+4. Open your fork of the repo (and note that Github lists your repo as a fork of the original repository).
 
   ![Image showing "forked from ga-students/wdi-fundamentals-rps"](../assets/chapter2/clone_ga-students.png)
 
@@ -27,15 +27,15 @@ As you move through the next several chapters, you will be charged with creating
 
   ![Image showing "clone HTTP address"](../assets/chapter2/clone_http.png)
 
-6. Open up the terminal application on your computer, and navigate to the `fundamentals` directory within your home directory.
+6. Open up the terminal application on your computer and navigate to the `fundamentals` directory within your home directory.
   Once there, run the following Git command from command line:
 <br>
 `git clone https://your/clone/url` (substituting the clone URL you copied above)
 <br>
-  This will copy your forked repo from GitHub to your own computer, so that you can work on it.
+  This will copy your forked repo from GitHub to your computer, so that you can work on it locally.
 
-7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-memorygame`. This repository contains three folders and a couple of other files.  The ONLY file we're expecting you to edit for this project is `main.js` - it can be found at `wdi-fundamentals-memorygame/starter-code/main.js`.
+7. If you have followed these directions correctly, now, you should have a repository in your `fundamentals` folder called `wdi-fundamentals-memorygame`. This repository contains three folders and a couple of other files.  For this project, the ONLY file we're expecting you to edit is `main.js` - it can be found at `wdi-fundamentals-memorygame/starter-code/main.js`.
 
 ---
 
-That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/intro.md).
+That's it for now! We'll be coming back to this project at the end of every chapter, but now, it's time to move on to [Chapter 3](../03_chapter/intro.md).
