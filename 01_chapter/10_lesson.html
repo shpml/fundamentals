@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Exercise | WDI Fundamentals</title>
+        <title>Thinking Programmatically | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.0">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../04_chapter/05_lesson.html" />
+    <link rel="next" href="../01_chapter/11_exercise.html" />
     
     
-    <link rel="prev" href="../04_chapter/02_lesson.html" />
+    <link rel="prev" href="../01_chapter/09_exercise.html" />
     
 
         
@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="4.1.1" data-basepath=".." data-revision="Mon Mar 14 2016 23:01:59 GMT+0000 (UTC)">
+    <div class="book" data-level="1.4" data-basepath=".." data-revision="Mon Mar 14 2016 23:01:59 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -217,7 +217,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="01_chapter/10_lesson.html">
+        <li class="chapter active" data-level="1.4" data-path="01_chapter/10_lesson.html">
             
                 
                     <a href="../01_chapter/10_lesson.html">
@@ -647,7 +647,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.1.1" data-path="04_chapter/04_exercise.html">
+        <li class="chapter " data-level="4.1.1" data-path="04_chapter/04_exercise.html">
             
                 
                     <a href="../04_chapter/04_exercise.html">
@@ -1178,30 +1178,42 @@
                 
                     <section class="normal" id="section-">
                     
-                        <p><strong>WDI Fundamentals Unit 4</strong></p>
+                        <p><strong>WDI Fundamentals Unit 1</strong></p>
 <hr>
-<h2 id="your-turn">Your Turn</h2>
-<p>Follow <a href="http://repl.it/9nF" target="_blank">this link</a> to some sample code in a repl.it session - it should contain the following code:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x;
-<span class="hljs-keyword">var</span> result;
-<span class="hljs-comment">/* YOUR CODE HERE */</span>
-</code></pre>
-<p>This exercise may be familiar to some of you - your job is to write some code that, depending on the value of <code>x</code>, assigns one of several values to <code>result</code>:</p>
-<ul>
-<li>If <code>x</code> is evenly divisible by 3 (for example, 3, 6, or 9), set <code>result</code> to &quot;fizz&quot;.</li>
-<li>If <code>x</code> is evenly divisible by 5 (for example, 5 or 10), set <code>result</code> to &quot;buzz&quot;.</li>
-<li>If <code>x</code> is evenly divisible by both 3 and 5 (for example, 0 or 15), set <code>result</code> to &quot;fizzbuzz&quot;.</li>
-<li>If <code>x</code> is not evenly divisible by either 3 or 5 (for example, 7), set <code>result</code> to <code>x</code>.</li>
-</ul>
-<blockquote>
-<p>Don&apos;t remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (<code>%</code>) operator.</p>
-</blockquote>
-<p>To test your code, set a value for <code>x</code> in the editor and click &apos;play&apos;. Did you get the result you expected? Try out a bunch of different values for <code>x</code>, just to be sure.</p>
-<blockquote>
-<p><em>Stuck? Check out the <a href="https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md" target="_blank">solutions</a> to see what you can do.</em></p>
-</blockquote>
+<h2 id="thinking-programmatically">Thinking Programmatically</h2>
+<p>Before you set out to write a program it is important to understand how computers &quot;think.&quot; Computers solve problems differently than you or I might. They do not learn to perform tasks but need detailed, step-by-step instructions every time they perform a task.</p>
+<p>The only things a computer knows are the things we tell it.</p>
+<p>If you&apos;re having friends over for dinner and would like to cook up a new dish, you&apos;ll most likely find an interesting recipe and follow the instructions step-by-step in order to make something you&apos;ve never made before.</p>
+<p>Similarly, a <strong>program</strong> is a series of instructions that a computer can follow to achieve a goal.</p>
+<p><strong>Programming</strong> is the task of writing those instructions in a language that the computer can understand.</p>
+<h2 id="pseudo-code">Pseudo Code</h2>
+<p>When we write a program, we need to figure out a way to translate the ideas that are in our heads into code.</p>
+<p><strong>Pseudo code</strong> is a way to plan out your program before coding it. It is a detailed, step-by-step description of what a computer must do, expressed in plain English rather than in a programming language.</p>
+<p>As tempting as it may be to jump right into a problem and start writing code, you&apos;ll find that taking a few minutes to focus on your approach will save you valuable time as you start writing actual code. Often during the planning process you&apos;ll think of scenarios you hadn&apos;t originally anticipated. As the old proverb goes, &quot;Measure twice and cut once.&quot;</p>
+<h2 id="writing-pseudo-code">Writing Pseudo Code</h2>
+<p>Take, for example, a program that lets a player know whether he or she has passed the current level. Pseudo code for this program might look like the following:</p>
+<pre><code>passingScore = 150 points
+get playerScore
+
+if playerScore &gt;= passingScore
+    display message &quot;Current level: Passed&quot;
+otherwise
+    display message &quot;Current level: Failed&quot;
+</code></pre><p>Again, the goal is to think through the problem and <em>break it down into simple steps</em>, which can then be written out in code. Since there are no formal rules as to how pseudo code must be written, each person&apos;s version will likely vary slightly. Indentation is often used to keep statements organized and grouped together.</p>
+<p>As another example, perhaps we want to create a thermostat program that turns on the heat when the current room temperature is less than the target temperature.</p>
+<pre><code>get targetTemperature
+targetTemperature = 72
+repeat forever
+  currentTemperature = get sensor reading
+  if currentTemperature &lt; (targetTemperature - 5),
+    turn on heater
+  if currentTemperature &gt;= targetTemperature,
+    turn off heater
+</code></pre><p>We first need to have the user enter a target temperature (in this case it is 72). Then we will continually check to see if the current temperature is less than the target temperature minus 5. If it is, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater. And it&apos;s as simple as that! </p>
+<p>Breaking down problems in this fashion will likely seem a little foreign in the beginning. Once you gain some practice, though, this will become second nature.</p>
+<p>Many of the programs that you&apos;ll be working on in the following chapters might seem a little daunting at first. Instead of trying to tackle a problem all at once, take a few minutes to think about the overall goal of the program and then break that down into series of short instructions. It will surely be time well spent.</p>
 <hr>
-<p><a href="05_lesson.html">Next: Loops</a></p>
+<p>Now it&apos;s your turn. Get some practice writing pseudo code <a href="11_exercise.html">in this exercise</a>.</p>
 
                     
                     </section>
@@ -1212,10 +1224,10 @@
         </div>
 
         
-        <a href="../04_chapter/02_lesson.html" class="navigation navigation-prev " aria-label="Previous page: Conditionals"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_chapter/09_exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../04_chapter/05_lesson.html" class="navigation navigation-next " aria-label="Next page: Loops"><i class="fa fa-angle-right"></i></a>
+        <a href="../01_chapter/11_exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
