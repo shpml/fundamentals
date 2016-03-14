@@ -1,21 +1,21 @@
 # Unit 5 Homework: Organizing Code and Creating Dynamic HTML
 
-Your code is slowly but surely starting to get more robust. To better organize the code you've already written as well as prepare for the code you will write, we will now take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
+Your code is slowly but surely starting to get more robust. To better organize the code you've already written, as well as prepare for the code you will write, now, we will take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
 
-JavaScript comes with built-in functions we can call upon JavaScript objects with dot notation. These functions are no different than the functions we just covered, but they are more commonly known as _methods_.
+JavaScript comes with built-in functions we can call on JavaScript objects using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as _methods_.
 
 For example, let's look at `document.createElement('div')` which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
 
 - `document` is a readily available JS object
-- `createElement` is the function/method it comes with
+- `createElement` is the method it comes with
   - This method performs the functionality of creating a new HTML element.
-  - Just like with the functions we've learned about, we can pass in arguments for them to use.
+  - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
 
-In this case, we passed `createElement` and argument of `'div'` so a `div` element is created. If you'd like, you could go ahead and run that line of code, `document.createElement('div')`, in your browser's console to get a further understanding.
+In this case, we passed `createElement` and argument of `'div'` so a `div` element is created. If you'd like, you can go ahead and run that line of code, `document.createElement('div')`, in your browser's console to get see it in action.
 
-Besides `createElement`, the `document` object comes with various other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className), as well as one for adding innerHTML, [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). On top of those methods which allow you to construct an element, there's also the method [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) which aids in actually attaching the element to an element in your web page.
+Besides `createElement`, the `document` object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className), as well as one for adding innerHTML, [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). On top of those methods that allow you to construct an element, there's also the method [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) that aids in attaching the element to an element on your web page.
 
-In order to complete this assignment you will need to utilize these methods.
+To complete this assignment, you will need to utilize these methods.
 
 >**Note:** In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp).
 
@@ -33,12 +33,12 @@ In order to complete this assignment you will need to utilize these methods.
 
 ###### Create functions to organize your code:
 
-- create a function called `createBoard` which creates the HTML for your cards and appends the resulting HTML to your `div` that has the class board
+- create a function called `createBoard` that creates the HTML for your cards and appends the resulting HTML to your `div` that has the class board
 - execute/fire your `createBoard` function so it runs
 
 #### Below are the steps to complete the assignment.
 
-1) Find the board and set it to a variable. See below.
+1) Find the board and set it equal to a variable. See below.
 
 ```js
 var board = document.getElementsByClassName('board')[0];
@@ -47,7 +47,7 @@ var board = document.getElementsByClassName('board')[0];
 2) Create a `for loop` that will iterate four times. No hints here!
 
 
-3) Create the required HTML for each card on each iteration and append to the board and place inside the `for loop`. See below for hint.
+3) Create the required HTML for each card on each iteration and append this HTML to the board - add this logic inside the `for loop`. See below for hint.
 
 ```js
 
@@ -63,11 +63,11 @@ var board = document.getElementsByClassName('board')[0];
 }
 ```
 
-4) Create `createBoard` function.
+4) Create a `createBoard` function.
 
-5) Add your board creation logic to the function from Step 1, 2 & 3.
+5) Add your board creation logic to the function from steps 1, 2 & 3.
 
-6) Execute `createBoard`
+6) Execute the `createBoard` function.
 
 #### Deliverable
 
