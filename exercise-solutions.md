@@ -144,6 +144,7 @@ var fizzBuzz = function(num){
 ```
 
 ### 6.1.1
+
 ```js
 var contacts = ["Matt Smith", "Sam Davis", "Ashley Jones"];
 
