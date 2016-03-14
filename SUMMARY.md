@@ -58,3 +58,5 @@
 	* [Quiz](06_chapter/09_quiz.md)
 	* [Cheat Sheet](06_chapter/11_cheatsheet.md)
 	* [Unit 6 Homework](06_chapter/12_assessment.md)
+* [Exercise Solutions](exercise-solutions.md)
+* [Glossary](glossary.md)
