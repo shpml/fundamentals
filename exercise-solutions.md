@@ -1,6 +1,6 @@
 # UNIT EXERCISES: SOLUTIONS
 
-The following solutions are for the Unit exercises. If you're looking for solutions for the unit homeworks, go to the [Memory Game repository](https://github.com/jeannyvaidya/wdi-fundamentals-memorygame) and look inside the `solution folder`for individual unit homework solutions.
+The following solutions are for the Unit exercises. If you happen to be looking for solutions for the unit homeworks, go to the [Memory Game repository](https://github.com/jeannyvaidya/wdi-fundamentals-memorygame) and look inside the `solution folder`for individual unit homework solutions.
 
 ### 1.2.1
 1. `$ cd Downloads`
@@ -145,7 +145,7 @@ var fizzBuzz = function(num){
 
 ### 6.1.1
 
-```js
+```javascript
 var contacts = ["Matt Smith", "Sam Davis", "Ashley Jones"];
 
 var addContact = function (name) {
@@ -170,7 +170,7 @@ var addContact = function (name) {
 
 ### 6.2.1
 
-```js
+```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var ounces = [];
 
@@ -202,7 +202,7 @@ convertToOunces();
 
 ### 6.3.1
 
-```js
+```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var ounces = [];
 
