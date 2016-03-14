@@ -1,15 +1,5 @@
 # **WDI Fundamentals Glossary**
 
-
-|Unit Cheat Sheets |
-|----|
-|[Command Line](#1)|
-|[Git](#2)|
-|[Expressions and Variables](#3)|
-|[Control Flow](#4)|
-|[Functions](#5)|
-|[Arrays](#6)|
-
 ---
 <a name="1"></a>
 
@@ -182,7 +172,7 @@ We can use parentheses to change the order of operations for logical operators, 
 
 <a name="4"></a>
 
-#### if...else statement 
+#### if...else statement
 
 ```javascript
 if (condition1) {
@@ -198,7 +188,7 @@ if (condition1) {
 
 * With `else if`, each additional condition will only be checked if all of the prior conditions have failed.
 
-#### Switch Statement 
+#### Switch Statement
 
 ```javascript
 switch (expression) {
@@ -329,6 +319,5 @@ var someFunc = function(x) {
   * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray['myKey'] = 'aValue'</code>
   * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray['someNewKey'] = 'someNewValue'</code>
   * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
-  
----
 
+---
