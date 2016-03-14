@@ -1,7 +1,6 @@
 # **WDI Fundamentals Glossary**
 
 ---
-<a name="1"></a>
 
 #### Command Line
 * A text-based interface.
@@ -51,7 +50,6 @@ Command | Description
 
 ---
 
-<a name="2"></a>
 
 #### Git
 * An open source program for tracking changes in text files. It was written by the author of the Linux operating system, and is the core technology that GitHub, the social and user interface, is built on top of.
@@ -102,7 +100,6 @@ Command                                    | Description
 
 ---
 
-<a name="3"></a>
 
 #### Expressions
   * An expression is a statement composed of values/data and operators
@@ -170,7 +167,6 @@ We can use parentheses to change the order of operations for logical operators, 
 
 ---
 
-<a name="4"></a>
 
 #### if...else statement
 
@@ -216,7 +212,7 @@ switch (expression) {
 
 ---
 
-<a name="5"></a>
+
 
 #### Functions
 * A **function** is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).
@@ -261,7 +257,6 @@ var someFunc = function(x) {
 
 ---
 
-<a name="6"></a>
 
 #### Collections - Arrays
   * An array is an ordered list of values; these values can be strings, booleans,

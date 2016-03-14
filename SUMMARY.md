@@ -60,4 +60,3 @@
 	* [Unit 6 Homework](06_chapter/12_assessment.md)
 * [Exercise Solutions](exercise-solutions.md)
 * [Glossary](glossary.md)
-
