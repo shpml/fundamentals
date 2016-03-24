@@ -40,7 +40,7 @@
     
 
         
-    <div class="book" data-level="7" data-basepath="." data-revision="Mon Mar 21 2016 18:41:13 GMT+0000 (UTC)">
+    <div class="book" data-level="7" data-basepath="." data-revision="Thu Mar 24 2016 21:06:02 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1351,33 +1351,57 @@ convertToOunces();
  passOrFail();
 </code></pre>
 <h3 id="6-3-1">6.3.1</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cups = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>];
-<span class="hljs-keyword">var</span> ounces = [];
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> contacts = [
+  {
+  <span class="hljs-string">&apos;firstName&apos;</span> : <span class="hljs-string">&apos;John&apos;</span>,
+  <span class="hljs-string">&apos;lastName&apos;</span> : <span class="hljs-string">&apos;Doe&apos;</span>,
+  <span class="hljs-string">&apos;phone&apos;</span> : <span class="hljs-string">&apos;(512) 355-0453&apos;</span>,
+  <span class="hljs-string">&apos;email&apos;</span> : <span class="hljs-string">&apos;johndoe@email.com&apos;</span>
+  },
+  {
+  <span class="hljs-string">&apos;firstName&apos;</span> : <span class="hljs-string">&apos;Jane&apos;</span>,
+  <span class="hljs-string">&apos;lastName&apos;</span> : <span class="hljs-string">&apos;Doe&apos;</span>,
+  <span class="hljs-string">&apos;phone&apos;</span> : <span class="hljs-string">&apos;(512) 355-0453&apos;</span>,
+  <span class="hljs-string">&apos;email&apos;</span> : <span class="hljs-string">&apos;janedoe@email.com&apos;</span>
+  },
+  {
+  <span class="hljs-string">&apos;firstName&apos;</span> : <span class="hljs-string">&apos;Suzie&apos;</span>,
+  <span class="hljs-string">&apos;lastName&apos;</span> : <span class="hljs-string">&apos;Smith&apos;</span>,
+  <span class="hljs-string">&apos;phone&apos;</span> : <span class="hljs-string">&apos;(512) 355-0453&apos;</span>,
+  <span class="hljs-string">&apos;email&apos;</span> : <span class="hljs-string">&apos;suziesmith@email.com&apos;</span>
+  }
+];
 
-<span class="hljs-keyword">var</span> convertToOunces = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; cups.length; i++) {
-        ounces.push(cups[i] * <span class="hljs-number">8</span>);
+<span class="hljs-keyword">var</span> newbie = {
+  <span class="hljs-string">&apos;firstName&apos;</span> : <span class="hljs-string">&apos;John&apos;</span>,
+  <span class="hljs-string">&apos;lastName&apos;</span> : <span class="hljs-string">&apos;Doe&apos;</span>,
+  <span class="hljs-string">&apos;phone&apos;</span> : <span class="hljs-string">&apos;(512) 355-0453&apos;</span>,
+  <span class="hljs-string">&apos;email&apos;</span> : <span class="hljs-string">&apos;johndoe@email.com&apos;</span>
+};
+
+
+<span class="hljs-keyword">var</span> listContacts = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; contacts.length; i++) {
+    <span class="hljs-built_in">console</span>.log(contacts[i][<span class="hljs-string">&apos;firstName&apos;</span>] + <span class="hljs-string">&apos; &apos;</span> + contacts[i][<span class="hljs-string">&apos;lastName&apos;</span>]);
+  }
+};
+
+<span class="hljs-keyword">var</span> search = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(name)</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; contacts.length; i++) {
+    <span class="hljs-keyword">if</span> (contacts[i][<span class="hljs-string">&apos;firstName&apos;</span>] === name || contacts[i][<span class="hljs-string">&apos;lastName&apos;</span>] === name) {
+      <span class="hljs-keyword">return</span> contacts[i];
     }
-    <span class="hljs-built_in">console</span>.log(ounces);
- };
+  }
+};
 
-convertToOunces();
+<span class="hljs-keyword">var</span> addContact = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(newContact)</span> </span>{
+  contacts.push(newContact);
+  <span class="hljs-keyword">return</span> contacts;
+};
 
-<span class="hljs-keyword">var</span> scores = [<span class="hljs-number">83</span>, <span class="hljs-number">40</span>, <span class="hljs-number">55</span>, <span class="hljs-number">72</span>, <span class="hljs-number">59</span>, <span class="hljs-number">88</span>, <span class="hljs-number">99</span>];
-
- <span class="hljs-keyword">var</span> passOrFail = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
-   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; scores.length; i++) {
-         <span class="hljs-keyword">if</span> (scores[i] &gt;= <span class="hljs-number">60</span>) {
-             scores[i] = <span class="hljs-string">&apos;pass&apos;</span>;
-         } <span class="hljs-keyword">else</span> {
-             scores[i] = <span class="hljs-string">&apos;fail&apos;</span>
-         }
-     }
-     <span class="hljs-keyword">return</span> scores;
- };
-
-
- passOrFail();
+addContact(newbie);
+listContacts();
+search(<span class="hljs-string">&apos;Suzie&apos;</span>);
 </code></pre>
 
                     
