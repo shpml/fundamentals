@@ -1,24 +1,18 @@
 **WDI Fundamentals Unit 3**
 ---
 
-#Text Editors and Browsers
+#Internet vs The World Wide Web
 
-With the variety of text editors out there, it's hard to figure out which one to use and how to use them. Each text editor has their own functionalities and settings. Watch the video below to get an understanding of best practices when choosing an editor and browser.
+Before we get started with hacking away and coding, it's pretty important that we understand how the web works. The internet and the world wide web are very different entities, however, they are often used interchangeably. We'll clarify some of the misconceptions about the two. Try to answer the following questions first:
 
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/nmnxm7vj66?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+* What do you think the world web wide is? How is it different from the internet?
+* Can you think of an analogy to describe the difference between the two?
+* Who controls the internet?
+
+These are pretty important concepts to think about as we move forward in our web development journey! Check out the video below to find out the difference between the two!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/1xn829azov?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-
-Learning to use a text editor and know tips and tricks to optimize your work can be a lot of fun. For your Memory Game Project, you'll be using Sublime Text Editor 3. Check out the following video to learn how to install and use the editor!
-
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/weu4rtct39?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-
-Resources
-
-[Sublime Text](https://www.sublimetext.com/3) — A Text Editor used for building HTML and CSS files.
-
-[Google Chrome](http://www.google.com/chrome/) — The primary web browser used to demonstrate rendered code throughout this course.
-
 
 ---
 

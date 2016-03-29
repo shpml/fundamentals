@@ -10,7 +10,7 @@
 * Prioritize content based on its placement on a webpage.
 
 ---
-#Inline vs. Block Elements
+#Layout Basics
 
 Let's start of learning some basics of how to go about laying out your webpage. We might want to start moving images a bit right or center our header. We've now learned what HTML elements are, but now it's time to understand differences in how they function within the browser. Let's start by looking at at inline and block elements. Is a header tag an inline or a block element? What's the difference? When CSS is applied, how will it render in the browser?
 

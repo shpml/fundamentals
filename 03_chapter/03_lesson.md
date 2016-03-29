@@ -1,15 +1,29 @@
 **WDI Fundamentals Unit 3**
 ---
 
-#Intro to HTML
+#Text Editors and Browsers
 
-In the following unit, you'll be learning about the basic building blocks of a webpage - HTML & CSS! HTML stands for Hyper Text Mark Up Language and provides structure to your website while CSS, or Cascading Style Sheets, speaks to the design and layout. We'll focus on HTML in this unit. Check out the video below to get a brief overview of HTML first!
+With the variety of text editors out there, it's hard to figure out which one to use and how to use them. Each text editor has their own functionalities and settings. Watch the video below to get an understanding of best practices when choosing an editor and browser.
 
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/zio3fp9fn9?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/nmnxm7vj66?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+---
+
+### Sublime Text 3
+
+Learning to use a text editor and know tips and tricks to optimize your work can be a lot of fun. For your Memory Game Project, you'll be using Sublime Text Editor 3. Check out the following video to learn how to install and use the editor!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/weu4rtct39?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+**Resources**:
+
+* [Sublime Text](https://www.sublimetext.com/3) — A Text Editor used for building HTML and CSS files.
+* [Google Chrome](http://www.google.com/chrome/) — The primary web browser used to demonstrate rendered code throughout this course.
 
 
 
 ---
 
-[On to the lesson.](04_exercise.md)
+[On to the next lesson.](04_lesson.md)

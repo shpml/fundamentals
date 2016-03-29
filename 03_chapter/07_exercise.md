@@ -7,11 +7,13 @@ In this exercise, you'll write your first hyperlinks: the magical things that yo
 
 Use the editor provided below to write your code below and see what it renders! Follow the steps below.
 
+<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+
 1 . Give your website some content: introduce yourself, mention one social media account (or any website of your choosing), and ask for an email. Something like this should work:
 
-  `Hi, I'm awesome.
-  Follow me on twitter.
-  Send me an email.`
+*Hi, I'm awesome.
+Follow me on twitter.  
+Send me an email.*
 
 2 . Wrap your header in *h1 tags*, and the rest of your content with *paragraph tags*. You'll want to use the paragraph tag on both the second and third line. Remember, HTML tags are reusable, so you can use as many of each kind as you need.
 
@@ -27,7 +29,7 @@ example:
 6 . Put mailto: in front of your email address, so the browser knows it's not a web page!
 HTML doesn't understand the spaces and line breaks in your code. Element tags can help out! Go ahead and open a level one heading tag at the very beginning.
 
-`Send me an <a href="mailto:me@email.com"> email</a>.`
+`Send me an <a href="mailto:me@email.com"> email </a>.`
 
 >Note: HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
 
@@ -35,11 +37,11 @@ One more thing! Sometimes you won't know link destinations until you're almost d
 
 `Send me an <a href="mailto:me@email.com?subject=hello, awesome!">email</a>.`
 
-<a class="jsbin-embed" href="https://jsbin.com/zevojec/embed?html,output&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.11"></script>
-
-Deliverable:
+*Click on the output button to see what your HTML code renders. It should look like this:*
 
 ![](../assets/elkwebdesign/hyperlinks.png)
+
+#### Checkpoint
 
 Make sure you have:
 

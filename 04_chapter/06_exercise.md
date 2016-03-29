@@ -1,7 +1,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Time to give it a whirl! So far, you've worked with named colors, like black, red, or white.But those are only a fraction of the colors that your screen can display. Let's practice matching colors across the three web color models: named colors, hex codes, and RGB colors.
+Time to give it a whirl! So far, you've worked with named colors, like black, red, or white. But those are only a fraction of the colors that your screen can display. Let's practice matching colors across the three web color models: named colors, hex codes, and RGB colors.
 
 
 #### HTML: Starter Code
