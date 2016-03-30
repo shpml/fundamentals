@@ -8,7 +8,6 @@ In this unit we introduced some of the core fundamentals of web development incl
 
 Firstly, go ahead and set up your game's boiler plate code. Beyond this, make sure to personalize your website by displaying the name of the game in its corresponding browser tab. Further, the name should be displayed as a big header in the content of your site. Also, what good is a game if you don't know how to play? Under your header, include a subheader, "Instructions," and a section explaining how a memory card game is played. Last, but not least, add some flare to the site by adding at least two colors.
 
-**hint:** To add styling within your HTML file add your CSS between `<style></style>` tags.
 
 **bonus:**
 
@@ -17,71 +16,28 @@ Firstly, go ahead and set up your game's boiler plate code. Beyond this, make su
 
 ##### Below are the steps to complete the assignment.
 
-1) Set up the boiler plate code.
+1) Open up Sublime Text Editor.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
+2) Create a new file called index.html
 
-  </head>
-  <body>
-
-  </body>
-</html>
-```
+3) Set up the your HTML boilerplate code.
 
 2) Add a `title` element so the name of the game shows in the browser tab.
 
-```html
-...
-  <head>
-    <title>Memory Game</title>
-  </head>
-...
-```
+3) Create a level one heading tage and add in the name of the game within those tags. In this case, the name should be "Memory Game."
 
-3) The name of your game should be placed within a header tag.
+4) Add in a level two heading tag that says "Instructions."
 
-```html
-...
-  <body>
-    <h1>Memory Game</h1>
-  </body>
-...
-```
+5) Type in the text below your level two heading tag in between paragraph tags.
 
-4) You can use an `<h2>` for your subheader and a `<p>` for your section on the instructions of the game.
-
-```html
-...
-    <h2>Instructions</h2>
-
-    <p>
       Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
-    </p>
-  </body>
-...
-```
 
-5) Add some paint to the canvas! For now, we'll use the CSS property `color` to give some spice to the headers.
+5) Add some paint to the canvas! For now, we'll use the CSS property `color` to give some spice to the headers. Add the color *teal* to your h1 tag.
 
-```html
-...
-  <head>
-    <title>Memory Game</title>
-    <style>
-      h1 {
-        color: teal;
-      }
+6) Add the color *gold* to your h2 tags.
 
-      h2 {
-        color: gold;
-      }
-    </style>
-  </head>
-...
-```
+
+**hint:** To add styling within your HTML file add your CSS between `<style></style>` tags.
 
 
 #### Deliverable

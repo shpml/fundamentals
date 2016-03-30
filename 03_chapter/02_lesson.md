@@ -3,7 +3,7 @@
 
 #Internet vs The World Wide Web
 
-Before we get started with hacking away and coding, it's pretty important that we understand how the web works. The internet and the world wide web are very different entities, however, they are often used interchangeably. We'll clarify some of the misconceptions about the two. Try to answer the following questions first:
+Before we get started with hacking away and coding, it's pretty important that we understand how the web works. The internet and the world wide web are very different entities,however they are often used interchangeably. We'll clarify some of the misconceptions about the two. Try to answer the following questions first:
 
 * What do you think the world web wide is? How is it different from the internet?
 * Can you think of an analogy to describe the difference between the two?

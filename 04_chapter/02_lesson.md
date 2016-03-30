@@ -5,22 +5,14 @@
 
 In this lesson, we'll learn about working with various CSS color and text methods to make our websites more interesting! Check out the videos below before we dive into some code challenges!
 
-
-#### CSS Color Treatment
-
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/2vazcm3j1l?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
-While color names are fine when you're just beginning, there's a number of reasons you'll want to switch over to something more advanced.
+#### More on CSS Colors
 
-First, color names are rendered differently by different browsers. Secondly, there are only 147 color names accepted as standard, meaning your options are going to be pretty limited.
+While color names are fine when you're just beginning, there's a number of reasons you'll want to switch over to something more advanced. First, color names are rendered differently by different browsers. Secondly, there are only 147 color names accepted as standard, meaning your options are going to be pretty limited. Instead, you'll want to use either RGB or hexadecimal codes. Both of these are built on a system of entering values for the colors red, green, and blue.
 
-Instead, you'll want to use either RGB or hexadecimal codes. Both of these are built on a system of entering values for the colors red, green, and blue.
-
-By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.
-
-In hex, they range from 0-9, then continue from A-F, with two characters each for red, green, and blue.
-This is clearer with examples, so here are some common colors with their RGB and Hex equivalents.
+By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.In hex, they range from 0-9, then continue from A-F, with two characters each for red, green, and blue. This is clearer with examples, so here are some common colors with their RGB and Hex equivalents.
 
 The format for color names, RGB, and hexadecimal should look like the following, respectively:
 
@@ -37,20 +29,15 @@ p {
      color: #FF0000;
 }
 ```
-
-#### CSS Text Treatment
+---
 
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/mpderhu818?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 
-#### CSS Text Atttributes
+#### More on CSS Text Treatment
 
-**font-family**
-
-To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text.
-
-To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
+**font-family** : To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
 
 ```html
 h1 {
@@ -66,9 +53,7 @@ h1 {
 }
 ```
 
-**font-size**
-
-To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you’ll want to enter pixel values for your font-size values.
+**font-size**: To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you’ll want to enter pixel values for your font-size values.
 
 ```css
 h3 {
@@ -79,9 +64,7 @@ h3 {
 As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, though, so you may want to wait until we cover them in Unit 9.
 
 
-**font-weight**
-
-To adjust the thickness of your selected text, use the font-weight property.
+**font-weight**: To adjust the thickness of your selected text, use the font-weight property.
 
 As a beginner, you can enter values like “normal” to make your text thin and “bold” to make your text thick. As these values aren’t very specific, different browsers may interpret their display with slightly different outputs.
 
@@ -107,9 +90,7 @@ h1 {
 }
 ```
 
-**font-style**
-
-To make normal text italic, use the property font-style and the value “italic.” To reverse this effect, use the value “normal.”
+**font-style**: To make normal text italic, use the property font-style and the value “italic.” To reverse this effect, use the value “normal.”
 
 ```css
 a {
@@ -121,9 +102,7 @@ a {
 }
 ```
 
-**text-align**
-
-To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.
+**text-align** : To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.
 
 ```css
 body {
@@ -131,15 +110,14 @@ body {
 }
 ```
 
-**text-decoration**
-
-To add an underline to normal text, use the CSS property text-decoration and the value “underline.”
+**text-decoration** : To add an underline to normal text, use the CSS property text-decoration and the value “underline.”
 
 ```css
 h1 {
      text-decoration: underline;
 }
 ```
+
 To remove underlines, use the value “none.” This declaration is often applied to anchor tags.
 
 ```css
@@ -149,9 +127,7 @@ a {
 ```
 Less commonly used values include “overline” to add a line above text and “line-through” which strikes a line through your text.
 
-**text-transform**
-
-To adjust capitalization in a selected text element, use the text-transform property.
+**text-transform** : To adjust capitalization in a selected text element, use the text-transform property.
 
 Values for this property include “uppercase” to make every letter capitalized, “lowercase” to make every letter uncapitalized, and “capitalize” to make the first letter of every word in the selected text uppercase.
 

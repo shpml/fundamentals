@@ -1,7 +1,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Time to give it a whirl! In this exercise you'll be getting some practice opening and closing your first HTML tags, and learn how they relate to the content on your website.
+Time to give it a whirl! In this exercise you'll be getting some practice opening and closing your first HTML tags.
 
 ### Instructions
 
@@ -28,11 +28,7 @@ Built with WDI at GA.
 ---
 
 *Click on the output button to see what your HTML code renders. It should look like this:*
-
-
 ![](../assets/elkwebdesign/tags.png)
-
-
 #### Checkpoint
 
 Make sure you have:
