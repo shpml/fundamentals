@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 3**
+**WDI Fundamentals Unit 7**
 
 ---
 
@@ -86,7 +86,7 @@ In JavaScript, the boolean operators `!`, `||`, and <code>&&</code> follow the r
 * OR: Return the first "truthy" value; if both values are "falsey", return the last "falsey" value.
 * AND: Return the first "falsey" value; if both values are "truthy", return the last "truthy" value.
 
-Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row. 
+Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row.
 
 |     A     |       B      |   A AND B  |   A OR B  |   NOT A  |
 |-          |-             |-           |-          |-         |

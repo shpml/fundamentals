@@ -10,15 +10,16 @@
 
 ---
 
-Learn the basics of laying out a webpage while building a small business website for ELK Design!
+Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
 
-### Instructions
+![](/assets/elkwebdesign/userflow.png)
 
-The final design is based on a project by FEWD graduate, Lauren Kathe, and looks like this:
+In order to make this userflow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>`elements to define a set of navigation links. You can also make your navigation appear verically, horizontally or alternatively-styled bloc.
 
+Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
 
-![](/fundamentals/assets/elkwebdesign.png)
+![](/assets/elkwebdesign/nav.png)
 
 ---
 
-[On to the lesson.](02_lesson.md)
+[On to the next lesson.](02_lesson.md)

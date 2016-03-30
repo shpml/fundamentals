@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 3**
+**WDI Fundamentals Unit 7**
 
 ---
 
@@ -13,11 +13,6 @@
 
 
 # JavaScript
-
-So far, you've learned the basics of:
-- how to create and edit files via the command line
-- how to track changes in your projects using git
-- how to share those projects with the world by publishing them on GitHub.
 
 Now it's time for us to move on to the main event: programming.
 
