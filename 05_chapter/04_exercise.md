@@ -15,33 +15,9 @@ We won't touch the HTML, but take a look at it before you hop over to the CSS ta
 
 2 . Add a margin of 4em on *all four sides* of the div;s content (outside of the pale blue box).
 
-Another syntax for setting margins and padding allows you to give the four different sides of an HTML element (our div in this case), different values.
-
-```html
-div {
-	background: #c0dec5;
-	padding: 2em 3em 0 3em;
-}
-```
-
-![](../assets/elkwebdesign/padding.png)
-
 3 . Set the div's padding to 2em 3em 0 3em. That's a top padding of 2em, a right padding of 3em, no padding on the bottom, and 3em on the left.
 
-In the HTML each instance of the word "name" is wrapped in its own span. Span is a generic inline element that allows you to style parts of HTML elements. You can also use spans to hang classes and ids from.
-
-```html
-span {
-	font-variant: small-caps;
-	font-family: tahoma, sans-serif;
-	letter-spacing: .25em;
-}
-```
 4 .Give the span three property-value pairs: a font-variant of small-caps, a font-family of tahoma, sans-serif and .25em of letter-spacing.
-
-Even though spans are inline, you can still give them padding, too.
-
-![](../assets/elkwebdesign/trouble.png)
 
 5 . Set the span's padding to 0 .2em. Set its background color to rgb(100,150,150).
 

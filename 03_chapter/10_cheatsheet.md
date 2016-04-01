@@ -2,7 +2,7 @@
 
 ---
 
-# INTRODUCTION TO HTML 
+# HTML Cheat Sheet
 
 #### World Wide Web
 * An information sharing model built on top of a global system of interconnected computer networks called the Internet.
