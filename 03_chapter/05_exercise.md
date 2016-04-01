@@ -5,15 +5,17 @@ Time to give it a whirl! In this exercise you'll be getting some practice openin
 
 ### Instructions
 
-Use the editor provided below to write your code below and see what it renders! Follow the steps below.
+Type your answers directly into the text editor below. You can also click on the **Output** button at the top of the editor to see how your html code renders.
 
-1 . Let's start with some content! Type what you see below into the HTML box down below.
+1 . Let's start with some content! Type the text below into your editor.
 
 ```
 My first website!
 by a talented student
 Built with WDI at GA.
 ```
+
+<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 2 .  Go ahead and open a *level one heading tag* at the very beginning where it says "My first website!"
 
@@ -23,12 +25,13 @@ Built with WDI at GA.
 
 5 . And lastly, wrap the sentence "Built with WDI at GA." in a paragraph tag.
 
-<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 ---
 
-*Click on the output button to see what your HTML code renders. It should look like this:*
+Your output should look like this:
+
 ![](../assets/elkwebdesign/tags.png)
+
 #### Checkpoint
 
 Make sure you have:

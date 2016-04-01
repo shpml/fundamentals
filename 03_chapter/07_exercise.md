@@ -23,22 +23,24 @@ Send me an email.*
 
 5 . The opening `<a>` tag needs a **h**yperlink **r**eference **a**ttribute, so it knows where to go when clicked. Go ahead and link to your to your twitter (or other social media) page. If you aren't on social media, link to any website you want!
 
-example:
+Example:
 `<a href="http://twitter.com/GA">Follow me</a> on twitter.`
-
-5 . Now, wrap an empty *anchor* around the email link. Remember: don't include spaces or punctuation marks between the two anchor tags.
-
-> **NOTE** HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
-
-6 . Put mailto: in front of your email address, so the browser knows it's not a web page!
-
-`Send me an <a href="mailto:me@email.com"> email </a>.`
 
 > **NOTE** One more thing! Sometimes you won't know link destinations until you're almost done building a site. In those cases, we use a hash as a placeholder like so: `Send me an <a href="#">email</a>.`
 
-#### Click on the **OUTPUT** button to see what your HTML code renders. It should look like this:
+5 . Now, wrap an empty *anchor* around the word "email" on the second line.
+
+6 . Put `mailto`: in front of your email address, so the browser knows it's not a web page!
+
+`Send me an <a href="mailto:me@email.com"> email </a>.`
+
+> **NOTE** HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
+
+---
+Click on the **OUTPUT** button to see what your HTML code renders. It should look like this:
 
 ![](../assets/elkwebdesign/hyperlinks.png)
+
 
 #### Checkpoint
 
@@ -47,7 +49,7 @@ Make sure you have:
 - Made the introductory sentence a top-level heading with a `<h1>` tag and closed it with a `</h1>`tag.
 - The rest of the content will be in two paragraphs, or p elements.
 - Linked to your twitter (or other social media) page.
-- Created an email link with the proper email or placeholder. 
+- Created an email link with the proper email or placeholder.
 
 
 You can do a lot of neat things with attributes and links. Let's keep going!

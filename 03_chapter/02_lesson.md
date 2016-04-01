@@ -14,6 +14,11 @@ These are pretty important concepts to think about as we move forward in our web
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/1xn829azov?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
+#### Checkpoint:
+
+* Why do we have use HTML to create our websites?
+* What's the difference between HTML elements and tags?
+
 ---
 
 [On to the lesson.](03_exercise.md)
