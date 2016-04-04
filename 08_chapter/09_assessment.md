@@ -19,9 +19,11 @@ Based on whether or not your user discovers a match, notify them with a winning 
 
 2) If values are equal, execute an `alert` with the message, "You found a match!". If values are not equal, execute an `alert` with the message, "Sorry, try again.".
 
-3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alert`s are working properly, you should see:
+3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alerts are working properly, you should see:
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76)
+
+We'll check for these conditionals in the following units when we learn about `onclick` methods and the DOM.
 
 #### Deliverable
 
