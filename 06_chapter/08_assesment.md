@@ -6,7 +6,7 @@ Having learned about layout, we are even better equipped to structure the HTML o
 
 #### Requirements
 
-Currently, the cards in your game are all awkwardly formatted vertically and styling is seriously lacking. Start by changing the orientation of the cards so that they are structured into a conventional two by two grid layout. Next, create a navbar for the game that would serve to link to the `Instructions` and `Game` sections as if they were on two separate pages. Further, your navbar should be styled in a way that lets users know when they are hovering over a clickable item. It's always great to keep the User Experience (UX) in mind! Finally, be sure to add some color to your footer.
+Currently, the cards in your game are all formatted awkwardly vertically and styling is seriously lacking. We'll start by changing the orientation of the cards so that they are structured into a conventional two by two grid layout. Next, create a navbar for the game that would serve to link to the `Instructions` and `Game` sections as if they were on two separate pages. Further, your navbar should be styled in a way that lets users know when they are hovering over a clickable item. It's always great to keep the User Experience (UX) in mind! Finally, be sure to add some color to your footer.
 
 **bonus:**
 
@@ -14,7 +14,9 @@ Currently, the cards in your game are all awkwardly formatted vertically and sty
 
 ##### Below are the steps to complete the assignment.
 
-1)
+1) Open up your index.html and style.css page. By this point, they should be linked together!
+2) Add a float of left and a margin of 8% to your "board" div.
+3)
 
 ```css
 .board {

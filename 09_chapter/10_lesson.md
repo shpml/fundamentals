@@ -28,9 +28,7 @@ document.getElementsByTagName('ul')[0].appendChild(newListItem);
 
 
 ```
-<br>
-<center><img src="../assets/chapter5/append_child.png"></center>
-<br>
+![](/assets/chapter5/list.png)
 
 It takes a few steps but you'll get the hang of it in no time.
 
@@ -58,9 +56,7 @@ document.getElementById('important').className = 'highlight';
 
 The `.highlight` class will then be added to the element with the id `important` and the background-color associated with this class will be applied:
 
-<br>
-<center><img src="../assets/chapter5/class_name.png"></center>
-<br>
+![](/assets/chapter5/list2.png)
 
 ####`setAttribute()`, `removeAttribute()`
 
@@ -204,9 +200,8 @@ emailInputField.addEventListener('blur', checkEmailInput);
 
 
 Let's take a look at what the page now looks like when the focus was on the email field and then the user hit tab or clicked away from the field:
-<br>
-<center><img src="../assets/chapter5/event_example.png"></center>
-<br>
+
+![](/assets/chapter5/form.png)
 
 ##Conclusion
 This is just the tip of the iceberg when it comes to DOM manipulation and event handling. But hopefully it's gotten you excited about making your sites interactive and responsive. There are so many methods and functions to keep track of in the beginning that it can be a little overwhelming. Don't feel like you have to sit down and memorize everything. Instead focus on understanding the big picture and memorization will come with practice.

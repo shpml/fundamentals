@@ -68,9 +68,7 @@ The browser pulls in this HTML document, parses it, and creates an object model 
 
 The DOM specifies that the browser should use a **DOM Tree** to structure this model:
 
-<br>
-<center><img src="../assets/elkwebdesign/dom.png"></center>
-<br>
+![](/assets/chapter5/dom.png)
 
 Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.
 

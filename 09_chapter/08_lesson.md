@@ -7,9 +7,7 @@
 
 We mentioned before that when a browser retrieves the HTML for a page it makes a model of that page in memory. This model is called the DOM.
 
-<br>
-<center><img src="../assets/chapter5/dom.png"></center>
-<br>
+![](/assets/chapter5/dom.png)
 
 The DOM is a *language independent* model of the page. It is not a part of HTML or JavaScript, but follows a separate set of rules.
 
@@ -38,13 +36,9 @@ The browser retrieves this document and creates a model of the page in memory. M
 
 In Chrome, you can go to *View* > *Developer* > *Developer Tools* and click on the *Elements* panel to take a look at the DOM tree.
 
-<br>
-<center><img src="../assets/chapter5/opening_dev_tools.png"></center>
-<br>
+![](/assets/chapter5/developer.png)
 
-<br>
-<center><img src="../assets/chapter5/dev_tools_dom.png"></center>
-<br>
+![](/assets/chapter5/thingstodo.png)
 
 You might notice that, at this point, the DOM closely resembles our original HTML document. However, this is a *living* model of the page, made up of node objects that can be manipulated with JavaScript.
 
@@ -52,9 +46,7 @@ Maybe we want to use JavaScript to add a fourth list item to the page – "Feed 
 
 Now the DOM is looking pretty different from our original HTML file.
 
-<br>
-<center><img src="../assets/chapter5/dom_updated.png"></center>
-<br>
+![](/assets/chapter5/thingstodo2.png)
 
 JavaScript comes with some "built-in" functions that will allow us to access and update these nodes. We can call on these functions using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as **methods**.
 
@@ -314,9 +306,7 @@ In the following examples, we'll be using this HTML page as a reference:
 
 Which will look like this when it is first loaded into the browser:
 
-<br>
-<center><img src="../assets/chapter5/example_lesson_08.png"></center>
-<br>
+![](/assets/chapter5/thingstodo3.png)
 
 ### Accessing and Updating Content
 
@@ -333,9 +323,7 @@ document.getElementsByTagName('li')[0].innerHTML = 'Email <a href="mom@gmail.com
 ```
 This would find the first `<li>` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.` The result will look like this:
 
-<br>
-<center><img src="../assets/chapter5/innerHTML.png"></center>
-<br>
+![](/assets/chapter5/thingstodo4.png)
 
 If we simply want to retrieve the HTML content to use later, we can grab the HTML content and save it in a variable like so:
 
@@ -353,9 +341,6 @@ document.getElementById('important').textContent = 'Done!'
 
 This code would change the text content of the `<li>` that has the id `important` to 'Done!'.
 
-<br>
-<center><img src="../assets/chapter5/text_content.png"></center>
-<br>
-
+![](/assets/chapter5/thingstodo5.png)
 
 ---

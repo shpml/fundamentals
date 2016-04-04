@@ -1,6 +1,6 @@
 # Webpage Layout Homework
 
-Having learned about layout, we are even better equipped to format our HTML and uniquely style our game.
+Now that we've learned about layout, we're even better equipped to format our HTML and uniquely style our memory game!
 
 ## Exercise
 
