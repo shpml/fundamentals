@@ -1,4 +1,4 @@
-# Unit 3 Homework: Getting Our Cards in Order
+# Unit 7 Homework: Getting Our Cards in Order
 
 Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
@@ -13,7 +13,9 @@ In this section, you'll be working to create the cards that will make up your me
 
 ##### Below are the steps to complete the assignment:
 
-1) Create four variables that simulate the cards in your game.
+1) Open you sublime and create a new file called main.js
+
+2) Create four variables that simulate the cards in your game.
 
 - they should be `String` types
 - two should have a value of `"queen"` and the other two should be `"king"`
@@ -26,40 +28,32 @@ Here's an example of one card:
 var cardOne = "queen";
 ```
 
-2) Now that you have the four cards, you'll want to compare the two queen variables to check for equality. What does it evaluate to?
+2) Link the main.js file to your index.html file.
+
+2) Now that you have the four cards, you'll want to compare the variables to check for equality.
+
+ >**_Reminder_**: Since you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and look into the console to see the results of your executed JS.
+
+3) Go ahead and open your index.html file and then open the file in the browser. After the webpage loads, in Chrome, you can go to View > Developer > Developer Tools and click on the Console panel.
+
+![](/assets/chapter5/developer.png)
+
+4) To compare the two queen variables to check for equality, in the console type in the following:
 
 ```js
 cardOne == cardTwo
 ```
 
->**_Reminder_**: Since you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and look into the console to see the results of your executed JS.
-
-3) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to?
+5) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to
+And the ?
 
 ```js
 cardOne == cardFour
 ```
 
-
 #### Deliverable:
 
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository. Make sure you've commented your code!
-
-#### Pushing code up to the repository.
-
-In order to backup your code and track your work, you'll want to commit the changes you've made to the project's repository. You'll have to open up the terminal and `cd` into the correct folder that holds the cloned repository for this assignment. Once there, you'll have to complete these three steps:
-
-1) Stage your code
-
-`git add -a`
-
-2) Create a version of your stagged code
-
-`git commit -m 'created game logic'`
-
-3) Push your code to the GitHub repository
-
-`git push origin master`
 
 #### Still Stuck?
 
