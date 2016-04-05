@@ -1,4 +1,4 @@
-# Introduction to HTML & CSS Homework
+# Unit 3 Homework
 
 In this unit we've already introduced some of the core fundamentals of web development including how the internet works and how a website is structured and styled. With this newfound knowledge we can go ahead create foundation of our memory card game app. The goal of this exercise is to build a the structure of our website that hosts the memory card game.
 

@@ -1,7 +1,6 @@
 **WDI Fundamentals Unit 3**
----
 
-#HTML Elements
+---
 
 Now, let's get back to some HTML!
 

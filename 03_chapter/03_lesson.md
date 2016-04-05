@@ -1,7 +1,8 @@
 **WDI Fundamentals Unit 3**
+
 ---
 
-Through out the this course, you'll be working on building out a browser based **Memory Game**. While you'll be using the in-built editor for the some of the exercises in this course, for the Memory Game in particular, you'll be using Sublime Text Editor 3 to write your code. Before you start though, you'll need to better understand how these tool works and their potential!
+Through out the this course, you'll be working on building out a browser based **Memory Game**. While you'll be using the in-built editor for the some of the exercises in this course, but for the Memory Game in particular, you'll be using Sublime Text Editor 3 to write your code. Before you start though, you'll need to better understand how these tools works and their potential!
 
 #Text Editors and Browsers
 
@@ -14,7 +15,7 @@ With the variety of text editors out there, it's hard to figure out which one to
 
 ### Sublime Text 3
 
-Check out the following video to learn how to install and use the Sublime Text 3! You'll need it to build out your Memory Game, so go ahead and download and install it. 
+Check out the following video to learn how to install and use the Sublime Text 3! You'll need it to build out your Memory Game, so go ahead and follow the tutorial to and download, install and learn how to use it.
 
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/weu4rtct39?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
@@ -28,4 +29,4 @@ Check out the following video to learn how to install and use the Sublime Text 3
 
 ---
 
-[On to the next lesson.](04_lesson.md)
+[On to the next lesson.](09_quiz.md)

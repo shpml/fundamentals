@@ -1,7 +1,6 @@
 **WDI Fundamentals Unit 3**
----
 
-#HTML Boilerplate
+---
 
 Now that we've learned a bit about HTML tags, it's time to think about how to properly organize them. An HTML boilerplate is simply a set of structural elements that help organize our code so that we can read through our HTML page seamlessly! Watch the following video to understand how to create an HTML boilerplate.
 
