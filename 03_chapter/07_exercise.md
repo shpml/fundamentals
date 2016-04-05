@@ -3,11 +3,14 @@
 
 In this exercise, you'll write your first **hyperlinks**: the magical things that you click to get from here to there on the web!
 
+When complete, your output should look like this: 
+
+![](../assets/elkwebdesign/hyperlinks.png)
+
+
 ### Instructions
 
-Use the editor provided below to write your code below and see what it renders! Follow the steps below.
-
-<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+Use the editor provided below to write your code and see what renders! 
 
 1 . Give your website some content: introduce yourself, mention one social media account (or any website of your choosing), and ask for an email. Something like this should work:
 
@@ -36,10 +39,13 @@ Example:
 
 > **NOTE** HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
 
----
-Click on the **OUTPUT** button to see what your HTML code renders. It should look like this:
 
-![](../assets/elkwebdesign/hyperlinks.png)
+
+Click on the **OUTPUT** button to see what your HTML code renders. 
+
+<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+
+---
 
 
 #### Checkpoint
