@@ -26,6 +26,7 @@ In this unit, we'll learn more about CSS and styling to create better designed w
 #### Checkpoint:
 
 * Why is it important to create separate HTML and CSS documents? Can you explain separation of concerns in greater detail?
+
 ---
 
 [On to the lesson.](02_lesson.md)

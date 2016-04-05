@@ -37,11 +37,8 @@ Even though spans are inline, you can still give them padding, too.
 
 ![](../assets/elkwebdesign/trouble.png)
 
-And here's a diagram to help you remember the box model. 
+And here's a diagram to help you remember the box model.
 
 ![](../assets/elkwebdesign/boxmodel.png)
 
-#### Checkpoint
-
-*
 [Ready to try coding it out?](04_exercise.md)

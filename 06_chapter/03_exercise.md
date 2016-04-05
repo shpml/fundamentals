@@ -15,7 +15,7 @@ Take a look at the starter code in the editor below first.
 Then click on the "Output" button to see what you're dealing with!
 
 
-<a class="jsbin-embed" href="http://jsbin.com/mihixa/1/embed?html,css">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/mihixa/1/embed?html,css&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 #### Step 1: Web Fonts
 

@@ -7,7 +7,19 @@
 
 #### Checkpoint
 
-* 
+* Why do we need to use floats and clearfix?
+* What are the three properties of floats?
+* What does the after pseudo class do?
+
+#### Further Reading
+
+Float and Clear
+* http://learnlayout.com/float.html
+* http://learnlayout.com/clear.html
+* http://learnlayout.com/clearfix.html
+ http://www.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
+* http://css-tricks.com/the-how-and-why-of-clearing-floats/
+
 ---
 
-[On to the lesson.](03_exercise.md)
+[On to the lesson.](05_lesson.md)

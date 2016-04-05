@@ -9,5 +9,6 @@
 #### Checkpoint
 
 * Why do we want to avoid using a "header" or "footer" in a div?
+
 ---
 [On to the next lesson.](06_exercise.md)

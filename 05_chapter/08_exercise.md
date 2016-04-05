@@ -13,7 +13,9 @@ The design has four sections that we'll add in:
 * "services" section
 * footer
 
-Don't worry yet about positioning them on the page. For this Code Challenge, we're just going to put them in!
+Don't worry yet about positioning them on the page. For this Code Challenge, we're just going to put them in! Use the code editor below.
+
+<a class="jsbin-embed" href="http://jsbin.com/dulivo/embed?html&height=600px">ELK Web Design on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 #### Basic Page structure
 
@@ -52,9 +54,8 @@ Flip on over to your CSS tab.
 9 .Create a style for images, and set its display to block.
 10 .Center all images on the page horizontally by setting img's margin to 0 auto.
 11 . Create a ul style, and set its list-style to none.
-12 .Set its margin to 0.
-13 .Make its padding 0.
-14 .Create a footer style in your CSS, and center align its text.
-15 .Set the footer's padding to 1em 0.
+12 .Set its margin to 0. and its padding 0.
+13 .Create a footer style in your CSS, and center align its text.
+14 .Set the footer's padding to 1em 0.
 
 *In the next Code Challenge, you're going to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image—plus, you'll position all of the content containers you built in this unit.*s

@@ -7,7 +7,7 @@ Now it's time to work with images. Our goal in this exercise will be to to use t
 
 1 . Take a look at the starter code below. Yep, it's your HTML boilerplate!
 
-<a class="jsbin-embed" href="http://jsbin.com/jemeyex/embed?html,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/jemeyex/embed?html,output&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 2 . Write in an image tag between the body tags.
 

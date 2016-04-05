@@ -9,7 +9,7 @@ Here's what the content will look like when you're finished styling it.Fancy!
 
 We won't touch the HTML, but take a look at it before you hop over to the CSS tab. We gave you the p style. You're welcome!
 
-<a class="jsbin-embed" href="http://jsbin.com/likihi/embed?html,css,output"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/likihi/embed?html,css,output&height=600px"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 1 . Set the body's background to #333 and the div's background to #c0dec5.
 

@@ -14,13 +14,13 @@ We've gotten really far with learning about HTML and CSS. But how does the CSS f
 <img src="">
 ```
 
->**Note**The **image alternate attribute** describes the image. It gets read out loud to people with visual impairments. It's extra-important when there's text in an image.
+>**Note**The image alternate attribute describes the image. It gets read out loud to people with visual impairments. It's extra-important when there's text in an image.
 
 ```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat">
 ```
 
->**Note** The **title attribute** tells search engines what this img is a picture of. It helps you appear in Google Image Search.
+>**Note** The title attribute tells search engines what this img is a picture of. It helps you appear in Google Image Search.
 
 ```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat" title="grumpy cat">
