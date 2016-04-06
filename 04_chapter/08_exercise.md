@@ -1,7 +1,7 @@
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now it's time to work with images. Our goal in this exercise will be to to use the HTML image tags to put a picture on the web.
 
+Now it's time to work with images. Our goal in this exercise will be to to use the HTML image tags to put a picture on the web.
 
 #### Instructions
 

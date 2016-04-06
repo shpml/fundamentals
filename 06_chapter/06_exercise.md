@@ -1,17 +1,14 @@
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-This is Part 2 of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
+### Elk Web Design: Part 3
+
+This is final part of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
 
-Here's what your final
-![](/assets/elkwebdesign/floats.png)
-
-
-Here's the editor you should use to write your code:
+Here's the editor you should use to write your code. As usual, **don't forget to fork and save your JSBin link.**
 
 <a class="jsbin-embed" href="http://jsbin.com/puyoki/embed?html&height=600px">ELK Web Design on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
-
 
 
 1 . Set your div's font-size to 1.2em, and tell it to only stretch across 50% of the screen's width.
@@ -68,3 +65,5 @@ Your img might freak out. Don't worry. It's because the "hero" div is grabbing t
 18 .Set the li color to black, and its background to white.
 
 Bravo! Well done.
+
+[Take the Quiz for Unit 6 now ](10_quiz.md)

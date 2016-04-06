@@ -15,4 +15,4 @@
 
 ---
 
-[On to the lesson.](03_exercise.md)
+Ready to Practice?[Click here.](03_exercise.md)

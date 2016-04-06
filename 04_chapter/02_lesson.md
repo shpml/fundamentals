@@ -164,6 +164,19 @@ h1 {
 }
 ```
 
+#### External Fonts
+
+Did you know you can also link to external fonts in your HTML? Let's try it!
+
+There are three parts to loading up a web font with HTML. The href tells the browser where the font is.
+
+`<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">`
+
+Here we want to open Sans font, in two weights: 400 for body text, and 800 for headings. The rest of this tells the HTML that the link goes to a CSS stylesheet. Follow the link to take a peek!
+
+**Note**: For servers that live behind a login, you'll need to add an "s" to the http—tricking our servers into thinking the font is a protected file.
+
+
 ---
 
 [On to the next lesson.](03_exercise.md)

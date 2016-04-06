@@ -15,4 +15,4 @@ ADD
 * How do you create a navigation bar linking multiple HTML pages?
 ---
 
-[On to the lesson.](04_lesson.md)
+[On to the next lesson.](04_lesson.md)
