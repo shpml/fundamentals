@@ -1,32 +1,25 @@
-**WDI Fundamentals Unit 4**
+**WDI Fundamentals Unit 6**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
 
-* Understand the difference between HTML and CSS.
-* Unlock millions of colors with RGB and Hex to design websites.
-* Learn to work with relative vs. absolute addresses.
-* Use classes and IDs to better organize and manipulate your code.
-* Add links, images and list items to your webpage.
-
-
----
-#Intro to CSS
-
-So what’s the difference between HTML and CSS? And when do I use each?
-
-As we mentioned in the Unit 3, HTML, or **H**yper**T**ext **M**arkup **L**anguage, is the standard language used to code web pages and all of the content on a website is added with HTML. CSS, **C**ascading **S**tyle **S**heets, decides how content written in an HTML document looks including stylisti layout, colors, and fonts.
-
-In this unit, we'll learn more about CSS and styling to create better designed websites!
-
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/32r0wluyl3?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-
-#### Checkpoint:
-
-* Why is it important to create separate HTML and CSS documents? Can you explain separation of concerns in greater detail?
+* Understand different strategies for creating navigation bars
+* Discover how to create multi-column layouts with the float property.
+* Secure your layouts and avoid overlaps with the clear property and the clearfix method.
 
 ---
 
-[On to the lesson.](02_lesson.md)
+Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
+
+![](/assets/elkwebdesign/userflow.png)
+
+In order to make this userflow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>`elements to define a set of navigation links. You can also make your navigation appear verically, horizontally or alternatively-styled bloc.
+
+Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
+
+![](/assets/elkwebdesign/nav.png)
+
+---
+
+[On to the next lesson.](02_lesson.md)

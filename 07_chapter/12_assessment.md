@@ -55,6 +55,22 @@ cardOne == cardFour
 
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository. Make sure you've commented your code!
 
+#### Pushing code up to the repository.
+
+In order to backup your code and track your work, you'll want to commit the changes you've made to the project's repository. You'll have to open up the terminal and `cd` into the correct folder that holds the cloned repository for this assignment. Once there, you'll have to complete these three steps:
+
+1) Stage your code
+
+`git add -a`
+
+2) Create a version of your stagged code
+
+`git commit -m 'created game logic'`
+
+3) Push your code to the GitHub repository
+
+`git push origin master`
+
 #### Still Stuck?
 
 > **NOTE** Remember, when you're programming, you need to figure out the solution before you ever start writing code. Below, you'll find a helpful general procedure you can follow:

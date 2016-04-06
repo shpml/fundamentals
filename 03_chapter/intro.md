@@ -4,18 +4,30 @@
 
 #####By the end of this Unit, you'll be able to:
 
-* Define the underlying processes of the web and the tools necessary to design and code websites.
-* Understand the basics of HTML structure and syntax.
-* Create a basic page using HTML essential tags: header, body, links and paragraph tags .
+* Implement the display property to decide whether elements are inline or block.
+* Use semantic elements to properly organize your page.
+* Start taking control of your page layout with margin, padding, and borders.
+* Prioritize content based on its placement on a webpage.
 
 ---
+#Layout Basics
 
-What exactly is the world wide web? How is it different from the internet? Who controls the internet? Before we get started, it's important that we answer these questions and understand how the web works before we dive into HTML and CSS.
+At this point in our journey with HTML and CSS, we might want to start moving thing around a bit on our webpage. Before that though, we have to understand that HTML elements function and behave differently within the browser. HTML elements can either be inline and block elements. What's the difference? Is a header tag an inline or a block element? When CSS is applied, how will it render in the browser? These are all questions we'll explore below!
 
-The internet and the world wide web are very different entities. However, they are often used interchangeably. In the video below, we'll clarify some of the misconceptions about the two.
-
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/1xn829azov?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/5jz9br5kiz?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+#### Checkpoint:
+
+* Which of these are inline elements? block elements?
+
+  * `<a>`
+  * `<p>`
+  * `<img>`
+  * `<strong>`
+  * `<h3>`
+  * `<ul>`
+
 
 ---
 

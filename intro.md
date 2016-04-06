@@ -28,6 +28,8 @@ You'll also want to create an account on JSBin. On the top right, you'll see a "
 
 *Note*: What you write in the code editor in this e-book will not automatically save. Therefore, you need to make sure that when you do hit the *save* button and still make sure you copy your code over manually.
 
+**Hint**: If your JS Bin editor doesn't load and shows `JS Bin on jsbin.com`, simply refresh your page to load the editor again. 
+
 You're not required to submit the exercises, but be sure to save your work if you have any questions that you want to ask your instructors or the WDI community on (Slack)[00_chapter/get_started.md].
 
 #### Quizzes

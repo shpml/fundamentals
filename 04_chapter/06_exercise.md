@@ -1,35 +1,70 @@
+**WDI Fundamentals Unit 4**
+
+---
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Let's practice matching colors across the three web color models: named colors, hex codes, and RGB colors!
+### Elk Web Design: Part 3
+
+This is final part of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
 
-#### HTML: Starter Code
-Let's look at the starter code below first. The DOCTYPE, html, head, link, and body elements are familiar to you from the previous unit. Divs and ids are new HTML concepts for you. The value of the id attribute is the name of that div. For now, just remember that div element is just a tool to group content into boxes that you can control and style with CSS. The attribute id lets you name an HTML element to style it differently than other elements of that type.
+Here's the editor you should use to write your code. You'll first need to copy over your code from the previous ELK exercise into the editor. As usual, **don't forget to fork and save your JSBin link.**
 
-<a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/tifivo/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-#### CSS: Starter Code
-Let's look at the starter CSS. This div style sets the size, position, style, and whitespace on all three boxes.
+When you have your code from your previous exercise, follow the instructions below.
 
-<a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?css">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+1 . Set your div's font-size to 1.2em, and tell it to only stretch across 50% of the screen's width.
 
->**Note** **Named Colors** - Like black and white. There's a pretty limited number of these.
+2 .Tell both divs to display as inline-block elements.
 
-1 . Change the value of the #name div from white to red. Remember to click on the **Output** button to see what your code now renders!
+3 . Create CSS rules for #about and #services.
 
-2 . Turn the hex div red by leaving the first two characters at their maximums of ff, and changing the last four characters to their minimums of zero.
+4 . Give #about a float of left.
 
-3 . Turn the rgb div red by leaving the red value at its maximum of 255, and changing both the green and blue values to their minimums of 0.
+5 . Give #services a float of right.
 
-4 . What color do you think you'd get if you set all the RGB values to their minimum of zero? Can you set all three boxes to that color?
-  * Go ahead and set all the numbers in the rgb color model to zero.
-  * Set all six characters in the hex div to zero.
-  * Then, use a named color to make all three boxes the same color!
+At this point, you'll notice that some things are not so awesome here.
+  * The two columns are smushed together.
+  * The footer is behaving oddly.
 
-**Bonus**:
-* Add an alpha value to the RGB model.
-* Then change the #rgb style to: background: rgba(0,0,0,1); Since the default opacity is 100%, this won't change anything on screen. But now you have a means to set the opacity.
+6 . Let's start with the quickest fix. Give the footer a clear value of both.
 
-*Bravo to you on utterly mastering color models for the web. Take this knowledge forward and make the internet a more colorful space!*
+7 .The footer's in the right place, but the two columns are still too close! What do you know about adding whitespace between HTML elements? Currently, #services and #about are 50% of the page width each. Here's some math. You're borrowing from the page's width to add a 2% padding on all four sides, so that each div keeps its total width of 50%. So go ahead and a width of 46% and padding of 2%.
+
+Fabulous!
+
+8 .Now let's box up and position the four listed services in the right-hand column.
+
+  * Create an li, and give it a float of left.
+  * Set its width to 50% and its height to 6em.
+
+9 . Give li an outline value of 3px solid #222222.
+
+10 .Set its text-align to center, and line-height to 6em.
+
+*Well done! The basics of the multicolumn layout are all laid out. All that's left to finish are some visual elements, including color.*
+
+11 . Assign img a width of 480px.
+
+12 .Flip to your HTML, and wrap a new div, called "hero", around the main image.
+
+*Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns. Let's prevent that from happening. You need to counteract the div's width, margin, and display values.*
+
+13 . In your HTML, wrap a section around both divs: open it after the </header> closing tag, and close it before the opening <footer> tag.
+
+14 .Create a CSS style for the section. Set its background to #222222, and make its color white.
+
+15 .Make the section's overflow:auto.
+
+16 .Set the h2 color to pale yellow: #fffebb.
+
+17 .Set h2's border-bottom-color to #fffebb as well.
+
+18 .Set the li color to black, and its background to white.
+
+Bravo! Well done. Don't forget to save your code in JSBin so you can come back to it and ask your instructors any questions you might have!
+
+[Take the Quiz for Unit 6 now ](10_quiz.md)

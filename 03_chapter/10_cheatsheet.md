@@ -2,68 +2,60 @@
 
 ---
 
-# HTML Cheat Sheet
+# Layout Basics Cheat Sheet
 
-#### World Wide Web
-* An information sharing model built on top of a global system of interconnected computer networks called the Internet.
+#### Span
+* a generic wrapper for any inline content. Spans are generally used to group small sections of content for styling purposes.
 
-#### Websites
-* Collections of files, accessible through the world wide web.
+#### Div
+* a generic wrapper for any block content. Divs are used to group other elements together or to provide style to a specific area.
 
-#### Clients
-* Personal devices such as computers, phones, or tablets, used to access the web.
+#### Header
+* These elements kick off your page with introductory content like logos, headlines, titles, and links.
 
-#### Servers
-* Used to host massive amounts of the files that make up websites and “serve” files to end users.
+#### Footer
+* This element wraps the content at the bottom of your web page. This element often contains copyright information, links to career pages, contact information, terms of use, etc.
 
-#### Elements
-* The building blocks of HTML. Consists of a start tag, content, and end tag.
+#### Main
+* These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the <header> and the <footer>.
 
-  * Headline Elements: are meant to be used for important text that titles the content that comes after it. They range from —the largest—to —the smallest.
+#### Aside
+* These elements contain all the secondary content between the <header> and <footer>, supplemental information like recommended stories or archived blog links.
 
-      ```html
-      <h1>This would make a big headline</h1>
-      ```
+#### Nav
+* Any navigational links that help users get around your page should be wrapped in <nav> tags.
 
-  * Paragraph Elements: are one of the most basic tags in HTML. They indicate blocks of text.
+#### Section
+* These elements are used to group the content of a page into related chunks.
 
-    ```html
-     <p>This would add a block of text to a page</p>
-     ```
+#### Article
+* These elements are used to contain standalone blocks of text, such as news articles, blog posts, etc.
 
-  * Anchor Elements: are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an href attribute.
+#### Box Model
+* Every html element on the page is a box, and the box model dictates what the element will look like. The model consists of the content, padding, border, and margin.
 
-    ```html
-    <a href="www.generalassemb.ly">This would make this whole sentence a link to General Assembly's home page.</a>
-    ```
+#### Content
+* The text and images that are included within any element's opening and closing tags.
 
-#### Tags
-* HTML syntax used to indicate to a web browser how to present content. Bookended by angle brackets.
+#### Padding
+* The area outside of the content, but within the border. For example, padding will extend the background-color and contribute to the overall width of the object.
 
-#### Heading Tags
-* `<h1>` through `<h6> ` are meant to be used for important text that titles the content that comes after it.
+#### Border
+* A line of variable thickness, color, and style that goes around the padding and content.
 
-#### Paragraph Tags
-* `<p>` tags are one of the most basic tags in HTML. They indicate blocks of text.
+#### Margin
+* The area outside of the border that separates the object from other objects around it. Margin has a transparent background-color.
 
-#### Anchor tags
-*  <a> tags are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an attribute.
+#### Inline Elements
+* HTML elements that take up the width of their contents and do not begin with new line. They cannot have height or width assigned.
 
-#### HTML Attribute
-* Adds information to an HTML element. An HTML tag can have one or many attributes. Attributes are always included in the opening tag. They are preceded by a space, include the name of the attribute, an equal sign, and a value in quotes.
+#### Block Elements
+* HTML elements that break to a new line before and after the element and they take up the width of their containers by default (this is often the browser window itself). They can have padding, margin, height, and width assigned.
 
-#### HTML Boilerplate
+#### Span
+* Inline and is used to apply CSS to inline HTML.
 
-In order to organize tags properly, start with a set of structural elements called the HTML boilerplate. It should look like this:
+#### Div
+* A Block element and is used to apply CSS to—you guessed it—blocks of HTML. Divs typically wrap big sections of content on a page.
 
-```html
-<!DOCTYPE html>
-<html>
-     <head>
-
-     </head>
-     <body>
-
-     </body>
-</html>
-```
+NOTE: use semantic elements over divs whenever possible.

@@ -1,15 +1,27 @@
 **WDI Fundamentals Unit 4**
+
 ---
 
-#Working with Images
+#Floating and Clearing
 
-Your website can really come to life with a couple images! When you’d like to add images to your site, you should use the tag with the **src** attribute. `src` stands for “Source” and works just like the tag’s `href` attribute. It tells the image tag where to find the image you’d want to include on your page. Learn how to add images
-
-
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/kn8gfpd9z9?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/fioff624wp?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
->**Note** **Relative vs. Absolute Addressing**: Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
-On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
+#### Checkpoint
 
-[On to the next lesson.](07_lesson.md)
+* Why do we need to use floats and clearfix?
+* What are the three properties of floats?
+* What does the after pseudo class do?
+
+#### Further Reading
+
+Float and Clear
+* http://learnlayout.com/float.html
+* http://learnlayout.com/clear.html
+* http://learnlayout.com/clearfix.html
+ http://www.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
+* http://css-tricks.com/the-how-and-why-of-clearing-floats/
+
+---
+
+[On to the lesson.](05_lesson.md)

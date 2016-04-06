@@ -1,107 +1,182 @@
 **WDI Fundamentals Unit 2**
+---
+
+#CSS Color
+
+In this lesson, we'll learn about working with various CSS color and text methods to add flare to our websites! Check out the videos below before we dive into some code challenges!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/2vazcm3j1l?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+#### More on CSS Colors
+
+While color names are fine when you're just beginning, there's a number of reasons you'll want to switch over to something more advanced. First, color names are rendered differently by different browsers. Secondly, there are only 147 color names accepted as standard, meaning your options are going to be pretty limited. Instead, you'll want to use either RGB or hexadecimal codes. Both of these are built on a system of entering values for the colors red, green, and blue.
+
+By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.In hex, they range from 0-9, then continue from A-F, with two characters each for red, green, and blue. This is clearer with examples, so here are some common colors with their RGB and Hex equivalents.
+
+The format for color names, RGB, and hexadecimal should look like the following, respectively:
+
+```css
+p {
+     color: red;
+}
+
+p {
+     color: (255,0,0);
+}
+
+p {
+     color: #FF0000;
+}
+```
+
+#### Opacity
+
+You'll use aplha to change the opacity of your element. See below:
+
+![](../assets/elkwebdesign/rgb.png)
+
+
 
 ---
 
-## Get Started with Git
+#CSS Text Treatment
 
-###Initialize a Repository
+As you learn to style your website, you'll want to get more creative with the types of fonts you use as well as font size and much more! You'll also want to start aligning your text in your website to suit your needs! Let's explore how to do so!
 
-To turn an ordinary directory into a Git repository (or *repo* for short), you have to **initialize** the repository (this just means adding a hidden folder called `.git/` to your project folder, which contains all the data that Git needs to operate.
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/mpderhu818?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
-Simply change your working directory to the folder you'd like to track and run the command:
 
-```
-$ git init
-```
-> **CAUTION** Do not execute this command in your **home directory** –it will make it very difficult to work with any other repositories!
+#### More on CSS Text Treatment
 
-When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
+**font-family**
 
-If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
+To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
 
-> **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
-
-### Saving Changes to Your Project
-
-Unfortunately, it's not enough to simply have your files in a repo. Like the terminal, Git doesn't make any assumptions about what changes you want to save or when you want to save them - you need to explicitly tell it what to do.
-
-Suppose that we would like to work on a blog post for General Assembly, so we create a directory on our desktop called "GA-Blog" and run `git init` from inside that directory. At the moment, this project is empty - we can confirm this by running `git status`, which asks Git to give us an update on the status of our project.
-
-```
-$ git status
+```html
+h1 {
+     font-family: Arial, sans-serif;
+}
 ```
 
-We should get a response like this.
+If your selected font is more than one word, capitalize both words and put them in quotation marks.
 
-![Git Status of GA-Blog](../assets/chapter2/git_status.gif)
-
-Each 'save' that we make to our repository is called a **commit**; this message is telling us that our project has no unsaved changes.
-
-Let's go ahead and make a new text file called `post.txt` inside of GA-Blog, using the `touch` command.
-
-```
-$ touch post.txt
+```html
+h1 {
+     font-family: "Courier New", monospace;
+}
 ```
 
-Now let's check our Git status:
+**font-size**
 
-![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
+To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you’ll want to enter pixel values for your font-size values.
 
-Git has identified that a change has been made - there is now a file in our repo. However, it does not know whether or not we want that change to be saved right now. To add this change to our next commit, we can run the command
-
-```
-$ git add post.txt
-```
-The changes we've just made have now been *staged*, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or *unstaged*. If we run `git status` again, we'll see that the addition of `post.txt` is staged and ready to be committed:
-
-![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
-
-> **NOTE** Often, you'll want to automatically save *any* changes that have been made inside your repo; instead of specifying a unique file, you can just write `git add .` - this will add all of the files in `.` (which, if you remember, is shorthand for the working directory) to the next commit.
-
-Once we're ready to officially record this version of our project, we can type:
-
-    $ git commit -m "created a new post.txt file"
-
-The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
-
-###The Git Staging Area
-
-One of the unique features of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
-
-```
-$ git add .
-$ git commit -m "message"
+```css
+h3 {
+     font-size: 24px;
+}
 ```
 
-Why stage? So that if you make multiple changes you can commit them separately or all at once (basically, it exists to help you better organize your project history).
-
-![Git Staging Area](../assets/chapter2/add_commit.png)
+As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, though, so you may want to wait until we cover them in Unit 9.
 
 
+**font-weight**
 
-### Your Commit History
+To adjust the thickness of your selected text, use the font-weight property.
 
-When you're farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. Git allows you to view a list of commits along with the date the commit was submitted, the author of the commit, the commit message AND a unique number to identify the commit by, called a SHA. This unique number allows Git to remember each commit, and apparently a 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt".
+As a beginner, you can enter values like “normal” to make your text thin and “bold” to make your text thick. As these values aren’t very specific, different browsers may interpret their display with slightly different outputs.
 
-To view the timeline of changes, you can run:
+```css
+h1 {
+     font-weight: normal;
+}
 
-```
- $ git log
-```
-
-which will yield a list of entires that look like this:
-
-```
-commit 6d33f525a09b9918f75188db164ea2722039830b
-Author: Sarah <sarah@gmail.com>
-Date:   Wed Jan 28 17:44:03 2015 -0500
-
-    added a new post
-
+h1 {
+     font-weight: bold;
+}
 ```
 
-Each of these entries represents a commit for this project, and gives a lot of other useful information including when the commit was made, who made it, and (if the person wrote a good commit message) what that particular commit does.
+As you become more advanced, try using the numbers 100, 200, 300, 400, 500, 600, 700, 800, and 900 as values to gain more granular control. With this system, 400 is roughly equivalent to “normal” and 700 roughly equals “bold.”
+
+```css
+h1 {
+     font-weight: 400;
+}
+
+h1 {
+     font-weight: 700;
+}
+```
+
+**font-style**
+
+To make normal text italic, use the property font-style and the value “italic.” To reverse this effect, use the value “normal.”
+
+```css
+a {
+     font-style: italic;
+}
+
+a {
+     font-style: normal;
+}
+```
+
+**text-align**
+
+To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.
+
+```css
+body {
+     text-align: center;
+}
+```
+
+**text-decoration**
+
+To add an underline to normal text, use the CSS property text-decoration and the value “underline.”
+
+```css
+h1 {
+     text-decoration: underline;
+}
+```
+
+To remove underlines, use the value “none.” This declaration is often applied to anchor tags.
+
+```css
+a {
+     text-decoration: none;
+}
+```
+Less commonly used values include “overline” to add a line above text and “line-through” which strikes a line through your text.
+
+**text-transform**
+
+To adjust capitalization in a selected text element, use the text-transform property.
+
+Values for this property include “uppercase” to make every letter capitalized, “lowercase” to make every letter uncapitalized, and “capitalize” to make the first letter of every word in the selected text uppercase.
+
+```css
+h1 {
+     text-transform: uppercase;
+}
+```
+
+#### External Fonts
+
+Did you know you can also link to external fonts in your HTML? Let's try it!
+
+There are three parts to loading up a web font with HTML. The href tells the browser where the font is.
+
+`<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">`
+
+Here we want to open Sans font, in two weights: 400 for body text, and 800 for headings. The rest of this tells the HTML that the link goes to a CSS stylesheet. Follow the link to take a peek!
+
+**Note**: For servers that live behind a login, you'll need to add an "s" to the http—tricking our servers into thinking the font is a protected file.
+
 
 ---
 
-[Here are some more exercises to help you practice.](04_exercise.md)
+[On to the next lesson.](03_exercise.md)
