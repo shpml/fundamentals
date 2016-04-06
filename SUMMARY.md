@@ -53,7 +53,7 @@
 		* [Quiz](05_chapter/13_quiz.md)
 		* [Cheat Sheet](05_chapter/14_cheatsheet.md)
 		* [Unit 5 Homework](05_chapter/15_assessment.md)
-	* [Git and Version Control](06_chapter/intro.md)
+* [Developer Tools III](06_chapter/intro.md)
 		* [Track Changes with Git](06_chapter/02_lesson.md)
 	      * [Exercise](06_chapter/04_exercise.md)
 		* [Introducing Github](06_chapter/05_lesson.md)
