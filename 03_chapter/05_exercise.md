@@ -3,9 +3,16 @@
 
 Time to give it a whirl! In this exercise you'll be getting some practice opening and closing your first HTML tags.
 
+
+Your output should look like this:
+
+![](../assets/elkwebdesign/tags.png)
+
+
+
 ### Instructions
 
-Type your answers directly into the text editor below. You can also click on the **Output** button at the top of the editor to see how your html code renders.
+Type your answers directly into the text editor below. Click the **Output** button at the top of the editor to see how your html code renders.
 
 1 . Let's start with some content! Type the text below into your editor.
 
@@ -28,9 +35,7 @@ Built with WDI at GA.
 
 ---
 
-Your output should look like this:
 
-![](../assets/elkwebdesign/tags.png)
 
 #### Checkpoint
 

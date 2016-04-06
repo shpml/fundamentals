@@ -2,7 +2,7 @@
 
 ---
 
-Now, let's get back to some HTML!
+Let's dive deeper into the rules and syntax for writing HTML.
 
 HTML doesn't understand the spaces and line breaks in your code. That's why element tags can help out! **Elements** are what provide structure to your website. They consist of an **opening** and **closing tag** and the content in between. The tags tell the browser what kind of content it's dealing with. For example, an opening header tag (`<h1>`) and closing header tag (`<\h1>` )tag tell the browser that it needs to render a header of some sort in a specified size. More to learn in the video below!
 
