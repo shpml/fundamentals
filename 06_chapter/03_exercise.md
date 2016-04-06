@@ -3,7 +3,7 @@
 
 ### Elk Web Design: Part 2
 
-In this second part of the ElK Web Design, we'll be working with web fonts and creating a horizontal navigation bar. 
+In this second part of the ElK Web Design, we'll be working with web fonts and creating a horizontal navigation bar.
 
 Remember the final design looks like this:
 
@@ -14,11 +14,11 @@ Remember the final design looks like this:
 
 #### Getting started
 
-You'll be using the code editor below. As usual, **don't forget to fork and save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
+You'll be using the code editor below. Copy and paste the code from the previous exercise in so that you have code to work with. As usual, **don't forget to fork and save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
 
 Take a look at the starter code in the editor below first.
 
-<a class="jsbin-embed" href="http://jsbin.com/mihixa/1/embed?html,css&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/tifivo/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 #### Part 1: Web Fonts
 
@@ -66,5 +66,7 @@ Now, let's put in some content and build out the navigation bar.
 What was that? Your very first float! Here's what your design should start looking like:
 
 ![](/assets/elkwebdesign/elkdesignchapt6.png)
+
+**Don't forget to save your code!**
 
 [On to the next lesson.](04_lesson.md)

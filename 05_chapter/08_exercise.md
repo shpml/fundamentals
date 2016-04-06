@@ -87,6 +87,6 @@ Here's what your webpage should look like in the Output now:
 
 ![](/assets/elkwebdesign/elkchapter5.png)
 
-All done for now!
+All done for now! **Don't forget to save your code!**
 
 *In the next Code Challenge, you're ready to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image—plus, you'll position all of the content containers you built in this unit!*
