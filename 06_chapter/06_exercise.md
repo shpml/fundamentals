@@ -1,11 +1,10 @@
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-This is Part 2 of the ELK Design! We'll be becoming more familiar with positing elements and images
+This is Part 2 of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
 
-Floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
-
+Here's what your final
 ![](/assets/elkwebdesign/floats.png)
 
 
