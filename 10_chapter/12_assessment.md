@@ -81,3 +81,5 @@ function isTwoCards() {
 #### Deliverable
 
 When finished, don't forget to **add**, **commit** and **push** your code to your GitHub repository!
+
+Now it's time to submit you code! Submit your link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).

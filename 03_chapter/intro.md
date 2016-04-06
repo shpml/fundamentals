@@ -10,7 +10,7 @@
 
 ---
 
-What exactly is the world wide web? How is it different from the internet? Who controls the internet? Before we get started, it's important that we answer these questions and understand how the web works. 
+What exactly is the world wide web? How is it different from the internet? Who controls the internet? Before we get started, it's important that we answer these questions and understand how the web works before we dive into HTML and CSS.
 
 The internet and the world wide web are very different entities. However, they are often used interchangeably. In the video below, we'll clarify some of the misconceptions about the two.
 
