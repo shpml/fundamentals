@@ -4,25 +4,28 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Time to give it a whirl! In this exercise you'll be getting some practice setting up and updating a contacts array. Later in this unit we'll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, add new contacts, list contacts, and search contacts by first or last name.
+This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the descriptions given below using repl.it's editor.
 
-Instructions
+###Instructions
 
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
+1. Go ahead an open up a new session in [repl.it](http://repl.it)
+2. Write the code for the functions described below, using repl.it's editor window
+3. Click 'play' to run the code
+4. Try *calling* each function from the console window. Use different parameters to make sure they work as expected.
 
-### Let's get started!
+**Let's get started!**
 
-* Create an array `contacts`. This array should contain the names "Matt Smith", "Sam Davis", and "Ashley Jones".
-* Create a function `findContact`, which accepts one parameter, `index`. It should return the contact at that `index`.
-* Create a function `addContact`, which accepts one parameter, `name`. It should add that name to the end of the contacts array and return the contacts array.
-* Create a function `updateLastContact`, which accepts one parameter, `newName`. It should update the last contact in the contacts array with the `newName` and return the contacts array.
+Write the following functions:
+* `sayHello`, which accepts one parameter, called `name`; it should return a greeting to a person with that name, i.e. "Hello, *name*".
+* `areBothEven`, which accepts two parameters, `a` and `b`; it should return `true` if `a` and `b` are both even, but `false` otherwise.
+* `hotOrNot`, which accepts one parameter, `temp`; it should return "hot" if `temp` is above 75, but should return "not hot" otherwise.
+* `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3, but otherwise, it should return the value of `num`.
+* `greatest`, which accepts three parameters (`x`, `y`, and `z`), and returns the one with the greatest value. For example, `greatest(5, 10, 1)` would evaluate to 10.
 
-Once you're satisfied with the way things are working, feel free to move on to the next lesson. **Be sure to save your repl.it session and keep your link as you'll be using it again for another exercise in this unit.**
+Once you've written and tested all of these functions, go ahead and move on to the next lesson.
 
 > *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
 ---
-[Ready to move on? Here's the next lesson.](05_lesson.md)
+
+[Next: Using Functions in the Field](05_lesson.md)

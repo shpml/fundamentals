@@ -1,58 +1,66 @@
-**WDI Fundamentals Unit 5**
+**WDI Fundamentals Unit 9**
 
 ---
 
-# Functions Cheat Sheet
+# Control Flow Cheat Sheet
 
 Here are some notes on what's been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.
 
-## Functions
+## Conditionals
+### Ternary Operator
+* The ternary operator takes in a condition; depending on whether that condition is truthy or falsey, the operator will evaluate to one of two specified values.
 
-### Defining and Using JavaScript Functions
+  ```javascript
+  (x > 10) ? 'Greater than 10.' : 'Less than 10.';
+  ```
 
-* A **function** is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).
-* Functions must be **defined** before they can be used. To define a function, use the following recipe:
+* It can also be used inside larger expressions.
+
+  ```javascript
+  'Today is ' + ((temp > 70) ? '' : 'not') + ' hot.';
+  ```
+
+### `if...else` statement syntax
 
 ```javascript
-var myFunctionName = function() {
-  // Body of the function
+if (condition1) {
+  // Code to be executed if condition1 is true
+} else if (condition2) {
+  // Code to be executed if condition1 is false and condition2 is true
+} else if (condition3) {
+  // Code to be executed if condition1 and condition2 are false, and condition3 is true
+} else {
+  // Code to be executed if condition1, condition2, and condition3 are false
 }
 ```
 
-* To use, or **call** a function, simply type the name of your function, followed by `()` (plus any inputs that you might be passing in).
+
+* With `else if`, each additional condition will only be checked if all of the prior conditions have failed.
+
+### `switch` statement syntax
 
 ```javascript
-myFunctionName()
-```
-
-
-### `return` Statements
-* In addition to specifying a final value for the function to give back as a result, a `return` statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not `x`.
-
-```javascript
-var someFunc = function(x) {
-  if (x > 10) {
-    return 15;
+switch (expression) {
+  case value1:
+    // Code to be executed if expression === value1
+    break;
+  case value2:
+    // Code to be executed if expression === value2
+    break;
+  default:
+    // Code to be executed if expression is different from both value1 and value2
   }
-  return x;
-}
 ```
 
-## Using Functions in the Field
+## Loops
+* Loops are used to tell our programs to take repeated action.
 
-### Best Practices for Writing Functions
-* In addition to functionality, making your code readable is one of the most critical things to consider.
-* Here are some guidelines that you can keep in mind:
-  * Keep you functions small - don't try to do too much in one step.
-  * Use good naming for functions and variables. Call things what they are!
-  * Avoid repetitive code, where possible.
-  * Generally, don't hard-code specific values into your program if you can help it.
+### `while` Loops
+* `while` loops can run indefinitely, so long as the condition remains true.
+* The loop's condition is re-evaluated each time the block finishes running.
 
+### `for` Loops
+* A 'for' loop will generally run a fixed number of times, not indefinitely.
+* The three paramters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
 
-### Problem Solving with Functions
-* Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
-* Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this [decomposition](http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29).
-
-
----
-[Let's apply what we've learned about Functions to our 'Rock, Paper, Scissors' project.](09_assessment.md)
+[Let's put this into practice - here comes some more 'Rock Paper Scissors'!](09_assessment.md)

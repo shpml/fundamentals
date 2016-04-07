@@ -2,150 +2,204 @@
 
 ---
 
-# Functions
+# Conditionals
 
-## Defining JavaScript Functions
+## `if..else` Statements
 
-To create a new function, we must *declare* it as we would a variable.  A **function expression** typically looks like this:
+Conditional statements are the expressions that allow us to test whether or not to perform some action.
+
+One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
 
 ```javascript
-var nameOfMyFunction = function(x) {
-  // Body of the function 'nameOfMyFunction';
+if (x > 10) {
+  x += 10;
+  y += 10;
 }
 ```
 
-As you can see, the first line begins with `nameOfMyFunction` followed by the word `function`, which is how we'd like to refer to that function later.
+The condition is what's inside the parentheses; if that condition is truthy, the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
-Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are called **parameters** of the function.  Above, we only used one parameter, `x`.
+Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 
-Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
+![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
+*<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
+<br>
 
-We'll focus on using **function expression** for these lessons. Let's look at an example:
+A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
 
-Let's look at an example:
+![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
+<br>
+
+As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.
+
+`if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
 
 ```javascript
-var tripleIt = function(x) {
-  return 3 * x;
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
 }
 ```
+<aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
+<br>
+<br>
 
-This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (that is, `x`) multiplied by 3.
-
-This is the first time we're seeing a `return` statement – it does exactly what it sounds like it does. `return` gives back the output of the function.
-
-###Naming Functions
-
-Function names should describe what the function does as best as possible, and a general rule of thumb is to keep the name short and simple.
-
-You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't use spaces between them.
-
-To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
-
-Examples of naming functions:
-
-- **bad**:  `thisfunctioncalculatestheperimeterofarectangle` (no camelCase, too verbose)
-- **bad**:  `my new function` (contains spaces)
-- **bad**:  `myNewFunction` (doesn't explain what it does!)
-- **good**: `calculatePerimeter` (describes what it does, short, and uses camelCase)
-
-
-## Calling JavaScript Functions
-
-Declaring a function does not execute the instructions we include in its body. After declaring, we've simply given the function a name and specified how it should work when it is given a set of parameters.
-
-To actually *evaluate* a function, we have to **call** that function as follows:
+<p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
 
 ```javascript
-nameOfMyFunction();
-```
-
-In the case of `var tripleIt = function(x)`, if we wanted to call the function by passing the value 4, we would write:
-
-```javascript
-tripleIt(4)
-```
-
-> **NOTE**: The number `4` used when the function is called is known as an **argument**.
-
-The function would execute its statements and evaluate to the value `12`.
-
-Just like a variable, we can use the return value of this function in any expression. For example:
-
-```javascript
-var a = tripleIt(1);                         // a === 3
-var b = 100 * tripleIt(4);                   // b === 1200
-var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
-```
-## Other Ways to Define Your Functions
-
-Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
-
-```javascript
-function nameOfMyFunction (x) {
-  // Body of the function 'nameOfMyFunction';
-}
-```
-
-But don't worry about this right now. We'll focus on function expressions for now!
-
-
-### Test Yourself
-
-Suppose that we've defined the function 'glorp' as follows:
-
-```javascript
-var glorp = function(someNumber) {
-  return someNumber * 5 - 3;
-}
-```
-
-What will each of the following expressions evaluate to?
-* glorp(10)
-* 2 * (glorp(5) + 10)
-* glorp(1 + 2)
-* glorp(glorp(1))
-
-Test your answers in repl.it by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
-
----
-
-## The Return Statement
-
-As mentioned above, `return` specifies the value of the function when it's executed. It has another important job - it tells the function to immediately stop whatever it's doing.
-
-Consider the following program:
-
-```javascript
-var doAThing = function(x) {
-  if (x > 10) {
-    return x + 10;
-  }
-  return x;
-}
-```
-
-If `x` is greater than 10, the computer will run the `if` statement and hit that first `return` statement (`x + 10`).
-
-This will *immediately end the function* - that second `return` statement won't be reached.
-
-### Test Yourself
-
-Where will the function stop if `x` is 5? 10? 20? What value will be returned in each case?
-
-```javascript
-var categorize = function(x) {
-  if (x < 8) {
-    return 8;
-  }
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
+} else if (x > 3) {
   x += 3;
-  if (x < 15) {
-    return x;
-  }
-  return 100;
+}
+```
+<aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
+<br>
+
+However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
+
+```javascript
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
+} else if (x > 3) {
+  x += 3;
+} else {
+  x += 1;
+}
+```
+<aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
+<br>
+
+Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
+
+### Test Yourself
+Consider following conditional statement:
+
+```javascript
+if (x > 5) {
+  y = 50;
+} else if (x < 5) {
+  y = 33;
+} else {
+  y = 100;
 }
 ```
 
+* What value will be assigned to `y` if ...
+  * `x` is 10?
+  * `x` is 4?
+* Under what circumstances will `y` be assigned a value of 100?
+
+Try copying that whole statement into repl.it, and testing out different values for `x`. Were your answers correct?
+
+
+## Switch Statement
+
+As we've seen before, we can choose which condition will be executed using `if...else if...else`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
+
+```javascript
+// day of the week in a number, sunday is 0, saturday is 6
+var dayNumber = 1;
+if(dayNumber === 0){
+  day = 'Sunday';
+} else if(dayNumber === 1) {
+  day = 'Monday';
+} else if(dayNumber === 2) {
+  day = 'Tuesday';
+} else if(dayNumber === 3) {
+  day = 'Wednesday';
+} else if(dayNumber === 4) {
+  day = 'Thursday';
+} else if(dayNumber === 5) {
+  day = 'Friday';
+} else if(dayNumber === 6) {
+  day = 'Saturday';
+} else {
+  day = null;
+  alert('wrong value for day');
+}
+```
+
+What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
+  `} else if(dayNumber === __ ) {`
+is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
+
+Enter the `switch` statement:
+
+```javascript
+var dayNumber = 1;
+
+switch (dayNumber) {
+  case 0:
+    day = 'Sunday';
+    break;
+  case 1:
+    day = 'Monday';
+    break;
+  case 2:
+    day = 'Tuesday';
+    break;
+  case 3:
+    day = 'Wednesday';
+    break;
+  case 4:
+    day = 'Thursday';
+    break;
+  case 5:
+    day = 'Friday';
+    break;
+  case 6:
+    day = 'Saturday';
+    break;
+  default:
+    day = null;
+    alert('wrong value for day');
+}
+```
+This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
+
+In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated; if there is a `case` listed for the value that it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified - if not, the program will do nothing).
+
+> **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end, but will instead start  executing the *next* case's code (even if `case`'s value is different from the variable'), and will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
+
+Although the `switch` statement sometimes has some advantages over `if...else if... else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
+
+### Test Yourself
+Consider the following `switch` statement.
+
+```javascript
+switch (2 * x) {
+ case 2:
+    y = 49;
+    break;
+ case 4:
+    y = 37;
+    break;
+ case 6:
+    y = 25;
+    break;
+ case 8:
+    y = 13;
+    break;
+ default:
+    y = 1;
+}
+```
+
+What value will `y` be assigned when `x` is ...
+* 1?
+* 4?
+* 0?
+* "Hello"?
+
 ---
 
-[Here's another exercise for you](04_exercise.md) - give it a shot.
+[Let's do another exercise.](04_exercise.md)

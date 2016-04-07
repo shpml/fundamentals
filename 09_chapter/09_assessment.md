@@ -1,77 +1,37 @@
-# Unit 9 Homework: Organizing Code and Creating Dynamic HTML
+**WDI Fundamentals Unit 9**
 
-Your code is slowly but surely starting to get more robust. To better organize the code you've already written, as well as prepare for the code you will write, now, we will take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
+---
 
-JavaScript comes with several "built-in" functions that we can call on using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as _methods_.
+# Unit 8 Homework: Game Logic
 
-For example, let's look at `document.createElement('div')` which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
-
-- `document` is a readily available JS object. (An object is basically an associative array It stores key-value pairs, and unlike arrays, is not ordered).  
-- `createElement` is the method it comes with
-  - This method performs the functionality of creating a new HTML element.
-  - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
-
-In this case, we passed `createElement` and argument of `'div'` so a `div` element is created. If you'd like, you can go ahead and run that line of code, `document.createElement('div')`, in your browser's console to get see it in action.
-
-Besides `createElement`, the `document` object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className), as well as one for adding innerHTML, [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). On top of those methods that allow you to construct an element, there's also the method [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) that aids in attaching the element to an element on your web page.
-
-To complete this assignment, you will need to utilize these methods.
-
->**Note:** In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp).
+In Unit 4, we covered some game-changing concepts (pun intended). For example, can you guess what type of feature we can now begin to implement in our memory card game? If you guessed game logic, you're right! For this section's homework, you will implement your knowledge of conditionals to help with the task of creating your game logic.
 
 ## Exercise
 
 #### Requirements
 
-###### Create the HTML for the cards:
+Based on whether or not your user discovers a match, notify them with a winning or losing message in a popup message using `alert`.
 
-- Find an element with the class name `board` and set it to a variable
-- Assuming your memory card game consists of four cards, create a `for loop` that makes an HTML element for each card
-  - each HTML element should be a `div`
-  - each element should have a class `card` (this will help when you add CSS)
-- Append each newly created card to the `div` that has the class `board`
+**Note** What's an `alert`? Check out the documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>
 
-###### Create functions to organize your code:
+>**Note:** In some of our other exercises, we have used `console.log` to give feedback from our code. However, as we start to have a more "user facing" mindset, we begin to code in a way that makes more sense for the user. For our game, this means notifying the user about a win or a loss with a popup rather than the console, a place where most users don't look.
 
-- create a function called `createBoard` that creates the HTML for your cards and appends the resulting HTML to your `div` that has the class board
-- execute/fire your `createBoard` function so it runs
+##### Below are the steps to complete the assignment.
 
-#### Below are the steps to complete the assignment.
+1) In your main.js file, create an `if else` statement checking for equality between two of your cards (you choose which ones).
+* `if` statement should consist of a boolean checking for equality between your created variables.
 
-1) Find the board and set it equal to a variable. See below.
+2) If values are equal, execute an `alert` with the message, "You found a match!". If values are not equal, execute an `alert` with the message, "Sorry, try again.".
 
-```js
-var board = document.getElementsByClassName('board')[0];
-```
+3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alerts are working properly, you should see:
 
-2) Create a `for loop` that will iterate four times. No hints here!
+![](https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76)
 
-
-3) Create the required HTML for each card on each iteration and append this HTML to the board - add this logic inside the `for loop`. See below for hint.
-
-```js
-
-  // create a div element which will be used as a card
-  var cardElement = document.createElement('div');
-
-  // add a class to the card element which will help link styling
-  cardElement.className = 'card';
-
-  // append the card to the board
-  board.appendChild(cardElement);
-
-}
-```
-
-4) Create a `createBoard` function.
-
-5) Add your board creation logic to the function from steps 1, 2 & 3.
-
-6) Execute the `createBoard` function.
+We'll check for these conditionals in the following units when we learn about `onclick` methods and the DOM.
 
 #### Deliverable
 
-Once you're happy with your work, save your code and make a commit to your project's repository.
+You'll want to keep track of all your hard work, so don't forget to ACP: **Add**, **Commit** and **Push** that code to GitHub!
 
 ---
-[Next up: Chapter 6](../05_chapter/intro.md)
+[Next up: Chapter 5](../05_chapter/intro.md)

@@ -2,204 +2,136 @@
 
 ---
 
-# Conditionals
+# Data, Operators, and Expressions
 
-## `if..else` Statements
+You've probably picked up a scientific calculator at some point in the past and
+started playing around with it. You punch in a big number (for example, 9876435),
+then `x`, and then another big number (say, 373848221), hit the `=` button, and
+the calculator spits back a result (in this case, 3692287654572135).
 
-Conditional statements are the expressions that allow us to test whether or not to perform some action.
+![Calculator](../assets/chapter3/calculator.png)
 
-One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
+That thing that we type into the calculator is called an **expression**: a
+collection of values (*12345*) and operations (like **+** or **x**).
 
-```javascript
-if (x > 10) {
-  x += 10;
-  y += 10;
-}
-```
+The process of reducing this expression down to a single value is called **evaluation**.
 
-The condition is what's inside the parentheses; if that condition is truthy, the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
+The repl.it console is similar in many ways to this calculator. It accepts an
+expression (in JavaScript) from the user and attempts to evaluate that expression,
+yielding a single value.
 
-Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
+Before we tackle fully-fledged JavaScript expressions, let's first look at their
+two components: data and operators.
 
-![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
-*<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
 <br>
 
-A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
+## Data (a.k.a. Values)
+Calculators can only operate on numbers, but computers can perform calculations
+on many different kinds of data, including:
 
-![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
-<br>
+* **Numbers**: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're considered the same.<br>
+<u>Examples</u>: `20`, `-4.5`, `300`, `99.99`
 
-As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.
+* **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>'single-quote'</code> (also sometimes called 'string literals') and <code>"double-quote"</code>. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>'hello'</code>, <code>'goodbye'</code>, <code>'moc.liamg@gmail.com'</code>
 
-`if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
+* **Booleans**: This one's probably new for you. Boolean-type data only has two
+possible values, `true` and `false`.
 
-```javascript
-if (x > 10) {
-  x += 10;
-  y += 10;
-} else if (x > 5) {
-  x += 5;
-}
-```
-<aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
-<br>
-<br>
+If you forget what type of data you're dealing with, you can run the `typeof`
+command. Try typing the following lines into repl.it - what responses do you get?
 
-<p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
+* <code>typeof 'hello';</code>
+* <code>typeof 24;</code>
+* <code>typeof 3.45;</code>
+* <code>typeof true;</code>
 
-```javascript
-if (x > 10) {
-  x += 10;
-  y += 10;
-} else if (x > 5) {
-  x += 5;
-} else if (x > 3) {
-  x += 3;
-}
-```
-<aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
-<br>
-
-However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
-
-```javascript
-if (x > 10) {
-  x += 10;
-  y += 10;
-} else if (x > 5) {
-  x += 5;
-} else if (x > 3) {
-  x += 3;
-} else {
-  x += 1;
-}
-```
-<aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
-<br>
-
-Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
+> **HINT**  You may have noticed that each of those lines ended in a `;` - in
+> JavaScript, a semicolon is used to denote the end of a line. Although your code
+> may execute without them, there are cases where a missing semicolon can cause
+> unexpected results. Just get in the habit of using them.
 
 ### Test Yourself
-Consider following conditional statement:
+Try to predict the types of each of the following bits of data. Check your answers
+with `typeof` in repl.it - were you correct?
 
-```javascript
-if (x > 5) {
-  y = 50;
-} else if (x < 5) {
-  y = 33;
-} else {
-  y = 100;
-}
-```
-
-* What value will be assigned to `y` if ...
-  * `x` is 10?
-  * `x` is 4?
-* Under what circumstances will `y` be assigned a value of 100?
-
-Try copying that whole statement into repl.it, and testing out different values for `x`. Were your answers correct?
+* <code>24</code>
+* <code>'99'</code>
+* <code>'true'</code>
+* <code>false</code>
 
 
-## Switch Statement
+## Operators
+Of course, simply having data sitting around isn't very useful. Operators take
+values as their inputs (also known as **arguments**) and produce new data as output.
+There are *many* different operators out there, but here are some of the common ones:
 
-As we've seen before, we can choose which condition will be executed using `if...else if...else`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
+* **Arithmetic** (`+`, `-`, `*`, `/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`.
 
-```javascript
-// day of the week in a number, sunday is 0, saturday is 6
-var dayNumber = 1;
-if(dayNumber === 0){
-  day = 'Sunday';
-} else if(dayNumber === 1) {
-  day = 'Monday';
-} else if(dayNumber === 2) {
-  day = 'Tuesday';
-} else if(dayNumber === 3) {
-  day = 'Wednesday';
-} else if(dayNumber === 4) {
-  day = 'Thursday';
-} else if(dayNumber === 5) {
-  day = 'Friday';
-} else if(dayNumber === 6) {
-  day = 'Saturday';
-} else {
-  day = null;
-  alert('wrong value for day');
-}
-```
+>**Note** When given String arguments, the `+` operator actually behaves
+differently - it 'concatenates' two strings together to make one big string.
+<br><u>For example</u>: <code>'Hello' + ' ' + 'Bob'</code> will evaluate to <code>'Hello Bob'</code>.
 
-What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
-  `} else if(dayNumber === __ ) {`
-is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
+* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
+<br><u>For example</u>: `15 % 4` will evaluate to `3`.
 
-Enter the `switch` statement:
+* **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
+<br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
 
-```javascript
-var dayNumber = 1;
+* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
+<br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
 
-switch (dayNumber) {
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Wednesday';
-    break;
-  case 4:
-    day = 'Thursday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
-    day = 'Saturday';
-    break;
-  default:
-    day = null;
-    alert('wrong value for day');
-}
-```
-This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
+* **Inequality** (`!==`) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator — it compares two values to check that both the data type and value are *not* the same.
+<br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
 
-In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated; if there is a `case` listed for the value that it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified - if not, the program will do nothing).
-
-> **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end, but will instead start  executing the *next* case's code (even if `case`'s value is different from the variable'), and will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
-
-Although the `switch` statement sometimes has some advantages over `if...else if... else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
+* **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
+    * NOT (`!`) will reverse the value of any boolean.
+        `!true` // `false`
+    * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false`.
+    * AND (<code>&&</code>) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
 
 ### Test Yourself
-Consider the following `switch` statement.
+Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.
+* <code>true && false;</code>
+* <code>45 % 6;</code>
+* <code>8 === 8.0;</code>
+* <code>'Hello' + ' ' + 'World';</code>
 
-```javascript
-switch (2 * x) {
- case 2:
-    y = 49;
-    break;
- case 4:
-    y = 37;
-    break;
- case 6:
-    y = 25;
-    break;
- case 8:
-    y = 13;
-    break;
- default:
-    y = 1;
-}
-```
+## Expressions
+So, what happens when we bring several of these operators and values together?
 
-What value will `y` be assigned when `x` is ...
-* 1?
-* 4?
-* 0?
-* "Hello"?
+Consider the following expression:
+
+`(2 + 3) * (9 - 8)`
+
+In order to perform the multiplication, we need to first know what we're multiplying – the `*` operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.
+
+We can represent this chain of dependencies using a logical structure called a `tree`.
+
+![Expression Tree for (2 + 3) * (9 - 8)](../assets/chapter3/tree1.png)
+<br>
+
+To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
+
+What happens if we're dealing with a more complicated expression? Say...
+
+`((9 + 2) * 25) - 5`
+
+Since the `-` requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
+
+![Expression Tree for ((9 + 2) * 25) - 5](../assets/chapter3/tree2.png)
+<br>
+
+One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
+
+In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can [check out this wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as being `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
+
+Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
+
+![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
+<br>
+
+While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts because there will be many times that you'll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.
 
 ---
 
-[Let's do another exercise.](04_exercise.md)
+Think you've got it? [Let's do an exercise to cement what we've learned.](04_exercise.md)
