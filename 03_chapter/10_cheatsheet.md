@@ -2,60 +2,225 @@
 
 ---
 
-# Layout Basics Cheat Sheet
+# CSS Cheat Sheet
 
-#### Span
-* a generic wrapper for any inline content. Spans are generally used to group small sections of content for styling purposes.
+#### Rule
+The building block of a CSS stylesheet. A rule consists of a selector and a declaration block (one or more declarations).
 
-#### Div
-* a generic wrapper for any block content. Divs are used to group other elements together or to provide style to a specific area.
+#### Declaration
+A declaration is made up of a property and a value, separated by a colon and punctuated by a semi-colon.
 
-#### Header
-* These elements kick off your page with introductory content like logos, headlines, titles, and links.
+#### Selector
+The actual HTML object the declaration(s) apply to.
 
-#### Footer
-* This element wraps the content at the bottom of your web page. This element often contains copyright information, links to career pages, contact information, terms of use, etc.
+#### Property
+The characteristic of the selector that will be changed.
 
-#### Main
-* These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the <header> and the <footer>.
+#### Value
+The amount or type of change to be applied to the corresponding property of the matched selector.
 
-#### Aside
-* These elements contain all the secondary content between the <header> and <footer>, supplemental information like recommended stories or archived blog links.
+#### Marking-Up
+The process of assigning HTML tags to given text content in order to indicate its relation to the rest of the text or dictate how it should be displayed.
 
-#### Nav
-* Any navigational links that help users get around your page should be wrapped in <nav> tags.
+#### Serif Font
+One of two general categories of fonts (typefaces) that uses marks (called “serifs”) to embellish characters. A common serif font is “Times New Roman”.
 
-#### Section
-* These elements are used to group the content of a page into related chunks.
+#### Sans-Serif Font
+One of two general categories of fonts that have cleaner line due to not using marks to embellish characters. (Sans Serif literally meaning “Without serif”) A common sans-serif font is “Helvetica”.
 
-#### Article
-* These elements are used to contain standalone blocks of text, such as news articles, blog posts, etc.
+#### Class
+A class attribute is added to an HTML element in order to give you a “hook” to refer to that element in your CSS. CSS class selectors begin with a “.”. Classes can be used multiple times per page.
 
-#### Box Model
-* Every html element on the page is a box, and the box model dictates what the element will look like. The model consists of the content, padding, border, and margin.
+#### ID
+An id attribute is added to an HTML element in order to give you a “hook” to refer to that element in your CSS. CSS id selectors begin with a “#”. IDs can only be used one time per page.
 
-#### Content
-* The text and images that are included within any element's opening and closing tags.
+#### Horizontal Rule
+Add a horizontal line across your page using the hr tag.
 
-#### Padding
-* The area outside of the content, but within the border. For example, padding will extend the background-color and contribute to the overall width of the object.
+#### Line Break
+Break up a block of text using the br tag.
 
-#### Border
-* A line of variable thickness, color, and style that goes around the padding and content.
+#### Image
+Add images to your HTML using the img tag. Tell the browser the source of the image file with an src attribute.
 
-#### Margin
-* The area outside of the border that separates the object from other objects around it. Margin has a transparent background-color.
+#### Absolute File Path
+A path to a website or file that includes a full web address (starting with “http”) that the browser loads from the remote location directly. For example:
 
-#### Inline Elements
-* HTML elements that take up the width of their contents and do not begin with new line. They cannot have height or width assigned.
+`<img src="http://imgur.com/awesomedog.jpg">`
 
-#### Block Elements
-* HTML elements that break to a new line before and after the element and they take up the width of their containers by default (this is often the browser window itself). They can have padding, margin, height, and width assigned.
+#### Relative File Path
+A path to a website or file that gives you the path to the resource you are looking for as it relates to your website's local file structure. For example, if you wanted to retrieve an image called newlogo.png that resides in a file called img, you would enter the following relative address:
 
-#### Span
-* Inline and is used to apply CSS to inline HTML.
+`<img src="images/awesomedog.jpg">`
 
-#### Div
-* A Block element and is used to apply CSS to—you guessed it—blocks of HTML. Divs typically wrap big sections of content on a page.
+#### Why Separate HTML from CSS?
 
-NOTE: use semantic elements over divs whenever possible.
+Separating HTML from CSS offers you scalability and versatility. If you separate how your site looks from what your site says, things become more flexible.
+
+By separating your HTML and CSS, you can make the change in one place and have it apply to your whole site. If you separate what your site says from how it looks, you can apply any number of different styles to the same content.
+
+#### CSS Color Treatment
+
+While color names are fine when you're just beginning, there's a number of reasons you'll want to switch over to something more advanced.
+
+First, color names are rendered differently by different browsers. Secondly, there are only 147 color names accepted as standard, meaning your options are going to be pretty limited.
+
+Instead, you'll want to use either RGB or hexadecimal codes. Both of these are built on a system of entering values for the colors red, green, and blue.
+
+By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.
+
+In hex, they range from 0-9, then continue from A-F, with two characters each for red, green, and blue.
+This is clearer with examples, so here are some common colors with their RGB and Hex equivalents.
+
+The format for color names, RGB, and hexadecimal should look like the following, respectively:
+
+
+```css
+p {
+     color: red;
+}
+
+p {
+     color: (255,0,0);
+}
+
+p {
+     color: #FF0000;
+}
+```
+
+#### CSS Text Treatment
+
+**font-family**
+
+To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
+
+```html
+h1 {
+     font-family: Arial, sans-serif;
+}
+```
+
+If your selected font is more than one word, capitalize both words and put them in quotation marks.
+
+```html
+h1 {
+     font-family: "Courier New", monospace;
+}
+```
+
+**font-size**
+
+To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you’ll want to enter pixel values for your font-size values.
+
+```css
+h3 {
+     font-size: 24px;
+}
+```
+
+As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, though, so you may want to wait until we cover them in Unit 9.
+
+
+**font-weight**
+
+To adjust the thickness of your selected text, use the font-weight property.
+
+As a beginner, you can enter values like “normal” to make your text thin and “bold” to make your text thick. As these values aren’t very specific, different browsers may interpret their display with slightly different outputs.
+
+```css
+h1 {
+     font-weight: normal;
+}
+
+h1 {
+     font-weight: bold;
+}
+```
+
+As you become more advanced, try using the numbers 100, 200, 300, 400, 500, 600, 700, 800, and 900 as values to gain more granular control. With this system, 400 is roughly equivalent to “normal” and 700 roughly equals “bold.”
+
+```css
+h1 {
+     font-weight: 400;
+}
+
+h1 {
+     font-weight: 700;
+}
+```
+
+**font-style**
+
+To make normal text italic, use the property font-style and the value “italic.” To reverse this effect, use the value “normal.”
+
+```css
+a {
+     font-style: italic;
+}
+
+a {
+     font-style: normal;
+}
+```
+
+**text-align**
+
+To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.
+
+```css
+body {
+     text-align: center;
+}
+```
+
+**text-decoration**
+
+To add an underline to normal text, use the CSS property text-decoration and the value “underline.”
+
+```css
+h1 {
+     text-decoration: underline;
+}
+```
+
+To remove underlines, use the value “none.” This declaration is often applied to anchor tags.
+
+```css
+a {
+     text-decoration: none;
+}
+```
+Less commonly used values include “overline” to add a line above text and “line-through” which strikes a line through your text.
+
+**text-transform**
+
+To adjust capitalization in a selected text element, use the text-transform property.
+
+Values for this property include “uppercase” to make every letter capitalized, “lowercase” to make every letter uncapitalized, and “capitalize” to make the first letter of every word in the selected text uppercase.
+
+```css
+h1 {
+     text-transform: uppercase;
+}
+```
+
+#### Classes vs. IDs
+
+Classes and IDs, also called selectors, are ways of targeting the style of specific HTML elements on your page.
+
+So what’s the difference between them?
+
+In short, classes allow you to style many elements with a particular style, while IDs are only capable of styling a single element.
+
+Using these selectors allows you flexibility and control of styling individual, as well as groups, of elements on your page.
+
+#### HTML and Images
+
+When you’d like to add images to your site, you should use the tag with the “src” attribute. “src” stands for “Source” and works just like the tag’s “href” attribute. It tells the image tag where to find the image you’d want to include on your page.
+
+#### Relative vs. Absolute Addressing
+
+Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
+
+On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.

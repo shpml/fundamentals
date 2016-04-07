@@ -2,131 +2,149 @@
 
 ---
 
-We've covered how we can tell our programs to make decisions; now let's look at how we can tell our programs to take repeated/ongoing actions.
+# Expressions with Variables
 
-## The `while` Loop
+One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.
 
-To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running a block of code, it 'loops' back to the beginning and starts again.
+Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 * 23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
 
-Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten it.
+`var x = (99 * 746) - (837 * 23);`
 
-![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
-<br>
+> **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
-We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
+When we want to then use this result, we simply substitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;` and this expression would evaluate to double whatever value was stored in `x`.
 
-![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
-<br>
-
-Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
-
-```javascript
-while (someCondition) {
-  // A block of code.
-}
-```
-As you can see, it is written in almost exactly the same way as an `if` statement.
+To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
 
 ### Test Yourself
-* Consider the following code.
+Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.
+
+* `x + 20`
+* `x * x`
+* `3 * (x * x) - 2 * x + 5`
+
+We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
+
+Consider the following JavaScript code in a repl.it console.
+
+```javascript
+var x = 1
+x
+// => 1
+x = 2 + x
+// => 3
+x
+// => 3
+```
+
+On the first line, we are _assigning_ the variable `x` equal to the integer `1`.  Then, on the next line, we are _reassigning_ the variable `x` and setting it equal to the following: `2` plus the most recent value of x (in this case, `1`). `x` would now be equal to the integer `3`.  
+
+>**Caution**  Beginners often confuse the assignment operator (`=`) and the equality operators (`==`, `===`). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.
+>```javascript
+> x
+> // => 3
+> x == 4
+> // => false
+> x = 4
+> // => 4
+> x == 4
+> // => true
+> ```
+
+
+Suppose we ran the following lines of code in order, one by one.
 
 ```javascript
 var x = 10;
-while (x > 5) {
-  x -= 2;
-}
+x = 1;
+x = 5;
+x = 15;
+2 * x;
 ```
+What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you're correct!
 
-How many times will this loop run? What will the final value of `x` be when it finishes?
+> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2` returns `2`.
 
-* Here's another loop.
+Sometimes, we find variables on both sides of the `=`. Suppose we have two variables, `x` and `y`, as in the example below.
 
 ```javascript
-var x = 10;
-var y = 1;
-while (x < 20) {
-  y += 1;
-}
+var x = 5;
+var y = 10;
+x = y + 10;
 ```
 
-How many times will this loop run? What happens when you try to run this code?
+What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10` evaluates to 20, so what we're left with is the expression `x = 20`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
 
-
-A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by making your condition evaluate to `false`.
-
-Consider the following example.
+Let's look at one more example using the same two variables, `x` and `y`.
 
 ```javascript
-var z = 0;
-var myString = '';
-while (z < 5) {
-  myString += 'X';
-  z += 1;
-}
+var x = 1;
+var y = 10;
+x = y * 2;
+y = x + 1;
+x = y + 1;
+y = 2 * x;
 ```
 
-Q: How many times does this loop run? What's the final value of myString?
+Feeling dizzy? Don't worry, we'll step through this one together.
 
-A: Each time this loop runs, the value of `z` increases by 1; since its initial value is 0, and the condition becomes `false` the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
+  __Line 1__: We declare a new variable `x` and assign it the value `1`.
 
-Confused? Here's the play-by-play.
-* `z` is set to 0 and `myString` is set to "".
-* `z` is 0, therefore <code>z < 5</code> is true so the block gets executed.
-  * (in the block) "X" gets added to the end of `myString`; it is now "X"
-  * (in the block) `z` is increased by 1; it is now 1. Now that the block is done, we go back to the condition.
-* `z` is 1, therefore <code>z < 5</code> is true so the block gets executed.
-  * (in the block) "X" gets added to the end of `myString`; it is now "XX"
-  * (in the block) `z` is increased by 1; it is now 2. Now that the block is done, we go back to the condition.
-* `z` is 2, therefore <code>z < 5</code> is true so the block gets executed.
-  * (in the block) "X" gets added to the end of `myString`; it is now "XXX"
-  * (in the block) `z` is increased by 1; it is now 3. Now that the block is done, we go back to the condition.
-* `z` is 3, therefore <code>z < 5</code> is true so the block gets executed.
-  * (in the block) "X" gets added to the end of `myString`; it is now "XXXX"
-  * (in the block) `z` is increased by 1; it is now 4. Now that the block is done, we go back to the condition.
-* `z` is 4, therefore <code>z < 5</code> is true so the block gets executed.
-  * (in the block) "X" gets added to the end of `myString`; it is now "XXXXX"
-  * (in the block) `z` is increased by 1; it is now 5. Now that the block is done, we go back to the condition.
-* `z` is now 5, therefore <code>z < 5</code> is now **false** (since 5 is **not** less than 5) so the block does not get executed again.
-* We're done!
+  __Line 2__: We declare another new variable `y` and assign it the value 10.
 
-What's most interesting about this kind of setup is that if we changed that condition from <code>z < 5</code> to <code>z < 10</code>, or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
+  __Line 3__: As of this point in the code, `y` has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to `x`.
 
-This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
+  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20 + 1`).
 
-## The `for` Loop
+  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21 + 1`).
 
-Let's make a few modifications to our while loop from earlier.
+  __Line 6__: `x` is now 22, so `y` becomes `2 * 22`, or 44.
 
-![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
-
-As you can see, there are a couple of key ingredients to making our `for` loop work. We need
-1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
-2. a condition, which gets evaluated each time we're about to execute the block (e.g. x < 10)
-3. a 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
-
-The general syntax for a `for` loop is
-
-```javascript
-for (initialization; condition; finalExpression) {
-  // A block of code.
-}
-```
+One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
 
 ### Test Yourself
+Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
+
+##### Challenge \#1
 
 ```javascript
-var x = 10;
-for (var i = 0; i < x; i += 1) {
-  console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
-}
+var x = 1;
+var y = 2;
+var z = 3;
+x = y;
+y = z;
+z = x;
 ```
 
-* How many times will 'HELLO' be printed out in the console?
-* What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
-* What if (all else the same) we changed the condition from <code>i < x</code> to <code>i <= x</code>?
-* What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
-Check your answers in repl.it.
+##### Challenge \#2
+
+```javascript
+var x = 1;
+var y = 0;
+var z = -1;
+x = y + z;
+y = z * x;
+z = x - y;
+x = y * y;
+y = z * z;
+z = z - 1;
+```
+
+Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?
+
+The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
+
+### A few shortcuts
+
+Needing to operate 'in place' (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below.
+
+| Long-Hand Syntax | Short-Hand Syntax |
+|------------------|-------------------|
+| `x = x + 1`      | `x += 1` |
+| `x = x - 5`      | `x -= 5` |
+| `x = x * 2`      | `x *= 2` |
+| `x = x / 10`     | `x /= 10` |
+| `x = x % 10`     | `x %= 10` |
+| `x = x + 1`      | `x++` |
 
 ---
-
-Feeling good about loops? [Let's do another exercise.](07_exercise.md)

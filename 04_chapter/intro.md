@@ -1,25 +1,34 @@
-**WDI Fundamentals Unit 6**
+**WDI Fundamentals Unit 5**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
 
-* Understand different strategies for creating navigation bars
-* Discover how to create multi-column layouts with the float property.
-* Secure your layouts and avoid overlaps with the clear property and the clearfix method.
+* Implement the display property to decide whether elements are inline or block.
+* Use semantic elements to properly organize your page.
+* Start taking control of your page layout with margin, padding, and borders.
+* Prioritize content based on its placement on a webpage.
+
+---
+#Layout Basics
+
+At this point in our journey with HTML and CSS, we might want to start moving thing around a bit on our webpage. Before that though, we have to understand that HTML elements function and behave differently within the browser. HTML elements can either be inline and block elements. What's the difference? Is a header tag an inline or a block element? When CSS is applied, how will it render in the browser? These are all questions we'll explore below!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/5jz9br5kiz?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+#### Checkpoint:
+
+* Which of these are inline elements? block elements?
+
+  * `<a>`
+  * `<p>`
+  * `<img>`
+  * `<strong>`
+  * `<h3>`
+  * `<ul>`
+
 
 ---
 
-Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
-
-![](/assets/elkwebdesign/userflow.png)
-
-In order to make this userflow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>`elements to define a set of navigation links. You can also make your navigation appear verically, horizontally or alternatively-styled bloc.
-
-Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
-
-![](/assets/elkwebdesign/nav.png)
-
----
-
-[On to the next lesson.](02_lesson.md)
+[On to the lesson.](02_lesson.md)

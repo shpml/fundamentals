@@ -2,136 +2,106 @@
 
 ---
 
-# Data, Operators, and Expressions
+## Get Started with Git
 
-You've probably picked up a scientific calculator at some point in the past and
-started playing around with it. You punch in a big number (for example, 9876435),
-then `x`, and then another big number (say, 373848221), hit the `=` button, and
-the calculator spits back a result (in this case, 3692287654572135).
+###Initialize a Repository
 
-![Calculator](../assets/chapter3/calculator.png)
+To turn an ordinary directory into a Git repository (or *repo* for short), you have to **initialize** the repository (this just means adding a hidden folder called `.git/` to your project folder, which contains all the data that Git needs to operate.
 
-That thing that we type into the calculator is called an **expression**: a
-collection of values (*12345*) and operations (like **+** or **x**).
+Simply change your working directory to the folder you'd like to track and run the command:
 
-The process of reducing this expression down to a single value is called **evaluation**.
+```
+$ git init
+```
+> **CAUTION** Do not execute this command in your **home directory** –it will make it very difficult to work with any other repositories!
 
-The repl.it console is similar in many ways to this calculator. It accepts an
-expression (in JavaScript) from the user and attempts to evaluate that expression,
-yielding a single value.
+When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
 
-Before we tackle fully-fledged JavaScript expressions, let's first look at their
-two components: data and operators.
+If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
 
-<br>
+> **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
 
-## Data (a.k.a. Values)
-Calculators can only operate on numbers, but computers can perform calculations
-on many different kinds of data, including:
+### Saving Changes to Your Project
 
-* **Numbers**: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're considered the same.<br>
-<u>Examples</u>: `20`, `-4.5`, `300`, `99.99`
+Unfortunately, it's not enough to simply have your files in a repo. Like the terminal, Git doesn't make any assumptions about what changes you want to save or when you want to save them - you need to explicitly tell it what to do.
 
-* **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>'single-quote'</code> (also sometimes called 'string literals') and <code>"double-quote"</code>. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>'hello'</code>, <code>'goodbye'</code>, <code>'moc.liamg@gmail.com'</code>
+Suppose that we would like to work on a blog post for General Assembly, so we create a directory on our desktop called "GA-Blog" and run `git init` from inside that directory. At the moment, this project is empty - we can confirm this by running `git status`, which asks Git to give us an update on the status of our project.
 
-* **Booleans**: This one's probably new for you. Boolean-type data only has two
-possible values, `true` and `false`.
+```
+$ git status
+```
 
-If you forget what type of data you're dealing with, you can run the `typeof`
-command. Try typing the following lines into repl.it - what responses do you get?
+We should get a response like this.
 
-* <code>typeof 'hello';</code>
-* <code>typeof 24;</code>
-* <code>typeof 3.45;</code>
-* <code>typeof true;</code>
+![Git Status of GA-Blog](../assets/chapter2/git_status.gif)
 
-> **HINT**  You may have noticed that each of those lines ended in a `;` - in
-> JavaScript, a semicolon is used to denote the end of a line. Although your code
-> may execute without them, there are cases where a missing semicolon can cause
-> unexpected results. Just get in the habit of using them.
+Each 'save' that we make to our repository is called a **commit**; this message is telling us that our project has no unsaved changes.
 
-### Test Yourself
-Try to predict the types of each of the following bits of data. Check your answers
-with `typeof` in repl.it - were you correct?
+Let's go ahead and make a new text file called `post.txt` inside of GA-Blog, using the `touch` command.
 
-* <code>24</code>
-* <code>'99'</code>
-* <code>'true'</code>
-* <code>false</code>
+```
+$ touch post.txt
+```
+
+Now let's check our Git status:
+
+![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
+
+Git has identified that a change has been made - there is now a file in our repo. However, it does not know whether or not we want that change to be saved right now. To add this change to our next commit, we can run the command
+
+```
+$ git add post.txt
+```
+The changes we've just made have now been *staged*, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or *unstaged*. If we run `git status` again, we'll see that the addition of `post.txt` is staged and ready to be committed:
+
+![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
+
+> **NOTE** Often, you'll want to automatically save *any* changes that have been made inside your repo; instead of specifying a unique file, you can just write `git add .` - this will add all of the files in `.` (which, if you remember, is shorthand for the working directory) to the next commit.
+
+Once we're ready to officially record this version of our project, we can type:
+
+    $ git commit -m "created a new post.txt file"
+
+The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
+
+###The Git Staging Area
+
+One of the unique features of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
+
+```
+$ git add .
+$ git commit -m "message"
+```
+
+Why stage? So that if you make multiple changes you can commit them separately or all at once (basically, it exists to help you better organize your project history).
+
+![Git Staging Area](../assets/chapter2/add_commit.png)
 
 
-## Operators
-Of course, simply having data sitting around isn't very useful. Operators take
-values as their inputs (also known as **arguments**) and produce new data as output.
-There are *many* different operators out there, but here are some of the common ones:
 
-* **Arithmetic** (`+`, `-`, `*`, `/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`.
+### Your Commit History
 
->**Note** When given String arguments, the `+` operator actually behaves
-differently - it 'concatenates' two strings together to make one big string.
-<br><u>For example</u>: <code>'Hello' + ' ' + 'Bob'</code> will evaluate to <code>'Hello Bob'</code>.
+When you're farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. Git allows you to view a list of commits along with the date the commit was submitted, the author of the commit, the commit message AND a unique number to identify the commit by, called a SHA. This unique number allows Git to remember each commit, and apparently a 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt".
 
-* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
-<br><u>For example</u>: `15 % 4` will evaluate to `3`.
+To view the timeline of changes, you can run:
 
-* **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
-<br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
+```
+ $ git log
+```
 
-* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
-<br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
+which will yield a list of entires that look like this:
 
-* **Inequality** (`!==`) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator — it compares two values to check that both the data type and value are *not* the same.
-<br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
+```
+commit 6d33f525a09b9918f75188db164ea2722039830b
+Author: Sarah <sarah@gmail.com>
+Date:   Wed Jan 28 17:44:03 2015 -0500
 
-* **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
-    * NOT (`!`) will reverse the value of any boolean.
-        `!true` // `false`
-    * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false`.
-    * AND (<code>&&</code>) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
+    added a new post
 
-### Test Yourself
-Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.
-* <code>true && false;</code>
-* <code>45 % 6;</code>
-* <code>8 === 8.0;</code>
-* <code>'Hello' + ' ' + 'World';</code>
+```
 
-## Expressions
-So, what happens when we bring several of these operators and values together?
-
-Consider the following expression:
-
-`(2 + 3) * (9 - 8)`
-
-In order to perform the multiplication, we need to first know what we're multiplying – the `*` operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.
-
-We can represent this chain of dependencies using a logical structure called a `tree`.
-
-![Expression Tree for (2 + 3) * (9 - 8)](../assets/chapter3/tree1.png)
-<br>
-
-To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
-
-What happens if we're dealing with a more complicated expression? Say...
-
-`((9 + 2) * 25) - 5`
-
-Since the `-` requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
-
-![Expression Tree for ((9 + 2) * 25) - 5](../assets/chapter3/tree2.png)
-<br>
-
-One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
-
-In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can [check out this wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as being `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
-
-Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
-
-![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
-<br>
-
-While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts because there will be many times that you'll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.
+Each of these entries represents a commit for this project, and gives a lot of other useful information including when the commit was made, who made it, and (if the person wrote a good commit message) what that particular commit does.
 
 ---
 
-Think you've got it? [Let's do an exercise to cement what we've learned.](04_exercise.md)
+[Here are some more exercises to help you practice.](04_exercise.md)

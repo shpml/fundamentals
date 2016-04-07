@@ -2,29 +2,26 @@
 
 ---
 
-##Your Turn
+##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9nF) to some sample code in a repl.it session - it should contain the following code:
+Follow [this link](http://repl.it/9km) to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
-var x;
-var result;
-/* YOUR CODE HERE */
+/* Your Expression Here */
 ```
 
-This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
+This thing is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
 
-* If `x` is evenly divisible by 3 (for example, 3, 6, or 9), set `result` to "fizz".
-* If `x` is evenly divisible by 5 (for example, 5 or 10), set `result` to "buzz".
-* If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz".
-* If `x` is not evenly divisible by either 3 or 5 (for example, 7), set `result` to `x`.
+1. Replace `/* Your Expression Here */` with an expression that evaluates to the integer `30`.
+You can use any expression you like, but it must contain at least one (and ideally two or more) operations. You can test your answers by clicking the play button at the top of the page - it will spit out the evaluated result of your expression into the console.
 
-> Don't remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (`%`) operator.
+** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
 
-To test your code, set a value for `x` in the editor and click 'play'. Did you get the result you expected? Try out a bunch of different values for `x`, just to be sure.
+2. Now replace your first expression with a second expression - this one should evaluate to 'Hello World'.
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+3. Finally, replace the previous expression with an expression that evaluates to the boolean `true`. Try using two or three operations for this one!
+
+> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
 
 ---
-
-[Next: Loops](05_lesson.md)
+[On to the next lesson.](05_lesson.md)

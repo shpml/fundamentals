@@ -2,267 +2,131 @@
 
 ---
 
-#Functional JavaScript
+We've covered how we can tell our programs to make decisions; now let's look at how we can tell our programs to take repeated/ongoing actions.
 
-Functions can also be used as procedures – miniature, self-contained programs that are executed one line at a time whenever the function is called.
+## The `while` Loop
 
-When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run.
+To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running a block of code, it 'loops' back to the beginning and starts again.
 
-For instance, let's go back to the "French Toast a la GA" recipe from Unit 4. Every time a soaked slice of bread is ready to be cooked, we need to:
+Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten it.
 
+![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
+<br>
 
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
->
+We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
 
-Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle this set of instructions for us, and simply call that function any time the bread slices need to be cooked.
+![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
+<br>
 
-## Problem Solving with Functions
-
-Let's look at a practical example. Say that we're working on a [TicTacToe game](http://en.wikipedia.org/wiki/Tic-tac-toe).
-
-We're not going to build the actual game, just write out the logic that would determine the winner.
-
-In TicTacToe, there are nine possible values (for every cell on the board):
-
-```
-| a | b | c |
-| d | e | f |
-| g | h | i |
-```
-
-Each of these values will start as `null`, until a user assigns them a new value, either 'o' or 'x'
-
-To play around with this invisible TicTacToe board, we've provided some code:
+Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
 
 ```javascript
-var cellValue = function(key) {
-  switch(key) {
-    case 'a': return null;
-    case 'b': return null;
-    case 'c': return null;
-    case 'd': return null;
-    case 'e': return null;
-    case 'f': return null;
-    case 'g': return null;
-    case 'h': return null;
-    case 'i': return null;
-    default : return null;
-  }
+while (someCondition) {
+  // A block of code.
 }
 ```
+As you can see, it is written in almost exactly the same way as an `if` statement.
 
-To assign a value (`x`, `o`) to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:
-
-```
-| null | null |   x  |
-| null |   o  | null |
-| null |   o  |   x  |
-```
-
-You would edit the switch statement like such:
+### Test Yourself
+* Consider the following code.
 
 ```javascript
-var cellValue = function(key) {
-  switch(key) {
-    case 'a': return null;
-    case 'b': return null;
-    case 'c': return 'x';
-    case 'd': return null;
-    case 'e': return 'o';
-    case 'f': return null;
-    case 'g': return null;
-    case 'h': return 'o';
-    case 'i': return 'x';
-    default : return null;
-  }
+var x = 10;
+while (x > 5) {
+  x -= 2;
 }
 ```
 
-###Who is the Winner?
+How many times will this loop run? What will the final value of `x` be when it finishes?
 
-Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
-
-We'll call it `getWinner` and it will give us back either 'x' (if X has won), 'o' (if O has won), or `null` (if neither side has won).
+* Here's another loop.
 
 ```javascript
-var getWinner = function() {
+var x = 10;
+var y = 1;
+while (x < 20) {
+  y += 1;
 }
 ```
 
-So where do we go from here?
+How many times will this loop run? What happens when you try to run this code?
 
-One way to determine the winner might be to check whether X has won and then to check whether O has won. What if two functions existed that would magically determine this for us?
 
-We could call them `winnerIsX` and `winnerIsO`.  `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
+A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by making your condition evaluate to `false`.
+
+Consider the following example.
 
 ```javascript
-  var getWinner = function() {
-    if (winnerIsX()) {
-      return 'x';
-    }
-    if (winnerIsO()) {
-      return 'o';
-    }
-    return null;
-  }
+var z = 0;
+var myString = '';
+while (z < 5) {
+  myString += 'X';
+  z += 1;
+}
 ```
 
-OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems – how do we determine whether X or O won?
+Q: How many times does this loop run? What's the final value of myString?
 
-###Determining if `x` has won
+A: Each time this loop runs, the value of `z` increases by 1; since its initial value is 0, and the condition becomes `false` the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
 
-Let's focus on `winnerIsX` first.
+Confused? Here's the play-by-play.
+* `z` is set to 0 and `myString` is set to "".
+* `z` is 0, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "X"
+  * (in the block) `z` is increased by 1; it is now 1. Now that the block is done, we go back to the condition.
+* `z` is 1, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XX"
+  * (in the block) `z` is increased by 1; it is now 2. Now that the block is done, we go back to the condition.
+* `z` is 2, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXX"
+  * (in the block) `z` is increased by 1; it is now 3. Now that the block is done, we go back to the condition.
+* `z` is 3, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXXX"
+  * (in the block) `z` is increased by 1; it is now 4. Now that the block is done, we go back to the condition.
+* `z` is 4, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXXXX"
+  * (in the block) `z` is increased by 1; it is now 5. Now that the block is done, we go back to the condition.
+* `z` is now 5, therefore <code>z < 5</code> is now **false** (since 5 is **not** less than 5) so the block does not get executed again.
+* We're done!
 
-In TicTacToe, there are three ways that X can win:
-1. All cells in a row contain an `x`
-2. All cells in a column contain an `x`
-3. All cells in a diagonal contain an `x`
+What's most interesting about this kind of setup is that if we changed that condition from <code>z < 5</code> to <code>z < 10</code>, or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
 
-Wouldn't it be great if we had functions to determine these too? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`.
+This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
-In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so to determine `winnerIsX` we could write the following:
+## The `for` Loop
+
+Let's make a few modifications to our while loop from earlier.
+
+![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
+
+As you can see, there are a couple of key ingredients to making our `for` loop work. We need
+1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
+2. a condition, which gets evaluated each time we're about to execute the block (e.g. x < 10)
+3. a 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
+
+The general syntax for a `for` loop is
 
 ```javascript
-var winnerIsX = function() {
-  return winsRowX() || winsColumnX() || winsDiagonalX();
+for (initialization; condition; finalExpression) {
+  // A block of code.
 }
 ```
 
-You can't execute anything yet.  Just stick with us – we only have a few more tiny problems to solve!
-
-####Winning by Rows
-
-Let's look at `winsRowX` – what does it actually mean to win a row?
-
-According to our cell key from earlier, there are three cells in a row; the first row is `a`,`b`, and `c`; the second row is `d`,`e`, and `f`; the third row is `g`,`h`, and `i`.
-
-If any of these three sets are all equal to `x`, then X has won via a row.
-
-Let's dive just one level deeper, with a function to test if any one of the three rows are equal to `x` (let's call it `allThreeX`).
+### Test Yourself
 
 ```javascript
-var winsRowX = function() {
-  return allThreeX(cellValue('a'), cellValue('b'), cellValue('c')) ||
-  		allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
-  		allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
-}
-var allThreeX = function(cellOne, cellTwo, cellThree) {
+var x = 10;
+for (var i = 0; i < x; i += 1) {
+  console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
 }
 ```
 
-####Winning by Columns and Diagonals
-
-
-We can also use `allThreeX` to write functions for `winsColumnX` and `winsDiagonalX`. This would give us the following code:
-
-```javascript
-var getWinner = function() {
-  if (isWinnerX()) {
-    return 'x';
-  }
-  if (isWinnerO()) {
-    return 'o';
-  }
-  return null;
-}
-
-var isWinnerX = function() {
-  return winsRowX() || winsColumnX() || winsDiagonalX();
-}
-
-var winsRowX = function() {
-  return allThreeX(cells('a'), cells('b'), cells('c')) ||
-         allThreeX(cells('d'), cells('e'), cells('f')) ||
-         allThreeX(cells('g'), cells('h'), cells('i'));
-}
-
-var winsColumnX = function() {
-  return allThreeX(cells('a'), cells('d'), cells('g')) ||
-         allThreeX(cells('b'), cells('e'), cells('h')) ||
-         allThreeX(cells('c'), cells('f'), cells('i'));
-}
-
-var winsDiagonalX = function() {
-  return allThreeX(cells('a'), cells('e'), cells('i')) ||
-         allThreeX(cells('c'), cells('e'), cells('g'));
-}
-
-var allThreeX = function(cellOne, cellTwo, cellThree) {
-}
-```
-
-Now that we've broken it into one much smaller problem, our `allThreeX` function is fairly easy to write!
-
-```javascript
-var allThreeX = function(cellOne, cellTwo, cellThree) {
-  return (cellOne === 'x') && (cellTwo === 'x') && (cellThree === 'x');
-}
-```
-
-Excellent! Now, `isWinnerX` should be able to tell us if X has won.
-
-###Determining if `o` has won
-
-Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. But that seems pretty duplicative.
-
-There's a principle we'll emphasize in this course – one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it better if we could make the function `allThreeX` more general so that it worked for both players?
-
-Let's see what we can do.
-
-```javascript
-var allThree = function(player, cellOne, cellTwo, cellThree) {
-  return (cellOne === player) && (cellTwo === player) && (cellThree === player);
-}
-```
-
-###Removing the duplicative code
-
-Now `allThree` can be used to test for `x` **or** for `o`; by getting rid of our hard-coded data, we were able to make this function do double-duty!
-
-Let's do the same thing for all the other functions we wrote:
-
-```javascript
-var getWinner = function() {
-  if (winnerIs('x')) {
-    return 'x';
-  }
-  if (winnerIs('o')) {
-    return 'o';
-  }
-  return null;
-}
-
-var winnerIs = function(player) {
-  return winsRow(player) || winsColumn(player) || winsDiagonal(player);
-}
-
-var winsRow = function(player) {
-  return allThree(player, cells('a'), cells('b'), cells('c')) ||
-         allThree(player, cells('d'), cells('e'), cells('f')) ||
-         allThree(player, cells('g'), cells('h'), cells('i'));
-}
-
-var winsColumn = function(player) {
-  return allThree(player, cells('a'), cells('d'), cells('g')) ||
-         allThree(player, cells('b'), cells('e'), cells('h')) ||
-         allThree(player, cells('c'), cells('f'), cells('i'));
-}
-
-var winsDiagonal = function(player) {
-  return allThree(player, cells('a'), cells('e'), cells('i')) ||
-         allThree(player, cells('c'), cells('e'), cells('g'));
-}
-
-var allThree = function(player, cellOne, cellTwo, cellThree) {
-  return (cellOne === player) && (cellTwo === player) && (cellThree === player);
-}
-```
-
-If you want, you can play around with this code in [this repl.it session](http://repl.it/aOU), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
-
-Have fun!
-
+* How many times will 'HELLO' be printed out in the console?
+* What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
+* What if (all else the same) we changed the condition from <code>i < x</code> to <code>i <= x</code>?
+* What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
+Check your answers in repl.it.
 
 ---
 
-Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md)
+Feeling good about loops? [Let's do another exercise.](07_exercise.md)

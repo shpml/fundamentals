@@ -1,79 +1,28 @@
-**WDI Fundamentals Unit 10**
+**WDI Fundamentals Unit 9**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Define a function with one or more parameters
-* Execute a function within a program or in the console
-* Given a function and a set of arguments, predict the output of a function
-* Use selectors and methods to access and update the DOM
+* Use conditional statements to control the flow of program execution
+* Use loops to repeat an operation or action based on the value of a condition
 
 ---
 
-# Functions
+In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Kind of like a recipe, no?
 
-You've had an opportunity to see some functions in the homework assignments at the end of units 3 and 4; now it's time to learn about writing them!
+Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA"
+> ...
+>
+> 3: Whisk eggs, milk, honey and kosher salt until eggs are no longer visible.
+>
+> 4: Dip your bread slices in the custard. If you're using a pre-sliced loaf, and the slices are thin, a short dip (just enough to coat both sides) should be enough; however, if your slices are thick, you may want to give the bread a minute or two to soak up the custard.
+>
+> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
+>
+> ...
 
-But first... a little math.
+Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **control flow**, because it specifies the flow of the computer's actions through the program.
 
-**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
+In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
 
-Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
-
-<br>
-<center><img src="../assets/chapter5/function.png"></center>
-<br>
-
-If we were shown the output (`f(x)`) for each value of `x`:
-
-| x  | f(x) |
-|:-: |:-:   |
-| -1 | -2   |
-| 0  | 0    |
-| 1  | 2    |
-| 2  | 4    |
-| 3  | 6    |
-
-We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
-
-Functions play a similar role in programming – JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
-
-
-
-# The Document Object Model
-
-In previous units, we've relied on `console.log` and `alert` to give feedback to users. Later in this unit we'll look at how we can provide more meaningful feedback and make our sites more "user friendly" by allowing users to interact with our site and see its contents updated in real time.
-
-Let's take a look at the following HTML page:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>To Do List</title>
-</head>
-<body>
-	<h1>Things To Do</h1>
-	<ul>
-		<li>Call Mom</li>
-		<li>Take out the trash</li>
-		<li>Return library books</li>
-	</ul>
-</body>
-</html>
-```
-
-The browser pulls in this HTML document, parses it, and creates an object model of the page in memory. This model is called the **Document Object Model (DOM)**.
-
-The DOM specifies that the browser should use a **DOM Tree** to structure this model:
-
-![](/assets/chapter5/dom.png)
-
-Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.
-
-We can get and set attributes for these nodes – perhaps we want to add a class or update styling to change the background color for an element. We can access and change the content – maybe we want to change the text in the third `li` to read "Return library books - DONE!" Or we can even add new nodes to or remove nodes from the page.
-
-Once we get some functions under our belt we'll take a look at how we can use some of JavaScript's "built-in" functions to interact with the DOM and add more complex interactions to our sites.
-
-Ready to dig in? [Let's take a look at functions.](02_lesson.md)
+[Let's get started.](02_lesson.md)

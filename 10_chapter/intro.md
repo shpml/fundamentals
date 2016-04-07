@@ -1,47 +1,79 @@
-**WDI Fundamentals Unit 6**
+**WDI Fundamentals Unit 10**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Create collections (arrays and associative arrays) and retrieve values from them
-* Operate on all the elements within a collection using loops and iterators
-* Explain how arrays and associative arrays differ
+* Define a function with one or more parameters
+* Execute a function within a program or in the console
+* Given a function and a set of arguments, predict the output of a function
+* Use selectors and methods to access and update the DOM
 
 ---
 
-Congratulations, you've almost made it to the end of WDI Fundamentals!
+# Functions
 
-In Unit 5, you learned to create your own functions that could generate specific behaviors. If you wanted to get the average of three variables, `x`, `y`, and `z`, you could write the following:
+You've had an opportunity to see some functions in the homework assignments at the end of units 3 and 4; now it's time to learn about writing them!
 
-```javascript
-var avgOfThree = function(x, y, z) {
-    return (x + y + z) / 3;
-}
+But first... a little math.
+
+**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
+
+Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
+
+<br>
+<center><img src="../assets/chapter5/function.png"></center>
+<br>
+
+If we were shown the output (`f(x)`) for each value of `x`:
+
+| x  | f(x) |
+|:-: |:-:   |
+| -1 | -2   |
+| 0  | 0    |
+| 1  | 2    |
+| 2  | 4    |
+| 3  | 6    |
+
+We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
+
+Functions play a similar role in programming – JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
+
+
+
+# The Document Object Model
+
+In previous units, we've relied on `console.log` and `alert` to give feedback to users. Later in this unit we'll look at how we can provide more meaningful feedback and make our sites more "user friendly" by allowing users to interact with our site and see its contents updated in real time.
+
+Let's take a look at the following HTML page:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>To Do List</title>
+</head>
+<body>
+	<h1>Things To Do</h1>
+	<ul>
+		<li>Call Mom</li>
+		<li>Take out the trash</li>
+		<li>Return library books</li>
+	</ul>
+</body>
+</html>
 ```
 
-However, this is a *very* specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify [the code in repl.it](http://repl.it/bJM) like so:
+The browser pulls in this HTML document, parses it, and creates an object model of the page in memory. This model is called the **Document Object Model (DOM)**.
 
-```javascript
-var avgOfTen = function(a, b, c, d, e, f, g, h, i, j) {
-    return (a + b + c + d + e + f + g + h + i + j) / 10;
-}
-```
-Ok, now try writing `function avgOfOneHundred()`.
+The DOM specifies that the browser should use a **DOM Tree** to structure this model:
 
-Or don't. It would be exhausting to write a hundred different identical variations of this function. The more variables we want to keep track of, the more code we have to write – the length of our code is growing even though our program is not growing in complexity.
+![](/assets/chapter5/dom.png)
 
-To keep our code DRY (as we learned in the [last Unit](../05_chapter/05_lesson.md)), we should hand our function a *set* of values (of any size) and tell it to work with that.
+Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.
 
-We can do this using a type of data called a **collection**.
+We can get and set attributes for these nodes – perhaps we want to add a class or update styling to change the background color for an element. We can access and change the content – maybe we want to change the text in the third `li` to read "Return library books - DONE!" Or we can even add new nodes to or remove nodes from the page.
 
-Collections, as the name implies, are groups of (generally, similar) values.
+Once we get some functions under our belt we'll take a look at how we can use some of JavaScript's "built-in" functions to interact with the DOM and add more complex interactions to our sites.
 
-Here are some examples of real world collections:
-- a list of groceries to buy
-- a stack of books to read
-- a queue of people waiting to get into a movie
-
-In this unit, we will see how all of these things (and more) can be turned into collections – both ordered collections and unordered collections – and why this is a really important tool to add to your belt.
-
-
-[Let's get started.](02_lesson.md)
+Ready to dig in? [Let's take a look at functions.](02_lesson.md)

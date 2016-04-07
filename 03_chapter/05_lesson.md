@@ -1,15 +1,20 @@
 **WDI Fundamentals Unit 3**
-
 ---
 
-# Semantic Elements for Webpage Layout
+#Choosing the Right MarkUp
 
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/y4o61drbo1?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+Phew! That's a lot of new information to process! Sometimes it can be difficult to figure out how to best structure your site. Not to worry, we have a video below explaining best practices when it comes to choosing the right tags to create the look and feel that you want!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/870he58vtk?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
-#### Checkpoint
 
-* Why do we want to avoid using a "header" or "footer" in a div?
+#### Checkpoint:
+
+* How do your create ordered lists?
+* How do you create line breaks?
+* How do you create hyperlinks?
 
 ---
-[On to the next lesson.](06_exercise.md)
+
+[Ready to get some practice?](06_exercise.md)
