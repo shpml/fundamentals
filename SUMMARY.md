@@ -1,6 +1,7 @@
 # Summary
 * [Welcome](intro.md)
-	* [Getting Started](00_chapter/get_started.md)
+	* [Units & Lessons](00_chapter/02_lesson.md)
+	* [Exercises, Quizes & Assignments](00_chapter/03_lesson.md)
 * [Developer Tools I](01_chapter/02_lesson.md)
 	* [Text Editors and Browsers](01_chapter/03_lesson.md)
 * [Introduction to HTML](02_chapter/intro.md)

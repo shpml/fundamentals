@@ -6,56 +6,49 @@
 
 ### Elk Web Design: Part 1
 
-In this exercise, you'll learn the basics of laying out a webpage while building a small business website for ELK Design! The final design is based on a project by FEWD graduate, Lauren Kathe, and looks like this:
+In this exercise, you'll learn the basics of laying out a webpage while building a small business website for ELK Design! The final design is based on an assignment submitted by a FEWD graduate, Lauren Kathe, and looks like this:
 
 ![](../assets/elkwebdesign/elkwebdesign.png)
 
-The design has four sections that we'll add in:
+This design has four sections:
 
 * header
 * "about" section
 * "services" section
 * footer
 
-Don't worry yet about positioning them on the page yet. For this exercise, we're just going to put them in! You'll be using the code editor below. As usual, **don't forget to fork and save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
+This exercise, has two sections. In the first, we'll create the structure of the website, and for the second section we're going to add CSS. You'll be using the JSBIN code editor below. As usual, **don't forget to save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
 
-#### Part 1: Basic Page structure
+<a class="jsbin-embed" href="https://jsbin.com/nideji/embed?html&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-**HTML Starter Code**: What's waiting for you in the HTML tab is familiar: it's your boilerplate! Nothing in the head shows up on screen. So let's move into the body, where you can see things happening!
+#### Section 1: Basic Page structure
+Your job is to use the notes below to write the HTML for the Elk Design Company.
 
-<a class="jsbin-embed" href="http://jsbin.com/nideji/embed?html&height=600px"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+1 . **The Header**
+  * Elk Design has a header element inside the body which contains the company name **ELK Web Design** as a level 1 heading.
 
-1 . Open and close a header element inside the body.
+  * The header also contains this image: http://i.imgur.com/pdsjjxD.jpg
 
-2 . Write **ELK Web Design** inside the header.
+2 . **The Body**
+  * Inside the body there are two sections (hint: divs). One section is for the "about" content, the other is for "services". The section headings are level 2.
 
-3 . Below the `h1`, add an image tag that links to this URL - http://i.imgur.com/pdsjjxD.jpg
+  * The body also contains a footer.
 
-4 . Inside the body and below the header element, open and close two empty divs.
+  * _About Content_ :
 
-5 . Then, open and close one set of footer tags underneath.
+    Elk provides clean and innovative sites for small businesses, artists, and professionals.
 
-6 . Give the first empty div an id of "about"
+  * _Service Content_
 
-8 . Give the second empty div an id of "services"
+    HTML, CSS, Responsive, Visual Design.
 
-9 . Write `<h2>`Who we are`</h2>` inside the "about" section.
+  * _Footer Content_
 
-10 . Put a paragraph under the heading. It can be "about" anything you want or what's below!
-
-*Elk provides clean and innovative sites for small businesses, artists, and professionals.*
-
-11 . Write `<h2>`How we do it`</h2>` inside the "services" div.
-
-13 . Below that, open and close an empty unordered list.
-
-14 . Put the four list items inside your unordered list. Again, don't worry if it doesn't look like the target layout yet.
-
-15 . Write &copy; 2014 ELK between the opening and closing footer tags.
+    &copy; 2014 ELK between the opening and closing footer tags.
 
 ![](../assets/elkwebdesign/elkheader.png)
 
-#### Part 2: Styling text
+#### Section 2: Styling text
 
 Flip on over to your CSS tab.
 

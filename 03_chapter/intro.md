@@ -2,7 +2,7 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
+##### By the end of this Unit, you'll be able to:
 
 * Understand the difference between HTML and CSS.
 * Unlock millions of colors with RGB and Hex to design websites.
@@ -12,11 +12,9 @@
 
 
 ---
-#Intro to CSS
+# Intro to CSS
 
-So what’s the difference between HTML and CSS? And when do I use each?
-
-As we mentioned in the Unit 3, HTML, or **H**yper**T**ext **M**arkup **L**anguage, is the standard language used to code web pages and all of the content on a website is added with HTML. CSS, **C**ascading **S**tyle **S**heets, decides how content written in an HTML document looks including stylisti layout, colors, and fonts.
+As we mentioned in the Unit 3, HTML, or **H**yper**T**ext **M**arkup **L**anguage, is the standard language used to code web pages and all of the content on a website is added with HTML. CSS, **C**ascading **S**tyle **S**heets, decides how content written in an HTML document looks including stylistic layouts, colors, and fonts.
 
 In this unit, we'll learn more about CSS and styling to create better designed websites!
 

@@ -11,7 +11,12 @@ Now that we've really understood how to differentiate between inline and block e
 
 #### More on the Box Model
 
-Another syntax for setting margins and padding allows you to give the four different sides of an HTML element (our div in this case), different values.
+Here's a diagram to help you remember the box model.
+
+![](../assets/elkwebdesign/boxmodel.png)
+
+
+Here is another syntax for setting different margins and padding values for each side of an HTML element.
 
 ```html
 div {
@@ -22,23 +27,10 @@ div {
 
 ![](../assets/elkwebdesign/padding.png)
 
-
-In the HTML each instance of the word "name" is wrapped in its own span. Span is a generic inline element that allows you to style parts of HTML elements. You can also use spans to hang classes and ids from.
-
-```html
-span {
-	font-variant: small-caps;
-	font-family: tahoma, sans-serif;
-	letter-spacing: .25em;
-}
-```
-
 Even though spans are inline, you can still give them padding, too.
 
 ![](../assets/elkwebdesign/trouble.png)
 
-And here's a diagram to help you remember the box model.
 
-![](../assets/elkwebdesign/boxmodel.png)
 
 [Ready to try coding it out?](04_exercise.md)

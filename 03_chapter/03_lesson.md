@@ -16,5 +16,4 @@ So what’s the difference between them? In short, classes allow you to style ma
 * How do add an ID attribute? A class attribute?
 * Can you use IDs more than once?
 
-
 [On to the next lesson.](04_lesson.md)
