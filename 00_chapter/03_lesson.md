@@ -14,7 +14,7 @@ Here's an example. Click the tabs to get used to the navigation.
 Create a [JSBin account](https://jsbin.com/). Creating a free account will allow you to save your exercises as "bins." You're not required to submit the exercises, but be sure to save your work if you have any questions that you want to ask your instructors or the WDI community on [Slack](00_chapter/intro.md).
 
 
-![](assets/elkwebdesign/jsbin.png)
+![](../assets/elkwebdesign/jsbin.png)
 
 
 **Pro Tip**: What you write in the code editor in this ebook it will not automatically save. Therefore, you need to make sure that you do hit the *save* button and make sure you copy your code over.
