@@ -1,137 +1,64 @@
-**WDI Fundamentals Unit 8**
+**WDI Fundamentals Unit 6**
 
 ---
 
-# Data, Operators, and Expressions
+##Thinking Programmatically
 
-You've probably picked up a scientific calculator at some point in the past and
-started playing around with it. You punch in a big number (for example, 9876435),
-then `x`, and then another big number (say, 373848221), hit the `=` button, and
-the calculator spits back a result (in this case, 3692287654572135).
+Before you set out to write a program it is important to understand how computers "think." Computers solve problems differently than you or I might. They do not learn to perform tasks but need detailed, step-by-step instructions every time they perform a task.
 
-![Calculator](../assets/chapter3/calculator.png)
+The only things a computer knows are the things we tell it.
 
-That thing that we type into the calculator is called an **expression**: a
-collection of values (*12345*) and operations (like **+** or **x**).
+If you're having friends over for dinner and would like to cook up a new dish, you'll most likely find an interesting recipe and follow the instructions step-by-step in order to make something you've never made before.
 
-The process of reducing this expression down to a single value is called **evaluation**.
+Similarly, a **program** is a series of instructions that a computer can follow to achieve a goal.
 
-The repl.it console is similar in many ways to this calculator. It accepts an
-expression (in JavaScript) from the user and attempts to evaluate that expression,
-yielding a single value.
-
-Before we tackle fully-fledged JavaScript expressions, let's first look at their
-two components: data and operators.
-
-<br>
-
-## Data (a.k.a. Values)
-Calculators can only operate on numbers, but computers can perform calculations
-on many different kinds of data, including:
-
-* **Numbers**: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're considered the same.<br>
-<u>Examples</u>: `20`, `-4.5`, `300`, `99.99`
-
-* **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>'single-quote'</code> (also sometimes called 'string literals') and <code>"double-quote"</code>. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>'hello'</code>, <code>'goodbye'</code>, <code>'moc.liamg@gmail.com'</code>
-
-* **Booleans**: This one's probably new for you. Boolean-type data only has two
-possible values, `true` and `false`.
-
-If you forget what type of data you're dealing with, you can run the `typeof`
-command. Try typing the following lines into repl.it - what responses do you get?
-
-* <code>typeof 'hello';</code>
-* <code>typeof 24;</code>
-* <code>typeof 3.45;</code>
-* <code>typeof true;</code>
-
-> **HINT**  You may have noticed that each of those lines ended in a `;` - in
-> JavaScript, a semicolon is used to denote the end of a line. Although your code
-> may execute without them, there are cases where a missing semicolon can cause
-> unexpected results. Just get in the habit of using them.
-
-### Test Yourself
-Try to predict the types of each of the following bits of data. Check your answers
-with `typeof` in repl.it - were you correct?
-
-* <code>24</code>
-* <code>'99'</code>
-* <code>'true'</code>
-* <code>false</code>
+**Programming** is the task of writing those instructions in a language that the computer can understand.
 
 
-## Operators
-Of course, simply having data sitting around isn't very useful. Operators take
-values as their inputs (also known as **arguments**) and produce new data as output.
-There are *many* different operators out there, but here are some of the common ones:
+## Pseudo Code
 
-* **Arithmetic** (`+`, `-`, `*`, `/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`.
+When we write a program, we need to figure out a way to translate the ideas that are in our heads into code.
 
->**Note** When given String arguments, the `+` operator actually behaves
-differently - it 'concatenates' two strings together to make one big string.
-<br><u>For example</u>: <code>'Hello' + ' ' + 'Bob'</code> will evaluate to <code>'Hello Bob'</code>.
+**Pseudo code** is a way to plan out your program before coding it. It is a detailed, step-by-step description of what a computer must do, expressed in plain English rather than in a programming language.
 
-* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
-<br><u>For example</u>: `15 % 4` will evaluate to `3`.
+As tempting as it may be to jump right into a problem and start writing code, you'll find that taking a few minutes to focus on your approach will save you valuable time as you start writing actual code. Often during the planning process you'll think of scenarios you hadn't originally anticipated. As the old proverb goes, "Measure twice and cut once."
 
-* **Comparison** (<code>></code>, <code><</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
-<br><u>For example</u>: <code>5 > 1</code> will evaluate to `true`, while <code>10 < 5</code> will evaluate to `false`.
+## Writing Pseudo Code
 
-* **Equality** (`===`) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
-<br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
+Take, for example, a program that lets a player know whether he or she has passed the current level. Pseudo code for this program might look like the following:
 
-* **Inequality** (`!==`) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator — it compares two values to check that both the data type and value are *not* the same.
-<br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
+```
+passingScore = 150 points
+get playerScore
 
-* **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and give back boolean values.
-    * NOT (`!`) will reverse the value of any boolean.
-        `!true` // `false`
-    * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false`.
-    * AND (<code>&&</code>) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
+if playerScore >= passingScore
+	display message "Current level: Passed"
+otherwise
+	display message "Current level: Failed"
 
-### Test Yourself
-Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.
-* <code>true && false;</code>
-* <code>45 % 6;</code>
-* <code>8 === 8.0;</code>
-* <code>'Hello' + ' ' + 'World';</code>
+```
 
-## Expressions
-So, what happens when we bring several of these operators and values together?
+Again, the goal is to think through the problem and *break it down into simple steps*, which can then be written out in code. Since there are no formal rules as to how pseudo code must be written, each person's version will likely vary slightly. Indentation is often used to keep statements organized and grouped together.
 
-Consider the following expression:
+As another example, perhaps we want to create a thermostat program that turns on the heat when the current room temperature is less than the target temperature.
 
-`(2 + 3) * (9 - 8)`
+```
+get targetTemperature
+targetTemperature = 72
+repeat forever
+  currentTemperature = get sensor reading
+  if currentTemperature < (targetTemperature - 5),
+    turn on heater
+  if currentTemperature >= targetTemperature,
+    turn off heater
 
-In order to perform the multiplication, we need to first know what we're multiplying – the `*` operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.
+```
+We first need to have the user enter a target temperature (in this case it is 72). Then we will continually check to see if the current temperature is less than the target temperature minus 5. If it is, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater. And it's as simple as that!
 
-We can represent this chain of dependencies using a logical structure called a `tree`.
+Breaking down problems in this fashion will likely seem a little foreign in the beginning. Once you gain some practice, though, this will become second nature.
 
-![Expression Tree for (2 + 3) * (9 - 8)](../assets/chapter3/tree1.png)
-<br>
-
-To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
-
-What happens if we're dealing with a more complicated expression? Say...
-
-`((9 + 2) * 25) - 5`
-
-Since the `-` requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
-
-![Expression Tree for ((9 + 2) * 25) - 5](../assets/chapter3/tree2.png)
-<br>
-
-One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
-
-In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can [check out this wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as being `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
-
-Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
-
-![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
-<br>
-
-While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts because there will be many times that you'll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.
+Many of the programs that you'll be working on in the following chapters might seem a little daunting at first. Instead of trying to tackle a problem all at once, take a few minutes to think about the overall goal of the program and then break that down into series of short instructions. It will surely be time well spent.
 
 ---
 
-Think you've got it? [Let's do an exercise to cement what we've learned.](04_exercise.md)
+Now it's your turn. Get some practice writing pseudo code [in this exercise](11_exercise.md).

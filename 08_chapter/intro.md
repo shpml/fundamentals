@@ -3,6 +3,7 @@
 ---
 
 ##### By the end of this Unit, you'll be able to:
+* Practice programatic thinking by writing pseudo-code.
 * Perform arithmetic and logical operations on data to produce new values
 * Concatenate two strings together in JavaScript
 * Write expressions that both assign and evaluate variables.
