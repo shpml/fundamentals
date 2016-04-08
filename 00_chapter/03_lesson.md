@@ -11,7 +11,7 @@ Here's an example. Click the tabs to get used to the navigation.
 <a class="jsbin-embed" href="https://jsbin.com/zojica/embed?html,output&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
- Create a [JSBin account](https://jsbin.com/). Creating a free account will allow you to save your exercises as "bins." You're not required to submit the exercises, but be sure to save your work if you have any questions that you want to ask your instructors or the WDI community on [Slack](00_chapter/intro.md).
+Create a [JSBin account](https://jsbin.com/). Creating a free account will allow you to save your exercises as "bins." You're not required to submit the exercises, but be sure to save your work if you have any questions that you want to ask your instructors or the WDI community on [Slack](00_chapter/intro.md).
 
 
 ![](assets/elkwebdesign/jsbin.png)
