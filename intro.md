@@ -26,7 +26,7 @@ Be sure to add a photo and "WDI Student - CITY" to your profile.
 Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
 page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
 
-![Step-by-step Slack Tutorial](../assets/chapter0/slack_tutorial.gif)
+![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
 
 
 ## Feedback
@@ -34,7 +34,4 @@ page asks for your team domain, and join the [#wdi-fundamentals](https://ga-stud
 We need your help to improve this material!  Please don't hesitate to reach out
 by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly).
 
-[Let's get started!](../01_chapter/intro.md)
-
-
-[Ok, let's get started!](00_chapter/get_started.md)
+[Ok, let's get started!](00_chapter/02_lesson.md)
