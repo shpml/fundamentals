@@ -104,5 +104,4 @@
 	* [Quiz](11_chapter/09_quiz.md)
 	* [Cheat Sheet](11_chapter/11_cheatsheet.md)
 	* [Unit 11 Homework](11_chapter/12_assessment.md)
-* [Exercise Solutions](exercise-solutions.md)
 * [Glossary](glossary.md)
