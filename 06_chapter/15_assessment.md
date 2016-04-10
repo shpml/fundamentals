@@ -2,6 +2,8 @@
 
 ---
 
+*We'll take a break from Memory Game and practice using the terminal! The terminal will help us navigate our file and then learn how to push our code to the cloud using a command line tool called Git.*
+
 ##![Your Turn](../assets/exercise.png) Your Turn
 
 Close and restart your Terminal application.

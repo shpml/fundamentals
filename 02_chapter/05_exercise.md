@@ -15,6 +15,9 @@ When complete, your output should look like this:
 
 Use the editor provided below to write your code and see what renders!
 
+<a class="jsbin-embed" href="https://jsbin.com/vuquwe/embed?htmlheight=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+
+
 1 . Give your website some content: introduce yourself, mention one social media account (or any website of your choosing), and ask for an email. Something like this should work:
 
 *Hi, I'm awesome.
@@ -46,7 +49,6 @@ Example:
 
 Click on the **OUTPUT** button to see what your HTML code renders.
 
-<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 ---
 

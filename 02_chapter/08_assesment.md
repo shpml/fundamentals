@@ -31,16 +31,16 @@ In this unit we've already introduced some of the core fundamentals of web devel
 
 *Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.*
 
+#### Bonus
+* Add a subheading describing the game
+
+* Add some personal social media links so users can learn about the developer behind the game.
+
 * Add some flare to the site by adding at least two colors! Add some paint to the canvas! For now, we'll use the CSS property `color` to give some spice to the headers. Add the color *teal* to your h1 tag.
 
 * Add the color *gold* to your h2 tags.
 
 >**NOTE** To add styling within your HTML file add your CSS between `<style></style>` tags.
-
-#### Bonus
-* Add a subheading describing the game
-
-* Add some personal social media links so users can learn about the developer behind the game.
 
 ---
 

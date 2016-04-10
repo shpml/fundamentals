@@ -2,22 +2,54 @@
 
 The following solutions are for the Unit exercises.
 
-### 1.2.1
+## Unit 1
+
+### 2.1.1
+
+```html
+<h1>My first website!</h1>
+<h2>by a talented student</h2>
+
+<p>Built with Circuits at GA.</p>
+```
+
+### 2.2.1
+
+```html
+<h1>Hi, I'm awesome.</h1>
+<p><a href="http://twitter.com/GA">Follow me</a> on twitter.</p>
+<p>Send me an <a href="mailto:me@email.com"> email</a>.<p>
+```
+
+
+
+
+## Unit 2
+
+## Unit 3
+
+## Unit 4
+
+## Unit 5
+
+## Unit 6
+
+### 6.2.1
 1. `$ cd Downloads`
 2. `$ cd World`
 3. `$ ls`
 4. `$ ls -a Europe`
 
-### 1.3.1
+### 6.2.1
 
-Part 1: 
+Part 1:
 
 1. Command + Space. Inside search bar type "Terminal"
 2. `$ cd Downloads`
 2. `$ mv World ..` (will move to parent directory, in this case the Desktop)
 3. `$ ../` (move back to the parent directory) and then  `$ ls`
 
-Part 2: 
+Part 2:
 
 2. `$ cd World`
 3. `$ mkdir Antarctica`
@@ -33,36 +65,45 @@ Part 2:
 9. `$ mkdir Americas`
    `mv North_America Americas`
 
-### 1.3.1
+## Unit 7
+
+---
+
+## Unit 8
+
+### 8.1.1
 
 get age
 
 if age >= 65
 	display message "Ticket price: $6.00"
-	
+
 otherwise if age < 25
 	display message "Ticket price: $8.00"
-	
+
 otherwise
 	display message "Ticket price: $10.00"
 
-### 3.1.1
- 1. Any expression that equals 30 is valid; e.g. `(1 + 9)*3`
- 2. "                        " 'Hello World' is valid; e.g. `"Hello" + " " + "World"`
- 3. "                        " `true` is valid; e.g. `(false && true) || true`
+### 8.2.1
+   1. Any expression that equals 30 is valid; e.g. `(1 + 9)*3`
+   2. "                        " 'Hello World' is valid; e.g. `"Hello" + " " + "World"`
+   3. "                        " `true` is valid; e.g. `(false && true) || true`
 
-### 3.2.1
-  1. `x + 10`
-  2. `3*x + 5`
-  3. `"Hello, " + x + "."` (or, in ES2015, we can use template strings: ``Hello, ${x}.``)
-  4. `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: ``Goodbye, ${x}.``)
+### 8.3.1
+    1. `x + 10`
+    2. `3*x + 5`
+    3. `"Hello, " + x + "."` (or, in ES2015, we can use template strings: ``Hello, ${x}.``)
+    4. `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: ``Goodbye, ${x}.``)
 
-### 3.3.1
-  1. `x || 100`
-  2. `x && 50`
-  3. `!x`
+### 8.4.1
+    1. `x || 100`
+    2. `x && 50`
+    3. `!x`
 
-### 4.1.1
+
+## Unit 9
+
+### 8.1.1
 ```javascript
 if (x%3 === 0 && x%5 === 0) {
   result = "fizzbuzz";
@@ -75,7 +116,7 @@ if (x%3 === 0 && x%5 === 0) {
 }
 ```
 
-### 4.2.1
+### 8.2.1
 
 ```javascript
 for (var i = 1; i <= max; i += 1) {
@@ -92,7 +133,9 @@ for (var i = 1; i <= max; i += 1) {
 }
 ```
 
-### 5.1.1
+## Unit 10
+
+### 10.1.1
 
 ```javascript
 var sayHello = function(name){
@@ -124,7 +167,7 @@ var greatest = function(a, b, c){
 };
 ```
 
-### 5.2.1
+### 10.2.1
 
 ```javascript
 var fizzBuzz = function(num){
@@ -143,7 +186,9 @@ var fizzBuzz = function(num){
 };
 ```
 
-### 6.1.1
+## Unit 11
+
+### 11.1.1
 
 ```javascript
 var contacts = ["Matt Smith", "Sam Davis", "Ashley Jones"];
@@ -167,9 +212,9 @@ var addContact = function (name) {
  addContact("Suzie");
  updateLastContact("Sue Miller");
  ```
- 
 
-### 6.2.1
+
+### 11.2.1
 
 ```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -202,7 +247,7 @@ convertToOunces();
  ```
 
 
-### 6.3.1
+### 11.3.1
 
 ```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
