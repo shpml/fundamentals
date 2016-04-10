@@ -18,7 +18,7 @@ The following solutions are for the Unit exercises.
 ```html
 <h1>Hi, I'm awesome.</h1>
 <p><a href="http://twitter.com/GA">Follow me</a> on twitter.</p>
-<p>Send me an <a href="mailto:me@email.com"> email</a>.<p>
+<p>Send me an <a href="mailto:me@email.com">  email </a>.<p>
 ```
 
 
