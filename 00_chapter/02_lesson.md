@@ -4,7 +4,7 @@
 
 #### Units & Lessons
 
-This ebook has 11 units, each unit contains lessons, [exercises and assignments](00_chapter/03_lesson.md).
+This ebook has 11 units, each unit contains lessons, [exercises and assignments](03_lesson.md).
 
 * Every unit has objectives. This is where we'll share the most important take aways.
 

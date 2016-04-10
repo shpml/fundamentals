@@ -6,6 +6,9 @@
 
 Here are some notes on what's been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.
 
+#### Pseudo code
+* a way to plan out your program before coding it. It is a detailed, step-by-step description of what a computer must do, expressed in plain English rather than in a programming language.
+
 #### Expressions
   * An expression is a statement composed of values/data and operators
   * Some common data types are Numbers, Strings, and Booleans

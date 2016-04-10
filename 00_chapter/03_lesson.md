@@ -2,7 +2,7 @@
 
 ---
 
-#### Exercises
+### Exercises
 
 What makes this book interactive are the exercises! Exercises are how we'll practice the concepts introduced in each Unit. The exercises use a code editor (JSBin) which allows you to practice right here, in the book. If you want to save your code, you'll need to hit the "Save" button on the top left of the JSBin editor which will open a new browser.
 
@@ -22,13 +22,13 @@ Create a [JSBin account](https://jsbin.com/). Creating a free account will allow
 **Note**: If your JS Bin editor doesn't load or shows `JS Bin on jsbin.com`, simply refresh the page to load the editor again.
 
 
-#### Quizzes
+### Quizzes
 
 Your instructional team will track your progress using the quiz. After completing a unit, take the unit quiz to check your understanding of the concepts. When taking the quiz, use the same email you provided for your invoice.
 
 If you want to retake the quiz, just refresh the page. Practice makes perfect.
 
-#### Final Project
+### Final Project
 
 Each unit assignment will build towards your final project, a working **web browser based memory game**. You'll use  HTML, CSS and JavaScript to build the game, unit by unit. You'll save your HTML and CSS portions of your unit assignments (Units 1 through 5) locally. In unit 6 you'll start pushing your source code to Github (in Units 7 through 11) once you learn about how Git and Github work. To clarify, you'll only be pushing your project to Github once you get to Chapter 7 where we first introduce JavaScript.
 

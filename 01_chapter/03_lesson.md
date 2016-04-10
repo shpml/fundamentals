@@ -26,4 +26,4 @@ Sublime Text is our editor of choice for WDI Fundamentals. Check out the followi
 
 ---
 
-[On to the next lesson.](09_quiz.md)
+[On to the next lesson.](04_quiz.md)
