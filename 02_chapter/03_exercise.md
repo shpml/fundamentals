@@ -6,12 +6,9 @@
 
 Time to give it a whirl! In this exercise you'll be getting some practice opening and closing your first HTML tags.
 
-
 Your output should look like this:
 
 ![](../assets/elkwebdesign/tags.png)
-
-
 
 ### Instructions
 
@@ -38,8 +35,6 @@ Built with WDI at GA.
 
 ---
 
-
-
 #### Checkpoint
 
 Make sure you have:
@@ -51,4 +46,4 @@ Make sure you have:
 Sweet! You just built a website with HTML. It's pretty basic, but you are on your way!
 
 ----
-[On to the next lesson.](06_lesson.md)
+[On to the next lesson!](04_lesson.md)

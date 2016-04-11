@@ -6,6 +6,8 @@
 
 We now know how CSS plays a crucial role in the creative aspect of web development. In the following assignment, you'll use your freshly acquired skills to create the cards of your memory game and define the theme to the game.
 
+As you move through the next several units, you'll be building parts of a browser memory game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.
+
 ## Exercise
 
 #### Requirements
