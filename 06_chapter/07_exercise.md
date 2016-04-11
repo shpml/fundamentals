@@ -4,32 +4,33 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays. 
+GitHub enables you to host and share website files online, similar to the way Dropbox or Google Drive let you store and share other types of files. GitHub hosts the files in a remote server in the cloud and gives you a working URL so that you can share your finished site with other people.
 
-Instructions
+Let’s walk through this process:
 
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
+### Create a GitHub account
 
-### Let's get started!
+**Step 1**: To start, let’s head over to GitHub.com. The first thing we’ll do is create a username by clicking on the field at the top right of the screen.
 
-#### Part 1
+ ![Choose a Username](../assets/chapter2/step1.png)
 
-1. Create an array `cups` containing numbers 1 - 10.
-2. Create an empty array `ounces`.
-3. Write a function `convertToOunces`. It should iterate through the cups array, convert each item from cups to ounces, and then add that item to the ounces array. Return the value of ounces after looping through the items and before the function ends.
+The username you enter here will be part of the github URL for every site you host there, so choose something simple and easy to remember. Most people use their name, a pen name, or their company’s name. To simplify things, try making your username one word and all lowercase.
 
-#### Part 2
+For this guide, we’re going to use the name “gasamplepage.” Please pick whatever name you like, for example “johnsmith123.” After selecting our username, we’ll add our email and make up a password. Then we’ll click “Sign up for GitHub.”
 
-1. Create an array `scores` containing the numbers 83, 40, 55, 72, 59, 88, and 99.
-2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array. 
+**Step 2**: Clicking that button brings us to the following page.
 
-Feeling comfortable with these exercises? Take a look at the last lesson!
+ ![Choose the Free Plan](../assets/chapter2/step2.png)
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+All we need to do on this page is make sure that “Free” is chosen as our personal plan. It should be pre-selected; however, if it’s not, make sure to click on it. Then, press the “Finish Sign Up” button.
+
+**Step 3**: GitHub will send you an email asking you to verify your account. Take a moment to do this now. If you do not verify your email address, your page will not work. When you log in, you should see the following dashboard.
+
+![You're done!](../assets/chapter2/step3.png)
+
+
+Congratulations! You're officially a Github user!
 
 ---
 
-[Ready for the last lesson? Here it comes!](08_lesson.md)
+Ready for another quiz? [Let's go.](06_quiz.md)

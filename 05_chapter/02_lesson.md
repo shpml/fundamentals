@@ -2,150 +2,51 @@
 
 ---
 
-# Functions
-
-## Defining JavaScript Functions
-
-To create a new function, we must *declare* it as we would a variable.  A **function expression** typically looks like this:
-
-```javascript
-var nameOfMyFunction = function(x) {
-  // Body of the function 'nameOfMyFunction';
-}
-```
-
-As you can see, the first line begins with `nameOfMyFunction` followed by the word `function`, which is how we'd like to refer to that function later.
-
-Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are called **parameters** of the function.  Above, we only used one parameter, `x`.
-
-Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
-
-We'll focus on using **function expression** for these lessons. Let's look at an example:
-
-Let's look at an example:
-
-```javascript
-var tripleIt = function(x) {
-  return 3 * x;
-}
-```
-
-This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (that is, `x`) multiplied by 3.
-
-This is the first time we're seeing a `return` statement – it does exactly what it sounds like it does. `return` gives back the output of the function.
-
-###Naming Functions
-
-Function names should describe what the function does as best as possible, and a general rule of thumb is to keep the name short and simple.
-
-You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't use spaces between them.
-
-To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
-
-Examples of naming functions:
-
-- **bad**:  `thisfunctioncalculatestheperimeterofarectangle` (no camelCase, too verbose)
-- **bad**:  `my new function` (contains spaces)
-- **bad**:  `myNewFunction` (doesn't explain what it does!)
-- **good**: `calculatePerimeter` (describes what it does, short, and uses camelCase)
+##How Your Computer is Organized
 
 
-## Calling JavaScript Functions
+Before we tell the computer what to do, it's important we understand what it is we will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns.
 
-Declaring a function does not execute the instructions we include in its body. After declaring, we've simply given the function a name and specified how it should work when it is given a set of parameters.
+![Folders in the GUI](../assets/chapter1/FileSystem.gif)
 
-To actually *evaluate* a function, we have to **call** that function as follows:
+The way your computer organizes and stores files is called a **file system**. Let's take a minute to learn the vocabulary developers use to talk about it.
 
-```javascript
-nameOfMyFunction();
-```
+* In programming-speak, all folders are called **directories**.
 
-In the case of `var tripleIt = function(x)`, if we wanted to call the function by passing the value 4, we would write:
+![Directories](../assets/chapter1/directory.png)
 
-```javascript
-tripleIt(4)
-```
+* A directory within another directory is called a **subdirectory**.
 
-> **NOTE**: The number `4` used when the function is called is known as an **argument**.
+* A directory that contains a subdirectory or file is called a **parent directory**.
 
-The function would execute its statements and evaluate to the value `12`.
+![Subdirectory and Parent Directory](../assets/chapter1/subdirectories.png)
 
-Just like a variable, we can use the return value of this function in any expression. For example:
+* The topmost directory of the filesystem is called the **root directory** – nothing contains it. All files and directories are contained by it, and so they all share the same root.
 
-```javascript
-var a = tripleIt(1);                         // a === 3
-var b = 100 * tripleIt(4);                   // b === 1200
-var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
-```
-## Other Ways to Define Your Functions
+![Root Directory](../assets/chapter1/root_directory.png)
 
-Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+For the purposes of this lesson, the root directory of everything on your computer is your home directory. It's aptly represented in the GUI by a house icon (if you're using a Mac).
 
-```javascript
-function nameOfMyFunction (x) {
-  // Body of the function 'nameOfMyFunction';
-}
-```
-
-But don't worry about this right now. We'll focus on function expressions for now!
-
-
-### Test Yourself
-
-Suppose that we've defined the function 'glorp' as follows:
-
-```javascript
-var glorp = function(someNumber) {
-  return someNumber * 5 - 3;
-}
-```
-
-What will each of the following expressions evaluate to?
-* glorp(10)
-* 2 * (glorp(5) + 10)
-* glorp(1 + 2)
-* glorp(glorp(1))
-
-Test your answers in repl.it by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
+![Home Directory](../assets/chapter1/home.png)
 
 ---
 
-## The Return Statement
+We know how file and directories appear in the GUI –now let's find our way around this system on the command line.
 
-As mentioned above, `return` specifies the value of the function when it's executed. It has another important job - it tells the function to immediately stop whatever it's doing.
+Before we get started, it's important to point out that, as smart as they seem, computers are really dumb. To ask for a specific directory or file in command line, we need to write out a precise address (called a **path**) so that the computer knows exactly where to find it.
 
-Consider the following program:
+For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. It might venture a guess, but your command line isn't as smart.
 
-```javascript
-var doAThing = function(x) {
-  if (x > 10) {
-    return x + 10;
-  }
-  return x;
-}
-```
+We have to be more specific when interacting with our computer on the command line.
 
-If `x` is greater than 10, the computer will run the `if` statement and hit that first `return` statement (`x + 10`).
+Your computer understands two kinds of addresses or paths, absolute and relative.
 
-This will *immediately end the function* - that second `return` statement won't be reached.
+* An absolute path starts from the root. It's analogous to identifying a location on earth by latitude and longitude. The point on earth represented by (0, 0) is somewhere out in the middle of the Atlantic ocean. No one really cares about it, but it never changes. It is "the root" from which we describe all the rest of the locations on earth. If someone gave you the coordinates for a street in Paris, you could theoretically start at (0, 0) and make your way north and east until you get there. **In this case you are defining where you're going from the root (a standard reference point), so you're using an absolute path.**
 
-### Test Yourself
+* On the other hand, if you were standing on a street corner in Anchorage, Alaska and wanted to head to the library, you wouldn't need the latitude and longitude. You could just jump in a taxi and say "Please head back two blocks, cut over to 3rd, and then turn right on Main Street." **In this case, you're defining where you're going based on your current location, so you're using a relative path.**
 
-Where will the function stop if `x` is 5? 10? 20? What value will be returned in each case?
-
-```javascript
-var categorize = function(x) {
-  if (x < 8) {
-    return 8;
-  }
-  x += 3;
-  if (x < 15) {
-    return x;
-  }
-  return 100;
-}
-```
+>**Caution** It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
 
 ---
 
-[Here's another exercise for you](04_exercise.md) - give it a shot.
+Feeling good? [Let's do some more practice.](04_exercise.md)

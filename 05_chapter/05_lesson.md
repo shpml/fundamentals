@@ -2,267 +2,136 @@
 
 ---
 
-#Functional JavaScript
+##Navigating the Command Line
 
-Functions can also be used as procedures – miniature, self-contained programs that are executed one line at a time whenever the function is called.
+We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer!
 
-When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run.
+There are commands to open an application, create new files, copy files from one place to another, and a lot more.
 
-For instance, let's go back to the "French Toast a la GA" recipe from Unit 4. Every time a soaked slice of bread is ready to be cooked, we need to:
-
-
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
->
-
-Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle this set of instructions for us, and simply call that function any time the bread slices need to be cooked.
-
-## Problem Solving with Functions
-
-Let's look at a practical example. Say that we're working on a [TicTacToe game](http://en.wikipedia.org/wiki/Tic-tac-toe).
-
-We're not going to build the actual game, just write out the logic that would determine the winner.
-
-In TicTacToe, there are nine possible values (for every cell on the board):
+Let's start typing commands together.  In your open Terminal window, type `hello?` and press enter:
 
 ```
-| a | b | c |
-| d | e | f |
-| g | h | i |
+$ hello?
 ```
 
-Each of these values will start as `null`, until a user assigns them a new value, either 'o' or 'x'
-
-To play around with this invisible TicTacToe board, we've provided some code:
-
-```javascript
-var cellValue = function(key) {
-  switch(key) {
-    case 'a': return null;
-    case 'b': return null;
-    case 'c': return null;
-    case 'd': return null;
-    case 'e': return null;
-    case 'f': return null;
-    case 'g': return null;
-    case 'h': return null;
-    case 'i': return null;
-    default : return null;
-  }
-}
-```
-
-To assign a value (`x`, `o`) to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:
+Your terminal should respond rudely:
 
 ```
-| null | null |   x  |
-| null |   o  | null |
-| null |   o  |   x  |
+-bash: hello?: command not found
 ```
 
-You would edit the switch statement like such:
+This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry. In
+due time, as we grow comfortable in this new environment, even these cryptic messages will be just as beautiful as any warning box you'll ever see.
 
-```javascript
-var cellValue = function(key) {
-  switch(key) {
-    case 'a': return null;
-    case 'b': return null;
-    case 'c': return 'x';
-    case 'd': return null;
-    case 'e': return 'o';
-    case 'f': return null;
-    case 'g': return null;
-    case 'h': return 'o';
-    case 'i': return 'x';
-    default : return null;
-  }
-}
+Try typing this into your terminal:
+
+```
+$ Where am I?
 ```
 
-###Who is the Winner?
+Again, a rude response:
 
-Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
-
-We'll call it `getWinner` and it will give us back either 'x' (if X has won), 'o' (if O has won), or `null` (if neither side has won).
-
-```javascript
-var getWinner = function() {
-}
+```
+-bash: Where: command not found
 ```
 
-So where do we go from here?
+Great. We've established that our command line doesn't understand plain English. We will have to use special words to make up our commands. Let's try
+this one:
 
-One way to determine the winner might be to check whether X has won and then to check whether O has won. What if two functions existed that would magically determine this for us?
-
-We could call them `winnerIsX` and `winnerIsO`.  `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
-
-```javascript
-  var getWinner = function() {
-    if (winnerIsX()) {
-      return 'x';
-    }
-    if (winnerIsO()) {
-      return 'o';
-    }
-    return null;
-  }
+```
+$ pwd
 ```
 
-OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems – how do we determine whether X or O won?
+Whoa! It looks like our computer understood that one! It replied with a message:
 
-###Determining if `x` has won
-
-Let's focus on `winnerIsX` first.
-
-In TicTacToe, there are three ways that X can win:
-1. All cells in a row contain an `x`
-2. All cells in a column contain an `x`
-3. All cells in a diagonal contain an `x`
-
-Wouldn't it be great if we had functions to determine these too? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`.
-
-In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so to determine `winnerIsX` we could write the following:
-
-```javascript
-var winnerIsX = function() {
-  return winsRowX() || winsColumnX() || winsDiagonalX();
-}
+```
+/Users/corneliusfinch
 ```
 
-You can't execute anything yet.  Just stick with us – we only have a few more tiny problems to solve!
-
-####Winning by Rows
-
-Let's look at `winsRowX` – what does it actually mean to win a row?
-
-According to our cell key from earlier, there are three cells in a row; the first row is `a`,`b`, and `c`; the second row is `d`,`e`, and `f`; the third row is `g`,`h`, and `i`.
-
-If any of these three sets are all equal to `x`, then X has won via a row.
-
-Let's dive just one level deeper, with a function to test if any one of the three rows are equal to `x` (let's call it `allThreeX`).
-
-```javascript
-var winsRowX = function() {
-  return allThreeX(cellValue('a'), cellValue('b'), cellValue('c')) ||
-  		allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
-  		allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
-}
-var allThreeX = function(cellOne, cellTwo, cellThree) {
-}
+If you're following along in **Git Bash on Windows**, this should look similar but slightly different:
+```
+/c/Users/corneliusfinch
 ```
 
-####Winning by Columns and Diagonals
 
+What did we just do?
 
-We can also use `allThreeX` to write functions for `winsColumnX` and `winsDiagonalX`. This would give us the following code:
+The command `pwd` stands for "Print Working Directory".
+This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.
 
-```javascript
-var getWinner = function() {
-  if (isWinnerX()) {
-    return 'x';
-  }
-  if (isWinnerO()) {
-    return 'o';
-  }
-  return null;
-}
+Just like the Finder on a mac, your command line interface places you in a particular folder
+of your computer. `pwd` tells you where you currently are. Usually, when you open the Terminal application, you start off in your "home folder", which is the one that shares the name of your username on your computer.
 
-var isWinnerX = function() {
-  return winsRowX() || winsColumnX() || winsDiagonalX();
-}
+If we were using Finder, we'd be able to see what things (files and folders) are present in this folder. In a CLI however, if we want to see what files and folders exist at the current location, we need to ask for it with another command.
 
-var winsRowX = function() {
-  return allThreeX(cells('a'), cells('b'), cells('c')) ||
-         allThreeX(cells('d'), cells('e'), cells('f')) ||
-         allThreeX(cells('g'), cells('h'), cells('i'));
-}
+Let's find out what files are in the folder that we're in.
 
-var winsColumnX = function() {
-  return allThreeX(cells('a'), cells('d'), cells('g')) ||
-         allThreeX(cells('b'), cells('e'), cells('h')) ||
-         allThreeX(cells('c'), cells('f'), cells('i'));
-}
-
-var winsDiagonalX = function() {
-  return allThreeX(cells('a'), cells('e'), cells('i')) ||
-         allThreeX(cells('c'), cells('e'), cells('g'));
-}
-
-var allThreeX = function(cellOne, cellTwo, cellThree) {
-}
+```
+$ ls
 ```
 
-Now that we've broken it into one much smaller problem, our `allThreeX` function is fairly easy to write!
+Lo and behold, the contents of the folder you are in.
 
-```javascript
-var allThreeX = function(cellOne, cellTwo, cellThree) {
-  return (cellOne === 'x') && (cellTwo === 'x') && (cellThree === 'x');
-}
+```
+Applications       Desktop          Documents
+Downloads          Library          Movies
+Music              Pictures         Public
 ```
 
-Excellent! Now, `isWinnerX` should be able to tell us if X has won.
+If you're following along in **Git Bash on Windows**, it's alright if the files and folders that are listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
 
-###Determining if `o` has won
+The `ls` command, which loosely stands for "list", lists the contents of a folder.
 
-Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. But that seems pretty duplicative.
+It looks like there are some folders in here. Let's find out what's inside our `Documents` folder. In order to do so, let's first navigate to the Documents folder.
 
-There's a principle we'll emphasize in this course – one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it better if we could make the function `allThreeX` more general so that it worked for both players?
-
-Let's see what we can do.
-
-```javascript
-var allThree = function(player, cellOne, cellTwo, cellThree) {
-  return (cellOne === player) && (cellTwo === player) && (cellThree === player);
-}
+```
+$ cd Documents
 ```
 
-###Removing the duplicative code
+We have now navigated to the Documents folder.
 
-Now `allThree` can be used to test for `x` **or** for `o`; by getting rid of our hard-coded data, we were able to make this function do double-duty!
+The `cd` command, which stands for "change directory", is used to navigate to a particular folder on your computer.
 
-Let's do the same thing for all the other functions we wrote:
+This is equivalent to double-clicking the Documents folder in Finder to "go
+inside it". We can check that we're in the right place by using `pwd`.
 
-```javascript
-var getWinner = function() {
-  if (winnerIs('x')) {
-    return 'x';
-  }
-  if (winnerIs('o')) {
-    return 'o';
-  }
-  return null;
-}
-
-var winnerIs = function(player) {
-  return winsRow(player) || winsColumn(player) || winsDiagonal(player);
-}
-
-var winsRow = function(player) {
-  return allThree(player, cells('a'), cells('b'), cells('c')) ||
-         allThree(player, cells('d'), cells('e'), cells('f')) ||
-         allThree(player, cells('g'), cells('h'), cells('i'));
-}
-
-var winsColumn = function(player) {
-  return allThree(player, cells('a'), cells('d'), cells('g')) ||
-         allThree(player, cells('b'), cells('e'), cells('h')) ||
-         allThree(player, cells('c'), cells('f'), cells('i'));
-}
-
-var winsDiagonal = function(player) {
-  return allThree(player, cells('a'), cells('e'), cells('i')) ||
-         allThree(player, cells('c'), cells('e'), cells('g'));
-}
-
-var allThree = function(player, cellOne, cellTwo, cellThree) {
-  return (cellOne === player) && (cellTwo === player) && (cellThree === player);
-}
+```
+$ pwd
+/Users/corneliusfinch/Documents
 ```
 
-If you want, you can play around with this code in [this repl.it session](http://repl.it/aOU), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
+Excellent! Now let's find out what's in here, using `ls`.
 
-Have fun!
+```
+$ ls
+funny_cat_picture.jpg
+office_stuff
+world_domination_checklist.txt
+```
 
+It looks like the `Documents` folder contains a JPG file of a funny cat, a folder
+full of "office stuff", and a text file that supposedly contains a checklist for
+world domination. Your `Documents` folder probably contains something different.
 
----
+Now that we've investigated our `Documents` folder, let's go back up to our home folder. Since the home folder contains the `Documents` folder, we can say that the home folder is the "parent directory" of the `Documents` folder.
 
-Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md)
+```
+$ cd ..
+```
+
+> `..` (two periods, or "dot-dot") is how we say to our command line "parent
+> directory".
+
+Many commands consist of three parts: the command, followed by flags (aka options), and finally arguments.
+
+As the name implies, flags set options to tell the command how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. Usually one dash is for a short one letter abbreviation, while two dashes is for long name for the option.
+
+http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149
+
+For example:
+
+```
+$ ls -a
+```
+
+Will list *all* files in a directory, which includes hidden files (files whose name begins with a `.`).

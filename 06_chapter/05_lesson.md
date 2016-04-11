@@ -2,89 +2,145 @@
 
 ---
 
-# Iterating Over Arrays
+##Publish Work on GitHub
 
-In the past few units, we've only been able to operate on one value at a time. One of the most useful things about a collection (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on *each value within a collection*. This process is called **iteration** - doing something over and over and over again, for each element in a set.
+So far, we've been making changes "locally" - editing files and repositories on our computers.
 
-##Iterating with Loops
+To collaborate with others (and also to backup our files just in case our computer is out of commission) we need to connect our local repository to a "remote" repository.
 
-Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celsius - which would then be stored in a separate array.
+### What is GitHub?
 
-```javascript
-var tempsInF = [100, 72, 88, 15, 25, 32];
-var tempsInC = [];
-```
+GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-The formula for converting between Fahrenheit and Celsius temperatures is **C = (F - 32) * 5/9**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+In a lot of ways, Github is like Dropbox.
 
-```javascript
-var fahrToCelc = function(degrees) {
-  return (degrees - 32) * (5 / 9);
-}
-```
+You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.
 
-So how do we go about operating on the elements in `tempsInF`? Well, we could just start at the beginning and work our way through, one value at a time.
+Below is what the Github interface looks like for a repo called `awesome-project`:
 
-```javascript
-tempsInC.push(fahrToCelc(tempsInF[0]));
-```
+1. **Repo Name and Owner** - describes who owns the repository, what the name of the repo is and whether the repo is public or private.
 
-Then, we could run an almost identical command to operate on each element in `tempsInF` and push the converted value onto the `tempsInC` array.
+	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
-```javascript
-  tempsInC.push(fahrToCelc(tempsInF[1]));
-  tempsInC.push(fahrToCelc(tempsInF[2]));
-  tempsInC.push(fahrToCelc(tempsInF[3]));
-  tempsInC.push(fahrToCelc(tempsInF[4]));
-  tempsInC.push(fahrToCelc(tempsInF[5]));
-```
+2. **Overview** - displays the number of commits, branches, releases and contributors to a particular repo.  Selecting any one of these options will bring a detailed view of that selection.
 
-However, this code is extremely repetitious, and it also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to run this code exactly as many times as there are elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the `for` loop.
+	![Overview](../assets/chapter2/overview_github.gif)
 
-```javascript
-for (var i = 0; i < tempsInF.length; i += 1) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
-```
+3. **Repo File Structure** - displays the contents of the repo.  Selecting any file or folder will open a detailed view of that file and allow you to edit the content directly.
 
-Take a minute to think about what's going on above.
+	![File Structure](../assets/chapter2/contents_github.gif)
 
-By starting our count at zero, stopping before `i` reaches the length of the array, and increasing `i` by one every time, `i` will be successively set to the index of every element in our array, allowing us to perform the same operation on each element.
+4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own Github account.
 
-We could just as easily have gone in the opposite direction - starting at the last element, and ending with the first - simply by specifying different settings in the `for` loop:
+	![Fork button](../assets/chapter2/fork_github.gif)
 
-```javascript
-for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
-```
+5. **Side Bar** - use the side bar to respond to issues, create pull requests, and change the settings for this repo.
 
-We could even operate only on every third element, by changing the value we increment i, like so (see `i += 3` ?):
+	![Side bar](../assets/chapter2/sidebar_github.gif)
 
-```javascript
-for (var i = 2; i < tempsInF.length; i += 3) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
-```
-
-Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!
-
-### Test Yourself
-
-Create a new repl.it session with the following JavaScript code:
-
-```javascript
-var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];
-```
-
-How could you use iteration to generate a new array called `newArray` from `oldArray`, so that...
-* Each value in `newArray` is the value of its corresponding element in `oldArray`, plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`)
-* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`)
-* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`)
-* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`)
-
-These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
+There are a ton of unique Github features crammed on this page, but we'll only be using three of them to start.
 
 ---
 
-Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md)
+
+## Our GitHub Flow
+
+There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.
+
+The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git.
+
+Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
+
+This is what our workflow looks like:
+![GitHub Workflow](../assets/chapter2/github_workflow.gif)
+<br><br>
+
+
+**Don't worry**, we are going to cover this step by step, in plenty of detail.
+
+
+
+### 1. Forking
+
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
+
+<br>
+![Node.js Contributors](../assets/chapter2/node.png)
+<br>
+
+Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
+
+To create a copy of Joyent's repo, you would need to **fork** it by clicking the button we highlighted above.
+
+![Forking GIF](../assets/chapter2/fork_node.gif)
+
+
+> **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md).
+
+"Forking" adds a copy of someone else's GitHub repo to *your* Github account.
+
+The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
+
+By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will, everyone does, Node.js won't be affected.
+
+
+
+
+### 2. Cloning
+
+Next, you'll want to be able to edit the code
+
+To make a local copy of a fork, you'll need to open up the Terminal and use a Git command.
+
+You need to navigate to the place where you'd like to store the repo, and then type:
+
+```
+git clone https://url/to/clone
+```
+
+You can find the URL to clone on right side of the forked repo on Github:
+
+![Node.js Clone](../assets/chapter2/node_clone.png)
+
+By issuing the clone command, you're asking GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
+
+> **HINT** If you're following along in Git Bash in Windows, the commands to copy and past are a little different than the default Windows copy/past commands. The command to copy is `control + insert` and the command to paste is `shift + insert`.
+
+
+### 3 & 4. Editing and Committing
+
+We covered this in the previous section. As you complete the exercises in the rest of Fundamentals, you'll need to do this step frequently.
+
+### 5. Pushing
+
+Once you've committed the changes you've made to the code, your local repo will be different from your remote repo; to update your remote repo on GitHub, you have to **push** those changes, using the Git command `git push origin master`.
+
+Don't worry about the `origin` and `master` part just yet.
+
+If you're curious, here's a brief overview:
+* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on Github). You can have many remotes, if you want. We're not going to work with more than one in Fundamentals.
+* `master` refers to the **branch** on your remote repo where you're currently adding your changes. Again, for now, we're just going to be doing our work on the `master` branch.
+
+
+### 6. Submitting a Pull Request
+
+Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**.
+
+A pull request is effectively saying "Hello maintainer of project X, I made some changes here in my forked copy and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
+
+We're going to cover how to submit a pull request in a later chapter.
+
+
+## Confused?
+
+If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first. When you don't understand something, we encourage you to follow a three-step process:
+
+1. Search online for an answer via Google or [Stack Overflow](http://stackoverflow.com).
+2. Ask classmates if they've solved a similar problem via [Slack](https://ga-students.slack.com/).
+3. Go to an instructor for help (instructors are also on Slack)
+
+And trust us... you *will* get to the point where cloning and pushing are like breathing and sleeping.
+
+---
+
+[Here's another exercise for you](07_exercise.md) - give it a shot.

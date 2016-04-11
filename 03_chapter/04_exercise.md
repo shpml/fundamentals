@@ -4,24 +4,34 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9km) to some sample code in a repl.it session - it should contain the following code:
+In this exercise we'll take some time to play around with **divs**, **spans**, **margin**, and **padding** to create a lovely text layout .
 
-```javascript
-/* Your Expression Here */
-```
+Here's what the content will look like when you're finished styling it.Fancy!
 
-This thing is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
+![](../assets/elkwebdesign/layout.png)
 
-1. Replace `/* Your Expression Here */` with an expression that evaluates to the integer `30`.
-You can use any expression you like, but it must contain at least one (and ideally two or more) operations. You can test your answers by clicking the play button at the top of the page - it will spit out the evaluated result of your expression into the console.
+We won't touch the HTML, but take a look at it before you hop over to the CSS tab. We gave you the p style. You're welcome!
 
-** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
+<a class="jsbin-embed" href="http://jsbin.com/likihi/embed?html,css,output&height=600px"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
-2. Now replace your first expression with a second expression - this one should evaluate to 'Hello World'.
+1 . Set the body's background to #333 and the div's background to #c0dec5.
 
-3. Finally, replace the previous expression with an expression that evaluates to the boolean `true`. Try using two or three operations for this one!
+2 . Add a margin of 4em on *all four sides* of the div;s content (outside of the pale blue box).
 
-> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+3 . Set the div's padding to 2em 3em 0 3em. That's a top padding of 2em, a right padding of 3em, no padding on the bottom, and 3em on the left.
+
+4 .Give the span three property-value pairs: a font-variant of small-caps, a font-family of tahoma, sans-serif and .25em of letter-spacing.
+
+5 . Set the span's padding to 0 .2em. Set its background color to rgb(100,150,150).
+
+6 . Actually, that color is a little dark. Let's practice with rgb and alpha, and make it 50% translucent. Change the span's background color from rgb(100,150,150) to rgba(100,150,150,.5).
+
+7 . In your HTML, the second p tag has a class attribute named "right" Let's right-align that paragraph!Add a new style to your CSS. It looks like:
+
+` .right { text-align: right; } `
+
+Fabulous! You just rocked on a bunch of topics that can stump even professional web designers.
+
 
 ---
-[On to the next lesson.](05_lesson.md)
+[On to the lesson.](05_exercise.md)

@@ -4,20 +4,65 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-We've gone ahead and created a new directory for you, called <em>World</em>. Download it <a href="http://generalassembly.github.io/prework/assets/activity/World.zip">here</a>.
+In this exercise, you'll write your first **hyperlinks**: the magical things that you click to get from here to there on the web!
 
-When you double-click on the zip file, it will create a new folder next to the zip file in your Downloads folder.
+When complete, your output should look like this:
 
-Now that you can picture where the file is located, open the Terminal application
+![](../assets/elkwebdesign/hyperlinks.png)
 
-Using the command line alone,
 
-1. Navigate into your `Downloads` directory 
+### Instructions
 
-2. Move into the `World` directory from the `Downloads` directory
+Use the editor provided below to write your code and see what renders!
 
-3. List the contents of the `World` directory
+1 . Give your website some content: introduce yourself, mention one social media account (or any website of your choosing), and ask for an email. Something like this should work:
 
-4. In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`.  Using only the command line, find out where in the World is Carmen Sandiego.
+*Hi, I'm awesome.
+Follow me on twitter.  
+Send me an email.*
 
-> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+2 . Wrap the first line, "Hi, I'm awesome" in *h1 tags*.
+
+3 . Wrap the rest of your content with *paragraph tags*. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need!
+
+4 . Wrap the text "Follow me" in an *anchor element* (with `<a>` and `</a>`).
+
+5 . The opening `<a>` tag needs a **h**yperlink **r**eference **a**ttribute, so it knows where to go when clicked. Go ahead and link to your to your twitter (or other social media) page. If you aren't on social media, link to any website you want!
+
+Example:
+`<a href="http://twitter.com/GA">Follow me</a> on twitter.`
+
+> **NOTE** One more thing! Sometimes you won't know link destinations until you're almost done building a site. In those cases, we use a hash as a placeholder like so: `Send me an <a href="#">email</a>.`
+
+5 . Now, wrap an empty *anchor* around the word "email" on the second line.
+
+6 . Put `mailto`: in front of your email address, so the browser knows it's not a web page!
+
+`Send me an <a href="mailto:me@email.com"> email </a>.`
+
+> **NOTE** HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
+
+
+
+Click on the **OUTPUT** button to see what your HTML code renders.
+
+<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+
+---
+
+
+#### Checkpoint
+
+Make sure you have:
+
+- Made the introductory sentence a top-level heading with a `<h1>` tag and closed it with a `</h1>`tag.
+- The rest of the content will be in two paragraphs, or p elements.
+- Linked to your twitter (or other social media) page.
+- Created an email link with the proper email or placeholder.
+
+
+You can do a lot of neat things with attributes and links. Let's keep going!
+
+---
+
+[On to the lesson.](08_lesson.md)

@@ -1,28 +1,25 @@
-**WDI Fundamentals Unit 4**
+**WDI Fundamentals Unit 6**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Use conditional statements to control the flow of program execution
-* Use loops to repeat an operation or action based on the value of a condition
+
+* Understand different strategies for creating navigation bars
+* Discover how to create multi-column layouts with the float property.
+* Secure your layouts and avoid overlaps with the clear property and the clearfix method.
 
 ---
 
-In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Kind of like a recipe, no?
+Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
 
-Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA"
-> ...
->
-> 3: Whisk eggs, milk, honey and kosher salt until eggs are no longer visible.
->
-> 4: Dip your bread slices in the custard. If you're using a pre-sliced loaf, and the slices are thin, a short dip (just enough to coat both sides) should be enough; however, if your slices are thick, you may want to give the bread a minute or two to soak up the custard.
->
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
->
-> ...
+![](/assets/elkwebdesign/userflow.png)
 
-Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **control flow**, because it specifies the flow of the computer's actions through the program.
+In order to make this userflow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>`elements to define a set of navigation links. You can also make your navigation appear verically, horizontally or alternatively-styled bloc.
 
-In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
+Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
 
-[Let's get started.](02_lesson.md)
+![](/assets/elkwebdesign/nav.png)
+
+---
+
+[On to the next lesson.](02_lesson.md)
