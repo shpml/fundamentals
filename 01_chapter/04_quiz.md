@@ -9,4 +9,4 @@
 
 ---
 
-Then, [let's move onto learning more about HTML.](04_intro.md)
+Now, [let's move onto learning more about HTML.](../02_chapter/intro.md)

@@ -19,4 +19,4 @@ Now that we know how the internet works, and how it delivers webpages to your pe
 
 ---
 
-[On to the lesson.](02_lesson.md)
+[On to the next lesson.](02_lesson.md)

@@ -34,6 +34,10 @@
 #### Box Model
 * Every html element on the page is a box, and the box model dictates what the element will look like. The model consists of the content, padding, border, and margin.
 
+Here's a diagram to help you remember the box model.
+
+![](../assets/elkwebdesign/boxmodel.png)
+
 #### Content
 * The text and images that are included within any element's opening and closing tags.
 

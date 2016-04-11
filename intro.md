@@ -8,9 +8,9 @@ Congratulations on joining the Web Development Immersive program at General Asse
 
 We hope you find WDI to be as rewarding as it is challenging — we can assure you it will be both. There are a lot of technical ideas to cover and terms to learn before starting WDI and being unprepared can easily trip you up. To make sure you have the proper footing, we've prepared this ebook covering the fundamentals of web-based programming.
 
-We'll cover **HTML**, **CSS** and **JavaScript**.  Also, we'll learn how to work with standard developer tools (Text Editors, Browsers, command line, Git, and GitHub).
+We'll cover **HTML**, **CSS** and **JavaScript**.  We'll also learn how to work with standard developer tools (Text Editors, Browsers, the command line, Git, and GitHub).
 
-The entire ebook is eleven units long, and we expect it to take you around **40 hours to complete** it. Make sure you read below before continuing as we've outlined some important things to keep in mind as you move through Fundamentals!
+The entire ebook is eleven units long, and we expect it to take you around **40 hours to complete** it. Make sure you read below before continuing as we've outlined some important things to keep in mind as you move through WDI Fundamentals!
 
 
 ## Join the WDI Community on Slack!

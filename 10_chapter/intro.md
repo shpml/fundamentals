@@ -12,7 +12,7 @@
 
 # Functions
 
-You've had an opportunity to see some functions in the homework assignments at the end of units 3 and 4; now it's time to learn about writing them!
+Now that we've had the opportunity to learn the basics of JavaScript including data types and control flow; now it's time to learn functional programming.
 
 But first... a little math.
 

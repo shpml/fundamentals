@@ -58,7 +58,7 @@ Click on the **OUTPUT** button to see what your HTML code renders.
 Make sure you have:
 
 - Made the introductory sentence a top-level heading with a `<h1>` tag and closed it with a `</h1>`tag.
-- The rest of the content will be in two paragraphs, or p elements.
+- Wrapped the rest of the content will be in two paragraphs, or p elements.
 - Linked to your twitter (or other social media) page.
 - Created an email link with the proper email or placeholder.
 
@@ -67,4 +67,4 @@ You can do a lot of neat things with attributes and links. Let's keep going!
 
 ---
 
-[On to the lesson.](08_lesson.md)
+[Take your Unit 2 Quiz](06_quiz.md)

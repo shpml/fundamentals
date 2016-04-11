@@ -4,7 +4,7 @@
 
 ### Exercises
 
-What makes this book interactive are the exercises! Exercises are how we'll practice the concepts introduced in each Unit. The exercises use a code editor (JSBin) which allows you to practice right here, in the book. If you want to save your code, you'll need to hit the "Save" button on the top left of the JSBin editor which will open a new browser.
+What makes this book interactive are the exercises! Exercises are how we'll practice the concepts introduced in each Unit. The exercises use a code editor (JS Bin) which allows you to practice right here, in the book. If you want to save your code, you'll need to hit the "Save" button on the top left of the JSBin editor which will open a new browser.
 
 Here's an example. Click the tabs to get used to the navigation.
 
@@ -17,9 +17,9 @@ Create a [JSBin account](https://jsbin.com/). Creating a free account will allow
 ![](../assets/elkwebdesign/jsbin.png)
 
 
-**Pro Tip**: What you write in the code editor in this ebook it will not automatically save. Therefore, you need to make sure that you do hit the *save* button and make sure you copy your code over.
+**Pro Tip**: What you write in the code editor in this ebook will not automatically save. Therefore, you need to make sure that you hit the *save* button and make sure you copy your code over.
 
-**Note**: If your JS Bin editor doesn't load or shows `JS Bin on jsbin.com`, simply refresh the page to load the editor again.
+**Note**: If your JS Bin editor doesn't load or shows `JS Bin on jsbin.com`, simply refresh the page to load the page again.
 
 
 ### Quizzes
@@ -33,7 +33,6 @@ If you want to retake the quiz, just refresh the page. Practice makes perfect.
 Each unit assignment will build towards your final project, a working **web browser based memory game**. You'll use  HTML, CSS and JavaScript to build the game, unit by unit. You'll save your HTML and CSS portions of your unit assignments (Units 1 through 5) locally. In unit 6 you'll start pushing your source code to Github (in Units 7 through 11) once you learn about how Git and Github work. To clarify, you'll only be pushing your project to Github once you get to Chapter 7 where we first introduce JavaScript.
 
 **Final Submission**: At the end of the project in Unit 10, you'll submit your link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
-
 
 
 ### Grading
