@@ -2,7 +2,7 @@
 
 ---
 
-# Principles of HTML & CSS Homework
+# Principles of HTML & CSS 
 
 We now know how CSS plays a crucial role in the creative aspect of web development. In the following assignment, you'll use your freshly acquired skills to create the cards of your memory game and define the theme to the game.
 

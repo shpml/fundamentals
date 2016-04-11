@@ -2,7 +2,7 @@
 
 ---
 
-# Navigation & Page Layout Homework
+# Navigation & Page Layout 
 
 Having learned about layout, we are even better equipped to structure the HTML of our game.
 
