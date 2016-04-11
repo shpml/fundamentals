@@ -2,22 +2,31 @@
 
 ---
 
-# Unit 7 Homework: Getting Our Cards in Order
+# Getting Our Cards in Order
 
 Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
 Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame), wherever you've decided to put it, and open up the file `main.js` (inside the `starter-code` directory). This is where you'll be writing all of your code for all homework assignments.
 
+But here's the catch! You have your html and css files from the previous units that you'll want to use moving forward and link your JS file too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the following syntax to link your JS file to your HTML file so that they work together!
+
+
+`<link rel="stylesheet" href="style.css">`
+
+
+
+
+
 ## Exercise
 
 #### Requirements
 
-In this section, you'll be working to create the cards that will make up your memory game. Each card will have a value of "queen" or "king" and there should be a total of four cards. Giving the cards a value means we can use comparison operators to check for equality. Let's get started!
+In this section, you'll be working to create the cards that will make up your memory game. Each card will have a value of "queen" or "king" and there should be a total of four cards. Giving the cards a value means we can use comparison operators to check for equality. You'll also push your code up to your repository! Let's get started!
 
 
 ##### Below are the steps to complete the assignment:
 
-1) Open you sublime and create a new file called main.js
+1) Open you Sublime and create a new file called main.js
 
 2) Create four variables that simulate the cards in your game.
 
@@ -34,21 +43,21 @@ var cardOne = "queen";
 
 2) Link the main.js file to your index.html file.
 
-2) Now that you have the four cards, you'll want to compare the variables to check for equality.
+3) Now that you have the four cards, you'll want to compare the variables to check for equality.
 
- >**_Reminder_**: Since you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and look into the console to see the results of your executed JS.
+ >**_Reminder_**: Since you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and run this code directly in the browser console to see the results of your executed JS.
 
-3) Go ahead and open your index.html file and then open the file in the browser. After the webpage loads, in Chrome, you can go to View > Developer > Developer Tools and click on the Console panel.
+4) Go ahead and open your index.html file and then open the file in the browser. After the webpage loads, in Chrome, you can go to View > Developer > Developer Tools and click on the Console panel.
 
 ![](/assets/chapter5/developer.png)
 
-4) To compare the two queen variables to check for equality, in the console type in the following:
+5) To compare the two queen variables to check for equality, in the console type in the following:
 
 ```js
 cardOne == cardTwo
 ```
 
-5) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to
+6) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to
 And the ?
 
 ```js

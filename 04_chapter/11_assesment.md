@@ -2,7 +2,7 @@
 
 ---
 
-# Webpage Layout Homework
+# Webpage Layout
 
 Now that we've learned about layout, we're even better equipped to format our HTML and uniquely style our memory game!
 
