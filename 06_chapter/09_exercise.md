@@ -10,7 +10,7 @@ Part 1:
 
 2. Navigate into your Downloads directory
 
-3. Move the World directory from Downloads to your home directory
+3. Move the World directory that you downloaded in the [previous exercise](07_exercise.md) from Downloads to your home directory.
 
 4. Check to see if you successfully moved the World directory by listing the contents of your home directory
 

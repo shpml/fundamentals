@@ -20,4 +20,6 @@ Using the command line alone,
 
 4. In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`.  Using only the command line, find out where in the World is Carmen Sandiego.
 
+*Don't delete the World folder yet! We'll be working with it in another exercise in this unit.*
+
 > Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
