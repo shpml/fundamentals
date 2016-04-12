@@ -55,6 +55,14 @@ This is what our workflow looks like:
 ![GitHub Workflow](../assets/chapter2/github_workflow.gif)
 <br><br>
 
+This workflow consists of the following steps:
+
+1. Forking
+2. Cloning
+3. Editing
+4. Committing
+5. Pushing
+6. Submitting a pull request
 
 **Don't worry**, we are going to cover this step by step, in plenty of detail.
 

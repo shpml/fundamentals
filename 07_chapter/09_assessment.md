@@ -4,7 +4,7 @@
 
 # Git and GitHub Preparation
 
-As you move through the next several chapters, you will be building parts of browser based Memory Game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.*Building this memory game should take you approximately 2 hours* - this includes going through all of the individual unit exercises as you work towards the final game. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment. In order to accomplish this, you will need to access code that is located on GitHub's servers. Follow the instructions below to get started!
+As you move through the next several chapters, you will be building parts of browser based Memory Game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals. *Building this memory game should take you approximately 2 hours* - this includes going through all of the individual unit exercises as you work towards the final game. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment. In order to accomplish this, you will need to access code that is located on GitHub's servers. Follow the instructions below to get started!
 
 ## Exercise
 
@@ -42,4 +42,4 @@ As you move through the next several chapters, you will be building parts of bro
 
 ---
 
-That's it for now! We'll be coming back to this project at the end of every chapter, but now, it's time to move on to [Chapter 3](../03_chapter/intro.md).
+That's it for now! We'll be coming back to this project at the end of every chapter, but now, it's time to move on to [Unit 8](../08_chapter/intro.md).

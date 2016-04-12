@@ -65,4 +65,4 @@ This will show you what version of Git is running; your computer should return s
 
 ---
 
-[On to the lesson.](02_lesson.md)
+[On to the next lesson.](02_lesson.md)

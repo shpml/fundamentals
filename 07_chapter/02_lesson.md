@@ -13,7 +13,7 @@ Simply change your working directory to the folder you'd like to track and run t
 ```
 $ git init
 ```
-> **CAUTION** Do not execute this command in your **home directory** –it will make it very difficult to work with any other repositories!
+> **CAUTION** Do not execute this command in your **home directory**! It will make it very difficult to work with any other repositories! Use `pwd` to check your location if you're unsure.
 
 When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
 
@@ -89,7 +89,7 @@ To view the timeline of changes, you can run:
  $ git log
 ```
 
-which will yield a list of entires that look like this:
+Which will yield a list of entires that look like this:
 
 ```
 commit 6d33f525a09b9918f75188db164ea2722039830b
