@@ -11,7 +11,7 @@
 * a keyword added to selectors that indicates a particular condition of the element in which to apply CSS to the selected element. For example, :hover will apply a style when the user hovers over the element specified by the selector.
 
 #### Nav
-A semantic element used to define a set of navigation links.
+* A semantic element used to define a set of navigation links.
 `<nav></nav>`
 
 #### Clearfix

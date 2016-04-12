@@ -1,5 +1,6 @@
 
 **WDI Fundamentals Unit 5**
+
 ---
 
 #Horizontal Navigation
@@ -11,8 +12,8 @@
 #### Checkpoint
 
 * What does `display:block` do?
-* What does floating to anchoring left do?
+* What does floating anchors to the left do?
 
 ---
 
-Ready to Practice?[Click here.](03_exercise.md)
+Ready to Practice? [Click here.](03_exercise.md)

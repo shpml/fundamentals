@@ -27,7 +27,7 @@ Take a look at the starter code in the editor below first.
 
 We'll  be using external fonts for this challenge. Let's start out by linking external fonts in your HTML. But you can also link to external fonts in your HTML. Let's try it!
 
-1 .Add the following code to the head of your HTML file.
+1 . Add the following code to the head of your HTML file.
 
 ```HTML
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
@@ -46,19 +46,19 @@ Checkpoint: Make all the headers bold by setting the font-weight to 800.
 
 Now, let's put in some content and build out the navigation bar.
 
-1. Start by adding a nav element inside the header, between the h1 and the img.
+1 . Start by adding a `nav` element inside the header, between the h1 and the img.
 
-2. Create three linked menu items inside the nav: "work," "about," and "contact."
+2 . Create three linked menu items inside the nav: "work," "about," and "contact."
 
-4. Wrap placeholder links around them like this:
+4 . Wrap placeholder links around them like this:
 
 ```HTML
 <a href="#">work</a>
 ```
 
-7 .Now Let's put some rules in place to format our navigation. In your CSS, put two new, empty selectors: nav and nav a.
+5 . Now Let's put some rules in place to format our navigation. In your CSS, put two new, empty selectors: nav and nav a.
 
-8 . Rather than resetting all our CSS, let's manually reset the default link state. Set nav a's text-decoration value to none, and set its color to black.
+6 . Rather than resetting all our CSS, let's manually reset the default link state. Set nav a's text-decoration value to none, and set its color to black.
 
 *Add: `text-decoration: none`; to the `nav a` css property to remove the default blue and underlining from links.*
 

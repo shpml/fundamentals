@@ -9,9 +9,9 @@
 
 #### Checkpoint
 
-* What does the <aside> tag do?
-* How would you go about creating three columns on your webapge?
+* What does the `<aside>` tag do?
+* How would you go about creating three columns on your webpage?
 
 ---
 
-[On to the lesson.](06_exercise.md)
+[Practice building columns!](06_exercise.md)
