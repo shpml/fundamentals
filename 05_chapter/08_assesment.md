@@ -2,7 +2,7 @@
 
 ---
 
-# Navigation & Page Layout 
+# Navigation & Page Layout
 
 Having learned about layout, we are even better equipped to structure the HTML of our game.
 
@@ -76,3 +76,8 @@ Your two links should have a orange background with white text!
 Congratulations! Your board game is now structured and styled utilizing all your new knowledge of HTML and CSS!
 
 ![](../assets/elkwebdesign/memorygame6.png)
+
+
+---
+
+Now, [let's take a take a look inside the developer's toolbox!](../06_chapter/intro.md)
