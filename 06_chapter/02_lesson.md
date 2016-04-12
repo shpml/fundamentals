@@ -31,7 +31,7 @@ For the purposes of this lesson, the root directory of everything on your comput
 
 ---
 
-We know how file and directories appear in the GUI –now let's find our way around this system on the command line.
+We know how file and directories appear in the GUI. Let's find our way around this system on the command line.
 
 Before we get started, it's important to point out that, as smart as they seem, computers are really dumb. To ask for a specific directory or file in command line, we need to write out a precise address (called a **path**) so that the computer knows exactly where to find it.
 
