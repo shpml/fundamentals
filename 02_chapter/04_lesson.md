@@ -1,15 +1,20 @@
 **WDI Fundamentals Unit 2**
+
 ---
 
-#Working with Images
+#The Boilerplate
 
-Your website can really come to life with a couple images! When you’d like to add images to your site, you should use the tag with the **src** attribute. `src` stands for “Source” and works just like the tag’s `href` attribute. It tells the image tag where to find the image you’d want to include on your page. Learn how to add images
+Now that we've learned a bit about HTML tags, it's time to think about how to properly organize them. An HTML boilerplate is simply a set of structural elements that help organize our code so that we can read through our HTML page seamlessly! Watch the following video to understand how to create an HTML boilerplate.
 
-
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/kn8gfpd9z9?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/7mhg28is61?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
->**Note** **Relative vs. Absolute Addressing**: Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
-On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
 
-[On to the next lesson.](07_lesson.md)
+#### Checkpoint
+
+* Which tags don't require a closing tag?
+* Between which tags should the `<title> </title>` tags be placed?
+* What are parent elements? Children elements?
+---
+
+[Let's get some practice now!](05_exercise.md)

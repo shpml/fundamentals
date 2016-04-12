@@ -2,106 +2,51 @@
 
 ---
 
-## Get Started with Git
-
-###Initialize a Repository
-
-To turn an ordinary directory into a Git repository (or *repo* for short), you have to **initialize** the repository (this just means adding a hidden folder called `.git/` to your project folder, which contains all the data that Git needs to operate.
-
-Simply change your working directory to the folder you'd like to track and run the command:
-
-```
-$ git init
-```
-> **CAUTION** Do not execute this command in your **home directory** –it will make it very difficult to work with any other repositories!
-
-When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
-
-If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
-
-> **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
-
-### Saving Changes to Your Project
-
-Unfortunately, it's not enough to simply have your files in a repo. Like the terminal, Git doesn't make any assumptions about what changes you want to save or when you want to save them - you need to explicitly tell it what to do.
-
-Suppose that we would like to work on a blog post for General Assembly, so we create a directory on our desktop called "GA-Blog" and run `git init` from inside that directory. At the moment, this project is empty - we can confirm this by running `git status`, which asks Git to give us an update on the status of our project.
-
-```
-$ git status
-```
-
-We should get a response like this.
-
-![Git Status of GA-Blog](../assets/chapter2/git_status.gif)
-
-Each 'save' that we make to our repository is called a **commit**; this message is telling us that our project has no unsaved changes.
-
-Let's go ahead and make a new text file called `post.txt` inside of GA-Blog, using the `touch` command.
-
-```
-$ touch post.txt
-```
-
-Now let's check our Git status:
-
-![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
-
-Git has identified that a change has been made - there is now a file in our repo. However, it does not know whether or not we want that change to be saved right now. To add this change to our next commit, we can run the command
-
-```
-$ git add post.txt
-```
-The changes we've just made have now been *staged*, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or *unstaged*. If we run `git status` again, we'll see that the addition of `post.txt` is staged and ready to be committed:
-
-![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
-
-> **NOTE** Often, you'll want to automatically save *any* changes that have been made inside your repo; instead of specifying a unique file, you can just write `git add .` - this will add all of the files in `.` (which, if you remember, is shorthand for the working directory) to the next commit.
-
-Once we're ready to officially record this version of our project, we can type:
-
-    $ git commit -m "created a new post.txt file"
-
-The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
-
-###The Git Staging Area
-
-One of the unique features of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
-
-```
-$ git add .
-$ git commit -m "message"
-```
-
-Why stage? So that if you make multiple changes you can commit them separately or all at once (basically, it exists to help you better organize your project history).
-
-![Git Staging Area](../assets/chapter2/add_commit.png)
+##How Your Computer is Organized
 
 
+Before we tell the computer what to do, it's important we understand what it is we will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns.
 
-### Your Commit History
+![Folders in the GUI](../assets/chapter1/FileSystem.gif)
 
-When you're farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. Git allows you to view a list of commits along with the date the commit was submitted, the author of the commit, the commit message AND a unique number to identify the commit by, called a SHA. This unique number allows Git to remember each commit, and apparently a 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt".
+The way your computer organizes and stores files is called a **file system**. Let's take a minute to learn the vocabulary developers use to talk about it.
 
-To view the timeline of changes, you can run:
+* In programming-speak, all folders are called **directories**.
 
-```
- $ git log
-```
+![Directories](../assets/chapter1/directory.png)
 
-which will yield a list of entires that look like this:
+* A directory within another directory is called a **subdirectory**.
 
-```
-commit 6d33f525a09b9918f75188db164ea2722039830b
-Author: Sarah <sarah@gmail.com>
-Date:   Wed Jan 28 17:44:03 2015 -0500
+* A directory that contains a subdirectory or file is called a **parent directory**.
 
-    added a new post
+![Subdirectory and Parent Directory](../assets/chapter1/subdirectories.png)
 
-```
+* The topmost directory of the filesystem is called the **root directory** – nothing contains it. All files and directories are contained by it, and so they all share the same root.
 
-Each of these entries represents a commit for this project, and gives a lot of other useful information including when the commit was made, who made it, and (if the person wrote a good commit message) what that particular commit does.
+![Root Directory](../assets/chapter1/root_directory.png)
+
+For the purposes of this lesson, the root directory of everything on your computer is your home directory. It's aptly represented in the GUI by a house icon (if you're using a Mac).
+
+![Home Directory](../assets/chapter1/home.png)
 
 ---
 
-[Here are some more exercises to help you practice.](04_exercise.md)
+We know how file and directories appear in the GUI. Let's find our way around this system on the command line.
+
+Before we get started, it's important to point out that, as smart as they seem, computers are really dumb. To ask for a specific directory or file in command line, we need to write out a precise address (called a **path**) so that the computer knows exactly where to find it.
+
+For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. It might venture a guess, but your command line isn't as smart.
+
+We have to be more specific when interacting with our computer on the command line.
+
+Your computer understands two kinds of addresses or paths, absolute and relative.
+
+* An absolute path starts from the root. It's analogous to identifying a location on earth by latitude and longitude. The point on earth represented by (0, 0) is somewhere out in the middle of the Atlantic ocean. No one really cares about it, but it never changes. It is "the root" from which we describe all the rest of the locations on earth. If someone gave you the coordinates for a street in Paris, you could theoretically start at (0, 0) and make your way north and east until you get there. **In this case you are defining where you're going from the root (a standard reference point), so you're using an absolute path.**
+
+* On the other hand, if you were standing on a street corner in Anchorage, Alaska and wanted to head to the library, you wouldn't need the latitude and longitude. You could just jump in a taxi and say "Please head back two blocks, cut over to 3rd, and then turn right on Main Street." **In this case, you're defining where you're going based on your current location, so you're using a relative path.**
+
+>**Caution** It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
+
+---
+
+Feeling good? [Let's do some more practice.](04_exercise.md)

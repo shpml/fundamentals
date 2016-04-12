@@ -2,67 +2,120 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
-* Define a version control system and its benefits
-* Describe how Git works
-* Identify the Git commands used to set up a local repository and to record 'snapshots' of your project
-* Push local changes to a remote repository using the command line
+##### By the end of this Unit, you'll be able to:
+* Differentiate between a command line interface and a graphical user interface
+* Summarize a basic filesystem structure
+* Open a file in a text editor and make changes from the command line
+* Identify when you might want to use absolute versus relative paths
+
+## Think Like a Programmer
+
+Most computer users move their mouse, click on icons, drag and drop files from one folder to another.
+
+When you're using the computer this way, you're using what's called a Graphical User Interface or GUI. In a GUI (pronounced "gooey"), you communicate with your computer using a combination of text, images, and gestures.
+
+You are on a journey to transcend being an ordinary user of computers.
+You are on your way to becoming a developer, and developers like to interact with computers in a different way – through the command line.
+
+Unlike the GUI, the command line is a *text-based interface*, where you communicate with your computer using text alone.
+
+Until the video display was introduced in the mid-1960s, the command line was the only way to interact with your computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
+fast... In fact, once you become comfortable using the CLI early in class, you'll be amazed at how much more productive you become!
+
+We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and a lot more.
+
+We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as "shells", and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: **Bash**.
+
+There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a different set of commands.
+
+## Getting started with Git Bash (Windows Users)
+
+If you're a *Windows* user, we will be installing **Git Bash**, an environment that will allow you to use Bash. It will create a prompt that is similar to Mac OS X and Ubuntu Linux, allowing you to follow along in Fundamentals. Once you join us for WDI, you will need to use a Mac or Linux environment. Reach out to your local producer if you have any questions.
+
+If you're following along on *Mac OS X or Ubuntu Linux* feel free to skip the following section on installing Git Bash. You can jump ahead to the [Getting Started Using Terminal](#terminal) section.
+
+### Downloading Git Bash
+
+* Navigate to the [git website](https://git-scm.com/) and double click on "Windows".
+
+![:Git Website](../assets/chapter1/git_bash/download_1.jpg)
+
+* Your download should begin.
+
+![:Git Website](../assets/chapter1/git_bash/download_2.jpg)
+
+### Installing Git Bash
+
+Follow the prompts in the installation window.
+
+* Double click on the .exe file that you just downloaded to begin setup.
+* Accept the terms of use.
+
+![:Git Website](../assets/chapter1/git_bash/install_2.jpg)
+
+* Choose a location to install files.
+
+![:Git Website](../assets/chapter1/git_bash/install_3.jpg)
+
+* Select the following options in the "Select Components" prompt.
+
+![:Git Website](../assets/chapter1/git_bash/install_4.jpg)
+
+* Select a start menu folder (optional).
+* Select the "Use Git from Git Bash Only" option.
+
+![:Git Website](../assets/chapter1/git_bash/install_6.jpg)
+
+* Select the "Checkout Windows-style, commit Unix-style line endings" option.
+
+![:Git Website](../assets/chapter1/git_bash/install_7.jpg)
+
+* Select "Use MinTTY (the default terminal of MSYS2)".
+
+![:Git Website](../assets/chapter1/git_bash/install_8.jpg)
+
+* Check "Enable file system caching"
+
+![:Git Website](../assets/chapter1/git_bash/install_9.jpg)
+
+* Wait for files to install!
+
+![:Git Website](../assets/chapter1/git_bash/install_10.jpg)
+
+<a name="terminal"></a>
+## Get Started Using Terminal
+
+**Mac/Ubuntu users:**
+When you open Terminal, you will see a window like this:
+
+![:Blank Console](../assets/Graphics/terminal_blank.gif)
+
+> **NOTE** Practice using Spotlight to open files and applications on your computer. It'll make you efficient as you navigate back and forth often between Terminal, your text editor, and your browser.
+
+Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **Return**.
+
+**Windows users:**
+When you open Git Bash, you will see a window like this:
+
+![:Git Website](../assets/chapter1/git_bash/git_bash.gif)
+
+Double click on the Git Bash icon to open a new session.
 
 ---
 
+The Terminal window is where you'll tell the computer what to do, and where the computer will display its reply. Let's break this window down:
 
-#Version Control
+- The **prompt** is the `$` that automatically shows up on the end of the first
+line. It's the command line equivalent of "stand-by" and indicates Terminal is
+ready to accept your **command**. We'll learn a few commands later in this lesson.
 
-When you’re working on a project – say a painting, a piece of software or an autobiography – there comes a time when you wish you had a reset button.
+- The **cursor** follows the prompt and the text you type will appear here. Just
+like in every other setting where you've ever seen a cursor.
 
-You might already have a system in place to deal with this problem – maybe you save your document multiple times with different names, so that you can return to a different stage of the project.
+- The **username** of the person logged in precedes the prompt, and as you can see
+above, this user is named *Sarah*.
 
-![Version Control](../assets/chapter2/version-control.gif)
-
-Developers call this process “version control”.
-
-If you're making copies of a file every time you make a change, your file system might look like this:
-
-<br>
-
-![Bad VCS](../assets/chapter2/bad_vcs.png)
-
-<br>
-
-While this method works (kinda), it has a number of major limitations.
-* It only allows you to track changes in one file; if your project consists of multiple files, you're out of luck.
-* It's extremely duplicative - before long, you might end up with 10, 20, or even 50 slightly-different copies of the same file.
-* It's extremely difficult (if not basically impossible) to see what has changed from one version to the next without opening each file and comparing changes line by line.
-* Keeping track of parallel versions (revision A vs revision B) is possible, but it's hard to compare one to the other, and integrating the two versions is a lot of work.
-
-Now imagine how much more complicated this process becomes once you start working with a team...
-
-Software developers have developed a number of tools to solve the 'version control' problem for their own projects; in this course, we will focus on one particularly popular version control program called **Git**. Git addresses all of the problems mentioned above:
-* Git tracks changes for multiple files by keeping them all in **repositories** - special directories with some hidden Git machinery.
-* Rather than saving entire separate versions of each file, Git keeps a record of the *changes* that have been made to each file - much more space-efficient.
-* Because Git stores changes, rather than whole files, looking at what's changed from one iteration to the next is very easy.
-* Git allows you to easily keep track of parallel versions of a project using a feature called **branching**. We won't cover this feature now, but you'll be using it a lot once you start the course.
-
-Git is also an excellent tool for working collaboratively on a project, though we won't be using those features right away.
-
-##Installing Git
-
-If you don't already have Git, you can install it by downloading the latest release from [git-scm.com](http://git-scm.com/download/mac), double-clicking the downloaded file, and going through the installer.
-
-If you're following along on Windows and installed Git Bash, Git should have been installed along with Git Bash so you should be all set.
-
-> **HINT** As with any software installation, it’s always good to backup your system and data before proceeding.
-
-You can check to see if it worked by opening up the terminal and typing:
-
-```
-$ git --version
-```
-
-This will show you what version of Git is running; your computer should return something greater than or equal to `2.0.0`:
-
-![Check to See What Version of Git is Running](../assets/chapter2/git_installed.gif)
 
 ---
 
-[On to the lesson.](02_lesson.md)
+[On to the next lesson.](02_lesson.md)

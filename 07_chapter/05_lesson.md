@@ -2,149 +2,153 @@
 
 ---
 
-# Expressions with Variables
+##Publish Work on GitHub
 
-One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.
+So far, we've been making changes "locally" - editing files and repositories on our computers.
 
-Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 * 23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
+To collaborate with others (and also to backup our files just in case our computer is out of commission) we need to connect our local repository to a "remote" repository.
 
-`var x = (99 * 746) - (837 * 23);`
+### What is GitHub?
 
-> **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
+GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-When we want to then use this result, we simply substitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;` and this expression would evaluate to double whatever value was stored in `x`.
+In a lot of ways, Github is like Dropbox.
 
-To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
+You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.
 
-### Test Yourself
-Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.
+Below is what the Github interface looks like for a repo called `awesome-project`:
 
-* `x + 20`
-* `x * x`
-* `3 * (x * x) - 2 * x + 5`
+1. **Repo Name and Owner** - describes who owns the repository, what the name of the repo is and whether the repo is public or private.
 
-We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
+	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
-Consider the following JavaScript code in a repl.it console.
+2. **Overview** - displays the number of commits, branches, releases and contributors to a particular repo.  Selecting any one of these options will bring a detailed view of that selection.
 
-```javascript
-var x = 1
-x
-// => 1
-x = 2 + x
-// => 3
-x
-// => 3
-```
+	![Overview](../assets/chapter2/overview_github.gif)
 
-On the first line, we are _assigning_ the variable `x` equal to the integer `1`.  Then, on the next line, we are _reassigning_ the variable `x` and setting it equal to the following: `2` plus the most recent value of x (in this case, `1`). `x` would now be equal to the integer `3`.  
+3. **Repo File Structure** - displays the contents of the repo.  Selecting any file or folder will open a detailed view of that file and allow you to edit the content directly.
 
->**Caution**  Beginners often confuse the assignment operator (`=`) and the equality operators (`==`, `===`). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.
->```javascript
-> x
-> // => 3
-> x == 4
-> // => false
-> x = 4
-> // => 4
-> x == 4
-> // => true
-> ```
+	![File Structure](../assets/chapter2/contents_github.gif)
 
+4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own Github account.
 
-Suppose we ran the following lines of code in order, one by one.
+	![Fork button](../assets/chapter2/fork_github.gif)
 
-```javascript
-var x = 10;
-x = 1;
-x = 5;
-x = 15;
-2 * x;
-```
-What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you're correct!
+5. **Side Bar** - use the side bar to respond to issues, create pull requests, and change the settings for this repo.
 
-> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2` returns `2`.
+	![Side bar](../assets/chapter2/sidebar_github.gif)
 
-Sometimes, we find variables on both sides of the `=`. Suppose we have two variables, `x` and `y`, as in the example below.
-
-```javascript
-var x = 5;
-var y = 10;
-x = y + 10;
-```
-
-What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10` evaluates to 20, so what we're left with is the expression `x = 20`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
-
-Let's look at one more example using the same two variables, `x` and `y`.
-
-```javascript
-var x = 1;
-var y = 10;
-x = y * 2;
-y = x + 1;
-x = y + 1;
-y = 2 * x;
-```
-
-Feeling dizzy? Don't worry, we'll step through this one together.
-
-  __Line 1__: We declare a new variable `x` and assign it the value `1`.
-
-  __Line 2__: We declare another new variable `y` and assign it the value 10.
-
-  __Line 3__: As of this point in the code, `y` has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to `x`.
-
-  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20 + 1`).
-
-  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21 + 1`).
-
-  __Line 6__: `x` is now 22, so `y` becomes `2 * 22`, or 44.
-
-One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
-
-### Test Yourself
-Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
-
-##### Challenge \#1
-
-```javascript
-var x = 1;
-var y = 2;
-var z = 3;
-x = y;
-y = z;
-z = x;
-```
-
-##### Challenge \#2
-
-```javascript
-var x = 1;
-var y = 0;
-var z = -1;
-x = y + z;
-y = z * x;
-z = x - y;
-x = y * y;
-y = z * z;
-z = z - 1;
-```
-
-Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?
-
-The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
-
-### A few shortcuts
-
-Needing to operate 'in place' (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below.
-
-| Long-Hand Syntax | Short-Hand Syntax |
-|------------------|-------------------|
-| `x = x + 1`      | `x += 1` |
-| `x = x - 5`      | `x -= 5` |
-| `x = x * 2`      | `x *= 2` |
-| `x = x / 10`     | `x /= 10` |
-| `x = x % 10`     | `x %= 10` |
-| `x = x + 1`      | `x++` |
+There are a ton of unique Github features crammed on this page, but we'll only be using three of them to start.
 
 ---
+
+
+## Our GitHub Flow
+
+There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.
+
+The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git.
+
+Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
+
+This is what our workflow looks like:
+![GitHub Workflow](../assets/chapter2/github_workflow.gif)
+<br><br>
+
+This workflow consists of the following steps:
+
+1. Forking
+2. Cloning
+3. Editing
+4. Committing
+5. Pushing
+6. Submitting a pull request
+
+**Don't worry**, we are going to cover this step by step, in plenty of detail.
+
+
+
+### 1. Forking
+
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
+
+<br>
+![Node.js Contributors](../assets/chapter2/node.png)
+<br>
+
+Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
+
+To create a copy of Joyent's repo, you would need to **fork** it by clicking the button we highlighted above.
+
+![Forking GIF](../assets/chapter2/fork_node.gif)
+
+
+> **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md).
+
+"Forking" adds a copy of someone else's GitHub repo to *your* Github account.
+
+The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
+
+By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will, everyone does, Node.js won't be affected.
+
+
+
+
+### 2. Cloning
+
+Next, you'll want to be able to edit the code
+
+To make a local copy of a fork, you'll need to open up the Terminal and use a Git command.
+
+You need to navigate to the place where you'd like to store the repo, and then type:
+
+```
+git clone https://url/to/clone
+```
+
+You can find the URL to clone on right side of the forked repo on Github:
+
+![Node.js Clone](../assets/chapter2/node_clone.png)
+
+By issuing the clone command, you're asking GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
+
+> **HINT** If you're following along in Git Bash in Windows, the commands to copy and past are a little different than the default Windows copy/past commands. The command to copy is `control + insert` and the command to paste is `shift + insert`.
+
+
+### 3 & 4. Editing and Committing
+
+We covered this in the previous section. As you complete the exercises in the rest of Fundamentals, you'll need to do this step frequently.
+
+### 5. Pushing
+
+Once you've committed the changes you've made to the code, your local repo will be different from your remote repo; to update your remote repo on GitHub, you have to **push** those changes, using the Git command `git push origin master`.
+
+Don't worry about the `origin` and `master` part just yet.
+
+If you're curious, here's a brief overview:
+* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on Github). You can have many remotes, if you want. We're not going to work with more than one in Fundamentals.
+* `master` refers to the **branch** on your remote repo where you're currently adding your changes. Again, for now, we're just going to be doing our work on the `master` branch.
+
+
+### 6. Submitting a Pull Request
+
+Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**.
+
+A pull request is effectively saying "Hello maintainer of project X, I made some changes here in my forked copy and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
+
+We're going to cover how to submit a pull request in a later chapter.
+
+
+## Confused?
+
+If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first. When you don't understand something, we encourage you to follow a three-step process:
+
+1. Search online for an answer via Google or [Stack Overflow](http://stackoverflow.com).
+2. Ask classmates if they've solved a similar problem via [Slack](https://ga-students.slack.com/).
+3. Go to an instructor for help (instructors are also on Slack)
+
+And trust us... you *will* get to the point where cloning and pushing are like breathing and sleeping.
+
+---
+
+[Here's another exercise for you](07_exercise.md) - give it a shot.

@@ -1,15 +1,42 @@
 **WDI Fundamentals Unit 3**
+
 ---
-# Divs and Spans
 
-Now that we know a bit about how elements behave, we can start to explore where we want to start placing theses elements on our webpage. Span is an inline element that's used to apply CSS to inline HTML and Div is a block element used to apply CSS to in-blocks of HTML. We've encountered Divs before in the previous unit and in the Memory Game. Divs typically wrap big sections of content on a page.
+# CSS Color
 
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/34jr20yvus?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+In this lesson, we'll learn about working with various CSS color and text methods to add flare to our websites! Check out the videos below before we dive into some code challenges!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/2vazcm3j1l?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
-#### Checkpoint:
+#### More on CSS Colors
 
-* Is a div tag a block or inline element?
-* Is a span tag a block or inline element?
+While color names are fine when you're just beginning, there's a number of reasons you'll want to switch over to something more advanced. First, color names are rendered differently by different browsers. Secondly, there are only 147 color names accepted as standard, meaning your options are going to be pretty limited. Instead, you'll want to use either RGB or hexadecimal codes. Both of these are built on a system of entering values for the colors red, green, and blue.
 
-[On to the next lesson.](03_lesson.md)
+By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.In hex, they range from 0-9, then continue from A-F, with two characters each for red, green, and blue. This is clearer with examples, so here are some common colors with their RGB and Hex equivalents.
+
+The format for color names, RGB, and hexadecimal should look like the following, respectively:
+
+```css
+p {
+     color: red;
+}
+
+p {
+     color: (255,0,0);
+}
+
+p {
+     color: #FF0000;
+}
+```
+
+#### Opacity
+
+You'll use aplha to change the opacity of your element. See below:
+
+![](../assets/elkwebdesign/rgb.png)
+
+---
+
+[On to the next lesson.](02_lessontemp.md)

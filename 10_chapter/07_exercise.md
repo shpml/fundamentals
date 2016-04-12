@@ -4,32 +4,43 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays.
+Let's revisit our 'FizzBuzz' activity from Unit 4, incorporating what we've learned so far about writing functions.
 
-Instructions
+Your job this time will be to write a function called `fizzbuzz` that takes a parameter `num`; for every number from 1 to `num`, this function should print (using console.log()) one of the following values:
 
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
+* 'fizz' if the number is divisible by 3 (but not 5)
+* 'buzz' if the number is divisible by 5 (but not 3)
+* 'fizzbuzz' if the number is divisible by both 3 and 5
+* the number itself if it isn't divisible by either 3 or 5
 
-### Let's get started!
+For reference, running `fizzbuzz(15)` should result in the following text being printed in the console:
 
-#### Part 1
+```javascript
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
+```
 
-1. Create an array `cups` containing numbers 1 - 10.
-2. Create an empty array `ounces`.
-3. Write a function `convertToOunces`. It should iterate through the cups array, convert each item from cups to ounces, and then add that item to the ounces array. Return the value of ounces after looping through the items and before the function ends.
+Once again, there's no starter code for this exercise - just open up a new session in [repl.it](http://repl.it). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous lesson!
 
-#### Part 2
+Test your code for several different input values. What do you get if `num` is 1? 10? 30?
 
-1. Create an array `scores` containing the numbers 83, 40, 55, 72, 59, 88, and 99.
-2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array.
-
-Feeling comfortable with these exercises? Take a look at the last lesson!
+If you're satisfied that your code is working as expected, go ahead and move on to the next lesson.
 
 > *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
 ---
 
-[Ready for the last lesson? Here it comes!](08_lesson.md)
+Feeling confident? [Test your understanding of functions with this next quiz.](06_quiz.md)

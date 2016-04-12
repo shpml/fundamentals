@@ -2,18 +2,19 @@
 
 ---
 
-##![Your Turn](../assets/exercise.png) Your Turn
+## Your Turn
 
-Let's revisit our 'FizzBuzz' activity from Unit 4, incorporating what we've learned so far about writing functions.
+Here's the [starter code](http://repl.it/9nH) for your next exercise:
 
-Your job this time will be to write a function called `fizzbuzz` that takes a parameter `num`; for every number from 1 to `num`, this function should print (using console.log()) one of the following values:
+```javascript
+var result;
+var max;
+/* YOUR CODE HERE */
+```
 
-* 'fizz' if the number is divisible by 3 (but not 5)
-* 'buzz' if the number is divisible by 5 (but not 3)
-* 'fizzbuzz' if the number is divisible by both 3 and 5
-* the number itself if it isn't divisible by either 3 or 5
+Last time, we wrote code that took an input `x` and set a new `result` value according to a specific set of rules; this time, your challenge is to loop through every number from 1 to `max`, applying those exact same rules to that number and, finally, printing the result out to the console using the command `console.log(result);`.
 
-For reference, running `fizzbuzz(15)` should result in the following text being printed in the console:
+For reference, if `max` is 20, the following should get displayed in the console:
 
 ```javascript
 1
@@ -31,16 +32,23 @@ fizz
 13
 14
 fizzbuzz
+16
+17
+fizz
+19
+buzz
 ```
 
-Once again, there's no starter code for this exercise - just open up a new session in [repl.it](http://repl.it). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous lesson!
+and testing any number less than 20 should give you a subset of that result - in other words, if `max` is 5, we get the following:
 
-Test your code for several different input values. What do you get if `num` is 1? 10? 30?
-
-If you're satisfied that your code is working as expected, go ahead and move on to the next lesson.
-
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+```
+1
+2
+fizz
+4
+buzz
+```
 
 ---
 
-Feeling confident? [Test your understanding of functions with this next quiz.](06_quiz.md)
+Feeling confident? [Test your understanding of this lesson with this quiz.](06_quiz.md)

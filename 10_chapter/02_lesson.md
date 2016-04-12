@@ -1,181 +1,151 @@
-**WDI Fundamentals Unit 6**
+**WDI Fundamentals Unit 10**
 
 ---
 
-# Collections - Arrays
-## What is an Array?
+# Functions
 
+## Defining JavaScript Functions
 
-An array is an ordered list of items, also known as **elements**, separated by commas and situated between brackets `[]`. Arrays can contain different types of elements, like <code>["red", 42, "gorilla", false]</code>, but we generally use arrays to deal with elements of the same type.
-
-###Finding Elements in an Array
-
-The order of elements in an array matters. Let's take a look at the following example:
+To create a new function, we must *declare* it as we would a variable.  A **function expression** typically looks like this:
 
 ```javascript
-var myFriends = ['ellen', 'mary', 'doug', 'pat'];
+var nameOfMyFunction = function(x) {
+  // Body of the function 'nameOfMyFunction';
+}
 ```
 
-If we wanted to find the element 'mary', we would need to remember that she is the second element in the array.
+As you can see, the first line begins with `nameOfMyFunction` followed by the word `function`, which is how we'd like to refer to that function later.
 
-The position of 'mary' in the array is known as its *index value* (or just *index*).
+Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are called **parameters** of the function.  Above, we only used one parameter, `x`.
 
-As you can see, there are four strings contained within this array.
-- The first element (index of 0) in the array is 'ellen'.
-- The second element (index of 1) is 'mary'.
-- The third element (index of 2) is 'doug'.
-- The final element (index of 3) is 'pat'.
+Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
 
-> **Note that the index for the first position in an array is 0**. So even though 'mary' is the second element in the array, we would need to call her out as the element with an index of 1.
+We'll focus on using **function expression** for these lessons. Let's look at an example:
 
+Let's look at an example:
 
-
-
-Now that we know her index value, to find 'mary' we would simply write:
-
-`myFriends[1]`
-
-We could save what we found in a variable like so:
-
-```js
-var bestFriend = myFriends[1];
+```javascript
+var tripleIt = function(x) {
+  return 3 * x;
+}
 ```
 
-Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.
+This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (that is, `x`) multiplied by 3.
 
-```js
-myFriends[3] = 'steve';
+This is the first time we're seeing a `return` statement – it does exactly what it sounds like it does. `return` gives back the output of the function.
+
+###Naming Functions
+
+Function names should describe what the function does as best as possible, and a general rule of thumb is to keep the name short and simple.
+
+You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't use spaces between them.
+
+To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
+
+Examples of naming functions:
+
+- **bad**:  `thisfunctioncalculatestheperimeterofarectangle` (no camelCase, too verbose)
+- **bad**:  `my new function` (contains spaces)
+- **bad**:  `myNewFunction` (doesn't explain what it does!)
+- **good**: `calculatePerimeter` (describes what it does, short, and uses camelCase)
+
+
+## Calling JavaScript Functions
+
+Declaring a function does not execute the instructions we include in its body. After declaring, we've simply given the function a name and specified how it should work when it is given a set of parameters.
+
+To actually *evaluate* a function, we have to **call** that function as follows:
+
+```javascript
+nameOfMyFunction();
 ```
 
-Just like with a variable, this expression will evaluate to the value on the right.
+In the case of `var tripleIt = function(x)`, if we wanted to call the function by passing the value 4, we would write:
+
+```javascript
+tripleIt(4)
+```
+
+> **NOTE**: The number `4` used when the function is called is known as an **argument**.
+
+The function would execute its statements and evaluate to the value `12`.
+
+Just like a variable, we can use the return value of this function in any expression. For example:
+
+```javascript
+var a = tripleIt(1);                         // a === 3
+var b = 100 * tripleIt(4);                   // b === 1200
+var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
+```
+## Other Ways to Define Your Functions
+
+Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+
+```javascript
+function nameOfMyFunction (x) {
+  // Body of the function 'nameOfMyFunction';
+}
+```
+
+But don't worry about this right now. We'll focus on function expressions for now!
+
 
 ### Test Yourself
 
-Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
+Suppose that we've defined the function 'glorp' as follows:
 
 ```javascript
-var myNumbers = [4, 65, 0, 29];
-myNumbers[0];
-myNumbers[1] = 10;
-myNumbers[2] = 5;
-myNumbers[1] * 2;
-console.log(myNumbers);
-```
-Confirm your answer by entering the above code in a new Repl.it session.
-
-## Adding Complexity – Nested Arrays
-
-In addition to storing numbers, strings, or booleans as elements, arrays can go 'Full Inception' by storing *other arrays*.
-
-Here's an example of what this can look like.
-
-```javascript
-var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
+var glorp = function(someNumber) {
+  return someNumber * 5 - 3;
+}
 ```
 
-You might also see it written like this – it's a bit more readable this way.
+What will each of the following expressions evaluate to?
+* glorp(10)
+* 2 * (glorp(5) + 10)
+* glorp(1 + 2)
+* glorp(glorp(1))
 
-```javascript
-var arrayOfArrays = [['a', 'b', 'c'],
-                     ['d', 'e', 'f'],
-                     ['g', 'h', 'i']];
-```
-
-Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]` will give us back the second array, <code>['d', 'e', 'f']</code>.
-
-Of course, what we're probably most interested in are the inner elements (strings, in this case). We could probably do the following:
-
-```javascript
-var x = arrayOfArrays[1]; // Evaluates to ['d', 'e', 'f']
-x[0]; // Evaluates to 'd'
-  ```
-
-But the variable `x` there is unnecessary - it's just standing in for <code>['d', 'e', 'f']</code>. We can access that element directly from `arrayOfArrays` using the following syntax:
-
-```javascript
-arrayOfArrays[1][0]; // Evaluates to 'd'
-```
-
-If you imagine an array of arrays as a grid of values (like in the example above), you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.
-
-### Test Yourself
-
-Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
-
-```javascript
-var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
-arrayOfArrays[0][0];
-arrayOfArrays[1][2];
-arrayOfArrays[2][2] = 'z';
-arrayOfArrays[2][1] = arrayOfArrays[1][0];
-console.log(arrayOfArrays);
-```
-
-Confirm your answer by entering the above code in a new Repl.it session.
-
-## Additional Array Features
-
-In addition to containing multiple elements, arrays also have a number of built-in properties and functions that give them many useful abilities. Here are a couple of them:
-
-###Finding and Accessing Elements in an Array
-
-####.length
-
-All arrays have a property called `length`, which tells you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
-
-```javascript
-['a', 'b', 'c'].length;  // Evaluates to 3
-
-var x = [10, 20, 30, 40];
-x.length; // Evaluates to 4
-```
-
-One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.
-
-> **NOTE** Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.
-
-```javascript
-var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
-team[team.length - 1];   // Evaluates to 'veronica'.
-team[team.length - 2];   // Evaluates to 'linda'.
-```
-
-####.indexOf()
-This function evaluates to the index of the first element in the array that matches the value in parentheses. If no match is found, the function evaluates to -1.
-
-```javascript
-var animals = ['bear', 'beetle', 'boa'];
-animals.indexOf('boa');  // Evaluates to 2
-animals.indexOf('bear'); // Evaluates to 0
-animals.indexOf('bee');  // Evaluates to -1
-```
-
-###Adding and Removing Elements in an Array
-
-####.push() and .pop()
-`push` and `pop` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. `push` in particular is a very convenient way to build up an array over time - you're simply adding another item to the list.
-
-```javascript
-var ghosts = ['blinky', 'inky', 'pinky'];
-ghosts.push('clyde');  // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky', 'clyde'].
-ghosts.pop();          // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky'] again.
-```
-
-### Test Yourself
-
-What will the following lines do?
-
-```javascript
-['a', 'b', 'c'].indexOf('b');
-[true, false, false, true].length;
-var x = ['paul', 'john', 'george']; x.push('ringo');
-var y = ['soda', 'tart', 'weasel']; y.pop();
-```
-
-Confirm your answer by entering each of the above lines of code on the repl.it console.
-
-> **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in repl.it!
+Test your answers in repl.it by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
 
 ---
 
-[Let's get some practice with creating and editing arrays.](04_exercise.md)
+## The Return Statement
+
+As mentioned above, `return` specifies the value of the function when it's executed. It has another important job - it tells the function to immediately stop whatever it's doing.
+
+Consider the following program:
+
+```javascript
+var doAThing = function(x) {
+  if (x > 10) {
+    return x + 10;
+  }
+  return x;
+}
+```
+
+If `x` is greater than 10, the computer will run the `if` statement and hit that first `return` statement (`x + 10`).
+
+This will *immediately end the function* - that second `return` statement won't be reached.
+
+### Test Yourself
+
+Where will the function stop if `x` is 5? 10? 20? What value will be returned in each case?
+
+```javascript
+var categorize = function(x) {
+  if (x < 8) {
+    return 8;
+  }
+  x += 3;
+  if (x < 15) {
+    return x;
+  }
+  return 100;
+}
+```
+
+---
+
+[Here's another exercise for you](04_exercise.md) - give it a shot.

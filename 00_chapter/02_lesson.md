@@ -1,15 +1,15 @@
-**WDI Fundamentals Unit 1**
+**Welcome to WDI Fundamentals**
 
 ---
 
-What exactly is the world wide web? How is it different from the internet? Who controls the internet? Before we get started, it's important that we answer these questions and understand how the web works before we dive into HTML and CSS.
+#### Units & Lessons
 
-The internet and the world wide web are very different entities. However, they are often used interchangeably. In the video below, we'll clarify some of the misconceptions about the two.
+This ebook has 11 units, each unit contains lessons, [exercises and assignments](03_lesson.md).
 
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/1xn829azov?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+* Every unit has objectives at the beginning. This is where we'll share the most important take aways.
 
+* Each lesson covers a new topic related to HTML, CSS, JavaScript or developer tools. Lessons are structured with explanations and plenty of examples to help you grasp these new topics. In this interactive book, we'll review HTML and CSS concepts you learned during your admissions assignment ([Dash](https://dash.generalassemb.ly/)), and cover some new ground.  
 
----
+HTML and CSS lessons include *videos!*
 
-[On to the next lesson.](03_lesson.md)
+Coming Soon! General Assembly's product team is creating high quality videos for our JavaScript lessons.

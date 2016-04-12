@@ -2,27 +2,40 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
-* Use conditional statements to control the flow of program execution
-* Use loops to repeat an operation or action based on the value of a condition
+##### By the end of this Unit, you'll be able to:
+* Practice programatic thinking by writing pseudo-code.
+* Perform arithmetic and logical operations on data to produce new values
+* Concatenate two strings together in JavaScript
+* Write expressions that both assign and evaluate variables.
+* Explain what Null is and (generally) how it works.
+* Recognize the difference between 'truth-y' and 'false-y' values
 
 ---
 
-In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Kind of like a recipe, no?
 
-Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA"
-> ...
->
-> 3: Whisk eggs, milk, honey and kosher salt until eggs are no longer visible.
->
-> 4: Dip your bread slices in the custard. If you're using a pre-sliced loaf, and the slices are thin, a short dip (just enough to coat both sides) should be enough; however, if your slices are thick, you may want to give the bread a minute or two to soak up the custard.
->
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
->
-> ...
+# JavaScript
 
-Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **control flow**, because it specifies the flow of the computer's actions through the program.
+Now it's time for us to move on to the main event: programming.
 
-In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
+It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems such as:
 
-[Let's get started.](02_lesson.md)
+- "How many students are here today?"
+- "How far away am I from the restaurant?"
+- "What's the fastest way to find the file I'm looking for?"
+
+Trying to "just start coding", without first figuring out the problem at hand is a surefire way to waste time, frustrate yourself, and create sub-optimal products. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
+
+In the rest of this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of these basics is incredibly important, and will translate to your work in other languages, whether you end up working in JavaScript, Ruby, Python, or any other language.
+
+<br>
+
+## Repl.it
+To start playing around with JavaScript, we'll be using a website called **[Repl.it](http://repl.it/languages/JavaScript)**.
+
+![repl.it Screenshot](../assets/chapter3/replit.png)
+
+As you can see in the screenshot above, repl.it features two main windows. On the right, with the black background, is the *console* - this tool (much like the Terminal on your computer) will accept a single instruction from the user and attempt to run it when the user hits "enter". On the left, with the white background, is the *editor*. The editor allows us to write several instructions in sequence; to execute these instructions, click the 'play' button near the top.
+
+To save your repl.it session, just click the 'save' button at the top - it'll generate a URL that you can bookmark and come back to any time you want.
+
+Ready to begin? [Let's go](02_lesson.md).

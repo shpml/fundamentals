@@ -4,37 +4,33 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/hhf) to some sample code in a repl.it session - it should contain the following code:
+GitHub enables you to host and share website files online, similar to the way Dropbox or Google Drive let you store and share other types of files. GitHub hosts the files in a remote server in the cloud and gives you a working URL so that you can share your finished site with other people.
 
-```javascript
-var x;
-/* Your Expression */
-```
+Let’s walk through this process:
 
-As in the previous exercise, your job is to replace the `/* Your Expression */` comment with an expression. However, this time your expressions will need to depend on the variable `x`.
+### Create a GitHub account
 
-1. Write an expression that evaluates to 10 more than `x`;<br>
-if `x` is 10, the expression should evaluate to 20;<br>
-if `x` is 50, the expression should evaluate to 60.<br>
-Test your answer by changing the first line to `var x = someValue;` and clicking the 'play' button.
+**Step 1**: To start, let’s head over to GitHub.com. The first thing we’ll do is create a username by clicking on the field at the top right of the screen.
 
-2. Now replace that first expression with an expression that evaluates to triple the value of `x`, plus five;<br>
-if `x` is 5, the expression should evaluate to 20;<br>
-if `x` is 10, the expression should evaluate to 35.<br>
-What happens if you set `x` to 100? Does it work like you'd expect?
+ ![Choose a Username](../assets/chapter2/step1.png)
 
-3. Next, replace that expression with one that evaluates to "Hello, x.";<br>
-if `x` is "Alice", the expression should evaluate to "Hello, Alice.";<br>
-if `x` is "Bob", the expression should evaluate to "Hello, Bob.".
+The username you enter here will be part of the github URL for every site you host there, so choose something simple and easy to remember. Most people use their name, a pen name, or their company’s name. To simplify things, try making your username one word and all lowercase.
 
-4. Finally, replace the prior expression with one that evaluates to "Goodbye, x.";<br>
-if `x` is "Charlene", the expression should evaluate to "Goodbye, Charlene.";<br>
-if `x` is "David", the expression should evaluate to "Goodbye, David".
+For this guide, we’re going to use the name “gasamplepage.” Please pick whatever name you like, for example “johnsmith123.” After selecting our username, we’ll add our email and make up a password. Then we’ll click “Sign up for GitHub.”
 
-Try testing out all of the different "test cases" mentioned above.
-If they all give you the answers that you expect, you're done!
+**Step 2**: Clicking that button brings us to the following page.
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+ ![Choose the Free Plan](../assets/chapter2/step2.png)
+
+All we need to do on this page is make sure that “Free” is chosen as our personal plan. It should be pre-selected; however, if it’s not, make sure to click on it. Then, press the “Finish Sign Up” button.
+
+**Step 3**: GitHub will send you an email asking you to verify your account. Take a moment to do this now. If you do not verify your email address, your page will not work. When you log in, you should see the following dashboard.
+
+![You're done!](../assets/chapter2/step3.png)
+
+
+Congratulations! You're officially a Github user!
 
 ---
-[Next : Expression Oddballs](08_lesson.md)
+
+Ready for another quiz? [Let's go.](06_quiz.md)
