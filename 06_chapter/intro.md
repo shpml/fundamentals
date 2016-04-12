@@ -19,7 +19,7 @@ You are on your way to becoming a developer, and developers like to interact wit
 
 Unlike the GUI, the command line is a *text-based interface*, where you communicate with your computer using text alone.
 
-Until the video display terminal was introduced in the mid-1960s, the command line was the only way to interact with your computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
+Until the video display was introduced in the mid-1960s, the command line was the only way to interact with your computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
 fast... In fact, once you become comfortable using the CLI early in class, you'll be amazed at how much more productive you become!
 
 We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and a lot more.
@@ -113,4 +113,9 @@ ready to accept your **command**. We'll learn a few commands later in this lesso
 like in every other setting where you've ever seen a cursor.
 
 - The **username** of the person logged in precedes the prompt, and as you can see
-above, this user is named *samspade*.
+above, this user is named *Sarah*.
+
+
+---
+
+[On to the next lesson.](02_lesson.md)

@@ -124,6 +124,10 @@ $ cd ..
 
 Many commands consist of three parts: the command, followed by flags (aka options), and finally arguments.
 
+```
+$ command -flag -otheroption
+```
+
 As the name implies, flags set options to tell the command how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. Usually one dash is for a short one letter abbreviation, while two dashes is for long name for the option.
 
 http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149
@@ -135,3 +139,15 @@ $ ls -a
 ```
 
 Will list *all* files in a directory, which includes hidden files (files whose name begins with a `.`).
+
+```
+$ cd Downloads
+```
+
+Calls the command `cd` to change directory. It is provided the option of where to navigate to.
+
+
+
+---
+
+[Give it a try!](07_exercise.md)

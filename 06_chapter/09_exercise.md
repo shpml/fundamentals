@@ -35,3 +35,9 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 9. Change the name of `North_America` to `Americas`
 
 > Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+
+
+
+---
+
+[Take the Quiz for Unit 6 now!](13_quiz.md)

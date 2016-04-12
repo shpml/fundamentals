@@ -12,7 +12,7 @@ Before we start, let's make sure that we are in our home folder like so:
 $ cd ~
 ```
 
-> **HINT** `~` (tilde) is a shortcut to refer to your home folder.
+> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer that contains your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.
 
 The above command, regardless of where we currently are, will take us to our
 home folder. Great! Now that we're here, let's create a file.
@@ -29,10 +29,10 @@ We made a text file called `joke.txt`! Let's open it up in our default text edit
 $ open joke.txt
 ```
 
-If you're following along using **Git Bash on Windows**, you'll want to use the following command to open the file:
+If you're following along using **Git Bash on Windows**, that probably didn't work! Instead, you'll want to use the following command to open the file. To do so, just name the file you want to open:
 
 ```
-$ write joke.txt
+$ joke.txt
 ```
 
 Your text editor should open up this file now. Go ahead and type a joke in there, save that file, quit your text editor application, and return to your command line.
@@ -84,6 +84,9 @@ folder.
 This is the first time we've used a command that needed two pieces of
 information from us, or two arguments. The first argument is "what to move", and
 the second argument is "where to move it to".
+
+>**Note** Notice how we specified we were moving our `joke.txt` into `funny_things/`. The `/` on the end of our folder's name specifies that this is a folder; not a file! Without it, you may unexpectedly rename your `joke.txt` to a new file called `funny_things`!
+
 
 Let's navigate to our `funny_things` folder and check its contents to
 make sure that this worked.

@@ -23,3 +23,9 @@ Using the command line alone,
 *Don't delete the World folder yet! We'll be working with it in another exercise in this unit.*
 
 > Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+
+
+
+---
+
+[Continue on the next lesson.](08_lesson.md)
