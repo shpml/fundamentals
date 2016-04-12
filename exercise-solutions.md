@@ -205,31 +205,55 @@ convertToOunces();
 ### 6.3.1
 
 ```javascript
-var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-var ounces = [];
+var contacts = [
+  {
+  'firstName' : 'John',
+  'lastName' : 'Doe',
+  'phone' : '(512) 355-0453',
+  'email' : 'johndoe@email.com'
+  },
+  {
+  'firstName' : 'Jane',
+  'lastName' : 'Doe',
+  'phone' : '(512) 355-0453',
+  'email' : 'janedoe@email.com'
+  },
+  {
+  'firstName' : 'Suzie',
+  'lastName' : 'Smith',
+  'phone' : '(512) 355-0453',
+  'email' : 'suziesmith@email.com'
+  }
+];
 
-var convertToOunces = function () {
-	for (var i = 0; i < cups.length; i++) {
-		ounces.push(cups[i] * 8);
-	}
-	console.log(ounces);
- };
-
-convertToOunces();
-
-var scores = [83, 40, 55, 72, 59, 88, 99];
-
- var passOrFail = function () {
-   for (var i = 0; i < scores.length; i++) {
- 		if (scores[i] >= 60) {
- 			scores[i] = 'pass';
- 		} else {
- 			scores[i] = 'fail'
- 		}
- 	}
- 	return scores;
- };
+var newbie = {
+  'firstName' : 'John',
+  'lastName' : 'Doe',
+  'phone' : '(512) 355-0453',
+  'email' : 'johndoe@email.com'
+};
 
 
- passOrFail();
+var listContacts = function() {
+  for (var i = 0; i < contacts.length; i++) {
+    console.log(contacts[i]['firstName'] + ' ' + contacts[i]['lastName']);
+  }
+};
+
+var search = function(name) {
+  for (var i = 0; i < contacts.length; i++) {
+    if (contacts[i]['firstName'] === name || contacts[i]['lastName'] === name) {
+      return contacts[i];
+    }
+  }
+};
+
+var addContact = function(newContact) {
+  contacts.push(newContact);
+  return contacts;
+};
+
+addContact(newbie);
+listContacts();
+search('Suzie');
  ```
