@@ -106,3 +106,4 @@
 	* [Cheat Sheet](11_chapter/11_cheatsheet.md)
 	* [Unit 11 Homework](11_chapter/12_assessment.md)
 * [Glossary](glossary.md)
+* [Exercise Solutions](exercise-solutions.md)

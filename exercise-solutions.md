@@ -15,14 +15,7 @@ The following solutions are for the Unit exercises.
 
 ### 2.2.1
 
-```html
-<h1>Hi, I'm awesome.</h1>
-<p><a href="http://twitter.com/GA">Follow me</a> on twitter.</p>
-<p>Send me an <a href="mailto:me@email.com">  email </a>.<p>
-```
-
-
-
+* https://jsbin.com/gubucac/edit?html,output
 
 ## Unit 2
 
@@ -67,12 +60,11 @@ Part 2:
 
 ## Unit 7
 
----
-
 ## Unit 8
 
 ### 8.1.1
 
+```bash
 get age
 
 if age >= 65
@@ -83,11 +75,12 @@ otherwise if age < 25
 
 otherwise
 	display message "Ticket price: $10.00"
+```
 
 ### 8.2.1
    1. Any expression that equals 30 is valid; e.g. `(1 + 9)*3`
-   2. "                        " 'Hello World' is valid; e.g. `"Hello" + " " + "World"`
-   3. "                        " `true` is valid; e.g. `(false && true) || true`
+   2. 'Hello World' is valid; e.g. `"Hello" + " " + "World"`
+   3. `true` is valid; e.g. `(false && true) || true`
 
 ### 8.3.1
     1. `x + 10`
@@ -192,89 +185,70 @@ var fizzBuzz = function(num){
 
 ```javascript
 var contacts = ["Matt Smith", "Sam Davis", "Ashley Jones"];
-
 var addContact = function (name) {
-    contacts.push(name);
-    return contacts;
- }
-
- var findContact = function (index) {
-     return contacts[index];
- }
-
- var updateLastContact = function (newName) {
-     contacts[contacts.length - 1] = newName;
-     return contacts;
- }
-
-
- findContact(3);
- addContact("Suzie");
- updateLastContact("Sue Miller");
- ```
-
+  contacts.push(name);
+  return contacts;
+}
+var findContact = function (index) {
+  return contacts[index];
+}
+var updateLastContact = function (newName) {
+  contacts[contacts.length - 1] = newName;
+  return contacts;
+}
+findContact(3);
+addContact("Suzie");
+updateLastContact("Sue Miller");
+```
 
 ### 11.2.1
 
 ```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var ounces = [];
-
 var convertToOunces = function () {
 	for (var i = 0; i < cups.length; i++) {
 		ounces.push(cups[i] * 8);
 	}
 	console.log(ounces);
  };
-
 convertToOunces();
-
- var scores = [83, 40, 55, 72, 59, 88, 99];
-
- var passOrFail = function () {
- 	for (var i = 0; i < scores.length; i++) {
- 		if (scores[i] >= 60) {
- 			scores[i] = 'pass';
- 		} else {
- 			scores[i] = 'fail'
- 		}
- 	}
- 	return scores;
- };
-
-
- passOrFail();
- ```
-
+var scores = [83, 40, 55, 72, 59, 88, 99];
+var passOrFail = function () {
+	for (var i = 0; i < scores.length; i++) {
+		if (scores[i] >= 60) {
+			scores[i] = 'pass';
+		} else {
+			scores[i] = 'fail'
+		}
+	}
+	return scores;
+};
+passOrFail();
+```
 
 ### 11.3.1
 
 ```javascript
 var cups = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var ounces = [];
-
 var convertToOunces = function () {
-	for (var i = 0; i < cups.length; i++) {
-		ounces.push(cups[i] * 8);
-	}
-	console.log(ounces);
- };
-
+  for (var i = 0; i < cups.length; i++) {
+  	ounces.push(cups[i] * 8);
+  }
+  console.log(ounces);
+};
 convertToOunces();
-
 var scores = [83, 40, 55, 72, 59, 88, 99];
-
- var passOrFail = function () {
-   for (var i = 0; i < scores.length; i++) {
- 		if (scores[i] >= 60) {
- 			scores[i] = 'pass';
- 		} else {
- 			scores[i] = 'fail'
- 		}
- 	}
- 	return scores;
- };
-
-
- passOrFail();
- ```
+var passOrFail = function () {
+ for (var i = 0; i < scores.length; i++) {
+		if (scores[i] >= 60) {
+			scores[i] = 'pass';
+		} else {
+			scores[i] = 'fail'
+		}
+	}
+	return scores;
+};
+passOrFail();
+```
