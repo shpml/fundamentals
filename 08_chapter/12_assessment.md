@@ -76,7 +76,7 @@ In order to backup your code and track your work, you'll want to commit the chan
 
 `git add -a`
 
-2) Create a version of your stagged code
+2) Create a version of your staged code
 
 `git commit -m 'created game logic'`
 

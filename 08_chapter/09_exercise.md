@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-[Let's open up another repl.it session](http://repl.it/9lT).
+[Let's open up another JS Bin session](http://jsbin.com/qacobi/edit?js,console).
 You should see the following code in the editor window:
 
 ```javascript
