@@ -4,12 +4,12 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the descriptions given below using repl.it's editor.
+This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the descriptions given below using JSBin's editor.
 
 ###Instructions
 
-1. Go ahead an open up a new session in [repl.it](http://repl.it)
-2. Write the code for the functions described below, using repl.it's editor window
+1. Go ahead an open up a new session in JSBin.
+2. Write the code for the functions described below, using JSBin's editor window
 3. Click 'play' to run the code
 4. Try *calling* each function from the console window. Use different parameters to make sure they work as expected.
 

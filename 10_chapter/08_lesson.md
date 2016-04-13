@@ -1,9 +1,10 @@
 **WDI Fundamentals Unit 10**
 
 ---
+
 #Accessing the DOM
 
-## A Closer Look at the DOM
+#### A Closer Look at the DOM
 
 We mentioned before that when a browser retrieves the HTML for a page it makes a model of that page in memory. This model is called the DOM.
 
@@ -344,3 +345,5 @@ This code would change the text content of the `<li>` that has the id `important
 ![](/assets/chapter5/thingstodo5.png)
 
 ---
+
+[On to the next lesson.](10_lesson.md)

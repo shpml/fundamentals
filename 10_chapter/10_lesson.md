@@ -1,6 +1,7 @@
 **WDI Fundamentals Unit 10**
 
 ---
+
 #Manipulating the DOM
 
 Now that you've gotten some practice accessing and updating the DOM, let's take a look at some more advanced methods that will allow us to update content and styles.
@@ -209,4 +210,5 @@ This is just the tip of the iceberg when it comes to DOM manipulation and event 
 
 ---
 
-Think you've got it? [Get some practice in the next exercise.](11_exercise.md)
+
+[Take the Quiz for Unit 10 now!](06_quiz.md)

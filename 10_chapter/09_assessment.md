@@ -2,7 +2,7 @@
 
 ---
 
-# Unit 9 Homework: Organizing Code and Creating Dynamic HTML
+# Organizing Code and Creating Dynamic HTML
 
 Your code is slowly but surely starting to get more robust. To better organize the code you've already written, as well as prepare for the code you will write, now, we will take the time to structure the program using functions. Further, using what you've learned about iterating with loops, you will also dynamically create your cards into HTML.
 
@@ -21,7 +21,7 @@ Besides `createElement`, the `document` object comes with other methods that hel
 
 To complete this assignment, you will need to utilize these methods.
 
->**Note:** In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp).
+>**Note:** In order to append your card elements, you're going to need something to append to, in this case a `div` with the class `board`. In order to find an element to you want to append to, use JavaScript's `document` object to run the method [`getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName).
 
 ## Exercise
 
@@ -54,17 +54,14 @@ var board = document.getElementsByClassName('board')[0];
 3) Create the required HTML for each card on each iteration and append this HTML to the board - add this logic inside the `for loop`. See below for hint.
 
 ```js
+// create a div element which will be used as a card
+var cardElement = document.createElement('div');
 
-  // create a div element which will be used as a card
-  var cardElement = document.createElement('div');
+// add a class to the card element which will help link styling
+cardElement.className = 'card';
 
-  // add a class to the card element which will help link styling
-  cardElement.className = 'card';
-
-  // append the card to the board
-  board.appendChild(cardElement);
-
-}
+// append the card to the board
+board.appendChild(cardElement);
 ```
 
 4) Create a `createBoard` function.
@@ -78,4 +75,4 @@ var board = document.getElementsByClassName('board')[0];
 Once you're happy with your work, save your code and make a commit to your project's repository.
 
 ---
-[Next up: Chapter 6](../05_chapter/intro.md)
+[Next up: Unit 11](../11_chapter/intro.md)

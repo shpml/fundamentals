@@ -8,10 +8,10 @@ Functions can also be used as procedures – miniature, self-contained programs 
 
 When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run.
 
-For instance, let's go back to the "French Toast a la GA" recipe from Unit 4. Every time a soaked slice of bread is ready to be cooked, we need to:
+For instance, let's consider a french toast recipe. Every time a soaked slice of bread is ready to be cooked, we need to:
 
 
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
+> Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
 >
 
 Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle this set of instructions for us, and simply call that function any time the bread slices need to be cooked.
@@ -258,7 +258,7 @@ var allThree = function(player, cellOne, cellTwo, cellThree) {
 }
 ```
 
-If you want, you can play around with this code in [this repl.it session](http://repl.it/aOU), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
+If you want, you can play around with this code in [this JSBin  session](https://jessicaGA.jsbin.com/cekezaz/edit?js,output), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
 
 Have fun!
 

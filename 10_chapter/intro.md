@@ -16,7 +16,7 @@ Now that we've had the opportunity to learn the basics of JavaScript including d
 
 But first... a little math.
 
-**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
+**Function** is a term that comes out of mathematics. You may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
 
 Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
 

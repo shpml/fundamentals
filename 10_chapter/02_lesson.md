@@ -101,12 +101,15 @@ var glorp = function(someNumber) {
 ```
 
 What will each of the following expressions evaluate to?
+
 * glorp(10)
 * 2 * (glorp(5) + 10)
 * glorp(1 + 2)
 * glorp(glorp(1))
 
-Test your answers in repl.it by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
+Test your answers in JSBin by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
+
+>**Note**  Javascript follows order of operations for mathematic expressions. When mathematic operations occur certain operators will be evaluated first. Code inside of a `()` will execute first; then multiplication and division; followed by addition and subtraction. [Further Reading](https://www.mathsisfun.com/operation-order-pemdas.html).
 
 ---
 
