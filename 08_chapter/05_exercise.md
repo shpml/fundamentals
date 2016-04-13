@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9km) to some sample code in a repl.it session - it should contain the following code:
+Follow [this link](https://jsbin.com/qiqufo/edit?js,console) to some sample code in a JS Bin session - it should contain the following code:
 
 ```javascript
 /* Your Expression Here */
@@ -24,4 +24,4 @@ You can use any expression you like, but it must contain at least one (and ideal
 > Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
 
 ---
-[On to the next lesson.](05_lesson.md)
+[On to the next lesson.](06_lesson.md)

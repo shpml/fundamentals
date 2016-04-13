@@ -134,4 +134,4 @@ While we've covered what seems like a lot of math in this section, don't worry â
 
 ---
 
-Think you've got it? [Let's do an exercise to cement what we've learned.](04_exercise.md)
+Think you've got it? [Let's do an exercise to cement what we've learned.](05_exercise.md)

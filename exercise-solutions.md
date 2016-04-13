@@ -25,6 +25,10 @@ The following solutions are for the Unit exercises.
 
 ## Unit 5
 
+### 5.7
+
+* http://jsbin.com/limuge/edit?html,css,output
+
 ## Unit 6
 
 ### 6.2.1

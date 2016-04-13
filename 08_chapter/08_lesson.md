@@ -104,6 +104,8 @@ Can you predict how the following expressions will be evaluated? Check your answ
 * <code>true && !0</code>
 * `null || 3`
 
+> **HINT** Think about your memory game for a moment... how could you use this knowledge to compare cards?
+
 ---
 
-[Here's another exercise for you](10_exercise.md) - give it a shot.
+[Here's another exercise for you](09_exercise.md) - give it a shot.

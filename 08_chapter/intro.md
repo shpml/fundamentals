@@ -15,9 +15,7 @@
 
 # JavaScript
 
-Now it's time for us to move on to the main event: programming.
-
-It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems such as:
+Now it's time for us to move on to the main event: programming. It is time to add some functionality to our memory game! It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems such as:
 
 - "How many students are here today?"
 - "How far away am I from the restaurant?"
@@ -29,13 +27,15 @@ In the rest of this chapter, we'll be exploring some of the more common tools an
 
 <br>
 
-## Repl.it
-To start playing around with JavaScript, we'll be using a website called **[Repl.it](http://repl.it/languages/JavaScript)**.
+## JS Bin
+To start playing around with JavaScript, we'll be using a website called **[JS Bin](http://jsbin.com/)**.
 
-![repl.it Screenshot](../assets/chapter3/replit.png)
+![repl.it Screenshot](../assets/chapter3/jsbin.png)
 
-As you can see in the screenshot above, repl.it features two main windows. On the right, with the black background, is the *console* - this tool (much like the Terminal on your computer) will accept a single instruction from the user and attempt to run it when the user hits "enter". On the left, with the white background, is the *editor*. The editor allows us to write several instructions in sequence; to execute these instructions, click the 'play' button near the top.
+As you can see in the screenshot above, JSBin features different window panes. On the right, with the light background, is the *preview* - this tool will display what your code builds in real time for you. It auto updated changes (unless you check off the ability to do so). On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and Javascript; to execute these instructions, click the 'run with JS' in the right window.
 
-To save your repl.it session, just click the 'save' button at the top - it'll generate a URL that you can bookmark and come back to any time you want.
+To save your JS Bin session, just 'login' at the top. When you select 'File' and then 'New' you will be provided a blank space to work in. The moment you begin writing code, JS Bin will generate a URL that you can bookmark and come back to any time you want.
+
+JS Bin has the ability to show a 'console'; this will display any Javascript code that you need to run. You will need this from time to time. You can hide or display any tabs (HTML, CSS, Javascript, or Console) by clicking on their tab to hide/show them as needed.
 
 Ready to begin? [Let's go](02_lesson.md).
