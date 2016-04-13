@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Apr 13 2016 10:02:30 GMT+0000 (UTC)">
+    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Apr 13 2016 15:07:46 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1969,7 +1969,7 @@
                     
                         <p><strong>WDI Fundamentals Unit 10</strong></p>
 <hr>
-<h1 id="unit-9-homework-organizing-code-and-creating-dynamic-html">Unit 9 Homework: Organizing Code and Creating Dynamic HTML</h1>
+<h1 id="organizing-code-and-creating-dynamic-html">Organizing Code and Creating Dynamic HTML</h1>
 <p>Your code is slowly but surely starting to get more robust. To better organize the code you&apos;ve already written, as well as prepare for the code you will write, now, we will take the time to structure the program using functions. Further, using what you&apos;ve learned about iterating with loops, you will also dynamically create your cards into HTML.</p>
 <p>JavaScript comes with several &quot;built-in&quot; functions that we can call on using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as <em>methods</em>.</p>
 <p>For example, let&apos;s look at <code>document.createElement(&apos;div&apos;)</code> which creates an HTML <code>div</code> element (a <code>div</code> will come to visually represent a card in the browser).</p>
@@ -1985,7 +1985,7 @@
 <p>Besides <code>createElement</code>, the <code>document</code> object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank"><code>className</code></a>, as well as one for adding innerHTML, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank"><code>innerHTML</code></a>. On top of those methods that allow you to construct an element, there&apos;s also the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank"><code>appendChild</code></a> that aids in attaching the element to an element on your web page.</p>
 <p>To complete this assignment, you will need to utilize these methods.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
-<p> In order to append your card elements, you&apos;re going to need something to append to, in this case a <code>div</code> with the class <code>board</code>. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run the method <a href="http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp" target="_blank"><code>getElementsByClassName</code></a>.</p>
+<p> In order to append your card elements, you&apos;re going to need something to append to, in this case a <code>div</code> with the class <code>board</code>. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName" target="_blank"><code>getElementsByClassName</code></a>.</p>
 </blockquote>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
@@ -2010,17 +2010,14 @@
 </code></pre>
 <p>2) Create a <code>for loop</code> that will iterate four times. No hints here!</p>
 <p>3) Create the required HTML for each card on each iteration and append this HTML to the board - add this logic inside the <code>for loop</code>. See below for hint.</p>
-<pre><code class="lang-js">
-  <span class="hljs-comment">// create a div element which will be used as a card</span>
-  <span class="hljs-keyword">var</span> cardElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+<pre><code class="lang-js"><span class="hljs-comment">// create a div element which will be used as a card</span>
+<span class="hljs-keyword">var</span> cardElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
 
-  <span class="hljs-comment">// add a class to the card element which will help link styling</span>
-  cardElement.className = <span class="hljs-string">&apos;card&apos;</span>;
+<span class="hljs-comment">// add a class to the card element which will help link styling</span>
+cardElement.className = <span class="hljs-string">&apos;card&apos;</span>;
 
-  <span class="hljs-comment">// append the card to the board</span>
-  board.appendChild(cardElement);
-
-}
+<span class="hljs-comment">// append the card to the board</span>
+board.appendChild(cardElement);
 </code></pre>
 <p>4) Create a <code>createBoard</code> function.</p>
 <p>5) Add your board creation logic to the function from steps 1, 2 &amp; 3.</p>
@@ -2028,7 +2025,7 @@
 <h4 id="deliverable">Deliverable</h4>
 <p>Once you&apos;re happy with your work, save your code and make a commit to your project&apos;s repository.</p>
 <hr>
-<p><a href="../05_chapter/intro.html">Next up: Chapter 6</a></p>
+<p><a href="../11_chapter/intro.html">Next up: Unit 11</a></p>
 
                     
                     </section>
