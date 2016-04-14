@@ -30,7 +30,7 @@ In the rest of this chapter, we'll be exploring some of the more common tools an
 ## JS Bin
 To start playing around with JavaScript, we'll be using a website called **[JS Bin](http://jsbin.com/)**.
 
-![repl.it Screenshot](../assets/chapter3/jsbin.png)
+![JSBin Screenshot](../assets/chapter3/jsbin.png)
 
 As you can see in the screenshot above, JSBin features different window panes. On the right, with the light background, is the *preview* - this tool will display what your code builds in real time for you. It auto updated changes (unless you check off the ability to do so). On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and Javascript; to execute these instructions, click the 'run with JS' in the right window.
 
