@@ -20,7 +20,7 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 
 1. Make sure you're in the `World` directory within your home directory
 
-2. Make a new directory titled "Antarctica" inside the `World` directory
+2. Make a new directory titled `Antarctica` inside the `World` directory
 
 3. To be sure you created the directory in the right place, list the contents of the `World` directory
 

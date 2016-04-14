@@ -9,8 +9,8 @@
 * *Synonyms*: command-line interface (CLI), console
 
 ####Terminal
-* An OSX application that provides text-based access to the operating system;
-* Any device or application used for data entry and display in a computer system
+* An OSX application that provides text-based access to the operating system.
+* Any device or application used for data entry and display in a computer system.
 * *Synonyms*: client, computer terminal, terminal emulator
 
 ####File System
@@ -32,22 +32,22 @@
 * *Synonyms*: utility
 
 ####Option
-* Follows the "command" in a command line, to modify the behavior of the command in some way.
+* Follows the "command" in a command line; used to modify the behavior of the command in some way.
 * *Synonyms*: flag
 
 ####Argument
-* Follows the "command" and "options" (if any) in a command line, and is used to explain what we want the command to act on.
+* Follows the "command" and "options" (if any) in a command line and is used to explain what we want the command to act on.
 * The number of arguments used generally depends on the command: some don't need arguments, some require exactly one argument, some require lots of arguments, and some are flexible in the number they can take.
 
 Command | Description
 ---|---
-`pwd -options` | Prints the working directory; returns the absolute path name of the current directory.
-`ls [-options] [path/to/directory]` | Lists directory contents.
-`cd [-options] [path/to/directory]` | Changes the current working directory to the specificed directory.
+`pwd -options` | Prints the working directory; returns the absolute path name of the current directory
+`ls [-options] [path/to/directory]` | Lists directory contents
+`cd [-options] [path/to/directory]` | Changes the current working directory to the specified directory
 `mkdir [-options] [path/to/directory]` | Makes a new directory
 `rm -r [path/to/file] [path/to/file] ... ` | Removes directories or files permanently
 `mv [-options] [path/to/file] [path/to/directory]` | Moves directories or files to a new local
-`mv [-options] [path/to/file] [NEW_FILE_NAME]` | Renames a file or directory.
+`mv [-options] [path/to/file] [NEW_FILE_NAME]` | Renames a file or directory
 
 
 On Mac, your Terminal comes with a manual, and to access more (*a lot more*) information about any command, type <code>man</code> followed by the command name and press <kbd>Enter</kbd>:
