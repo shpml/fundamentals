@@ -45,12 +45,21 @@ While most quizzes and assignments won't be formally graded, your WDI instructor
 
 If you have any concerns about your progress, feel free to reach out to your producer or instructor.
 
+
 ### Getting Help
+
+#### Office Hours
+
+In addition, office hours will be an opportunity to get help!
+
+#### Slack
+
+You can also tune into the WDIr community on [Slack](00_chapter/intro.md) to ask for help or see what other classmates are talking about!
+
+#### Additional Resources
 
 Shhh. Ok, we're going to let you in on a little secret. Ready?
 
 The exercise answers are at the back of the book :) That's right. If you're stuck, we've supplied exercise solutions to help you work backwards and understand what needs to be done.
-
-You can also tune into the WDI community on [Slack](00_chapter/intro.md) to ask for help or see what other classmates are talking about! We'll set up our Slack accounts in the next lesson.
 
 [Ready, Set, Continue!](../01_chapter/02_lesson.md)

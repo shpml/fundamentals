@@ -2,7 +2,6 @@
 
 The following solutions are for the Unit exercises.
 
-## Unit 1
 
 ## Unit 2
 
@@ -79,14 +78,450 @@ Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
 
 ```
 
+#### 3.2.1
+
+```
+1 .
+<img src="">
+
+2 .
+
+<img src="http://i.imgur.com/z9gGd0t.jpg">
+
+3 .
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design">
+
+4 .
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design" title="grumpy cat">
+```
+
+
 
 ## Unit 4
 
+4.2.1
+
+```
+1 . body {
+	background: #333;
+}
+
+div {
+	background: #c0dec5;
+}
+
+2 .
+
+div {
+	background: #c0dec5;
+	margin: 4em;
+}
+
+3 .
+
+div {
+	background: #c0dec5;
+	margin: 4em;
+	padding: 2em 3em 0 3em;
+}
+
+4 .
+
+span {
+	font-variant: small-caps;
+	font-family: tahoma, sans-serif;
+	letter-spacing: .25em;
+}
+
+5 .
+
+span {
+	font-variant: small-caps;
+	font-family: tahoma, sans-serif;
+	letter-spacing: .25em;
+	padding: 0 .2em;
+	background: rgb(100,150,150);
+}
+
+6 .
+
+span {
+	font-variant: small-caps;
+	font-family: tahoma, sans-serif;
+	letter-spacing: .25em;
+	padding: 0 .2em;
+	background: rgba(100,150,150,.5);
+}
+
+7 .
+
+.right {
+	text-align: right;
+}
+```
+
+### 4.4.1
+
+```
+1 .
+
+<head>
+	<title>ELK Web Design</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>ELK Web Design</h1>
+		<img src="http://i.imgur.com/pdsjjxD.jpg">
+	</header>
+</body>
+
+2 .
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>ELK Web Design</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>ELK Web Design</h1>
+		<img src="http://i.imgur.com/pdsjjxD.jpg">
+	</header>
+
+	<div id="about">
+		<h2>Who we are</h2>
+		<p>ELK provides clean and innovative sites for small businesses, artists, and professionals.</p>
+	</div>
+
+	<div id="services">
+		<h2>How we do it</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Responsive</li>
+			<li>Visual Design</li>
+		</ul>
+	</div>
+
+	<footer>&copy; 2015 ELK</footer>
+</body>
+
+</html>
+
+
+3 .
+
+body {
+	font-size: 18px;
+}
+
+h1,h2 {
+	text-transform: uppercase;
+  border-bottom: 4px solid black;
+	display: inline-block;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	padding: .8em 0;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+}
+```
+
+
 ## Unit 5
 
-### 5.7
+### 5.3.1
 
-* http://jsbin.com/limuge/edit?html,css,output
+```
+
+#### Part 1
+
+1 .
+<head>
+	<title>ELK Web Design</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+</head>
+
+
+2 .
+
+body {
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+3 .
+
+h1,h2 {
+	text-transform: uppercase;
+  border-bottom: 4px solid black;
+	display: inline-block;
+	font-weight: 800;
+}
+
+#### Part 2
+
+1 .
+
+<body>
+	<header>
+		<h1>ELK Web Design</h1>
+		<nav>
+		</nav>
+		<img src="http://i.imgur.com/pdsjjxD.jpg">
+	</header>
+
+
+
+2 .
+
+<body>
+	<header>
+		<h1>ELK Web Design</h1>
+		<nav>
+			work
+			about
+			contact
+		</nav>
+		<img src="http://i.imgur.com/pdsjjxD.jpg">
+	</header>
+
+3 .
+
+<body>
+	<header>
+		<h1>ELK Web Design</h1>
+		<nav>
+			<a href="#">work</a>
+			<a href="#">about</a>
+			<a href="#">contact</a>
+		</nav>
+		<img src="http://i.imgur.com/pdsjjxD.jpg">
+	</header>
+
+4 .
+
+nav {
+}
+
+nav a {
+}
+
+5 .
+nav a {
+	text-decoration: none;
+  color: black;
+}
+
+7 .
+
+nav a {
+	text-decoration: none;
+  color: black;
+	margin: 1.8em;
+	display: inline-block;
+}
+
+8 .
+
+nav {
+	font-size: 1.8em;
+ 	float: right;
+}
+```
+
+
+### 5.4.1
+
+```
+1 .
+
+div {
+	font-size: 1.2em;
+	width: 50%;
+}
+
+
+2 .
+
+div {
+	font-size: 1.2em;
+	width: 50%;
+	display: inline-block;
+}
+
+3 .
+
+#about {
+}
+
+#services {
+}
+
+
+4 .
+#about {
+	float: left;
+}
+
+
+5 .
+#services {
+	float: right;
+}
+
+6 .
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  clear: both;
+}
+
+7 .
+
+div {
+	font-size: 1.2em;
+	width: 46%;
+	padding: 2%;
+	display: inline-block;
+}
+
+#about {
+	float: left;
+}
+
+8 .
+li {
+  float: left;
+  width: 50%;
+  height: 6em;
+}
+
+9 .
+li {
+  float: left;
+  width: 50%;
+  height: 6em;
+  outline: 3px solid #222222;
+}
+
+10 .
+
+li {
+  float: left;
+  width: 50%;
+  height: 6em;
+  outline: 3px solid #222222;
+  text-align: center;
+	line-height: 6em;
+}
+
+nav {
+
+11 .
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 480px;
+}
+
+12 .
+
+<header>
+		<h1>ELK Web Design</h1>
+		<nav>
+			<a href="#">work</a>
+			<a href="#">about</a>
+			<a href="#">contact</a>
+		</nav>
+		<div id="hero">
+			<img src="http://i.imgur.com/pdsjjxD.jpg">
+		</div>
+	</header>
+
+13 .
+
+<section>
+	<div id="about">
+		<h2>Who we are</h2>
+		<p>ELK provides clean and innovative sites for small businesses, artists, and professionals.</p>
+	</div>
+
+	<div id="services">
+		<h2>How we do it</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Responsive</li>
+		<li>Visual Design</li>
+	</ul>
+</div>
+</section>
+
+<footer>&copy; 2015 ELK</footer>
+</body>
+
+</html>
+
+14 .
+
+section {
+  background: #222222;
+  color: white;
+  overflow: auto;
+}
+
+15 .
+
+h2 {
+	font-size: 1.5em;
+	padding: .8em 0;
+	color: #fffebb;
+	border-bottom-color: #fffebb;
+}
+
+16 .
+
+li {
+  float: left;
+  width: 50%;
+  height: 6em;
+  outline: 3px solid #222222;
+  text-align: center;
+	line-height: 6em;
+	color: black;
+	background: white;
+}
+```
 
 ## Unit 6
 

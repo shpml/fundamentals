@@ -50,21 +50,21 @@ Now, let's put in some content and build out the navigation bar.
 
 2 . Create three linked menu items inside the nav: "work," "about," and "contact."
 
-4 . Wrap placeholder links around them like this:
+3 . Wrap placeholder links around them like this:
 
 ```HTML
 <a href="#">work</a>
 ```
 
-5 . Now Let's put some rules in place to format our navigation. In your CSS, put two new, empty selectors: nav and nav a.
+4 . Now Let's put some rules in place to format our navigation. In your CSS, put two new, empty selectors: nav and nav a.
 
-6 . Rather than resetting all our CSS, let's manually reset the default link state. Set nav a's text-decoration value to none, and set its color to black.
+5 . Rather than resetting all our CSS, let's manually reset the default link state. Set nav a's text-decoration value to none, and set its color to black.
 
 *Add: `text-decoration: none`; to the `nav a` css property to remove the default blue and underlining from links.*
 
-7 . Now, we'll start moving things around on the screen. Give the nav a links 1.8em of margin. And set their display to inline-block.
+6 . Now, we'll start moving things around on the screen. Give the nav a links 1.8em of margin. And set their display to inline-block.
 
-8 . Looking good! Let's increase the nav's font-size, then reposition the whole thing with a float! Set the nav style's font-size to 1.8em and then, float it right.
+7 . Looking good! Let's increase the nav's font-size, then reposition the whole thing with a float! Set the nav style's font-size to 1.8em and then, float it right.
 
 What was that? Your very first float! Here's what your design should start looking like:
 

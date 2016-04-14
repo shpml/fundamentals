@@ -53,17 +53,13 @@ Fabulous!
 
 *Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns. Let's prevent that from happening. You need to counteract the div's width, margin, and display values.*
 
-13 . In your HTML, wrap a section around both divs: open it after the </header> closing tag, and close it before the opening <footer> tag.
+13 . In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
 
-14 . Create a CSS style for the section. Set its background to #222222, and make its color white.
+14 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
 
-15 . Make the section's overflow:auto.
+15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom-color to #fffebb as well.
 
-16 . Set the h2 color to pale yellow: #fffebb.
-
-17 . Set h2's border-bottom-color to #fffebb as well.
-
-18 . Set the li color to black, and its background to white.
+16 . Set the li color to black, and its background to white.
 
 Bravo! Well done. Don't forget to save your code in JSBin so you can come back to it and ask your instructors any questions you might have!
 
