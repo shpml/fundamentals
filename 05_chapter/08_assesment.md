@@ -81,4 +81,6 @@ Congratulations! Your board game is now structured and styled utilizing all your
 
 ---
 
-[Before we add on to our game, we need to take a look in our developer toolbox!](../06_chapter/intro.md)
+[Take a quick feedback survey to help us improve Fundamentals](feedback.md).
+
+Then we'll take a look in our developer toolbox!
