@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="Thu Apr 14 2016 17:04:17 GMT+0000 (UTC)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Thu Apr 14 2016 17:06:05 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1970,43 +1970,43 @@
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
 <hr>
 <h2 id="creating-files-and-folders">Creating files and folders</h2>
-<p>We now know how to find our way around this mysterious world called the command
-line. Let&apos;s perform some lasting actions, like creating some files and folders.
-Before we start, let&apos;s make sure that we are in our home folder like so:</p>
+<p>We now know how to find our way around this mysterious world called the command line. Let&apos;s perform some lasting actions, like creating some files and folders. Before we start, let&apos;s make sure that we are in our home folder like so:</p>
 <pre><code>$ cd ~
 </code></pre><blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
 <p> <code>~</code> (tilde) is a shortcut to refer to your home folder. This is the folder on your computer that contains your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.</p>
 </blockquote>
-<p>The above command, regardless of where we currently are, will take us to our
-home folder. Great! Now that we&apos;re here, let&apos;s create a file.</p>
+<p>The command above, regardless of where we currently are, will take us to our
+home folder.</p>
+<p>Great! Now that we&apos;re in our home folder, let&apos;s create a file.</p>
 <pre><code>$ touch joke.txt
-</code></pre><p>The <code>touch</code> command creates files for us. If we try to <code>touch</code> a file that already exists, it will not be overwritten.</p>
-<p>We made a text file called <code>joke.txt</code>! Let&apos;s open it up in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!</p>
+</code></pre><p>The <code>touch</code> command creates files for us - in this case, we made a file called <code>joke.txt</code>. If we try to <code>touch</code> a file that already exists, the file will not be overwritten.</p>
+<p>Let&apos;s open <code>joke.txt</code> in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!</p>
 <pre><code>$ open joke.txt
-</code></pre><p>If you&apos;re following along using <strong>Git Bash on Windows</strong>, that probably didn&apos;t work! Instead, you&apos;ll want to use the following command to open the file. To do so, just name the file you want to open:</p>
+</code></pre><p>If you&apos;re following along using <strong>Git Bash on Windows</strong>, that probably didn&apos;t work! Instead, you&apos;ll want to use the following command to open the file. To do so, just type name the file you want to open:</p>
 <pre><code>$ joke.txt
-</code></pre><p>Your text editor should open up this file now. Go ahead and type a joke in there, save that file, quit your text editor application, and return to your command line.</p>
+</code></pre><p>Your text editor should open up this file now. Go ahead and type this hilarious joke in there:</p>
+<pre><code>A man walks into a bar. The other one ducks.
+</code></pre><p>Now that you have a joke, save that file, quit your text editor application, and return to your command line.</p>
 <p>Let&apos;s see what&apos;s inside our <code>joke.txt</code> file now.</p>
 <pre><code>$ cat joke.txt
 </code></pre><p>There&apos;s our joke!</p>
 <pre><code>A man walks into a bar. The other one ducks.
 </code></pre><p>We should probably make a folder called <code>funny_things</code> to put this joke in.</p>
 <pre><code>$ mkdir funny_things
-</code></pre><p>The <code>mkdir</code> command is used to create the specified folder. If the specified folder already exists, it will not be overwritten.</p>
+</code></pre><p>The <code>mkdir</code> command is used to create a specified folder. If the specified folder already exists, it will not be overwritten.</p>
 <h2 id="moving-and-removing-things">Moving and Removing Things</h2>
-<p>Before we start the next section, let&apos;s navigate to our home folder.</p>
+<p>Before we move on, let&apos;s navigate to our home folder.</p>
 <pre><code>$ cd ~
 </code></pre><p>We made a folder for our joke called <code>funny_things</code> (you can check that it is
 there by running the <code>ls</code> command). How do we move our <code>joke.txt</code> file into this
 folder? If we were using Finder, we might use our mouse to drag and drop
 <code>joke.txt</code> into <code>funny_things</code>. Can we achieve the same action with our command
-line? You guessed it, yes we can.</p>
+line? Of course!</p>
 <pre><code>$ mv joke.txt funny_things/
 </code></pre><p>Voila! Our hilarious joke has been moved, rightfully, into the <code>funny_things</code>
 folder.</p>
 <blockquote>
-<p>The <code>mv</code> command moves the specified files or folders to the specified
-destination.</p>
+<p>The <code>mv</code> command moves the specified files or folders to the specified destination.</p>
 </blockquote>
 <p>This is the first time we&apos;ve used a command that needed two pieces of
 information from us, or two arguments. The first argument is &quot;what to move&quot;, and
@@ -2014,17 +2014,15 @@ the second argument is &quot;where to move it to&quot;.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> Notice how we specified we were moving our <code>joke.txt</code> into <code>funny_things/</code>. The <code>/</code> on the end of our folder&apos;s name specifies that this is a folder; not a file! Without it, you may unexpectedly rename your <code>joke.txt</code> to a new file called <code>funny_things</code>!</p>
 </blockquote>
-<p>Let&apos;s navigate to our <code>funny_things</code> folder and check its contents to
-make sure that this worked.</p>
+<p>Let&apos;s navigate to our <code>funny_things</code> folder and check the contents to make sure that this worked.</p>
 <pre><code>$ cd funny_things
 $ ls
 </code></pre><p>Copying files is similar to moving them. Let&apos;s make a copy of our joke.</p>
 <pre><code>$ cp joke.txt joke2.txt
 </code></pre><blockquote>
-<p>The <code>cp</code> command is used to copy the specified files or folders to the
-specified location.</p>
+<p>The <code>cp</code> command is used to copy the specified files or folders to the specified location.</p>
 </blockquote>
-<p>After running this command, we have created a copy of <code>joke.txt</code> called <code>joke2.txt</code> in the same folder. Notice how in this case, the second argument was a filename, and not a folder
+<p>After running this command, we have created a copy of <code>joke.txt</code> called <code>joke2.txt</code> in the same folder. In this case, notice how, the second argument was a filename and not a folder
 name. It turns out that the <code>mv</code> and <code>cp</code> commands are quite smart. When moving or copying
 a file, if the second argument is a <strong>folder</strong>, the specified file is moved or
 copied to that folder. If the second argument is a <strong>filename</strong>, the file in the first argument
@@ -2050,7 +2048,7 @@ folder and put our joke inside.</p>
 $ mv joke.txt jokes/joke.txt
 </code></pre><p>If you are trying to copy or remove folders, and not files, we need to add &quot;an
 option&quot; to our command. Options are extra settings that we want to apply to our
-commands. Options to commands are always of the format <code>--word</code> or <code>-letter</code>.
+commands. Options given to commands are always of the format <code>--word</code> or <code>-letter</code>.
 For example, let&apos;s try to copy our jokes folder.</p>
 <pre><code>$ cp -r jokes copy_of_jokes
 </code></pre><blockquote>
