@@ -20,7 +20,7 @@ Your terminal should respond rudely:
 -bash: hello?: command not found
 ```
 
-This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry. In
+This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry! In
 due time, as we grow comfortable in this new environment, even these cryptic messages will be just as beautiful as any warning box you'll ever see.
 
 Try typing this into your terminal:
@@ -35,18 +35,19 @@ Again, a rude response:
 -bash: Where: command not found
 ```
 
-Great. We've established that our command line doesn't understand plain English. We will have to use special words to make up our commands. Let's try
-this one:
+Great. We've established that our command line doesn't understand plain English. We will have to use special words to make up our commands. Let's try this one:
 
 ```
 $ pwd
 ```
 
-Whoa! It looks like our computer understood that one! It replied with a message:
+Whoa! It looks like our computer understood that one! It replied with a message like:
 
 ```
 /Users/corneliusfinch
 ```
+
+(Note: On your machine, you should have seen `corneliusfinch` replaced with your username!)
 
 If you're following along in **Git Bash on Windows**, this should look similar but slightly different:
 ```
@@ -57,12 +58,13 @@ If you're following along in **Git Bash on Windows**, this should look similar b
 What did we just do?
 
 The command `pwd` stands for "Print Working Directory".
+
 This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.
 
-Just like the Finder on a mac, your command line interface places you in a particular folder
-of your computer. `pwd` tells you where you currently are. Usually, when you open the Terminal application, you start off in your "home folder", which is the one that shares the name of your username on your computer.
+Just like the Finder on a mac, your command line interface (CLI) places you in a particular folder
+of your computer. `pwd` tells you where you currently are in your filesystem. Usually, when you open the Terminal application, you start off in your "home folder", which is the one that shares the name of your username on your computer.
 
-If we were using Finder, we'd be able to see what things (files and folders) are present in this folder. In a CLI however, if we want to see what files and folders exist at the current location, we need to ask for it with another command.
+If we were using Finder, we'd be able to see what files and folders are present in this folder. In a CLI however, if we want to see what files and folders exist in the current location, we need to ask for that with another command.
 
 Let's find out what files are in the folder that we're in.
 
@@ -70,13 +72,15 @@ Let's find out what files are in the folder that we're in.
 $ ls
 ```
 
-Lo and behold, the contents of the folder you are in.
+Lo and behold, the contents of the folder you are in:
 
 ```
 Applications       Desktop          Documents
 Downloads          Library          Movies
 Music              Pictures         Public
 ```
+
+(Note: Again, on your machine, since you may have different files and folders, you may see a additional files and folders when you enter `ls`!)
 
 If you're following along in **Git Bash on Windows**, it's alright if the files and folders that are listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
 
@@ -109,7 +113,9 @@ office_stuff
 world_domination_checklist.txt
 ```
 
-It looks like the `Documents` folder contains a JPG file of a funny cat, a folder
+(Note: Again, your machine means you will probably see different files and folders!)
+
+In our example, it looks like the `Documents` folder contains a JPG file of a funny cat, a folder
 full of "office stuff", and a text file that supposedly contains a checklist for
 world domination. Your `Documents` folder probably contains something different.
 
@@ -119,10 +125,9 @@ Now that we've investigated our `Documents` folder, let's go back up to our home
 $ cd ..
 ```
 
-> `..` (two periods, or "dot-dot") is how we say to our command line "parent
-> directory".
+> `..` (two periods, or "dot-dot") is how we say to our command line "parent directory".
 
-Many commands consist of three parts: the command, followed by flags (aka options), and finally arguments.
+Many commands consist of three parts: the command, followed by flags (aka options), and finally, arguments.
 
 ```
 $ command -flag -otheroption
