@@ -24,13 +24,13 @@ Built with WDI at GA.
 
 <a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
-2 .  Go ahead and open a *level one heading tag* at the very beginning where it says "My first website!"
+2 . Go ahead and open a *level one heading tag* at the very beginning where it says "My first website!"
 
-3 . You'll notice that everything was set to h1 when you opened the level one heading tag! Ah ha! You still need to close the tag to tell the browser where to stop rendering as a heading. Go ahead and close the heading tag.
+3 . Did you notice that everything was set to h1 when you opened the level one heading tag? Ah ha! You still need to close the tag, which tells the browser when to stop rendering as a heading. Go ahead and close the heading tag now.
 
-4 .Open and close *second-level heading* on the second line "by a talented student."
+4 . Open and close *second-level heading* on the second line "by a talented student."
 
-5 . And lastly, wrap the sentence "Built with WDI at GA." in a paragraph tag.
+5 . Last, wrap the sentence "Built with WDI at GA." in a paragraph tag.
 
 
 ---
@@ -43,7 +43,7 @@ Make sure you have:
 - Opened and closed p tags around the site's body content.
 
 
-Sweet! You just built a website with HTML. It's pretty basic, but you are on your way!
+Sweet! You just built a website with HTML. Ok sure, it's pretty basic, but you're just getting started!!
 
 ----
 [On to the next lesson!](04_lesson.md)
