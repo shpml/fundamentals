@@ -11,7 +11,7 @@
 * Collections of files, accessible through the world wide web.
 
 #### Clients
-* Personal devices such as computers, phones, or tablets, used to access the web.
+* Personal devices - such as computers, phones, or tablets - used to access the web.
 
 #### Servers
 * Used to host massive amounts of the files that make up websites and “serve” files to end users.
@@ -34,7 +34,7 @@
   * Anchor Elements: are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an href attribute.
 
     ```html
-    <a href="www.generalassemb.ly">This would make this whole sentence a link to General Assembly's home page.</a>
+    <a href="www.generalassemb.ly"> This would make this whole sentence a link to General Assembly's home page.</a>
     ```
 
 #### Tags
@@ -47,7 +47,7 @@
 * `<p>` tags are one of the most basic tags in HTML. They indicate blocks of text.
 
 #### Anchor tags
-*  <a> tags are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an attribute.
+*  `<a>` tags are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an attribute.
 
 #### HTML Attribute
 * Adds information to an HTML element. An HTML tag can have one or many attributes. Attributes are always included in the opening tag. They are preceded by a space, include the name of the attribute, an equal sign, and a value in quotes.
