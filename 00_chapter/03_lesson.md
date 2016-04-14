@@ -43,4 +43,4 @@ While your quizzes and assignments won't be formally graded, your WDI instructor
 
 ### Getting Help
 
-Shhh. The exercise answers are at the back of the book :) If you're stuck, we've supplied exercise solutions. Also be sure to tune into the WDI community on [Slack](00_chapter/intro.md) to ask for help or see what others are talking about! We'll set up our Slack accounts in the next lesson.
+Shhh. The exercise answers are at the back of the book :) If you're stuck, we've supplied exercise solutions. Also be sure to tune into the WDI Remote community on [Slack](00_chapter/intro.md) to ask for help or see what others are talking about! We'll set up our Slack accounts in the next lesson.
