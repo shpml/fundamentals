@@ -2,16 +2,18 @@
 
 ---
 
-# Introduction to HTML 
+# Introduction to HTML
 
-In this unit we've already introduced some of the core fundamentals of web development including how the internet works and how a website is structured and styled. With this newfound knowledge we can go ahead create foundation of our memory card game app. The goal of this exercise is to build a the structure of our website that hosts the memory card game.
+In this unit we've already introduced some of the core fundamentals of web development, including how the internet works as well as how websites are structured and styled.
+
+With our newfound knowledge, we can go ahead and create the foundation of our memory card game app. The goal of this exercise is to build the primary structure of the website that will host our memory card game.
 
 ## Exercise
 
 #### Requirements
 
-* Personalize your website by displaying the name of the game in its corresponding browser tab and the name of your game as a header.
-* Also, what good is a game if you don't know how to play? Under your header, include a subheader, "Instructions," and a section explaining how a memory card game is played.
+* Personalize your website by displaying the name of the game in a corresponding browser tab and include the name of your game as a header.
+* What good is a game if you don't know how to play? Under your header, include a subheader called "Instructions," and add a section explaining how the memory card game is played.
 
 ##### Below are the steps to complete the assignment.
 
@@ -23,7 +25,7 @@ In this unit we've already introduced some of the core fundamentals of web devel
 
 2) Add a `title` element so the name of the game shows in the browser tab.
 
-3) Create a level one heading tags and add in the name of the game within those tags. In this case, the name should be "Memory Game."
+3) Create level one heading tags and add in the name of the game within those tags. In this case, the you can just title it: "Memory Game."
 
 4) Add in a level two heading tag that says "Instructions."
 
@@ -33,15 +35,15 @@ In this unit we've already introduced some of the core fundamentals of web devel
 
 #### Bonus
 
-* Add a subheading describing the game
+* Add a subheading describing your game. What is fun about it? Why is it awesome?
 
-* Add some personal social media links so users can learn about the developer behind the game.
+* Include a few personal social media links, so your users can learn about the developer behind the game - you!
 
-* Add some flare to the site by adding at least two colors! Add some paint to the canvas! For now, we'll use the CSS property `color` to give some spice to the headers. Add the color *teal* to your h1 tag.
+* Throw some paint on your canvas! Try adding some flare to your site by using the CSS property `color` to spice up your headers. First, add the color *teal* to your h1 tag.
 
-* Add the color *gold* to your h2 tags.
+* Second, add the color *gold* to your h2 tags.
 
->**NOTE** To add styling within your HTML file add your CSS between `<style></style>` tags.
+>**NOTE** To add styling within your HTML file, write your CSS between the `<style></style>` tags.
 
 ---
 

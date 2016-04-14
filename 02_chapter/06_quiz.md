@@ -8,4 +8,4 @@
 
 ---
 
-Now, [let's review what's been covered in this unit.](07_cheatsheet.md)
+Now, [let's review what we've covered so far.](07_cheatsheet.md)

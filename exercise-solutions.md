@@ -4,22 +4,81 @@ The following solutions are for the Unit exercises.
 
 ## Unit 1
 
+## Unit 2
+
 ### 2.1.1
 
 ```html
 <h1>My first website!</h1>
 <h2>by a talented student</h2>
-
 <p>Built with Circuits at GA.</p>
 ```
 
 ### 2.2.1
 
-* https://jsbin.com/gubucac/edit?html,output
-
-## Unit 2
+```html
+<h1>Hi, I'm awesome.</h1>
+<a href="http://twitter.com/GA">Follow me</a> on twitter.
+<p> Send me an <a href="mailto:me@email.com?subject=hello, awesome!">email</a>.
+```
 
 ## Unit 3
+
+#### 3.2.1
+
+```html
+1.  
+#name {
+	background: red;
+}
+
+2 .
+#hex {
+	background: #ff0000;
+}
+
+3 .
+
+#rgb {
+	background: rgba(255,0,0,1);
+}
+
+4 .
+
+#name {
+	background: black;
+}
+
+#hex {
+	background: #000000;
+}
+
+#rgb {
+	background: rgba(0,0,0,1);
+}
+
+Bonus
+
+#rgb {
+	background: rgba(0,0,0,.5);
+}
+
+#rgb {
+	background: rgba(0,0,0,.8);
+}
+
+#rgb {
+	background: rgba(0,0,0,.2);
+}
+
+Change this to:
+
+We'll now work with the alpha value to the RGB model. When the #rgb style is: background: rgba(0,0,0,1), the default opacity is 100%, so this won't change anything on screen. But now you have a means to set the opacity.
+
+Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
+
+```
+
 
 ## Unit 4
 

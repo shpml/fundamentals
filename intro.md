@@ -21,17 +21,17 @@ You're probably completing the pre-course work at home or in a coffee shop, and 
 
 To sign on to Slack, first check your email for an invitation from your producer.
 
-Be sure to add a photo and "WDI Student - CITY" to your profile.
+Be sure to add a photo and "WDI Student - REMOTE" to your profile.
 
 Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
-page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
+page asks for your team domain, and join the [#wdiremotefundamentals](https://ga-students.slack.com/messages/#wdiremotefundamentals/) channel to meet your global classmates!
 
 ![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
 
+**Note**: WDI Remote students, make sure you sign up for #wdiremotefundamentals channel and NOT #wdi-fundamentals.
 
 ## Feedback
 
-We need your help to improve this material!  Please don't hesitate to reach out
-by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly).
+We need your help to improve this material! Please don't hesitate to reach out if you have any questions or concerns by emailing Meghan Roach [meghan@generalassemb.ly](meghan@generalassemb.ly).
 
 [Ok, let's get started!](00_chapter/02_lesson.md)
