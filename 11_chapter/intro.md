@@ -19,7 +19,7 @@ var avgOfThree = function(x, y, z) {
 }
 ```
 
-However, this is a *very* specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify [the code in repl.it](http://repl.it/bJM) like so:
+However, this is a *very* specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify [the code in JS Bin](https://jsbin.com/wajevud/edit?js,console) like so:
 
 ```javascript
 var avgOfTen = function(a, b, c, d, e, f, g, h, i, j) {

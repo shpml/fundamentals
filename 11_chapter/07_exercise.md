@@ -8,8 +8,8 @@ Now things are starting to heat up! We'll be taking a short break from our conta
 
 Instructions
 
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
+1. Open a new session in [JS Bin](https://jsbin.com/).
+2. Write the code to perform the actions listed below, using JS Bin's editor window.
 3. Click 'play' to run the code.
 4. Call each function from the console window. Try using different parameters to make sure they're working properly.
 

@@ -71,7 +71,7 @@ Despite being one of the most basic ways to iterate through an array, in JavaScr
 
 ### Test Yourself
 
-Create a new repl.it session with the following JavaScript code:
+Create a new JS Bin session with the following JavaScript code:
 
 ```javascript
 var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];

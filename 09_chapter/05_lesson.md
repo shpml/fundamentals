@@ -125,7 +125,7 @@ for (var i = 0; i < x; i += 1) {
 * What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
 * What if (all else the same) we changed the condition from <code>i < x</code> to <code>i <= x</code>?
 * What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
-Check your answers in repl.it.
+Check your answers in JS Bin.
 
 ---
 

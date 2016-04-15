@@ -61,7 +61,7 @@ myNumbers[2] = 5;
 myNumbers[1] * 2;
 console.log(myNumbers);
 ```
-Confirm your answer by entering the above code in a new Repl.it session.
+Confirm your answer by entering the above code in a new JS Bin session.
 
 ## Adding Complexity – Nested Arrays
 
@@ -111,7 +111,7 @@ arrayOfArrays[2][1] = arrayOfArrays[1][0];
 console.log(arrayOfArrays);
 ```
 
-Confirm your answer by entering the above code in a new Repl.it session.
+Confirm your answer by entering the above code in a new JS Bin session.
 
 ## Additional Array Features
 
@@ -172,9 +172,9 @@ var x = ['paul', 'john', 'george']; x.push('ringo');
 var y = ['soda', 'tart', 'weasel']; y.pop();
 ```
 
-Confirm your answer by entering each of the above lines of code on the repl.it console.
+Confirm your answer by entering each of the above lines of code on the JS Bin console.
 
-> **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in repl.it!
+> **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in JS Bin!
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Your Turn
 
-Here's the [starter code](http://repl.it/9nH) for your next exercise:
+Here's the [starter code](https://jsbin.com/woriviq/edit?js,console) for your next exercise:
 
 ```javascript
 var result;

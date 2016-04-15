@@ -98,7 +98,7 @@ if (x > 5) {
   * `x` is 4?
 * Under what circumstances will `y` be assigned a value of 100?
 
-Try copying that whole statement into repl.it, and testing out different values for `x`. Were your answers correct?
+Try copying that whole statement into JS Bin, and testing out different values for `x`. Were your answers correct?
 
 
 ## Switch Statement
