@@ -16,7 +16,7 @@ collection of values (*12345*) and operations (like **+** or **x**).
 
 The process of reducing this expression down to a single value is called **evaluation**.
 
-The repl.it console is similar in many ways to this calculator. It accepts an
+The JS Bin console is similar in many ways to this calculator. It accepts an
 expression (in JavaScript) from the user and attempts to evaluate that expression,
 yielding a single value.
 
@@ -38,7 +38,7 @@ on many different kinds of data, including:
 possible values, `true` and `false`.
 
 If you forget what type of data you're dealing with, you can run the `typeof`
-command. Try typing the following lines into repl.it - what responses do you get?
+command. Try typing the following lines into JS Bin - what responses do you get?
 
 * <code>typeof 'hello';</code>
 * <code>typeof 24;</code>
@@ -52,7 +52,7 @@ command. Try typing the following lines into repl.it - what responses do you get
 
 ### Test Yourself
 Try to predict the types of each of the following bits of data. Check your answers
-with `typeof` in repl.it - were you correct?
+with `typeof` in JS Bin - were you correct?
 
 * <code>24</code>
 * <code>'99'</code>
@@ -90,7 +90,7 @@ differently - it 'concatenates' two strings together to make one big string.
     * AND (<code>&&</code>) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
 
 ### Test Yourself
-Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.
+Can you predict what will the results of these operations will be? Check your answers against the console in JS Bin.
 * <code>true && false;</code>
 * <code>45 % 6;</code>
 * <code>8 === 8.0;</code>

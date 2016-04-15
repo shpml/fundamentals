@@ -96,7 +96,7 @@ Take a look at the following table and see if you can predict the results in the
 | **True**  |  **True**    |  True      |  True     |  False   |
 
 ### Test Yourself
-Can you predict how the following expressions will be evaluated? Check your answers in repl.it.
+Can you predict how the following expressions will be evaluated? Check your answers in JS Bin.
 * `1 || true`
 * `3 || null`
 * <code>!('')</code>

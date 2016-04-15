@@ -17,7 +17,7 @@ When we want to then use this result, we simply substitute `x` for wherever our 
 To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
 
 ### Test Yourself
-Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.
+Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in JS Bin.
 
 * `x + 20`
 * `x * x`
@@ -25,7 +25,7 @@ Assume that `x` is equal to 10. What values do the following expressions evaluat
 
 We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
 
-Consider the following JavaScript code in a repl.it console.
+Consider the following JavaScript code in a JS Bin console.
 
 ```javascript
 var x = 1
@@ -103,7 +103,7 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
 
 ### Test Yourself
-Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
+Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in JS Bin by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the JS Bin terminal.
 
 ##### Challenge \#1
 
