@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.6" data-basepath=".." data-revision="Fri Apr 15 2016 05:13:22 GMT+0000 (UTC)">
+    <div class="book" data-level="11.6" data-basepath=".." data-revision="Fri Apr 15 2016 06:21:54 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2000,7 +2000,7 @@
 <h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h5>
 <p>1) Declare a variable, <code>cards</code>, whose value is an <code>Array</code> that consists of four <code>String</code> elements: <code>queen</code>, <code>queen</code>, <code>king</code>, <code>king</code>.</p>
 <p>2) Declare a variable, <code>cardsInPlay</code>, whose value is an empty array.</p>
-<p>3) Each element should have an attribute that equals the card value (i.e. &quot;queen&quot;). See example below.</p>
+<p>3) You will now need to set up each card during the <code>createBoard()</code> function. You&apos;ll need to loop through the your <code>cards</code> array and then Each element should have an attribute that equals the card value (i.e. &quot;queen&quot;). See example below.</p>
 <pre><code class="lang-js"><span class="hljs-comment">// instead of looping through a fixed number</span>
 <span class="hljs-comment">// loop through the length of the cards</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i&lt; cards.length; i++) {
@@ -2056,7 +2056,10 @@
 <p>  <code>this</code> is referring to whatever called the function. For example, we add the eventListener of click to a <strong>card</strong> and then call isTwoCards. In our example above, <em>this</em> is referring to <em>this card</em>. If this is confusing, don&apos;t worry! We&apos;ll cover this extensively in WDI.</p>
 </blockquote>
 <p>7) We have the ability to &apos;flip&apos; the card. This will require us to grab images first. <a href="http://wheels-cards.wc.lt/bicycle_cards.html" target="_blank">Bicycle Playing Cards</a> are available to use for your personal project. You should download these and find a King and Queen image to your liking. Once you&apos;ve found images you like, add them to your project&apos;s folder. It would be best to place them in the <em>root</em> directory of that folder.</p>
-<p>8) In your <code>cardElement</code>&apos;s <code>click</code> event listener, set the <code>cardElement</code>&apos;s innerHTML to an image of either a King of Queen. You will need to get the <code>data-card</code> attribute to decide which image to display.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
+<p> You may need to add a CSS selector that targets your <code>img</code> elements and gives them a height/width if the images you use are very large.</p>
+</blockquote>
+<p>8) In your <code>cardElement</code>&apos;s <code>click</code> event listener, set the <code>cardElement</code>&apos;s innerHTML to an image of either a King of Queen. You will need to get the <code>data-card</code> attribute to decide which image to display. You can then use that &apos;data-card&apos; value to decide which image to use using an if statement.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p>  We can create an <code>img</code> tag as a string. For example... <code>&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;</code> is an image that would render a King of Spades. We can set <code>cardElement</code>&apos;s <code>innerHTML</code> value to a string. So, we could set <code>cardElement.innerHTML = &apos;&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;&apos;;</code>.</p>
 </blockquote>
@@ -2065,6 +2068,8 @@
 <h4 id="deliverable">Deliverable</h4>
 <p>When finished, don&apos;t forget to <strong>add</strong>, <strong>commit</strong> and <strong>push</strong> your code to your GitHub repository!</p>
 <p>Now it&apos;s time to submit you code! Submit your link to your Github repository via <a href="https://ga-immersives.typeform.com/to/UHC5Yp" target="_blank">this form</a>.</p>
+<h4 id="taking-it-further-on-your-own">Taking it further on your own</h4>
+<p>Our game could use a few finishing touches. Take some time to think about how you might reset the game board to play again. What if you wanted to keep track of score?</p>
 
                     
                     </section>
