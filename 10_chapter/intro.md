@@ -6,7 +6,7 @@
 * Define a function with one or more parameters
 * Execute a function within a program or in the console
 * Given a function and a set of arguments, predict the output of a function
-* Use selectors and methods to access and update the DOM
+* Use selectors and methods to access and update HTML using the DOM
 
 ---
 

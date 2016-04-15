@@ -4,6 +4,8 @@
 
 # Functions
 
+When you write software you may find yourself writing the same kind of code over and over again. You are about to learn to how to write code that can be re-used. Instead of repeating the same code, you will write re-usable code. To do this you will use **functions**! Functions are _abilities_ (or actions)! Functions must be _defined_ to be used. They must be _called_ to be used; and when they are called, they may _return_ a value to you. Let's define your first function.
+
 ## Defining JavaScript Functions
 
 To create a new function, we must *declare* it as we would a variable.  A **function expression** typically looks like this:
