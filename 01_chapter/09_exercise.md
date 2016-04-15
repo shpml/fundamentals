@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Part 1: 
+Part 1:
 
 1. Open up the terminal application
 
@@ -14,7 +14,7 @@ Part 1:
 
 4. Check to see if you successfully moved the World directory by listing the contents of your home directory
 
-Part 2: 
+Part 2:
 
 You may have noticed that we neglected to include Antarctica in the `World` directory. Go ahead and correct this mistake straight from command line:
 
@@ -34,5 +34,4 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 
 9. Change the name of `North_America` to `Americas`
 
-> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
-
+> Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.

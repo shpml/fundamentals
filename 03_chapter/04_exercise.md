@@ -21,7 +21,7 @@ You can use any expression you like, but it must contain at least one (and ideal
 
 3. Finally, replace the previous expression with an expression that evaluates to the boolean `true`. Try using two or three operations for this one!
 
-> Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.
+> Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.
 
 ---
 [On to the next lesson.](05_lesson.md)

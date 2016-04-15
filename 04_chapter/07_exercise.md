@@ -49,6 +49,8 @@ fizz
 buzz
 ```
 
+> *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
+
 ---
 
 Feeling confident? [Test your understanding of this lesson with this quiz.](06_quiz.md)
