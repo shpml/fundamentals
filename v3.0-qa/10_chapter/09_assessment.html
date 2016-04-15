@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.7" data-basepath=".." data-revision="Thu Apr 14 2016 23:25:39 GMT+0000 (UTC)">
+    <div class="book" data-level="10.7" data-basepath=".." data-revision="Fri Apr 15 2016 04:49:36 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2005,48 +2005,51 @@
 </li>
 </ul>
 <p>In this case, we passed <code>createElement</code> and argument of <code>&apos;div&apos;</code> so a <code>div</code> element is created. If you&apos;d like, you can go ahead and run that line of code, <code>document.createElement(&apos;div&apos;)</code>, in your browser&apos;s console to get see it in action.</p>
-<p>Besides <code>createElement</code>, the <code>document</code> object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is a method for adding a class to an element, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank"><code>className</code></a>, as well as one for adding innerHTML, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank"><code>innerHTML</code></a>. On top of those methods that allow you to construct an element, there&apos;s also the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank"><code>appendChild</code></a> that aids in attaching the element to an element on your web page.</p>
+<p>Besides <code>createElement</code>, the <code>document</code> object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is an attribute (or property) you may modify to add a class to an element -  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank"><code>className</code></a>. If you need to modify the content <em>inside</em> of the HTML tags, you may modify the attribute named <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank"><code>innerHTML</code></a>. If you modified the <code>innerHTML</code> of an <code>&lt;li&gt;</code> element to <code>= &apos;remember maple syrup at the grocery story</code>, your list item would then contain that content: <code>&lt;li&gt;remember maple syrup at the grocery story&lt;/li&gt;</code>. On top of those methods and attributes that allow you to construct an element, there&apos;s also the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank"><code>appendChild</code></a> that aids in attaching your element as a child of another element on your web page.</p>
 <p>To complete this assignment, you will need to utilize these methods.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
-<p> In order to append your card elements, you&apos;re going to need something to append to, in this case a <code>div</code> with the class <code>board</code>. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName" target="_blank"><code>getElementsByClassName</code></a>.</p>
+<p> In order to append your card elements, you&apos;re going to need something to append to. We&apos;re going to change the HTML content of one of our tags so that we may use Javascript to <em>select</em> that tag. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run either &apos;getElementById&apos; or &apos;querySelector&apos;.</p>
 </blockquote>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
-<h6 id="create-the-html-for-the-cards">Create the HTML for the cards:</h6>
-<ul>
-<li>Find an element with the class name <code>board</code> and set it to a variable</li>
-<li>Assuming your memory card game consists of four cards, create a <code>for loop</code> that makes an HTML element for each card<ul>
-<li>each HTML element should be a <code>div</code></li>
-<li>each element should have a class <code>card</code> (this will help when you add CSS)</li>
-</ul>
-</li>
-<li>Append each newly created card to the <code>div</code> that has the class <code>board</code></li>
-</ul>
-<h6 id="create-functions-to-organize-your-code">Create functions to organize your code:</h6>
-<ul>
-<li>create a function called <code>createBoard</code> that creates the HTML for your cards and appends the resulting HTML to your <code>div</code> that has the class board</li>
-<li>execute/fire your <code>createBoard</code> function so it runs</li>
-</ul>
-<h4 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h4>
-<p>1) Find the board and set it equal to a variable. See below.</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> board = <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&apos;board&apos;</span>)[<span class="hljs-number">0</span>];
-</code></pre>
-<p>2) Create a <code>for loop</code> that will iterate four times. No hints here!</p>
-<p>3) Create the required HTML for each card on each iteration and append this HTML to the board - add this logic inside the <code>for loop</code>. See below for hint.</p>
-<pre><code class="lang-js"><span class="hljs-comment">// create a div element which will be used as a card</span>
-<span class="hljs-keyword">var</span> cardElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
-
-<span class="hljs-comment">// add a class to the card element which will help link styling</span>
-cardElement.className = <span class="hljs-string">&apos;card&apos;</span>;
-
-<span class="hljs-comment">// append the card to the board</span>
-board.appendChild(cardElement);
-</code></pre>
-<p>4) Create a <code>createBoard</code> function.</p>
-<p>5) Add your board creation logic to the function from steps 1, 2 &amp; 3.</p>
-<p>6) Execute the <code>createBoard</code> function.</p>
+<h6 id="modify-your-html-files">Modify your HTML files</h6>
+<p>1 ) Open your <code>index.html</code> and look for your <code>&lt;div&gt;</code> with a class of &apos;board&apos;. We need to give this div an <strong>id</strong> so that we may <em>get</em> it using Javascript.  </p>
+<p>2 ) Give your div an <code>id</code> of `game-board&apos;.</p>
+<p>3 ) Save your changes!</p>
+<h6 id="create-the-html-for-the-cards-using-javascript">Create the HTML for the cards using Javascript:</h6>
+<p>4 ) Get an element with the id of <code>game-board</code> and set it to a variable.</p>
+<p>5 ) Assuming your memory card game consists of four cards, create a <code>for loop</code> that makes an HTML element for each card. Each HTML element should be a <code>div</code>. Each element should also have the class <code>card</code> (this will help when you add CSS).</p>
+<p>6 ) Append each newly created card to the <code>div</code> that has the class <code>board</code></p>
+<h6 id="create-functions-to-organize-your-code">Create functions to organize your code</h6>
+<p>7 ) Create a function called <code>createBoard</code> in your Javascript file. This function will eventually create the HTML for your cards. It will then append the resulting HTML to your <code>div</code> that has the class board.</p>
+<p>8 ) Inside of your <code>createBoard</code> function, you need to...</p>
+<p>9 )  Create a <code>for loop</code> that will iterate four times.</p>
+<p>10 ) For each iteration in your loop, you will create the required HTML for each card using Javascript.</p>
+<p>11 ) You will then append this HTML to the board. All of this logic should be inside the <code>for loop</code>.</p>
+<p>12 ) Once you&apos;ve completed that, you will execute/fire your <code>createBoard</code> function so it runs!</p>
+<p>13) Once you&apos;ve done that, your board will be created! Be sure to check your page in a web browser to verify that everything works as intended!</p>
 <h4 id="deliverable">Deliverable</h4>
 <p>Once you&apos;re happy with your work, save your code and make a commit to your project&apos;s repository.</p>
+<h4 id="below-are-a-few-hints-to-help-you">Below are a few hints to help you</h4>
+<p>Setting an HTML tag&apos;s attributes:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">article</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;trogdor&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;burninating&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">article</span>&gt;</span>
+</code></pre>
+<p>Find the an ID and set it equal to a variable:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;trogdor&apos;</span>);
+</code></pre>
+<p>Creating elements and modifying their attributes:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// create a section element... &lt;section&gt;&lt;/section&gt;</span>
+<span class="hljs-keyword">var</span> strongbadia = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;section&apos;</span>);
+
+<span class="hljs-comment">// add a class... &lt;section class=&apos;blue-skies&apos;&gt;&lt;/section&gt;</span>
+strongbadia.className = <span class="hljs-string">&apos;blue-skies&apos;</span>;
+
+<span class="hljs-comment">// append the area to a world element (maybe a div somewhere?)</span>
+<span class="hljs-comment">// &lt;div&gt;</span>
+<span class="hljs-comment">//   &lt;section class=&apos;blue-skies&apos;&gt;&lt;/section&gt;</span>
+<span class="hljs-comment">// &lt;/div&gt;</span>
+world.appendChild(strongbadia);
+</code></pre>
 <hr>
 <p><a href="../11_chapter/intro.html">Next up: Unit 11</a></p>
 
