@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.3" data-basepath=".." data-revision="Fri Apr 15 2016 06:21:54 GMT+0000 (UTC)">
+    <div class="book" data-level="8.3" data-basepath=".." data-revision="Fri Apr 15 2016 06:31:22 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2002,14 +2002,14 @@
 <p>When we want to then use this result, we simply substitute <code>x</code> for wherever our original expression might have gone; for instance, we could write <code>x * 2;</code> and this expression would evaluate to double whatever value was stored in <code>x</code>.</p>
 <p>To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that <code>x</code> (or whatever other variable we might be using) evaluates to whatever value it&apos;s storing at the time.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Assume that <code>x</code> is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.</p>
+<p>Assume that <code>x</code> is equal to 10. What values do the following expressions evaluate to? Check your answers in JS Bin.</p>
 <ul>
 <li><code>x + 20</code></li>
 <li><code>x * x</code></li>
 <li><code>3 * (x * x) - 2 * x + 5</code></li>
 </ul>
 <p>We can redefine our variable <code>x</code> as many times as we want. However, <strong><em>only the most recent value of <code>x</code> is retained</em></strong> - once <code>x</code> gets redefined, its original value is lost forever.</p>
-<p>Consider the following JavaScript code in a repl.it console.</p>
+<p>Consider the following JavaScript code in a JS Bin console.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>
 x
 <span class="hljs-comment">// =&gt; 1</span>
@@ -2065,7 +2065,7 @@ y = <span class="hljs-number">2</span> * x;
 <p>  <strong>Line 6</strong>: <code>x</code> is now 22, so <code>y</code> becomes <code>2 * 22</code>, or 44.</p>
 <p>One important thing to mention here is that <strong>at no point is any lasting relationship established between x and y</strong> (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Give these a try &#x2013; see if you can predict the final values of <code>x</code>, <code>y</code>, and <code>z</code>. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking <code>x</code>,<code>y</code>, and <code>z</code> in the repl.it terminal.</p>
+<p>Give these a try &#x2013; see if you can predict the final values of <code>x</code>, <code>y</code>, and <code>z</code>. Check your answers in JS Bin by copying the entire chunk of code into the editor window, running it, and then checking <code>x</code>,<code>y</code>, and <code>z</code> in the JS Bin terminal.</p>
 <h5 id="challenge-1">Challenge #1</h5>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">var</span> y = <span class="hljs-number">2</span>;
