@@ -4,10 +4,34 @@
 
 Dear WDI Student,
 
-Congratulations on joining the Web Development Immersive program at General Assembly!
+Congratulations on joining the Web Development Immersive Remote (WDIr) program at General Assembly!
 
-We hope you find WDI to be as rewarding as it is challenging — we can assure you it will be both. There are a lot of technical ideas to cover and terms to learn, and being unprepared can easily trip you up. To make sure you have the proper footing, we've prepared this ebook covering the fundamentals of web-based programming. These concepts will come up throughout the course, and becoming familiar with them before the course begins will help set you up for success.
+We hope you find WDIr to be as rewarding as it is challenging — we can assure you it will be both. There are a lot of technical ideas to cover and terms to learn before starting WDIr and being unprepared can easily trip you up. To make sure you have the proper footing, we've prepared this ebook covering the fundamentals of web-based programming.
 
-The entire ebook is six units long and we expect it to take you around 40 hours to complete it.
+We'll cover **HTML**, **CSS** and **JavaScript**.  We'll also learn how to work with standard developer tools (Text Editors, Browsers, the command line, Git, and GitHub).
 
-[Ok, let's get started!](00_chapter/get_started.md)
+The entire ebook is eleven units long, and we expect it to take you around **40 hours to complete** it. Make sure you read below before continuing as we've outlined some important things to keep in mind as you move through WDI Fundamentals!
+
+
+## Join the WDIr Community on Slack!
+
+We design our immersive courses to help you embrace the challenge of lifelong learning. This means that when you get stuck, the instructors you work with will often help you to drive your own process of discovery, rather than just give you the right answer. You'll also learn to rely on your classmates for support and structure.
+
+You're probably completing the pre-course work at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on campus. For now, we encourage you to connect with your classmates via Slack, a real time messaging application you'll be using in class.
+
+To sign on to Slack, first check your email for an invitation from your producer.
+
+Be sure to add a photo and "WDI Student - REMOTE" to your profile.
+
+Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
+page asks for your team domain, and join the [#wdiremotefundamentals](https://ga-students.slack.com/messages/#wdiremotefundamentals/) channel to meet your global classmates!
+
+![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
+
+**Note: WDI Remote students, make sure you sign up for #wdiremotefundamentals channel and NOT #wdi-fundamentals.**
+
+## Feedback
+
+We need your help to improve this material! Please don't hesitate to reach out if you have any questions or concerns by emailing Meghan Roach [meghan@generalassemb.ly](meghan@generalassemb.ly).
+
+[Ok, let's get started!](00_chapter/02_lesson.md)

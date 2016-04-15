@@ -3,36 +3,23 @@
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Define a function with one or more parameters
-* Execute a function within a program or in the console
-* Given a function and a set of arguments, predict the output of a function
+
+* Understand different strategies for creating navigation bars.
+* Discover how to create multi-column layouts with the float property.
+* Secure your layouts and avoid overlaps with the clear property and the clearfix method.
 
 ---
 
-You've had an opportunity to see some functions in the homework assignments at the end of units 3 and 4; now it's time to learn about writing them!
+Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
 
-But first... a little math.
+![](/assets/elkwebdesign/userflow.png)
 
-**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
+In order to make this userflow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>` elements to define a set of navigation links. You can also make your navigation appear vertically, horizontally or alternatively-styled bloc.
 
-Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
+Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
 
-<br>
-<center><img src="../assets/chapter5/function.png"></center>
-<br>
+![](/assets/elkwebdesign/nav.png)
 
-If we were shown the output (`f(x)`) for each value of `x`:
+---
 
-| x  | f(x) |
-|:-: |:-:   |
-| -1 | -2   |
-| 0  | 0    |
-| 1  | 2    |
-| 2  | 4    |
-| 3  | 6    |
-
-We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
-
-Functions play a similar role in programming – JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
-
-[Let's take a look.](02_lesson.md)
+[On to the next lesson.](02_lesson.md)

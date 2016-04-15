@@ -2,89 +2,157 @@
 
 ---
 
-# Iterating Over Arrays
+##Navigating the Command Line
 
-In the past few units, we've only been able to operate on one value at a time. One of the most useful things about a collection (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on *each value within a collection*. This process is called **iteration** - doing something over and over and over again, for each element in a set.
+We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer!
 
-##Iterating with Loops
+There are commands to open an application, create new files, copy files from one place to another, and a lot more.
 
-Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celsius - which would then be stored in a separate array.
+Let's start typing commands together.  In your open Terminal window, type `hello?` and press enter:
 
-```javascript
-var tempsInF = [100, 72, 88, 15, 25, 32];
-var tempsInC = [];
+```
+$ hello?
 ```
 
-The formula for converting between Fahrenheit and Celsius temperatures is **C = (F - 32) * 5/9**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+Your terminal should respond rudely:
 
-```javascript
-var fahrToCelc = function(degrees) {
-  return (degrees - 32) * (5 / 9);
-}
+```
+-bash: hello?: command not found
 ```
 
-So how do we go about operating on the elements in `tempsInF`? Well, we could just start at the beginning and work our way through, one value at a time.
+This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry! In
+due time, as we grow comfortable in this new environment, even these cryptic messages will be just as beautiful as any warning box you'll ever see.
 
-```javascript
-tempsInC.push(fahrToCelc(tempsInF[0]));
+Try typing this into your terminal:
+
+```
+$ Where am I?
 ```
 
-Then, we could run an almost identical command to operate on each element in `tempsInF` and push the converted value onto the `tempsInC` array.
+Again, a rude response:
 
-```javascript
-  tempsInC.push(fahrToCelc(tempsInF[1]));
-  tempsInC.push(fahrToCelc(tempsInF[2]));
-  tempsInC.push(fahrToCelc(tempsInF[3]));
-  tempsInC.push(fahrToCelc(tempsInF[4]));
-  tempsInC.push(fahrToCelc(tempsInF[5]));
+```
+-bash: Where: command not found
 ```
 
-However, this code is extremely repetitious, and it also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to run this code exactly as many times as there are elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the `for` loop.
+Great. We've established that our command line doesn't understand plain English. We will have to use special words to make up our commands. Let's try this one:
 
-```javascript
-for (var i = 0; i < tempsInF.length; i += 1) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
+```
+$ pwd
 ```
 
-Take a minute to think about what's going on above.
+Whoa! It looks like our computer understood that one! It replied with a message like:
 
-By starting our count at zero, stopping before `i` reaches the length of the array, and increasing `i` by one every time, `i` will be successively set to the index of every element in our array, allowing us to perform the same operation on each element.
-
-We could just as easily have gone in the opposite direction - starting at the last element, and ending with the first - simply by specifying different settings in the `for` loop:
-
-```javascript
-for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
+```
+/Users/corneliusfinch
 ```
 
-We could even operate only on every third element, by changing the value we increment i, like so (see `i += 3` ?):
+(Note: On your machine, you should have seen `corneliusfinch` replaced with your username!)
 
-```javascript
-for (var i = 2; i < tempsInF.length; i += 3) {
-  tempsInC.push(fahrToCelc(tempsInF[i]));
-}
+If you're following along in **Git Bash on Windows**, this should look similar but slightly different:
+```
+/c/Users/corneliusfinch
 ```
 
-Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!
 
-### Test Yourself
+What did we just do?
 
-Create a new repl.it session with the following JavaScript code:
+The command `pwd` stands for "Print Working Directory".
 
-```javascript
-var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];
+This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.
+
+Just like the Finder on a mac, your command line interface (CLI) places you in a particular folder
+of your computer. `pwd` tells you where you currently are in your filesystem. Usually, when you open the Terminal application, you start off in your "home folder", which is the one that shares the name of your username on your computer.
+
+If we were using Finder, we'd be able to see what files and folders are present in this folder. In a CLI however, if we want to see what files and folders exist in the current location, we need to ask for that with another command.
+
+Let's find out what files are in the folder that we're in.
+
+```
+$ ls
 ```
 
-How could you use iteration to generate a new array called `newArray` from `oldArray`, so that...
-* Each value in `newArray` is the value of its corresponding element in `oldArray`, plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`)
-* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`)
-* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`)
-* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`)
+Lo and behold, the contents of the folder you are in:
 
-These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
+```
+Applications       Desktop          Documents
+Downloads          Library          Movies
+Music              Pictures         Public
+```
+
+(Note: Again, on your machine, since you may have different files and folders, you may see a additional files and folders when you enter `ls`!)
+
+If you're following along in **Git Bash on Windows**, it's alright if the files and folders that are listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
+
+The `ls` command, which loosely stands for "list", lists the contents of a folder.
+
+It looks like there are some folders in here. Let's find out what's inside our `Documents` folder. In order to do so, let's first navigate to the Documents folder.
+
+```
+$ cd Documents
+```
+
+We have now navigated to the Documents folder.
+
+The `cd` command, which stands for "change directory", is used to navigate to a particular folder on your computer.
+
+This is equivalent to double-clicking the Documents folder in Finder to "go
+inside it". We can check that we're in the right place by using `pwd`.
+
+```
+$ pwd
+/Users/corneliusfinch/Documents
+```
+
+Excellent! Now let's find out what's in here, using `ls`.
+
+```
+$ ls
+funny_cat_picture.jpg
+office_stuff
+world_domination_checklist.txt
+```
+
+(Note: Again, your machine means you will probably see different files and folders!)
+
+In our example, it looks like the `Documents` folder contains a JPG file of a funny cat, a folder
+full of "office stuff", and a text file that supposedly contains a checklist for
+world domination. Your `Documents` folder probably contains something different.
+
+Now that we've investigated our `Documents` folder, let's go back up to our home folder. Since the home folder contains the `Documents` folder, we can say that the home folder is the "parent directory" of the `Documents` folder.
+
+```
+$ cd ..
+```
+
+> `..` (two periods, or "dot-dot") is how we say to our command line "parent directory".
+
+Many commands consist of three parts: the command, followed by flags (aka options), and finally, arguments.
+
+```
+$ command -flag -otheroption
+```
+
+As the name implies, flags set options to tell the command how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. Usually one dash is for a short one letter abbreviation, while two dashes is for long name for the option.
+
+http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149
+
+For example:
+
+```
+$ ls -a
+```
+
+Will list *all* files in a directory, which includes hidden files (files whose name begins with a `.`).
+
+```
+$ cd Downloads
+```
+
+Calls the command `cd` to change directory. It is provided the option of where to navigate to.
+
+
 
 ---
 
-Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md)
+[Give it a try!](07_exercise.md)

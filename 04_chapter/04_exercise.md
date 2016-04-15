@@ -2,29 +2,35 @@
 
 ---
 
-##Your Turn
+##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9nF) to some sample code in a repl.it session - it should contain the following code:
+In this exercise we'll take some time to play around with **divs**, **spans**, **margin**, and **padding** to create a lovely text layout .
 
-```javascript
-var x;
-var result;
-/* YOUR CODE HERE */
-```
+Here's what the content will look like when you're finished styling it.Fancy!
 
-This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
+![](../assets/elkwebdesign/layout.png)
 
-* If `x` is evenly divisible by 3 (for example, 3, 6, or 9), set `result` to "fizz".
-* If `x` is evenly divisible by 5 (for example, 5 or 10), set `result` to "buzz".
-* If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz".
-* If `x` is not evenly divisible by either 3 or 5 (for example, 7), set `result` to `x`.
+We won't touch the HTML, but take a look at it before you hop over to the CSS tab. To give yourself more space you can select the CSS and Output tabs. Also, we gave you the p style. You're welcome!
 
-> Don't remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (`%`) operator.
+<a class="jsbin-embed" href="https://jsbin.com/likihi/embed?html,css,output&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-To test your code, set a value for `x` in the editor and click 'play'. Did you get the result you expected? Try out a bunch of different values for `x`, just to be sure.
+1 . Set the body's background to #333 and the div's background to #c0dec5.
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+2 . Add a margin of 4em on *all four sides* of the div's content (outside of the pale blue box).
+
+3 . Set the div's top padding of 2em, a right padding of 3em, no padding on the bottom, and 3em on the left.
+
+4 .Give the span three property-value pairs: a font-variant of small-caps, a font-family of tahoma, sans-serif and .25em of letter-spacing.
+
+5 . Set the span's padding to 0 .2em. Set its background color to rgb(100,150,150).
+
+6 . Actually, that color is a little dark. Let's practice with rgb and alpha, and make it 50% translucent. Change the span's background color from rgb to rgba and add a .5 alpha.
+
+7 . In your HTML, the second p tag has a class attribute named "right" Let's right-align that paragraph! Add the new style to your CSS.
+
+
+Fabulous! You just rocked on a bunch of topics that can stump even professional web designers.
+
 
 ---
-
-[Next: Loops](05_lesson.md)
+[On to the lesson.](05_exercise.md)
