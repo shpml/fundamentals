@@ -4,7 +4,9 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Here's the [starter code](https://jsfiddle.net/8ezbdfvj/) for your next exercise.
+Here's the starter code for your next exercise.
+
+<a class="jsbin-embed" href="http://jsbin.com/gokecos/1/embed?html&height600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 Let's get some practice manipulating the DOM and adding some interactions to our reading list.
 

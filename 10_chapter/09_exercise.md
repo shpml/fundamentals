@@ -4,7 +4,9 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Here's the [starter code](https://jsfiddle.net/ssp0b3qw/1/) for your next exercise.
+Below is the starter code for your next exercise.
+
+<a class="jsbin-embed" href="http://jsbin.com/guvuva/1/embed?html&height600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 In this exercise we're going to practice manipulating the DOM by updating our Reading List site, which is a little outdated.
 

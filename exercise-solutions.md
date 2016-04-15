@@ -23,27 +23,36 @@ The following solutions are for the Unit exercises.
 
 ## Unit 3
 
-#### 3.2.1
+### 3.2.1
 
-```html
+
 1.  
+
+```css
 #name {
 	background: red;
 }
+```
 
 2 .
+
+```css
 #hex {
 	background: #ff0000;
 }
+```
 
 3 .
 
+```css
 #rgb {
 	background: rgba(255,0,0,1);
 }
+```
 
 4 .
 
+```css
 #name {
 	background: black;
 }
@@ -55,43 +64,49 @@ The following solutions are for the Unit exercises.
 #rgb {
 	background: rgba(0,0,0,1);
 }
+```
 
 Bonus
 
+```css
 #rgb {
 	background: rgba(0,0,0,.5);
 }
+```
 
+```css
 #rgb {
 	background: rgba(0,0,0,.8);
 }
+```
 
+```css
 #rgb {
 	background: rgba(0,0,0,.2);
 }
-
-Change this to:
-
-We'll now work with the alpha value to the RGB model. When the #rgb style is: background: rgba(0,0,0,1), the default opacity is 100%, so this won't change anything on screen. But now you have a means to set the opacity.
-
-Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
-
 ```
 
-#### 3.2.1
+### 3.2.1
 
-```
+
 1 .
+```html
 <img src="">
+```
 
 2 .
 
+```html
 <img src="http://i.imgur.com/z9gGd0t.jpg">
+```
 
 3 .
+```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design">
+```
 
 4 .
+```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design" title="grumpy cat">
 ```
 
@@ -99,9 +114,9 @@ Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
 
 ## Unit 4
 
-4.2.1
+### 4.2.1
 
-```
+```css
 1 . body {
 	background: #333;
 }
@@ -109,32 +124,40 @@ Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
 div {
 	background: #c0dec5;
 }
+```
 
 2 .
 
+```css
 div {
 	background: #c0dec5;
 	margin: 4em;
 }
+```
 
 3 .
 
+```css
 div {
 	background: #c0dec5;
 	margin: 4em;
 	padding: 2em 3em 0 3em;
 }
+```
 
 4 .
 
+```css
 span {
 	font-variant: small-caps;
 	font-family: tahoma, sans-serif;
 	letter-spacing: .25em;
 }
+```
 
 5 .
 
+```css
 span {
 	font-variant: small-caps;
 	font-family: tahoma, sans-serif;
@@ -142,9 +165,11 @@ span {
 	padding: 0 .2em;
 	background: rgb(100,150,150);
 }
+```
 
 6 .
 
+```css
 span {
 	font-variant: small-caps;
 	font-family: tahoma, sans-serif;
@@ -152,9 +177,10 @@ span {
 	padding: 0 .2em;
 	background: rgba(100,150,150,.5);
 }
-
+```
 7 .
 
+```css
 .right {
 	text-align: right;
 }
@@ -162,9 +188,10 @@ span {
 
 ### 4.4.1
 
-```
+
 1 .
 
+```html
 <head>
 	<title>ELK Web Design</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -176,9 +203,11 @@ span {
 		<img src="http://i.imgur.com/pdsjjxD.jpg">
 	</header>
 </body>
+```
 
 2 .
 
+```html
 <!DOCTYPE HTML>
 
 <html>
@@ -213,10 +242,11 @@ span {
 </body>
 
 </html>
-
+```
 
 3 .
 
+```css
 body {
 	font-size: 18px;
 }
@@ -258,38 +288,43 @@ footer {
 
 ### 5.3.1
 
-```
-
 #### Part 1
 
 1 .
+
+```html
 <head>
 	<title>ELK Web Design</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
 </head>
-
+```
 
 2 .
 
+```css
 body {
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
 }
+```
 
 3 .
 
+```html
 h1,h2 {
 	text-transform: uppercase;
   border-bottom: 4px solid black;
 	display: inline-block;
 	font-weight: 800;
 }
+```
 
 #### Part 2
 
 1 .
 
+```html
 <body>
 	<header>
 		<h1>ELK Web Design</h1>
@@ -297,11 +332,12 @@ h1,h2 {
 		</nav>
 		<img src="http://i.imgur.com/pdsjjxD.jpg">
 	</header>
-
+```
 
 
 2 .
 
+```html
 <body>
 	<header>
 		<h1>ELK Web Design</h1>
@@ -312,9 +348,11 @@ h1,h2 {
 		</nav>
 		<img src="http://i.imgur.com/pdsjjxD.jpg">
 	</header>
+```
 
 3 .
 
+```html
 <body>
 	<header>
 		<h1>ELK Web Design</h1>
@@ -325,32 +363,38 @@ h1,h2 {
 		</nav>
 		<img src="http://i.imgur.com/pdsjjxD.jpg">
 	</header>
+```
 
 4 .
 
+```css
 nav {
 }
 
 nav a {
 }
-
+```
 5 .
+```css
 nav a {
 	text-decoration: none;
   color: black;
 }
+```
 
 7 .
 
+```css
 nav a {
 	text-decoration: none;
   color: black;
 	margin: 1.8em;
 	display: inline-block;
 }
-
+```
 8 .
 
+```css
 nav {
 	font-size: 1.8em;
  	float: right;
@@ -360,53 +404,63 @@ nav {
 
 ### 5.4.1
 
-```
 1 .
 
+```css
 div {
 	font-size: 1.2em;
 	width: 50%;
 }
-
+```
 
 2 .
 
+```css
 div {
 	font-size: 1.2em;
 	width: 50%;
 	display: inline-block;
 }
+```
 
 3 .
 
+```css
 #about {
 }
 
 #services {
 }
-
+```
 
 4 .
+
+```css
 #about {
 	float: left;
 }
-
+```
 
 5 .
+
+```css
 #services {
 	float: right;
 }
+```
 
 6 .
-
+```css
 footer {
   text-align: center;
   padding: 1em 0;
   clear: both;
 }
+```
 
 7 .
 
+```css
 div {
 	font-size: 1.2em;
 	width: 46%;
@@ -417,24 +471,30 @@ div {
 #about {
 	float: left;
 }
+```
 
 8 .
+
+```css
 li {
   float: left;
   width: 50%;
   height: 6em;
 }
-
+```
 9 .
+
+```css
 li {
   float: left;
   width: 50%;
   height: 6em;
   outline: 3px solid #222222;
 }
-
+```
 10 .
 
+```css
 li {
   float: left;
   width: 50%;
@@ -444,18 +504,20 @@ li {
 	line-height: 6em;
 }
 
-nav {
-
+```
 11 .
 
+```css
 img {
 	display: block;
 	margin: 0 auto;
 	width: 480px;
 }
+```
 
 12 .
 
+```html
 <header>
 		<h1>ELK Web Design</h1>
 		<nav>
@@ -467,9 +529,10 @@ img {
 			<img src="http://i.imgur.com/pdsjjxD.jpg">
 		</div>
 	</header>
+```
 
 13 .
-
+```html
 <section>
 	<div id="about">
 		<h2>Who we are</h2>
@@ -491,26 +554,31 @@ img {
 </body>
 
 </html>
-
+```
 14 .
 
+```css
 section {
   background: #222222;
   color: white;
   overflow: auto;
 }
+```
 
 15 .
 
+```css
 h2 {
 	font-size: 1.5em;
 	padding: .8em 0;
 	color: #fffebb;
 	border-bottom-color: #fffebb;
 }
+```
 
 16 .
 
+```css
 li {
   float: left;
   width: 50%;
@@ -556,7 +624,6 @@ Part 2:
 9. `$ mkdir Americas`
    `mv North_America Americas`
 
-## Unit 7
 
 ## Unit 8
 
@@ -624,17 +691,6 @@ for (var i = 1; i <= max; i += 1) {
 }
 ```
 
-## Unit 8
-
-### Unit 8 Assessment
-
-- Starter Code: http://jsbin.com/limuge/edit?html,css,js,output
-- Solution: https://jsbin.com/cajacu/edit?html,js,output
-
-### Unit 9 Assessment
-
-- https://jsbin.com/lelubo/edit?html,css,js,output
-
 ## Unit 10
 
 ### 10.1.1
@@ -687,10 +743,6 @@ var fizzBuzz = function(num){
   } // yes, this is literally the same code from Ch4
 };
 ```
-
-### Unit 10 Assessment
-
-- https://jsbin.com/cafikod/edit?html,js,output
 
 ## Unit 11
 
@@ -766,6 +818,10 @@ var passOrFail = function () {
 passOrFail();
 ```
 
-### Unit 11 Assessment
+### Unit Assignments
 
-- https://jsbin.com/liqeyem/edit?html,css,js,output
+* [Unit 1-5](http://jsbin.com/limuge/edit?html,css,js,output)
+* [Unit 8](https://jessicaGA.jsbin.com/cajacu/edit?html,css,js,output)
+* [Unit 9](https://jsbin.com/lelubo/edit?html,css,js,output)
+* [Unit 10](https://jsbin.com/cafikod/edit?html,js,output)
+* [Unit 11](https://jsbin.com/liqeyem/edit?html,css,js,output)

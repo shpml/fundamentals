@@ -6,6 +6,8 @@
 
 This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the descriptions given below using JSBin's editor.
 
+<a class="jsbin-embed" href="https://jsbin.com/cugoya/embed?js">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+
 ###Instructions
 
 1. Go ahead an open up a new session in JSBin.

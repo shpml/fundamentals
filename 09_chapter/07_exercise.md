@@ -4,13 +4,9 @@
 
 ## Your Turn
 
-Here's the [starter code](https://jsbin.com/woriviq/edit?js,console) for your next exercise:
+Here's the starter code for your next exercise:
 
-```javascript
-var result;
-var max;
-/* YOUR CODE HERE */
-```
+<a class="jsbin-embed" href="https://jsbin.com/woriviq/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 Last time, we wrote code that took an input `x` and set a new `result` value according to a specific set of rules; this time, your challenge is to loop through every number from 1 to `max`, applying those exact same rules to that number and, finally, printing the result out to the console using the command `console.log(result);`.
 

@@ -104,6 +104,11 @@ When finished, don't forget to **add**, **commit** and **push** your code to you
 
 Now it's time to submit you code! Submit your link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
 
+*Don't worry if you had trouble finishing up the memory game. Go ahead and submit what you have and you'll be able to review it with your instructor soon enough!*
+
 #### Taking it further on your own
 
 Our game could use a few finishing touches. Take some time to think about how you might reset the game board to play again. What if you wanted to keep track of score?
+
+---
+How was your Fundamentals Experience? Take a [quick survey](feedback.md) to give us your feedback!

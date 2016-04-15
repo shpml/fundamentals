@@ -13,6 +13,9 @@ Instructions
 3. Click 'play' to run the code.
 4. Call each function from the console window. Try using different parameters to make sure they're working properly.
 
+<a class="jsbin-embed" href="http://jsbin.com/wihumu/embed?js&height600"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+
+
 ### Let's get started!
 
 * Create an array `contacts`. This array should contain the names "Matt Smith", "Sam Davis", and "Ashley Jones".

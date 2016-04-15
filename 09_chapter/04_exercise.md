@@ -4,13 +4,9 @@
 
 ##Your Turn
 
-Follow [this link](https://jsbin.com/kiyeso/edit?js,console) to some sample code in a JS Bin session - it should contain the following code:
+Take a look at the some sample code in a JS Bin below.
 
-```javascript
-var x;
-var result;
-/* YOUR CODE HERE */
-```
+<a class="jsbin-embed" href="https://jsbin.com/kiyeso/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
 

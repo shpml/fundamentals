@@ -4,13 +4,14 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-[Let's open up another JS Bin session](http://jsbin.com/qacobi/edit?js,console).
 You should see the following code in the editor window:
 
 ```javascript
 var x;
 /* Your Expression */
 ```
+
+<a class="jsbin-embed" href="http://jsbin.com/qacobi/embed?js,console&600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 1. Write an expression that evaluates `x`, so long as `x` is not null;
 if `x` is null, the expression should evaluate to 100.
