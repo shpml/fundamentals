@@ -32,7 +32,10 @@ Let's look at the starter CSS. This div style sets the size, position, style, an
   * Then, use a named color to make all three boxes the same color!
 
 **Bonus**:
-* Add an alpha value to the RGB model.
-* Then change the #rgb style to: background: rgba(0,0,0,1); Since the default opacity is 100%, this won't change anything on screen. But now you have a means to set the opacity.
+
+We'll now work with the alpha value to the RGB model. When the #rgb style is: background: rgba(0,0,0,1), the default opacity is 100%, so this won't change anything on screen. But now you have a means to set the opacity.
+
+Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
+
 
 *Bravo to you on utterly mastering color models for the web. Take this knowledge forward and make the internet a more colorful space!*
