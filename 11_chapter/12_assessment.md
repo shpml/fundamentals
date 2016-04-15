@@ -20,7 +20,7 @@ Replace all your card variables `Array` types. Once that is complete, organize a
 2) Declare a variable, `cardsInPlay`, whose value is an empty array.
 
 
-3) Each element should have an attribute that equals the card value (i.e. "queen"). See example below.
+3) You will now need to set up each card during the `createBoard()` function. You'll need to loop through the your `cards` array and then Each element should have an attribute that equals the card value (i.e. "queen"). See example below.
 
 ```js
 // instead of looping through a fixed number
@@ -88,7 +88,9 @@ function isTwoCards() {
 
 7) We have the ability to 'flip' the card. This will require us to grab images first. [Bicycle Playing Cards](http://wheels-cards.wc.lt/bicycle_cards.html) are available to use for your personal project. You should download these and find a King and Queen image to your liking. Once you've found images you like, add them to your project's folder. It would be best to place them in the _root_ directory of that folder.
 
-8) In your `cardElement`'s `click` event listener, set the `cardElement`'s innerHTML to an image of either a King of Queen. You will need to get the `data-card` attribute to decide which image to display.
+> **INFO** You may need to add a CSS selector that targets your `img` elements and gives them a height/width if the images you use are very large.
+
+8) In your `cardElement`'s `click` event listener, set the `cardElement`'s innerHTML to an image of either a King of Queen. You will need to get the `data-card` attribute to decide which image to display. You can then use that 'data-card' value to decide which image to use using an if statement.
 
 >  **NOTE** We can create an `img` tag as a string. For example... `<img src="my_king.png" alt="King of Spades" />` is an image that would render a King of Spades. We can set `cardElement`'s `innerHTML` value to a string. So, we could set `cardElement.innerHTML = '<img src="my_king.png" alt="King of Spades" />';`.
 
@@ -101,3 +103,7 @@ function isTwoCards() {
 When finished, don't forget to **add**, **commit** and **push** your code to your GitHub repository!
 
 Now it's time to submit you code! Submit your link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
+
+#### Taking it further on your own
+
+Our game could use a few finishing touches. Take some time to think about how you might reset the game board to play again. What if you wanted to keep track of score?

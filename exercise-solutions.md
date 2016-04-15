@@ -624,6 +624,17 @@ for (var i = 1; i <= max; i += 1) {
 }
 ```
 
+## Unit 8
+
+### Unit 8 Assessment
+
+- Starter Code: http://jsbin.com/limuge/edit?html,css,js,output
+- Solution: https://jsbin.com/cajacu/edit?html,js,output
+
+### Unit 9 Assessment
+
+- https://jsbin.com/lelubo/edit?html,css,js,output
+
 ## Unit 10
 
 ### 10.1.1
@@ -676,6 +687,10 @@ var fizzBuzz = function(num){
   } // yes, this is literally the same code from Ch4
 };
 ```
+
+### Unit 10 Assessment
+
+- https://jsbin.com/cafikod/edit?html,js,output
 
 ## Unit 11
 
@@ -750,3 +765,7 @@ var passOrFail = function () {
 };
 passOrFail();
 ```
+
+### Unit 11 Assessment
+
+- https://jsbin.com/liqeyem/edit?html,css,js,output

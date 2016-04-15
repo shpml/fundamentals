@@ -11,9 +11,9 @@ Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-
 But here's the catch! You have your html and css files from the previous units that you'll want to use moving forward and link your JS file too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the following syntax to link your JS file to your HTML file so that they work together!
 
 
-`<link rel="stylesheet" href="style.css">`
+`<script src="some-javascript-file.js"></script>`
 
-
+Unlike your CSS _link_, you should add your script right before the end of your `body` tag. This ensures that all of the content of your page has been loaded in case Javascript needs to use any of it.
 
 
 
@@ -33,7 +33,7 @@ In this section, you'll be working to create the cards that will make up your me
 - they should be `String` types
 - two should have a value of `"queen"` and the other two should be `"king"`
 - they will represent your cards (i.e. "queen" card)
-- name your variables `cardOne`, `cardTwo`, etc.
+- name your variables `cardOne`, `cardTwo`, `cardThree`, and `cardFour`.
 
 Here's an example of one card:
 
@@ -51,7 +51,7 @@ var cardOne = "queen";
 
 ![](/assets/chapter5/developer.png)
 
-5) To compare the two queen variables to check for equality, in the console type in the following:
+5) To compare the two queen variables to check for equality, in the console type in the following and run your javascript:
 
 ```js
 cardOne == cardTwo

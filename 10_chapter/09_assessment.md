@@ -29,6 +29,7 @@ To complete this assignment, you will need to utilize these methods.
 
 ###### Modify your HTML files
 
+Before you start, go ahead and comment out the `if` statement from the last assignment. We'll work with it to finalize our memory game during the next unit.
 
 1 ) Open your `index.html` and look for your `<div>` with a class of 'board'. We need to give this div an **id** so that we may _get_ it using Javascript.  
 
