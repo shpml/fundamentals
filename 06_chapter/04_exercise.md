@@ -22,7 +22,7 @@ Instructions
 
 Once you're satisfied with the way things are working, feel free to move on to the next lesson. **Be sure to save your repl.it session and keep your link as you'll be using it again for another exercise in this unit.**
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+> *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
 [Ready to move on? Here's the next lesson.](05_lesson.md)

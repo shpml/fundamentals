@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays. 
+Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays.
 
 Instructions
 
@@ -24,11 +24,11 @@ Instructions
 #### Part 2
 
 1. Create an array `scores` containing the numbers 83, 40, 55, 72, 59, 88, and 99.
-2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array. 
+2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array.
 
 Feeling comfortable with these exercises? Take a look at the last lesson!
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+> *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
 

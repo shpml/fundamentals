@@ -24,7 +24,7 @@ Write the following functions:
 
 Once you've written and tested all of these functions, go ahead and move on to the next lesson.
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+> *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
 

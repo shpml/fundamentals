@@ -33,7 +33,7 @@ Instructions
 
 Woohoo! You've done it! We now have a working contact book that allows us to store contacts, add contacts, list contacts, and find a contact by first or last name. Congratulations!
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+> *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
 
