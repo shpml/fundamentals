@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Fri Apr 15 2016 23:36:35 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Sat Apr 16 2016 17:16:39 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2254,7 +2254,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
 <p>Which will look like this when it is first loaded into the browser:</p>
-<p><img src="../assets/chapter5/thingstodo3.png" alt=""></p>
+<p><img src="../assets/elkwebdesign/example_lesson_08.png" alt=""></p>
 <h3 id="accessing-and-updating-content">Accessing and Updating Content</h3>
 <p>There are lots of properties and methods that allow us to read from or update the contents of a DOM node. Let&apos;s take a look at a couple now and then we&apos;ll expand upon these in the next lesson.</p>
 <h4 id="-innerhtml"><strong><code>innerHTML</code></strong></h4>
@@ -2263,7 +2263,7 @@
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
 </code></pre>
 <p>This would find the first <code>&lt;li&gt;</code> and change the HTML content to <code>Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.</code> The result will look like this:</p>
-<p><img src="../assets/chapter5/thingstodo4.png" alt=""></p>
+<p><img src="../assets/elkwebdesign/innerHTML.png" alt=""></p>
 <p>If we simply want to retrieve the HTML content to use later, we can grab the HTML content and save it in a variable like so:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML;
 </code></pre>
