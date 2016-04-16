@@ -307,7 +307,7 @@ In the following examples, we'll be using this HTML page as a reference:
 
 Which will look like this when it is first loaded into the browser:
 
-![](/assets/chapter5/thingstodo3.png)
+![](/assets/elkwebdesign/example_lesson_08.png)
 
 ### Accessing and Updating Content
 
@@ -324,7 +324,7 @@ document.getElementsByTagName('li')[0].innerHTML = 'Email <a href="mom@gmail.com
 ```
 This would find the first `<li>` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.` The result will look like this:
 
-![](/assets/chapter5/thingstodo4.png)
+![](/assets/elkwebdesign/innerHTML.png)
 
 If we simply want to retrieve the HTML content to use later, we can grab the HTML content and save it in a variable like so:
 
