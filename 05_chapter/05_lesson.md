@@ -35,7 +35,7 @@ Each of these values will start as `null`, until a user assigns them a new value
 To play around with this invisible TicTacToe board, we've provided some code:
 
 ```javascript
-var cellValue = function(key) {
+var cells = function(key) {
   switch(key) {
     case 'a': return null;
     case 'b': return null;
@@ -62,7 +62,7 @@ To assign a value (`x`, `o`) to any cell on the board, edit the return value for
 You would edit the switch statement like such:
 
 ```javascript
-var cellValue = function(key) {
+var cells = function(key) {
   switch(key) {
     case 'a': return null;
     case 'b': return null;
@@ -142,9 +142,9 @@ Let's dive just one level deeper, with a function to test if any one of the thre
 
 ```javascript
 var winsRowX = function() {
-  return allThreeX(cellValue('a'), cellValue('b'), cellValue('c')) ||
-  		allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
-  		allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
+  return allThreeX(cells('a'), cells('b'), cells('c')) ||
+  		allThreeX(cells('d'), cells('e'), cells('f')) ||
+  		allThreeX(cells('g'), cells('h'), cells('i'));
 }
 var allThreeX = function(cellOne, cellTwo, cellThree) {
 }
