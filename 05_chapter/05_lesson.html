@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.2" data-basepath=".." data-revision="Sat Apr 16 2016 17:16:56 GMT+0000 (UTC)">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="Thu Apr 28 2016 21:28:10 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1190,7 +1190,7 @@
 | g | h | i |
 </code></pre><p>Each of these values will start as <code>null</code>, until a user assigns them a new value, either &apos;o&apos; or &apos;x&apos;</p>
 <p>To play around with this invisible TicTacToe board, we&apos;ve provided some code:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cellValue = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cells = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key)</span> </span>{
   <span class="hljs-keyword">switch</span>(key) {
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;a&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;b&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
@@ -1210,7 +1210,7 @@
 | null |   o  | null |
 | null |   o  |   x  |
 </code></pre><p>You would edit the switch statement like such:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cellValue = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cells = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key)</span> </span>{
   <span class="hljs-keyword">switch</span>(key) {
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;a&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;b&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
@@ -1266,9 +1266,9 @@
 <p>If any of these three sets are all equal to <code>x</code>, then X has won via a row.</p>
 <p>Let&apos;s dive just one level deeper, with a function to test if any one of the three rows are equal to <code>x</code> (let&apos;s call it <code>allThreeX</code>).</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> winsRowX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-  <span class="hljs-keyword">return</span> allThreeX(cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;b&apos;</span>), cellValue(<span class="hljs-string">&apos;c&apos;</span>)) ||
-          allThreeX(cellValue(<span class="hljs-string">&apos;d&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;f&apos;</span>)) ||
-          allThreeX(cellValue(<span class="hljs-string">&apos;g&apos;</span>), cellValue(<span class="hljs-string">&apos;h&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>));
+  <span class="hljs-keyword">return</span> allThreeX(cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;b&apos;</span>), cells(<span class="hljs-string">&apos;c&apos;</span>)) ||
+          allThreeX(cells(<span class="hljs-string">&apos;d&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;f&apos;</span>)) ||
+          allThreeX(cells(<span class="hljs-string">&apos;g&apos;</span>), cells(<span class="hljs-string">&apos;h&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>));
 }
 <span class="hljs-keyword">var</span> allThreeX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(cellOne, cellTwo, cellThree)</span> </span>{
 }
