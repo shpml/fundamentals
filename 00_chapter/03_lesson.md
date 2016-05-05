@@ -48,13 +48,9 @@ If you have any concerns about your progress, feel free to reach out to your pro
 
 ### Getting Help
 
-#### Office Hours
-
-For extra help with WDI Fundamentals, drop by our WDI Fundamentals Office Hours on May 4 and May 11.  These one-hour sessions will be hosted on a video conference with your Instructor Associates, who will help you work through any challenges.  The first session on May 4 will cover the first five units, and the second session on May 11 will review the last five units.  To make the most of these Office Hours, come prepared with specific questions! Reach out to your producer with any questions.
-
 #### Slack
 
-You can also tune into the WDIr community on [Slack](00_chapter/intro.md) to ask for help or see what other classmates are talking about!
+You can tune into the WDI community on [Slack](00_chapter/intro.md) to ask for help or see what other classmates are talking about!
 
 #### Additional Resources
 
