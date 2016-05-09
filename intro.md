@@ -4,7 +4,7 @@
 
 Dear WDI Student,
 
-Congratulations on joining the Web Development Immersive Remote (WDIr) program at General Assembly!
+Congratulations on joining the Web Development Immersive program at General Assembly!
 
 Whether you're enrolled to attend classes remotely (WDIr) or on campus, we hope you find WDI to be as rewarding as it is challenging — we can assure you it will be both! There are a lot of technical ideas to cover and terms to learn before starting WDI and being unprepared can easily trip you up. To make sure you have the proper footing, we've prepared this ebook covering the fundamentals of web-based programming.
 
@@ -21,25 +21,14 @@ You're probably completing the pre-course work at home or in a coffee shop, and 
 
 ### Sign onto Slack!
 
-**If you're enrolled in WDI and will be attending classes on campus:** 
-
 * First check your email for an invitation from your producer.
-* Be sure to add a photo and "WDI Student - CITY" to your profile.
-* Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
- page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
- 
- 
-**If you're enrolled in WDIr and will be attending classes remotely:** 
- 
-* First check your email for an invitation from your producer.
-* Add a photo and "WDI Student - REMOTE" to your profile.
+* Be sure to add a photo and "WDI Student - CITY" or "WDI Student - REMOTE" (if you're going to be taking WDI remotely) to your profile.
 * Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
   page asks for your team domain, and join the [#wdiremotefundamentals](https://ga-students.slack.com/messages/#wdiremotefundamentals/) channel to meet your global classmates!
 
+**Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on slack: #wdiremotefundamentals**
 
 ![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
-
-**Note: WDI Remote students, make sure you sign up for #wdiremotefundamentals channel and NOT #wdi-fundamentals.**
 
 ## Feedback
 
