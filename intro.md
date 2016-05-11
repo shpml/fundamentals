@@ -28,7 +28,9 @@ You're probably completing the pre-course work at home or in a coffee shop, and 
 
 **Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on slack: #wdiremotefundamentals**
 
+<!---
 ![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
+-->
 
 ## Feedback
 
