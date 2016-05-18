@@ -79,14 +79,14 @@ if (x%3 === 0 && x%5 === 0) {
 
 ```javascript
 for (var i = 1; i <= max; i += 1) {
-  if (x%3 === 0 && x%5 === 0) {
+  if (i%3 === 0 && i%5 === 0) {
     result = "fizzbuzz";
-  } else if (x%3 === 0) {
+  } else if (i%3 === 0) {
     result = "fizz";
-  } else if (x%5 === 0) {
+  } else if (i%5 === 0) {
     result = "buzz";
   } else {
-    result = x
+    result = i
   }
   console.log(result);
 }
