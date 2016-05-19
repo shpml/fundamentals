@@ -677,7 +677,7 @@ if (x%3 === 0 && x%5 === 0) {
 ### 8.2.1
 
 ```javascript
-for (var i = 1; i <= max; i += 1) {
+for (var x = 1; i <= max; x += 1) {
   if (x%3 === 0 && x%5 === 0) {
     result = "fizzbuzz";
   } else if (x%3 === 0) {
@@ -730,17 +730,17 @@ var greatest = function(a, b, c){
 ```javascript
 var fizzBuzz = function(num){
   for (var i = 1; i <= num; i += 1) {
-    if (x%3 === 0 && x%5 === 0) {
+    if (i%3 === 0 && i%5 === 0) {
       result = "fizzbuzz";
-    } else if (x%3 === 0) {
+    } else if (i%3 === 0) {
       result = "fizz";
-    } else if (x%5 === 0) {
+    } else if (i%5 === 0) {
       result = "buzz";
     } else {
-      result = x
+      result = i
     }
     console.log(result);
-  } // yes, this is literally the same code from Ch4
+  } 
 };
 ```
 
