@@ -44,4 +44,4 @@ We'll check for these conditionals in the following units when we learn about `o
 You'll want to keep track of all your hard work, so don't forget to ACP: **Add**, **Commit** and **Push** that code to GitHub!
 
 ---
-[Next up: Chapter 5](../05_chapter/intro.md)
+[Next up: Chapter 10](../10_chapter/intro.md)
