@@ -21,7 +21,7 @@ Here is the pricing structure:
 Try your hand at writing pseudo code for this program. Remember, the goal is to think through the problem and break it down into simple steps.
 
 
-> Stuck? Check out the [solutions](exercise-solutions.md) to see what you can do.
+> Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.
 
 
 ---
