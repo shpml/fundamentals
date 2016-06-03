@@ -1,3 +1,7 @@
+>**We’ve recently updated Fundamentals. If you’d already started your pre-work and want to continue with the older version, you can find it [here](http://fundamentals.generalassemb.ly/v2.1/).**
+<br>
+<br>
+
 ![GA Logo](assets/GA_logo.png)
 <br>
 <br>
