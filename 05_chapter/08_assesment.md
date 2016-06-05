@@ -65,7 +65,7 @@ Your two links should have a orange background with white text!
 ...
 ```
 
-5) Add some backgournd-color to your footer. Add a background color of #808080;.
+5) Add some background-color to your footer. Add a background color of #808080;.
 
 6) All that's left to do is to align your header, footer and paragraph to center. Go ahead and do that!
 
