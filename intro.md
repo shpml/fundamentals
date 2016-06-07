@@ -1,6 +1,7 @@
-**We’ve recently updated Fundamentals. This is version 3.0. If you’d already started your pre-work and want to continue with the older version (version 2.1), you can find it [here](http://fundamentals.generalassemb.ly/v2.1/).**
+>**Caution** We’ve recently updated Fundamentals. This is version 3.0. If you’d already started your pre-work and want to continue with the older version (version 2.1), you can find it [here](http://fundamentals.generalassemb.ly/v2.1/).
 <br>
 <br>
+
 
 ![GA Logo](assets/GA_logo.png)
 <br>
