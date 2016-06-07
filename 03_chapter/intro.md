@@ -3,43 +3,28 @@
 ---
 
 ##### By the end of this Unit, you'll be able to:
-* Perform arithmetic and logical operations on data to produce new values
-* Concatenate two strings together in JavaScript
-* Write expressions that both assign and evaluate variables.
-* Explain what Null is and (generally) how it works.
-* Recognize the difference between 'truth-y' and 'false-y' values
+
+* Understand the difference between HTML and CSS.
+* Unlock millions of colors with RGB and Hex to design websites.
+* Learn to work with relative vs. absolute addresses.
+* Use classes and IDs to better organize and manipulate your code.
+* Add links, images and list items to your webpage.
+
+
+---
+# Intro to CSS
+
+As we mentioned in the Unit 3, HTML, or **H**yper**T**ext **M**arkup **L**anguage, is the standard language used to code web pages and all of the content on a website is added with HTML. CSS, **C**ascading **S**tyle **S**heets, decides how content written in an HTML document looks including stylistic layouts, colors, and fonts.
+
+In this unit, we'll learn more about CSS and styling to create better designed websites!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/32r0wluyl3?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+#### Checkpoint:
+
+* Why is it important to create separate HTML and CSS documents? Can you explain separation of concerns in greater detail?
 
 ---
 
-
-# JavaScript
-
-So far, you've learned the basics of:
-- how to create and edit files via the command line
-- how to track changes in your projects using git
-- how to share those projects with the world by publishing them on GitHub.
-
-Now it's time for us to move on to the main event: programming.
-
-It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems such as:
-
-- "How many students are here today?"
-- "How far away am I from the restaurant?"
-- "What's the fastest way to find the file I'm looking for?"
-
-Trying to "just start coding", without first figuring out the problem at hand is a surefire way to waste time, frustrate yourself, and create sub-optimal products. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
-
-In the rest of this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of these basics is incredibly important, and will translate to your work in other languages, whether you end up working in JavaScript, Ruby, Python, or any other language.
-
-<br>
-
-## Repl.it
-To start playing around with JavaScript, we'll be using a website called **[Repl.it](http://repl.it/languages/JavaScript)**.
-
-![repl.it Screenshot](../assets/chapter3/replit.png)
-
-As you can see in the screenshot above, repl.it features two main windows. On the right, with the black background, is the *console* - this tool (much like the Terminal on your computer) will accept a single instruction from the user and attempt to run it when the user hits "enter". On the left, with the white background, is the *editor*. The editor allows us to write several instructions in sequence; to execute these instructions, click the 'play' button near the top.
-
-To save your repl.it session, just click the 'save' button at the top - it'll generate a URL that you can bookmark and come back to any time you want.
-
-Ready to begin? [Let's go](02_lesson.md).
+[On to the lesson.](02_lesson.md)
