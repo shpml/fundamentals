@@ -1,4 +1,4 @@
-**We’ve recently updated Fundamentals. If you’d already started your pre-work and want to continue with the older version, you can find it [here](http://fundamentals.generalassemb.ly/v2.1/).**
+**We’ve recently updated Fundamentals. This is version 3.0. If you’d already started your pre-work and want to continue with the older version (version 2.1), you can find it [here](http://fundamentals.generalassemb.ly/v2.1/).**
 <br>
 <br>
 
@@ -28,16 +28,12 @@ You're probably completing the pre-course work at home or in a coffee shop, and 
 * First check your email for an invitation from your producer.
 * Be sure to add a photo and "WDI Student - CITY" or "WDI Student - REMOTE" (if you're going to be taking WDI remotely) to your profile.
 * Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
-  page asks for your team domain, and join the [#wdiremotefundamentals](https://ga-students.slack.com/messages/#wdiremotefundamentals/) channel to meet your global classmates!
+  page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/#wdi-fundamentals/) channel to meet your global classmates!
 
-**Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on slack: #wdiremotefundamentals**
+**Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on slack: #wdi-fundamentals**
 
 <!---
 ![Step-by-step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
 -->
-
-## Feedback
-
-We need your help to improve this material!  Please don't hesitate to reach out by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly).
 
 [Ok, let's get started!](00_chapter/02_lesson.md)
