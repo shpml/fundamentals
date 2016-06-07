@@ -1,28 +1,34 @@
-**WDI Fundamentals Unit 4**
+**WDI Fundamentals Unit 5**
 
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Use conditional statements to control the flow of program execution
-* Use loops to repeat an operation or action based on the value of a condition
+
+* Implement the display property to decide whether elements are inline or block.
+* Use semantic elements to properly organize your page.
+* Start taking control of your page layout with margin, padding, and borders.
+* Prioritize content based on its placement on a webpage.
+
+---
+#Layout Basics
+
+At this point in our journey with HTML and CSS, we might want to start moving things around a bit on our webpage. Before that, we have to understand that HTML elements function and behave differently within the browser. HTML elements can either be inline and block elements. What's the difference? Is a header tag an inline or a block element? When CSS is applied, how will it render in the browser? These are all questions we'll explore below!
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/5jz9br5kiz?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+
+#### Checkpoint:
+
+* Which of these are inline elements? block elements?
+
+  * `<a>`
+  * `<p>`
+  * `<img>`
+  * `<strong>`
+  * `<h3>`
+  * `<ul>`
+
 
 ---
 
-In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Kind of like a recipe, no?
-
-Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA"
-> ...
->
-> 3: Whisk eggs, milk, honey and kosher salt until eggs are no longer visible.
->
-> 4: Dip your bread slices in the custard. If you're using a pre-sliced loaf, and the slices are thin, a short dip (just enough to coat both sides) should be enough; however, if your slices are thick, you may want to give the bread a minute or two to soak up the custard.
->
-> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
->
-> ...
-
-Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **control flow**, because it specifies the flow of the computer's actions through the program.
-
-In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
-
-[Let's get started.](02_lesson.md)
+[On to the lesson.](02_lesson.md)

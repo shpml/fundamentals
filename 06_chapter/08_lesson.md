@@ -2,119 +2,170 @@
 
 ---
 
-# Collections - Associative Arrays
+##Creating files and folders
 
-## Drawbacks of Ordinary Arrays
+We now know how to find our way around this mysterious world called the command line. Let's perform some lasting actions, like creating some files and folders. Before we start, let's make sure that we are in our home folder like so:
 
-So far, all of the arrays that we've seen have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:
-
-Say we have a line of people waiting in line to buy the latest iPhone. We'll model these people using the array below.
-
-```javascript
-var friends = ['Rachel', 'Monica', 'Phoebe', 'Joey', 'Chandler', 'Ross'];
+```
+$ cd ~
 ```
 
-We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.
+> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer that contains your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.
 
-But suppose that Monica decides she's waited long enough for an iPhone, and decides to leave the line and get an Android phone instead. What happens when Monica leaves?
+The command above, regardless of where we currently are, will take us to our
+home folder.
 
-```javascript
-friends.splice(1, 1); // ["Monica"]
-friends; // ['Rachel', 'Phoebe', 'Joey', 'Chandler', 'Ross']
+Great! Now that we're in our home folder, let's create a file.
+
+```
+$ touch joke.txt
 ```
 
-Well, Rachel stays in the same place. But suddenly, Phoebe isn't at index 2 - she's now at index *1*, while *Joey* is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, as it were, 'disarray'.
+The `touch` command creates files for us - in this case, we made a file called `joke.txt`. If we try to `touch` a file that already exists, the file will not be overwritten.
 
-This system does a good job of keeping track of everyone's order, but its biggest drawback is that our method of referencing any element is tied to its position *rather than the element itself*. Fortunately, there are other ways of keeping track of things - for example, labeling them.
+Let's open `joke.txt` in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!
 
-Let's imagine that every person in this totally hypothetical office has a 'lunch' that they keep in the fridge.
-
-|  Label    |  Value          |
-|:-------:  |:-------:        |
-| Matt    | tuna sandwich |
-| Floyd   | salad         |
-| Shannon | soup          |
-| Josh    | pasta         |
-
-If Floyd eats his lunch, does it affect anyone else's food? Nope! The *association* between each label (read: reference) and the food (read: value) it refers to is preserved.
-
-|  Label      |  Value  |
-|:-------:    |:-------:|
-| Matt      | tuna sandwich |
-| Floyd     | null            |
-| Shannon   | soup          |
-| Josh      | pasta         |
-
-This is the basic principle underlying an **associative array** (also known in some languages as a *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
-
-As you start building applications, you'll find many situations where you'll want to associate keys to values.
-
-## Associative Arrays in JavaScript
-
-Much like a normal array is written using square braces (`[...]`), an associative array is written using curly braces (`{...}`). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (`:`).
-
-Here's what the 'lunches' table above might look like as an associative array.
-
-```javascript
-var lunches = { 'Josh' : 'pasta',
-                'Floyd' : 'salad',
-                'Matt' : 'tuna sandwich',
-                'Shannon' : 'soup' };
+```
+$ open joke.txt
 ```
 
-Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
+If you're following along using **Git Bash on Windows**, that probably didn't work! Instead, you'll want to use the following command to open the file. To do so, just type name the file you want to open:
 
-  ```js
-  lunches['Matt']
-  ```
-
-If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.
-
-  ```js
-  lunches['Matt'] = 'turkey sandwich'
-  ```
-
-Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.
-
-  ```js
-  lunches['Elena'] = 'meatloaf'
-  ```
-
-Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
-
-```javascript
-var candidateData = {
-  'name' : "John Doe",
-  'age' : 32,
-  'isFullTime' : true,
-  'pastEmployers' : ['Microsoft','Google','Amazon'],
-  'yearsExperience' : {
-    'ruby' : 3,
-    'java' : 6,
-    'javascript' : 5
-    }
-  }
 ```
->**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
-
-### Test Yourself
-Consider the following associative array.
-
-```javascript
-var pet = {
-  'species' : 'iguana',
-  'gender' : 'female',
-  'age' : 12,
-  'name' : 'Godzilla'
-  }
+$ joke.txt
 ```
-What code could we write to perform the following tasks?
-* Retrieve the value for 'name' from the associative array.
-* Assign the value for 'age' to 13.
-* Add a new key 'favoriteFood', with value 'crickets'
 
->**NOTE** What we've called an associative array above are actually just JavaScript *objects*. You'll learn all about objects throughout WDI, and use them for far more complex use cases than tracking everyone's lunches.
+Your text editor should open up this file now. Go ahead and type this hilarious joke in there:
+
+```
+A man walks into a bar. The other one ducks.
+```
+
+Now that you have a joke, save that file, quit your text editor application, and return to your command line.
+
+Let's see what's inside our `joke.txt` file now.
+
+```
+$ cat joke.txt
+```
+
+There's our joke!
+
+```
+A man walks into a bar. The other one ducks.
+```
+
+We should probably make a folder called `funny_things` to put this joke in.
+
+```
+$ mkdir funny_things
+```
+
+The `mkdir` command is used to create a specified folder. If the specified folder already exists, it will not be overwritten.
+
+
+##Moving and Removing Things
+
+Before we move on, let's navigate to our home folder.
+
+```
+$ cd ~
+```
+
+We made a folder for our joke called `funny_things` (you can check that it is
+there by running the `ls` command). How do we move our `joke.txt` file into this
+folder? If we were using Finder, we might use our mouse to drag and drop
+`joke.txt` into `funny_things`. Can we achieve the same action with our command
+line? Of course!
+
+```
+$ mv joke.txt funny_things/
+```
+
+Voila! Our hilarious joke has been moved, rightfully, into the `funny_things`
+folder.
+
+> The `mv` command moves the specified files or folders to the specified destination.
+
+This is the first time we've used a command that needed two pieces of
+information from us, or two arguments. The first argument is "what to move", and
+the second argument is "where to move it to".
+
+>**Note** Notice how we specified we were moving our `joke.txt` into `funny_things/`. The `/` on the end of our folder's name specifies that this is a folder; not a file! Without it, you may unexpectedly rename your `joke.txt` to a new file called `funny_things`!
+
+
+Let's navigate to our `funny_things` folder and check the contents to make sure that this worked.
+
+```
+$ cd funny_things
+$ ls
+```
+
+Copying files is similar to moving them. Let's make a copy of our joke.
+
+```
+$ cp joke.txt joke2.txt
+```
+
+> The `cp` command is used to copy the specified files or folders to the specified location.
+
+After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. In this case, notice how, the second argument was a filename and not a folder
+name. It turns out that the `mv` and `cp` commands are quite smart. When moving or copying
+a file, if the second argument is a **folder**, the specified file is moved or
+copied to that folder. If the second argument is a **filename**, the file in the first argument
+is moved or copied to a file with the filename specified in the second argument. Hence, when we copied
+our joke, our file `joke.txt` was copied to another file called `joke2.txt`.
+
+Perhaps we should make another folder inside `funny_things` called `jokes`, and
+put our joke in there. After all, we could have funny jokes, funny pictures, and much
+more. In order to achieve this, we're going to follow a series of long-winded
+steps so we may familiarize ourselves with some more useful commands.
+
+First, we're going to get rid of our duplicate joke file.
+
+```
+$ rm joke2.txt
+```
+
+> The `rm` command, which stands for remove, deletes the specified files
+> from your computer. `rmdir` (remove directory), deletes specified folders
+> if they are empty. **Be careful with these commands!** These actions
+> do not move files to your Trash, where you can recover them. These
+> actions **permanently remove** the specified files and folders. They are
+> **irrecoverable**.
+
+Now that all the copycats are out of the way for good, let's make a `jokes`
+folder and put our joke inside.
+
+```
+$ mkdir jokes
+$ mv joke.txt jokes/joke.txt
+```
+
+If you are trying to copy or remove folders, and not files, we need to add "an
+option" to our command. Options are extra settings that we want to apply to our
+commands. Options given to commands are always of the format `--word` or `-letter`.
+For example, let's try to copy our jokes folder.
+
+```
+$ cp -r jokes copy_of_jokes
+```
+
+> The `-r` option stands for "recursive", and must be applied to the `cp`
+> command when copying folders.
+
+This is because not only do we want to copy the folder, we also want to
+recursively copy the contents of that folder, and the contents of any folders
+inside as well.
+
+The same principle applies when removing a folder with files. The `rm -r` command will remove all of a folder's content as well as the folder itself.
+
+```
+$ rm -r copy_of_jokes
+```
+
+Note that the `mv` command does not need a `-r` option to move folders.
 
 ---
 
-[One last exercise - this time on associative arrays.](10_exercise.md)
+[Here's another exercise for you](09_exercise.md) - give it a shot.

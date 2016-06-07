@@ -4,32 +4,26 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now things are starting to heat up! We'll be taking a short break from our contacts book to get some practice iterating over arrays.
+We've gone ahead and created a new directory for you, called <em>World</em>. Download it <a href="http://generalassembly.github.io/prework/assets/activity/World.zip">here</a>.
 
-Instructions
+When you double-click on the zip file, it will create a new folder next to the zip file in your Downloads folder.
 
-1. Open a new session in [repl.it](https://repl.it/).
-2. Write the code to perform the actions listed below, using repl.it's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
+Now that you can picture where the file is located, open the Terminal application
 
-### Let's get started!
+Using the command line alone,
 
-#### Part 1
+1. Navigate into your `Downloads` directory
 
-1. Create an array `cups` containing numbers 1 - 10.
-2. Create an empty array `ounces`.
-3. Write a function `convertToOunces`. It should iterate through the cups array, convert each item from cups to ounces, and then add that item to the ounces array. Return the value of ounces after looping through the items and before the function ends.
+2. Move into the `World` directory from the `Downloads` directory
 
-#### Part 2
+3. List the contents of the `World` directory
 
-1. Create an array `scores` containing the numbers 83, 40, 55, 72, 59, 88, and 99.
-2. Write a function `passOrFail`. It should loop through the scores array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the scores array.
+4. In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`.  Using only the command line, find out where in the World is Carmen Sandiego.
 
-Feeling comfortable with these exercises? Take a look at the last lesson!
+*Don't delete the World folder yet! We'll be working with it in another exercise in this unit.*
 
 > *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
 
-[Ready for the last lesson? Here it comes!](08_lesson.md)
+[Continue on the next lesson.](08_lesson.md)

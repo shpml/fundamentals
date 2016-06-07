@@ -6,6 +6,8 @@
 > Fundamentals is our global WDI prework, focused on programming fundamentals, source control, and command line interaction
 
 The units in Fundamentals focus on:
+- HTML
+- CSS
 - Command Line
 - Git and Version Control
 - Writing Expressions
