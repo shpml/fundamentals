@@ -16,7 +16,7 @@ For example, an opening header tag (`<h1>`) and closing header tag (`<\h1>` ) te
 
 #### Checkpoint:
 
-* Which heading tag is larger? `<h3` or `<h6>`?
+* Which heading tag is larger? `<h3>` or `<h6>`?
 * What is the default name for homepages on the web?
 * How should you save your html file?
 * How do you create placeholder for a link?
