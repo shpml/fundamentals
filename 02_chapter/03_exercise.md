@@ -22,7 +22,7 @@ by a talented student
 Built with WDI at GA.
 ```
 
-<a class="jsbin-embed" href="http://jsbin.com/zevojec/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<a class="jsbin-embed" href="http://jsbin.com/xuhubej/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.37.0"></script>
 
 2 . Go ahead and open a *level one heading tag* at the very beginning where it says "My first website!"
 
