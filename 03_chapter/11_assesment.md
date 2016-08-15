@@ -2,7 +2,7 @@
 
 ---
 
-# Principles of HTML & CSS 
+# Principles of HTML & CSS
 
 We now know how CSS plays a crucial role in the creative aspect of web development. In the following assignment, you'll use your freshly acquired skills to create the cards of your memory game and define the theme to the game.
 
@@ -20,18 +20,18 @@ As you move through the next several units, you'll be building parts of a browse
 ##### Below are the steps to complete the assignment.
 
 1) Open up your previous index.html file in Sublime where you created your memory game page.
+
 2) Underneath your instructions and within your body tag, create five divs like so:
 
 ```html
-...
-  <div></div>
+<body>
+  <div>
     <div></div>
     <div></div>
     <div></div>
     <div></div>
-  <div></div>
-  </body>
-...
+  </div>
+</body>
 ```
 
 You'll use these divs to create a "board" and the individual "cards" that will be displayed on the webpage.
