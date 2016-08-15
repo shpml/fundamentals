@@ -74,7 +74,7 @@ In order to backup your code and track your work, you'll want to commit the chan
 
 1) Stage your code
 
-`git add -a`
+`git add -A`
 
 2) Create a version of your staged code
 
