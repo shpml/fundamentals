@@ -148,7 +148,7 @@ The HTML:
 
 	<form>
 		<h1>Email Form</h1>
-		<input type="email" placeholder="Email Address">
+		<input id="email" type="email" placeholder="Email Address">
 		<button type="submit">Subscribe</button>
 		<p id="message"></p>
 	</form>
