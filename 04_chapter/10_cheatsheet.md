@@ -17,13 +17,13 @@
 * This element wraps the content at the bottom of your web page. This element often contains copyright information, links to career pages, contact information, terms of use, etc.
 
 #### Main
-* These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the <header> and the <footer>.
+* These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the `<header>` and the `<footer>`.
 
 #### Aside
-* These elements contain all the secondary content between the <header> and <footer>, supplemental information like recommended stories or archived blog links.
+* These elements contain all the secondary content between the `<header>` and `<footer>`, supplemental information like recommended stories or archived blog links.
 
 #### Nav
-* Any navigational links that help users get around your page should be wrapped in <nav> tags.
+* Any navigational links that help users get around your page should be wrapped in `<nav>` tags.
 
 #### Section
 * These elements are used to group the content of a page into related chunks.

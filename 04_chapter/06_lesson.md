@@ -26,7 +26,7 @@ The first three semantic elements you should know are `<header>` `<footer>`, `<m
   * This element wraps the content at the bottom of your web page. It often contains copyright information, links to career pages, contact information, terms of use, etc.
 
 #### `<main> </main>`
-  * These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the <header> and <footer>.
+  * These elements contain all the primary content — articles, blog posts, images, videos, etc. — between the `<header>` and `<footer>`.
 
 #### `<aside> </aside>`
   * These elements contain all the secondary content between the `<header>` and `<footer>`. They wrap secondary content and supplemental information, like recommended stories or archived links.
@@ -46,7 +46,7 @@ You may have noticed that certain elements, particularly `<section>`, `<nav>`, a
 Other than `<main>`, which should only appear once in an HTML page, semantic elements can recur as many times as necessary throughout your page. You'll often find nesting certain semantic elements within other semantic elements can help with organization. For example, a long `<article>` element might be broken down with several `<section>` elements or even its own `<header>` and `<footer>` elements nested inside.
 
 #### `<nav> </nav>`
-Any navigational links that help users get around your page should be wrapped in <nav> tags.
+Any navigational links that help users get around your page should be wrapped in `<nav>` tags.
 
 #### `<section> </section>`
 These elements are used to group the content of a page into related chunks. Section tags would work okay for this example page; however, there's an even better semantic element available...
