@@ -1,6 +1,8 @@
- **WDI Fundamentals Unit 10**
+**WDI Fundamentals Unit 10**
 
- ---
+---
+
+If you don't see the quiz below, please refresh the page.
 
 <!-- Change the width and height values to suit you best -->
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/f7AlW3" data-text=" Unit 10" style="width:100%;height:700px;"></div>

@@ -2,7 +2,7 @@
 
 ---
 
-# Collections - Associative Arrays
+# Collections - Objects
 
 ## Drawbacks of Ordinary Arrays
 
@@ -45,15 +45,15 @@ If Floyd eats his lunch, does it affect anyone else's food? Nope! The *associati
 | Shannon   | soup          |
 | Josh      | pasta         |
 
-This is the basic principle underlying an **associative array** (also known in some languages as a *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
+This is the basic principle underlying an **Object** (also known in some languages as a *hash*). An object *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
 
 As you start building applications, you'll find many situations where you'll want to associate keys to values.
 
-## Associative Arrays in JavaScript
+## Objects in JavaScript
 
-Much like a normal array is written using square braces (`[...]`), an associative array is written using curly braces (`{...}`). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (`:`).
+Much like a normal array is written using square braces (`[...]`), an object is written using curly braces (`{...}`). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (`:`).
 
-Here's what the 'lunches' table above might look like as an associative array.
+Here's what the 'lunches' table above might look like as an object.
 
 ```javascript
 var lunches = { 'Josh' : 'pasta',
@@ -62,7 +62,7 @@ var lunches = { 'Josh' : 'pasta',
                 'Shannon' : 'soup' };
 ```
 
-Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
+Elements in objects are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
 
   ```js
   lunches['Matt']
@@ -80,7 +80,7 @@ Adding new key-value pairs looks just like assignment - you simply set your new 
   lunches['Elena'] = 'meatloaf'
   ```
 
-Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
+Keys are strings and basically anything can be used as a value (including an array, or even another object). Here's an example of all of the above:
 
 ```javascript
 var candidateData = {
@@ -95,10 +95,10 @@ var candidateData = {
     }
   }
 ```
->**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
+>**NOTE** Ordinary arrays and objects handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
 
 ### Test Yourself
-Consider the following associative array.
+Consider the following object.
 
 ```javascript
 var pet = {
@@ -109,12 +109,12 @@ var pet = {
   }
 ```
 What code could we write to perform the following tasks?
-* Retrieve the value for 'name' from the associative array.
+* Retrieve the value for 'name' from the object.
 * Assign the value for 'age' to 13.
 * Add a new key 'favoriteFood', with value 'crickets'
 
->**NOTE** What we've called an associative array above are actually just JavaScript *objects*. You'll learn all about objects throughout WDI, and use them for far more complex use cases than tracking everyone's lunches.
+>**NOTE** You'll learn more about objects throughout WDI, and use them for far more complex use cases than tracking everyone's lunches.
 
 ---
 
-[One last exercise - this time on associative arrays.](10_exercise.md)
+[One last exercise - this time on objects.](10_exercise.md)

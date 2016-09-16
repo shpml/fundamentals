@@ -168,4 +168,4 @@ document.getElementsByTagName('a')[0].removeAttribute('id');
 
 
 ---
-[Let's apply what we've learned about Functions to our 'Rock, Paper, Scissors' project.](14_assessment.md)
+[Let's put this into practice!](09_assessment.md)

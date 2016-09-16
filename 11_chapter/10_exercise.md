@@ -19,7 +19,7 @@ Instructions
 
 ### Let's get started!
 
-* Create an array called `contacts`. The contacts array should contain three associative arrays, one for each contact stored in our book. Here's the contact information for each person:
+* Create an array called `contacts`. The contacts array should contain three objects, one for each contact stored in our book. Here's the contact information for each person:
 
 | 'firstName' |  'lastName' |  'phone'        |    'email'           |
 |-            |-            |-                |-                     |
@@ -27,7 +27,7 @@ Instructions
 | 'Jane'      |   'Doe'     |'(312) 641-2203' |'janedoe@email.com'   |
 | 'Suzie'     |   'Smith'   |'(415) 604-4219' |'suziesmith@email.com'|
 
-* Next let's create a function `addContact` that accepts one parameter, `newContact`. This function should add the newContact to the end of the contacts array and return the contacts array. When you're done, try calling the function and passing in an associative array as a parameter to make sure it's working.
+* Next let's create a function `addContact` that accepts one parameter, `newContact`. This function should add the newContact to the end of the contacts array and return the contacts array. When you're done, try calling the function and passing in an object as a parameter to make sure it's working.
 * Now let's create a `listContacts` function to list our contacts. This function should loop through the contacts array and logs the first and last name for each contact to the console, i.e. 'John Doe'.
 * Now let's create a function that will search through our contacts and return the contact info for any person that has a matching first or last name. Create a `search` function, which will take one parameter, `name`. In the `search` function, use a loop to iterate through the contacts array and return the current contact if their first *or* last name matches the `name` parameter.
 
