@@ -47,16 +47,16 @@
     ```
   * To change the way that you iterate through the array, just change the settings of your `for` loop.
 
-## Collections - Associative Arrays
+## Collections - Objects
 ### Drawbacks of Ordinary Arrays
   * A typical array works by referencing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.
-  * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
-### Associative Arrays in JavaScript
-  * An associative array can be defined by enclosing a list of key-value pairs in curly braces (`{...}`). Each key-value pair is written as `someKey : someValue`, and each pair is separated by commas.
-  * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the associative array. e.g. <code>myassociativeArray['myKey']</code>
-  * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray['myKey'] = 'aValue'</code>
-  * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray['someNewKey'] = 'someNewValue'</code>
-  * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
+  * An object generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
+### Objects in JavaScript
+  * An object can be defined by enclosing a list of key-value pairs in curly braces (`{...}`). Each key-value pair is written as `someKey : someValue`, and each pair is separated by commas.
+  * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the object. e.g. <code>myObject['myKey']</code>
+  * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myObject['myKey'] = 'aValue'</code>
+  * Adding a new key-value pair to an object is easy - it looks just like an assignment operation. e.g. <code>myObject['someNewKey'] = 'someNewValue'</code>
+  * Nesting for objects works *exactly* like it does for ordinary arrays.
 
 ---
 [Project Time!](12_assessment.md)

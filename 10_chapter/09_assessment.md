@@ -10,7 +10,7 @@ JavaScript comes with several "built-in" functions that we can call on using dot
 
 For example, let's look at `document.createElement('div')` which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
 
-- `document` is a readily available JS object. (An object is basically an associative array It stores key-value pairs, and unlike arrays, is not ordered).  
+- `document` is a readily available JS object. (An object is basically an array that stores key-value pairs. Unlike regular arrays, the contents of an object are not ordered).  
 - `createElement` is the method it comes with
   - This method performs the functionality of creating a new HTML element.
   - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
