@@ -719,9 +719,6 @@ var greatest = function(a, b, c){
     greatest = c;
   }
   return greatest;
-  // using ternary operations as a solution
-  // is more advanced and therefore not expected
-  // e.g. return (a > b)? a : ((b > c)? b : c);
 };
 ```
 
