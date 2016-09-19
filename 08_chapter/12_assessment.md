@@ -57,8 +57,7 @@ var cardOne = "queen";
 cardOne == cardTwo
 ```
 
-6) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to
-And the ?
+6) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king, what does this evaluate to?
 
 ```js
 cardOne == cardFour
