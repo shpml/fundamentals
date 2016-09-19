@@ -45,7 +45,7 @@ If Floyd eats his lunch, does it affect anyone else's food? Nope! The *associati
 | Shannon   | soup          |
 | Josh      | pasta         |
 
-This is the basic principle underlying an **myObject** (also known in some languages as a *hash*). An object *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
+This is the basic principle underlying an **Object** (also known in some languages as a *hash*). An object *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
 
 As you start building applications, you'll find many situations where you'll want to associate keys to values.
 

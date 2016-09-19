@@ -14,7 +14,7 @@ basicArray[2] = "Lake Oswego";
 console.log(basicArray.length);
 // --> Outputs 3, as expected
 
-var object = new Array();
+var object = {};
 object['city'] = "Portland";
 object['state'] = "Oregon";
 object['country'] = "United States";
@@ -23,14 +23,9 @@ console.log(object.length);
 
 // we can also access values through .property notation ?!
 console.log("City is: " + object['city']);
-console.log("City is: " + object.city); 
+console.log("City is: " + object.city);
 
 // outputs
 // --> City is: Portland
 // --> City is: Portland
 ```
-
-
-
-
-
