@@ -26,7 +26,7 @@ In this section, you'll be working to create the cards that will make up your me
 
 ##### Below are the steps to complete the assignment:
 
-1) Open you Sublime and create a new file called main.js
+1) Navigate to the main.js file in Sublime.
 
 2) Create four variables that simulate the cards in your game.
 
@@ -41,7 +41,7 @@ Here's an example of one card:
 var cardOne = "queen";
 ```
 
-2) Link the main.js file to your index.html file.
+2) Make sure you've linked your main.js file to your index.html file.
 
 3) Now that you have the four cards, you'll want to compare the variables to check for equality.
 

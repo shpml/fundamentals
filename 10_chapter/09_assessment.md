@@ -31,35 +31,31 @@ To complete this assignment, you will need to utilize these methods.
 
 Before you start, go ahead and comment out the `if` statement from the last assignment. We'll work with it to finalize our memory game during the next unit.
 
-1 ) Open your `index.html` and look for your `<div>` with a class of 'board'. We need to give this div an **id** so that we may _get_ it using Javascript.  
+1 ) Open your `index.html` and look for your `<div>` with a class of `board`. We need to give this div an **id** so that we may _get_ it using Javascript.  
 
-2 ) Give your div an `id` of `game-board'.
+2 ) Give your div an `id` of `game-board`.
 
-3 ) Save your changes!
+3 ) We're going to generate cards using Javascript instead of using our existing `div` elements with the class `card` in html. Comment out any `div` with the `card` class.
+
+4 ) Save your changes!
 
 ###### Create the HTML for the cards using Javascript:
 
 4 ) Get an element with the id of `game-board` and set it to a variable.
 
-5 ) Assuming your memory card game consists of four cards, create a `for loop` that makes an HTML element for each card. Each HTML element should be a `div`. Each element should also have the class `card` (this will help when you add CSS).
+5 ) Assuming your memory card game consists of four cards, create a `for loop` that makes an HTML element for each card. Each HTML element should be a `div` as well as have the class `card` (this will help when you add CSS).
 
-6 ) Append each newly created card to the `div` that has the class `board`
+6 ) Append each newly created card to the `div` that has the id `game-board`.
 
 ###### Create functions to organize your code
 
-7 ) Create a function called `createBoard` in your Javascript file. This function will eventually create the HTML for your cards. It will then append the resulting HTML to your `div` that has the class board.
+7 ) Create a function called `createCards` in your Javascript file. This function will contain the code you just wrote to generate your cards. 
 
-8 ) Inside of your `createBoard` function, you need to...
+8 ) Your `createCards` function should contain any Javascript associated with the creation of the `div` elements with the class `card`.
 
-9 )  Create a `for loop` that will iterate four times.
+9 ) Be sure to execute/fire your `createCards` function so it runs!
 
-10 ) For each iteration in your loop, you will create the required HTML for each card using Javascript.
-
-11 ) You will then append this HTML to the board. All of this logic should be inside the `for loop`.
-
-12 ) Once you've completed that, you will execute/fire your `createBoard` function so it runs!
-
-13) Once you've done that, your board will be created! Be sure to check your page in a web browser to verify that everything works as intended!
+10) Once you've done that, your cards will be created! Be sure to check your page in a web browser to verify that everything works as intended!
 
 #### Deliverable
 
