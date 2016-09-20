@@ -36,6 +36,9 @@ div {
 * How would set a solid border of red that's 4px for an `p` element?
 * How would you center a wrapper for your website?
 
+#### Further Reading
+* Learn more about CSS shorthand on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+
 ---
 
 
