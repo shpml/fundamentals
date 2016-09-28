@@ -56,9 +56,9 @@ All card elements will share certain characteristics such as: width, border-radi
 
 4) Remember, if you still have CSS in our index.html when you changed the font color in the previous unit exercise. Go ahead move over this CSS from `<style>` into the `style.css`.
 
-8) Now, go back to your index.html and connect your css file using `<link>` to reference it.
+5) Now, go back to your index.html and connect your css file using `<link>` to reference it.
 
-9) Switch up the named color values to RGB and Hex values. If you can't figure out the exact RGB or Hex value to match the color, don't sweat it, just use something close. The key is just to practice implementing a more technical value.
+6) Switch up the named color values to RGB and Hex values. If you can't figure out the exact RGB or Hex value to match the color, don't sweat it, just use something close. The key is just to practice implementing a more technical value.
 
   * Add the rgb(2, 132, 130) to your level one heading.
 
