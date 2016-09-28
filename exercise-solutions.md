@@ -707,8 +707,8 @@ var hotOrNot = function(temp){
   //// using an `if` statement is also acceptable
 };
 var threeIfNull = function(num){
-  return num || 3;
-  //// using an `if` statement is also acceptable
+  if(num===null) return 3
+  return num
 };
 var greatest = function(a, b, c){
   greatest = a;
