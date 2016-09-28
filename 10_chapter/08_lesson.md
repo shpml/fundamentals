@@ -190,7 +190,7 @@ ___
 
 Any time there is even the *potential* for a method to return more than one element, such as with `getElementsByClassName()`, `getElementsByTagName()`, and `querySelectorAll`, a NodeList will be returned, *even if only one element is found that matches the query*.
 
-These NodeLists are **collections** that are numbered similar to the arrays we will be looking at in Unit 6.
+These NodeLists are **collections** that are numbered similar to the arrays we will be looking at in Unit 11.
 
 When we get this list, we can select a single item from that list to work with using array syntax – a set of square brackets.
 
