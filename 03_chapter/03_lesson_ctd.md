@@ -10,8 +10,8 @@ So what’s the recommended approach when adding these selectors to your element
 ## Use Element Selectors
 Ask yourself if you can apply the style to the element selector instead of creating a class or ID. If so, use the element selector to style your elements.
 
-## Use IDs Sparingly
- Truly unique elements on the page are rare– so use classes instead. This helps with scalability because it will allow you to use the style for another element. You'll typically find the styles that you're putting in an ID can come in handy in another section of your current page, or even another page on your website. 
+## Don't Use ID's
+Although ID's are technically allowed, they are almost never used by professional developers– so use classes instead. You'll typically find the styles you're applying to an element can come in handy in another section of your current page, or even another page on your website. Using classes will help with the scalability of your design.
 
 
 Let's take a look at an example.
