@@ -23,13 +23,13 @@ With our newfound knowledge, we can go ahead and create the foundation of our me
 
 3) Set up the your HTML boilerplate code.
 
-2) Add a `title` element so the name of the game shows in the browser tab.
+4) Add a `title` element so the name of the game shows in the browser tab.
 
-3) Create level one heading tags and add in the name of the game within those tags. In this case, the you can just title it: "Memory Game."
+5) Create level one heading tags and add in the name of the game within those tags. In this case, the you can just title it: "Memory Game."
 
-4) Add in a level two heading tag that says "Instructions."
+6) Add in a level two heading tag that says "Instructions."
 
-5) Type in the text below your level two heading tag in between paragraph tags.
+7) Type in the text below your level two heading tag in between paragraph tags.
 
 *Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.*
 

@@ -704,11 +704,11 @@ var areBothEven = function(a, b){
 };
 var hotOrNot = function(temp){
   return (temp > 75)? "hot" : "not hot";
-  //// using an `if` statement is also acceptable
+  // using an `if` statement is also acceptable
 };
 var threeIfNull = function(num){
-  return num || 3;
-  //// using an `if` statement is also acceptable
+  if(num===null) return 3
+  return num
 };
 var greatest = function(a, b, c){
   greatest = a;

@@ -39,9 +39,9 @@ Example:
 
 > **NOTE** One more thing! Sometimes you won't know which link destinations you want until you've finished coding your site. In those cases, you can substitute a hash symbol as a placeholder, like so: `Send me an <a href="#">email</a>.`
 
-5 . Now, wrap an empty *anchor* around the word "email" on the second line.
+6 . Now, wrap an empty *anchor* around the word "email" on the second line.
 
-6 . Put `mailto`: in front of your email address, so the browser knows it's not a web page!
+7 . Put `mailto`: in front of your email address, so the browser knows it's not a web page!
 
 `Send me an <a href="mailto:me@email.com"> email </a>.`
 
