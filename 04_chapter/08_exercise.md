@@ -64,7 +64,7 @@ Flip on over to your CSS tab.
 
 6 . Set its text-transform property to uppercase.
 
-7 . Let's keep styling both headings. We'll use CSS shorthand to "underline" each one with a `border-bottom`.Give h1, h2 a border-bottom property that's 4px thick, solid, and black.
+7 . Let's keep styling both headings. We'll use CSS shorthand to "underline" each one with a `border-bottom`. Give h1, h2 a border-bottom property that's 4px thick, solid, and black.
 
 8 . Set h1, h2's display to inline-block.
 

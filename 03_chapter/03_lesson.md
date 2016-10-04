@@ -19,13 +19,17 @@ So what’s the recommended approach when adding these selectors to your element
 ## Use Element Selectors
 Ask yourself if you can apply the style to the element selector instead of creating a class or ID. If so, use the element selector to style your elements.
 
-## Don't Use ID's
-Although ID's are technically allowed, they are almost never used by professional developers– so use classes instead. You'll typically find the styles you're applying to an element can come in handy in another section of your current page, or even another page on your website. Using classes will help with the scalability of your design.
+## Don't Use ID's in CSS
+Although ID's are technically allowed in CSS, they are almost never used by profession developers because of their specificity. ID selectors have the ability to override class selectors– making maintenance of a large codebase difficult. Using classes will help with the scalability of your design, and help you write cleaner code.
+
+## Using ID's in JavaScript
+In JavaScript, ID's are valuable to help you access and alter different elements on your page. This process is called DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript.
 
 
 #### Checkpoint:
 
-* Why should you always choose a Class over an ID?
-* How do add a class attribute?
+* When would you choose a class over an ID?
+* How do you add a class attribute?
+
 
 [On to the next lesson.](04_lesson.md)

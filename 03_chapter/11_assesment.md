@@ -23,7 +23,7 @@ As you move through the next several units, you'll be building parts of a browse
 
 2) Underneath your instructions and within your body tag, create five divs like so:
 
-```
+```html
 <body>
   <div>
     <div></div>
