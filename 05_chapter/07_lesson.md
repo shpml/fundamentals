@@ -10,6 +10,9 @@
 ## Reminder: Don't Use ID's in CSS
 Although ID's are technically allowed in CSS, they are almost never used by profession developers because of their specificity. ID selectors have the ability to override class selectors– making maintenance of a large codebase difficult. Using classes will help with the scalability of your design, and help you write cleaner code.
 
+## Reminder: Using ID's in JavaScript
+In JavaScript, ID's are valuable to help you access and alter different elements on your page. This process is called DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript.
+
 #### Checkpoint
 
 * What does the `<aside>` tag do?
