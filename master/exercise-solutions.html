@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="12" data-basepath="." data-revision="Tue Sep 20 2016 14:45:33 GMT+0000 (UTC)">
+    <div class="book" data-level="12" data-basepath="." data-revision="Tue Oct 04 2016 19:17:51 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2556,11 +2556,11 @@ otherwise
 };
 <span class="hljs-keyword">var</span> hotOrNot = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(temp)</span></span>{
   <span class="hljs-keyword">return</span> (temp &gt; <span class="hljs-number">75</span>)? <span class="hljs-string">&quot;hot&quot;</span> : <span class="hljs-string">&quot;not hot&quot;</span>;
-  <span class="hljs-comment">//// using an `if` statement is also acceptable</span>
+  <span class="hljs-comment">// using an `if` statement is also acceptable</span>
 };
 <span class="hljs-keyword">var</span> threeIfNull = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(num)</span></span>{
-  <span class="hljs-keyword">return</span> num || <span class="hljs-number">3</span>;
-  <span class="hljs-comment">//// using an `if` statement is also acceptable</span>
+  <span class="hljs-keyword">if</span>(num===<span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>
+  <span class="hljs-keyword">return</span> num
 };
 <span class="hljs-keyword">var</span> greatest = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(a, b, c)</span></span>{
   greatest = a;
