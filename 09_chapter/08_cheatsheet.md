@@ -61,6 +61,6 @@ switch (expression) {
 
 ### `for` Loops
 * A 'for' loop will generally run a fixed number of times, not indefinitely.
-* The three paramters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
+* The three parameters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
 
 [Let's put this into practice!](09_assessment.md)

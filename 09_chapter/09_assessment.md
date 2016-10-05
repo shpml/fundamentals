@@ -18,7 +18,7 @@ For this assessment, you'll use an alert to display messages to your user:
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76)
 
-**Note** Warning! Alerts are _annoying_ popup that can be used to show a string of data to a user. They also intefere with a user interacting with a web page until they click 'ok'. While it is a great tool to see results as you learn JavaScript, you should never use it for any professional project. Why? Some browsers (such as Chrome) allow users to hide them from being displayed. But also - it is annoying.
+**Note** Warning! Alerts are _annoying_ popup that can be used to show a string of data to a user. They also interfere with a user interacting with a web page until they click 'ok'. While it is a great tool to see results as you learn JavaScript, you should never use it for any professional project. Why? Some browsers (such as Chrome) allow users to hide them from being displayed. But also - it is annoying.
 
 > **Note:** Curious about `alert()`? Check out the documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>
 
