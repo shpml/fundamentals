@@ -54,7 +54,7 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Bonus: Make your cards have card-like rounded borders by adding a border radius of 10px.
 
-4) At this point, if we still have CSS in our `index.html`, We should move over any CSS from `<style>` tags inside of `index.html` into a separate file, `style.css`.
+4) At this point, if we still have CSS in our `index.html`, we should move over any CSS from the `<style>` tags inside of `index.html` into a separate file, `style.css`.
 
 5) Now, go back to your `index.html` and connect your css file(`style.css`) by using a `<link>` tag to reference it.
 
