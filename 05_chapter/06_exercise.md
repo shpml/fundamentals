@@ -57,7 +57,7 @@ Fabulous!
 
 14 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
 
-15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom-color to #fffebb as well.
+15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
 
 16 . Set the li color to black, and its background to white.
 
