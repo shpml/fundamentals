@@ -21,7 +21,7 @@ If you don't see the JS Bin below, please refresh the page.
 
 This exercise has two sections. In the first, we'll create the structure of the website, and for the second section we're going to add CSS. 
 
-<a class="jsbin-embed" href="https://jsbin.com/nideji/embed?html&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="https://jsbin.com/guviweg/embed?html&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 #### Section 1: Basic Page structure
 Your job is to use the notes below to write the HTML for the Elk Design Company.

@@ -26,7 +26,7 @@ Currently, the cards in your game are all formatted vertically (very awkwardly) 
 
 2) First, set your board as an inline block element and define the width and height of your board. Go ahead set both width and height to 50% in your css file.
 
-3) Add a float of left and a margin of 8% to your "card" div.
+3) Add a float of left and a margin of 8% to the divs that have a class of "card".
 
 4) Now go ahead and create a nav bar with two links "Instructions" and "Game". Add in your anchor and nav elements at the very beginning of your body tags.
 

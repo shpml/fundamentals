@@ -13,7 +13,7 @@ Now that we've learned about layout, we're even better equipped to format our HT
 The current state of your game could use some formatting and personalization.
 * To give your webpage a nice personal touch, add a footer which includes some personalized text, something like: `Created with love by <your name>`.
 * Figure out a way to throw in an icon as well and color your name a different color than the rest of the text to give it some oomph.
-* Last but surely not least, give your site a nice touch by centering all if its text.
+* Last but surely not least, give your site a nice touch by centering all of its text.
 
 ##### Below are the steps to complete the assignment.
 
@@ -25,11 +25,8 @@ The current state of your game could use some formatting and personalization.
 
 3) Go into `style.css` and color your name with #ff0000.
 
-```css
-.name {
-  color: #ff0000;
-}
-```
+4) Finally, center the text in the body selector using the text-align property.
+
 
 #### Deliverable
 

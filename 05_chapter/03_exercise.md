@@ -38,8 +38,6 @@ We'll  be using external fonts for this challenge. Let's start out by linking ex
 
 3 . We want all headings bold. So, add a font-weight property to h1, h2 and set it to 800.
 
-Checkpoint: Make all the headers bold by setting the font-weight to 800.
-
 
 #### Part 2: Navigation
 

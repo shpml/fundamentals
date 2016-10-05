@@ -8,7 +8,7 @@
 
   1 . **Organization**: if you ever need to update your code, finding the specific block for which you're looking will be easier.
 
-  2 . **Optimization**: search engines like Google will have an easier time understanding the content on your sire, so your site will be easier for others to find.
+  2 . **Optimization**: search engines like Google will have an easier time understanding the content on your site, so your site will be easier for others to find.
 
   3 . **Accessibility**: screen readers - devices that read the content on websites for persons with vision and reading disabilities - can more easily navigate your site, making it more accessible for everyone.
 
