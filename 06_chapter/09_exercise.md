@@ -40,3 +40,5 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 ---
 
 [Take the Quiz for Unit 6 now!](13_quiz.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -18,3 +18,5 @@ Phew! That's a lot of new information to process! Sometimes it can be difficult 
 ---
 
 [Ready to get some practice?](06_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

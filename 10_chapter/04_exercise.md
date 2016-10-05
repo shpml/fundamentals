@@ -33,3 +33,5 @@ Once you've written and tested all of these functions, go ahead and move on to t
 ---
 
 [Next: Using Functions in the Field](05_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

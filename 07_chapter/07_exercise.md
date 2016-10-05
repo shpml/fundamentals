@@ -34,3 +34,5 @@ Congratulations! You're officially a GitHub user!
 ---
 
 Ready for another quiz? [Let's go.](06_quiz.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

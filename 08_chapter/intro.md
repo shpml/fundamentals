@@ -39,3 +39,6 @@ To save your JS Bin session, just 'login' at the top. When you select 'File' and
 JS Bin has the ability to show a 'console'; this will display any JavaScript code that you need to run. You will need this from time to time. You can hide or display any tabs (HTML, CSS, JavaScript, or Console) by clicking on their tab to hide/show them as needed.
 
 Ready to begin? [Let's go](02_lesson.md).
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -43,3 +43,5 @@ div {
 
 
 [Ready to try coding it out?](04_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -64,3 +64,5 @@ switch (expression) {
 * The three parameters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
 
 [Let's put this into practice!](09_assessment.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

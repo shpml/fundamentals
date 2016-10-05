@@ -152,3 +152,5 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 
 
 [Your turn!](07_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

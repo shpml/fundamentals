@@ -31,7 +31,7 @@ For this assessment, you'll use an alert to display messages to your user:
 
 2) If values are equal, execute an `alert` with the message, "You found a match!". If values are not equal, execute an `alert` with the message, "Sorry, try again.".
 
-> **Info** If you are testing code that uses alerts in JSBin, disable "auto-run JS". You can then "run with JS" when you are ready to test your code. If you do not, alerts will be looped every few seconds at you! 
+> **Info** If you are testing code that uses alerts in JSBin, disable "auto-run JS". You can then "run with JS" when you are ready to test your code. If you do not, alerts will be looped every few seconds at you!
 
 3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alerts are working properly, you should see:
 
@@ -45,3 +45,5 @@ You'll want to keep track of all your hard work, so don't forget to ACP: **Add**
 
 ---
 [Next up: Chapter 10](../10_chapter/intro.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

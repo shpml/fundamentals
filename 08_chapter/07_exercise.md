@@ -36,3 +36,5 @@ If they all give you the answers that you expect, you're done!
 
 ---
 [Next : Expression Oddballs](08_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -32,3 +32,5 @@ At this point in our journey with HTML and CSS, we might want to start moving th
 ---
 
 [On to the lesson.](02_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
