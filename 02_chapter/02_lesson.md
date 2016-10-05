@@ -9,7 +9,7 @@ Let's dive deeper into the rules and syntax for writing HTML.
 HTML doesn't understand the spaces and line breaks in your code. That's where **element tags** can help out!
 
 **Elements** provide the basic structure for any website. They consist of **opening** and **closing tag** and all the content in between. The tags tell the browser exactly which kind of content it's dealing with.
-For example, an opening header tag (`<h1>`) and closing header tag (`<\h1>` ) tell the browser that it needs to render any text in-between these tags as a header of some sort. Watch the video below to learn more!
+For example, an opening heading tag (`<h1>`) and closing heading tag (`<\h1>` ) tell the browser that it needs to render any text in-between these tags as a heading of some sort. Watch the video below to learn more!
 
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/njzywy6ci7?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
