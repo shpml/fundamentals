@@ -11,6 +11,7 @@ Your output should look like this:
 ![](../assets/elkwebdesign/tags.png)
 
 ### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
 Type your answers directly into the text editor below. Click the **Output** button at the top of the editor to see how your html code renders.
 

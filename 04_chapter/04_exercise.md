@@ -4,11 +4,13 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-In this exercise we'll take some time to play around with **divs**, **spans**, **margin**, and **padding** to create a lovely text layout .
+In this exercise we'll take some time to play around with **divs**, **spans**, **margin**, and **padding** to create a lovely text layout.
 
-Here's what the content will look like when you're finished styling it.Fancy!
+Here's what the content will look like when you're finished styling it. Fancy!
 
 ![](../assets/elkwebdesign/layout.png)
+
+If you don't see the JS Bin below, please refresh the page.
 
 We won't touch the HTML, but take a look at it before you hop over to the CSS tab. To give yourself more space you can select the CSS and Output tabs. Also, we gave you the p style. You're welcome!
 

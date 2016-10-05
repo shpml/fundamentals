@@ -14,14 +14,13 @@ Remember the final design looks like this:
 
 
 ### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
 #### Getting started
 
-You'll be using the code editor below. Copy and paste the code from the previous exercise in so that you have code to work with. As usual, **don't forget to fork and save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
+You'll be using the code editor below. Take a look at the starter code in the editor below first.
 
-Take a look at the starter code in the editor below first.
-
-<a class="jsbin-embed" href="http://jsbin.com/tifivo/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="http://jsbin.com/wukimet/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
 #### Part 1: Web Fonts
 
@@ -33,7 +32,7 @@ We'll  be using external fonts for this challenge. Let's start out by linking ex
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
 ```
 
-2 . Now you need to tell CSS where to use the font. Add a font-family declaration of 'Open Sans', sans-serif to your body's style rule. Remember to put 'Open Sans' in quotes so CSS reads them together.
+2 . Now you need to tell CSS where to use the font. Change the font-family declaration in you body's style rule to 'Open Sans', sans-serif. Remember to put 'Open Sans' in quotes so CSS reads them together.
 
 *Nice! You just built a font stack. Font stacks give CSS guidance on what font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans-serif font!*
 
@@ -64,12 +63,11 @@ Now, let's put in some content and build out the navigation bar.
 
 6 . Now, we'll start moving things around on the screen. Give the nav a links 1.8em of margin. And set their display to inline-block.
 
-7 . Looking good! Let's increase the nav's font-size, then reposition the whole thing with a float! Set the nav style's font-size to 1.8em and then, float it right.
+7 . Looking good! Let's increase the nav's font-size, then reposition the whole thing with a float! Set the nav style's font-size to 1em and then, float it right.
 
 What was that? Your very first float! Here's what your design should start looking like:
 
 ![](/assets/elkwebdesign/elkdesignchapt6.png)
 
-**Don't forget to save your code!**
 
 [On to the next lesson.](04_lesson.md)

@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Check out the some sample code in a JS Bin session:
+Check out the sample code in the JS Bin session below. If you don't see the JS Bin, please refresh the page.
 
 <a class="jsbin-embed" href="https://jsbin.com/qiqufo/1/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 

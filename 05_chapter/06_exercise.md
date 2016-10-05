@@ -9,12 +9,11 @@
 This is final part of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
-Here's the editor you should use to write your code. You'll first need to copy over your code from the previous ELK exercise into the editor. As usual, **don't forget to fork and save your JSBin link.**
+Here's the editor you should use to write your code. 
 
-<a class="jsbin-embed" href="http://jsbin.com/tifivo/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
-
-When you have your code from your previous exercise, follow the instructions below.
+<a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 1 . Set your div's font-size to 1.2em, and tell it to only stretch across 50% of the screen's width.
 
@@ -61,6 +60,6 @@ Fabulous!
 
 16 . Set the li color to black, and its background to white.
 
-Bravo! Well done. Don't forget to save your code in JSBin so you can come back to it and ask your instructors any questions you might have!
+Bravo! Well done. 
 
 [Take the Quiz for Unit 5 now!](10_quiz.md)

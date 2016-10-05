@@ -8,10 +8,9 @@ Time to give it a whirl! In this exercise you'll be getting some practice settin
 
 Instructions
 
-1. Open a new session in [JS Bin](https://jsbin.com).
-2. Write the code to perform the actions listed below, using JS Bin's editor window.
-3. Click 'play' to run the code.
-4. Call each function from the console window. Try using different parameters to make sure they're working properly.
+1. Write the code to perform the actions listed below, using JS Bin editor. If you don't see the JS Bin below, please refresh the page.
+2. Click 'play' to run the code.
+3. Call each function from the console window. Try using different parameters to make sure they're working properly.
 
 <a class="jsbin-embed" href="http://jsbin.com/wihumu/embed?js&height600"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 

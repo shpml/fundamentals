@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Below is the starter code for your next exercise.
+Below is the starter code for your next exercise. If you don't see the JS Bin below, please refresh the page.
 
 <a class="jsbin-embed" href="http://jsbin.com/guvuva/1/embed?html&height600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
