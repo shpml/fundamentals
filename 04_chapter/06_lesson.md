@@ -31,7 +31,7 @@ The first three semantic elements you should know are `<header>` `<footer>`, `<m
 #### `<aside> </aside>`
   * These elements contain all the secondary content between the `<header>` and `<footer>`. They wrap secondary content and supplemental information, like recommended stories or archived links.
 
-While these elements provide a fundamental structure for your page, but they definitely lack specificity!
+While these elements provide a fundamental structure for your page, they definitely lack specificity!
 
 ---
 
