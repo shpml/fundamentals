@@ -32,7 +32,7 @@ Currently, the cards in your game are all formatted vertically (very awkwardly) 
 
 **NOTE**: You'll want to use hashtags to create empty links for now!
 
-5) Add a horizontal row underneath after your closing paragraph tag.
+5) Add a horizontal rule underneath after your closing paragraph tag.
 
 4) Style your navbar by removing default stylings and adding a background color of #808080 in your css file. The navbar should now look grey!
 
