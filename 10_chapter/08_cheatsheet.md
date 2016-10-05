@@ -73,7 +73,7 @@ document.getElementById('main')
 | `querySelector()` | Select the first element that matches the provided selector. Uses CSS style syntax.  |
 | `document.getElementsByClassName()`   | Select all elements that have a given class name.    |
 | `document.getElementsByTagName()`     | Select all elements that have a given tag name.   |
-| `document.querySelectorAll()`   | Select all elements that match the provided selector. Uses CSS style syntax fo the selector.   |
+| `document.querySelectorAll()`   | Select all elements that match the provided selector. Uses CSS style syntax for the selector.   |
 
 ###Traversing the DOM
 

@@ -28,7 +28,7 @@ We want to make these documents scannable & easily readable. Every time you're t
 
 Err on the side of having too many paragraphs if possible, even if a paragraph is only one or two sentences. It'll be easier to read.
 
-### Use triple-tick code blocks for highlighting on Github
+### Use triple-tick code blocks for highlighting on GitHub
 
 Use triple-tick code blocks with languages to make code auto-syntax-highlighted.
 
@@ -38,9 +38,9 @@ Use triple-tick code blocks with languages to make code auto-syntax-highlighted.
 
 You can read more about it [here](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting) if you're unfamiliar.
 
-### Test your markdown with Github Flavored Markdown
+### Test your markdown with GitHub Flavored Markdown
 
-Test your code using the [Github markdown API endpoint](https://developer.github.com/v3/markdown/#render-an-arbitrary-markdown-document), or a tool that uses it, to make sure it's working. Good options are:
+Test your code using the [GitHub markdown API endpoint](https://developer.github.com/v3/markdown/#render-an-arbitrary-markdown-document), or a tool that uses it, to make sure it's working. Good options are:
 
 - [Markdown Preview for Sublime](https://packagecontrol.io/packages/Markdown%20Preview)
 - [moo.js](https://www.npmjs.com/package/moo.js)
@@ -55,7 +55,7 @@ If you're working on a section of the prework, create a new fork and a new branc
 
 When you are finished with your suggested edits, make a pull request back into master branch.
 
-When it comes time to review/revise, we can add comments & notes to that pull request, make any necessary changes, and then merge it in right on Github.
+When it comes time to review/revise, we can add comments & notes to that pull request, make any necessary changes, and then merge it in right on GitHub.
 
 ### Variable names
 

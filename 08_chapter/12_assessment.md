@@ -13,7 +13,7 @@ But here's the catch! You have your html and css files from the previous units t
 
 `<script src="some-javascript-file.js"></script>`
 
-Unlike your CSS _link_, you should add your script right before the end of your `body` tag. This ensures that all of the content of your page has been loaded in case Javascript needs to use any of it.
+Unlike your CSS _link_, you should add your script right before the end of your `body` tag. This ensures that all of the content of your page has been loaded in case JavaScript needs to use any of it.
 
 
 
