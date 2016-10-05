@@ -72,7 +72,7 @@ Your two links should have a orange background with white text!
 
 #### Deliverable
 
-Congratulations! Your board game is now structured and styled utilizing all your new knowledge of HTML and CSS! As you move through the rest of Fundamentals, you will be writing the functionality of browser memory game. We'll do this using Javascript! Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.
+Congratulations! Your board game is now structured and styled utilizing all your new knowledge of HTML and CSS! As you move through the rest of Fundamentals, you will be writing the functionality of browser memory game. We'll do this using JavaScript! Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.
 
 ![](../assets/elkwebdesign/memorygame6.png)
 

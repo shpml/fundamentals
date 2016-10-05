@@ -29,7 +29,7 @@ All we need to do on this page is make sure that “Free” is chosen as our per
 ![You're done!](../assets/chapter2/step3.png)
 
 
-Congratulations! You're officially a Github user!
+Congratulations! You're officially a GitHub user!
 
 ---
 

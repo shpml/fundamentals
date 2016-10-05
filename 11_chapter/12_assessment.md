@@ -102,7 +102,7 @@ function isTwoCards() {
 
 When finished, don't forget to **add**, **commit** and **push** your code to your GitHub repository!
 
-Now it's time to submit you code! Submit your link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
+Now it's time to submit you code! Submit your link to your GitHub repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
 
 *Don't worry if you had trouble finishing up the memory game. Go ahead and submit what you have and you'll be able to review it with your instructor soon enough!*
 

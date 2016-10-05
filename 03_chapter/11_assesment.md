@@ -64,7 +64,7 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Add color: #ffd700 to your level two heading.
 
->**HINT** A good way to find your color value would be with a google search, `<color name> hex code` or `<color name> rgb color`.
+>**HINT** A good way to find your color value would be with a Google search, `<color name> hex code` or `<color name> rgb color`.
 
 ---
 
