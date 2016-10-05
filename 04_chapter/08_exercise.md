@@ -17,7 +17,9 @@ This design has four sections:
 * "services" section
 * footer
 
-This exercise, has two sections. In the first, we'll create the structure of the website, and for the second section we're going to add CSS. You'll be using the JSBIN code editor below. As usual, **don't forget to save your JSBin link.** You'll be reusing the code to continue building on the exercise in the next unit.
+If you don't see the JS Bin below, please refresh the page.
+
+This exercise has two sections. In the first, we'll create the structure of the website, and for the second section we're going to add CSS. 
 
 <a class="jsbin-embed" href="https://jsbin.com/nideji/embed?html&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -52,7 +54,7 @@ Your job is to use the notes below to write the HTML for the Elk Design Company.
 
 Flip on over to your CSS tab.
 
-1 . Create a style for body, and set its font-size to 18px.
+1 . Create a style for body, and set its font-size to 18px. Set the font-family to Arial.
 
 2 . Write another rule for h1, and set its font-size to 2em.
 
@@ -84,6 +86,6 @@ Here's what your webpage should look like in the Output now:
 
 ![](/assets/elkwebdesign/elkchapter5.png)
 
-All done for now! **Don't forget to save your code!**
+All done for now!
 
 *In the next Code Challenge, you're ready to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image—plus, you'll position all of the content containers you built in this unit!*

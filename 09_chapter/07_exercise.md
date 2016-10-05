@@ -4,7 +4,7 @@
 
 ## Your Turn
 
-Here's the starter code for your next exercise:
+If you don't see the JS Bin below, please refresh the page. Here's the starter code for your next exercise:
 
 <a class="jsbin-embed" href="https://jsbin.com/woriviq/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 

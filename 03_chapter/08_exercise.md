@@ -8,6 +8,7 @@
 Now it's time to work with images. Our goal in this exercise will be to to use the HTML image tags to put a picture on the web.
 
 #### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
 1 . Take a look at the starter code below. Yep, it's your HTML boilerplate!
 

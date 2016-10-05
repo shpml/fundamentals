@@ -7,8 +7,10 @@
 Let's practice matching colors across the three web color models: named colors, hex codes, and RGB colors!
 
 ### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
 #### HTML: Starter Code
+
 Let's look at the starter code below first. The DOCTYPE, html, head, link, and body elements are familiar to you from the previous unit. Divs and ids are new HTML concepts for you. The value of the id attribute is the name of that div. For now, just remember that div element is just a tool to group content into boxes that you can control and style with CSS. The attribute id lets you name an HTML element to style it differently than other elements of that type.
 
 <a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>

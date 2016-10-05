@@ -4,7 +4,8 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Check out the some sample code in a JS Bin:
+Check out the sample code in the JS Bin session below. If you don't see the JS Bin, please refresh the page.
+
 
 <a class="jsbin-embed" href="https://jsbin.com/qeruxex/embed?js,console&height600">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 

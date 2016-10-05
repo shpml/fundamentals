@@ -12,6 +12,7 @@ When complete, your output should look like this:
 
 
 ### Instructions
+If you don't see the JS Bin below, please refresh the page.
 
 Use the editor provided below to write your code and see what renders!
 

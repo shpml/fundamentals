@@ -4,7 +4,7 @@
 
 ##Your Turn
 
-Take a look at the some sample code in a JS Bin below.
+Take a look at the some sample code in a JS Bin below. If you don't see the JS Bin below, please refresh the page.
 
 <a class="jsbin-embed" href="https://jsbin.com/kiyeso/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 

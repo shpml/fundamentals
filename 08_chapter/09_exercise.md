@@ -11,6 +11,8 @@ var x;
 /* Your Expression */
 ```
 
+If you don't see the JS Bin below, please refresh the page.
+
 <a class="jsbin-embed" href="http://jsbin.com/qacobi/embed?js,console&600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 1. Write an expression that evaluates `x`, so long as `x` is not null;
