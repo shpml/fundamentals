@@ -33,7 +33,7 @@ Use spaces around operators
 
 ```
 
-> Provide better readibility
+> Provide better readability
 
 Return Values
 

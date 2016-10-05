@@ -8,7 +8,7 @@ Now that we have a way to store keys and values, we can add some complexity to o
 
 Again, our goal is to create a contact book that allows us to store contact info (we'll want to store first name, last name, phone, and email), add a new contact, list contacts, and find contacts by first or last name.
 
-Before taking a look at the instructions below, take a few minutes to think through the problem and try your hand at breaking things down into steps by writing out pseudo code. Although the instructions will guide you through building the program, it's helpful to get practice thinking about how you would approach different problems. Programmatic thinking gets easier with practice!
+Before taking a look at the instructions below, take a few minutes to think through the problem and try your hand at breaking things down into steps by writing out pseudo-code. Although the instructions will guide you through building the program, it's helpful to get practice thinking about how you would approach different problems. Programmatic thinking gets easier with practice!
 
 Instructions
 

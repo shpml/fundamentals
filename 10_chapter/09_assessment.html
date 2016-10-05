@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Oct 05 2016 04:03:23 GMT+0000 (UTC)">
+    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Oct 05 2016 04:09:56 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1095,7 +1095,7 @@
                         
                             <b>7.2.</b>
                         
-                        Introducing Github
+                        Introducing GitHub
                     </a>
                 
             
@@ -2038,23 +2038,23 @@
 <p>Besides <code>createElement</code>, the <code>document</code> object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is an attribute (or property) you may modify to add a class to an element -  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank"><code>className</code></a>. If you need to modify the content <em>inside</em> of the HTML tags, you may modify the attribute named <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank"><code>innerHTML</code></a>. If you modified the <code>innerHTML</code> of an <code>&lt;li&gt;</code> element to <code>= &apos;remember maple syrup at the grocery story</code>, your list item would then contain that content: <code>&lt;li&gt;remember maple syrup at the grocery story&lt;/li&gt;</code>. On top of those methods and attributes that allow you to construct an element, there&apos;s also the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank"><code>appendChild</code></a> that aids in attaching your element as a child of another element on your web page.</p>
 <p>To complete this assignment, you will need to utilize these methods.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
-<p> In order to append your card elements, you&apos;re going to need something to append to. We&apos;re going to change the HTML content of one of our tags so that we may use Javascript to <em>select</em> that tag. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run either &apos;getElementById&apos; or &apos;querySelector&apos;.</p>
+<p> In order to append your card elements, you&apos;re going to need something to append to. We&apos;re going to change the HTML content of one of our tags so that we may use JavaScript to <em>select</em> that tag. In order to find an element to you want to append to, use JavaScript&apos;s <code>document</code> object to run either &apos;getElementById&apos; or &apos;querySelector&apos;.</p>
 </blockquote>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
 <h6 id="modify-your-html-files">Modify your HTML files</h6>
 <p>Before you start, go ahead and comment out the <code>if</code> statement from the last assignment. We&apos;ll work with it to finalize our memory game during the next unit.</p>
-<p>1 ) Open your <code>index.html</code> and look for your <code>&lt;div&gt;</code> with a class of <code>board</code>. We need to give this div an <strong>id</strong> so that we may <em>get</em> it using Javascript.  </p>
+<p>1 ) Open your <code>index.html</code> and look for your <code>&lt;div&gt;</code> with a class of <code>board</code>. We need to give this div an <strong>id</strong> so that we may <em>get</em> it using JavaScript.  </p>
 <p>2 ) Give your div an <code>id</code> of <code>game-board</code>.</p>
-<p>3 ) We&apos;re going to generate cards using Javascript instead of using our existing <code>div</code> elements with the class <code>card</code> in html. Comment out any <code>div</code> with the <code>card</code> class.</p>
+<p>3 ) We&apos;re going to generate cards using JavaScript instead of using our existing <code>div</code> elements with the class <code>card</code> in html. Comment out any <code>div</code> with the <code>card</code> class.</p>
 <p>4 ) Save your changes!</p>
-<h6 id="create-the-html-for-the-cards-using-javascript">Create the HTML for the cards using Javascript:</h6>
+<h6 id="create-the-html-for-the-cards-using-javascript">Create the HTML for the cards using JavaScript:</h6>
 <p>4 ) Get an element with the id of <code>game-board</code> and set it to a variable.</p>
 <p>5 ) Assuming your memory card game consists of four cards, create a <code>for loop</code> that makes an HTML element for each card. Each HTML element should be a <code>div</code> as well as have the class <code>card</code> (this will help when you add CSS).</p>
 <p>6 ) Append each newly created card to the <code>div</code> that has the id <code>game-board</code>.</p>
 <h6 id="create-functions-to-organize-your-code">Create functions to organize your code</h6>
-<p>7 ) Create a function called <code>createCards</code> in your Javascript file. This function will contain the code you just wrote to generate your cards. </p>
-<p>8 ) Your <code>createCards</code> function should contain any Javascript associated with the creation of the <code>div</code> elements with the class <code>card</code>.</p>
+<p>7 ) Create a function called <code>createCards</code> in your JavaScript file. This function will contain the code you just wrote to generate your cards. </p>
+<p>8 ) Your <code>createCards</code> function should contain any JavaScript associated with the creation of the <code>div</code> elements with the class <code>card</code>.</p>
 <p>9 ) Be sure to execute/fire your <code>createCards</code> function so it runs!</p>
 <p>10) Once you&apos;ve done that, your cards will be created! Be sure to check your page in a web browser to verify that everything works as intended!</p>
 <h4 id="deliverable">Deliverable</h4>

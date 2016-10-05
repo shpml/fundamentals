@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.4" data-basepath=".." data-revision="Wed Oct 05 2016 04:01:16 GMT+0000 (UTC)">
+    <div class="book" data-level="8.4" data-basepath=".." data-revision="Wed Oct 05 2016 04:08:58 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1095,7 +1095,7 @@
                         
                             <b>7.2.</b>
                         
-                        Introducing Github
+                        Introducing GitHub
                     </a>
                 
             
@@ -2026,17 +2026,17 @@
 <p>At this point, we&apos;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, especially related to boolean logic. Let&apos;s take a closer look at some of them.</p>
 <ul>
 <li>We&apos;ll start with <strong>undefined</strong> and <strong>null</strong> values. These two values represent a lack of data.</li>
-<li>Next, we will dive into <strong>truthy</strong> and <strong>falsey</strong> - the result of Javascript&apos;s attempt to convert non-boolean values to booleans at runtime.</li>
+<li>Next, we will dive into <strong>truthy</strong> and <strong>falsey</strong> - the result of JavaScript&apos;s attempt to convert non-boolean values to booleans at runtime.</li>
 <li>Finally: a challenge!</li>
 </ul>
 <h3 id="undefined">Undefined</h3>
-<p>You&apos;ve just opened a Javascript console. You want to define a new variable but aren&apos;t sure what the value is <em>just yet</em>.  </p>
+<p>You&apos;ve just opened a JavaScript console. You want to define a new variable but aren&apos;t sure what the value is <em>just yet</em>.  </p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someData;
 </code></pre>
 <p>Without <strong>assigning</strong> a value to a variable, that variable becomes <code>undefined</code>. We can see this in real time:</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(someData);
 </code></pre>
-<p>If we want to check to see if our variable is infact <code>undefined</code>, we may do so. Checking to see is a variable is <code>undefined</code> is important. It allows for you to verify that something exists before you use it (and thus keep from throwing errors).</p>
+<p>If we want to check to see if our variable is in fact <code>undefined</code>, we may do so. Checking to see is a variable is <code>undefined</code> is important. It allows for you to verify that something exists before you use it (and thus keep it from throwing errors).</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someData == <span class="hljs-literal">undefined</span>) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
   someData = <span class="hljs-string">&apos;We are now assigning a value.&apos;</span>;
@@ -2069,7 +2069,7 @@ userInput == <span class="hljs-literal">null</span> <span class="hljs-comment">/
 <ul>
 <li><p>To be <strong>falsey</strong> means that boolean operators act in mostly the same way that they would if the value was <code>false</code>. For instance, using <code>!</code> (NOT) on a &quot;falsey&quot; value will evaluate to <code>true</code>, just as if you&apos;d written <code>!false</code>. The &quot;falsey&quot; category of values includes: the number <code>0</code>, empty strings (<code>&apos;&apos;</code>), <code>null</code>, and <code>undefined</code>. <code>false</code> is, of course, also &quot;falsey&quot;.</p>
 </li>
-<li><p>Being <strong>truthy</strong> is exactly the opposite of being falsey; using <code>!</code> (NOT) on a &quot;truthy&quot; value would evaluate to <code>false</code>. Anything that isn&apos;t &quot;falsey&quot; is &quot;truthy&quot;, including all strings, all non-zero numbers, and (of course) <code>true</code>.</p>
+<li><p>Being <strong>truthy</strong> is exactly the opposite of being &quot;falsey&quot;; using <code>!</code> (NOT) on a &quot;truthy&quot; value would evaluate to <code>false</code>. Anything that isn&apos;t &quot;falsey&quot; is &quot;truthy&quot;, including all strings, all non-zero numbers, and (of course) <code>true</code>.</p>
 </li>
 </ul>
 <p>As they say, &quot;<em>to a hammer (read: boolean operator), everything looks like a nail (read: boolean value)</em>&quot;.</p>
