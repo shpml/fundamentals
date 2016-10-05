@@ -29,3 +29,5 @@ Now it's time to work with images. Our goal in this exercise will be to to use t
 * Images require a src. Including title and alt is strongly recommended.
 
 *Think about all of the awesome stuff you can build online using images! Are you excited yet?*
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

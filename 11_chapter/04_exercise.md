@@ -29,3 +29,5 @@ Once you're satisfied with the way things are working, feel free to move on to t
 
 ---
 [Ready to move on? Here's the next lesson.](05_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

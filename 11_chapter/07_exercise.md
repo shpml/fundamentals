@@ -35,3 +35,6 @@ Feeling comfortable with these exercises? Take a look at the last lesson!
 ---
 
 [Ready for the last lesson? Here it comes!](08_lesson.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

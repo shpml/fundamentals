@@ -135,3 +135,5 @@ While we've covered what seems like a lot of math in this section, don't worry â
 ---
 
 Think you've got it? [Let's do an exercise to cement what we've learned.](05_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -24,3 +24,5 @@ To test your code, set a value for `x` in the editor and click 'play'. Did you g
 ---
 
 [Next: Loops](05_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

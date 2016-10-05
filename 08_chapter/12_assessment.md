@@ -96,3 +96,5 @@ In order to backup your code and track your work, you'll want to commit the chan
 4. **Write code, even if it's not the prettiest.** At this stage, don't worry if your code is elegant, readable, or robust. Just make it work to satisfy all of your test cases.
 
 5. **'Refactor' your code.** Now that your code is functional, take some time to make your code clean/efficient/robust. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

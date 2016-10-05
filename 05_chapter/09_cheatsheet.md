@@ -62,3 +62,5 @@ A common method is to use the CSS property clear with the value both. When this 
 Column layout refers to the design of pages with multiple different block sections at the same vertical height on the page.
 
 Columns are created by wrapping a block of content with a div element, applying a float, and modifying the padding, margin, and border dimensions to adjust their size.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

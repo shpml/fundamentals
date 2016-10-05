@@ -25,3 +25,5 @@ Try your hand at writing pseudo-code for this program. Remember, the goal is to 
 ---
 
 Now let's move on to learning about data, operators, and expressions [in this lesson](04_lesson.md)!
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

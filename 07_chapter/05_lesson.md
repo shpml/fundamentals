@@ -152,3 +152,5 @@ And trust us... you *will* get to the point where cloning and pushing are like b
 ---
 
 [Here's another exercise for you](07_exercise.md) - give it a shot.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

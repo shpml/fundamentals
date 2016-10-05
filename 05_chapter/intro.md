@@ -23,3 +23,6 @@ Before we get started, look at the code to get familiar with how you'd code in a
 ---
 
 [On to the next lesson.](02_lesson.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -109,3 +109,5 @@ Can you predict how the following expressions will be evaluated? Check your answ
 ---
 
 [Here's another exercise for you](09_exercise.md) - give it a shot.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

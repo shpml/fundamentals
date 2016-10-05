@@ -63,3 +63,5 @@ Here's a diagram to help you remember the box model.
 * A Block element and is used to apply CSS to—you guessed it—blocks of HTML. Divs typically wrap big sections of content on a page.
 
 NOTE: use semantic elements over divs whenever possible.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

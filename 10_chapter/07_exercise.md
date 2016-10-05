@@ -44,3 +44,5 @@ If you're satisfied that your code is working as expected, go ahead and move on 
 ---
 
 [On to the next lesson.](08_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

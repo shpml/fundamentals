@@ -118,3 +118,5 @@ What code could we write to perform the following tasks?
 ---
 
 [One last exercise - this time on objects.](10_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

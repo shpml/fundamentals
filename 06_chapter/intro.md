@@ -119,3 +119,6 @@ above, this user is named *Sarah*.
 ---
 
 [On to the next lesson.](02_lesson.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

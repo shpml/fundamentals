@@ -24,3 +24,6 @@ For example, an opening header tag (`<h1>`) and closing header tag (`<\h1>` ) te
 ---
 
 Think you've got it? [Then let's get some practice!](03_exercise.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
