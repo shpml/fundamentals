@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.7" data-basepath=".." data-revision="Wed Oct 05 2016 04:09:41 GMT+0000 (UTC)">
+    <div class="book" data-level="8.7" data-basepath=".." data-revision="Wed Oct 05 2016 17:29:57 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1095,7 +1095,7 @@
                         
                             <b>7.2.</b>
                         
-                        Introducing Github
+                        Introducing GitHub
                     </a>
                 
             
@@ -2027,12 +2027,12 @@
 <p>Go back into the <a href="https://github.com/ga-students/wdi-fundamentals-memorygame" target="_blank">project repo</a>, wherever you&apos;ve decided to put it, and open up the file <code>main.js</code> (inside the <code>starter-code</code> directory). This is where you&apos;ll be writing all of your code for all homework assignments.</p>
 <p>But here&apos;s the catch! You have your html and css files from the previous units that you&apos;ll want to use moving forward and link your JS file too. Remember when you linked your CSS file to your HTML file? Yes, that&apos;s right! It&apos;s as simple as that! Look at the following syntax to link your JS file to your HTML file so that they work together!</p>
 <p><code>&lt;script src=&quot;some-javascript-file.js&quot;&gt;&lt;/script&gt;</code></p>
-<p>Unlike your CSS <em>link</em>, you should add your script right before the end of your <code>body</code> tag. This ensures that all of the content of your page has been loaded in case Javascript needs to use any of it.</p>
+<p>Unlike your CSS <em>link</em>, you should add your script right before the end of your <code>body</code> tag. This ensures that all of the content of your page has been loaded in case JavaScript needs to use any of it.</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
 <p>In this section, you&apos;ll be working to create the cards that will make up your memory game. Each card will have a value of &quot;queen&quot; or &quot;king&quot; and there should be a total of four cards. Giving the cards a value means we can use comparison operators to check for equality. You&apos;ll also push your code up to your repository! Let&apos;s get started!</p>
 <h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment:</h5>
-<p>1) Open you Sublime and create a new file called main.js</p>
+<p>1) Navigate to the main.js file in Sublime.</p>
 <p>2) Create four variables that simulate the cards in your game.</p>
 <ul>
 <li>they should be <code>String</code> types</li>
@@ -2043,7 +2043,7 @@
 <p>Here&apos;s an example of one card:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> cardOne = <span class="hljs-string">&quot;queen&quot;</span>;
 </code></pre>
-<p>2) Link the main.js file to your index.html file.</p>
+<p>2) Make sure you&apos;ve linked your main.js file to your index.html file.</p>
 <p>3) Now that you have the four cards, you&apos;ll want to compare the variables to check for equality.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
 <p>: Since you&apos;re working within the JavaScript file, <code>main.js</code>, which is connected to your <code>index.html</code> file, you can open the <code>index.html</code> in the browser and run this code directly in the browser console to see the results of your executed JS.</p>
@@ -2053,8 +2053,7 @@
 <p>5) To compare the two queen variables to check for equality, in the console type in the following and run your javascript:</p>
 <pre><code class="lang-js">cardOne == cardTwo
 </code></pre>
-<p>6) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king below, what does this evaluate to
-And the ?</p>
+<p>6) Now try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king, what does this evaluate to?</p>
 <pre><code class="lang-js">cardOne == cardFour
 </code></pre>
 <h4 id="deliverable">Deliverable:</h4>
@@ -2062,7 +2061,7 @@ And the ?</p>
 <h4 id="pushing-code-up-to-the-repository">Pushing code up to the repository.</h4>
 <p>In order to backup your code and track your work, you&apos;ll want to commit the changes you&apos;ve made to the project&apos;s repository. You&apos;ll have to open up the terminal and <code>cd</code> into the correct folder that holds the cloned repository for this assignment. Once there, you&apos;ll have to complete these three steps:</p>
 <p>1) Stage your code</p>
-<p><code>git add -a</code></p>
+<p><code>git add -A</code></p>
 <p>2) Create a version of your staged code</p>
 <p><code>git commit -m &apos;created game logic&apos;</code></p>
 <p>3) Push your code to the GitHub repository</p>

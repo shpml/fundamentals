@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="12" data-basepath="." data-revision="Wed Oct 05 2016 04:09:41 GMT+0000 (UTC)">
+    <div class="book" data-level="12" data-basepath="." data-revision="Wed Oct 05 2016 17:29:57 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1095,7 +1095,7 @@
                         
                             <b>7.2.</b>
                         
-                        Introducing Github
+                        Introducing GitHub
                     </a>
                 
             
@@ -2536,12 +2536,12 @@ otherwise
 <pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>; i &lt;= max; x += <span class="hljs-number">1</span>) {
   <span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> === <span class="hljs-number">0</span> &amp;&amp; x%<span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
     result = <span class="hljs-string">&quot;fizzbuzz&quot;</span>;
-  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> === <span class="hljs-number">0</span>) {
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i%<span class="hljs-number">3</span> === <span class="hljs-number">0</span>) {
     result = <span class="hljs-string">&quot;fizz&quot;</span>;
-  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i%<span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
     result = <span class="hljs-string">&quot;buzz&quot;</span>;
   } <span class="hljs-keyword">else</span> {
-    result = x
+    result = i
   }
   <span class="hljs-built_in">console</span>.log(result);
 }
@@ -2556,11 +2556,11 @@ otherwise
 };
 <span class="hljs-keyword">var</span> hotOrNot = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(temp)</span></span>{
   <span class="hljs-keyword">return</span> (temp &gt; <span class="hljs-number">75</span>)? <span class="hljs-string">&quot;hot&quot;</span> : <span class="hljs-string">&quot;not hot&quot;</span>;
-  <span class="hljs-comment">//// using an `if` statement is also acceptable</span>
+  <span class="hljs-comment">// using an `if` statement is also acceptable</span>
 };
 <span class="hljs-keyword">var</span> threeIfNull = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(num)</span></span>{
-  <span class="hljs-keyword">return</span> num || <span class="hljs-number">3</span>;
-  <span class="hljs-comment">//// using an `if` statement is also acceptable</span>
+  <span class="hljs-keyword">if</span>(num===<span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>
+  <span class="hljs-keyword">return</span> num
 };
 <span class="hljs-keyword">var</span> greatest = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(a, b, c)</span></span>{
   greatest = a;
@@ -2571,9 +2571,6 @@ otherwise
     greatest = c;
   }
   <span class="hljs-keyword">return</span> greatest;
-  <span class="hljs-comment">// using ternary operations as a solution</span>
-  <span class="hljs-comment">// is more advanced and therefore not expected</span>
-  <span class="hljs-comment">// e.g. return (a &gt; b)? a : ((b &gt; c)? b : c);</span>
 };
 </code></pre>
 <h3 id="10-2-1">10.2.1</h3>
@@ -2589,7 +2586,7 @@ otherwise
       result = i
     }
     <span class="hljs-built_in">console</span>.log(result);
-  } 
+  }
 };
 </code></pre>
 <h2 id="unit-11">Unit 11</h2>
