@@ -49,7 +49,7 @@ There are a few different ways to work together on GitHub, and our class is goin
 
 The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git.
 
-Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
+Eventually, when you've made changes that you'd like to share with our team, you can submit those changes back to us via our GitHub repo.
 
 This is what our workflow looks like:
 ![GitHub Workflow](../assets/chapter2/github_workflow.gif)
@@ -106,13 +106,13 @@ You need to navigate to the place where you'd like to store the repo, and then t
 git clone https://url/to/clone
 ```
 
-You can find the URL to clone on right side of the forked repo on Github:
+You can find the URL to clone on the right side of the forked repo on Github:
 
 ![Node.js Clone](../assets/chapter2/node_clone.png)
 
 By issuing the clone command, you're asking GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
 
-> **HINT** If you're following along in Git Bash in Windows, the commands to copy and past are a little different than the default Windows copy/past commands. The command to copy is `control + insert` and the command to paste is `shift + insert`.
+> **HINT** If you're following along in Git Bash in Windows, the commands to copy and paste are a little different than the default Windows copy/paste commands. The command to copy is `control + insert` and the command to paste is `shift + insert`.
 
 
 ### 3 & 4. Editing and Committing
