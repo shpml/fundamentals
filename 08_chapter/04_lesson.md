@@ -38,7 +38,7 @@ on many different kinds of data, including:
 possible values, `true` and `false`.
 
 If you forget what type of data you're dealing with, you can run the `typeof`
-command. Try typing the following lines into JS Bin - what responses do you get?
+command. Try typing the following lines into the JS Bin console tab and hit `enter` - what responses do you get?
 
 * <code>typeof 'hello';</code>
 * <code>typeof 24;</code>
@@ -90,7 +90,7 @@ differently - it 'concatenates' two strings together to make one big string.
     * AND (<code>&&</code>) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
 
 ### Test Yourself
-Can you predict what will the results of these operations will be? Check your answers against the console in JS Bin.
+Can you predict what the results of these operations will be? Check your answers against the console in JS Bin.
 * <code>true && false;</code>
 * <code>45 % 6;</code>
 * <code>8 === 8.0;</code>
