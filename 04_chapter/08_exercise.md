@@ -89,5 +89,3 @@ Here's what your webpage should look like in the Output now:
 All done for now!
 
 *In the next Code Challenge, you're ready to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image—plus, you'll position all of the content containers you built in this unit!*
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

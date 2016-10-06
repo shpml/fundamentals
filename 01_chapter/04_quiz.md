@@ -12,7 +12,3 @@ If you don't see the quiz below, please refresh the page.
 ---
 
 Finished? Great! [Let's move on and learn some more about HTML.](../02_chapter/intro.md)
-
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

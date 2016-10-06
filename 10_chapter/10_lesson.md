@@ -212,5 +212,3 @@ This is just the tip of the iceberg when it comes to DOM manipulation and event 
 
 
 [Take the Quiz for Unit 10 now!](06_quiz.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

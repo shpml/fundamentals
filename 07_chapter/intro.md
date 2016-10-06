@@ -66,5 +66,3 @@ This will show you what version of Git is running; your computer should return s
 ---
 
 [On to the next lesson.](02_lesson.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

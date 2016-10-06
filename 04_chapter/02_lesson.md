@@ -13,6 +13,3 @@ Now that we know a bit about how elements behave, we can start to explore where 
 * Is a span tag a block or inline element?
 
 [On to the next lesson.](03_lesson.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

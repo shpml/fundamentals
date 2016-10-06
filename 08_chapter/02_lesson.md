@@ -59,10 +59,8 @@ Breaking down problems in this fashion will likely seem a little foreign in the 
 
 Many of the programs that you'll be working on in the following chapters might seem a little daunting at first. Instead of trying to tackle a problem all at once, take a few minutes to think about the overall goal of the program and then break that down into series of short instructions. It will surely be time well spent.
 
-> **HINT** You could write pseudo-code for your memory game! How would you get started?
+> **HINT** You could write pseudo-code for your memory game! How would you get started? 
 
 ---
 
 Now it's your turn. Get some practice writing pseudo-code [in this exercise](03_exercise.md).
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

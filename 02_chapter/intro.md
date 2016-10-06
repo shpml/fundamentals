@@ -20,6 +20,3 @@ Now that we know how the internet works and how it delivers webpages to your per
 ---
 
 [Onwards! To the next lesson.](02_lesson.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

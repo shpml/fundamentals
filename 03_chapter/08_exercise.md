@@ -30,5 +30,3 @@ If you don't see the JS Bin below, please refresh the page.
 * Images require a src. Including title and alt is strongly recommended.
 
 *Think about all of the awesome stuff you can build online using images! Are you excited yet?*
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

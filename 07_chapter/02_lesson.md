@@ -105,5 +105,3 @@ Each of these entries represents a commit for this project, and gives a lot of o
 ---
 
 [Here are some more exercises to help you practice.](04_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

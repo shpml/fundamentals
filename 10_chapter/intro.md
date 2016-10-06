@@ -77,6 +77,3 @@ We can get and set attributes for these nodes – perhaps we want to add a class
 Once we get some functions under our belt we'll take a look at how we can use some of JavaScript's "built-in" functions to interact with the DOM and add more complex interactions to our sites.
 
 Ready to dig in? [Let's take a look at functions.](02_lesson.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

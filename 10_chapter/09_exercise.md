@@ -38,5 +38,3 @@ For now, we'll run our JavaScript to update the DOM when the page loads. In the 
 ---
 
 Nice work! [Let's dig in a little deeper.](10_lesson.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

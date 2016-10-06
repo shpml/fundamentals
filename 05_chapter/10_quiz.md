@@ -11,6 +11,3 @@ If you don't see the quiz below, please refresh the page.
 ---
 
 Then, [let's review what's been covered in this unit.](09_cheatsheet.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

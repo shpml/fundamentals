@@ -34,5 +34,3 @@ Ah! Things are looking better already!
 
 
 ![](../assets/elkwebdesign/memorygame5.png)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

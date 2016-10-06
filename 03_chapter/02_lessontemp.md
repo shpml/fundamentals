@@ -142,5 +142,3 @@ Here we want to open Sans font, in two weights: 400 for body text, and 800 for h
 ---
 
 [On to the next lesson.](06_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

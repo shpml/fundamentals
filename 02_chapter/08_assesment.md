@@ -54,4 +54,3 @@ With our newfound knowledge, we can go ahead and create the foundation of our me
 ![](https://s3.amazonaws.com/f.cl.ly/items/2J000u3x2I3S2Z1c0y0M/Image%202016-03-16%20at%201.27.18%20PM.png?v=991ea9bd)
 
 ---
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

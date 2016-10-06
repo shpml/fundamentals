@@ -347,6 +347,3 @@ This code would change the text content of the `<li>` that has the id `important
 ---
 
 [On to the next lesson.](10_lesson.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
