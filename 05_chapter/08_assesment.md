@@ -32,9 +32,9 @@ Currently, the cards in your game are all formatted vertically (very awkwardly) 
 
 **NOTE**: You'll want to use hashtags to create empty links for now!
 
-5) Add a horizontal rule underneath after your closing paragraph tag.
+5) Add a horizontal rule after your closing paragraph tag.
 
-6) Style your navbar by removing default stylings and adding a background color of #808080 in your css file. The navbar should now look grey!
+6) Style your navbar by adding a background color of #808080 in your css file. The navbar should now look grey!
 
 7) Color and position your navbar items. Follow the steps below:
 
@@ -65,9 +65,7 @@ Your two links should have a orange background with white text!
 ...
 ```
 
-10) Add some background-color to your footer. Add a background color of #808080;.
-
-11) All that's left to do is to align your header, footer and paragraph to center. Go ahead and do that!
+10) Finally, add a background-color of #808080 to your footer.
 
 
 #### Deliverable
