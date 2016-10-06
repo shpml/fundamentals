@@ -21,7 +21,7 @@ Creating a free account on JS Bin will allow you to save your exercises as "bins
 
 1)  If you want to save your code, you'll need to hit the "SAVE" button on the top left of the JS Bin editor, which will open a new browser.
 
-2) Log in using a Github account. If you don’t have one go [here](../07_chapter/07_exercise.html) to find instructions set up your account. *As of recently, JS bin only accepts Github accounts for registration.*
+2) Log in using a GitHub account. If you don’t have one go [here](../07_chapter/07_exercise.html) to find instructions set up your account. *As of recently, JS bin only accepts GitHub accounts for registration.*
 
 3) Once logged in, if you try to make your changes in any tab, you’ll receive the following message.
 
@@ -54,9 +54,9 @@ If you want to retake the quiz, just refresh the page! Practice makes perfect :+
 
 Each unit assignment will build towards your final project, where you'll code a **web browser based memory game**. You'll use HTML, CSS and JavaScript to build the game, unit by unit!
 
-For Units 1-5, you'll need to save the HTML and CSS portions of your unit assignments locally. Starting in Unit 7, you'll learn how Git & Github work, and in Unit 8 you'll begin pushing your source code to Github instead. In the meantime, make sure to save your progress!
+For Units 1-5, you'll need to save the HTML and CSS portions of your unit assignments locally. Starting in Unit 7, you'll learn how Git & GitHub work, and in Unit 8 you'll begin pushing your source code to GitHub instead. In the meantime, make sure to save your progress!
 
-**Final Submission**: At the end of the project in Unit 11, you'll submit a link to your Github repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
+**Final Submission**: At the end of the project in Unit 11, you'll submit a link to your GitHub repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
 
 
 ### Grading
@@ -81,3 +81,7 @@ Shhh. Ok, we're going to let you in on a little secret. Ready?
 The exercise answers are at the back of the book :) That's right. If you're stuck, we've supplied exercise solutions to help you work backwards and understand what needs to be done.
 
 [Ready, Set, Continue!](../01_chapter/02_lesson.md)
+
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -6,7 +6,7 @@
 
 ### Elk Web Design: Part 3
 
-This is final part of the ELK Design! We'll become more familiar with positing elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
+This is the final part of the ELK Design! We'll become more familiar with positioning elements and images. We'll be dealing with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
 If you don't see the JS Bin below, please refresh the page.
@@ -56,10 +56,12 @@ Fabulous!
 
 14 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
 
-15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom-color to #fffebb as well.
+15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
 
 16 . Set the li color to black, and its background to white.
 
 Bravo! Well done. 
 
 [Take the Quiz for Unit 5 now!](10_quiz.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

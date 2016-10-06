@@ -38,7 +38,7 @@ otherwise
 
 ```
 
-Again, the goal is to think through the problem and *break it down into simple steps*, which can then be written out in code. Since there are no formal rules as to how pseudo code must be written, each person's version will likely vary slightly. Indentation is often used to keep statements organized and grouped together.
+Again, the goal is to think through the problem and *break it down into simple steps*, which can then be written out in code. Since there are no formal rules as to how pseudo-code must be written, each person's version will likely vary slightly. Indentation is often used to keep statements organized and grouped together.
 
 As another example, perhaps we want to create a thermostat program that turns on the heat when the current room temperature is less than the target temperature.
 
@@ -59,8 +59,10 @@ Breaking down problems in this fashion will likely seem a little foreign in the 
 
 Many of the programs that you'll be working on in the following chapters might seem a little daunting at first. Instead of trying to tackle a problem all at once, take a few minutes to think about the overall goal of the program and then break that down into series of short instructions. It will surely be time well spent.
 
-> **HINT** You could write psuedo code for your memory game! How would you get started? 
+> **HINT** You could write pseudo-code for your memory game! How would you get started?
 
 ---
 
-Now it's your turn. Get some practice writing pseudo code [in this exercise](03_exercise.md).
+Now it's your turn. Get some practice writing pseudo-code [in this exercise](03_exercise.md).
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

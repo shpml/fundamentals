@@ -60,7 +60,7 @@
 * [Developer Tools III](07_chapter/intro.md)
 	* [Track Changes with Git](07_chapter/02_lesson.md)
 	  * [Exercise](07_chapter/04_exercise.md)
-	* [Introducing Github](07_chapter/05_lesson.md)
+	* [Introducing GitHub](07_chapter/05_lesson.md)
 	  * [Exercise](07_chapter/07_exercise.md)
 	* [Quiz](07_chapter/06_quiz.md)
 	* [Cheat Sheet](07_chapter/08_cheatsheet.md)

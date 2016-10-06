@@ -29,8 +29,10 @@ All we need to do on this page is make sure that “Free” is chosen as our per
 ![You're done!](../assets/chapter2/step3.png)
 
 
-Congratulations! You're officially a Github user!
+Congratulations! You're officially a GitHub user!
 
 ---
 
 Ready for another quiz? [Let's go.](06_quiz.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

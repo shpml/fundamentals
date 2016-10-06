@@ -88,3 +88,5 @@ These ones are a bit tricky, so don't get discouraged if the answers don't come 
 ---
 
 Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -8,10 +8,17 @@
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 ## Reminder: Don't Use ID's in CSS
-Although ID's are technically allowed in CSS, they are almost never used by profession developers because of their specificity. ID selectors have the ability to override class selectors– making maintenance of a large codebase difficult. Using classes will help with the scalability of your design, and help you write cleaner code.
+
+You are technically allowed to use CSS ID selectors, but these are almost never used by profession developers because of their specificity. CSS classes give you the ability to reuse styles, and any style specified with an ID isn't reusable. Also, ID selectors can override class selectors, making a codebase more difficult to maintain when it gets larger.
+
+Overall, using class selectors in your CSS will help with the scalability of your design, and help you write cleaner code.
+
 
 ## Reminder: Using ID's in JavaScript
-In JavaScript, ID's are valuable to help you access and alter different elements on your page. This process is called DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript.
+
+When writing JavaScript, IDs are valuable to help you access and alter different elements on your page. This process is called DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript, but remember, when writing CSS, style and select using classes!
+
+
 
 #### Checkpoint
 
@@ -21,3 +28,5 @@ In JavaScript, ID's are valuable to help you access and alter different elements
 ---
 
 [Practice building columns!](06_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

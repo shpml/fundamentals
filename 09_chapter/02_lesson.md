@@ -8,7 +8,7 @@
 
 Conditional statements are the expressions that allow us to test whether or not to perform some action.
 
-One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
+One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is 'truthy', will run whatever code you specify. Here's an example of an `if` statement in action.
 
 ```javascript
 if (x > 10) {
@@ -17,7 +17,7 @@ if (x > 10) {
 }
 ```
 
-The condition is what's inside the parentheses; if that condition is truthy, the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
+The condition is what's inside the parentheses; if that condition is 'truthy', the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
 Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 
@@ -30,7 +30,7 @@ A flow chart is a visual diagram telling us how to behave, depending on some set
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 <br>
 
-As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.
+As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is 'truthy', they would either enter the block of code or skip it over entirely.
 
 `if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
 
@@ -106,7 +106,7 @@ Try copying that whole statement into JS Bin, and testing out different values f
 As we've seen before, we can choose which condition will be executed using `if...else if...else`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
 
 ```javascript
-// day of the week in a number, sunday is 0, saturday is 6
+// day of the week in a number, Sunday is 0, Saturday is 6
 var dayNumber = 1;
 if(dayNumber === 0){
   day = 'Sunday';
@@ -203,3 +203,5 @@ What value will `y` be assigned when `x` is ...
 ---
 
 [Let's do another exercise.](04_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

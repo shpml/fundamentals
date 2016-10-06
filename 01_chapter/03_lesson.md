@@ -16,3 +16,6 @@ Text editors and web browsers are the tools we'll use to build web applications 
 ---
 
 [Ok. Let's learn some more about Sublime Text!](05_lesson.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -32,11 +32,11 @@ Currently, the cards in your game are all formatted vertically (very awkwardly) 
 
 **NOTE**: You'll want to use hashtags to create empty links for now!
 
-5) Add a horizontal row underneath after your closing paragraph tag.
+5) Add a horizontal rule underneath after your closing paragraph tag.
 
-4) Style your navbar by removing default stylings and adding a background color of #808080 in your css file. The navbar should now look grey!
+6) Style your navbar by removing default stylings and adding a background color of #808080 in your css file. The navbar should now look grey!
 
-5) Color and position your navbar items. Follow the steps below:
+7) Color and position your navbar items. Follow the steps below:
 
 * Set the two links in the navbar with a background color of #ffbf00
 * Make color of the text for the links white
@@ -45,9 +45,9 @@ Currently, the cards in your game are all formatted vertically (very awkwardly) 
 
 Your two links should have a orange background with white text!
 
-6) Now add a hover state by setting the background color to #ee5f3c. When you hover over the links, they should turn red. Fancy!
+8) Now add a hover state by setting the background color to #ee5f3c. When you hover over the links, they should turn red. Fancy!
 
-4) After you've floated your nav items, you should have noticed how your header became wrapped around the side of it. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
+9) After you've floated your nav items, you should have noticed how your header became wrapped around the side of it. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
 
 * Go head and add a class of "clearfix" to your nav bar.
 * In your css file, set your clearfix class to the following.
@@ -65,21 +65,19 @@ Your two links should have a orange background with white text!
 ...
 ```
 
-5) Add some background-color to your footer. Add a background color of #808080;.
+10) Add some background-color to your footer. Add a background color of #808080;.
 
-6) All that's left to do is to align your header, footer and paragraph to center. Go ahead and do that!
+11) All that's left to do is to align your header, footer and paragraph to center. Go ahead and do that!
 
 
 #### Deliverable
 
-Congratulations! Your board game is now structured and styled utilizing all your new knowledge of HTML and CSS! As you move through the rest of Fundamentals, you will be writing the functionality of browser memory game. We'll do this using Javascript! Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.
+Congratulations! Your board game is now structured and styled utilizing all your new knowledge of HTML and CSS! As you move through the rest of Fundamentals, you will be writing the functionality of browser memory game. We'll do this using JavaScript! Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.
 
 ![](../assets/elkwebdesign/memorygame6.png)
 
 > Remember where you save your work! You're going to add on to it as you work through the fundamentals!
 
----
-
-[Take a quick feedback survey to help us improve Fundamentals](feedback.md).
-
 Then we'll take a look in our developer toolbox!
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

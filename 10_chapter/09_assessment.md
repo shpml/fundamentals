@@ -21,7 +21,7 @@ Besides `createElement`, the `document` object comes with other methods that hel
 
 To complete this assignment, you will need to utilize these methods.
 
->**Note:** In order to append your card elements, you're going to need something to append to. We're going to change the HTML content of one of our tags so that we may use Javascript to _select_ that tag. In order to find an element to you want to append to, use JavaScript's `document` object to run either 'getElementById' or 'querySelector'.
+>**Note:** In order to append your card elements, you're going to need something to append to. We're going to change the HTML content of one of our tags so that we may use JavaScript to _select_ that tag. In order to find an element to you want to append to, use JavaScript's `document` object to run either 'getElementById' or 'querySelector'.
 
 ## Exercise
 
@@ -31,15 +31,15 @@ To complete this assignment, you will need to utilize these methods.
 
 Before you start, go ahead and comment out the `if` statement from the last assignment. We'll work with it to finalize our memory game during the next unit.
 
-1 ) Open your `index.html` and look for your `<div>` with a class of `board`. We need to give this div an **id** so that we may _get_ it using Javascript.  
+1 ) Open your `index.html` and look for your `<div>` with a class of `board`. We need to give this div an **id** so that we may _get_ it using JavaScript.  
 
 2 ) Give your div an `id` of `game-board`.
 
-3 ) We're going to generate cards using Javascript instead of using our existing `div` elements with the class `card` in html. Comment out any `div` with the `card` class.
+3 ) We're going to generate cards using JavaScript instead of using our existing `div` elements with the class `card` in html. Comment out any `div` with the `card` class.
 
 4 ) Save your changes!
 
-###### Create the HTML for the cards using Javascript:
+###### Create the HTML for the cards using JavaScript:
 
 4 ) Get an element with the id of `game-board` and set it to a variable.
 
@@ -49,9 +49,9 @@ Before you start, go ahead and comment out the `if` statement from the last assi
 
 ###### Create functions to organize your code
 
-7 ) Create a function called `createCards` in your Javascript file. This function will contain the code you just wrote to generate your cards. 
+7 ) Create a function called `createCards` in your JavaScript file. This function will contain the code you just wrote to generate your cards.
 
-8 ) Your `createCards` function should contain any Javascript associated with the creation of the `div` elements with the class `card`.
+8 ) Your `createCards` function should contain any JavaScript associated with the creation of the `div` elements with the class `card`.
 
 9 ) Be sure to execute/fire your `createCards` function so it runs!
 
@@ -94,3 +94,5 @@ world.appendChild(strongbadia);
 
 ---
 [Next up: Unit 11](../11_chapter/intro.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -16,3 +16,6 @@ The internet and the world wide web are very different entities; however, they a
 ---
 
 [On to the next lesson!](03_lesson.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

@@ -41,3 +41,5 @@ Now try changing the alpha to .5 (50% opacity). What about .8 or .2?
 
 
 *Bravo to you on utterly mastering color models for the web. Take this knowledge forward and make the internet a more colorful space!*
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

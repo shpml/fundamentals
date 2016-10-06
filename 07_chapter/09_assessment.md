@@ -23,7 +23,7 @@ As you move through the next several chapters, you will be building parts of bro
 
 3. Go take a look and confirm that you now have a copy of `wdi-fundamentals-memorygame` in your list of repositories.
 
-4. Open your fork of the repo (and note that Github lists your repo as a fork of the original repository).
+4. Open your fork of the repo (and note that GitHub lists your repo as a fork of the original repository).
 
   ![Image showing "forked from ga-students/wdi-fundamentals-rps"](../assets/chapter2/clone_ga-students.png)
 
@@ -43,3 +43,5 @@ As you move through the next several chapters, you will be building parts of bro
 ---
 
 That's it for now! We'll be coming back to this project at the end of every chapter, but now, it's time to move on to [Unit 8](../08_chapter/intro.md).
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

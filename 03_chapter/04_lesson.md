@@ -32,3 +32,5 @@ The *title attribute* tells search engines what this img is a picture of. It hel
 
 
 [On to the next lesson.](07_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

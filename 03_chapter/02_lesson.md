@@ -31,12 +31,19 @@ p {
 }
 ```
 
-#### Opacity
+#### Opacity and RGBA
 
-You'll use aplha to change the opacity of your element. See below:
+RGBA color values are similar to RGB color values with an additional parameter - "alpha" - that specifies the opacity of the element or elements being styled.
+
+The alpha parameter can take any number between 0.0 (totally transparent) and 1.0 (completely opaque).
+
+See below:
 
 ![](../assets/elkwebdesign/rgb.png)
 
 ---
 
 [On to the next lesson.](02_lessontemp.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

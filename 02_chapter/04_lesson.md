@@ -18,3 +18,6 @@ Now that we've learned a bit about HTML tags, it's time to think about how to pr
 ---
 
 [Let's get some practice now!](05_exercise.md)
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

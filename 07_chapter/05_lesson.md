@@ -10,13 +10,13 @@ To collaborate with others (and also to backup our files just in case our comput
 
 ### What is GitHub?
 
-GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
+GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On GitHub, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-In a lot of ways, Github is like Dropbox.
+In a lot of ways, GitHub is like Dropbox.
 
 You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.
 
-Below is what the Github interface looks like for a repo called `awesome-project`:
+Below is what the GitHub interface looks like for a repo called `awesome-project`:
 
 1. **Repo Name and Owner** - describes who owns the repository, what the name of the repo is and whether the repo is public or private.
 
@@ -30,7 +30,7 @@ Below is what the Github interface looks like for a repo called `awesome-project
 
 	![File Structure](../assets/chapter2/contents_github.gif)
 
-4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own Github account.
+4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own GitHub account.
 
 	![Fork button](../assets/chapter2/fork_github.gif)
 
@@ -38,7 +38,7 @@ Below is what the Github interface looks like for a repo called `awesome-project
 
 	![Side bar](../assets/chapter2/sidebar_github.gif)
 
-There are a ton of unique Github features crammed on this page, but we'll only be using three of them to start.
+There are a ton of unique GitHub features crammed on this page, but we'll only be using three of them to start.
 
 ---
 
@@ -70,7 +70,7 @@ This workflow consists of the following steps:
 
 ### 1. Forking
 
-Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on GitHub; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
 
 <br>
 ![Node.js Contributors](../assets/chapter2/node.png)
@@ -85,7 +85,7 @@ To create a copy of Joyent's repo, you would need to **fork** it by clicking the
 
 > **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md).
 
-"Forking" adds a copy of someone else's GitHub repo to *your* Github account.
+"Forking" adds a copy of someone else's GitHub repo to *your* GitHub account.
 
 The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
@@ -106,7 +106,7 @@ You need to navigate to the place where you'd like to store the repo, and then t
 git clone https://url/to/clone
 ```
 
-You can find the URL to clone on right side of the forked repo on Github:
+You can find the URL to clone on right side of the forked repo on GitHub:
 
 ![Node.js Clone](../assets/chapter2/node_clone.png)
 
@@ -126,13 +126,13 @@ Once you've committed the changes you've made to the code, your local repo will 
 Don't worry about the `origin` and `master` part just yet.
 
 If you're curious, here's a brief overview:
-* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on Github). You can have many remotes, if you want. We're not going to work with more than one in Fundamentals.
+* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes, if you want. We're not going to work with more than one in Fundamentals.
 * `master` refers to the **branch** on your remote repo where you're currently adding your changes. Again, for now, we're just going to be doing our work on the `master` branch.
 
 
 ### 6. Submitting a Pull Request
 
-Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**.
+Once your changes are pushed to your remote repository on GitHub, you can notify the original repo owner of your changes by submitting a **pull request**.
 
 A pull request is effectively saying "Hello maintainer of project X, I made some changes here in my forked copy and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
 
@@ -152,3 +152,5 @@ And trust us... you *will* get to the point where cloning and pushing are like b
 ---
 
 [Here's another exercise for you](07_exercise.md) - give it a shot.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

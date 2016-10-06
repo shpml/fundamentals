@@ -111,7 +111,7 @@ What will each of the following expressions evaluate to?
 
 Test your answers in JSBin by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
 
->**Note**  Javascript follows order of operations for mathematic expressions. When mathematic operations occur certain operators will be evaluated first. Code inside of a `()` will execute first; then multiplication and division; followed by addition and subtraction. [Further Reading](https://www.mathsisfun.com/operation-order-pemdas.html).
+>**Note**  JavaScript follows order of operations for mathematical expressions. When mathematical operations occur certain operators will be evaluated first. Code inside of a `()` will execute first; then multiplication and division; followed by addition and subtraction. [Further Reading](https://www.mathsisfun.com/operation-order-pemdas.html).
 
 ---
 
@@ -154,3 +154,6 @@ var categorize = function(x) {
 ---
 
 [Here's another exercise for you](04_exercise.md) - give it a shot.
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

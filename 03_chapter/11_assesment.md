@@ -64,7 +64,7 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Add color: #ffd700 to your level two heading.
 
->**HINT** A good way to find your color value would be with a google search, `<color name> hex code` or `<color name> rgb color`.
+>**HINT** A good way to find your color value would be with a Google search, `<color name> hex code` or `<color name> rgb color`.
 
 ---
 
@@ -73,3 +73,6 @@ All card elements will share certain characteristics such as: width, border-radi
 ![](../assets/elkwebdesign/memorygameunit3.png)
 
 Great! Your website is starting to look more and more like an actual memory game!
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

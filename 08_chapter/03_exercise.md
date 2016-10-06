@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now it's your turn to get some practice writing pseudo code!
+Now it's your turn to get some practice writing pseudo-code!
 
 #### Program: Eligible for a Discount?
 
@@ -18,10 +18,12 @@ Here is the pricing structure:
 
 3. All other tickets cost $10.00.
 
-Try your hand at writing pseudo code for this program. Remember, the goal is to think through the problem and break it down into simple steps.
+Try your hand at writing pseudo-code for this program. Remember, the goal is to think through the problem and break it down into simple steps.
 
 > Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.
 
 ---
 
 Now let's move on to learning about data, operators, and expressions [in this lesson](04_lesson.md)!
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

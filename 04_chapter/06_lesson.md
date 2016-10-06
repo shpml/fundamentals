@@ -55,3 +55,6 @@ These elements are used to group the content of a page into related chunks. Sect
 These elements are used to contain standalone blocks of text, such as news articles, blog posts, etc.
 
 *As you continue to build web pages, you’ll find that organizing your code with clear semantic elements will make creating content, developing styles, and fixing bugs all much easier.*
+
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

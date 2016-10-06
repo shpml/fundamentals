@@ -13,3 +13,5 @@
 
 ---
 [On to the next lesson.](06_lesson.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

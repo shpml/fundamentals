@@ -7,11 +7,11 @@
 At this point, we've covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we've (until now) glossed over, especially related to boolean logic. Let's take a closer look at some of them.
 
 * We'll start with **undefined** and **null** values. These two values represent a lack of data.
-* Next, we will dive into **truthy** and **falsey** - the result of Javascript's attempt to convert non-boolean values to booleans at runtime.
+* Next, we will dive into **truthy** and **falsey** - the result of JavaScript's attempt to convert non-boolean values to booleans at runtime.
 * Finally: a challenge!
 
 ### Undefined
-You've just opened a Javascript console. You want to define a new variable but aren't sure what the value is *just yet*.  
+You've just opened a JavaScript console. You want to define a new variable but aren't sure what the value is *just yet*.  
 
 ```javascript
 var someData;
@@ -20,7 +20,7 @@ Without **assigning** a value to a variable, that variable becomes `undefined`. 
 ```javascript
 console.log(someData);
 ```
-If we want to check to see if our variable is infact `undefined`, we may do so. Checking to see is a variable is `undefined` is important. It allows for you to verify that something exists before you use it (and thus keep from throwing errors).
+If we want to check to see if our variable is in fact `undefined`, we may do so. Checking to see is a variable is `undefined` is important. It allows for you to verify that something exists before you use it (and thus keep it from throwing errors).
 ```javascript
 if (someData == undefined) {
   console.log('No definition found');
@@ -67,7 +67,7 @@ Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (<
 
 * To be **falsey** means that boolean operators act in mostly the same way that they would if the value was `false`. For instance, using `!` (NOT) on a "falsey" value will evaluate to `true`, just as if you'd written `!false`. The "falsey" category of values includes: the number `0`, empty strings (`''`), `null`, and `undefined`. `false` is, of course, also "falsey".
 
-* Being **truthy** is exactly the opposite of being falsey; using `!` (NOT) on a "truthy" value would evaluate to `false`. Anything that isn't "falsey" is "truthy", including all strings, all non-zero numbers, and (of course) `true`.
+* Being **truthy** is exactly the opposite of being "falsey"; using `!` (NOT) on a "truthy" value would evaluate to `false`. Anything that isn't "falsey" is "truthy", including all strings, all non-zero numbers, and (of course) `true`.
 
 As they say, "_to a hammer (read: boolean operator), everything looks like a nail (read: boolean value)_".
 
@@ -109,3 +109,5 @@ Can you predict how the following expressions will be evaluated? Check your answ
 ---
 
 [Here's another exercise for you](09_exercise.md) - give it a shot.
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

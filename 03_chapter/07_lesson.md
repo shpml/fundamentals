@@ -24,3 +24,5 @@ On the other hand, when we link to a source outside of our project, it is referr
 ---
 
 [On to the next lesson.](08_exercise.md)
+---
+How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
