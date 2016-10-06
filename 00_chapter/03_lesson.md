@@ -81,7 +81,3 @@ Shhh. Ok, we're going to let you in on a little secret. Ready?
 The exercise answers are at the back of the book :) That's right. If you're stuck, we've supplied exercise solutions to help you work backwards and understand what needs to be done.
 
 [Ready, Set, Continue!](../01_chapter/02_lesson.md)
-
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

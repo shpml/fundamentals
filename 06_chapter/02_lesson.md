@@ -50,5 +50,3 @@ Your computer understands two kinds of addresses or paths: absolute and relative
 ---
 
 Feeling good? [Let's do some more practice.](04_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

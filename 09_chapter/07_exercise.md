@@ -50,5 +50,3 @@ buzz
 ---
 
 Feeling confident? [Test your understanding of this lesson with this quiz.](06_quiz.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

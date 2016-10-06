@@ -49,7 +49,7 @@ Before you start, go ahead and comment out the `if` statement from the last assi
 
 ###### Create functions to organize your code
 
-7 ) Create a function called `createCards` in your JavaScript file. This function will contain the code you just wrote to generate your cards.
+7 ) Create a function called `createCards` in your JavaScript file. This function will contain the code you just wrote to generate your cards. 
 
 8 ) Your `createCards` function should contain any JavaScript associated with the creation of the `div` elements with the class `card`.
 
@@ -94,5 +94,3 @@ world.appendChild(strongbadia);
 
 ---
 [Next up: Unit 11](../11_chapter/intro.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

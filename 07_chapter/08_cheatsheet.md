@@ -54,5 +54,3 @@ Command                                    | Description
 ---
 
 Feeling confident? [Let's take what we've learned and apply it to a project.](09_assessment.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

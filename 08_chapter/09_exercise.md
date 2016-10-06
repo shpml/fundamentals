@@ -31,5 +31,3 @@ Were you able to get all of your expressions to work? If so, nice job!
 ---
 
 Ready for another quiz? [Here we go!](11_quiz.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

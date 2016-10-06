@@ -43,5 +43,3 @@ As you move through the next several chapters, you will be building parts of bro
 ---
 
 That's it for now! We'll be coming back to this project at the end of every chapter, but now, it's time to move on to [Unit 8](../08_chapter/intro.md).
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

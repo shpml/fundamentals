@@ -156,5 +156,3 @@ Calls the command `cd` to change directory. It is provided the option of where t
 ---
 
 [Give it a try!](07_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

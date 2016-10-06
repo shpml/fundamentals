@@ -224,6 +224,3 @@ When you’d like to add images to your site, you should use the tag with the �
 Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
 
 On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

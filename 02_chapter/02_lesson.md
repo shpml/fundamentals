@@ -24,6 +24,3 @@ For example, an opening heading tag (`<h1>`) and closing heading tag (`<\h1>` ) 
 ---
 
 Think you've got it? [Then let's get some practice!](03_exercise.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

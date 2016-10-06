@@ -130,5 +130,3 @@ Check your answers in JS Bin.
 ---
 
 Feeling good about loops? [Let's do another exercise.](07_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

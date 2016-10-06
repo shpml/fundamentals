@@ -71,6 +71,3 @@ You can do a lot of neat things using attributes and links. Let's keep going!
 ---
 
 [Your turn! Time to take the Unit 2 Quiz. ](06_quiz.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

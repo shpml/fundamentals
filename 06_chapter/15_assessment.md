@@ -24,5 +24,3 @@ Close and restart your Terminal application.
 ---
 
 Now, [let's keep digging through the developer's toolbox!](../07_chapter/intro.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

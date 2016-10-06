@@ -73,6 +73,3 @@ All card elements will share certain characteristics such as: width, border-radi
 ![](../assets/elkwebdesign/memorygameunit3.png)
 
 Great! Your website is starting to look more and more like an actual memory game!
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

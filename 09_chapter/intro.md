@@ -26,5 +26,3 @@ Instructions like these require the cook to make decisions based on available da
 In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
 
 [Let's get started.](02_lesson.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

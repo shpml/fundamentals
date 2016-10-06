@@ -28,5 +28,3 @@ When writing JavaScript, IDs are valuable to help you access and alter different
 ---
 
 [Practice building columns!](06_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

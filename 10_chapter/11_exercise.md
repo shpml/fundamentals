@@ -30,6 +30,3 @@ Let's get some practice manipulating the DOM and adding some interactions to our
 
 
 Feeling confident? [Test your understanding of functions and the DOM with this next quiz.](12_quiz.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

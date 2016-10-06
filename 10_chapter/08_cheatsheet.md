@@ -169,6 +169,3 @@ document.getElementsByTagName('a')[0].removeAttribute('id');
 
 ---
 [Let's put this into practice!](09_assessment.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

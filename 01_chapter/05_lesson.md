@@ -2,7 +2,7 @@
 
 ---
 
-### Sublime Text
+### Sublime Text 
 
 Sublime Text is our editor of choice for WDI Fundamentals. Check out the following video to learn how to download, install, and use Sublime Text 3! You'll need it (or another editor like it) in order to build your Memory Game assignment.
 
@@ -17,6 +17,3 @@ Sublime Text is our editor of choice for WDI Fundamentals. Check out the followi
 ---
 
 [Ok. Got all that? Now it's time to take a short quiz and test what you've just learned!](04_quiz.md)
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

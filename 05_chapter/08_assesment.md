@@ -78,6 +78,8 @@ Congratulations! Your board game is now structured and styled utilizing all your
 
 > Remember where you save your work! You're going to add on to it as you work through the fundamentals!
 
-Then we'll take a look in our developer toolbox!
 ---
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
+
+[Take a quick feedback survey to help us improve Fundamentals](feedback.md).
+
+Then we'll take a look in our developer toolbox!

@@ -13,6 +13,3 @@ This ebook has 11 units; each unit contains lessons, [exercises, and assignments
 HTML and CSS lessons include *videos!*
 
 Coming Soon! General Assembly's product team is creating high quality videos for our JavaScript lessons.
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

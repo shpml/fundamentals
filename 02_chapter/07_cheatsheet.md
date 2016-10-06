@@ -67,6 +67,3 @@ In order to organize tags properly, start with a set of structural elements call
      </body>
 </html>
 ```
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

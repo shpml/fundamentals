@@ -203,5 +203,3 @@ What value will `y` be assigned when `x` is ...
 ---
 
 [Let's do another exercise.](04_exercise.md)
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!

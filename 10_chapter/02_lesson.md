@@ -154,6 +154,3 @@ var categorize = function(x) {
 ---
 
 [Here's another exercise for you](04_exercise.md) - give it a shot.
-
----
-How is your Fundamentals Experience going? Take a [quick survey](../feedback.md) to give us your feedback!
