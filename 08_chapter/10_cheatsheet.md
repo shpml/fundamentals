@@ -24,7 +24,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
   * An expression like `x = y` only means that the value that `y` had been holding is now also being held in `x`; **it does not imply any lasting relationship between x and y**.
 
 #### Special Cases
-  * When a variable is created, but is not assigned a value, it will be evaluated as `null`.
+  * When a variable is created, but is not assigned a value, it will be evaluated as `undefined`.
   * Any type of value, including `null`, can be passed into a logical operator as an input; based on whether these inputs are either 'truthy' or 'falsey', and what type of operator you're dealing with, the operator will behave in different ways.
 
 #### Comparison Operators
