@@ -32,9 +32,9 @@ To start playing around with JavaScript, we'll be using a website called **[JS B
 
 ![JSBin Screenshot](../assets/chapter3/jsbin.png)
 
-As you can see in the screenshot above, JSBin features different window panes. On the right, with the light background, is the *preview* - this tool will display what your code builds in real time for you. It auto updated changes (unless you check off the ability to do so). On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and JavaScript; to execute these instructions, click the 'run with JS' in the right window.
+As you can see in the screenshot above, JSBin features different window panes. On the right, with the light background, is the *preview* - this tool will display what your code builds in real time for you. It automatically updates on any change, unless you uncheck the "Auto-run JS" option in the upper right-hand corner of the *preview* section. On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and Javascript; to execute these instructions, click the 'Run with JS' button in the right window.
 
-To save your JS Bin session, just 'login' at the top. When you select 'File' and then 'New' you will be provided a blank space to work in. The moment you begin writing code, JS Bin will generate a URL that you can bookmark and come back to any time you want.
+To save your JS Bin session, just 'Login' or 'Register' at the top, and log in with GitHub. When you select 'File' and then 'New' you will be provided a blank space to work in. The moment you begin writing code, JS Bin will generate a URL that you can bookmark and come back to any time you want.
 
 JS Bin has the ability to show a 'console'; this will display any JavaScript code that you need to run. You will need this from time to time. You can hide or display any tabs (HTML, CSS, JavaScript, or Console) by clicking on their tab to hide/show them as needed.
 
