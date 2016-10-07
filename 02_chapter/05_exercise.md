@@ -25,13 +25,13 @@ Use the editor provided below to write your code and see what renders!
 Follow me on twitter.  
 Send me an email.*
 
-2 . Wrap the first line, "Hi, I'm awesome" in *h1 tags*.
+2 . Wrap the first line, "Hi, I'm awesome" in `h1` tags.
 
-3 . Wrap the rest of your content with *paragraph tags*. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need!
+3 . Wrap the rest of your content with `p` tags. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need!
 
 4 . Wrap the text "Follow me" in an *anchor element* (with `<a>` and `</a>`).
 
-5 . The opening `<a>` tag needs a **h**yperlink **r**eference **a**ttribute, so it knows where to go when clicked. Go ahead and link to your to your twitter (or other social media) page.
+5 . The opening `a` tag needs a **h**yperlink **r**eference **a**ttribute, so it knows where to go when clicked. Go ahead and link to your to your twitter (or other social media) page.
 
 > **NOTE** If you aren't on social media, link to any website you want!
 
@@ -40,7 +40,7 @@ Example:
 
 > **NOTE** One more thing! Sometimes you won't know which link destinations you want until you've finished coding your site. In those cases, you can substitute a hash symbol as a placeholder, like so: `Send me an <a href="#">email</a>.`
 
-6 . Now, wrap an empty *anchor* around the word "email" on the second line.
+6 . Now, wrap an empty `a` tag around the word "email" on the second line.
 
 7 . Put `mailto`: in front of your email address, so the browser knows it's not a web page!
 
@@ -61,7 +61,7 @@ Click on the **OUTPUT** button to see what your HTML code renders.
 Make sure you have:
 
 - Made the introductory sentence a top-level heading with a `<h1>` tag and closed it with a `</h1>`tag.
-- Wrapped the rest of the content in two paragraphs, or p elements.
+- Wrapped the rest of the content in two paragraphs, or `p` tags.
 - Linked to your twitter (or some other social media) page.
 - Created an email link with the proper email or placeholder.
 

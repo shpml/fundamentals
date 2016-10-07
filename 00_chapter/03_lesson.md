@@ -31,9 +31,9 @@ You’ll want to click on the “clone your own copy” which will generate a ne
 
 4) Now that you're logged in, you can save your code by doing one of the following:
 
-* File > Export as gist. This will save your file as a github repository on your github! Read more about gists [here](https://help.github.com/articles/about-gists/)
-* File > Download. Download and save your file locally.
-* Save your JS bin url. Simply copy and save your JS bin url for future reference. You can also go to File >My Bins to find the bin. Additionally, you can also File > Save Snapshot at point in time where JS bin will automatically save the latest version for you on your working copy.
+* `File` > `Export` as gist. This will save your file as a github repository on your github! Read more about gists [here](https://help.github.com/articles/about-gists/)
+* `File` > `Download`. Download and save your file locally.
+* Save your JS bin url. Simply copy and save your JS bin url for future reference. You can also go to File >My Bins to find the bin. Additionally, you can also `File` > `Save Snapshot` at point in time where JS bin will automatically save the latest version for you on your working copy.
 
 
 ![](../assets/elkwebdesign/jsbin.png)
