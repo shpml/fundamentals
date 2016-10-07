@@ -24,7 +24,7 @@ You'll be using the code editor below. Take a look at the starter code in the ed
 
 #### Part 1: Web Fonts
 
-We'll  be using external fonts for this challenge. Let's start out by linking external fonts in your HTML. But you can also link to external fonts in your HTML. Let's try it!
+We'll  be using external fonts for this challenge. Let's start out by linking external fonts in your HTML.
 
 1 . Add the following code to the head of your HTML file.
 

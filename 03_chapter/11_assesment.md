@@ -19,7 +19,7 @@ As you move through the next several units, you'll be building parts of a browse
 
 ##### Below are the steps to complete the assignment.
 
-1) Open up your previous index.html file in Sublime where you created your memory game page.
+1) Open up your previous `index.html` file in Sublime where you created your memory game page.
 
 2) Underneath your instructions and within your body tag, create five divs like so:
 
@@ -44,7 +44,7 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Let's go ahead assign a class attributes called "card" to the four other divs within your "board" div.
 
-  * Then, switch over to the some CSS. Create a new file and save it as "style.css"
+  * Then, switch over to some CSS. Create a new file and save it as "style.css"
 
   *Reference your board class and give it a height of 80%, a width of 50%. Make sure you display it as an inline-block.
 
@@ -54,9 +54,9 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Bonus: Make your cards have card-like rounded borders by adding a border radius of 10px.
 
-4) Remember, if you still have CSS in our index.html when you changed the font color in the previous unit exercise. Go ahead move over this CSS from `<style>` into the `style.css`.
+4) At this point, if we still have CSS in our `index.html`, we should move over any CSS from the `<style>` tags inside of `index.html` into a separate file, `style.css`.
 
-5) Now, go back to your index.html and connect your css file using `<link>` to reference it.
+5) Now, go back to your `index.html` and connect your css file(`style.css`) by using a `<link>` tag to reference it.
 
 6) Switch up the named color values to RGB and Hex values. If you can't figure out the exact RGB or Hex value to match the color, don't sweat it, just use something close. The key is just to practice implementing a more technical value.
 
@@ -64,7 +64,7 @@ All card elements will share certain characteristics such as: width, border-radi
 
   * Add color: #ffd700 to your level two heading.
 
->**HINT** A good way to find your color value would be with a google search, `<color name> hex code` or `<color name> rgb color`.
+>**HINT** A good way to find your color value would be with a Google search, `<color name> hex code` or `<color name> rgb color`.
 
 ---
 

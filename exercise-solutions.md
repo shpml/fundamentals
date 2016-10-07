@@ -704,7 +704,7 @@ var areBothEven = function(a, b){
 };
 var hotOrNot = function(temp){
   return (temp > 75)? "hot" : "not hot";
-  //// using an `if` statement is also acceptable
+  // using an `if` statement is also acceptable
 };
 var threeIfNull = function(num){
   if(num===null) return 3

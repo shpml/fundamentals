@@ -95,7 +95,7 @@ var candidateData = {
     }
   }
 ```
->**NOTE** Ordinary arrays and objects handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
+>**NOTE** Ordinary arrays and objects handle nesting in the exact same way; if we wanted to retrieve the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
 
 ### Test Yourself
 Consider the following object.

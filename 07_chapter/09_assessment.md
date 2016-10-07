@@ -4,7 +4,7 @@
 
 # Git and GitHub Preparation
 
-As you move through the next several chapters, you will be building parts of browser based Memory Game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment. In order to accomplish this, you will need to access code that is located on GitHub's servers. Follow the instructions below to get started!
+As you move through the next several chapters, you will be building parts of browser-based Memory Game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment. In order to accomplish this, you will need to access code that is located on GitHub's servers. Follow the instructions below to get started!
 
 ## Exercise
 
@@ -23,7 +23,7 @@ As you move through the next several chapters, you will be building parts of bro
 
 3. Go take a look and confirm that you now have a copy of `wdi-fundamentals-memorygame` in your list of repositories.
 
-4. Open your fork of the repo (and note that Github lists your repo as a fork of the original repository).
+4. Open your fork of the repo (and note that GitHub lists your repo as a fork of the original repository).
 
   ![Image showing "forked from ga-students/wdi-fundamentals-rps"](../assets/chapter2/clone_ga-students.png)
 

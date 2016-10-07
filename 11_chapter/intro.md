@@ -3,9 +3,9 @@
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Create collections (arrays and associative arrays) and retrieve values from them
+* Create collections - arrays and objects - and retrieve values from them
 * Operate on all the elements within a collection using loops and iterators
-* Explain how arrays and associative arrays differ
+* Explain how arrays and objects differ
 
 ---
 

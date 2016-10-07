@@ -12,6 +12,8 @@ Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 
 
 > **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
+> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2` returns `2`.
+
 When we want to then use this result, we simply substitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;` and this expression would evaluate to double whatever value was stored in `x`.
 
 To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
@@ -63,7 +65,7 @@ x = 15;
 ```
 What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you're correct!
 
-> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2` returns `2`.
+
 
 Sometimes, we find variables on both sides of the `=`. Suppose we have two variables, `x` and `y`, as in the example below.
 

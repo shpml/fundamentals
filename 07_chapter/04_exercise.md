@@ -39,4 +39,4 @@ command - see how both files have been staged? Go ahead and commit the addition 
 
 ---
 
-[Next Up: Publish Work on Github](05_lesson.md)
+[Next Up: Publish Work on GitHub](05_lesson.md)

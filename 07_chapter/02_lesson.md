@@ -15,7 +15,7 @@ $ git init
 ```
 > **CAUTION** Do not execute this command in your **home directory**! It will make it very difficult to work with any other repositories! Use `pwd` to check your location if you're unsure.
 
-When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
+When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 6) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
 
 If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
 
@@ -89,7 +89,7 @@ To view the timeline of changes, you can run:
  $ git log
 ```
 
-Which will yield a list of entires that look like this:
+This will yield a list of entries that look like this:
 
 ```
 commit 6d33f525a09b9918f75188db164ea2722039830b
@@ -100,7 +100,7 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
 ```
 
-Each of these entries represents a commit for this project, and gives a lot of other useful information including when the commit was made, who made it, and (if the person wrote a good commit message) what that particular commit does.
+Each of these entries represents a commit for this project, and gives a lot of other useful information including: when the commit was made; who made the commit; and, if a quality message was included, a description of the code being committed.
 
 ---
 
