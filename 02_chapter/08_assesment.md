@@ -6,7 +6,9 @@
 
 In this unit we've already introduced some of the core fundamentals of web development, including how the internet works as well as how websites are structured and styled.
 
-With our newfound knowledge, we can go ahead and create the foundation of our memory card game app. The goal of this exercise is to build the primary structure of the website that will host our memory card game.
+As you move through the next several chapters, you will be building parts of a browser-based Memory Game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use these tools to complete the assignment.
+
+With our newfound knowledge from this unit, we can go ahead and create the foundation of our memory card game app. The goal of this exercise is to build the primary structure of the website that will host our memory card game.
 
 ## Exercise
 
