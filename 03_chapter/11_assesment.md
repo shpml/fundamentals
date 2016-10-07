@@ -21,7 +21,7 @@ As you move through the next several units, you'll be building parts of a browse
 
 1) Open up your previous `index.html` file in Sublime where you created your memory game page.
 
-2) Underneath your instructions and within your body tag, create five divs like so:
+2) Underneath your instructions and within your `body` tag, create five `div`s like so:
 
 ```html
 <body>
@@ -34,21 +34,21 @@ As you move through the next several units, you'll be building parts of a browse
 </body>
 ```
 
-You'll use these divs to create a "board" and the individual "cards" that will be displayed on the webpage.
+You'll use these `div`s to create a "board" and the individual "cards" that will be displayed on the webpage.
 
 3) Because the cards will look similar (if they looked different, then you'd be able to cheat in the memory game!), you'll create CSS that shares similar style that is shared across multiple elements. Therefore, you'll want to utilize the the more general selector, class.
 
 All card elements will share certain characteristics such as: width, border-radius, etc., we can go ahead and define these CSS properties to the class, `card`.
 
-  * Assign a class called "board" to the first div.  
+  * Assign a class called "board" to the first `div`.  
 
-  * Let's go ahead assign a class attributes called "card" to the four other divs within your "board" div.
+  * Let's go ahead assign a class attributes called "card" to the four other `div`s within your "board" `div`.
 
-  * Then, switch over to some CSS. Create a new file and save it as "style.css"
+  * Then, switch over to some CSS. Create a new file and save it as `style.css`
 
-  *Reference your board class and give it a height of 80%, a width of 50%. Make sure you display it as an inline-block.
+  * Reference your board class and give it a height of `80%`, a width of `50%`. Make sure you display it as an inline-block.
 
-  * Reference your card class in your style.css and make the height of your cards 200px, the width 150px and a black border of 1px.
+  * Reference your card class in your `style.css` and make the height of your cards `200px`, the width `150px` and a black border of `1px`.
 
   * Make your cards yellow.
 
@@ -60,9 +60,9 @@ All card elements will share certain characteristics such as: width, border-radi
 
 6) Switch up the named color values to RGB and Hex values. If you can't figure out the exact RGB or Hex value to match the color, don't sweat it, just use something close. The key is just to practice implementing a more technical value.
 
-  * Add the rgb(2, 132, 130) to your level one heading.
+  * Add the `rgb(2, 132, 130)` to your level one heading (`h1`).
 
-  * Add color: #ffd700 to your level two heading.
+  * Add `color: #ffd700` to your level two heading (`h2`).
 
 >**HINT** A good way to find your color value would be with a Google search, `<color name> hex code` or `<color name> rgb color`.
 

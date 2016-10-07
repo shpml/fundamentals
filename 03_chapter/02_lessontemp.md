@@ -16,7 +16,7 @@ As you learn to style your website, you'll want to get more creative with the ty
 
 To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
 
-```html
+```css
 h1 {
      font-family: Arial, sans-serif;
 }
@@ -24,7 +24,7 @@ h1 {
 
 If your selected font is more than one word, capitalize both words and put them in quotation marks.
 
-```html
+```css
 h1 {
      font-family: "Courier New", monospace;
 }

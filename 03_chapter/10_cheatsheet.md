@@ -35,13 +35,13 @@ A class attribute is added to an HTML element in order to give you a “hook” 
 An id attribute is added to an HTML element in order to give you a “hook” to refer to that element in your CSS. CSS id selectors begin with a “#”. IDs can only be used one time per page.
 
 #### Horizontal Rule
-Add a horizontal line across your page using the hr tag.
+Add a horizontal line across your page using the `hr` tag.
 
 #### Line Break
-Break up a block of text using the br tag.
+Break up a block of text using the `br` tag.
 
 #### Image
-Add images to your HTML using the img tag. Tell the browser the source of the image file with an src attribute.
+Add images to your HTML using the `img` tag. Tell the browser the source of the image file with a `src` attribute.
 
 #### Absolute File Path
 A path to a website or file that includes a full web address (starting with “http”) that the browser loads from the remote location directly. For example:
@@ -49,7 +49,7 @@ A path to a website or file that includes a full web address (starting with “h
 `<img src="http://imgur.com/awesomedog.jpg">`
 
 #### Relative File Path
-A path to a website or file that gives you the path to the resource you are looking for as it relates to your website's local file structure. For example, if you wanted to retrieve an image called newlogo.png that resides in a file called img, you would enter the following relative address:
+A path to a website or file that gives you the path to the resource you are looking for as it relates to your website's local file structure. For example, if you wanted to retrieve an image called newlogo.png that resides in a directory called `images`, you would enter the following relative address:
 
 `<img src="images/awesomedog.jpg">`
 
@@ -95,7 +95,7 @@ p {
 
 To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
 
-```html
+```css
 h1 {
      font-family: Arial, sans-serif;
 }
@@ -103,7 +103,7 @@ h1 {
 
 If your selected font is more than one word, capitalize both words and put them in quotation marks.
 
-```html
+```css
 h1 {
      font-family: "Courier New", monospace;
 }

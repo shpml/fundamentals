@@ -2,7 +2,7 @@
 
 ---
 
-> **NOTE** Moving forward we'll be labeling html tags in the `following format`. Ex. `p` for a paragraph tag or element.
+> **NOTE** Moving forward we'll be labeling html tags and relevant code in the `following format`. Ex. `p` for a paragraph tag or element.
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
