@@ -17,7 +17,7 @@ On the other hand, when we link to a source outside of our project, it is referr
 
 * What are some best practices for organizing my files and folders on my computer? Should I be saving my work elsewhere?
 * What is the common name for primary css pages?
-* Where in the HTML boilerplate would you put the link attribute?
+* Where in the HTML boilerplate would you put the `link` element?
 * What do `rel`, `type` and `href` describe?
 * Where does "text/css" go in the link attribute?
 
