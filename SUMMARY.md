@@ -102,7 +102,7 @@
     	* [Exercise](11_chapter/04_exercise.md)
 	* [Iterating over Arrays](11_chapter/05_lesson.md)
     	* [Exercise](11_chapter/07_exercise.md)
-	* [Associative Arrays](11_chapter/08_lesson.md)
+	* [Objects](11_chapter/08_lesson.md)
 	  	* [Exercise](11_chapter/10_exercise.md)  
 	* [Quiz](11_chapter/09_quiz.md)
 	* [Cheat Sheet](11_chapter/11_cheatsheet.md)
