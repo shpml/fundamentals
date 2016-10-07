@@ -11,7 +11,7 @@ This is final part of the ELK Design! We'll become more familiar with positing e
 ### Instructions
 If you don't see the JS Bin below, please refresh the page.
 
-Here's the editor you should use to write your code. 
+Here's the editor you should use to write your code.
 
 <a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -62,6 +62,6 @@ Fabulous!
 
 17 . Set the li color to black, and its background to white.
 
-Bravo! Well done. 
+Bravo! Well done.
 
 [Take the Quiz for Unit 5 now!](10_quiz.md)
