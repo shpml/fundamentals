@@ -11,7 +11,7 @@ This is the final part of the ELK Design! We'll become more familiar with positi
 ### Instructions
 If you don't see the JS Bin below, please refresh the page.
 
-Here's the editor you should use to write your code. 
+Here's the editor you should use to write your code.
 
 <a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -50,18 +50,20 @@ Fabulous!
 
 12 . Assign img a width of 480px.
 
-13 . Flip to your HTML, and wrap a new div, called "hero", around the main image.
+13 . Flip to your HTML, and wrap a new div with the class "hero" around the main image.
 
-*Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns. Let's prevent that from happening. You need to counteract the div's width, margin, and display values.*
+*Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns.*
 
-14 . In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
+14 . Let's prevent that from happening. You need to counteract the styles set in the div selector by setting new styles for "hero". Set the "hero" class' width to 100%, its display to block, and its margin to 0.
 
-15 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
+15 . In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
 
-16 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
+16 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
 
-17 . Set the li color to black, and its background to white.
+17 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
 
-Bravo! Well done. 
+18 . Set the li color to black, and its background to white.
+
+Bravo! Well done.
 
 [Take the Quiz for Unit 5 now!](10_quiz.md)
