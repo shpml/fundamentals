@@ -18,3 +18,7 @@ The units in Fundamentals focus on:
 Read more about our [contribution guidelines](CONTRIBUTING.md).
 
 Check out the [issues](https://github.com/generalassembly/fundamentals/issues) we're already planning on addressing.
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
