@@ -24,7 +24,7 @@ console.log(someData);
 // => 'undefined'
 ```
 
-Checking to see if a variable is `undefined` is totally possible, and it is important because it allows you to verify that the variable exists before you use it, preventing potential errors from being thrown.  See below:
+Checking to see if a variable is `undefined` is totally possible, and it is important because it allows you to verify that a variable exists before you use it, preventing potential errors from being thrown.  See below:
 
 ```javascript
 if (someData == undefined) {
@@ -72,7 +72,13 @@ userInput == null // no points.. this time
 
 We've seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression <code>'Happy birthday, ' + 'Tom'</code>, the `+` operator is working with strings, so it performs a concatenation instead.
 
-Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (<code>&&</code>); although they're primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either 'falsey' or 'truthy'. But what do these words mean?
+Another example of operators with value-dependent behavior are the logical operators:
+
+-  NOT(`!`)
+-  OR (`||`)
+-  AND (<code>&&</code>)
+
+Although they're primarily used with boolean values, logical operators can also accept inputs that are strings and numbers, among others. When this happens, the logical operators categorize their inputs as being either 'falsey' or 'truthy'. But what do these words mean?
 
 * To be **falsey** means that boolean operators act in mostly the same way that they would if the value was `false`. For instance, using `!` (NOT) on a "falsey" value will evaluate to `true`, just as if you'd written `!false`. The "falsey" category of values includes: the number `0`, empty strings (`''`), `null`, and `undefined`. `false` is, of course, also "falsey".
 
