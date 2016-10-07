@@ -16,18 +16,25 @@ You've just opened a JavaScript console. You want to define a new variable but a
 ```javascript
 var someData;
 ```
+
 Without **assigning** a value to a variable, that variable becomes `undefined`. We can see this in real time:
+
 ```javascript
 console.log(someData);
+// => 'undefined'
 ```
-If we want to check to see if our variable is in fact `undefined`, we may do so. Checking to see is a variable is `undefined` is important. It allows for you to verify that something exists before you use it (and thus keep it from throwing errors).
+
+Checking to see if a variable is `undefined` is totally possible, and it is important because it allows you to verify that the variable exists before you use it, preventing potential errors from being thrown.  See below:
+
 ```javascript
 if (someData == undefined) {
   console.log('No definition found');
   someData = 'We are now assigning a value.';
 }
 ```
-We can also check for `undefined` using `typeof()`! This is because `undefined` is an Object that is immutable. If you'd like to learn more you should read [Mozilla's MDN entry for Undefined].
+
+Another way to check for `undefined` is to use `typeof()`. This way is possible because `undefined` is a specific Object and its own data type.
+
 ```javascript
 // we need a new variable...
 var anotherData;
@@ -35,6 +42,8 @@ if (typeof(anotherData) == 'undefined') {
   console.log('No definition found');
 }
 ```
+
+For extra context, read more about `undefined` from [Mozilla's MDN entry for Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
 
 
 ### Null
@@ -63,7 +72,7 @@ userInput == null // no points.. this time
 
 We've seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression <code>'Happy birthday, ' + 'Tom'</code>, the `+` operator is working with strings, so it performs a concatenation instead.
 
-Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (<code>&&</code>); although they're primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either 'falsey' and 'truthy'. But what do these words mean?
+Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (<code>&&</code>); although they're primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either 'falsey' or 'truthy'. But what do these words mean?
 
 * To be **falsey** means that boolean operators act in mostly the same way that they would if the value was `false`. For instance, using `!` (NOT) on a "falsey" value will evaluate to `true`, just as if you'd written `!false`. The "falsey" category of values includes: the number `0`, empty strings (`''`), `null`, and `undefined`. `false` is, of course, also "falsey".
 
