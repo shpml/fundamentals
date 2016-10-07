@@ -48,17 +48,19 @@ Fabulous!
 
 11 . Assign img a width of 480px.
 
-12 . Flip to your HTML, and wrap a new div, called "hero", around the main image.
+12 . Flip to your HTML, and wrap a new div with the class "hero" around the main image.
 
-*Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns. Let's prevent that from happening. You need to counteract the div's width, margin, and display values.*
+*Your img might freak out. Don't worry. It's because the "hero" div is grabbing the default div style written for your columns.*
 
-13 . In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
+13 . Let's prevent that from happening. You need to counteract the styles set in the div selector by setting new styles for "hero". Set the "hero" class' width to 100%, its display to block, and its margin to 0.
 
-14 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
+14 . In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
 
-15 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom-color to #fffebb as well.
+15 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section's overflow:auto.
 
-16 . Set the li color to black, and its background to white.
+16 . Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom-color to #fffebb as well.
+
+17 . Set the li color to black, and its background to white.
 
 Bravo! Well done. 
 
