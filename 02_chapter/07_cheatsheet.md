@@ -41,13 +41,13 @@
 * HTML syntax used to indicate to a web browser how to present content. Bookended by angle brackets.
 
 #### Heading Tags
-* `<h1>` through `<h6> ` are meant to be used for important text that titles the content that comes after it.
+* `h1` through `h6 ` are meant to be used for important text that titles the content that comes after it.
 
 #### Paragraph Tags
-* `<p>` tags are one of the most basic tags in HTML. They indicate blocks of text.
+* `p` tags are one of the most basic tags in HTML. They indicate blocks of text.
 
 #### Anchor tags
-*  `<a>` tags are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an attribute.
+*  `a` tags are the tags we use to create links. In order to make a working link, we have to add more information to the anchor tag, using an attribute.
 
 #### HTML Attribute
 * Adds information to an HTML element. An HTML tag can have one or many attributes. Attributes are always included in the opening tag. They are preceded by a space, include the name of the attribute, an equal sign, and a value in quotes.
