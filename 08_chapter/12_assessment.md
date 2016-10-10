@@ -6,7 +6,7 @@
 
 Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
 
-Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame), wherever you've decided to put it, and open up the file `main.js` (inside the `starter-code` directory). This is where you'll be writing all of your code for all homework assignments.
+Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame) and open up the file `main.js` (inside the `starter-code` directory). This is where you'll be writing all of your code for all homework assignments.
 
 But here's the catch! You have your html and css files from the previous units that you'll want to use moving forward and link your JS file too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the following syntax to link your JS file to your HTML file so that they work together!
 
