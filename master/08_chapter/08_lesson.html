@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.4" data-basepath=".." data-revision="Mon Oct 10 2016 21:57:03 GMT+0000 (UTC)">
+    <div class="book" data-level="8.4" data-basepath=".." data-revision="Mon Oct 10 2016 22:00:56 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2038,15 +2038,15 @@
 <span class="hljs-comment">// =&gt; &apos;undefined&apos;</span>
 </code></pre>
 <p>Checking to see if a variable is <code>undefined</code> is totally possible, and it is important because it allows you to verify that a variable exists before you use it, preventing potential errors from being thrown.  See below:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someData == <span class="hljs-literal">undefined</span>) {
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someData === <span class="hljs-literal">undefined</span>) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
   someData = <span class="hljs-string">&apos;We are now assigning a value.&apos;</span>;
 }
 </code></pre>
-<p>Another way to check for <code>undefined</code> is to use <code>typeof()</code>. This way is possible because <code>undefined</code> is a specific Object and its own data type.</p>
+<p>Another way to check for <code>undefined</code> is to use <code>typeof</code>. This way is possible because <code>undefined</code> is a specific Object and its own data type.</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// we need a new variable...</span>
 <span class="hljs-keyword">var</span> anotherData;
-<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span>(anotherData) == <span class="hljs-string">&apos;undefined&apos;</span>) {
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span>(anotherData) === <span class="hljs-string">&apos;undefined&apos;</span>) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
 }
 </code></pre>
@@ -2059,11 +2059,11 @@
 <span class="hljs-keyword">var</span> playerScore = <span class="hljs-literal">null</span>;
 </code></pre>
 <p>We can then <strong>evaluate</strong> if our value is <code>null</code>:</p>
-<pre><code class="lang-javascript">playerScore == <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;The player has not scored anything.&apos;</span>
+<pre><code class="lang-javascript">playerScore === <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;The player has not scored anything.&apos;</span>
 </code></pre>
 <p>What if we are provided with a user&apos;s input to represent a player&apos;s actions on a timed game? In <em>Dance, Dance, Revolution</em> a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen and as they pass by the middle of the screen the player <em>must</em> perform an action (or they don&apos;t score a point). The game can evaluate the player&apos;s score in real time!</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> userInput = <span class="hljs-literal">null</span>;
-userInput == <span class="hljs-literal">null</span> <span class="hljs-comment">// no points.. this time</span>
+userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">// no points.. this time</span>
 </code></pre>
 <h3 id="-falsey-truthy">&apos;falsey&apos; / &apos;truthy&apos;</h3>
 <p>We&apos;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&apos;Happy birthday, &apos; + &apos;Tom&apos;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
