@@ -39,13 +39,13 @@ while (x > 5) {
 
 How many times will this loop run? What will the final value of `x` be when it finishes?
 
-* Here's another loop.
+* Here's another loop. This loop uses `y++` which is a more common way of writing `y += 1`.
 
 ```javascript
 var x = 10;
 var y = 1;
 while (x < 20) {
-  y += 1;
+  y++;
 }
 ```
 
@@ -61,7 +61,7 @@ var z = 0;
 var myString = '';
 while (z < 5) {
   myString += 'X';
-  z += 1;
+  z++;
 }
 ```
 
@@ -102,7 +102,7 @@ Let's make a few modifications to our while loop from earlier.
 As you can see, there are a couple of key ingredients to making our `for` loop work. We need
 1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
 2. a condition, which gets evaluated each time we're about to execute the block (e.g. x < 10)
-3. a 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
+3. a 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x++;)
 
 The general syntax for a `for` loop is
 
@@ -116,7 +116,7 @@ for (initialization; condition; finalExpression) {
 
 ```javascript
 var x = 10;
-for (var i = 0; i < x; i += 1) {
+for (var i = 0; i < x; i++) {
   console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
 }
 ```
@@ -124,7 +124,7 @@ for (var i = 0; i < x; i += 1) {
 * How many times will 'HELLO' be printed out in the console?
 * What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
 * What if (all else the same) we changed the condition from <code>i < x</code> to <code>i <= x</code>?
-* What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
+* What if (all else the same) we changed the final condition from <code>i++</code> to <code>i += 2</code>?
 Check your answers in JS Bin.
 
 ---
