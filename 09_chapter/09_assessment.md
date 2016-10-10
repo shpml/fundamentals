@@ -4,7 +4,9 @@
 
 # Game Logic
 
+
 In this unit, we covered some game-changing concepts (pun intended). For example, can you guess what type of feature we can now begin to implement in our memory card game? If you guessed game logic, you're right! For this section's homework, you will implement your knowledge of conditionals to help with the task of creating your game logic.
+
 
 ## Exercise
 
@@ -31,7 +33,7 @@ For this assessment, you'll use an alert to display messages to your user:
 
 2) If values are equal, execute an `alert` with the message, "You found a match!". If values are not equal, execute an `alert` with the message, "Sorry, try again.".
 
-> **Info** If you are testing code that uses alerts in JSBin, disable "auto-run JS". You can then "run with JS" when you are ready to test your code. If you do not, alerts will be looped every few seconds at you! 
+> **Info** If you are testing code that uses alerts in JSBin, disable "auto-run JS". You can then "run with JS" when you are ready to test your code. If you do not, alerts will be looped every few seconds at you!
 
 3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alerts are working properly, you should see:
 
