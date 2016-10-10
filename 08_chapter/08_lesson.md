@@ -33,7 +33,7 @@ if (someData == undefined) {
 }
 ```
 
-Another way to check for `undefined` is to use `typeof()`. This way is possible because `undefined` is a specific Object and its own data type.
+Another way to check for `undefined` is to use `typeof`. This way is possible because `undefined` is a specific Object and its own data type.
 
 ```javascript
 // we need a new variable...
