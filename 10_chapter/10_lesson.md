@@ -91,7 +91,7 @@ The syntax for setting up an event handler looks like this:
 ```
 * `element` - This refers to the DOM node we want to tie the event to. For example, if we want to trigger an event when the user clicks on a button, the element would be that button element.
 
-* `` - The dot ties the method on the right hand side (`addEventListener`) with the element on the left hand side.
+* `.` - The dot ties the method on the right hand side (`addEventListener`) with the element on the left hand side.
 
 * `addEventListener()` - This is the method we will use to tie an event listener to an element.
 
