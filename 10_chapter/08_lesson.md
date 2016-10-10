@@ -264,14 +264,14 @@ Here we could describe the relationship between the `<ul>` element and the three
 
 JavaScript has methods we can use to find an element based on an initial selection. For example:
 
-####`parentNode()`
+####`parentNode`
 
 This method will locate the parent of an initial selection.
 
 ```js
-Document.getElementsByTagName('li')[0].parentNode()
+Document.getElementsByTagName('li')[0].parentNode
 ```
-THis will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element since it wraps all the `<li` elements.
+This will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element since it wraps all the `<li>` elements.
 
 Other methods available to us include:
 * `previousSibling()` – This will find the previous sibling of a selected element.
