@@ -47,7 +47,7 @@ Command                                    | Description
 `git add path/to/directory/or/file`        | Add a file to the "stage". The stage can be thought of as an inbetween state between the last commit and what is ready to be committed. Once the command `git commit` is run, all staged files will be committed to the timeline.
 <code>git commit -m "Commit message"</code>| Commit all staged files to the timeline. If <code>-m "Commit messsage"</code> is ommitted, Git will open your default text editor (typically Vim) to enter a longer message. If for any reason Vim is opened, you can close it by typing `:q`.
 `git log`                                  | Visualize the timeline. You can scroll with the arrow keys or `j`, `k`, and it can be exited by typing `q`.
-`git diff path/to/directory/or/file`       | Show the changes of the given file or directory.
+`git diff path/to/directory/or/file`       | Show the tracked but unstaged changes of the given file or directory.
 `git clone http://path/to/repo`            | Create a new local git repo copied from a remote one
 `git push origin master`                   | Send local changes to tracked remote repository
 
