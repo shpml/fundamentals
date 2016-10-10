@@ -46,7 +46,7 @@ if (x > 10) {
 <br>
 <br>
 
-<p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
+<p style="clear: both;">We can add as many `else if` statements as we want - just keep tacking them on.</p>
 
 ```javascript
 if (x > 10) {
