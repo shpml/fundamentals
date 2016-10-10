@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.2" data-basepath=".." data-revision="Mon Oct 10 2016 21:14:22 GMT+0000 (UTC)">
+    <div class="book" data-level="10.2" data-basepath=".." data-revision="Mon Oct 10 2016 21:16:18 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2166,7 +2166,7 @@
 <p>Excellent! Now, <code>isWinnerX</code> should be able to tell us if X has won.</p>
 <h3 id="determining-if-o-has-won">Determining if <code>o</code> has won</h3>
 <p>Now, we could go ahead and start writing a function called <code>allThreeO</code> to do the same thing for O as we&apos;ve done for X. But that seems pretty duplicative.</p>
-<p>There&apos;s a principle we&apos;ll emphasize in this course &#x2013; one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing &quot;DRY&quot; code &#x2013; with &quot;DRY&quot; standing for &quot;Don&apos;t Repeat Yourself&quot;. In this case, we&apos;re considering writing two functions which would be exactly the same, except for that hard-coded value of &apos;x&apos; vs &apos;o&apos;. Wouldn&apos;t it better if we could make the function <code>allThreeX</code> more general so that it worked for both players?</p>
+<p>There&apos;s a principle we&apos;ll emphasize in this course &#x2013; one that is so universally agreed upon that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing &quot;DRY&quot; code &#x2013; with &quot;DRY&quot; standing for &quot;Don&apos;t Repeat Yourself&quot;. In this case, we&apos;re considering writing two functions which would be exactly the same, except for that hard-coded value of &apos;x&apos; vs &apos;o&apos;. Wouldn&apos;t it be better if we could make the function <code>allThreeX</code> more general so that it worked for both players?</p>
 <p>Let&apos;s see what we can do.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> allThree = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player, cellOne, cellTwo, cellThree)</span> </span>{
   <span class="hljs-keyword">return</span> (cellOne === player) &amp;&amp; (cellTwo === player) &amp;&amp; (cellThree === player);
@@ -2210,7 +2210,7 @@
   <span class="hljs-keyword">return</span> (cellOne === player) &amp;&amp; (cellTwo === player) &amp;&amp; (cellThree === player);
 }
 </code></pre>
-<p>If you want, you can play around with this code in <a href="https://jessicaGA.jsbin.com/cekezaz/edit?js,output" target="_blank">this JSBin  session</a>, which also contains some dummy code to mock up how <code>cells</code> might work. Try testing each of the different functions with different input values, and see what happens.</p>
+<p>If you want, you can play around with this code in <a href="https://jsbin.com/cekezaz/edit?js,console" target="_blank">this JSBin  session</a>, which also contains some dummy code to mock up how <code>cells</code> might work. Try testing each of the different functions with different input values, and see what happens.</p>
 <p>Have fun!</p>
 <hr>
 <p>Nice job! <a href="07_exercise.html">Here&apos;s an exercise that should help you practice writing functions.</a></p>
