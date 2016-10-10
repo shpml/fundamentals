@@ -22,7 +22,7 @@ The condition is what's inside the parentheses; if that condition is 'truthy', t
 Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 
 ![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
-*<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
+*<p><small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small></p>*
 <br>
 
 A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
