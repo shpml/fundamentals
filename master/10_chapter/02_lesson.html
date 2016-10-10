@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.1" data-basepath=".." data-revision="Mon Oct 10 2016 21:17:26 GMT+0000 (UTC)">
+    <div class="book" data-level="10.1" data-basepath=".." data-revision="Mon Oct 10 2016 21:19:21 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2034,7 +2034,6 @@
 <p>Next, we write a list of the input values we&apos;d like to use, enclosed in parentheses and separated by commas. These values are called <strong>parameters</strong> of the function.  Above, we only used one parameter, <code>x</code>.</p>
 <p>Finally, we write the body of our function, enclosed by a pair of curly braces (<code>{}</code>).</p>
 <p>We&apos;ll focus on using <strong>function expression</strong> for these lessons. Let&apos;s look at an example:</p>
-<p>Let&apos;s look at an example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> tripleIt = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-number">3</span> * x;
 }
@@ -2044,7 +2043,7 @@
 <h3 id="naming-functions">Naming Functions</h3>
 <p>Function names should describe what the function does as best as possible, and a general rule of thumb is to keep the name short and simple.</p>
 <p>You may have noticed how we capitalize names in JavaScript using the <strong>camelCase</strong> style. Remember that identifiers <em>(how we name things)</em> can&apos;t use spaces between them.</p>
-<p>To make it easier to read a name like <code>nameofmyfunction</code>, capitalize the first letter of each word (e.g. <code>nameOfMyFunction</code> &#x2013; see the resemblance to a three-humped camel?)</p>
+<p>To make it easier to read a name like <code>nameofmyfunction</code>, capitalize the first letter of each word after the first one (e.g. <code>nameOfMyFunction</code> &#x2013; see the resemblance to a three-humped camel?)</p>
 <p>Examples of naming functions:</p>
 <ul>
 <li><strong>bad</strong>:  <code>thisfunctioncalculatestheperimeterofarectangle</code> (no camelCase, too verbose)</li>
@@ -2070,7 +2069,7 @@
 <span class="hljs-keyword">var</span> c = <span class="hljs-number">200</span> + (tripleIt(<span class="hljs-number">20</span>) / tripleIt(<span class="hljs-number">10</span>)); <span class="hljs-comment">// c === 202</span>
 </code></pre>
 <h2 id="other-ways-to-define-your-functions">Other Ways to Define Your Functions</h2>
-<p>Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is <strong>function declarations</strong>, which is a function that you can call later in your code. It typically looks like this:</p>
+<p>Function expressions are only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is <strong>function declarations</strong>, which is a function that you can call later in your code. It typically looks like this:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nameOfMyFunction</span> <span class="hljs-params">(x)</span> </span>{
   <span class="hljs-comment">// Body of the function &apos;nameOfMyFunction&apos;;</span>
 }
