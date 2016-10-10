@@ -18,7 +18,7 @@ This thing is called a *comment* - it tells the computer to completely ignore ev
 1. In the Console tab (on the right), write an expression that evaluates to the integer `30` and hit `enter` or `return`.
 You can use any expression you like, but it must contain at least one (and ideally two or more) operations.
 
-** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
+	** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
 
 2. Now replace your first expression with a second expression - this one should evaluate to 'Hello World'.
 
