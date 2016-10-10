@@ -27,7 +27,7 @@ console.log(someData);
 Checking to see if a variable is `undefined` is totally possible, and it is important because it allows you to verify that a variable exists before you use it, preventing potential errors from being thrown.  See below:
 
 ```javascript
-if (someData == undefined) {
+if (someData === undefined) {
   console.log('No definition found');
   someData = 'We are now assigning a value.';
 }
@@ -38,7 +38,7 @@ Another way to check for `undefined` is to use `typeof()`. This way is possible 
 ```javascript
 // we need a new variable...
 var anotherData;
-if (typeof(anotherData) == 'undefined') {
+if (typeof(anotherData) === 'undefined') {
   console.log('No definition found');
 }
 ```
@@ -60,12 +60,12 @@ var playerScore = null;
 ```
 We can then **evaluate** if our value is `null`:
 ```javascript
-playerScore == null // 'The player has not scored anything.'
+playerScore === null // 'The player has not scored anything.'
 ```
 What if we are provided with a user's input to represent a player's actions on a timed game? In *Dance, Dance, Revolution* a player must perform an action at a precise interval. It streams a set of commands a player must *dance* to. These are timed to music. The actions stream across the screen and as they pass by the middle of the screen the player *must* perform an action (or they don't score a point). The game can evaluate the player's score in real time!
 ```javascript
 var userInput = null;
-userInput == null // no points.. this time
+userInput === null // no points.. this time
 ```
 
 ### 'falsey' / 'truthy'
