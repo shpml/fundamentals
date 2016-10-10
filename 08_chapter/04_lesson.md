@@ -52,7 +52,7 @@ command. Try typing the following lines into the JS Bin console tab and hit `ent
 
 ### Test Yourself
 Try to predict the types of each of the following bits of data. Check your answers
-with `typeof` in JS Bin - were you correct?
+with `typeof` in the JS Bin console tab - were you correct?
 
 * <code>24</code>
 * <code>'99'</code>
