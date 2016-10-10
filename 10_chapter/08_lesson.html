@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Mon Oct 10 2016 21:19:57 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Mon Oct 10 2016 21:21:01 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2199,8 +2199,9 @@
 </code></pre>
 <p>This would loop through the NodeList and change the class name for each item to <code>day</code>.</p>
 <h2 id="traversing-the-dom">Traversing the DOM</h2>
-<p>Once we&apos;ve selected an individual element, we can then either do something with this element or select another element based on its relationship to it. You&apos;ll often hear this referred to as <strong>traversing the DOM</strong>.</p>
-<p>In an HTML document, elements can be nested inside of other elements.</p>
+<p>Once we&apos;ve selected an individual element, we can then either do something with this element or select another element based on its relationship to it. You&apos;ll often hear this referred to as <strong>traversing the DOM</strong>.
+the 
+In an HTML document, elements can be nested inside of other elements.</p>
 <pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
@@ -2220,18 +2221,18 @@
 <p>Here we have three <code>&lt;li&gt;</code> elements that are enclosed within an opening <code>&lt;ul&gt;</code> tag and closing <code>&lt;/ul&gt;</code> tag.</p>
 <p>In programming, relationships between the document and elements are often described in similar terms as one would use to describe a family tree.</p>
 <p>Here we could describe the relationship between the <code>&lt;ul&gt;</code> element and the three <code>&lt;li&gt;</code> elements as that of <em>parent</em> and <em>children</em> since the <code>&lt;li&gt;</code> elements are enclosed within the <code>&lt;ul&gt;</code>.</p>
-<p>JavaScript has methods we can use to find an element based on an initial selection. For example:</p>
-<h4 id="-parentnode"><code>parentNode()</code></h4>
-<p>This method will locate the parent of an initial selection.</p>
-<pre><code class="lang-js">Document.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode()
+<p>JavaScript has properties we can use to find an element based on an initial selection. For example:</p>
+<h4 id="-parentnode"><code>parentNode</code></h4>
+<p>This property will locate the parent of an initial selection.</p>
+<pre><code class="lang-js">Document.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode
 </code></pre>
-<p>THis will return the parent of the first <code>&lt;li&gt;</code> element, which, in this case, is the <code>&lt;ul&gt;</code> element since it wraps all the <code>&lt;li</code> elements.</p>
-<p>Other methods available to us include:</p>
+<p>This will return the parent of the first <code>&lt;li&gt;</code> element, which, in this case, is the <code>&lt;ul&gt;</code> element since it wraps all the <code>&lt;li&gt;</code> elements.</p>
+<p>Other properties available to us include:</p>
 <ul>
-<li><code>previousSibling()</code> &#x2013; This will find the previous sibling of a selected element.</li>
-<li><code>nextSibling()</code> &#x2013; This will find the next sibling of a selected element.</li>
-<li><code>firstChild()</code> &#x2013; This will find the first child of a selected element.</li>
-<li><code>lastChild()</code> &#x2013; This will find the last child of a selected element.</li>
+<li><code>previousSibling</code> &#x2013; This will find the previous sibling of a selected element.</li>
+<li><code>nextSibling</code> &#x2013; This will find the next sibling of a selected element.</li>
+<li><code>firstChild</code> &#x2013; This will find the first child of a selected element.</li>
+<li><code>lastChild</code> &#x2013; This will find the last child of a selected element.</li>
 </ul>
 <h2 id="manipulating-the-dom">Manipulating the DOM</h2>
 <p>This is where the fun starts! Now that we&apos;ve done all that hard work finding elements to work with, we can actually do something with them! The possibilities are endless.</p>
