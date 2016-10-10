@@ -9,8 +9,9 @@ We've gotten really far with learning about HTML and CSS. But how does the CSS f
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 
->**Note** **Relative vs. Absolute Addressing**: Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
-On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
+>**Note** **Relative vs. Absolute Addressing**: A relative address/path is one defined with respect to one's own position within a filesystem (e.g. `./index.html`, `main.css`); an absolute address/path is one defined with respect to some fixed location within a filesystem (like `/` or `~`) or to a fixed location on the world-wide web (which, one might argue, is itself a kind of giant file tree).
+
+A good rule of thumb to remember is that an absolute address always points to the same place, no matter where *you* might happen to be.
 
 
 #### Checkpoint:
