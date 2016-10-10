@@ -205,7 +205,7 @@ Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
 Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. But that seems pretty duplicative.
 
-There's a principle we'll emphasize in this course – one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it better if we could make the function `allThreeX` more general so that it worked for both players?
+There's a principle we'll emphasize in this course – one that is so universally agreed upon that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
 
 Let's see what we can do.
 
