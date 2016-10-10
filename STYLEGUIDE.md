@@ -47,7 +47,7 @@ Test your code using the [GitHub markdown API endpoint](https://developer.github
 - [Marko](https://itunes.apple.com/us/app/marko/id607997198?mt=12)
 - [Marked 2](http://marked2app.com/)
 
-### Lesson, lab, and homework branches
+### Lesson, lab, and assignment branches
 
 If you're working on a section of the prework, create a new fork and a new branch that has a semantically meaningful name.
 
