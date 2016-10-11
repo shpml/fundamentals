@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Oct 11 2016 21:58:57 GMT+0000 (UTC)">
+    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Oct 11 2016 22:03:20 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2026,14 +2026,14 @@
 <p>We&apos;re now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represented the value of the cards and looping through a fixed number we assumed to represent the number of cards. However, with our new found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let&apos;s go ahead and edit some of our code utilizing arrays as well as write some fresh new code to create some dynamic game logic!</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
-<p>Replace all your card variables <code>Array</code> types. Once that is complete, organize all your code into functions. Then create two more functions, one which will check if two cars are in play, and the other should check if two cards are a match.</p>
+<p>Replace all your card variables with an <code>array</code> of cards. Once that is complete, organize all your code into functions. Then create two more functions, one which will check if two cards are in play, and the other should check if two cards are a match.</p>
 <h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h5>
-<p>1) Declare a variable, <code>cards</code>, whose value is an <code>Array</code> that consists of four <code>String</code> elements: <code>queen</code>, <code>queen</code>, <code>king</code>, <code>king</code>.</p>
+<p>1) Declare a variable, <code>cards</code>, and set it equal to an <code>array</code> of four <code>String</code> elements: <code>queen</code>, <code>queen</code>, <code>king</code>, <code>king</code>.</p>
 <p>2) Declare a variable, <code>cardsInPlay</code>, whose value is an empty array.</p>
-<p>3) You will now need to set up each card during the <code>createBoard()</code> function. You&apos;ll need to loop through the your <code>cards</code> array and then Each element should have an attribute that equals the card value (i.e. &quot;queen&quot;). See example below.</p>
+<p>3) You will now need to set up each card during the <code>createBoard()</code> function. To do this, loop through your <code>cards</code> array and give each element an attribute that equals the card value (e.g. &quot;queen&quot;). See the example below.</p>
 <pre><code class="lang-js"><span class="hljs-comment">// instead of looping through a fixed number</span>
 <span class="hljs-comment">// loop through the length of the cards</span>
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i&lt; cards.length; i++) {
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; cards.length; i++) {
 
   ...
 
