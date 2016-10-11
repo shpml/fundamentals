@@ -49,7 +49,7 @@
 
 ## Collections - Objects
 ### Drawbacks of Ordinary Arrays
-  * A typical array works by referencing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.
+  * A typical array works by referencing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be updated.
   * An object generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
 ### Objects in JavaScript
   * An object can be defined by enclosing a list of key-value pairs in curly braces (`{...}`). Each key-value pair is written as `someKey : someValue`, and each pair is separated by commas.
