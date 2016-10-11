@@ -236,8 +236,9 @@ This would loop through the NodeList and change the class name for each item to 
 ##Traversing the DOM
 
 Once we've selected an individual element, we can then either do something with this element or select another element based on its relationship to it. You'll often hear this referred to as **traversing the DOM**.
-the
+
 In an HTML document, elements can be nested inside of other elements.
+
 ```html
 <!DOCTYPE html>
 <html>
