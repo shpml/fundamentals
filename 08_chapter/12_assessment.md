@@ -10,13 +10,17 @@ In your terminal, from your home directory, navigate to the `fundamentals` direc
 
 This is where you'll be writing your code for the remainder of the unit assignments.
 
-But here's the catch! You have already written the required HTML and CSS in previous units - you'll want to use that code moving forward, so make sure you replace the HTML and CSS found within the `index.html` and `style.css` files with the code you've written in previous assignments!
+But here's the catch! You have already written the required HTML and CSS in previous units - you'll want to use that code moving forward, so make sure you replace the HTML and CSS found within the `index.html` and `style.css` files with the code you've written from previous assignments!
 
-You'll also want to link your `index.html` file to the `main.js` file, too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the syntax below - copy it to your HTML file and modify the source file so it links to the `main.js` file.
+You'll also want to link your `index.html` file to the `main.js` file, too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the syntax below - copy the line with the script tags to your HTML file and modify the source destination so it links to your `main.js` file.
 
-`<script src="some-javascript-file.js"></script>`
+```html
+...
+  <script src="some-javascript-file.js"></script>
+</body>
+```
 
-**Note**: Unlike your CSS _link_, you should add your `script` tags right before the closing body tag (`</body>`). This ensures that all of the elements and styles of your page have been loaded and are available to the JavaScript file when the browser reads the `script` tags.
+>**Note** **Where To Add Script Tags** - Unlike using a `link` tag for linking CSS files, you should add your `script` tags right before the closing HTML `body` tag (`</body>`). This ensures that all of the elements and styles of your page have been loaded and are available to the browser before the `script` tags are read.
 
 ## Exercise
 
