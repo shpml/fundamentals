@@ -171,20 +171,20 @@ var isWinnerX = function() {
 }
 
 var winsRowX = function() {
-  return allThreeX(cells('a'), cells('b'), cells('c')) ||
-         allThreeX(cells('d'), cells('e'), cells('f')) ||
-         allThreeX(cells('g'), cells('h'), cells('i'));
+  return allThreeX(cellValue('a'), cellValue('b'), cellValue('c')) ||
+         allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
+         allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
 }
 
 var winsColumnX = function() {
-  return allThreeX(cells('a'), cells('d'), cells('g')) ||
-         allThreeX(cells('b'), cells('e'), cells('h')) ||
-         allThreeX(cells('c'), cells('f'), cells('i'));
+  return allThreeX(cellValue('a'), cellValue('d'), cellValue('g')) ||
+         allThreeX(cellValue('b'), cellValue('e'), cellValue('h')) ||
+         allThreeX(cellValue('c'), cellValue('f'), cellValue('i'));
 }
 
 var winsDiagonalX = function() {
-  return allThreeX(cells('a'), cells('e'), cells('i')) ||
-         allThreeX(cells('c'), cells('e'), cells('g'));
+  return allThreeX(cellValue('a'), cellValue('e'), cellValue('i')) ||
+         allThreeX(cellValue('c'), cellValue('e'), cellValue('g'));
 }
 
 var allThreeX = function(cellOne, cellTwo, cellThree) {
@@ -205,7 +205,7 @@ Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
 Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. But that seems pretty duplicative.
 
-There's a principle we'll emphasize in this course – one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it better if we could make the function `allThreeX` more general so that it worked for both players?
+There's a principle we'll emphasize in this course – one that is so universally agreed upon that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code – with "DRY" standing for "Don't Repeat Yourself". In this case, we're considering writing two functions which would be exactly the same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
 
 Let's see what we can do.
 
@@ -237,20 +237,20 @@ var winnerIs = function(player) {
 }
 
 var winsRow = function(player) {
-  return allThree(player, cells('a'), cells('b'), cells('c')) ||
-         allThree(player, cells('d'), cells('e'), cells('f')) ||
-         allThree(player, cells('g'), cells('h'), cells('i'));
+  return allThree(player, cellValue('a'), cellValue('b'), cellValue('c')) ||
+         allThree(player, cellValue('d'), cellValue('e'), cellValue('f')) ||
+         allThree(player, cellValue('g'), cellValue('h'), cellValue('i'));
 }
 
 var winsColumn = function(player) {
-  return allThree(player, cells('a'), cells('d'), cells('g')) ||
-         allThree(player, cells('b'), cells('e'), cells('h')) ||
-         allThree(player, cells('c'), cells('f'), cells('i'));
+  return allThree(player, cellValue('a'), cellValue('d'), cellValue('g')) ||
+         allThree(player, cellValue('b'), cellValue('e'), cellValue('h')) ||
+         allThree(player, cellValue('c'), cellValue('f'), cellValue('i'));
 }
 
 var winsDiagonal = function(player) {
-  return allThree(player, cells('a'), cells('e'), cells('i')) ||
-         allThree(player, cells('c'), cells('e'), cells('g'));
+  return allThree(player, cellValue('a'), cellValue('e'), cellValue('i')) ||
+         allThree(player, cellValue('c'), cellValue('e'), cellValue('g'));
 }
 
 var allThree = function(player, cellOne, cellTwo, cellThree) {
@@ -258,7 +258,7 @@ var allThree = function(player, cellOne, cellTwo, cellThree) {
 }
 ```
 
-If you want, you can play around with this code in [this JSBin  session](https://jessicaGA.jsbin.com/cekezaz/edit?js,output), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
+If you want, you can play around with this code in [this JSBin  session](https://jsbin.com/cekezaz/edit?js,console), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens.
 
 Have fun!
 

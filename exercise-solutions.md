@@ -648,15 +648,15 @@ otherwise
    3. `true` is valid; e.g. `(false && true) || true`
 
 ### 8.3.1
-    1. `x + 10`
-    2. `3*x + 5`
-    3. `"Hello, " + x + "."` (or, in ES2015, we can use template strings: ``Hello, ${x}.``)
-    4. `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: ``Goodbye, ${x}.``)
+   1. `x + 10`
+   2. `3*x + 5`
+   3. `"Hello, " + x + "."` (or, in ES2015, we can use template strings: `Hello, ${x}.`)
+   4. `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: `Goodbye, ${x}.`)
 
 ### 8.4.1
-    1. `x || 100`
-    2. `x && 50`
-    3. `!x`
+   1. `x || 100`
+   2. `x && 50`
+   3. `!x`
 
 
 ## Unit 9

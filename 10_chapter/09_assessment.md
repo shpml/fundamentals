@@ -10,12 +10,12 @@ JavaScript comes with several "built-in" functions that we can call on using dot
 
 For example, let's look at `document.createElement('div')` which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
 
-- `document` is a readily available JS object. (An object is basically an array that stores key-value pairs. Unlike regular arrays, the contents of an object are not ordered).  
-- `createElement` is the method it comes with
+- `document` is a readily available JS object, with built-in properties and methods associated with it.
+- `createElement` is a method it comes with
   - This method performs the functionality of creating a new HTML element.
   - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
 
-In this case, we passed `createElement` and argument of `'div'` so a `div` element is created. If you'd like, you can go ahead and run that line of code, `document.createElement('div')`, in your browser's console to get see it in action.
+In this case, we passed `createElement` an argument of `'div'` so a `div` element is created. If you'd like, you can go ahead and run that line of code, `document.createElement('div')`, in your browser's console to see it in action.
 
 Besides `createElement`, the `document` object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is an attribute (or property) you may modify to add a class to an element -  [`className`](https://developer.mozilla.org/en-US/docs/Web/API/Element/className). If you need to modify the content _inside_ of the HTML tags, you may modify the attribute named [`innerHTML`](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML). If you modified the `innerHTML` of an `<li>` element to `= 'remember maple syrup at the grocery story`, your list item would then contain that content: `<li>remember maple syrup at the grocery story</li>`. On top of those methods and attributes that allow you to construct an element, there's also the method [`appendChild`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) that aids in attaching your element as a child of another element on your web page.
 
@@ -41,17 +41,15 @@ Before you start, go ahead and comment out the `if` statement from the last assi
 
 ###### Create the HTML for the cards using JavaScript:
 
-4 ) Get an element with the id of `game-board` and set it to a variable.
+5 ) Get an element with the id of `game-board` and set it to a variable.
 
-5 ) Assuming your memory card game consists of four cards, create a `for loop` that makes an HTML element for each card. Each HTML element should be a `div` as well as have the class `card` (this will help when you add CSS).
+6 ) Assuming your memory card game consists of four cards, create a `for loop` that makes an HTML element for each card. Each HTML element should be a `div` as well as have the class `card` (this will help when you add CSS).
 
-6 ) Append each newly created card to the `div` that has the id `game-board`.
+7 ) Append each newly created card to the `div` that has the id `game-board`.
 
 ###### Create functions to organize your code
 
-7 ) Create a function called `createCards` in your JavaScript file. This function will contain the code you just wrote to generate your cards. 
-
-8 ) Your `createCards` function should contain any JavaScript associated with the creation of the `div` elements with the class `card`.
+8 ) Create a function called `createCards` in your JavaScript file. This function will contain the code you just wrote to generate your cards. 
 
 9 ) Be sure to execute/fire your `createCards` function so it runs!
 

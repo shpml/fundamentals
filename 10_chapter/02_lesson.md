@@ -24,8 +24,6 @@ Finally, we write the body of our function, enclosed by a pair of curly braces (
 
 We'll focus on using **function expression** for these lessons. Let's look at an example:
 
-Let's look at an example:
-
 ```javascript
 var tripleIt = function(x) {
   return 3 * x;
@@ -42,7 +40,7 @@ Function names should describe what the function does as best as possible, and a
 
 You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't use spaces between them.
 
-To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
+To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word after the first one (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
 
 Examples of naming functions:
 
@@ -81,7 +79,7 @@ var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 ```
 ## Other Ways to Define Your Functions
 
-Function expressions is only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
+Function expressions are only one way to define a function in JavaScript. Functions can actually be defined in several ways. Another common method is **function declarations**, which is a function that you can call later in your code. It typically looks like this:
 
 ```javascript
 function nameOfMyFunction (x) {
