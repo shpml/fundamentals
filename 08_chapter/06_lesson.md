@@ -12,7 +12,7 @@ Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 
 
 > **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
-> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2` returns `2`.
+> **HINT** `=` is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it's finished its "assignment" work. In particular, the `=` operator evaluates to whatever the expression to the right of the `=` evaluates to. In other words, the expression `x = 2;` returns `2`.
 
 When we want to then use this result, we simply substitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;` and this expression would evaluate to double whatever value was stored in `x`.
 
@@ -21,19 +21,19 @@ To figure out how to evaluate an expression containing variables, we simply draw
 ### Test Yourself
 Assume that `x` is equal to 10. What values do the following expressions evaluate to? Save `x` as a variable in the JS Bin Console, and check your answers.
 
-* `x + 20`
-* `x * x`
-* `3 * (x * x) - 2 * x + 5`
+* `x + 20;`
+* `x * x;`
+* `3 * (x * x) - 2 * x + 5;`
 
 We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
 
 Consider the following JavaScript code in a JS Bin console.
 
 ```javascript
-var x = 1
+var x = 1;
 x
 // => 1
-x = 2 + x
+x = 2 + x;
 // => 3
 x
 // => 3
@@ -45,11 +45,11 @@ On the first line, we are _assigning_ the variable `x` equal to the integer `1`.
 >```javascript
 > x
 > // => 3
-> x == 4
+> x == 4;
 > // => false
-> x = 4
+> x = 4;
 > // => 4
-> x == 4
+> x == 4;
 > // => true
 > ```
 
@@ -75,7 +75,7 @@ var y = 10;
 x = y + 10;
 ```
 
-What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10` evaluates to 20, so what we're left with is the expression `x = 20`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
+What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10;` evaluates to 20, so what we're left with is the expression `x = 20;`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
 
 Let's look at one more example using the same two variables, `x` and `y`.
 
@@ -134,7 +134,7 @@ z = z - 1;
 
 Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?
 
-The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
+The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1;`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
 
 ### A few shortcuts
 
@@ -142,12 +142,12 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 
 | Long-Hand Syntax | Short-Hand Syntax |
 |------------------|-------------------|
-| `x = x + 1`      | `x += 1` |
-| `x = x - 5`      | `x -= 5` |
-| `x = x * 2`      | `x *= 2` |
-| `x = x / 10`     | `x /= 10` |
-| `x = x % 10`     | `x %= 10` |
-| `x = x + 1`      | `x++` |
+| `x = x + 1;`      | `x += 1;` |
+| `x = x - 5;`      | `x -= 5;` |
+| `x = x * 2;`      | `x *= 2;` |
+| `x = x / 10;`     | `x /= 10;` |
+| `x = x % 10;`     | `x %= 10;` |
+| `x = x + 1;`      | `x++;` |
 
 ---
 
