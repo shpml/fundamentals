@@ -15,10 +15,10 @@ Check out the sample code in the JS Bin session below. If you don't see the JS B
 
 This thing is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
 
-1. Replace `/* Your Expression Here */` with an expression that evaluates to the integer `30`.
-You can use any expression you like, but it must contain at least one (and ideally two or more) operations. You can test your answers by clicking the 'Run' button at the top of the page - it will print out the evaluated result of your expression to the console.
+1. In the Console tab (on the right), write an expression that evaluates to the integer `30` and hit `enter` or `return`.
+You can use any expression you like, but it must contain at least one (and ideally two or more) operations.
 
-** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
+	** Note ** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
 
 2. Now replace your first expression with a second expression - this one should evaluate to 'Hello World'.
 

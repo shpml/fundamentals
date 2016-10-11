@@ -9,14 +9,14 @@ Check out the sample code in the JS Bin session below. If you don't see the JS B
 
 <a class="jsbin-embed" href="https://jsbin.com/qeruxex/embed?js,console&height600">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-As in the previous exercise, your job is to replace the `/* Your Expression */` comment with an expression. However, this time your expressions will need to depend on the variable `x`.
+As in the previous exercise, your job is to print the result of an expression. However, this time your expressions will need to depend on the variable `x`.
 
 1. Write an expression that evaluates to 10 more than `x`;<br>
 if `x` is 10, the expression should evaluate to 20;<br>
 if `x` is 50, the expression should evaluate to 60.<br>
-Test your answer by changing the first line to `var x = someValue;` and clicking the 'play' button.
+Test your answer by replacing the `/* Your Expression */` comment in the JavaScript tab with `x = someValue;`, clicking the 'Run' button, writing your expression in the Console tab, and typing `enter` or `return`.
 
-2. Now replace that first expression with an expression that evaluates to triple the value of `x`, plus five;<br>
+2. Now, replace that first expression with an expression that evaluates to triple the value of `x`, plus five;<br>
 if `x` is 5, the expression should evaluate to 20;<br>
 if `x` is 10, the expression should evaluate to 35.<br>
 What happens if you set `x` to 100? Does it work like you'd expect?

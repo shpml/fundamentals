@@ -22,6 +22,7 @@ The condition is what's inside the parentheses; if that condition is 'truthy', t
 Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 
 ![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
+
 *<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
 <br>
 
@@ -44,9 +45,8 @@ if (x > 10) {
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
 <br>
-<br>
 
-<p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
+<p style="clear: both;">We can add as many `else if` statements as we want - just keep tacking them on.</p>
 
 ```javascript
 if (x > 10) {

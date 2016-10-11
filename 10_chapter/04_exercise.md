@@ -12,10 +12,9 @@ This time around, you won't be given any starter code. Instead, you'll need to w
 
 ###Instructions
 
-1. Go ahead an open up a new session in JSBin.
-2. Write the code for the functions described below, using JSBin's editor window
-3. Click 'play' to run the code
-4. Try *calling* each function from the console window. Use different parameters to make sure they work as expected.
+1. Write the code for the functions described below, using JSBin's JavaScript tab.
+2. Click 'Run' to run the code.
+3. Try *calling* each function from the Console tab. If you do not see the Console tab, click the "Console" button at the top of the JSBin window.  Use different parameters to make sure they work as expected.
 
 **Let's get started!**
 

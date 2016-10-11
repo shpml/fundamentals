@@ -17,7 +17,7 @@ This exercise may be familiar to some of you - your job is to write some code th
 
 > Don't remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (`%`) operator.
 
-To test your code, set a value for `x` in the editor and click 'play'. Did you get the result you expected? Try out a bunch of different values for `x`, just to be sure.
+To test your code, set a value for `x` in the editor and click 'Run'. Did you get the `result` you expected? Try out a bunch of different values for `x`, just to be sure.
 
 > *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
