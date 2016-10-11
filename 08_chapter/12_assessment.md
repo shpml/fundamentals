@@ -4,18 +4,23 @@
 
 # Getting Our Cards in Order
 
-Now that we have covered variables and booleans, we can write code that simulates the cards in our game as well as compare them for a match.
+Now that we have covered variables and booleans, we can write code that simulates the cards in our game, as well as compare them for a match.
 
-Go back into the [project repo](https://github.com/ga-students/wdi-fundamentals-memorygame), wherever you've decided to put it, and open up the file `main.js` (inside the `starter-code` directory). This is where you'll be writing all of your code for all assignments.
+In your terminal, from your home directory, navigate to the `fundamentals` directory. Then, go into the memory game project repo - this repo should be named `wdi-fundamentals-memorygame`.  Finally, open this project in your text editor and bring up the `main.js`, `index.html`, and `style.css` files in the `starter-code` directory.
 
-But here's the catch! You have your html and css files from the previous units that you'll want to use moving forward and link your JS file too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the following syntax to link your JS file to your HTML file so that they work together!
+This is where you'll be writing your code for the remainder of the unit assignments.
 
+But here's the catch! You have already written the required HTML and CSS in previous units - you'll want to use that code moving forward, so make sure you replace the HTML and CSS found within the `index.html` and `style.css` files with the code you've written from previous assignments!
 
-`<script src="some-javascript-file.js"></script>`
+You'll also want to link your `index.html` file to the `main.js` file, too. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the syntax below - copy the line with the script tags to your HTML file and modify the source destination so it links to your `main.js` file.
 
-Unlike your CSS _link_, you should add your script right before the end of your `body` tag. This ensures that all of the content of your page has been loaded in case JavaScript needs to use any of it.
+```html
+...
+  <script src="some-javascript-file.js"></script>
+</body>
+```
 
-
+>**Note** **Where To Add Script Tags** - Unlike using a `link` tag for linking CSS files, you should add your `script` tags right before the closing HTML `body` tag (`</body>`). This ensures that all of the elements and styles of your page have been loaded and are available to the browser before the `script` tags are read.
 
 ## Exercise
 
