@@ -9,9 +9,9 @@
 
 ## Reminder: Don't Use IDs in CSS
 
-You are technically allowed to use CSS ID selectors, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, and any style specified with an ID isn't reusable. Also, ID selectors can override class selectors, making a codebase more difficult to maintain when it gets larger.
+You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, and any style specified with an ID isn't reusable. Also, IDs can override classes, making a codebase more difficult to maintain when it gets larger.
 
-Overall, using class selectors in your CSS will help with the scalability of your design, and help you write cleaner code.
+Overall, using classes in your CSS will help with the scalability of your design, and help you write cleaner code.
 
 
 ## Reminder: Using IDs in JavaScript

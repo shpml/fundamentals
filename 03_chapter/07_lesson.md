@@ -9,15 +9,16 @@ We've gotten really far with learning about HTML and CSS. But how does the CSS f
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 
->**Note** **Relative vs. Absolute Addressing**: Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
-On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
+>**Note** **Relative vs. Absolute Addressing**: A relative address/path is one defined with respect to one's own position within a filesystem (e.g. `./index.html`, `main.css`); an absolute address/path is one defined with respect to some fixed location within a filesystem (like `/` or `~`).
+
+A good rule of thumb to remember is that an absolute path always points to the same place, no matter where *you* might be in your filesystem.
 
 
 #### Checkpoint:
 
 * What are some best practices for organizing my files and folders on my computer? Should I be saving my work elsewhere?
 * What is the common name for primary css pages?
-* Where in the HTML boilerplate would you put the link attribute?
+* Where in the HTML boilerplate would you put the `link` element?
 * What do `rel`, `type` and `href` describe?
 * Where does "text/css" go in the link attribute?
 

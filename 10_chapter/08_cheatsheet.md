@@ -79,18 +79,18 @@ document.getElementById('main')
 
 * Once an element has been selected, this element can be used to select another element based on its relationship to it. This is referred to as **traversing the DOM**.
 
-|  Method      |  Description  |
+|  Property      |  Description  |
 |:-------:    |:-------:|
-| `parentNode()`  | This will locate the parent of the initial selection. |
-| `previousSibling()` | This will find the previous sibling of a selected element.  |
-| `nextSibling()`  | This will find the next sibling of a selected element.    |
-| `firstChild()`     | This will find the first child of a selected element.   |
-| `lastChild()`   | This will find the last child of a selected element. |
+| `parentNode`  | This will locate the parent of the initial selection. |
+| `previousSibling` | This will find the previous sibling of a selected element.  |
+| `nextSibling`  | This will find the next sibling of a selected element.    |
+| `firstChild`     | This will find the first child of a selected element.   |
+| `lastChild`   | This will find the last child of a selected element. |
 
-* The syntax for using these methods looks like this:
+* The syntax for using these properties looks like this:
 
 ```js
-document.getElementsByTagName('li')[0].parentNode()
+document.getElementsByTagName('li')[0].parentNode
 ```
 
 

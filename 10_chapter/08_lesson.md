@@ -238,6 +238,7 @@ This would loop through the NodeList and change the class name for each item to 
 Once we've selected an individual element, we can then either do something with this element or select another element based on its relationship to it. You'll often hear this referred to as **traversing the DOM**.
 
 In an HTML document, elements can be nested inside of other elements.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -262,22 +263,24 @@ In programming, relationships between the document and elements are often descri
 
 Here we could describe the relationship between the `<ul>` element and the three `<li>` elements as that of *parent* and *children* since the `<li>` elements are enclosed within the `<ul>`.
 
-JavaScript has methods we can use to find an element based on an initial selection. For example:
+We can use properties of an element to find and access related elements. Let's take a look at some examples below.
 
-####`parentNode()`
+####`parentNode`
 
-This method will locate the parent of an initial selection.
+The `parentNode` property will locate the parent of an initial selection.
 
 ```js
-Document.getElementsByTagName('li')[0].parentNode()
+document.getElementsByTagName('li')[0].parentNode
+ //=> <ul class="some-class-name">...</ul>
 ```
-THis will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element since it wraps all the `<li` elements.
 
-Other methods available to us include:
-* `previousSibling()` – This will find the previous sibling of a selected element.
-* `nextSibling()` – This will find the next sibling of a selected element.
-* `firstChild()` – This will find the first child of a selected element.
-* `lastChild()` – This will find the last child of a selected element.
+This syntax will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element, since the `<ul>` element wraps all the `<li>` elements.
+
+Other properties available to us include:
+* `previousSibling` – This will find the previous sibling of a selected element.
+* `nextSibling` – This will find the next sibling of a selected element.
+* `firstChild` – This will find the first child of a selected element.
+* `lastChild` – This will find the last child of a selected element.
 
 
 ##Manipulating the DOM
