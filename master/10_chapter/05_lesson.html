@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Oct 11 2016 17:46:08 GMT+0000 (UTC)">
+    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Oct 11 2016 17:52:11 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2139,20 +2139,20 @@
 }
 
 <span class="hljs-keyword">var</span> winsRowX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-  <span class="hljs-keyword">return</span> allThreeX(cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;b&apos;</span>), cells(<span class="hljs-string">&apos;c&apos;</span>)) ||
-         allThreeX(cells(<span class="hljs-string">&apos;d&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;f&apos;</span>)) ||
-         allThreeX(cells(<span class="hljs-string">&apos;g&apos;</span>), cells(<span class="hljs-string">&apos;h&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>));
+  <span class="hljs-keyword">return</span> allThreeX(cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;b&apos;</span>), cellValue(<span class="hljs-string">&apos;c&apos;</span>)) ||
+         allThreeX(cellValue(<span class="hljs-string">&apos;d&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;f&apos;</span>)) ||
+         allThreeX(cellValue(<span class="hljs-string">&apos;g&apos;</span>), cellValue(<span class="hljs-string">&apos;h&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> winsColumnX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-  <span class="hljs-keyword">return</span> allThreeX(cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;d&apos;</span>), cells(<span class="hljs-string">&apos;g&apos;</span>)) ||
-         allThreeX(cells(<span class="hljs-string">&apos;b&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;h&apos;</span>)) ||
-         allThreeX(cells(<span class="hljs-string">&apos;c&apos;</span>), cells(<span class="hljs-string">&apos;f&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>));
+  <span class="hljs-keyword">return</span> allThreeX(cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;d&apos;</span>), cellValue(<span class="hljs-string">&apos;g&apos;</span>)) ||
+         allThreeX(cellValue(<span class="hljs-string">&apos;b&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;h&apos;</span>)) ||
+         allThreeX(cellValue(<span class="hljs-string">&apos;c&apos;</span>), cellValue(<span class="hljs-string">&apos;f&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> winsDiagonalX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-  <span class="hljs-keyword">return</span> allThreeX(cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>)) ||
-         allThreeX(cells(<span class="hljs-string">&apos;c&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;g&apos;</span>));
+  <span class="hljs-keyword">return</span> allThreeX(cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>)) ||
+         allThreeX(cellValue(<span class="hljs-string">&apos;c&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;g&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> allThreeX = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(cellOne, cellTwo, cellThree)</span> </span>{
@@ -2190,20 +2190,20 @@
 }
 
 <span class="hljs-keyword">var</span> winsRow = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player)</span> </span>{
-  <span class="hljs-keyword">return</span> allThree(player, cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;b&apos;</span>), cells(<span class="hljs-string">&apos;c&apos;</span>)) ||
-         allThree(player, cells(<span class="hljs-string">&apos;d&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;f&apos;</span>)) ||
-         allThree(player, cells(<span class="hljs-string">&apos;g&apos;</span>), cells(<span class="hljs-string">&apos;h&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>));
+  <span class="hljs-keyword">return</span> allThree(player, cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;b&apos;</span>), cellValue(<span class="hljs-string">&apos;c&apos;</span>)) ||
+         allThree(player, cellValue(<span class="hljs-string">&apos;d&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;f&apos;</span>)) ||
+         allThree(player, cellValue(<span class="hljs-string">&apos;g&apos;</span>), cellValue(<span class="hljs-string">&apos;h&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> winsColumn = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player)</span> </span>{
-  <span class="hljs-keyword">return</span> allThree(player, cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;d&apos;</span>), cells(<span class="hljs-string">&apos;g&apos;</span>)) ||
-         allThree(player, cells(<span class="hljs-string">&apos;b&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;h&apos;</span>)) ||
-         allThree(player, cells(<span class="hljs-string">&apos;c&apos;</span>), cells(<span class="hljs-string">&apos;f&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>));
+  <span class="hljs-keyword">return</span> allThree(player, cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;d&apos;</span>), cellValue(<span class="hljs-string">&apos;g&apos;</span>)) ||
+         allThree(player, cellValue(<span class="hljs-string">&apos;b&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;h&apos;</span>)) ||
+         allThree(player, cellValue(<span class="hljs-string">&apos;c&apos;</span>), cellValue(<span class="hljs-string">&apos;f&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> winsDiagonal = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player)</span> </span>{
-  <span class="hljs-keyword">return</span> allThree(player, cells(<span class="hljs-string">&apos;a&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;i&apos;</span>)) ||
-         allThree(player, cells(<span class="hljs-string">&apos;c&apos;</span>), cells(<span class="hljs-string">&apos;e&apos;</span>), cells(<span class="hljs-string">&apos;g&apos;</span>));
+  <span class="hljs-keyword">return</span> allThree(player, cellValue(<span class="hljs-string">&apos;a&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;i&apos;</span>)) ||
+         allThree(player, cellValue(<span class="hljs-string">&apos;c&apos;</span>), cellValue(<span class="hljs-string">&apos;e&apos;</span>), cellValue(<span class="hljs-string">&apos;g&apos;</span>));
 }
 
 <span class="hljs-keyword">var</span> allThree = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player, cellOne, cellTwo, cellThree)</span> </span>{
