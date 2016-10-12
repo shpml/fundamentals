@@ -37,7 +37,7 @@ RGBA color values are similar to RGB color values with an additional parameter -
 
 The alpha parameter can take any number between 0.0 (totally transparent) and 1.0 (completely opaque).
 
-See below
+See below:
 
 ![](../assets/elkwebdesign/rgb.png)
 
