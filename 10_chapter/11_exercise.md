@@ -18,7 +18,7 @@ Let's get some practice manipulating the DOM and adding some interactions to our
 
 **Let's get started!**
 
-* We've finished reading *The Wind Up Bir Chronicle* and *A Visit From the Goon Squad*! Use the `getElementsByClassName()` to find all elements that have the `current` class. Then use a for loop to iterate through these elements and change the class name to `finished`.
+* We've finished reading *The Wind Up Bird Chronicle* and *A Visit From the Goon Squad*! Use the `getElementsByClassName()` to find all elements that have the `current` class. Then use a for loop to iterate through these elements and change the class name to `finished`.
 
 * Now onto our next book on the reading list, *The Flamethrowers*. Use the `getElementById()` method to find that list item. Update the class name to `current`. Then use the `removeAttribute()` method to remove the id attribute.
 
