@@ -126,7 +126,7 @@ To add new elements to the page, we'll need to use a three step process:
 ```js
 var newListItem = document.createElement('li');
 newListItem.textContent = 'Feed the cat';
-document.getElementsByTagName('ul')[0].appendChild(newListItem);
+document.querySelector('ul').appendChild(newListItem);
 ```
 ####Getting and Setting Attributes
 * We can change the value of a class attribute for an element using the `className` property.
