@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Thu Oct 13 2016 22:34:33 GMT+0000 (UTC)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Thu Oct 13 2016 22:38:41 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2072,14 +2072,14 @@
 </code></pre><p>The changes we&apos;ve just made have now been <em>staged</em>, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or <em>unstaged</em>. If we run <code>git status</code> again, we&apos;ll see that the addition of <code>post.txt</code> is staged and ready to be committed:</p>
 <p><img src="../assets/chapter2/git_status_staged.gif" alt="Git Status of GA-Blog"></p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> Often, you&apos;ll want to automatically save <em>any</em> changes that have been made inside your repo; instead of specifying a unique file, you can just write <code>git add .</code> - this will add all of the files in <code>.</code> (which, if you remember, is shorthand for the working directory) to the next commit.</p>
+<p> Sometimes, you&apos;ll want to save <em>all</em> of the changes to files that have been made inside your repo. Instead of specifying a unique file, you can write <code>git add .</code> - this will add all of the files in the working directory to the next commit. Be careful, though, when using <code>git add .</code> - you could accidentally add files with sensitive information.</p>
 </blockquote>
 <p>Once we&apos;re ready to officially record this version of our project, we can type:</p>
 <pre><code>$ git commit -m &quot;created a new post.txt file&quot;
 </code></pre><p>The <code>-m</code> option allows you to include a message, describing the changes you made for your collaborators or future-you. These should be short but descriptive, clearly indicating what changes each commit makes to the project.</p>
 <h3 id="the-git-staging-area">The Git Staging Area</h3>
 <p>One of the unique features of Git is its &quot;Staging Area&quot;.  Git allows you to add changes to your project to the local repo in two steps:</p>
-<pre><code>$ git add .
+<pre><code>$ git add &lt;your-file-name&gt;
 $ git commit -m &quot;message&quot;
 </code></pre><p>Why stage? So that if you make multiple changes you can commit them separately or all at once (basically, it exists to help you better organize your project history).</p>
 <p><img src="../assets/chapter2/add_commit.png" alt="Git Staging Area"></p>
