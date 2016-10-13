@@ -90,7 +90,7 @@ document.getElementById('main')
 * The syntax for using these properties looks like this:
 
 ```js
-document.getElementsByTagName('li')[0].parentNode
+document.querySelector('li').parentNode
 ```
 
 
@@ -108,12 +108,14 @@ document.getElementsByTagName('li')[0].parentNode
 * The syntax for getting content looks like this:
 
 ```js
-var firstListItem = document.getElementsByTagName('li')[0].innerHTML;
+var firstListItem = document.querySelector('li').innerHTML;
+// remember, `querySelector()` selects the first element that matches the provided selector
 ```
 
 * The syntax for updating content looks like this:
+
 ```js
-document.getElementsByTagName('li')[0].innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.';
+document.querySelector('li').innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.';
 ```
 #### Adding Content
 
@@ -128,6 +130,7 @@ var newListItem = document.createElement('li');
 newListItem.textContent = 'Feed the cat';
 document.querySelector('ul').appendChild(newListItem);
 ```
+
 ####Getting and Setting Attributes
 * We can change the value of a class attribute for an element using the `className` property.
 
@@ -137,12 +140,11 @@ document.getElementById('important').className = 'highlight';
 * We can set and remove attributes from elements using the `setAttribute()` and `removeAttribute()` methods.
 
 ```js
-document.getElementsByTagName('a')[0].setAttribute('href', 'http://newurl.com');
-
+document.querySelector('a').setAttribute('href', 'http://newurl.com');
 ```
-```js
-document.getElementsByTagName('a')[0].removeAttribute('id');
 
+```js
+document.querySelector('a').removeAttribute('id');
 ```
 
 ###Events
