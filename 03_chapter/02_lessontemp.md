@@ -136,8 +136,6 @@ There are three parts to loading up a web font with HTML. The href tells the bro
 
 Here we want to open Sans font, in two weights: 400 for body text, and 800 for headings. The rest of this tells the HTML that the link goes to a CSS stylesheet. Follow the link to take a peek!
 
-**Note**: For servers that live behind a login, you'll need to add an "s" to the http—tricking our servers into thinking the font is a protected file.
-
 
 ---
 
