@@ -56,7 +56,7 @@ The changes we've just made have now been *staged*, added to the list of changes
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
 
-> **NOTE** Often, you'll want to automatically save *any* changes that have been made inside your repo; instead of specifying a unique file, you can just write `git add .` - this will add all of the files in `.` (which, if you remember, is shorthand for the working directory) to the next commit.
+> **NOTE** Sometimes, you'll want to save *all* of the changes to files that have been made inside your repo. Instead of specifying a unique file, you can write `git add .` - this will add all of the files in the working directory to the next commit. Be careful, though, when using `git add .` - you could accidentally add files with sensitive information.
 
 Once we're ready to officially record this version of our project, we can type:
 
@@ -69,7 +69,7 @@ The `-m` option allows you to include a message, describing the changes you made
 One of the unique features of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
 
 ```
-$ git add .
+$ git add <your-file-name>
 $ git commit -m "message"
 ```
 
