@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-In this exercise, you'll write your first **hyperlinks**: those magical, clickable links that get you from one place to another on the web!
+In this exercise, you'll write your first **hyperlinks**: Those magical, clickable links that get you from one place to another on the web.
 
 When complete, your output should look like this:
 
@@ -19,13 +19,13 @@ Use the editor provided below to write your code and see what renders!
 <a class="jsbin-embed" href="https://jsbin.com/vuquwe/embed?htmlheight=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-1 . Give your website some content: introduce yourself, mention one social media account (or any website of your choosing), and ask for an email. Something like this should work:
+1 . Give your website some content: introduce yourself, mention a social media account (or a website of your choosing), and ask for users to send you an email. Try something like this:
 
 *Hi, I'm awesome.
-Follow me on twitter.  
+Follow me on Twitter.  
 Send me an email.*
 
-2 . Wrap the first line, "Hi, I'm awesome" in `h1` tags.
+2 . Wrap the first line, "Hi, I'm awesome," in `h1` tags.
 
 3 . Wrap the rest of your content with `p` tags. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need!
 
