@@ -4,9 +4,9 @@
 
 #Text Editors and Browsers
 
-During your admissions assessment, you did your programming in Dash and CodePen. Those applications ask you to write code using a web-based text editor. In other words, they ask you to write your code within your web browser.
+There are two main tools to write your code: in a web browser and in a stand-alone text editor.
 
-During Fundamentals, you'll use another the web text editor called JS Bin for your exercises, but for your unit assignments, you'll need to write your code in a stand-alone text editor.
+During your admissions assessment, you did your programming exercises in Dash and CodePen. Those applications asked you to write code using a web-based text editor. In other words, they asked you to write your code within your web browser. During Fundamentals, you'll use another web-based text editor called JS Bin for your exercises. But for your unit assignments, you'll need to write your code in a stand-alone text editor.
 
 Text editors and web browsers are the tools we'll use to build web applications in class and - more importantly - on the job. Watch the video below to learn about these two essential web development tools: text editors and web browsers.
 
