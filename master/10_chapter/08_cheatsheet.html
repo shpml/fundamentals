@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.6" data-basepath=".." data-revision="Thu Oct 13 2016 19:33:33 GMT+0000 (UTC)">
+    <div class="book" data-level="10.6" data-basepath=".." data-revision="Thu Oct 13 2016 20:28:15 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2168,7 +2168,7 @@
 <ul>
 <li>The syntax for using these properties looks like this:</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;li&apos;</span>).parentNode
 </code></pre>
 <h3 id="manipulating-the-dom">Manipulating the DOM</h3>
 <h4 id="accessing-and-updating-content">Accessing and Updating Content</h4>
@@ -2196,14 +2196,15 @@
 <ul>
 <li>The syntax for getting content looks like this:</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML;
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;li&apos;</span>).innerHTML;
+<span class="hljs-comment">// remember, `querySelector()` selects the first element that matches the provided selector</span>
 </code></pre>
 <ul>
-<li>The syntax for updating content looks like this:<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
+<li>The syntax for updating content looks like this:</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;li&apos;</span>).innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
 </code></pre>
 <h4 id="adding-content">Adding Content</h4>
-</li>
-</ul>
 <p>To add new elements to the page, we&apos;ll need to use a three step process:</p>
 <ol>
 <li>We will use the <code>createElement()</code> method to create a new element, which can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.</li>
@@ -2212,7 +2213,7 @@
 </ol>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> newListItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;li&apos;</span>);
 newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</span>;
-<span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;ul&apos;</span>)[<span class="hljs-number">0</span>].appendChild(newListItem);
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;ul&apos;</span>).appendChild(newListItem);
 </code></pre>
 <h4 id="getting-and-setting-attributes">Getting and Setting Attributes</h4>
 <ul>
@@ -2223,9 +2224,9 @@ newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</sp
 <ul>
 <li>We can set and remove attributes from elements using the <code>setAttribute()</code> and <code>removeAttribute()</code> methods.</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].setAttribute(<span class="hljs-string">&apos;href&apos;</span>, <span class="hljs-string">&apos;http://newurl.com&apos;</span>);
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;a&apos;</span>).setAttribute(<span class="hljs-string">&apos;href&apos;</span>, <span class="hljs-string">&apos;http://newurl.com&apos;</span>);
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].removeAttribute(<span class="hljs-string">&apos;id&apos;</span>);
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;a&apos;</span>).removeAttribute(<span class="hljs-string">&apos;id&apos;</span>);
 </code></pre>
 <h3 id="events">Events</h3>
 <ul>
