@@ -104,7 +104,7 @@ In JavaScript, the boolean operators `!`, `||`, and <code>&&</code> follow the r
 Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row.
 
 |     A     |       B      |   A AND B  |   A OR B  |   NOT A  |
-|-          |-             |-           |-          |-         |
+| ---       | ---          | ---        | ---       | ---      |
 | **False** |  **False**   |  False     |  False    |  True    |
 | **False** |  **True**    |  False     |  True     |  True    |
 | **True**  |  **False**   |  False     |  True     |  False   |
