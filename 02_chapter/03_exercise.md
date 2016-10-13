@@ -31,7 +31,7 @@ Built with WDI at GA.
 
 3 . Did you notice that all the content was set to `h1`? Aha! That's because you still need to close the tag, which tells the browser when to stop rendering the text as a heading. Go ahead and close the heading tag now.
 
-4 . Open and close *second-level heading* (`h2`) on the second line that says, "by a talented student."
+4 . Open and close *level two heading* (`h2`) on the second line that says, "by a talented student."
 
 5 . Lastly, wrap this sentence in a paragraph tag (`p`): "Built with WDI at GA."
 
