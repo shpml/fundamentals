@@ -21,7 +21,7 @@ With your newfound knowledge from this unit, let's go ahead and create the found
 
 1) Open up Sublime Text Editor.
 
-2) Create a new file called "index.html".
+2) Create a new file called `index.html`.
 
 3) Set up your HTML boilerplate code.
 
@@ -35,7 +35,7 @@ With your newfound knowledge from this unit, let's go ahead and create the found
 
 *Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.*
 
-8) Great! In order to preview your page, double-click your "index.html" file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the page in the browser.
+8) Great! In order to preview your page, double-click your `index.html` file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the page in the browser.
 
 
 #### Bonus
@@ -46,7 +46,7 @@ With your newfound knowledge from this unit, let's go ahead and create the found
 
 * Throw some paint on your canvas! Try adding some flare to your site by using the CSS property `color` to spice up your headers. First, add the color "teal" to your `h1` tags. Second, add the color "gold" to your `h2` tags.
 
->**NOTE** To add styling like color within your HTML file, write your CSS between the `<style></style>` tags.
+>**NOTE** We'll dive deeper into adding color and other style customizations in the next unit.
 
 ---
 
