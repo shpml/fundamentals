@@ -45,11 +45,11 @@ Example:
 Example:
 `Send me an <a href="mailto:me@email.com"> email </a>.`
 
+
 > **NOTE** HTML pays attention to spaces between tags. Only words should be hyperlinked, not spaces or punctuation.
 
 
-
-Click on the **OUTPUT** button to see what your HTML code renders.
+8 . Click on the **OUTPUT** button to see what your HTML code renders.
 
 
 ---
