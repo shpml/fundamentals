@@ -19,15 +19,15 @@ Use the editor provided below to write your code and see what renders!
 <a class="jsbin-embed" href="https://jsbin.com/vuquwe/embed?htmlheight=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
-1 . Give your website some content: Introduce yourself, mention a social media account (or a website of your choosing), and ask for users to send you an email. Try something like this:
+1) Give your website some content: Introduce yourself, mention a social media account (or a website of your choosing), and ask for users to send you an email. Try something like this:
 
 *Hi, I'm awesome.
 Follow me on Twitter.  
 Send me an email.*
 
-2 . Wrap the first line, "Hi, I'm awesome," in `h1` tags.
+2) Wrap the first line, "Hi, I'm awesome," in `h1` tags.
 
-3 . Wrap the rest of your content with `p` tags. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need.
+3) Wrap the rest of your content with `p` tags. You'll want to use the paragraph tag on both the second and third line. HTML tags are reusable, so you can use as many of each kind as you need.
 
 4 . Wrap the text, "Follow me," in an *anchor element* (with `<a>` and `</a>`).
 
