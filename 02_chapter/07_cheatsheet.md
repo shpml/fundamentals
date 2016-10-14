@@ -40,7 +40,7 @@
 #### Tags
 * HTML syntax used to create elements. They use angle bracket bookends (`< >`) to tell a web browser how to present content.
 
-    * **Heading Tags:** `<h1>` (the largest size) through `<h6>` (the smaller size) titles the content that follows it.
+    * **Heading Tags:** `<h1>` (largest size) through `<h6>` (smallest size) titles the content that follows it.
 
     * **Paragraph Tags:** `<p>` tags indicate blocks of text.
 
