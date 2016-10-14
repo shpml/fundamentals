@@ -61,12 +61,9 @@ For Units 1-5, you'll need to save the HTML and CSS portions of your unit assign
 
 ### Grading
 
-Your instructor will review your completed assignment on the first day of class.
+While most quizzes and assignments won't be formally graded, your producter will be checking your submissions to make sure you've completed Fundamentals and made all the necessary progress before your first week of WDI.
 
-While most quizzes and assignments won't be formally graded, your WDI instructors will be checking your submissions to make sure you've completed Fundamentals and made all the necessary progress before your first week of WDI.
-
-If you have any concerns about your progress, feel free to reach out to your producer or instructor.
-
+If you have any concerns about your progress, feel free to reach out to your producer.
 
 ### Getting Help
 
