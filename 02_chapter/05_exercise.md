@@ -31,7 +31,7 @@ Send me an email.*
 
 4 . Wrap the text, "Follow me," in an *anchor element* (with `<a>` and `</a>`).
 
-5 . The opening `a` tag needs a **h**yperlink **r**eference **a**ttribute so it knows where to go when clicked. Go ahead and link to your Twitter page (or whatever website you chose).
+5 . The opening `a` tag needs a **h**yperlink **r**eference **a**ttribute (`href`) so it knows where to go when clicked. Go ahead and link to your Twitter page (or whatever website you chose).
 
 Example:
 `<a href="http://twitter.com/GA">Follow me</a> on twitter.`
