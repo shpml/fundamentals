@@ -17,7 +17,7 @@ If you don't see the JS Bin below, please refresh the page.
 
 Type your answers directly into the text editor below. Click the **Output** button at the top of the editor to see how your HTML code renders.
 
-1 . Let's start with some content! Type the text below into your editor.
+1) Let's start with some content! Type the text below into your editor.
 
 ```
 My first website!
@@ -27,13 +27,13 @@ Built with WDI at GA.
 
 <a class="jsbin-embed" href="http://jsbin.com/xuhubej/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.37.0"></script>
 
-2 . Next, open a *level one heading tag* (`h1`) at the very beginning where it says, "My first website!"
+2) Next, open a *level one heading tag* (`h1`) at the very beginning where it says, "My first website!"
 
-3 . Did you notice that all the content was set to `h1`? Aha! That's because you still need to close the tag, which tells the browser when to stop rendering the text as a heading. Go ahead and close the heading tag now.
+3) Did you notice that all the content was set to `h1`? Aha! That's because you still need to close the tag, which tells the browser when to stop rendering the text as a heading. Go ahead and close the heading tag now.
 
-4 . Open and close *level two heading tag* (`h2`) on the second line that says, "by a talented student."
+4) Open and close *level two heading tag* (`h2`) on the second line that says, "by a talented student."
 
-5 . Lastly, wrap this sentence in a *paragraph tag* (`p`): "Built with WDI at GA."
+5) Lastly, wrap this sentence in a *paragraph tag* (`p`): "Built with WDI at GA."
 
 
 ---
