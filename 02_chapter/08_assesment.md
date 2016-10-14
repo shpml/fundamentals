@@ -29,28 +29,24 @@ With your newfound knowledge from this unit, let's go ahead and create the found
 
 5) Create level one heading tags (`h1`) and add in the name of the game within those tags. In this case, the you can just title it, "Memory Game".
 
-6) Add in a level two heading tag (`h2`) titled "Instructions".
+6) Add in level two heading tags (`h2`) titled "Instructions".
 
-7) Below your level two heading tag, type the following text in between paragraph tags.
+7) Below your level two heading tags, type the following text in between paragraph (`p`) tags:
 
-```html
-*Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.*
-```
+*Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.*
 
-8) Great! In order to preview your page, double-click your `index.html` file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the page in the browser.
+8) Great! In order to preview your page, double-click your "index.html" file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the page in the browser.
 
 
 #### Bonus
 
-* Add a subheading describing your game. What is fun about it? Why is it awesome?
+* Add a subheading to describe your game. What's fun about it? Why should people play?
 
-* Include a few personal social media links, so your users can learn about the developer behind the game - you!
+* Include some personal social media links so your users can learn about the developer behind the game - you!
 
-* Throw some paint on your canvas! Try adding some flare to your site by using the CSS property `color` to spice up your headers. First, add the color *teal* to your h1 tag.
+* Throw some paint on your canvas! Try adding some flare to your site by using the CSS property `color` to spice up your headers. First, add the color "teal" to your `h1` tags. Second, add the color "gold" to your `h2` tags.
 
-* Second, add the color *gold* to your `h2` tags.
-
->**NOTE** To add styling within your HTML file, write your CSS between the `<style></style>` tags.
+>**NOTE** To add styling like color within your HTML file, write your CSS between the `<style></style>` tags.
 
 ---
 
