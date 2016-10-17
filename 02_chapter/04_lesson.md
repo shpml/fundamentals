@@ -4,7 +4,7 @@
 
 #The Boilerplate
 
-Now that we've learned a bit about HTML tags, it's time to think about how organize them properly.
+Now that we've learned a bit about HTML tags, let's think about how to organize them properly.
 
 An HTML boilerplate is a set of common HTML elements that helps us easily organize and begin building our code. Watch the following video to understand how to create an HTML boilerplate.
 
@@ -17,6 +17,7 @@ An HTML boilerplate is a set of common HTML elements that helps us easily organi
 * Which tags don't require a closing tag?
 * Between which tags should the `<title> </title>` tags be placed?
 * What are parent elements? Children elements?
+
 ---
 
 [Let's get some practice now!](05_exercise.md)
