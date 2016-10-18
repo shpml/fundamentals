@@ -61,7 +61,7 @@ For Units 1-5, you'll need to save the HTML and CSS portions of your unit assign
 
 ### Grading
 
-While most quizzes and assignments won't be formally graded, your producter will be checking your submissions to make sure you've completed Fundamentals and made all the necessary progress before your first week of WDI.
+While most quizzes and assignments won't be formally graded, your producer will be checking your submissions to make sure you've completed Fundamentals and made all the necessary progress before your first week of WDI.
 
 If you have any concerns about your progress, feel free to reach out to your producer.
 
