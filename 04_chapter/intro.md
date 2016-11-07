@@ -31,4 +31,4 @@ At this point in our journey with HTML and CSS, we'll want to start moving thing
 
 ---
 
-[Onto the lesson >](02_lesson.md)
+[Onto the lesson.](02_lesson.md)
