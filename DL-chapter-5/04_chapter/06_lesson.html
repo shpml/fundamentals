@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="4.4" data-basepath=".." data-revision="Mon Nov 07 2016 22:02:07 GMT+0000 (UTC)">
+    <div class="book" data-level="4.4" data-basepath=".." data-revision="Mon Nov 07 2016 22:03:23 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,37 +2044,44 @@
                         <p><strong>WDI Fundamentals Unit 4</strong></p>
 <hr>
 <h1 id="more-on-semantic-elements">More on Semantic Elements</h1>
-<p><strong>Semantic elements</strong> group and organize content with descriptive names that clearly imply the purpose of the content around which they are wrapped. Structuring your HTML with semantic elements will improve your page in a number of ways:</p>
-<p>  1) <strong>Organization</strong>: If you ever need to update your code, it will be easier to find the specific block that you&apos;re looking for.</p>
-<p>  2) <strong>Optimization</strong>: Search engines like Google will have an easier time understanding the content on your site, making your site easier for users to find.</p>
-<p>  3) <strong>Accessibility</strong>: Screen readers (devices that read the content on websites for users with vision and reading disabilities) can more easily navigate your site, making it more accessible for everyone.</p>
+<p><strong>Semantic elements</strong> group and organize content with descriptive names that clearly imply the purpose of the content around which they are wrapped. Structuring your HTML with semantic elements will improve your page in a number of ways.</p>
+<p>  1 . <strong>Organization</strong>: if you ever need to update your code, finding the specific block for which you&apos;re looking will be easier.</p>
+<p>  2 . <strong>Optimization</strong>: search engines like Google will have an easier time understanding the content on your site, so your site will be easier for others to find.</p>
+<p>  3 . <strong>Accessibility</strong>: screen readers - devices that read the content on websites for persons with vision and reading disabilities - can more easily navigate your site, making it more accessible for everyone.</p>
 <hr>
-<h3 id="basic-semantic-elements">Basic Semantic Elements</h3>
-<p>The first four semantic elements you should know are <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;aside&gt;</code>. These establish the beginning, end, primary, and secondary content of your page.</p>
+<h3 id="basic-semantic-elements">Basic Semantic elements</h3>
+<p>The first three semantic elements you should know are <code>&lt;header&gt;</code> <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code> and <code>&lt;aside&gt;</code>. These establish the beginning, end, primary and secondary content of your page.</p>
 <p><img src="../assets/elkwebdesign/semantic2.png" alt=""></p>
 <h4 id="-header-header"><code>&lt;header&gt; &lt;/header&gt;</code></h4>
-<p>These elements kick off your page with introductory content, such as logos, headlines, titles, and links.</p>
+<ul>
+<li>These elements kick off your page with introductory content like logos, headlines, titles, and links.</li>
+</ul>
 <h4 id="-footer-footer"><code>&lt;footer&gt; &lt;/footer&gt;</code></h4>
-<p>Footers wrap the content at the bottom of your web page. It often contains copyright information, links to career pages, contact information, terms of use, etc.</p>
+<ul>
+<li>This element wraps the content at the bottom of your web page. It often contains copyright information, links to career pages, contact information, terms of use, etc.</li>
+</ul>
 <h4 id="-main-main"><code>&lt;main&gt; &lt;/main&gt;</code></h4>
-<p>These elements contain all the primary content&#x2009;on the page &#x2014;&#x2009;articles, blog posts, images, videos, etc.&#x2009;&#x2014;&#x2009;and live between the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>.</p>
+<ul>
+<li>These elements contain all the primary content&#x2009;&#x2014;&#x2009;articles, blog posts, images, videos, etc.&#x2009;&#x2014;&#x2009;between the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>.</li>
+</ul>
 <h4 id="-aside-aside"><code>&lt;aside&gt; &lt;/aside&gt;</code></h4>
-<p>These elements contain all the secondary content, and also live between the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>. They wrap secondary content and supplemental information, like recommended stories or archived links.</p>
-<p>While these elements provide a fundamental structure for your page, they definitely lack specificity. But there are additional elements that can help fix that!</p>
+<ul>
+<li>These elements contain all the secondary content between the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>. They wrap secondary content and supplemental information, like recommended stories or archived links.</li>
+</ul>
+<p>While these elements provide a fundamental structure for your page, they definitely lack specificity!</p>
 <hr>
 <h3 id="additional-semantic-elements">Additional Semantic Elements</h3>
 <p>After adding your <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> elements, you&apos;ll need to nest several additional semantic elements within those to further organize your page.</p>
 <p><img src="../assets/elkwebdesign/semantic.png" alt=""></p>
-<p>You may have noticed that certain elements &#x2014; particularly <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;article&gt;</code> &#x2014; repeated several times throughout the page. That&apos;s perfectly fine; however, if that&apos;s the case in your code, make sure to add class or ID attributes to each one to ensure it&apos;s easy to find and manipulate.</p>
+<p>You may have noticed that certain elements, particularly <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;article&gt;</code> repeated several times throughout the page. That&apos;s perfectly fine; however, if that&apos;s the case in your code, make sure to add class or ID attributes to each one to ensure it&apos;s easy to find and manipulate.</p>
 <p>Other than <code>&lt;main&gt;</code>, which should only appear once in an HTML page, semantic elements can recur as many times as necessary throughout your page. You&apos;ll often find nesting certain semantic elements within other semantic elements can help with organization. For example, a long <code>&lt;article&gt;</code> element might be broken down with several <code>&lt;section&gt;</code> elements or even its own <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements nested inside.</p>
-<p>A few other semantic elements you can use are:</p>
 <h4 id="-nav-nav"><code>&lt;nav&gt; &lt;/nav&gt;</code></h4>
 <p>Any navigational links that help users get around your page should be wrapped in <code>&lt;nav&gt;</code> tags.</p>
 <h4 id="-section-section"><code>&lt;section&gt; &lt;/section&gt;</code></h4>
 <p>These elements are used to group the content of a page into related chunks. Section tags would work okay for this example page; however, there&apos;s an even better semantic element available...</p>
 <h4 id="-article-article"><code>&lt;article&gt; &lt;/article&gt;</code></h4>
 <p>These elements are used to contain standalone blocks of text, such as news articles, blog posts, etc.</p>
-<p><em>As you continue to build web pages, you&#x2019;ll find that organizing your code with clear semantic elements will make creating content, developing styles, and fixing bugs much easier.</em></p>
+<p><em>As you continue to build web pages, you&#x2019;ll find that organizing your code with clear semantic elements will make creating content, developing styles, and fixing bugs all much easier.</em></p>
 
                     
                     </section>
