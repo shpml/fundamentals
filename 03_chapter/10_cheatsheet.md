@@ -89,7 +89,7 @@ p {
 
 **font-family**
 
-To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
+To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you’d like to alter your text. To be safe, put a comma after your selected font and enter a generic family as a fallback. If the web browser doesn’t support the font you selected, it will choose the fallback.
 
 ```css
 h1 {
@@ -107,7 +107,7 @@ h1 {
 
 **font-size**
 
-To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you’ll want to enter pixel values for your font-size values.
+To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you should enter pixel values for your font-size values.
 
 ```css
 h3 {
@@ -115,7 +115,7 @@ h3 {
 }
 ```
 
-As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, though, so you may want to wait until we cover them in Unit 9.
+As you become more advanced, try using percentages or ems instead of pixels, which we'll cover in detail in a later unit.
 
 
 **font-weight**
@@ -162,7 +162,7 @@ a {
 
 **text-align**
 
-To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.
+To adjust the positioning of a text element, use the CSS property "text-align" and one of the following values: left, right, center, or justify.
 
 ```css
 body {
@@ -172,7 +172,7 @@ body {
 
 **text-decoration**
 
-To add an underline to normal text, use the CSS property text-decoration and the value “underline.”
+To add an underline to normal text, use the CSS property "text-decoration" and the value “underline.”
 
 ```css
 h1 {
@@ -187,13 +187,13 @@ a {
      text-decoration: none;
 }
 ```
-Less commonly used values include “overline” to add a line above text and “line-through” which strikes a line through your text.
+Less commonly used values include “overline” to add a line above text and “line-through” to strike a line through your text.
 
 **text-transform**
 
-To adjust capitalization in a selected text element, use the text-transform property.
+To adjust capitalization in a selected text element, use the "text-transform" property.
 
-Values for this property include “uppercase” to make every letter capitalized, “lowercase” to make every letter uncapitalized, and “capitalize” to make the first letter of every word in the selected text uppercase.
+Values for this property include “uppercase” to make every letter capitalized, “lowercase” to make every letter uncapitalized, and “capitalize” to make the first letter of every word in the selected text capitalized.
 
 ```css
 h1 {
@@ -205,18 +205,16 @@ h1 {
 
 Classes and IDs, also called selectors, are ways of targeting the style of specific HTML elements on your page.
 
-So what’s the difference between them?
-
-In short, classes allow you to style many elements with a particular style, while IDs are only capable of styling a single element.
+So, what’s the difference between them? In short, classes allow you to style many elements with a particular style, while IDs are only capable of styling a single element.
 
 Using these selectors allows you flexibility and control of styling individual, as well as groups, of elements on your page.
 
 #### HTML and Images
 
-When you’d like to add images to your site, you should use the tag with the “src” attribute. “src” stands for “Source” and works just like the tag’s “href” attribute. It tells the image tag where to find the image you’d want to include on your page.
+When you’d like to add images to your site, you should use the tag with the “src” attribute. “src” stands for “source” and works just like the tag’s “href” attribute. It tells the image tag where to find the image you’d want to include on your page.
 
 #### Relative vs. Absolute Addressing
 
-Relative addressing basically tells your browser: “Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.”
+Relative addressing basically tells your browser: “Look in our project folder for the file specified." Or, if a folder is specified: "Look within that folder for the file specified.”
 
 On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.
