@@ -27,12 +27,12 @@ This exercise has two sections. First, we'll create the structure of the website
 Your job is to use the notes below to write the HTML for ELK Web Design.
 
 1) **The Header**
-  * ELK Web Design has a header element inside the body which contains the company name **ELK Web Design** as a level 1 heading, or `h1`.
+  * ELK Web Design has a header element inside the body which contains the company name, **ELK Web Design**, as a level 1 heading, or `h1`.
 
   * The header also contains this image: http://i.imgur.com/pdsjjxD.jpg
 
 2) **The Body**
-  * Inside the body there are two sections (or, "divs"). One section is for the "About" content, the other for "Services". The section headings are level 2, or `h2`.
+  * Inside the body there are two sections (or "divs"). One section is for the "About" content, the other for "Services". The section headings are level 2, or `h2`.
 
   * _About Content_:
 
