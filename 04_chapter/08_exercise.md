@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-### Elk Web Design: Part 1
+### ELK Web Design: Part 1
 
 In this exercise, you'll learn the basics of laying out a webpage while building a small business website for ELK Web Design! The final design is based on an assignment submitted by a FEWD graduate, Lauren Kathe, and looks like this:
 
