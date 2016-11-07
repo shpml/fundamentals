@@ -88,4 +88,4 @@ Here's what your webpage should look like in the Output now:
 
 All done for now!
 
-*In the next Code Challenge, you'll be ready to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image—plus. You'll also position all of the content containers you built in this unit!*
+*In the next Code Challenge, you'll be ready to build a navigation bar, experiment with web fonts, and use CSS to resize the hero image. You'll also position all of the content containers you built in this unit!*
