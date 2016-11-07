@@ -4,10 +4,10 @@
 # The Box Model
 
 Now that we understand how to differentiate between inline and block elements, it's time to take a look at the CSS Box Model. Every HTML element on a webpage is in a box, therefore, every element has:
-* The **content** within it
-* the **padding**, or the area outside of the content
-* the **border**, or the line between padding and margin
-* the **margin**, or the area outside the border that separates the element from other elements on the page.
+* The **content** within the box
+* The **padding**, or the area outside of the content
+* The **border**, or the line between padding and margin
+* The **margin**, or the area outside the border that separates the element from other elements on the page.
 
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/4o0byeriss?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
