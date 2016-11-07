@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.8" data-basepath=".." data-revision="Fri Nov 04 2016 20:34:18 GMT+0000 (UTC)">
+    <div class="book" data-level="3.8" data-basepath=".." data-revision="Mon Nov 07 2016 18:18:53 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2099,7 +2099,7 @@ This is clearer with examples, so here are some common colors with their RGB and
 </code></pre>
 <h4 id="css-text-treatment">CSS Text Treatment</h4>
 <p><strong>font-family</strong></p>
-<p>To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you&#x2019;d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn&#x2019;t support the font you selected, it will choose the fallback.</p>
+<p>To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you&#x2019;d like to alter your text. To be safe, put a comma after your selected font and enter a generic family as a fallback. If the web browser doesn&#x2019;t support the font you selected, it will choose the fallback.</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> Arial, sans-serif</span></span>;
 <span class="hljs-rule">}</span></span>
@@ -2110,12 +2110,12 @@ This is clearer with examples, so here are some common colors with their RGB and
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>font-size</strong></p>
-<p>To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you&#x2019;ll want to enter pixel values for your font-size values.</p>
+<p>To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you should enter pixel values for your font-size values.</p>
 <pre><code class="lang-css"><span class="hljs-tag">h3</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">24px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, though, so you may want to wait until we cover them in Unit 9.</p>
+<p>As you become more advanced, try using percentages or ems instead of pixels, which we&apos;ll cover in detail in a later unit.</p>
 <p><strong>font-weight</strong></p>
 <p>To adjust the thickness of your selected text, use the font-weight property.</p>
 <p>As a beginner, you can enter values like &#x201C;normal&#x201D; to make your text thin and &#x201C;bold&#x201D; to make your text thick. As these values aren&#x2019;t very specific, different browsers may interpret their display with slightly different outputs.</p>
@@ -2147,13 +2147,13 @@ This is clearer with examples, so here are some common colors with their RGB and
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>text-align</strong></p>
-<p>To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.</p>
+<p>To adjust the positioning of a text element, use the CSS property &quot;text-align&quot; and one of the following values: left, right, center, or justify.</p>
 <pre><code class="lang-css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>text-decoration</strong></p>
-<p>To add an underline to normal text, use the CSS property text-decoration and the value &#x201C;underline.&#x201D;</p>
+<p>To add an underline to normal text, use the CSS property &quot;text-decoration&quot; and the value &#x201C;underline.&#x201D;</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
 <span class="hljs-rule">}</span></span>
@@ -2163,23 +2163,22 @@ This is clearer with examples, so here are some common colors with their RGB and
      <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>Less commonly used values include &#x201C;overline&#x201D; to add a line above text and &#x201C;line-through&#x201D; which strikes a line through your text.</p>
+<p>Less commonly used values include &#x201C;overline&#x201D; to add a line above text and &#x201C;line-through&#x201D; to strike a line through your text.</p>
 <p><strong>text-transform</strong></p>
-<p>To adjust capitalization in a selected text element, use the text-transform property.</p>
-<p>Values for this property include &#x201C;uppercase&#x201D; to make every letter capitalized, &#x201C;lowercase&#x201D; to make every letter uncapitalized, and &#x201C;capitalize&#x201D; to make the first letter of every word in the selected text uppercase.</p>
+<p>To adjust capitalization in a selected text element, use the &quot;text-transform&quot; property.</p>
+<p>Values for this property include &#x201C;uppercase&#x201D; to make every letter capitalized, &#x201C;lowercase&#x201D; to make every letter uncapitalized, and &#x201C;capitalize&#x201D; to make the first letter of every word in the selected text capitalized.</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> uppercase</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <h4 id="classes-vs-ids">Classes vs. IDs</h4>
 <p>Classes and IDs, also called selectors, are ways of targeting the style of specific HTML elements on your page.</p>
-<p>So what&#x2019;s the difference between them?</p>
-<p>In short, classes allow you to style many elements with a particular style, while IDs are only capable of styling a single element.</p>
+<p>So, what&#x2019;s the difference between them? In short, classes allow you to style many elements with a particular style, while IDs are only capable of styling a single element.</p>
 <p>Using these selectors allows you flexibility and control of styling individual, as well as groups, of elements on your page.</p>
 <h4 id="html-and-images">HTML and Images</h4>
-<p>When you&#x2019;d like to add images to your site, you should use the tag with the &#x201C;src&#x201D; attribute. &#x201C;src&#x201D; stands for &#x201C;Source&#x201D; and works just like the tag&#x2019;s &#x201C;href&#x201D; attribute. It tells the image tag where to find the image you&#x2019;d want to include on your page.</p>
+<p>When you&#x2019;d like to add images to your site, you should use the tag with the &#x201C;src&#x201D; attribute. &#x201C;src&#x201D; stands for &#x201C;source&#x201D; and works just like the tag&#x2019;s &#x201C;href&#x201D; attribute. It tells the image tag where to find the image you&#x2019;d want to include on your page.</p>
 <h4 id="relative-vs-absolute-addressing">Relative vs. Absolute Addressing</h4>
-<p>Relative addressing basically tells your browser: &#x201C;Look in our project folder for the file specified. Or, if a folder is specified, look within that folder for the file specified.&#x201D;</p>
+<p>Relative addressing basically tells your browser: &#x201C;Look in our project folder for the file specified.&quot; Or, if a folder is specified: &quot;Look within that folder for the file specified.&#x201D;</p>
 <p>On the other hand, when we link to a source outside of our project, it is referred to as an absolute address.</p>
 
                     
