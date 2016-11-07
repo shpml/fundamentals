@@ -15,7 +15,7 @@ The current state of your game could use some formatting and personalization.
 * Figure out a way to throw in an icon as well, and make your name a different color than the rest of the text to give it some oomph.
 * Last but surely not least, give your site a nice touch by centering all of its text.
 
-##### Below are the steps to complete the assignment.
+##### Below are the steps to complete the assignment:
 
 1) Create your footer with the given text and a heart icon underneath your divs, before your closing body tag:
 
