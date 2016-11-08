@@ -51,14 +51,14 @@
 
 By default, block elements in HTML stack on top of each other. Floats let us change this behavior, allowing elements to sit horizontally on the page.
 
-The CSS property is called float and common values are left, right, and none (the default is none).
+This CSS property is called float, and its common values are left, right, and none (the default is none).
 
-Clears are used when we want to “turn off” floating—essentially preventing elements from flowing around the floating element.
+Clears are used when we want to “turn off” floating — essentially preventing elements from flowing around the floating element.
 
-A common method is to use the CSS property clear with the value both. When this method is ineffective, the clearfix method—as seen above—should resolve any issues.
+A common method involves using the CSS property clear with the value both. When this method is ineffective, the clearfix method — as seen above — should resolve any issues.
 
 #### Column Layout
 
-Column layout refers to the design of pages with multiple different block sections at the same vertical height on the page.
+Column layout refers to the design of pages composed of multiple block sections with the same vertical height.
 
 Columns are created by wrapping a block of content with a div element, applying a float, and modifying the padding, margin, and border dimensions to adjust their size.
