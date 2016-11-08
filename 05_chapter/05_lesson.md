@@ -12,7 +12,7 @@
 #### Checkpoint
 
 * What does `display:block` do?
-* What does floating anchors to the left do?
+* What happens when you float anchors to the left?
 
 ---
 
