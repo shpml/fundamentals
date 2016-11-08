@@ -5,17 +5,17 @@
 # Navigation and Layout Cheat Sheet
 
 #### Navigation Bar
-* a section on a web page with links to other pages or parts of a site. It can appear as a vertical, horizontal, or alternatively-styled block.
+* A section on a web page with links to other pages or parts of a site. It can appear as a vertical, horizontal, or alternatively styled block.
 
 #### Pseudo-class
-* a keyword added to selectors that indicates a particular condition of the element in which to apply CSS to the selected element. For example, :hover will apply a style when the user hovers over the element specified by the selector.
+* A keyword added to selectors that indicates a particular condition of the element in which to apply CSS styling. For example, :hover will apply a style when a user hovers over the element specified by the selector.
 
 #### Nav
 * A semantic element used to define a set of navigation links.
 `<nav></nav>`
 
 #### Clearfix
-* A technique in CSS to automatically clear after an element. It's generally used in column layouts where elements are floated. It involves giving the floated elements the class "clearfix" and creating a corresponding CSS rule for that class with the pseudo-class :after.
+* A technique in CSS used to automatically clear after an element. It's generally used in column layouts in which elements are floated. It involves giving the floated elements the class "clearfix," and creating a corresponding CSS rule for that class using the pseudo-class :after.
 
 ```CSS
 .clearfix:after {
@@ -29,7 +29,7 @@
 ```
 
 #### CSS Reset
-* There is no true standard for how un-styled HTML elements get rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of the default styles and starting with a clean slate. Always link to reset.css in the head section of your HTML, above the link to your main CSS file, as follows:
+* There is no true standard for how un-styled HTML elements are rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of its default styles and starting with a clean slate. Always link to reset.css in the head section of your HTML, above the link to your main CSS file, like so:
 
 ````HTML
 <!DOCTYPE html>
