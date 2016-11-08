@@ -15,7 +15,6 @@
 
 #### Further Reading
 
-Float and Clear
 * http://learnlayout.com/float.html
 * http://learnlayout.com/clear.html
 * http://learnlayout.com/clearfix.html
