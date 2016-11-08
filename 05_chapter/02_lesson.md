@@ -16,7 +16,7 @@
 
 #### Further Reading
 
-* Learn more about [a popular CSS reset](http://meyerweb.com/eric/tools/css/reset/) and [download a copy](http://meyerweb.com/eric/tools/css/reset/reset.css).
+* Learn more about [a popular CSS reset](http://meyerweb.com/eric/tools/css/reset/), and [download a copy](http://meyerweb.com/eric/tools/css/reset/reset.css).
 
 ---
 
