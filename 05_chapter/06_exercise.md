@@ -62,7 +62,7 @@ Fabulous!
 
 17) Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
 
-1). Set the li color to black and its background to white.
+18). Set the li color to black and its background to white.
 
 Bravo! Well done.
 
