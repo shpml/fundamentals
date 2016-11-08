@@ -2,21 +2,21 @@
 
 ---
 
-#####By the end of this Unit, you'll be able to:
+#####By the end of this unit, you'll be able to:
 
 * Understand different strategies for creating navigation bars.
-* Discover how to create multi-column layouts with the float property.
-* Secure your layouts and avoid overlaps with the clear property and the clearfix method.
+* Discover how to create multi-column layouts using the float property.
+* Secure your layouts and avoid overlaps using the clear property and the clearfix method.
 
 ---
 
-Often times a **sitemap** or **user flow** illustrates the primary and alternate paths you intend your user to take through the site, based upon user goals.
+Oftentimes a **sitemap** or **user flow** illustrate the primary and alternate paths your users can take through your website, based on their goals.
 
 ![](/assets/elkwebdesign/userflow.png)
 
-In order to make this user flow come to life, we're going to need to build out a **navigation bar**. The navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>` elements to define a set of navigation links. You can also make your navigation appear vertically, horizontally or alternatively-styled bloc.
+In order to bring this user flow to life, we need to build out a **navigation bar**. A navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>` elements to define a set of navigation links, and your navigation can appear vertically, horizontally, or as an alternatively styled block.
 
-Before we get started, look at the code to get familiar with how you'd code in a nav bar on your site!
+Before we get started, look at the following code to see how you'd add a nav bar on your site!
 
 ![](/assets/elkwebdesign/nav.png)
 
