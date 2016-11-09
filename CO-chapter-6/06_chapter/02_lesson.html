@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.1" data-basepath=".." data-revision="Wed Nov 09 2016 21:04:54 GMT+0000 (UTC)">
+    <div class="book" data-level="6.1" data-basepath=".." data-revision="Wed Nov 09 2016 21:27:02 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,11 +2044,11 @@
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
 <hr>
 <h2 id="how-your-computer-is-organized">How Your Computer is Organized</h2>
-<p>Before we tell the computer what to do, it&apos;s important we understand what it is we will be manipulating. You&apos;re probably used to seeing a graphical representation of files and folders as icons in a list or in columns.</p>
+<p>Before we tell our computer what to do, it&apos;s important we understand what it is we will be manipulating. You&apos;re probably used to seeing a graphical representation of files and folders as icons, either in a list or in columns.</p>
 <p><img src="../assets/chapter1/FileSystem.gif" alt="Folders in the GUI"></p>
 <p>The way your computer organizes and stores files is called a <strong>file system</strong>. Let&apos;s take a minute to learn the vocabulary developers use to talk about the <strong>file system</strong>.</p>
 <ul>
-<li>In programming-speak, all folders are called <strong>directories</strong>.</li>
+<li>In programming speak, all folders are called <strong>directories</strong>.</li>
 </ul>
 <p><img src="../assets/chapter1/directory.png" alt="Directories"></p>
 <ul>
@@ -2059,21 +2059,21 @@
 </ul>
 <p><img src="../assets/chapter1/subdirectories.png" alt="Subdirectory and Parent Directory"></p>
 <ul>
-<li>The top-most directory of the filesystem is called the <strong>root directory</strong>. All files and directories are contained within the <strong>root directory</strong>, so they all share the same root.</li>
+<li>The top-most directory of the file system is called the <strong>root directory</strong>. All files and directories are contained within the <strong>root directory</strong>, therefore they all share the same root.</li>
 </ul>
 <p><img src="../assets/chapter1/root_directory.png" alt="Root Directory"></p>
-<p>For the purposes of this lesson, the root directory of everything on your computer is your home directory. It&apos;s aptly represented in the GUI by a house icon (if you&apos;re using a Mac).</p>
+<p>For the purposes of this lesson, the root directory of everything on your computer is your home directory. It&apos;s aptly represented in the GUI by a house icon (if you&apos;re using a Mac, that is).</p>
 <p><img src="../assets/chapter1/home.png" alt="Home Directory"></p>
 <hr>
-<p>We know how file and directories appear in the GUI. Let&apos;s find our way around this system on the command line.</p>
-<p>Before we get started, it&apos;s important to point out that, as smart as they seem, computers are really dumb. To ask for a specific directory or file in command line, we need to write out a precise address (called a <strong>path</strong>) so that the computer knows exactly where to find it.</p>
+<p>We know how file and directories appear in the GUI. Now, let&apos;s find our way around this system on the command line.</p>
+<p>Before we get started, it&apos;s important to point out that, as smart as they seem, computers can&apos;t actually think for themselves. To ask for a specific directory or file in the command line, we need to write out a precise address (called a <strong>path</strong>) so that the computer knows exactly where to find it.</p>
 <p>For example, if you Google directions to &quot;Main Street,&quot; without any additional information, Google wouldn&apos;t know which of the 10,466-plus Main Streets you want. Google might venture a guess, but your command line isn&apos;t as smart.</p>
-<p>We have to be more specific when interacting with our computer on the command line.</p>
+<p>So, we have to be more specific when interacting with our computer on the command line.</p>
 <p>Your computer understands two kinds of addresses or paths: absolute and relative.</p>
 <ul>
-<li><p>An <strong>absolute path</strong> starts from the root. It&apos;s analogous to identifying a location on earth by latitude and longitude. The point on earth represented by (0, 0) is somewhere out in the middle of the Atlantic ocean. This (0,0) point never changes - it is a standard reference point, or &quot;the root,&quot; from which we describe all locations on earth. If someone gave you the coordinates for a street in Paris, theoretically, you could start at (0, 0) and make your way north and east until you get there. <strong>In this case you are defining where you&apos;re going from the root, so you&apos;re using an absolute path.</strong></p>
+<li><p>An <strong>absolute path</strong> starts from the root directory. It&apos;s analogous to identifying a location on Earth by its latitude and longitude. The point represented by (0, 0) is somewhere out in the middle of the Atlantic Ocean. This (0,0) point never changes - it is a standard reference point, or &quot;the root,&quot; from which we describe all locations on Earth. If someone gave you the coordinates for a street in Paris, theoretically, you could start at (0, 0) and make your way north and east until you get there. <strong>In this case, you are defining where you&apos;re going from the root, so you&apos;re using an absolute path.</strong></p>
 </li>
-<li><p>On the other hand, if you were standing on a street corner in Anchorage, Alaska and wanted to head to the library, you wouldn&apos;t need the latitude and longitude. You could just jump in a taxi and say &quot;Please head back two blocks, cut over to 3rd, and then turn right on Main Street.&quot; <strong>In this case, you&apos;re defining where you&apos;re going based on your current location, so you&apos;re using a relative path.</strong></p>
+<li><p>On the other hand, if you were standing on a street corner in Anchorage, Alaska, and wanted to head to the library, you wouldn&apos;t need its latitude and longitude. You could just jump in a taxi and say, &quot;Please head back two blocks, cut over to 3rd, and then turn right on Main Street.&quot; <strong>In this case, you&apos;re defining where you&apos;re going based on your current location, so you&apos;re using a relative path.</strong></p>
 </li>
 </ul>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
