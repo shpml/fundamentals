@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Wed Nov 09 2016 17:43:27 GMT+0000 (UTC)">
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="Wed Nov 09 2016 21:04:54 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,71 +2044,70 @@
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
 <hr>
 <h2 id="navigating-the-command-line">Navigating the Command Line</h2>
-<p>We can perform actions using the command line by <strong>entering commands</strong>. There is a command to perform virtually any action you can imagine on your computer!</p>
-<p>There are commands to open an application, create new files, copy files from one place to another, and a lot more.</p>
-<p>Let&apos;s start typing commands together.  In your open Terminal window, type <code>hello?</code> and press enter:</p>
+<p>We can perform actions using the command line by <strong>entering commands</strong>. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and more.</p>
+<p>Let&apos;s start typing commands together. In your open Terminal window, type <code>hello?</code> and press Enter:</p>
 <pre><code>$ hello?
-</code></pre><p>Your terminal should respond rudely:</p>
+</code></pre><p>Your terminal should respond (rudely):</p>
 <pre><code>-bash: hello?: command not found
-</code></pre><p>This is the way your computer tells you that it did not understand the command that you typed in. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. Do not worry! In
-due time, as we grow comfortable in this new environment, even these cryptic messages will be just as beautiful as any warning box you&apos;ll ever see.</p>
+</code></pre><p>This is how your computer tells you that it does not understand the command you&apos;ve entered. Remember, we have left the GUI world behind us, so we will no longer have pretty warning messages and alert boxes. But don&apos;t worry! In
+due time, as we grow more comfortable in this new environment, even these cryptic messages will be as clear as any warning box you&apos;ll ever see.</p>
 <p>Try typing this into your terminal:</p>
 <pre><code>$ Where am I?
-</code></pre><p>Again, a rude response:</p>
+</code></pre><p>Again, we get a similar response:</p>
 <pre><code>-bash: Where: command not found
-</code></pre><p>Great. We&apos;ve established that our command line doesn&apos;t understand plain English. We will have to use special words to make up our commands. Let&apos;s try this one:</p>
+</code></pre><p>Great. We&apos;ve established that our command line doesn&apos;t understand plain Englisha and that we&apos;ll have to use special words to make up our commands. Let&apos;s try this one to start:</p>
 <pre><code>$ pwd
-</code></pre><p>Whoa! It looks like our computer understood that one! It replied with a message like:</p>
+</code></pre><p>Whoa! It looks like our computer understood that one! It replied with a message similar to this one:</p>
 <pre><code>/Users/corneliusfinch
 </code></pre><p>(Note: On your machine, you should have seen <code>corneliusfinch</code> replaced with your username!)</p>
-<p>If you&apos;re following along in <strong>Git Bash on Windows</strong>, this should look similar but slightly different:</p>
+<p>If you&apos;re following along in <strong>Git Bash on Windows</strong>, the message will look similar but with some slight differences:</p>
 <pre><code>/c/Users/corneliusfinch
-</code></pre><p>What did we just do?</p>
+</code></pre><p>So, what did we just do?</p>
 <p>The command <code>pwd</code> stands for &quot;Print Working Directory&quot;.</p>
-<p>This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.</p>
-<p>Just like the Finder on a mac, your command line interface (CLI) places you in a particular folder
-of your computer. <code>pwd</code> tells you where you currently are in your filesystem. Usually, when you open the Terminal application, you start off in your &quot;home folder&quot;, which is the one that shares the name of your username on your computer.</p>
-<p>If we were using Finder, we&apos;d be able to see what files and folders are present in this folder. In a CLI however, if we want to see what files and folders exist in the current location, we need to ask for that with another command.</p>
-<p>Let&apos;s find out what files are in the folder that we&apos;re in.</p>
+<p>We use this command when we want the command line to tell us which folder (or directory) of our computer we&apos;e currently in.</p>
+<p>Just like the Finder on a Mac, your command line interface (CLI) places you in a particular folder
+on your computer. <code>pwd</code> tells you where you&apos;re currently located in your file system. Usually, when you open the Terminal application, you start off in your &quot;home folder,&quot; which shares the name of your username on your computer.</p>
+<p>If we were using Finder, we&apos;d be able to see the files and folders that are present in this folder. In a CLI, however, if we want to see the files and folders in our current location, we need to ask for that using another command.</p>
+<p>Let&apos;s find out which files are in our current folder.</p>
 <pre><code>$ ls
-</code></pre><p>Lo and behold, the contents of the folder you are in:</p>
+</code></pre><p>Lo and behold, the folder&apos;s contents are:</p>
 <pre><code>Applications       Desktop          Documents
 Downloads          Library          Movies
 Music              Pictures         Public
-</code></pre><p>(Note: Again, on your machine, since you may have different files and folders, you may see a additional files and folders when you enter <code>ls</code>!)</p>
-<p>If you&apos;re following along in <strong>Git Bash on Windows</strong>, it&apos;s alright if the files and folders that are listed out look a little different, but you should still see similar folders such as <code>Desktop</code>, <code>Documents</code>, and <code>Downloads</code>.</p>
-<p>The <code>ls</code> command, which loosely stands for &quot;list&quot;, lists the contents of a folder.</p>
-<p>It looks like there are some folders in here. Let&apos;s find out what&apos;s inside our <code>Documents</code> folder. In order to do so, let&apos;s first navigate to the Documents folder.</p>
+</code></pre><p>(Note: Again, on your own machine, because you may have different files and folders, you may see additional items when you enter <code>ls</code>!)</p>
+<p>If you&apos;re following along in <strong>Git Bash on Windows</strong>, it&apos;s all right if the files and folders listed out look a little different, but you should still see similar folders such as <code>Desktop</code>, <code>Documents</code>, and <code>Downloads</code>.</p>
+<p>The <code>ls</code> command, which loosely stands for &quot;list,&quot; lists the contents of a folder.</p>
+<p>It looks like there are some folders in here. Let&apos;s find out what&apos;s inside our <code>Documents</code> folder. In order to do so, we&apos;ll first navigate to the Documents folder.</p>
 <pre><code>$ cd Documents
 </code></pre><p>We have now navigated to the Documents folder.</p>
-<p>The <code>cd</code> command, which stands for &quot;change directory&quot;, is used to navigate to a particular folder on your computer.</p>
-<p>This is equivalent to double-clicking the Documents folder in Finder to &quot;go
-inside it&quot;. We can check that we&apos;re in the right place by using <code>pwd</code>.</p>
+<p>The <code>cd</code> command, which stands for &quot;change directory,&quot; is used to navigate to a particular folder on your computer.</p>
+<p>This is equivalent to double clicking the Documents folder in Finder to &quot;go
+inside.&quot; We can check that we&apos;re in the right place by using <code>pwd</code>.</p>
 <pre><code>$ pwd
 /Users/corneliusfinch/Documents
-</code></pre><p>Excellent! Now let&apos;s find out what&apos;s in here, using <code>ls</code>.</p>
+</code></pre><p>Excellent! Now, let&apos;s find out what&apos;s in the folder using <code>ls</code>.</p>
 <pre><code>$ ls
 funny_cat_picture.jpg
 office_stuff
 world_domination_checklist.txt
-</code></pre><p>(Note: Again, your machine means you will probably see different files and folders!)</p>
+</code></pre><p>(Note: Again, you will probably see different files and folders on your own machine!)</p>
 <p>In our example, it looks like the <code>Documents</code> folder contains a JPG file of a funny cat, a folder
-full of &quot;office stuff&quot;, and a text file that supposedly contains a checklist for
+full of &quot;office stuff,&quot; and a text file containing a checklist for
 world domination. Your <code>Documents</code> folder probably contains something different.</p>
-<p>Now that we&apos;ve investigated our <code>Documents</code> folder, let&apos;s go back up to our home folder. Since the home folder contains the <code>Documents</code> folder, we can say that the home folder is the &quot;parent directory&quot; of the <code>Documents</code> folder.</p>
+<p>Now that we&apos;ve investigated our <code>Documents</code> folder, let&apos;s return to our home folder. Because the home folder contains the <code>Documents</code> folder, we can say that the home folder is the &quot;parent directory&quot; of the <code>Documents</code> folder.</p>
 <pre><code>$ cd ..
 </code></pre><blockquote>
-<p><code>..</code> (two periods, or &quot;dot-dot&quot;) is how we say to our command line &quot;parent directory&quot;.</p>
+<p><code>..</code> (two periods, or &quot;dot-dot&quot;) is how we say &quot;parent directory&quot; to our command line.</p>
 </blockquote>
 <p>Many commands consist of three parts: the command, followed by flags (aka options), and finally, arguments.</p>
 <pre><code>$ command -flag -otheroption
-</code></pre><p>As the name implies, flags set options to tell the command how to do what it&apos;s about to do. There may be zero or more options. Options usually start with one or two dashes. Usually one dash is for a short one letter abbreviation, while two dashes is for long name for the option.</p>
-<p><a href="http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149" target="_blank">More information on command-line options</a></p>
+</code></pre><p>As their name implies, flags set options to tell the command how to do what it&apos;s about to do. There may be zero or more options. Options usually start with one or two dashes. Usually, one dash is used for a short, one-letter abbreviation, while two dashes are used for a long name for the option.</p>
+<p><a href="http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149" target="_blank">More information about command line options</a></p>
 <p>For example:</p>
 <pre><code>$ ls -a
-</code></pre><p>Will list <em>all</em> files in a directory, which includes hidden files (files whose name begins with a <code>.</code>).</p>
+</code></pre><p>Will list <em>all</em> files in a directory, including hidden files (files whose names begin with a <code>.</code>).</p>
 <pre><code>$ cd Downloads
-</code></pre><p>Calls the command <code>cd</code> to change directory. It is provided the option of where to navigate to.</p>
+</code></pre><p>Calls the command <code>cd</code> to change directories. We provide it with the option of where to navigate to.</p>
 <hr>
 <p><a href="07_exercise.html">Give it a try!</a></p>
 
