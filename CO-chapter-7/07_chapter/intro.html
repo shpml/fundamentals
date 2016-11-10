@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7" data-basepath=".." data-revision="Thu Nov 10 2016 16:01:24 GMT+0000 (UTC)">
+    <div class="book" data-level="7" data-basepath=".." data-revision="Thu Nov 10 2016 18:00:21 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,49 +2043,49 @@
                     
                         <p><strong>WDI Fundamentals Unit 7</strong></p>
 <hr>
-<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this Unit, you&apos;ll be able to:</h5>
+<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this unit, you&apos;ll be able to:</h5>
 <ul>
-<li>Define a version control system and its benefits</li>
-<li>Describe how Git works</li>
-<li>Identify the Git commands used to set up a local repository and to record &apos;snapshots&apos; of your project</li>
-<li>Push local changes to a remote repository using the command line</li>
+<li>Define a version control system and its benefits.</li>
+<li>Describe how Git works.</li>
+<li>Identify the Git commands used to set up a local repository and record &quot;snapshots&quot; of your project.</li>
+<li>Push local changes to a remote repository using the command line.</li>
 </ul>
 <hr>
 <h1 id="version-control">Version Control</h1>
-<p>When you&#x2019;re working on a project &#x2013; say a painting, a piece of software or an autobiography &#x2013; there comes a time when you wish you had a reset button.</p>
-<p>You might already have a system in place to deal with this problem &#x2013; maybe you save your document multiple times with different names, so that you can return to a different stage of the project.</p>
+<p>When you&#x2019;re working on a project &#x2013; say a painting, a piece of software, or an autobiography &#x2013; there comes a time when you wish you had a reset button.</p>
+<p>You might already have a system in place to deal with this problem. Maybe, for example, you save your document multiple times with different names, so you can return to a different stage of the project.</p>
 <p><img src="../assets/chapter2/version-control.gif" alt="Version Control"></p>
-<p>Developers call this process &#x201C;version control&#x201D;.</p>
+<p>Developers call this process &#x201C;version control.&quot;</p>
 <p>If you&apos;re making copies of a file every time you make a change, your file system might look like this:</p>
 <p><br></p>
 <p><img src="../assets/chapter2/bad_vcs.png" alt="Bad VCS"></p>
 <p><br></p>
-<p>While this method works (kinda), it has a number of major limitations.</p>
+<p>While this method works, it has a number of major limitations:</p>
 <ul>
-<li>It only allows you to track changes in one file; if your project consists of multiple files, you&apos;re out of luck.</li>
-<li>It&apos;s extremely duplicative - before long, you might end up with 10, 20, or even 50 slightly-different copies of the same file.</li>
-<li>It&apos;s extremely difficult (if not basically impossible) to see what has changed from one version to the next without opening each file and comparing changes line by line.</li>
-<li>Keeping track of parallel versions (revision A vs revision B) is possible, but it&apos;s hard to compare one to the other, and integrating the two versions is a lot of work.</li>
+<li>It only allows you to track changes in one file. If your project consists of multiple files, you&apos;re out of luck.</li>
+<li>It&apos;s extremely duplicative - before long, you may end up with 10, 20, or even 50 slightly different copies of the same file.</li>
+<li>It&apos;s extremely difficult (if not impossible) to see what has changed from one version to the next without opening each file and comparing the changes line by line.</li>
+<li>Keeping track of parallel versions (revision A vs. revision B) is possible, but it&apos;s hard to compare one to the other, and integrating the two versions is a lot of work.</li>
 </ul>
-<p>Now imagine how much more complicated this process becomes once you start working with a team...</p>
-<p>Software developers have developed a number of tools to solve the &apos;version control&apos; problem for their own projects; in this course, we will focus on one particularly popular version control program called <strong>Git</strong>. Git addresses all of the problems mentioned above:</p>
+<p>Now, imagine how much more complicated this process becomes once you start working with a team...</p>
+<p>Software developers have developed a number of tools to solve the &quot;version control&quot; problem for their own projects. In this course, we&apos;ll focus on one particularly popular version control program called <strong>Git</strong>. Git addresses all of the problems mentioned above.</p>
 <ul>
 <li>Git tracks changes for multiple files by keeping them all in <strong>repositories</strong> - special directories with some hidden Git machinery.</li>
-<li>Rather than saving entire separate versions of each file, Git keeps a record of the <em>changes</em> that have been made to each file - much more space-efficient.</li>
-<li>Because Git stores changes, rather than whole files, looking at what&apos;s changed from one iteration to the next is very easy.</li>
-<li>Git allows you to easily keep track of parallel versions of a project using a feature called <strong>branching</strong>. We won&apos;t cover this feature now, but you&apos;ll be using it a lot once you start the course.</li>
+<li>Rather than saving entire separate versions of each file, Git keeps a record of the <em>changes</em> that have been made to each file, making it much more space-efficient.</li>
+<li>Because Git stores changes, rather than whole files, looking at what&apos;s changed from one iteration to the next is easy.</li>
+<li>Git allows you to easily keep track of parallel versions of a project using a feature called <strong>branching</strong>. We won&apos;t cover this feature in this unit, but you&apos;ll use it often once you start the course.</li>
 </ul>
-<p>Git is also an excellent tool for working collaboratively on a project, though we won&apos;t be using those features right away.</p>
+<p>Git is also an excellent tool for working collaboratively on a project, although we won&apos;t be using those features right away.</p>
 <h2 id="installing-git">Installing Git</h2>
-<p>If you don&apos;t already have Git, you can install it by downloading the latest release from <a href="http://git-scm.com/download/mac" target="_blank">git-scm.com</a>, double-clicking the downloaded file, and going through the installer.</p>
-<p>If you&apos;re following along on Windows and installed Git Bash, Git should have been installed along with Git Bash so you should be all set.</p>
+<p>If you don&apos;t already have Git, you can install it by downloading the latest release from <a href="http://git-scm.com/download/mac" target="_blank">git-scm.com</a>, double clicking the downloaded file, and going through the installer.</p>
+<p>If you&apos;re following along on Windows and installed Git Bash, Git should have been installed along with Git Bash, so you should be all set.</p>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> As with any software installation, it&#x2019;s always good to backup your system and data before proceeding.</p>
+<p> As with any software installation, it&#x2019;s always good to back up your system and data before proceeding.</p>
 </blockquote>
-<p>You can check to see if it worked by opening up the terminal and typing:</p>
+<p>You can check to see if the installation worked by opening up the Terminal and typing:</p>
 <pre><code>$ git --version
-</code></pre><p>This will show you what version of Git is running; your computer should return something greater than or equal to <code>2.0.0</code>:</p>
-<p><img src="../assets/chapter2/git_installed.gif" alt="Check to See What Version of Git is Running"></p>
+</code></pre><p>This will show you what version of Git is running; your computer should return something greater than or equal to <code>2.0.0</code>.</p>
+<p><img src="../assets/chapter2/git_installed.gif" alt="Check to See Which Version of Git is Running"></p>
 <hr>
 <p><a href="02_lesson.html">On to the next lesson.</a></p>
 
