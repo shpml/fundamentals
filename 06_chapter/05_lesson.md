@@ -6,7 +6,7 @@
 
 We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and more.
 
-Let's start typing commands together. In your open Terminal window, type `hello?` and press Enter:
+Let's start typing commands together. In your open terminal window, type `hello?` and press Enter:
 
 ```
 $ hello?
