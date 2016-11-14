@@ -3,7 +3,7 @@
 ---
 
 ##### By the end of this unit, you'll be able to:
-* Practice programmatic thinking by writing pseudo-code.
+* Practice programmatic thinking by writing pseudocode.
 * Perform arithmetic and logical operations on data to produce new values.
 * Concatenate two strings together using JavaScript.
 * Write expressions that both assign and evaluate variables.
