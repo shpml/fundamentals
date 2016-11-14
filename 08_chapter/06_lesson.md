@@ -140,7 +140,7 @@ The key is remembering how the `=` operator works. Before it assigns anything to
 
 The need to operate "in place" (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include shorthand syntax for these kind of operations. Some examples are shown below:
 
-| Longhand Syntax | Shordhand Syntax |
+| Longhand Syntax | Shorthand Syntax |
 |------------------|-------------------|
 | `x = x + 1;`      | `x += 1;` |
 | `x = x - 5;`      | `x -= 5;` |
