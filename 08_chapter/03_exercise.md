@@ -12,11 +12,11 @@ We'd like to create a program that checks to see whether or not movie patrons ar
 
 Here is the pricing structure:
 
-1. Patron are 65 or older, they are eligible for senior discounts. The ticket price for seniors is $6.00.
+1) Patron are 65 or older, they are eligible for senior discounts. The ticket price for seniors is $6.00.
 
-2. Patrons are 25 or younger, they are eligible for student discounts. The ticket price for students is $8.00.
+2) Patrons are 25 or younger, they are eligible for student discounts. The ticket price for students is $8.00.
 
-3. All other tickets cost $10.00.
+3) All other tickets cost $10.00.
 
 Try your hand at writing pseudocode for this program. Remember, the goal is to think through the problem and break it down into simple steps.
 
