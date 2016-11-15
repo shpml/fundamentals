@@ -15,9 +15,9 @@ This exercise may be familiar to some of you - your job is to write some code th
 * If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz".
 * If `x` is not evenly divisible by either 3 or 5 (for example, 7), set `result` to `x`.
 
-> Don't remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (`%`) operator.
+> Don't remember how to determine if something divides evenly? Look back at Unit 3 (Expressions) and review the modulus (`%`) operator.
 
-To test your code, set a value for `x` in the editor and click 'Run'. Did you get the `result` you expected? Try out a bunch of different values for `x`, just to be sure.
+To test your code, set a value for `x` in the editor and click "Run." Did you get the `result` you expected? Try out several different values for `x`, just to be sure.
 
 > *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
