@@ -68,7 +68,7 @@ var userInput = null;
 userInput === null // no points... this time
 ```
 
-### 'falsey' / 'truthy'
+### "falsey" / "truthy"
 
 We've seen in our first few lessons that some operators can behave differently depending on the kind of values on which they are operating. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression <code>'Happy birthday, ' + 'Tom'</code>, the `+` operator is working with strings, so it performs a concatenation instead.
 
@@ -78,7 +78,7 @@ Another example of operators with value-dependent behavior are the logical opera
 -  OR (`||`)
 -  AND (<code>&&</code>)
 
-Although they're primarily used with Boolean values, logical operators can also accept inputs that are strings and numbers, among others. When this happens, the logical operators categorize their inputs as being either 'falsey' or 'truthy'. But what do these words mean?
+Although they're primarily used with Boolean values, logical operators can also accept inputs that are strings and numbers, among others. When this happens, the logical operators categorize their inputs as being either "falsey" or "truthy." But what do these words mean?
 
 * To be **falsey** means that Boolean operators act in mostly the same way that they would if the value was `false`. For instance, using `!` (or, NOT) on a "falsey" value will evaluate to `true`, just as if you'd written `!false`. The "falsey" category of values includes the number `0`, empty strings (`''`), `null`, and `undefined`. `false` is, of course, also "falsey".
 
