@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="9.1" data-basepath=".." data-revision="Tue Nov 15 2016 21:48:16 GMT+0000 (UTC)">
+    <div class="book" data-level="9.1" data-basepath=".." data-revision="Tue Nov 15 2016 22:11:08 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,23 +2044,23 @@
                         <p><strong>WDI Fundamentals Unit 9</strong></p>
 <hr>
 <h1 id="conditionals">Conditionals</h1>
-<h2 id="-if-else-statements"><code>if..else</code> Statements</h2>
-<p>Conditional statements are the expressions that allow us to test whether or not to perform some action.</p>
-<p>One of these conditionals is an <code>if</code> statement. An <code>if</code> statement will take in a condition and, if that condition is &apos;truthy&apos;, will run whatever code you specify. Here&apos;s an example of an <code>if</code> statement in action.</p>
+<h2 id="-if-else-statements"><code>if...else</code> Statements</h2>
+<p>Conditional statements are the expressions that allow us to test whether or not to perform an action.</p>
+<p>One of these conditionals is an <code>if</code> statement. An <code>if</code> statement will take in a condition and, if that condition is &quot;truthy,&quot; will run whatever code you specify. Here&apos;s an example of an <code>if</code> statement in action:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
   x += <span class="hljs-number">10</span>;
   y += <span class="hljs-number">10</span>;
 }
 </code></pre>
-<p>The condition is what&apos;s inside the parentheses; if that condition is &apos;truthy&apos;, the lines of code inside the curly braces (<code>{...}</code>) will be evaluated one by one.</p>
-<p>Let&apos;s take a step back for a minute, and consider something that&apos;s closer to our own experience: a flow chart.</p>
+<p>The condition is what&apos;s inside the parentheses. If that condition is &quot;truthy,&quot; the lines of code inside the curly braces (<code>{...}</code>) will be evaluated one by one.</p>
+<p>Let&apos;s take a step back for a minute and consider something that&apos;s closer to our own experience: a flow chart.</p>
 <p><img src="../assets/chapter4/flow_charts.png" alt="XKCD Flow Chart"></p>
 <p><em><small>src: <a href="http://xkcd.com/518/" target="_blank">http://xkcd.com/518/</a></small></em>
 <br></p>
-<p>A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an <code>if</code> statement, we might come up with something like this:</p>
+<p>A flow chart is a visual diagram that tells us how to behave, depending on a certain set of conditions. If we were to try to draw a flow chart to describe an <code>if</code> statement, we might come up with something like this:</p>
 <p><img src="../assets/chapter4/flow_chart_if.png" alt="Flow Chart for `If` Statement">
 <br></p>
-<p>As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is &apos;truthy&apos;, they would either enter the block of code or skip it over entirely.</p>
+<p>As you can see, people making their way through this diagram would need to make a decision. Depending on whether or not our condition is &quot;truthy,&quot; they would either enter the block of code or skip it over entirely.</p>
 <p><code>if</code> can actually be modified in several ways to change its behavior. For instance, adding an <code>else if</code> to our <code>if</code> statement allows us to specify a second condition to test; however, <em>this second condition will only be tested if the first condition fails</em>.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
   x += <span class="hljs-number">10</span>;
@@ -2084,7 +2084,7 @@
 </code></pre>
 <p><aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif-elseif.png" alt="Flow Chart for `If...Else If...Else If` Statement"></aside>
 <br></p>
-<p>However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an <code>else</code> to the end of our statement, like so.</p>
+<p>However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an <code>else</code> to the end of our statement, like so:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
   x += <span class="hljs-number">10</span>;
   y += <span class="hljs-number">10</span>;
@@ -2117,9 +2117,9 @@
 </li>
 <li>Under what circumstances will <code>y</code> be assigned a value of 100?</li>
 </ul>
-<p>Try copying that whole statement into JS Bin, and testing out different values for <code>x</code>. Were your answers correct?</p>
+<p>Try copying that whole statement into JS Bin and testing out different values for <code>x</code>. Were your answers correct?</p>
 <h2 id="switch-statement">Switch Statement</h2>
-<p>As we&apos;ve seen before, we can choose which condition will be executed using <code>if...else if...else</code>; however, if we have a lot of conditions, the code becomes a bit repetitive and hard to read. For example:</p>
+<p>As we&apos;ve seen before, we can choose which condition will be executed using <code>if...else if...else</code>. If we have a long list of conditions, however, the code becomes a bit repetitive and hard to read. For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// day of the week in a number, Sunday is 0, Saturday is 6</span>
 <span class="hljs-keyword">var</span> dayNumber = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">if</span>(dayNumber === <span class="hljs-number">0</span>){
@@ -2141,9 +2141,9 @@
   alert(<span class="hljs-string">&apos;wrong value for day&apos;</span>);
 }
 </code></pre>
-<p>What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
+<p>What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of it is repeated - for example,
   <code>} else if(dayNumber === __ ) {</code>
-is repeated 7 times. What&apos;s more, if we ever want to change the name of our <code>dayNumber</code> variable, we&apos;ll need to swap it out every times it appears, which is a bit of a pain.</p>
+is repeated seven times. What&apos;s more, if we ever want to change the name of our <code>dayNumber</code> variable, we&apos;ll need to swap it out every time it appears, which is a bit of a pain.</p>
 <p>Enter the <code>switch</code> statement:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> dayNumber = <span class="hljs-number">1</span>;
 
@@ -2174,14 +2174,14 @@ is repeated 7 times. What&apos;s more, if we ever want to change the name of our
     alert(<span class="hljs-string">&apos;wrong value for day&apos;</span>);
 }
 </code></pre>
-<p>This code works exactly the same as our <code>if..else..if</code>, but although it&apos;s slightly longer (in terms of lines), it is significantly easier to read.</p>
-<p>In a <code>switch</code> statement, the variable in parentheses (in this case, <code>dayNumber</code>) gets evaluated; if there is a <code>case</code> listed for the value that it evaluates to, the code between <code>case __:</code> and <code>break</code> will be executed. If there is no <code>case</code> that matches the value of the variable, the <code>default</code> will be executed (if it is specified - if not, the program will do nothing).</p>
+<p>This code works exactly the same as our <code>if..else..if</code>, but, although it&apos;s slightly longer (in terms of lines), it is significantly easier to read.</p>
+<p>In a <code>switch</code> statement, the variable in parentheses (in this case, <code>dayNumber</code>) gets evaluated. If there is a <code>case</code> listed for the value it evaluates to, the code between <code>case __:</code> and <code>break</code> will be executed. If there is no <code>case</code> that matches the value of the variable, the <code>default</code> will be executed (that is, if it is specified - if not, the program will do nothing).</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p>: If there is no <code>break;</code> at the end of a <code>case</code>, the computer will not skip to the end, but will instead start  executing the <em>next</em> case&apos;s code (even if <code>case</code>&apos;s value is different from the variable&apos;), and will continue doing so until it eventually hits a <code>break;</code> statement. For this reason, <code>default</code> never needs a <code>break;</code> statement, because it&apos;s the last <code>case</code> in the <code>switch</code>.</p>
+<p>: If there is no <code>break;</code> at the end of a <code>case</code>, the computer will not skip to the end of the code block but will instead start executing the <em>next</em> case&apos;s code (even if <code>case</code>&apos;s value is different from the variable&apos;s). It will continue doing so until it eventually hits a <code>break;</code> statement. For this reason, <code>default</code> never needs a <code>break;</code> statement, because it&apos;s the last <code>case</code> in the <code>switch</code>.</p>
 </blockquote>
-<p>Although the <code>switch</code> statement sometimes has some advantages over <code>if...else if... else</code>, it also has some major disadvantages. For instance, a <code>switch</code> statement will only work if you are testing the same variable (or expression) in every condition; if not, the <code>if...else if...else</code> is your only option. Also, depending on the circumstances, using <code>if...else if...else</code> might scan more naturally.</p>
+<p>Although the <code>switch</code> statement sometimes has some advantages over <code>if...else if... else</code>, it also has some major disadvantages. For instance, a <code>switch</code> statement will only work if you are testing the same variable (or expression) in every condition. If not, <code>if...else if...else</code> is your only option. Also, depending on the circumstances, using <code>if...else if...else</code> might scan more naturally.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Consider the following <code>switch</code> statement.</p>
+<p>Consider the following <code>switch</code> statement:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (<span class="hljs-number">2</span> * x) {
  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
     y = <span class="hljs-number">49</span>;
@@ -2199,7 +2199,7 @@ is repeated 7 times. What&apos;s more, if we ever want to change the name of our
     y = <span class="hljs-number">1</span>;
 }
 </code></pre>
-<p>What value will <code>y</code> be assigned when <code>x</code> is ...</p>
+<p>What value will <code>y</code> be assigned when <code>x</code> is...</p>
 <ul>
 <li>1?</li>
 <li>4?</li>
@@ -2207,7 +2207,7 @@ is repeated 7 times. What&apos;s more, if we ever want to change the name of our
 <li>&quot;Hello&quot;?</li>
 </ul>
 <hr>
-<p><a href="04_exercise.html">Let&apos;s do another exercise.</a></p>
+<p><a href="04_exercise.html">Now, let&apos;s do another exercise.</a></p>
 
                     
                     </section>
