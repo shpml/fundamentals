@@ -68,7 +68,7 @@ var userInput = null;
 userInput === null // no points... this time
 ```
 
-### "falsey" / "truthy"
+### "Falsey" / "Truthy"
 
 We've seen in our first few lessons that some operators can behave differently depending on the kind of values on which they are operating. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression <code>'Happy birthday, ' + 'Tom'</code>, the `+` operator is working with strings, so it performs a concatenation instead.
 
@@ -88,7 +88,7 @@ As they say, "_to a hammer (read: Boolean operator), everything looks like a nai
 
 Below are the exact rules that the Boolean operators follow when dealing with non-Boolean input values:
 
-| 'Falsey'            |  'Truthy' |
+| "Falsey"            |  "Truthy" |
 |-                    |-          |
 | `false`             | `true`    |
 | 0                   | All numbers except 0, including 'Infinity' (what you get after dividing by 0) |
