@@ -4,10 +4,10 @@
 
 # Control Flow Cheat Sheet
 
-Here are some notes on what's been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.
+Here are some notes on what's been covered in this unit. Feel free to copy this and extend it to make your own cheat sheet.
 
 ## Conditionals
-### `if...else` statement syntax
+### `if...else` Statement Syntax
 
 ```javascript
 if (condition1) {
@@ -24,7 +24,7 @@ if (condition1) {
 
 * With `else if`, each additional condition will only be checked if all of the prior conditions have failed.
 
-### `switch` statement syntax
+### `switch` Statement Syntax
 
 ```javascript
 switch (expression) {
@@ -44,7 +44,7 @@ switch (expression) {
 
 ### `while` Loops
 * `while` loops can run indefinitely, so long as the condition remains true.
-* The loop's condition is re-evaluated each time the block finishes running.
+* A loop's condition is re-evaluated each time the code block finishes running.
 
 ### `for` Loops
 * A 'for' loop will generally run a fixed number of times, not indefinitely.
