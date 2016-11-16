@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="9.5" data-basepath=".." data-revision="Wed Nov 16 2016 18:45:25 GMT+0000 (UTC)">
+    <div class="book" data-level="9.5" data-basepath=".." data-revision="Wed Nov 16 2016 18:46:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1827,10 +1827,31 @@
                         
                             <b>11.3.</b>
                         
-                        Associative Arrays
+                        Objects
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_chapter/10_exercise.html">
+            
+                
+                    <a href="../11_chapter/10_exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -2023,31 +2044,31 @@
                         <p><strong>WDI Fundamentals Unit 9</strong></p>
 <hr>
 <h1 id="game-logic">Game Logic</h1>
-<p>In Unit 8, we covered some game-changing concepts (pun intended). For example, can you guess what type of feature we can now begin to implement in our memory card game? If you guessed game logic, you&apos;re right! For this section&apos;s homework, you will implement your knowledge of conditionals to help with the task of creating your game logic.</p>
+<p>In this unit, we covered some game-changing concepts (pun intended). For example, can you guess what type of feature we can now begin to implement in our memory card game? If you guessed game logic, you&apos;re right! For this section&apos;s homework, you will implement your knowledge of conditionals to help with the task of creating your game&apos;s logic.</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
-<p>Based on whether or not your user discovers a match, notify them with a winning or losing message in a popup message using <code>alert</code>. In some of our other exercises, we have used <code>console.log</code> to give feedback from our code. However, as we start to have a more &quot;user facing&quot; mindset, we begin to code in a way that makes more sense for the user. For our game, this means notifying the user about a win or a loss with a popup rather than the console, a place where most users don&apos;t look.</p>
-<p>We can use <strong>alert</strong> to display a popup message to a user. In a JavaScript file, you could write <code>alert(&apos;Hello, friends.&apos;);</code> and you would be displayed a popup from your browser that displays the sting &apos;Hello, friends&apos;.</p>
+<p>Based on whether or not your users discover a match, notify them with a winning or losing message in a pop-up box using <code>alert</code>. In some of our other exercises, we have used <code>console.log</code> to give feedback regarding our code. However, as we start to have a more &quot;user-facing&quot; mindset, we begin to code in a way that makes more sense for the user. For our game, this means notifying the user about a win or loss with a pop-up notification rather than on the console, a place where most users don&apos;t look.</p>
+<p>We can use <strong>alert</strong> to display a pop-up message to a user. In a JavaScript file, you could write <code>alert(&apos;Hello, friends.&apos;);</code> and you would create a pop up from your browser that displays the string &apos;Hello, friends&apos;.</p>
 <p>For this assessment, you&apos;ll use an alert to display messages to your user:</p>
 <p><img src="https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76" alt=""></p>
-<p><strong>Note</strong> Warning! Alerts are <em>annoying</em> popup that can be used to show a string of data to a user. They also interfere with a user interacting with a web page until they click &apos;ok&apos;. While it is a great tool to see results as you learn JavaScript, you should never use it for any professional project. Why? Some browsers (such as Chrome) allow users to hide them from being displayed. But also - it is annoying.</p>
+<p><strong>Note</strong> Warning! Alerts are <em>annoying</em> pop ups that can be used to show a string of data to a user. They also interfere with a user&apos;s ability to interact with a web page until he or she clicks &quot;ok.&quot; While alerts are a great tool for seeing results as you learn JavaScript, you should never use them for any professional project. Why? Not only are they a nuisance, but some browsers (such as Chrome) allow users to prevent them from being displayed.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
 <p> Curious about <code>alert()</code>? Check out the documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a></p>
 </blockquote>
-<h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h5>
-<p>1) In your main.js file, create an <code>if else</code> statement checking for equality between two of your cards (you choose which ones).</p>
+<h5 id="below-are-the-steps-for-completing-the-assignment">Below are the Steps for Completing the Assignment:</h5>
+<p>1) In your <code>main.js</code> file, create an <code>if else</code> statement that checks for equality between two of your cards (you choose which ones).</p>
 <ul>
-<li><code>if</code> statement should consist of a boolean checking for equality between two created variables. You should have a condition to compare two king variables, two queen variables, and one of each. Start with comparing <code>cardTwo</code> with <code>cardFour</code> (using <code>===</code>).</li>
+<li>An <code>if</code> statement should consist of a Boolean checking for equality between two created variables. You should have a condition to compare two king variables, two queen variables, and one of each. Start by comparing <code>cardTwo</code> with <code>cardFour</code> (using <code>===</code>).</li>
 </ul>
-<p>2) If values are equal, execute an <code>alert</code> with the message, &quot;You found a match!&quot;. If values are not equal, execute an <code>alert</code> with the message, &quot;Sorry, try again.&quot;.</p>
+<p>2) If values are equal, execute an <code>alert</code> with the message &quot;You found a match!&quot; If values are not equal, execute an <code>alert</code> with the message &quot;Sorry, try again.&quot;</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
-<p> If you are testing code that uses alerts in JSBin, disable &quot;auto-run JS&quot;. You can then &quot;run with JS&quot; when you are ready to test your code. If you do not, alerts will be looped every few seconds at you! </p>
+<p> If you are testing code that uses alerts in JS Bin, disable &quot;auto-run JS.&quot; You can then &quot;run with JS&quot; when you are ready to test your code. If you do not, these alerts will be looped every few seconds!</p>
 </blockquote>
-<p>3) Save your main.js file and open your index.html file in the browser to check to see if your alert is working. When the `alerts are working properly, you should see:</p>
+<p>3) Save your <code>main.js</code> file, and open your <code>index.html</code> file in the browser to check if your alert is working. When the alerts are working properly, you should see:</p>
 <p><img src="https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76" alt=""></p>
 <p>We&apos;ll check for these conditionals in the following units when we learn about <code>onclick</code> methods and the DOM.</p>
 <h4 id="deliverable">Deliverable</h4>
-<p>You&apos;ll want to keep track of all your hard work, so don&apos;t forget to ACP: <strong>Add</strong>, <strong>Commit</strong> and <strong>Push</strong> that code to GitHub!</p>
+<p>You&apos;ll want to keep track of all your hard work, so don&apos;t forget to ACP &#x2014; <strong>Add</strong>, <strong>Commit</strong>, and <strong>Push</strong> &#x2014; that code to GitHub!</p>
 <hr>
 <p><a href="../10_chapter/intro.html">Next up: Chapter 10</a></p>
 

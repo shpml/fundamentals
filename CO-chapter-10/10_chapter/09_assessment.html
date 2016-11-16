@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Nov 16 2016 18:45:25 GMT+0000 (UTC)">
+    <div class="book" data-level="10.7" data-basepath=".." data-revision="Wed Nov 16 2016 18:46:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1827,10 +1827,31 @@
                         
                             <b>11.3.</b>
                         
-                        Associative Arrays
+                        Objects
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_chapter/10_exercise.html">
+            
+                
+                    <a href="../11_chapter/10_exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -2027,14 +2048,14 @@
 <p>JavaScript comes with several &quot;built-in&quot; functions that we can call on using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as <em>methods</em>.</p>
 <p>For example, let&apos;s look at <code>document.createElement(&apos;div&apos;)</code> which creates an HTML <code>div</code> element (a <code>div</code> will come to visually represent a card in the browser).</p>
 <ul>
-<li><code>document</code> is a readily available JS object. (An object is basically an array that stores key-value pairs. Unlike regular arrays, the contents of an object are not ordered).  </li>
-<li><code>createElement</code> is the method it comes with<ul>
+<li><code>document</code> is a readily available JS object, with built-in properties and methods associated with it.</li>
+<li><code>createElement</code> is a method it comes with<ul>
 <li>This method performs the functionality of creating a new HTML element.</li>
 <li>Just like with the functions we&apos;ve learned about, we can pass in arguments for these methods to use.</li>
 </ul>
 </li>
 </ul>
-<p>In this case, we passed <code>createElement</code> and argument of <code>&apos;div&apos;</code> so a <code>div</code> element is created. If you&apos;d like, you can go ahead and run that line of code, <code>document.createElement(&apos;div&apos;)</code>, in your browser&apos;s console to get see it in action.</p>
+<p>In this case, we passed <code>createElement</code> an argument of <code>&apos;div&apos;</code> so a <code>div</code> element is created. If you&apos;d like, you can go ahead and run that line of code, <code>document.createElement(&apos;div&apos;)</code>, in your browser&apos;s console to see it in action.</p>
 <p>Besides <code>createElement</code>, the <code>document</code> object comes with other methods that help with the creation and manipulation of HTML and CSS. For example, there is an attribute (or property) you may modify to add a class to an element -  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/className" target="_blank"><code>className</code></a>. If you need to modify the content <em>inside</em> of the HTML tags, you may modify the attribute named <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank"><code>innerHTML</code></a>. If you modified the <code>innerHTML</code> of an <code>&lt;li&gt;</code> element to <code>= &apos;remember maple syrup at the grocery story</code>, your list item would then contain that content: <code>&lt;li&gt;remember maple syrup at the grocery story&lt;/li&gt;</code>. On top of those methods and attributes that allow you to construct an element, there&apos;s also the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild" target="_blank"><code>appendChild</code></a> that aids in attaching your element as a child of another element on your web page.</p>
 <p>To complete this assignment, you will need to utilize these methods.</p>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
@@ -2049,12 +2070,11 @@
 <p>3 ) We&apos;re going to generate cards using JavaScript instead of using our existing <code>div</code> elements with the class <code>card</code> in html. Comment out any <code>div</code> with the <code>card</code> class.</p>
 <p>4 ) Save your changes!</p>
 <h6 id="create-the-html-for-the-cards-using-javascript">Create the HTML for the cards using JavaScript:</h6>
-<p>4 ) Get an element with the id of <code>game-board</code> and set it to a variable.</p>
-<p>5 ) Assuming your memory card game consists of four cards, create a <code>for loop</code> that makes an HTML element for each card. Each HTML element should be a <code>div</code> as well as have the class <code>card</code> (this will help when you add CSS).</p>
-<p>6 ) Append each newly created card to the <code>div</code> that has the id <code>game-board</code>.</p>
+<p>5 ) Get an element with the id of <code>game-board</code> and set it to a variable.</p>
+<p>6 ) Assuming your memory card game consists of four cards, create a <code>for loop</code> that makes an HTML element for each card. Each HTML element should be a <code>div</code> as well as have the class <code>card</code> (this will help when you add CSS).</p>
+<p>7 ) Append each newly created card to the <code>div</code> that has the id <code>game-board</code>.</p>
 <h6 id="create-functions-to-organize-your-code">Create functions to organize your code</h6>
-<p>7 ) Create a function called <code>createCards</code> in your JavaScript file. This function will contain the code you just wrote to generate your cards. </p>
-<p>8 ) Your <code>createCards</code> function should contain any JavaScript associated with the creation of the <code>div</code> elements with the class <code>card</code>.</p>
+<p>8 ) Create a function called <code>createCards</code> in your JavaScript file. This function will contain the code you just wrote to generate your cards. </p>
 <p>9 ) Be sure to execute/fire your <code>createCards</code> function so it runs!</p>
 <p>10) Once you&apos;ve done that, your cards will be created! Be sure to check your page in a web browser to verify that everything works as intended!</p>
 <h4 id="deliverable">Deliverable</h4>

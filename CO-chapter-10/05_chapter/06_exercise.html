@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.4.1" data-basepath=".." data-revision="Wed Nov 16 2016 18:45:25 GMT+0000 (UTC)">
+    <div class="book" data-level="5.4.1" data-basepath=".." data-revision="Wed Nov 16 2016 18:46:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1827,10 +1827,31 @@
                         
                             <b>11.3.</b>
                         
-                        Associative Arrays
+                        Objects
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_chapter/10_exercise.html">
+            
+                
+                    <a href="../11_chapter/10_exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -2024,40 +2045,42 @@
 <hr>
 <h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <h3 id="elk-web-design-part-3">Elk Web Design: Part 3</h3>
-<p>This is final part of the ELK Design! We&apos;ll become more familiar with positing elements and images. We&apos;ll be dealing with floats. Remember, floats pull whatever element they&apos;re applied to out of the normal document flow. They&apos;re your secret weapon for positioning HTML elements on a page!</p>
+<p>This is the final part of the ELK Design! We&apos;ll become more familiar with positioning elements and images. We&apos;ll be dealing with floats. Remember, floats pull whatever element they&apos;re applied to out of the normal document flow. They&apos;re your secret weapon for positioning HTML elements on a page!</p>
 <h3 id="instructions">Instructions</h3>
-<p>Here&apos;s the editor you should use to write your code. You&apos;ll first need to copy over your code from the previous ELK exercise into the editor. As usual, <strong>don&apos;t forget to fork and save your JSBin link.</strong></p>
-<p><a class="jsbin-embed" href="http://jsbin.com/tifivo/embed?html,css,outputheight=600px" target="_blank">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
-<p>When you have your code from your previous exercise, follow the instructions below.</p>
+<p>If you don&apos;t see the JS Bin below, please refresh the page.</p>
+<p>Here&apos;s the editor you should use to write your code.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px" target="_blank">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
 <p>1 . Set your div&apos;s font-size to 1.2em, and tell it to only stretch across 50% of the screen&apos;s width.</p>
-<p>2 . Tell both divs to display as inline-block elements.</p>
-<p>3 . Create CSS rules (selectors) for #about and #services.</p>
-<p>4 . Give #about a float of left.</p>
-<p>5 . Give #services a float of right.</p>
+<p>2 . Add the about ID to the first div and the services ID to the second div.</p>
+<p>3 . Tell both divs to display as inline-block elements.</p>
+<p>4 . Create CSS rules (selectors) for #about and #services.</p>
+<p>5 . Give #about a float of left.</p>
+<p>6 . Give #services a float of right.</p>
 <p>At this point, you&apos;ll notice that some things are not so awesome here.</p>
 <ul>
 <li>The two columns are smushed together.</li>
 <li>The footer is behaving oddly.</li>
 </ul>
-<p>6 . Let&apos;s start with the quickest fix. Give the footer a clear value of both.</p>
-<p>7 . The footer&apos;s in the right place, but the two columns are still too close! What do you know about adding whitespace between HTML elements? Currently, #services and #about are 50% of the page width each. Here&apos;s some math. You&apos;re borrowing from the page&apos;s width to add a 2% padding on all four sides, so that each div keeps its total width of 50%. So go ahead and a width of 46% and padding of 2%.</p>
+<p>7 . Let&apos;s start with the quickest fix. Give the footer a clear value of both.</p>
+<p>8 . The footer&apos;s in the right place, but the two columns are still too close! What do you know about adding whitespace between HTML elements? Currently, #services and #about are 50% of the page width each. Here&apos;s some math. You&apos;re borrowing from the page&apos;s width to add a 2% padding on all four sides, so that each div keeps its total width of 50%. So go ahead and add a width of 46% and padding of 2%.</p>
 <p>Fabulous!</p>
-<p>8 . Now let&apos;s box up and position the four listed services in the right-hand column.</p>
+<p>9 . Now let&apos;s box up and position the four listed services in the right-hand column.</p>
 <ul>
-<li>Create an li, and give it a float of left.</li>
+<li>Create an li rule, and give it a float of left.</li>
 <li>Set its width to 50% and its height to 6em.</li>
 </ul>
-<p>9 . Give li an outline value of 3px solid #222222.</p>
-<p>10 . Set its text-align to center, and line-height to 6em.</p>
+<p>10 . Give li an outline value of 3px solid #222222.</p>
+<p>11 . Set its text-align to center, and line-height to 6em.</p>
 <p><em>Well done! The basics of the multicolumn layout are all laid out. All that&apos;s left to finish are some visual elements, including color.</em></p>
-<p>11 . Assign img a width of 480px.</p>
-<p>12 . Flip to your HTML, and wrap a new div, called &quot;hero&quot;, around the main image.</p>
-<p><em>Your img might freak out. Don&apos;t worry. It&apos;s because the &quot;hero&quot; div is grabbing the default div style written for your columns. Let&apos;s prevent that from happening. You need to counteract the div&apos;s width, margin, and display values.</em></p>
-<p>13 . In your HTML, wrap a section around both divs: open it after the <code>&lt;/header&gt;</code> closing tag, and close it before the opening <code>&lt;footer&gt;</code> tag.</p>
-<p>14 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section&apos;s overflow:auto.</p>
-<p>15 . Set the h2 color to pale yellow: #fffebb. Set h2&apos;s border-bottom-color to #fffebb as well.</p>
-<p>16 . Set the li color to black, and its background to white.</p>
-<p>Bravo! Well done. Don&apos;t forget to save your code in JSBin so you can come back to it and ask your instructors any questions you might have!</p>
+<p>12 . Assign img a width of 480px.</p>
+<p>13 . Flip to your HTML, and wrap a new div with the class &quot;hero&quot; around the main image.</p>
+<p><em>Your img might freak out. Don&apos;t worry. It&apos;s because the &quot;hero&quot; div is grabbing the default div style written for your columns.</em></p>
+<p>14 . Let&apos;s prevent that from happening. You need to counteract the styles set in the div selector by setting new styles for &quot;hero&quot;. Set the &quot;hero&quot; class&apos; width to 100%, its display to block, and its margin to 0.</p>
+<p>15 . In your HTML, wrap a section around both divs: open it after the <code>&lt;/header&gt;</code> closing tag, and close it before the opening <code>&lt;footer&gt;</code> tag.</p>
+<p>16 . Create a CSS style for the section. Set its background to #222222, and make its color white. Make the section&apos;s overflow:auto.</p>
+<p>17 . Set the h2 color to pale yellow: #fffebb. Set h2&apos;s border-bottom to #fffebb as well.</p>
+<p>18 . Set the li color to black, and its background to white.</p>
+<p>Bravo! Well done.</p>
 <p><a href="10_quiz.html">Take the Quiz for Unit 5 now!</a></p>
 
                     
