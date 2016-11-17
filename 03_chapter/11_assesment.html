@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.9" data-basepath=".." data-revision="Wed Nov 16 2016 21:01:16 GMT+0000 (UTC)">
+    <div class="book" data-level="3.9" data-basepath=".." data-revision="Thu Nov 17 2016 16:33:11 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2045,16 +2045,16 @@
 <hr>
 <h1 id="principles-of-html-css">Principles of HTML &amp; CSS</h1>
 <p>We now know how CSS plays a crucial role in the creative aspect of web development. In the following assignment, you&apos;ll use your freshly acquired skills to create the cards of your memory game and define the theme to the game.</p>
-<p>As you move through the next several units, you&apos;ll be building parts of a browser memory game. Eventually, once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.</p>
+<p>As you move through the next several units, you&apos;ll build parts of a browser memory game. Once all of the pieces are complete, your game will be turned in as your final assignment for WDI Fundamentals.</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
 <ul>
-<li>Create cards with in your memory game.</li>
+<li>Create cards within your memory game.</li>
 <li>Add color to your memory cards.</li>
 <li>Add an external CSS stylesheet.</li>
 </ul>
-<h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h5>
-<p>1) Open up your previous <code>index.html</code> file in Sublime where you created your memory game page.</p>
+<h5 id="here-are-the-steps-to-complete-the-assignment">Here are the steps to complete the assignment:</h5>
+<p>1) Open your previous <code>index.html</code> file in Sublime where you created your memory game page.</p>
 <p>2) Underneath your instructions and within your <code>body</code> tag, create five <code>div</code>s like so:</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
@@ -2066,18 +2066,18 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 </code></pre>
 <p>You&apos;ll use these <code>div</code>s to create a &quot;board&quot; and the individual &quot;cards&quot; that will be displayed on the webpage.</p>
-<p>3) Because the cards will look similar (if they looked different, then you&apos;d be able to cheat in the memory game!), you&apos;ll create CSS that shares similar style that is shared across multiple elements. Therefore, you&apos;ll want to utilize the the more general selector, class.</p>
-<p>All card elements will share certain characteristics such as: width, border-radius, etc., we can go ahead and define these CSS properties to the class, <code>card</code>.</p>
+<p>3) Because the cards will all look similar (if they looked different, you&apos;d be able to cheat in the memory game!), you&apos;ll create CSS that shares similar style across multiple elements. Therefore, you&apos;ll want to utilize the the more general selector, <code>class</code>.</p>
+<p>All card elements will share certain characteristics, such as width, border-radius, etc., so we can go ahead and define these CSS properties to the class, <code>card</code>.</p>
 <ul>
 <li><p>Assign a class called &quot;board&quot; to the first <code>div</code>.  </p>
 </li>
-<li><p>Let&apos;s go ahead assign a class attributes called &quot;card&quot; to the four other <code>div</code>s within your &quot;board&quot; <code>div</code>.</p>
+<li><p>Let&apos;s go ahead and assign a class attribute called &quot;card&quot; to the four other <code>div</code>s within your &quot;board&quot; <code>div</code>.</p>
 </li>
 <li><p>Then, switch over to some CSS. Create a new file and save it as <code>style.css</code></p>
 </li>
-<li><p>Reference your board class and give it a height of <code>80%</code>, a width of <code>50%</code>. Make sure you display it as an inline-block.</p>
+<li><p>Reference your board class and give it a height of <code>80%</code> and a width of <code>50%</code>. Make sure you display it as an inline-block.</p>
 </li>
-<li><p>Reference your card class in your <code>style.css</code> and make the height of your cards <code>200px</code>, the width <code>150px</code> and a black border of <code>1px</code>.</p>
+<li><p>Reference your card class in your <code>style.css</code> and make the height of your cards <code>200px</code>, the width <code>150px</code>, and a black border of <code>1px</code>.</p>
 </li>
 <li><p>Make your cards yellow.</p>
 </li>
@@ -2085,8 +2085,8 @@
 </li>
 </ul>
 <p>4) At this point, if we still have CSS in our <code>index.html</code>, we should move over any CSS from the <code>&lt;style&gt;</code> tags inside of <code>index.html</code> into a separate file, <code>style.css</code>.</p>
-<p>5) Now, go back to your <code>index.html</code> and connect your css file(<code>style.css</code>) by using a <code>&lt;link&gt;</code> tag to reference it.</p>
-<p>6) Switch up the named color values to RGB and Hex values. If you can&apos;t figure out the exact RGB or Hex value to match the color, don&apos;t sweat it, just use something close. The key is just to practice implementing a more technical value.</p>
+<p>5) Now, go back to your <code>index.html</code> and connect your css file (<code>style.css</code>) by using a <code>&lt;link&gt;</code> tag to reference it.</p>
+<p>6) Switch up the named color values to RGB and Hex values. If you can&apos;t figure out the exact RGB or Hex value to match the color, don&apos;t sweat it &#x2014; just use something close. The key is just to practice implementing a more technical value.</p>
 <ul>
 <li><p>Add the <code>rgb(2, 132, 130)</code> to your level one heading (<code>h1</code>).</p>
 </li>
@@ -2094,12 +2094,12 @@
 </li>
 </ul>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> A good way to find your color value would be with a Google search, <code>&lt;color name&gt; hex code</code> or <code>&lt;color name&gt; rgb color</code>.</p>
+<p> A good way to find your color value is by doing a Google search with <code>&lt;color name&gt; hex code</code> or <code>&lt;color name&gt; rgb color</code>.</p>
 </blockquote>
 <hr>
 <h4 id="deliverable">Deliverable</h4>
 <p><img src="../assets/elkwebdesign/memorygameunit3.png" alt=""></p>
-<p>Great! Your website is starting to look more and more like an actual memory game!</p>
+<p>Great! Your website is starting to look more and more like an actual memory game.</p>
 
                     
                     </section>
