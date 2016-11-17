@@ -62,7 +62,7 @@ Let's take a look at the following HTML page:
 </html>
 ```
 
-The browser pulls in this HTML document, parses it, and creates an object model of the page in its memory. This model is called the **Document Object Model (DOM)**.
+The browser pulls in this HTML document, parses it, and creates an object model of the page in memory. This model is called the **Document Object Model (DOM)**.
 
 The DOM specifies that the browser should use a **DOM Tree** to structure this model:
 
