@@ -201,7 +201,7 @@ var allThreeX = function(cellOne, cellTwo, cellThree) {
 
 Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
-###Determining if `O` has won
+###Determining if `o` has won
 
 Now, we can go ahead and start writing a function called `allThreeO` to do for O what we've done for X. But that seems pretty duplicative.
 
