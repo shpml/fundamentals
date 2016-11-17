@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.4" data-basepath=".." data-revision="Thu Nov 17 2016 21:35:10 GMT+0000 (UTC)">
+    <div class="book" data-level="10.4" data-basepath=".." data-revision="Thu Nov 17 2016 22:04:28 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,77 +2044,75 @@
                         <p><strong>WDI Fundamentals Unit 10</strong></p>
 <hr>
 <h1 id="manipulating-the-dom">Manipulating the DOM</h1>
-<p>Now that you&apos;ve gotten some practice accessing and updating the DOM, let&apos;s take a look at some more advanced methods that will allow us to update content and styles.</p>
+<p>Now that you&apos;ve practiced accessing and updating the DOM, let&apos;s take a look at some more advanced methods that allow us to update content and styles.</p>
 <h3 id="adding-content">Adding Content</h3>
 <h4 id="-createelement-and-appendchild"><strong><code>createElement()</code> and <code>appendChild()</code></strong></h4>
-<p>To add new elements to the page, we&apos;ll need to use a three step process:</p>
-<ol>
-<li>We will use the <code>createElement()</code> method to create a new element, which can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.</li>
-<li>We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we looked at in the last lesson.</li>
-<li>Now that our element has been created we can add it as a child of an element using the <code>appendChild()</code> method. This will add an element as the last child of the parent element.</li>
-</ol>
-<p>To add a fourth item to our list we can execute the following code:</p>
+<p>To add new elements to a web page, we&apos;ll need to use a three-step process:</p>
+<p>1) We will use the <code>createElement()</code> method to create a new element that can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.
+2) We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we learned in the last unit.
+3) Now that our element has been created, we can add it as a child of an element using the <code>appendChild()</code> method. This will add an element as the last child of the parent element.</p>
+<p>To add a fourth item to our list, we can execute the following code:</p>
 <pre><code class="lang-js"><span class="hljs-comment">// First up, let&apos;s create a new list item and store it in a variable.</span>
 <span class="hljs-keyword">var</span> newListItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;li&apos;</span>);
 
 <span class="hljs-comment">// Alright! Now let&apos;s update the text content of that list item.</span>
 newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</span>;
 
-<span class="hljs-comment">// And Finally...let&apos;s add that list item as a child of the ul.</span>
+<span class="hljs-comment">// And, finally, let&apos;s add that list item as a child of the ul.</span>
 <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;ul&apos;</span>)[<span class="hljs-number">0</span>].appendChild(newListItem);
 </code></pre>
 <p><img src="../assets/chapter5/list.png" alt=""></p>
-<p>It takes a few steps but you&apos;ll get the hang of it in no time.</p>
+<p>It involves a few steps, but you&apos;ll get the hang of it in no time!</p>
 <h3 id="getting-and-setting-attributes">Getting and Setting Attributes</h3>
-<p>We might also want to update styles and attributes for elements on the page. We can do so using the following properties and methods:</p>
+<p>We might also want to update styles and attributes for elements on a page. We can do so using the following properties and methods:</p>
 <h4 id="-classname"><code>className</code></h4>
-<p>We can change the value of a class attribute for an element using the <code>className</code> property. This will apply any styles in our CSS that are associated with that particular class.</p>
+<p>We can change the value of a class attribute for an element using the <code>className</code> property. This will apply any styles in our CSS associated with that particular class.</p>
 <p>For example, maybe we want to highlight an important task in our list. We can add a class and styles in our CSS like so:</p>
 <pre><code class="lang-css"><span class="hljs-class">.highlight</span> <span class="hljs-rules">{
     <span class="hljs-rule"><span class="hljs-attribute">background-color</span>:<span class="hljs-value"> yellow</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>And then we can use JavaScript to add this class:</p>
+<p>Then, we can use JavaScript to add this class:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;important&apos;</span>).className = <span class="hljs-string">&apos;highlight&apos;</span>;
 </code></pre>
-<p>The <code>.highlight</code> class will then be added to the element with the id <code>important</code> and the background-color associated with this class will be applied:</p>
+<p>The <code>.highlight</code> class will then be added to the element with the id <code>important</code>, along with the background-color associated with the class.</p>
 <p><img src="../assets/chapter5/list2.png" alt=""></p>
 <h4 id="-setattribute-removeattribute"><code>setAttribute()</code>, <code>removeAttribute()</code></h4>
 <p>We can set and remove attributes from elements using the <code>setAttribute()</code> and <code>removeAttribute()</code> methods.</p>
 <p>For example, if we want to update the <code>href</code> attribute on an anchor, we could do the following:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].setAttribute(<span class="hljs-string">&apos;href&apos;</span>, <span class="hljs-string">&apos;http://newurl.com&apos;</span>);
 </code></pre>
-<p>Or if we wanted to remove the id from an element we could execute the following:</p>
+<p>Or, if we wanted to remove the id from an element, we could execute this code:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].removeAttribute(<span class="hljs-string">&apos;id&apos;</span>);
 </code></pre>
 <h1 id="events">Events</h1>
-<p>In order to create interactive and responsive sites, we&apos;ll often want to update the DOM based on the user&apos;s actions. For example, when the user clicks on the menu icon, a sidebar menu should slide out from the side of the page. Or if the user has typed an incorrect format into a form field, the field should be outlined in red as the user tabs out of the field. These actions are called <strong>events</strong>.</p>
+<p>In order to create interactive and responsive sites, we&apos;ll often want to update the DOM based on a user&apos;s actions. For example, when a user clicks on the menu icon, a sidebar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of the field. These actions are called <strong>events</strong>.</p>
 <p>We can set up <strong>event handlers</strong> in our scripts that will listen, or wait, for an event to occur and then trigger a function.</p>
 <p>The syntax for setting up an event handler looks like this:</p>
 <pre><code class="lang-js">  element.addEventListener(<span class="hljs-string">&apos;nameOfEvent&apos;</span>, functionToRun);
 </code></pre>
 <ul>
-<li><p><code>element</code> - This refers to the DOM node we want to tie the event to. For example, if we want to trigger an event when the user clicks on a button, the element would be that button element.</p>
+<li><p><code>element</code> refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button element.</p>
 </li>
-<li><p><code>.</code> - The dot ties the method on the right hand side (<code>addEventListener</code>) with the element on the left hand side.</p>
+<li><p><code>.</code> ties the method on the right-hand side (<code>addEventListener</code>) with the element on the left-hand side.</p>
 </li>
-<li><p><code>addEventListener()</code> - This is the method we will use to tie an event listener to an element.</p>
+<li><p><code>addEventListener()</code> is the method we&apos;ll use to tie an event listener to an element.</p>
 </li>
-<li><p><code>&apos;nameOfEvent&apos;</code> - The name of the event we want to listen for. For example, maybe we want to wait until the user triggers a &apos;click&apos; event on an element.</p>
+<li><p><code>&apos;nameOfEvent&apos;</code> is name of the event we want to listen for. For example, we may want to wait until a user triggers a &apos;click&apos; event on an element.</p>
 </li>
-<li><p><code>&apos;functionToRun&apos;</code> - The name of the function that we want to run when the event occurs.</p>
+<li><p><code>&apos;functionToRun&apos;</code> is name of the function we want to run when the event occurs.</p>
 </li>
 </ul>
 <p>Let&apos;s take a look at an example:</p>
-<pre><code class="lang-js"><span class="hljs-comment">// Here let&apos;s set up a function that will be triggered when the event occurs.</span>
+<pre><code class="lang-js"><span class="hljs-comment">// Here, let&apos;s set up a function that will be triggered when the event occurs.</span>
 <span class="hljs-keyword">var</span> alertUser = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
     alert(<span class="hljs-string">&apos;Button has been clicked!&apos;</span>);
 }
 
-<span class="hljs-comment">// Next let&apos;s find the element we want to tie the event to and save it to a variable.</span>
+<span class="hljs-comment">// Next, let&apos;s find the element to which we want to tie the event, and save it to a variable.</span>
 <span class="hljs-keyword">var</span> button = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;button&apos;</span>);
 
-<span class="hljs-comment">// Finally let&apos;s set up an event handler. When the user clicks on the button, the alertUser function will run.</span>
+<span class="hljs-comment">// Finally, let&apos;s set up an event handler. When a user clicks on the button, the alertUser function will run.</span>
 button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, alertUser);
 </code></pre>
 <h2 id="types-of-events">Types of Events</h2>
@@ -2129,49 +2127,49 @@ button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, aler
 <tbody>
 <tr>
 <td style="text-align:center">&apos;click&apos;</td>
-<td style="text-align:center">When the button (usually a mouse button) is pressed and released on a single element</td>
+<td style="text-align:center">When a button (usually a mouse button) is pressed and released on a single element.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;keydown&apos;</td>
-<td style="text-align:center">When the user first presses a key on the keyboard</td>
+<td style="text-align:center">When the user first presses a key on the keyboard.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;keyup&apos;</td>
-<td style="text-align:center">When the user releases a key on the keyboard</td>
+<td style="text-align:center">When the user releases a key on the keyboard.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;focus&apos;</td>
-<td style="text-align:center">When an element has received focus</td>
+<td style="text-align:center">When an element has received focus.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;blur&apos;</td>
-<td style="text-align:center">When an element loses focus</td>
+<td style="text-align:center">When an element loses focus.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;submit&apos;</td>
-<td style="text-align:center">When the user submits a form</td>
+<td style="text-align:center">When the user submits a form.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;load&apos;</td>
-<td style="text-align:center">When the page has finished loading</td>
+<td style="text-align:center">When the page has finished loading.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;resize&apos;</td>
-<td style="text-align:center">When the browser window has been resized</td>
+<td style="text-align:center">When the browser window has been resized.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;scroll&apos;</td>
-<td style="text-align:center">When the user scrolls up or down on the page</td>
+<td style="text-align:center">When the user scrolls up or down on the page.</td>
 </tr>
 </tbody>
 </table>
-<p>Let&apos;s take a look at a practical example. We&apos;ve created a simple form for users to subscribe to our email newsletter. When the user tabs or clicks away from the email input field, we want to check to make sure that the user has entered a value in the field.</p>
+<p>Let&apos;s take a look at a practical example. We&apos;ve created a simple form for users to subscribe to our email newsletter. When a user tabs or clicks away from the email input field, we want to check to make sure that he or she has entered a value.</p>
 <p>The HTML:</p>
 <pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>To Do List<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>To-Do List<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;style.css&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
@@ -2192,14 +2190,14 @@ button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, aler
     <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#fa4542</span></span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>And now for our JavaScript:</p>
+<p>Now for our JavaScript:</p>
 <pre><code class="lang-js"><span class="hljs-comment">// First, let&apos;s find the email input field.</span>
 <span class="hljs-keyword">var</span> emailInputField = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;email&apos;</span>);
 
-<span class="hljs-comment">// Next up, let&apos;s set up a function to run when the even occurs.</span>
+<span class="hljs-comment">// Next up, let&apos;s set up a function to run when the event occurs.</span>
 <span class="hljs-keyword">var</span> checkEmailInput = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
 
-    <span class="hljs-comment">// Check to see whether the user has entered a value to the email field.</span>
+    <span class="hljs-comment">// Check to see whether or not the user has entered a value to the email field.</span>
     <span class="hljs-keyword">if</span> (emailInputField.value.length === <span class="hljs-number">0</span>) {
         <span class="hljs-comment">// If the email field is blank, display a message to the user.</span>
         <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;message&apos;</span>).innerText = <span class="hljs-string">&apos;Please enter an email address.&apos;</span>
@@ -2210,7 +2208,7 @@ button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, aler
         <span class="hljs-comment">//Otherwise, clear out the error message.</span>
         <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;message&apos;</span>).innerText = <span class="hljs-string">&apos;&apos;</span>;
 
-        <span class="hljs-comment">// Remove the error class from the input field</span>
+        <span class="hljs-comment">// Remove the error class from the input field.</span>
         emailInputField.className = <span class="hljs-string">&apos;&apos;</span>;
     }
 
@@ -2221,12 +2219,12 @@ button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, aler
 
 emailInputField.addEventListener(<span class="hljs-string">&apos;blur&apos;</span>, checkEmailInput);
 </code></pre>
-<p>Let&apos;s take a look at what the page now looks like when the focus was on the email field and then the user hit tab or clicked away from the field:</p>
+<p>Let&apos;s take a look at what the page now looks like after the user hits tab or clicks away from the email field:</p>
 <p><img src="../assets/chapter5/form.png" alt=""></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>This is just the tip of the iceberg when it comes to DOM manipulation and event handling. But hopefully it&apos;s gotten you excited about making your sites interactive and responsive. There are so many methods and functions to keep track of in the beginning that it can be a little overwhelming. Don&apos;t feel like you have to sit down and memorize everything. Instead focus on understanding the big picture and memorization will come with practice.</p>
+<p>This is just the tip of the iceberg when it comes to DOM manipulation and event handling. But hopefully it&apos;s gotten you excited about making your websites interactive and responsive. There are so many methods and functions to keep track of in the beginning that it can seem a little overwhelming. But don&apos;t feel like you have to sit down and memorize everything right now. Instead, focus on understanding the big picture, and memorization will come with practice.</p>
 <hr>
-<p><a href="06_quiz.html">Take the Quiz for Unit 10 now!</a></p>
+<p><a href="06_quiz.html">Take the quiz for Unit 10!</a></p>
 
                     
                     </section>
