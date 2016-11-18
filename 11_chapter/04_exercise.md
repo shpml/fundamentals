@@ -6,13 +6,11 @@
 
 Time to give it a whirl! In this exercise you'll practice setting up and updating a contacts array. Later in this unit we'll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, enter new contacts, list contacts, and search contacts by first or last name.
 
-## Instructions
-
+## Instructions 
 
 1) Write code to perform the actions listed below. If you don't see the JS Bin, please refresh the page.
 2) Click 'Run' to run the code in the console panel.
 3) Call each function from the console panel. Try using different parameters to make sure they're working properly.
-
 
 <a class="jsbin-embed" href="http://jsbin.com/wihumu/embed?js&height600"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
