@@ -9,7 +9,7 @@ Time to give it a whirl! In this exercise you'll practice setting up and updatin
 
 ## Instructions
 
-1) Write the code to perform the actions listed below, using JS Bin editor. If you don't see the JS Bin below, please refresh the page. 
+1) Write the code to perform the actions listed below, using JS Bin editor. If you don't see the JS Bin below, please refresh the page.
 2) Click 'Run' to run the code in the Console panel.
 3) Call each function from the Console panel. Try using different parameters to make sure they're working properly.
 
