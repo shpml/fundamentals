@@ -13,7 +13,7 @@ We'll touch on **HTML**, **CSS**, and **JavaScript**. We'll also learn how to wo
 The entire eBook is 11 units long, and we expect it to take about **40 hours to complete**. Make sure you read through the information below before continuing, as we've outlined some important points to remember as you move through WDI Fundamentals!
 
 
-## Join the WDI Community on Slack!
+## Join the WDI Community
 
 We design our Immersive courses to help you embrace the challenge of lifelong learning. This means that, when you get stuck, your instructors will often help you to work through your own process of discovery rather than simply giving you the right answer. You'll also learn to rely on your classmates for structure and support.
 
