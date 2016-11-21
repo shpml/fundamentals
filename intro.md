@@ -15,7 +15,7 @@ The entire eBook is 11 units long, and we expect it to take about **40 hours to 
 
 ## Join the WDI Community
 
-We design our Immersive courses to help you embrace the challenge of lifelong learning. This means that, when you get stuck, your instructors will often help you to work through your own process of discovery rather than simply giving you the right answer. You'll also learn to rely on your classmates for structure and support.
+We design our Immersive courses to help you embrace the challenge of lifelong learning. This means that, when you get stuck, your instructors will often help you to work through your own process of discovery rather than simply give you the right answer. You'll also learn to rely on your classmates for structure and support.
 
 You're probably completing the pre-course work at home or in a coffee shop, so you won't have the same level of guidance you'll get once you join us on campus (or in our virtual classroom). For now, we encourage you to connect with your classmates via Slack, a real-time messaging application you'll be using in class.
 
