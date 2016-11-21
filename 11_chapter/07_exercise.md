@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Now things are starting to heat up! Let's take a short break from our contacts book to practice iterating over arrays.
+Now things are starting to heat up! Let's take a short break from our contact book to practice iterating over arrays.
 
 ## Instructions
 
