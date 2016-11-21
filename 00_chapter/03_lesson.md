@@ -54,7 +54,7 @@ If you want to retake a quiz, just refresh the page! Practice makes perfect.
 
 Each unit assignment will build toward your final project, a **web browser-based memory game**. You'll use HTML, CSS and JavaScript to build the game unit by unit!
 
-For Units 1-5, you'll need to save the HTML and CSS portions of your assignments locally. Starting in Unit 7, you'll learn how Git & GitHub work, and, in Unit 8 you'll begin pushing your source code to GitHub instead. In the meantime, make sure to save your progress.
+For Units 1-5, you'll need to save the HTML and CSS portions of your assignments locally. Starting in Unit 7, you'll learn how Git and GitHub work, and, in Unit 8 you'll begin pushing your source code to GitHub instead. In the meantime, make sure to save your progress.
 
 **Final Submission**: At the end of the project in Unit 11, you'll submit a link to your GitHub repository via [this form](https://ga-immersives.typeform.com/to/UHC5Yp).
 
