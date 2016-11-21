@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.3" data-basepath=".." data-revision="Mon Nov 21 2016 14:06:52 GMT+0000 (UTC)">
+    <div class="book" data-level="11.3" data-basepath=".." data-revision="Mon Nov 21 2016 15:42:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,20 +2043,20 @@
                     
                         <p><strong>WDI Fundamentals Unit 11</strong></p>
 <hr>
-<h1 id="collections-objects">Collections - Objects</h1>
+<h1 id="collections-objects">Collections: Objects</h1>
 <h2 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h2>
-<p>So far, all of the arrays that we&apos;ve seen have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:</p>
-<p>Say we have a line of people waiting in line to buy the latest iPhone. We&apos;ll model these people using the array below.</p>
+<p>So far, all of the arrays we&apos;ve seen have stored and managed their elements by their indices. This is a convenient way of managing things, but it also has some disadvantages. Consider the following:</p>
+<p>Say we have a line of people waiting to buy the latest iPhone. We&apos;ll model these people using the array below.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> friends = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Joey&apos;</span>, <span class="hljs-string">&apos;Chandler&apos;</span>, <span class="hljs-string">&apos;Ross&apos;</span>];
 </code></pre>
-<p>We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.</p>
-<p>But suppose that Monica decides she&apos;s waited long enough for an iPhone, and decides to leave the line and get an Android phone instead. What happens when Monica leaves?</p>
+<p>We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index: 2), and so on. Great! This is an easy way to keep track of each person&apos;s location.</p>
+<p>But, suppose that Monica decides she&apos;s waited long enough for an iPhone and decides to leave the line and get an Android phone instead. What happens when Monica leaves?</p>
 <pre><code class="lang-javascript">friends.splice(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// [&quot;Monica&quot;]</span>
 friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, &apos;Joey&apos;, &apos;Chandler&apos;, &apos;Ross&apos;]</span>
 </code></pre>
-<p>Well, Rachel stays in the same place. But suddenly, Phoebe isn&apos;t at index 2 - she&apos;s now at index <em>1</em>, while <em>Joey</em> is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, as it were, &apos;disarray&apos;.</p>
-<p>This system does a good job of keeping track of everyone&apos;s order, but its biggest drawback is that our method of referencing any element is tied to its position <em>rather than the element itself</em>. Fortunately, there are other ways of keeping track of things - for example, labeling them.</p>
-<p>Let&apos;s imagine that every person in this totally hypothetical office has a &apos;lunch&apos; that they keep in the fridge.</p>
+<p>Well, Rachel stays in the same place. But suddenly, Phoebe isn&apos;t at index 2 - she&apos;s now at index <em>1</em>, while <em>Joey</em> is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, &quot;disarray,&quot; as it were.</p>
+<p>This system does a good job of keeping track of everyone&apos;s order, but its biggest drawback is that our method of referencing any element is tied to its position <em>rather than the element itself</em>. Fortunately, there are other ways of keeping track of elements - for example, labeling them.</p>
+<p>Let&apos;s imagine that every person in this totally hypothetical office has a &quot;lunch&quot; they keep in the fridge.</p>
 <table>
 <thead>
 <tr>
@@ -2110,26 +2110,26 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 </tr>
 </tbody>
 </table>
-<p>This is the basic principle underlying an <strong>Object</strong> (also known in some languages as a <em>hash</em>). An object <em>associates</em> each value with a reference called a <strong>key</strong> (in this case the person&apos;s name). An important note is that, because each key/value pair is independent of any of the others, the array doesn&apos;t keep a consistent &apos;order&apos; to its elements.</p>
+<p>This is the basic principle underlying an <strong>object</strong> (also known in some programming languages as a <em>hash</em>). An object <em>associates</em> each value with a reference called a <strong>key</strong> (in this case, the person&apos;s name). It&apos;s important to note that, because each key-value pair is independent of any of the others, the array doesn&apos;t keep a consistent &quot;order&quot; to its elements.</p>
 <p>As you start building applications, you&apos;ll find many situations where you&apos;ll want to associate keys to values.</p>
 <h2 id="objects-in-javascript">Objects in JavaScript</h2>
-<p>Much like a normal array is written using square braces (<code>[...]</code>), an object is written using curly braces (<code>{...}</code>). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (<code>:</code>).</p>
-<p>Here&apos;s what the &apos;lunches&apos; table above might look like as an object.</p>
+<p>Much like a normal array is written using square brackets (<code>[...]</code>), an object is written using curly braces (<code>{...}</code>). Key-value pairs are separated by commas, just like individual values are in a normal array. Within each of these pairs, keys are separated from their values by colons (<code>:</code>).</p>
+<p>Here&apos;s what the &quot;lunch&quot; table above might look like as an object:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> lunches = { <span class="hljs-string">&apos;Josh&apos;</span> : <span class="hljs-string">&apos;pasta&apos;</span>,
                 <span class="hljs-string">&apos;Floyd&apos;</span> : <span class="hljs-string">&apos;salad&apos;</span>,
                 <span class="hljs-string">&apos;Matt&apos;</span> : <span class="hljs-string">&apos;tuna sandwich&apos;</span>,
                 <span class="hljs-string">&apos;Shannon&apos;</span> : <span class="hljs-string">&apos;soup&apos;</span> };
 </code></pre>
-<p>Elements in objects are accessed and manipulated in exactly the same way as normal arrays are - using square braces (<code>[...]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type</p>
+<p>Elements in objects are accessed and manipulated in the same way as elements in normal arrays - using square brackets (<code>[...]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type:</p>
 <pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Matt&apos;</span>]
 </code></pre>
 <p>If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.</p>
 <pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Matt&apos;</span>] = <span class="hljs-string">&apos;turkey sandwich&apos;</span>
 </code></pre>
-<p>Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.</p>
+<p>Adding new key-value pairs looks just like assignment - you simply set your new key as the reference, and assign your new value as the value.</p>
 <pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Elena&apos;</span>] = <span class="hljs-string">&apos;meatloaf&apos;</span>
 </code></pre>
-<p>Keys are strings and basically anything can be used as a value (including an array, or even another object). Here&apos;s an example of all of the above:</p>
+<p>Keys are strings, and basically anything can be used as a value (including an array, or even another object). Here&apos;s an example of all of the above:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> candidateData = {
   <span class="hljs-string">&apos;name&apos;</span> : <span class="hljs-string">&quot;John Doe&quot;</span>,
   <span class="hljs-string">&apos;age&apos;</span> : <span class="hljs-number">32</span>,
@@ -2143,10 +2143,10 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
   }
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> Ordinary arrays and objects handle nesting in the exact same way; if we wanted to retrieve the number of years of JavaScript experience from the array above, we would write <code>candidateData[&apos;yearsExperience&apos;][&apos;javascript&apos;]</code>.</p>
+<p> Ordinary arrays and objects handle nesting in the exact same way. If we wanted to retrieve the number of years of JavaScript experience from the array above, we would write <code>candidateData[&apos;yearsExperience&apos;][&apos;javascript&apos;]</code>.</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Consider the following object.</p>
+<p>Consider the following object:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> pet = {
   <span class="hljs-string">&apos;species&apos;</span> : <span class="hljs-string">&apos;iguana&apos;</span>,
   <span class="hljs-string">&apos;gender&apos;</span> : <span class="hljs-string">&apos;female&apos;</span>,
@@ -2158,13 +2158,13 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <ul>
 <li>Retrieve the value for &apos;name&apos; from the object.</li>
 <li>Assign the value for &apos;age&apos; to 13.</li>
-<li>Add a new key &apos;favoriteFood&apos;, with value &apos;crickets&apos;</li>
+<li>Add a new key, &apos;favoriteFood&apos;, with the value &apos;crickets&apos;.</li>
 </ul>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> You&apos;ll learn more about objects throughout WDI, and use them for far more complex use cases than tracking everyone&apos;s lunches.</p>
+<p> You&apos;ll learn more about objects throughout WDI and use them for far more complex use cases than tracking lunches.</p>
 </blockquote>
 <hr>
-<p><a href="10_exercise.html">One last exercise - this time on objects.</a></p>
+<p><a href="10_exercise.html">Let&apos;s move on to one last exercise - this time on objects.</a></p>
 
                     
                     </section>
