@@ -19,7 +19,7 @@ We design our Immersive courses to help you embrace the challenge of lifelong le
 
 You're probably completing the pre-course work at home or in a coffee shop, so you won't have the same level of guidance you'll get once you join us on campus (or in our virtual classroom). For now, we encourage you to connect with your classmates via Slack, a real-time messaging application you'll be using in class.
 
-### Sign on to Slack!
+### Sign on to Slack
 
 * First, check your email for an invitation from your producer.
 * Be sure to add a photo and "WDI Student - CITY" or "WDI Student - REMOTE" (if you're taking WDI remotely) to your profile.
