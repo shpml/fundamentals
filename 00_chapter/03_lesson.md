@@ -39,7 +39,7 @@ You’ll want to click “Clone Your Own Copy," which will generate a new link.
 ![](../assets/elkwebdesign/jsbin.png)
 
 
-**Pro Tip**: Remember, the code you write in the JS Bin editor will *not automatically save.* Therefore, you need to make sure you hit the ***save*** button and copy your code over.
+**Pro Tip**: Remember, the code you write in the JS Bin editor will *not automatically save.* Therefore, you need to make sure you hit the ***Save*** button and copy your code over.
 
 **Note**: If your JS Bin editor doesn't load or shows `JS Bin on jsbin.com`, simply refresh the page.
 
