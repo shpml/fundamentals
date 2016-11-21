@@ -26,7 +26,7 @@ You're probably completing the pre-course work at home or in a coffee shop, so y
 * Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
   page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/#wdi-fundamentals/) channel to meet your global classmates!
 
-**Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on Slack: #wdi-fundamentals. If you're working on the older version (v2.1), be sure to let your classmates know on Slack, as the units are different for the new version (v3.0).**
+**Please note: Whether you're joining WDI on campus or WDIr remotely, you should log onto the same channel on Slack: #wdi-fundamentals. If you're working on the older version (v2.1), be sure to let your classmates know, as the units are different for the new version (v3.0).**
 
 <!---
 ![Step-by-Step Slack Tutorial](assets/chapter0/slack_tutorial.gif)
