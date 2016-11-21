@@ -33,7 +33,7 @@ You’ll want to click “Clone Your Own Copy," which will generate a new link.
 
 * `File` > `Export` as a gist. This will save your file as a GitHub repository on your GitHub! Read more about gists [here](https://help.github.com/articles/about-gists/).
 * `File` > `Download`. This will download and save your file locally.
-* Save your JS Bin URL. Simply copy and save JS Bin URL for future reference. You can also go to `File` > `My Bins` to locate the bin. Additionally, you can also select `File` > `Save Snapshot` at point, and JS Bin will automatically save the latest version of your working copy.
+* Save your JS Bin URL. Simply copy and save JS Bin URL for future reference. You can also go to `File` > `My Bins` to locate the bin. Additionally, you can also select `File` > `Save Snapshot` at any point, and JS Bin will automatically save the latest version of your working copy.
 
 
 ![](../assets/elkwebdesign/jsbin.png)
