@@ -10,7 +10,7 @@ Whether you're enrolled to attend classes remotely (WDIr) or on campus, we hope 
 
 We'll touch on **HTML**, **CSS**, and **JavaScript**. We'll also learn how to work with standard developer tools (text editors, browsers, the command line, Git, and GitHub).
 
-The entire eBook is 11 units long, and we expect it to take about **40 hours to complete**. Make sure you read through the information below before continuing, as we've outlined some important things to remember as you move through WDI Fundamentals!
+The entire eBook is 11 units long, and we expect it to take about **40 hours to complete**. Make sure you read through the information below before continuing, as we've outlined some important points to remember as you move through WDI Fundamentals!
 
 
 ## Join the WDI Community on Slack!
