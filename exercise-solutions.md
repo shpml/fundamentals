@@ -1,6 +1,6 @@
 # UNIT EXERCISES: SOLUTIONS
 
-The following solutions are for the Unit exercises.
+The following solutions are for the unit exercises.
 
 
 ## Unit 2
@@ -26,7 +26,7 @@ The following solutions are for the Unit exercises.
 ### 3.2.1
 
 
-1.  
+1)  
 
 ```css
 #name {
@@ -34,7 +34,7 @@ The following solutions are for the Unit exercises.
 }
 ```
 
-2 .
+2)
 
 ```css
 #hex {
@@ -42,7 +42,7 @@ The following solutions are for the Unit exercises.
 }
 ```
 
-3 .
+3)
 
 ```css
 #rgb {
@@ -50,7 +50,7 @@ The following solutions are for the Unit exercises.
 }
 ```
 
-4 .
+4)
 
 ```css
 #name {
@@ -89,23 +89,23 @@ Bonus
 ### 3.2.1
 
 
-1 .
+1)
 ```html
 <img src="">
 ```
 
-2 .
+2)
 
 ```html
 <img src="http://i.imgur.com/z9gGd0t.jpg">
 ```
 
-3 .
+3)
 ```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design">
 ```
 
-4 .
+4)
 ```html
 <img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design" title="grumpy cat">
 ```
@@ -117,7 +117,7 @@ Bonus
 ### 4.2.1
 
 ```css
-1 . body {
+1) body {
 	background: #333;
 }
 
@@ -126,7 +126,7 @@ div {
 }
 ```
 
-2 .
+2)
 
 ```css
 div {
@@ -135,7 +135,7 @@ div {
 }
 ```
 
-3 .
+3)
 
 ```css
 div {
@@ -145,7 +145,7 @@ div {
 }
 ```
 
-4 .
+4)
 
 ```css
 span {
@@ -155,7 +155,7 @@ span {
 }
 ```
 
-5 .
+5)
 
 ```css
 span {
@@ -167,7 +167,7 @@ span {
 }
 ```
 
-6 .
+6)
 
 ```css
 span {
@@ -178,7 +178,7 @@ span {
 	background: rgba(100,150,150,.5);
 }
 ```
-7 .
+7)
 
 ```css
 .right {
@@ -189,7 +189,7 @@ span {
 ### 4.4.1
 
 
-1 .
+1)
 
 ```html
 <head>
@@ -205,7 +205,7 @@ span {
 </body>
 ```
 
-2 .
+2)
 
 ```html
 <!DOCTYPE HTML>
@@ -244,7 +244,7 @@ span {
 </html>
 ```
 
-3 .
+3)
 
 ```css
 body {
@@ -290,7 +290,7 @@ footer {
 
 #### Part 1
 
-1 .
+1)
 
 ```html
 <head>
@@ -300,7 +300,7 @@ footer {
 </head>
 ```
 
-2 .
+2)
 
 ```css
 body {
@@ -309,7 +309,7 @@ body {
 }
 ```
 
-3 .
+3)
 
 ```html
 h1,h2 {
@@ -322,7 +322,7 @@ h1,h2 {
 
 #### Part 2
 
-1 .
+1)
 
 ```html
 <body>
@@ -335,7 +335,7 @@ h1,h2 {
 ```
 
 
-2 .
+2)
 
 ```html
 <body>
@@ -350,7 +350,7 @@ h1,h2 {
 	</header>
 ```
 
-3 .
+3)
 
 ```html
 <body>
@@ -365,7 +365,7 @@ h1,h2 {
 	</header>
 ```
 
-4 .
+4)
 
 ```css
 nav {
@@ -374,7 +374,7 @@ nav {
 nav a {
 }
 ```
-5 .
+5)
 ```css
 nav a {
 	text-decoration: none;
@@ -382,7 +382,7 @@ nav a {
 }
 ```
 
-7 .
+6)
 
 ```css
 nav a {
@@ -392,7 +392,7 @@ nav a {
 	display: inline-block;
 }
 ```
-8 .
+7)
 
 ```css
 nav {
@@ -404,7 +404,7 @@ nav {
 
 ### 5.4.1
 
-1 .
+1)
 
 ```css
 div {
@@ -413,7 +413,7 @@ div {
 }
 ```
 
-2 .
+2)
 
 ```css
 div {
@@ -423,7 +423,7 @@ div {
 }
 ```
 
-3 .
+3)
 
 ```css
 #about {
@@ -433,7 +433,7 @@ div {
 }
 ```
 
-4 .
+4)
 
 ```css
 #about {
@@ -441,7 +441,7 @@ div {
 }
 ```
 
-5 .
+5)
 
 ```css
 #services {
@@ -449,7 +449,7 @@ div {
 }
 ```
 
-6 .
+6)
 ```css
 footer {
   text-align: center;
@@ -458,7 +458,7 @@ footer {
 }
 ```
 
-7 .
+7)
 
 ```css
 div {
@@ -473,7 +473,7 @@ div {
 }
 ```
 
-8 .
+8)
 
 ```css
 li {
@@ -482,7 +482,7 @@ li {
   height: 6em;
 }
 ```
-9 .
+9)
 
 ```css
 li {
@@ -492,7 +492,7 @@ li {
   outline: 3px solid #222222;
 }
 ```
-10 .
+10)
 
 ```css
 li {
@@ -505,7 +505,7 @@ li {
 }
 
 ```
-11 .
+11)
 
 ```css
 img {
@@ -515,7 +515,7 @@ img {
 }
 ```
 
-12 .
+12)
 
 ```html
 <header>
@@ -531,7 +531,7 @@ img {
 	</header>
 ```
 
-13 .
+13)
 ```html
 <section>
 	<div id="about">
@@ -555,7 +555,7 @@ img {
 
 </html>
 ```
-14 .
+14)
 
 ```css
 section {
@@ -565,7 +565,7 @@ section {
 }
 ```
 
-15 .
+15)
 
 ```css
 h2 {
@@ -576,7 +576,7 @@ h2 {
 }
 ```
 
-16 .
+16)
 
 ```css
 li {
@@ -594,34 +594,34 @@ li {
 ## Unit 6
 
 ### 6.2.1
-1. `$ cd Downloads`
-2. `$ cd World`
-3. `$ ls`
-4. `$ ls -a Europe`
+1) `$ cd Downloads`
+2) `$ cd World`
+3) `$ ls`
+4) `$ ls -a Europe`
 
 ### 6.2.1
 
 Part 1:
 
-1. Command + Space. Inside search bar type "Terminal"
-2. `$ cd Downloads`
-2. `$ mv World ..` (will move to parent directory, in this case the Desktop)
-3. `$ ../` (move back to the parent directory) and then  `$ ls`
+1) Command + Space. Inside search bar, type "Terminal."
+2) `$ cd Downloads`
+3) `$ mv World ..` will move to parent directory, in this case the desktop.
+4) `$ ../` to move back to the parent directory, then  `$ ls`.
 
 Part 2:
 
-2. `$ cd World`
-3. `$ mkdir Antarctica`
-4. `$ ls`
-5. `$ cd World (only if pwd if not World)`
-6. `$ cd South America`
+1) `$ cd World`
+2) `$ mkdir Antarctica`
+3) `$ ls`
+4) `$ cd World (only if pwd is not World)`
+5) `$ cd South America`
    `$ ls`
-7. `$ mv Argentina ../North_America`
+6) `$ mv Argentina ../North_America`
    `$ mv Chile ../North_America`
    `$ mv Brazil  ../North_America`
-8. `$../ (back to World Directory)`
+7) `$../ (back to World directory)`
    `$ rm -r South_America`
-9. `$ mkdir Americas`
+8) `$ mkdir Americas`
    `mv North_America Americas`
 
 
@@ -643,20 +643,20 @@ otherwise
 ```
 
 ### 8.2.1
-   1. Any expression that equals 30 is valid; e.g. `(1 + 9)*3`
-   2. 'Hello World' is valid; e.g. `"Hello" + " " + "World"`
-   3. `true` is valid; e.g. `(false && true) || true`
+   1) Any expression that equals 30 is valid (e.g., `(1 + 9)*3`).
+   2) 'Hello World' is valid (e.g., `"Hello" + " " + "World"`).
+   3. `true` is valid (e.g., `(false && true) || true`).
 
 ### 8.3.1
-   1. `x + 10`
-   2. `3*x + 5`
-   3. `"Hello, " + x + "."` (or, in ES2015, we can use template strings: `Hello, ${x}.`)
-   4. `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: `Goodbye, ${x}.`)
+   1) `x + 10`
+   2) `3*x + 5`
+   3) `"Hello, " + x + "."` (or, in ES2015, we can use template strings: `Hello, ${x}.`)
+   4) `"Goodbye, " + x + "."` (or, in ES2015, we can use template strings: `Goodbye, ${x}.`)
 
 ### 8.4.1
-   1. `x || 100`
-   2. `x && 50`
-   3. `!x`
+   1) `x || 100`
+   2) `x && 50`
+   3) `!x`
 
 
 ## Unit 9
