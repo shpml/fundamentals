@@ -6,7 +6,7 @@
 
 This eBook is interactive! In each unit, we've included practice exercises using a code editor called JS Bin that allow you to try out new skills without leaving the page.
 
-Here's an example. You can type your code directly into the text editor and click through its various tabs (HTML, CSS, JavaScript) to type in additional code. The Output tab will render your code in real time.
+Here's an example: You can type your code directly into the text editor and click through its various tabs (HTML, CSS, JavaScript) to type in additional code. The Output tab will render your code in real time.
 
 Click on the tabs to get used to the navigation.
 
