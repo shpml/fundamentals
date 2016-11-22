@@ -27,6 +27,6 @@ If you don't see the JS Bin below, please refresh the page.
 
 * Image elements are self-closing; they don't need a closing tag.
 * Image URLs must end with an image extension, usually `.jpg`, `.gif`, or `.png`.
-* Images require an `src` attribute. Including `title` and `alt` is also strongly recommended.
+* Images require an `src` attribute. Including `title` and `alt` attributes is also strongly recommended.
 
 *Think about all the awesome stuff you can build online using images! Are you excited yet?*
