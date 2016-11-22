@@ -29,10 +29,10 @@ One of two general categories of fonts (typefaces) that uses marks (called “se
 One of two general categories of fonts that does not embellish characters at the end of strokes ("sans serif" means “without serif”). A common sans serif font is Helvetica.
 
 #### Class
-A class attribute is added to an HTML element in order to provide a “hook” to refer to that element in your CSS. CSS class selectors begin with a “.”. Classes can be used multiple times per page.
+A class attribute is added to an HTML element in order to provide a “hook” to refer to that element in your CSS. CSS class selectors begin with a `.`. Classes can be used multiple times per page.
 
 #### ID
-An ID attribute is added to an HTML element in order to provide a “hook” to refer to that element in your CSS. CSS ID selectors begin with a “#”. Unlike classes, IDs can only be used one time per page.
+An ID attribute is added to an HTML element in order to provide a “hook” to refer to that element in your CSS. CSS ID selectors begin with a `#`. Unlike classes, IDs can only be used one time per page.
 
 #### Horizontal Rule
 Add a horizontal line across your page using the `hr` tag.
