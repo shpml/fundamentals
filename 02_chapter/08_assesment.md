@@ -42,7 +42,7 @@ Using your newfound knowledge from this unit, let's go ahead and create the foun
 
 * Add a subheading to describe your game. What's fun about it? Why should people play?
 
-* Include some personal social media links so your users can learn about the developer behind the game - you!
+* Include some personal social media links so your users can learn about the developer behind the game — you!
 
 * Throw some paint on your canvas! Try adding some flare to your site by using the CSS property `color` to spice up your headings. First, add the color "teal" to your `h1` tags. Second, add the color "gold" to your `h2` tags.
 
