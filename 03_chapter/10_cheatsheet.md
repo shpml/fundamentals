@@ -210,7 +210,7 @@ Using these classes and IDs provides greater flexibility in how you control the 
 
 #### HTML and Images
 
-When you’d like to add images to your site, you should use the `img` tag along with the `src` attribute. `src` stands for “source” and works just like the `<a>` tag’s `href` attribute. It tells the `img` tag where to locate the image you want to include on your page.
+When you’d like to add images to your site, you should use the `img` tag along with the `src` attribute. `src` stands for “source” and works just like the `a` tag’s `href` attribute. It tells the `img` tag where to locate the image you want to include on your page.
 
 #### Relative vs. Absolute Addressing
 
