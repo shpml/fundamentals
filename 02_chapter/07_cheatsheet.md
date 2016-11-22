@@ -8,7 +8,7 @@
 * An information sharing model built on top of a global system of interconnected computer networks called the internet.
 
 #### Websites
-* Collections of files, accessible through the world wide web.
+* Collections of files accessible through the world wide web.
 
 #### Clients
 * Personal devices such as computers, phones, and tablets that are used to access the web.
