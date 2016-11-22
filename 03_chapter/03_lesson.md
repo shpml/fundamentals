@@ -28,7 +28,7 @@ In general, using classes in your CSS will aid in the scalability of your design
 
 ## Using IDs with JavaScript
 
-When writing JavaScript, IDs are valuable for helping you access and alter different elements on your page. This process is known as DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript, but remember: When writing CSS, use classes to style and select!
+When writing JavaScript, IDs are valuable for helping you access and alter different elements on your page. This process is known as DOM manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript, but remember: When writing CSS, use classes to style and select!
 
 
 #### Checkpoint:
