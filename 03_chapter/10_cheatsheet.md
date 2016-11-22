@@ -49,7 +49,7 @@ A path to a website or file that includes a full web address (starting with “h
 `<img src="http://imgur.com/awesomedog.jpg">`
 
 #### Relative File Path
-A path to a website or file that provides you the path to the resource you are looking for as it relates to your local file structure. For example, if you wanted to retrieve an image called "newlogo.png" that resides in a directory called `images`, you would enter the following relative address:
+A path to a website or file that provides you with directions to the resource you are looking for as it relates to your local file structure. For example, if you wanted to retrieve an image called "newlogo.png" that resides in a directory called `images`, you would enter the following relative address:
 
 `<img src="images/newlogo.png">`
 
