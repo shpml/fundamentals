@@ -6,7 +6,7 @@
 
 * Define the underlying processes of the web and the tools necessary to design and code websites.
 * Understand the basics of HTML structure and syntax.
-* Create a basic page using HTML essential tags: header, body, link, and paragraph.
+* Create a basic page using HTML essential tags: heading, body, link, and paragraph.
 
 ---
 
