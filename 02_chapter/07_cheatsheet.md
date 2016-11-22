@@ -19,7 +19,7 @@
 #### Elements
 * The building blocks of HTML. Elements consist of an opening tag, content, and a closing tag.
 
-  * **Headline Elements** are used for important text — like page titles — that describes content that follows. They range in order from the largest (`h1`) to the smallest (`h6`).
+  * **Heading Elements** are used for important text — like page titles — that describes content that follows. They range in order from the largest (`h1`) to the smallest (`h6`).
 
       ```html
       <h1>This would make a big headline.</h1>
