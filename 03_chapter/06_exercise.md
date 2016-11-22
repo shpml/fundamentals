@@ -11,7 +11,7 @@ If you don't see the JS Bin below, please refresh the page.
 
 #### HTML: Starter Code
 
-Let's begin with this starter code. The DOCTYPE, HTML, head, link, and body elements should be familiar to you from the previous unit. **Divs** and **IDs** are new HTML concepts for you. The value of the `id` attribute is the name of that `div`. For now, just remember that a "div element" is simply a tool to group content into boxes that you can control and style with CSS. The attribute ID lets you name an HTML element to style it differently than other elements of that type.
+Let's begin with this starter code. The DOCTYPE, HTML, head, link, and body elements should be familiar to you from the previous unit. **Divs** and **IDs** are new HTML concepts for you. The value of the `id` attribute is the name of that `div`. For now, just remember that a `div` element is simply a tool to group content into boxes that you can control and style with CSS. The attribute ID lets you name an HTML element to style it differently than other elements of that type.
 
 <a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
