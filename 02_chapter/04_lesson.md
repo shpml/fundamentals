@@ -16,8 +16,8 @@ An HTML boilerplate is a set of common HTML elements that helps us easily organi
 
 * Which tags don't require a closing tag?
 * Between which tags should the `<title> </title>` tags be placed?
-* What are parent elements? Children elements?
+* What are parent elements? Child elements?
 
 ---
 
-[Let's get some practice now!](05_exercise.md)
+[Now, let's get some practice!](05_exercise.md)
