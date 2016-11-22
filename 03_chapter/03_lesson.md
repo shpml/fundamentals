@@ -5,7 +5,7 @@
 
 Using CSS, you can reference and style your HTML by selecting the class and/or ID attributes of specific HTML elements.
 
-What’s the difference between the two? In short, using classes allows you to select and style many elements at once, while using IDs only allows you to style a one element at a time. Using these classes and IDs allows you to have greater flexibility in how you control the design of individual elements and groups of elements on a page.
+What’s the difference between the two? In short, using classes allows you to select and style many elements at once, while using IDs only allows you to style a one element at a time. Using these classes and IDs provides greater flexibility in how you control the design of individual elements and groups of elements on a page.
 
 <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/ugwfg1gtqw?seo=false&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
