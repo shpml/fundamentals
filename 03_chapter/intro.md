@@ -2,19 +2,19 @@
 
 ---
 
-##### By the end of this Unit, you'll be able to:
+##### By the end of this unit, you'll be able to:
 
 * Understand the difference between HTML and CSS.
 * Unlock millions of colors with RGB and Hex to design websites.
-* Learn to work with relative vs. absolute addresses.
+* Learn to work with both relative and absolute addresses.
 * Use classes and IDs to better organize and manipulate your code.
-* Add links, images, and list items to your webpage.
+* Add links, images, and list items to your web page.
 
 
 ---
 # Intro to CSS
 
-As we mentioned in Unit 3, HTML — or **H**yper**T**ext **M**arkup **L**anguage — is the standard language used to code web pages and add content to a website. CSS — **C**ascading **S**tyle **S**heets — dictates how content written in an HTML document looks, including stylistic layouts, colors, and fonts.
+As we mentioned in Unit 3, HTML — or **H**yper**T**ext **M**arkup **L**anguage — is the standard language used to code web pages and add content to a website. CSS — **C**ascading **S**tyle **S**heets — dictate how content written in an HTML document appears, incorporating stylistic layouts, colors, and fonts.
 
 In this unit, we'll learn more about CSS and styling to create better designed websites!
 
@@ -27,4 +27,4 @@ In this unit, we'll learn more about CSS and styling to create better designed w
 
 ---
 
-[On to the lesson.](02_lesson.md)
+[On to the next lesson!](02_lesson.md)
