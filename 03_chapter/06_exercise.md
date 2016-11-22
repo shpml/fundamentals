@@ -29,8 +29,8 @@ Let's look at the starter CSS. This `div` style sets the size, position, style, 
 3) Turn the `#rgb div` red by leaving its red value at its maximum of 255 and changing both the green and blue values to their minimums of 0.
 
 4) What color do you think you'd get if you set all the RGB values to their minimum of 0? Can you set all three boxes to that color?
-  * Go ahead and set all the numbers in the RGB color model to 0.
-  * Set all six characters in the Hex div to 0.
+  * Go ahead and set all the numbers in the `#rgb div` to 0.
+  * Set all six characters in the `#hex div` to 0.
   * Then, use a named color to make all three boxes the same color.
 
 **Bonus**:
