@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Tue Nov 22 2016 20:18:20 GMT+0000 (UTC)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Tue Nov 22 2016 20:44:08 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,14 +2044,14 @@
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
 <h1 id="styling-with-text-treatment">Styling with Text Treatment</h1>
-<p>As you learn to style your website, you&apos;ll want to get more creative with the types of fonts, as well as font size, style, and more. You&apos;ll also want to start aligning the text to suit your needs. Let&apos;s explore how to that!</p>
+<p>As you learn to style your website, you&apos;ll want to get more creative with the types of fonts you use, as well as font size, style, and more. You&apos;ll also want to start aligning the text to suit your needs. Let&apos;s explore how to accomplish that!</p>
 <p><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/mpderhu818?seo=false&amp;videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" width="100%" height="100%"></iframe></div></div></p>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 
 <h4 id="more-on-css-text-treatment">More on CSS Text Treatment</h4>
 <p><strong>font-family</strong></p>
-<p>To adjust the font of your selected text element, use the font-family property. For the value, enter the name of the font to which you&#x2019;d like to alter your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn&#x2019;t support the font you selected, it will choose the fallback. For example:</p>
+<p>To adjust the font of your selected text element, use the <code>font-family</code> property. For the value, enter the name of the font you&#x2019;d like to apply to your text. To be safe, try putting a comma after your selected font and enter a generic family as a fallback. If the web browser doesn&#x2019;t support the font you select, it will choose the fallback. For example:</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> Arial, sans-serif</span></span>;
 <span class="hljs-rule">}</span></span>
@@ -2062,15 +2062,15 @@
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>font-size</strong></p>
-<p>To increase or decrease the spacial dimensions of your chosen text, use the font-size property. As a beginner, you&#x2019;ll want to enter pixel values for your font-size values, like so:</p>
+<p>To increase or decrease the spacial dimensions of your chosen text, use the <code>font-size</code> property. As a beginner, you&#x2019;ll want to enter pixel values for your <code>font-size</code> values like so:</p>
 <pre><code class="lang-css"><span class="hljs-tag">h3</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">24px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>As you become more advanced, try using percentages or ems instead of pixels. These can be pretty tricky, so you may want to wait until we cover them in Unit 9.</p>
+<p>As you become a more advanced developer, try using percentages or ems instead of pixels. These can be pretty tricky, so you may want to wait until we cover them in Unit 9.</p>
 <p><strong>font-weight</strong></p>
-<p>To adjust the thickness of your selected text, use the font-weight property.</p>
-<p>As a beginner, you can enter values like &#x201C;normal&#x201D; to make your text thin and &#x201C;bold&#x201D; to make your text thick. As these values are not very specific, different browsers may interpret their display with slightly different outputs.</p>
+<p>To adjust the thickness of your selected text, use the <code>font-weight</code> property.</p>
+<p>As a beginner, you can enter values like &#x201C;normal&#x201D; to make your text thin and &#x201C;bold&#x201D; to make your text thick. Because these values are not very specific, different browsers may interpret their display with slightly different outputs.</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> normal</span></span>;
 <span class="hljs-rule">}</span></span>
@@ -2089,7 +2089,7 @@
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>font-style</strong></p>
-<p>To make normal text italic, use the property font-style and the value &#x201C;italic.&#x201D; To reverse this effect, use the value &#x201C;normal.&#x201D;</p>
+<p>To make normal text italic, use the property <code>font-style</code> and the value &quot;italic.&quot; To reverse this effect, use the value &quot;normal.&quot;</p>
 <pre><code class="lang-css"><span class="hljs-tag">a</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> italic</span></span>;
 <span class="hljs-rule">}</span></span>
@@ -2099,36 +2099,36 @@
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>text-align</strong></p>
-<p>To adjust the positioning of a text element, use the CSS property text-align and one of the following values: left, right, center, or justify.</p>
+<p>To adjust the positioning of a text element, use the CSS property <code>text-align</code> and one of the following values: left, right, center, or justify.</p>
 <pre><code class="lang-css"><span class="hljs-tag">body</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p><strong>text-decoration</strong></p>
-<p>To add an underline to normal text, use the CSS property text-decoration and the value &#x201C;underline.&#x201D;</p>
+<p>To add an underline to normal text, use the CSS property <code>text-decoration</code> and the value &quot;underline.&quot;</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>To remove underlines, use the value &#x201C;none.&#x201D; This declaration is often applied to anchor tags.</p>
+<p>To remove underlines, use the value &quot;none.&quot; This declaration is often applied to anchor tags.</p>
 <pre><code class="lang-css"><span class="hljs-tag">a</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
-<p>Less commonly used values include &#x201C;overline,&#x201D; which adds a line above text, and &#x201C;line-through,&#x201D; which strikes a line through your text.</p>
+<p>Less commonly used values include &quot;overline,&quot; which adds a line above text, and &quot;line-through,&quot; which strikes a line through your text.</p>
 <p><strong>text-transform</strong></p>
-<p>To adjust capitalization in a selected text element, use the text-transform property. Values for this property include &#x201C;uppercase&#x201D; to capitalize every letter, &#x201C;lowercase&#x201D; to uncapitalize every letter, and &#x201C;capitalize&#x201D; to make the first letter of every word in the selected text uppercase.</p>
+<p>To adjust capitalization in a selected text element, use the <code>text-transform</code> property. Values for this property include &quot;uppercase,&quot; which capitalizes every letter, &quot;lowercase,&quot; which uncapitalizes every letter, and &quot;capitalize,&quot; which makes the first letter of every word in the selected text uppercase.</p>
 <pre><code class="lang-css"><span class="hljs-tag">h1</span> <span class="hljs-rules">{
      <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> uppercase</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <h4 id="external-fonts">External Fonts</h4>
 <p>Did you know you can also link to external fonts in your HTML? Let&apos;s try it!</p>
-<p>There are three parts to loading up a web font with HTML. The href tells the browser where the font is.</p>
+<p>There are three parts to loading up a web font with HTML. The <code>href</code> tells the browser where the font is located.</p>
 <p><code>&lt;link href=&quot;http://fonts.googleapis.com/css?family=Open+Sans:400,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></p>
-<p>Here we want to open Sans font, in two weights: 400 for body text, and 800 for headings. The rest of this tells the HTML that the link goes to a CSS stylesheet. Follow the link to take a peek!</p>
+<p>Here, we want to open Sans font in two weights: 400 for body text, and 800 for headings. The rest of this element tells the HTML that the link directs to a CSS style sheet. Follow the link to take a peek!</p>
 <hr>
-<p><a href="06_exercise.html">On to the next lesson.</a></p>
+<p><a href="06_exercise.html">On to the next lesson!</a></p>
 
                     
                     </section>
