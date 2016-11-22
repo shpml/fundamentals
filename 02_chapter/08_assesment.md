@@ -27,7 +27,7 @@ Using your newfound knowledge from this unit, let's go ahead and create the foun
 
 4) Add a `title` element so the name of the game shows up in the browser tab.
 
-5) Create level one heading tags (`h1`), and add in the name of the game within those tags. In this case, the you can just title it "Memory Game."
+5) Create level one heading tags (`h1`), and add in the name of the game within those tags. In this case, you can just title it "Memory Game."
 
 6) Add in level two heading tags (`h2`) titled "Instructions".
 
