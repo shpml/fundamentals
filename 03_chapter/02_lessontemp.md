@@ -40,7 +40,7 @@ h3 {
 }
 ```
 
-As you become a more advanced developer, try using percentages or ems instead of pixels. These can be pretty tricky, so you may want to wait until we cover them in Unit 9.
+As you become more confident, try using percentages or ems instead of pixels. These can be pretty tricky, so you may want to wait until we cover them in Unit 9.
 
 
 **font-weight**
