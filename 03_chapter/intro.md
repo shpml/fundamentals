@@ -14,7 +14,7 @@
 ---
 # Intro to CSS
 
-As we mentioned in Unit 3, HTML — or **H**yper**T**ext **M**arkup **L**anguage — is the standard language used to code web pages and add content to a website. CSS — **C**ascading **S**tyle **S**heets — dictate how content written in an HTML document appears, incorporating stylistic layouts, colors, and fonts.
+As we mentioned in Unit 3, HTML — or **H**yper**T**ext **M**arkup **L**anguage — is the standard language used to code web pages and add content to a website. CSS — **C**ascading **S**tyle **S**heets — dictates how content written in an HTML document appears, incorporating stylistic layouts, colors, and fonts.
 
 In this unit, we'll learn more about CSS and styling to create better designed websites!
 
