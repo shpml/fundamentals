@@ -17,9 +17,9 @@ By mixing different intensities of these three colors, you can create millions o
 
 In a decimal (10) system, the values for each digit can run from 0 up to 9. In a hexadecimal (16) system, we use the letters A through F to extend that range; A is 10, B is 11, C is 12, and so on. For example, the number 63 is written in decimal as `63` (6 x 10 + 3 x 1). In hexadecimal, it is written as `3F` (3 x 16 + F x 1, where F is 15).
 
-Coming back to RGB, each pair of characters in an RGB hexadecimal code (e.g., `#46A529` -> `46`, `A5`, `29`) represents a color level between 0 (`00`) and 255 (`FF`) for red, green, or blue, respectively.
+Coming back to RGB, each pair of characters in a hexadecimal code (e.g., `#46A529` -> `46`, `A5`, `29`) represents a color level between 0 (`00`) and 255 (`FF`) for red, green, and blue, respectively.
 
-The format for color names, RGB, and hexadecimal should appear like so:
+The format for color names, RGB, and hexadecimal should look like so:
 
 ```css
 p {
