@@ -15,7 +15,7 @@ Using your newfound knowledge from this unit, let's go ahead and create the foun
 #### Requirements
 
 * Personalize your website by displaying the name of the game in a corresponding browser tab and including the name as a heading.
-* Now, let's make sure everyone knows how to play. Under your heading, include a subheadeing titled "Instructions," and add a section explaining how the Memory Card Game is played.
+* Now, let's make sure everyone knows how to play. Under your heading, include a subheading titled "Instructions," and add a section explaining how the Memory Card Game is played.
 
 ##### Here are the steps for completing your assignment:
 
