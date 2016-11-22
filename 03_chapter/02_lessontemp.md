@@ -129,7 +129,7 @@ h1 {
 
 Did you know you can also link to external fonts in your HTML? Let's try it!
 
-Loading a web font with HTML involves a three-step process. The `href` tells the browser where the font is located.
+There are three parts to loading up a web font with HTML. The `href` tells the browser where the font is located.
 
 `<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">`
 
