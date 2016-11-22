@@ -55,7 +55,7 @@ A path to a website or file that provides you with directions to the resource yo
 
 #### Why Separate HTML from CSS?
 
-Separating HTML from CSS offers you greater scalability and versatility. If you separate how your site looks from what your site says, its elements become more flexible. You can make a change in one place and have it apply to your whole site, applying any number of different styles to the same content.
+Separating HTML from CSS offers you greater scalability and versatility. If you separate how your site looks from what your site says, its elements become more flexible. You can make a change in one place and expand it to your whole site, applying any number of different styles to the same content.
 
 #### CSS Color Treatment
 
