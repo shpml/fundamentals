@@ -46,7 +46,7 @@ All card elements will share certain characteristics, such as width, border-radi
 
   * Then, switch over to some CSS. Create a new file and save it as `style.css`.
 
-  * Reference your "board" class, and give it a height of `80%` and a width of `50%`. Make sure you display it as an inline-block.
+  * Reference your "board" class, and give it a height of `80%` and a width of `50%`. Make sure you display it as an "inline-block."
 
   * Reference your "card" class in your `style.css`, and make the height of your cards `200px` and the width `150px`, with a black border of `1px`.
 
