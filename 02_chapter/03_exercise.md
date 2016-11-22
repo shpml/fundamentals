@@ -27,7 +27,7 @@ Built with WDI at GA.
 
 <a class="jsbin-embed" href="http://jsbin.com/xuhubej/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.37.0"></script>
 
-2) Next, open a *level one heading tag* (`h1`) at the very beginning where it says, "My first website!"
+2) Next, open a *level one heading tag* (`h1`) at the very beginning where it says "My first website!"
 
 3) Did you notice that all the content was set to `h1`? Aha! That's because you still need to close the tag, which tells the browser when to stop rendering the text as a heading. Go ahead and close the heading tag now.
 
