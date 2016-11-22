@@ -29,7 +29,7 @@ Using your newfound knowledge from this unit, let's go ahead and create the foun
 
 5) Create level one heading tags (`h1`), and add in the name of the game within those tags. In this case, you can just title it "Memory Game."
 
-6) Add in level two heading tags (`h2`) titled "Instructions".
+6) Add in level two heading tags (`h2`) titled "Instructions."
 
 7) Below your level two heading tags, type the following text in between paragraph (`p`) tags:
 
