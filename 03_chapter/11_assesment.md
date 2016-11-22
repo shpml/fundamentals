@@ -38,7 +38,7 @@ You'll use these `div`s to create a "board" and the individual "cards" that will
 
 3) Because the cards will all look similar (if they looked different, you'd be able to cheat in the memory game!), you'll create CSS that shares a similar style across multiple elements. Therefore, you'll want to utilize the more general selector, `class`.
 
-All card elements will share certain characteristics, such as width, border-radius, etc., so we can go ahead and define these CSS properties to the class `card`.
+All card elements will share certain characteristics, such as width, border-radius, etc., so we can go ahead and define these CSS properties to the class "card."
 
   * Assign a class called "board" to the first `div`.  
 
