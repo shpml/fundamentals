@@ -113,7 +113,7 @@ a {
 }
 ```
 
-Less commonly used values include "overline," which adds a line above text, and "line-through," which strikes a line through your text.
+Less commonly used values include "overline," which adds a line above the text, and "line-through," which strikes a line through the text.
 
 **text-transform**
 
