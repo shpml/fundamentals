@@ -11,7 +11,7 @@ Adding images to your website can help it come to life. To add images to your si
 
 ### Breaking Down the Image Tag
 
-The `img` tag alone doesn't do much. It's like putting an empty `<a>` tag in your code. You need to tell the browser which image to display using attributes. That's where the `src` attribute comes in. The `src` attribute for an `img` tag works just like the `href` attribute for a link: It tells a browser where to locate an image.
+The `img` tag alone doesn't do much. It's like putting an empty `a` tag in your code. You need to tell the browser which image to display using attributes. That's where the `src` attribute comes in. The `src` attribute for an `img` tag works just like the `href` attribute for a link: It tells a browser where to locate an image.
 
 ```html
 <img src="">
