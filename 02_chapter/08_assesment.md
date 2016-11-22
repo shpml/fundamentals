@@ -35,7 +35,7 @@ Using your newfound knowledge from this unit, let's go ahead and create the foun
 
 *Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso, or Pairs, is a card game in which all of the cards are laid facedown on a surface and two cards are flipped over each turn. The object of the game is to turn over pairs of matching cards.*
 
-8) Great! In order to preview your page, double click your `index.html` file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the page.
+8) Great! In order to preview your page, double click your `index.html` file to open it in the browser. If you want to make changes to your page and view those updates in the browser, simply make sure your file is saved before refreshing the browser window.
 
 
 #### Bonus
