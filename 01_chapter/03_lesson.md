@@ -15,4 +15,4 @@ We'll use text editors and web browsers to build web applications in class and -
 
 ---
 
-[OK. Let's learn some more about Sublime Text.](05_lesson.md)
+[OK! Let's learn some more about Sublime Text.](05_lesson.md)
