@@ -24,7 +24,7 @@ Ask yourself if you can apply the style to the element selector instead of creat
 
 You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, while any style specified with an ID cannot be reused. Also, IDs can override classes, making a code base more difficult to maintain as it gets larger.
 
-In general, using classes in your CSS will help with the scalability of your design and allow you to write cleaner code.
+In general, using classes in your CSS will aid in the scalability of your design and help you write cleaner code.
 
 ## Using IDs with JavaScript
 
