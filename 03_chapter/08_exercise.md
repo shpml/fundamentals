@@ -16,7 +16,7 @@ If you don't see the JS Bin below, please refresh the page.
 
 2) Write in an `img` tag between the `body` tags.
 
-3) Add `src="http://i.imgur.com/z9gGd0t.jpg"` to your `img` tag (Grumpy Cat has strong opinions about visual design!).
+3) Add `src="http://i.imgur.com/z9gGd0t.jpg"` to your `img` tag. (Grumpy Cat has strong opinions about visual design!)
 
 4) Add `alt="grumpy cat hates bad design"` to your `img` tag.
 
