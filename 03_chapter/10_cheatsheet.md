@@ -66,7 +66,7 @@ Instead, you'll want to use either RGB or hexadecimal (Hex) codes. Both of these
 By mixing different intensities of these three colors, you can create millions of different colors and shades. Intensity values range from 0 (no intensity) to 255 (full intensity) in the RGB system.
 
 In Hex, they range from 0-9 and then continue from A-F, employing two characters each for red, green, and blue.
-This becomes clearer with examples, so here are some common colors and their RGB and Hex equivalents:
+This becomes clearer with examples, so here are some common colors and their RGB and Hex equivalents.
 
 The format for color names, RGB, and hexadecimal should look like so:
 
