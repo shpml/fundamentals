@@ -16,7 +16,7 @@ Let's begin with this starter code. The DOCTYPE, HTML, head, link, and body elem
 <a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?html&height=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
 #### CSS: Starter Code
-Let's look at the starter CSS. This `div` style sets the size, position, style, and white space on all three boxes.
+Let's look at the starter CSS. This `div` style sets the size, position, style, and white space of all three boxes.
 
 <a class="jsbin-embed" href="http://jsbin.com/goyaqo/2/embed?css">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.11"></script>
 
