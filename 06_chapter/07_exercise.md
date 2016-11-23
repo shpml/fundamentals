@@ -26,4 +26,4 @@ Using the command line alone:
 
 ---
 
-[Continue on to the next lesson.](08_lesson.md)
+[On to the next lesson!](08_lesson.md)
