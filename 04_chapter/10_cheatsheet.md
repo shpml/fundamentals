@@ -48,7 +48,7 @@ Here's a diagram to help you remember:
 * A line of variable thickness, color, and style that surrounds the padding and content.
 
 #### Margin
-* The area outside of the border that separates the object from other objects around it. Margin has a transparent `background-color`.
+* The area outside of the border that separates the object from other objects around it. Margins have a transparent `background-color`.
 
 #### Inline Elements
 * HTML elements that take up the width of their contents and do not begin with new line. They cannot have an assigned height or width.
