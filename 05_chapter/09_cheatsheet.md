@@ -51,7 +51,7 @@
 
 By default, block elements in HTML stack on top of each other. Floats let us change this behavior, allowing elements to sit horizontally on the page.
 
-This CSS property is called float, and its common values are left, right, and none (the default is none).
+This CSS property is called `float`, and its common values are left, right, and none (the default is none).
 
 Clears are used when we want to “turn off” floating — essentially preventing elements from flowing around the floating element.
 
