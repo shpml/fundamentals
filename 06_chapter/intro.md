@@ -106,7 +106,7 @@ The terminal window is where you'll tell the computer what to do, and where the 
 
 - The **prompt** is the `$` that automatically shows up on the end of the first
 line. It's the command line equivalent of "standby" and indicates the terminal is
-ready to accept your **command**. We'll learn a few commands later in this lesson.
+ready to accept your **command**. We'll learn a few commands later in this unit.
 
 - The **cursor** follows the prompt, and the text you type will appear here — just
 like in every other setting where you've seen a cursor.
