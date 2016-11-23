@@ -32,9 +32,9 @@ We'll be using external fonts for this challenge. Let's start out by linking the
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
 ```
 
-2) Now, you need to tell your CSS where to use the font. Change the `font-family` declaration in you body's style rule to "Open Sans, sans serif." Remember to put Open Sans in quotes so the CSS reads them together.
+2) Now, you need to tell your CSS where to use the font. Change the `font-family` declaration in your body's style rule to "Open Sans, sans serif." Remember to put Open Sans in quotes so the CSS reads them together.
 
-*Nice! You just built a font stack. Font stacks give CSS guidance on wh font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans serif font!*
+*Nice! You just built a font stack. Font stacks give CSS guidance on which font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans serif font!*
 
 3) We want all headings to be bold. So, add a font-weight property to h1 and h2, and set it to 800.
 
@@ -61,7 +61,7 @@ Now, let's add in some content and build out the navigation bar.
 
 6) Now, we'll start moving things around on the screen. Give the nav a links 1.8em of margin. Set their display to inline-block.
 
-7) Looking good! Let's increase the nav's font-size, then reposition the whole thing with a float! Set the nav style's font-size to 1em and float it right.
+7) Looking good! Let's increase the nav's `font-size`, then reposition the whole thing with a float! Set the nav style's `font-size` to 1em and float it right.
 
 Here's what your design should start to look like:
 
