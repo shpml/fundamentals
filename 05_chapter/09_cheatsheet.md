@@ -61,4 +61,4 @@ A common method involves using the CSS property `clear` with the value "both." W
 
 Column layout refers to the design of pages composed of multiple block sections with the same vertical height.
 
-Columns are created by wrapping a block of content with a div element, applying a float, and modifying the padding, margin, and border dimensions to adjust their size.
+Columns are created by wrapping a block of content with a `div` element, applying a float, and modifying the padding, margin, and border dimensions to adjust their size.
