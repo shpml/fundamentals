@@ -17,7 +17,7 @@ The current state of your game could use some formatting and personalization.
 
 ##### Below are the steps for completing this assignment:
 
-1) Create your footer with the given text and a heart icon underneath your `div`s, before your closing body tag.
+1) Create your footer with the following text and a heart icon underneath your `div`s, before your closing body tag.
 
 *Created with &hearts; by GA*
 
