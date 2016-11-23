@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-We've gone ahead and created a new directory for you called <em>World</em>. Download it <a href="http://generalassembly.github.io/prework/assets/activity/World.zip">here</a>.
+We've gone ahead and created a new directory for you called `World`. Download it <a href="http://generalassembly.github.io/prework/assets/activity/World.zip">here</a>.
 
 When you double click on the zip file, it will create a new folder next to it in your `Downloads` folder.
 
