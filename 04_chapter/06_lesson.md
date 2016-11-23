@@ -51,7 +51,7 @@ A few other semantic elements you can use include:
 Any navigational links that help users move around your page should be wrapped in `<nav>` tags.
 
 #### `<section> </section>`
-These elements are used to group a page's content into related chunks. `section` tags would work OK for our example page, however, there's an even better semantic element available to us...
+These elements are used to group a page's content into related chunks. `<section>` tags would work OK for our example page, however, there's an even better semantic element available to us...
 
 #### `<article> </article>`
 These elements are used to contain standalone blocks of text such as news articles, blog posts, etc.
