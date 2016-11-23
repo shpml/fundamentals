@@ -91,7 +91,7 @@ When you open Terminal, you will see a window like this:
 
 > **NOTE** Practice using Spotlight to open files and applications on your computer. It'll make you more efficient as you navigate back and forth often between Terminal, your text editor, and your browser.
 
-Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **Return**.
+Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **return**.
 
 **Windows users:**
 When you open Git Bash, you will see a window like this:
