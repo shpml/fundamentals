@@ -52,7 +52,7 @@ Fabulous!
 
 13) Flip to your HTML, and wrap a new `div` with the class "hero" around the main image.
 
-*Your `img` might freak out, but don't worry. It's because the "hero" `div` is grabbing the default `div style written for your columns.*
+*Your `img` might freak out, but don't worry. It's because the "hero" `div` is grabbing the default `div` style written for your columns.*
 
 14) Let's prevent that from happening. You need to counteract the styles set in the `div` selector by setting new styles for "hero." Set the "hero" class' width to 100%, its display to block, and its margin to 0.
 
