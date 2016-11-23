@@ -48,21 +48,21 @@ Fabulous!
 
 *Well done! The basics of the multi-column layout are all laid out. All that's left to finish are some visual elements, including color.*
 
-12) Assign img a width of 480px.
+12) Assign `img` a width of 480px.
 
-13) Flip to your HTML, and wrap a new div with the class "hero" around the main image.
+13) Flip to your HTML, and wrap a new `div` with the class "hero" around the main image.
 
-*Your img might freak out, but don't worry. It's because the "hero" div is grabbing the default div style written for your columns.*
+*Your `img` might freak out, but don't worry. It's because the "hero" `div` is grabbing the default `div style written for your columns.*
 
-14) Let's prevent that from happening. You need to counteract the styles set in the div selector by setting new styles for "hero." Set the "hero" class' width to 100%, its display to block, and its margin to 0.
+14) Let's prevent that from happening. You need to counteract the styles set in the `div` selector by setting new styles for "hero." Set the "hero" class' width to 100%, its display to block, and its margin to 0.
 
-15) In your HTML, wrap a section around both divs: open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
+15) In your HTML, wrap a section around both `div`s: Open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
 
 16) Create a CSS style for the section. Set its background to #222222 and make its color white. Set the section's overflow to auto.
 
-17) Set the h2 color to pale yellow: #fffebb. Set h2's border-bottom to #fffebb as well.
+17) Set the `h2` color to pale yellow: #fffebb. Set `h2`'s `border-bottom` to #fffebb as well.
 
-18). Set the li color to black and its background to white.
+18). Set the `li` color to black and its background to white.
 
 Bravo! Well done.
 
