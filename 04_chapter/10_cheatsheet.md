@@ -51,7 +51,7 @@ Here's a diagram to help you remember:
 * The area outside of the border that separates the object from other objects around it. Margins have a transparent `background-color`.
 
 #### Inline Elements
-* HTML elements that take up the width of their contents and do not begin with new line. They cannot have an assigned height or width.
+* HTML elements that take up the width of their contents and do not begin with a new line. They cannot have an assigned height or width.
 
 #### Block Elements
 * HTML elements that break to a new line before and after the element and take up the width of their containers by default (this is often the browser window itself). They can have an assigned padding, margin, height, and width.
