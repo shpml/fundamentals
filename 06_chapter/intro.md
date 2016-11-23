@@ -85,7 +85,7 @@ Follow the prompts in the installation window.
 ## Get Started Using Terminal
 
 **Mac/Ubuntu users:**
-When you open Terminal, you will see a window like this:
+When you open a terminal application, you will see a window like this:
 
 ![:Blank Console](../assets/Graphics/terminal_blank.gif)
 
