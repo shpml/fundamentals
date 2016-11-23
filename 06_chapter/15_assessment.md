@@ -2,7 +2,7 @@
 
 ---
 
-*Let's take a break from our Memory Game and practice using the terminal! The terminal will help us navigate our file and learn to push our code to the cloud using a command line tool called Git.*
+*Let's take a break from our memory game and practice using the terminal! The terminal will help us navigate our file and learn to push our code to the cloud using a command line tool called Git.*
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
