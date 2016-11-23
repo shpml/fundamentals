@@ -26,13 +26,13 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 
 4) If you haven't already, navigate back into the `World` directory.
 
-5. List the contents of `South_America`. There should be three country directories: Argentina, Brazil, and Chile.
+5) List the contents of `South_America`. There should be three country directories: Argentina, Brazil, and Chile.
 
-7. Move the contents of `South_America` into the `North_America` folder.
+7) Move the contents of `South_America` into the `North_America` folder.
 
-8. Delete the now empty `South_America` directory.
+8) Delete the now empty `South_America` directory.
 
-9. Change the name of the `North_America` folder to `Americas`.
+9) Change the name of the `North_America` folder to `Americas`.
 
 > Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.
 
