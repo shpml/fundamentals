@@ -50,7 +50,7 @@ Your two links should have an orange background with white text!
 9) After you float your `nav` items, you should notice how your header wraps around the side of the nav bar. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
 
 * Go ahead, and add a class of "clearfix" to your nav bar.
-* In your CSS file, set your "clearfix" class to the following:
+* In your CSS file, set your `clearfix` class to the following:
 
 ```css
 ...
