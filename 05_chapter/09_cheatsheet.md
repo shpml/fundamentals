@@ -5,7 +5,7 @@
 # Navigation and Layout Cheat Sheet
 
 #### Navigation Bar
-* A section on a web page with links to other pages or parts of a site. It can appear as a vertical, horizontal, or alternatively styled block.
+* A section on a web page with links to other pages or parts of the site. It can appear as a vertical, horizontal, or alternatively styled block.
 
 #### Pseudo-class
 * A keyword added to selectors that indicates a particular condition of the element in which to apply CSS styling. For example, :hover will apply a style when a user hovers over the element specified by the selector.
