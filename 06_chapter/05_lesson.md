@@ -33,7 +33,7 @@ Again, we get a similar response:
 -bash: Where: command not found
 ```
 
-Great. We've established that our command line doesn't understand plain English, and that we'll have to use special words to make up our commands. Let's try this one to start:
+Great. We've established that our command line doesn't understand plain English, and that we'll have to use special words while writing our commands. Let's try this one to start:
 
 ```
 $ pwd
