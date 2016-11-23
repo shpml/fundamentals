@@ -145,7 +145,7 @@ $ mv joke.txt jokes/joke.txt
 If you are trying to copy or remove folders and not files, we need to add "an
 option" to our command. Options are extra settings that we want to apply to our
 commands. Options given to commands are always of the format `--word` or `-letter`.
-As an example, let's try to copy our jokes folder.
+As an example, let's try to copy our `jokes` folder.
 
 ```
 $ cp -r jokes copy_of_jokes
