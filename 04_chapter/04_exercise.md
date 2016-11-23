@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-In this exercise, we'll take some time to play around with **divs**, **spans**, **margin**, and **padding** to create a text layout.
+In this exercise, we'll take some time to play around with **divs**, **spans**, **margins**, and **padding** to create a text layout.
 
 Here's what the content will look like when you're finished styling. Fancy!
 
