@@ -32,7 +32,7 @@ Your job is to use the notes below to write the HTML for ELK Web Design.
   * The header also contains this image: http://i.imgur.com/pdsjjxD.jpg
 
 2) **The Body**
-  * Inside the body there are two sections (or "`div`s"). One section is for the "About" content, and the other is for "Services." The section's headings are level two, or `h2`.
+  * Inside the body there are two sections (or `div`s). One section is for the "About" content, and the other is for "Services." The section's headings are level two, or `h2`.
 
   * _About Content_:
 
