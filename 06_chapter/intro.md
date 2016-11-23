@@ -105,7 +105,7 @@ Double click on the Git Bash icon to open a new session.
 The terminal window is where you'll tell the computer what to do, and where the computer will display its reply. Let's break this window down:
 
 - The **prompt** is the `$` that automatically shows up on the end of the first
-line. It's the command line equivalent of "standby" and indicates Terminal is
+line. It's the command line equivalent of "standby" and indicates the terminal is
 ready to accept your **command**. We'll learn a few commands later in this lesson.
 
 - The **cursor** follows the prompt, and the text you type will appear here — just
