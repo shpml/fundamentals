@@ -55,7 +55,7 @@ Now, let's add in some content and build out the navigation bar.
 
 4) Now, let's put some rules in place to format our navigation. In your CSS, add two new empty selectors: `nav` and `nav a`.
 
-5) Rather than resetting all our CSS, let's manually reset its default link state. Set nav a's text-decoration value to none, and set its color to black.
+5) Rather than resetting all our CSS, let's manually reset its default link state. Set `nav a`'s `text-decoration` value to none, and set its color to black.
 
 *Add `text-decoration: none;` to the `nav a` CSS property to remove the default blue color and underlining from your links.*
 
