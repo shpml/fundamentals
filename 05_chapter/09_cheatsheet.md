@@ -29,7 +29,7 @@
 ```
 
 #### CSS Reset
-* There is no true standard for how un-styled HTML elements are rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of its default styles and starting with a clean slate. Always link to reset.css in the head section of your HTML, above the link to your main CSS file, like so:
+* There is no true standard for how unstyled HTML elements are rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of its default styles and starting with a clean slate. Always link to reset.css in the head section of your HTML, above the link to your main CSS file, like so:
 
 ````HTML
 <!DOCTYPE html>
