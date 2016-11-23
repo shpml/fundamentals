@@ -18,7 +18,7 @@
 * *Synonyms*: NTFS (Windows' File System), HFS+ (Apple's File System), file allocation table, GFS (Global File System)
 
 ####Directory
-* An organizational unit, or container, used to organize computer files into a hierarchical structure.
+* A unit, or container, used to organize computer files into a hierarchical structure.
 * *Synonyms*: folder, catalog, drawer
 
 ####Path
