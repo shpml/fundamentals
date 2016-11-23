@@ -14,7 +14,7 @@ Oftentimes a **sitemap**, or **user flow**, illustrates the primary and alternat
 
 ![](/assets/elkwebdesign/userflow.png)
 
-In order to bring this user flow to life, we need to build out a **navigation bar**. A navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav></nav>` elements to define a set of navigation links, and your navigation can appear vertically, horizontally, or as an alternatively styled block.
+In order to bring this user flow to life, we need to build out a **navigation bar**. A navigation bar is a section on a website that links to other parts of the site. You'll use the `<nav> </nav>` elements to define a set of navigation links, and your navigation can appear vertically, horizontally, or as an alternatively styled block.
 
 Before we get started, look at the following code to see how you'd add a nav bar on your site!
 
