@@ -14,7 +14,7 @@ Most computer users move their mouses, click on icons, and drag and drop files f
 
 When you're using the computer this way, you're using what's called a Graphical User Interface, or GUI. In a GUI (pronounced "gooey"), you communicate with your computer using a combination of text, images, and gestures.
 
-But you are on a journey toward transcending ordinary computer users. You're becoming a developer, and developers like to interact with computers in a different way – through the command line interface (CLI).
+But you are on a journey toward transcending ordinary computer users. You're becoming a developer, and developers like to interact with computers in a different way — through the command line interface (CLI).
 
 Unlike the GUI, the command line is a *text-based interface*, where you communicate with your computer using text alone.
 
