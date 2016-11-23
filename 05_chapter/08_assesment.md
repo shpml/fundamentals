@@ -34,7 +34,7 @@ Currently, the cards in your game are all formatted vertically (and very awkward
 
 5) Add a horizontal rule after your closing paragraph tag.
 
-6) Style your navbar by adding a background color of #808080 in your CSS file. The navbar should now look gray!
+6) Style your nav bar by adding a background color of #808080 in your CSS file. The nav bar should now look gray!
 
 7) Color and position your navbar items. Follow the steps below:
 
@@ -47,7 +47,7 @@ Your two links should have an orange background with white text!
 
 8) Now, add a hover state by setting the background color to #ee5f3c. When you hover over the links, they should turn red. 
 
-9) After you floated your nav items, you should have noticed how your header became wrapped around the side of it. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
+9) After you floated your `nav` items, you should have noticed how your header became wrapped around the side of it. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
 
 * Go ahead, and add a class of "clearfix" to your nav bar.
 * In your CSS file, set your clearfix class to the following:
