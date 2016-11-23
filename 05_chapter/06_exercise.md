@@ -28,8 +28,8 @@ Here's the editor you should use to write your code:
 6) Give `#services` a float of right.
 
 At this point, you'll notice a few problems with our page:
-  * The two columns are smushed together.
-  * The footer is behaving oddly.
+* The two columns are smushed together.
+* The footer is behaving oddly.
 
 7) Let's start with the quickest fix. Give the footer a clear value of both.
 
