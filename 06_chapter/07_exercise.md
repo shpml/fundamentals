@@ -10,7 +10,7 @@ When you double click on the zip file, it will create a new folder next to it in
 
 Now that you can picture where the file is located, open Terminal.
 
-Using the command line alone,
+Using the command line alone:
 
 1) Navigate into your `Downloads` directory.
 
