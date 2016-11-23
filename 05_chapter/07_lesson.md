@@ -9,7 +9,7 @@
 
 ## Reminder: Don't Use IDs in CSS
 
-You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, whereas any style specified with an ID can only be used once. Also, IDs can override classes, making a codebase more difficult to maintain as it gets larger.
+You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, whereas any style specified with an ID can only be used once. Also, IDs can override classes, making a code base more difficult to maintain as it gets larger.
 
 Overall, using classes in your CSS will help with the scalability of your design and your ability to write cleaner code.
 
