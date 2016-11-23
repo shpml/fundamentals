@@ -4,7 +4,7 @@
 
 # Navigation & Page Layout
 
-Having learned about layout, we are now even better equipped to structure the HTML of our game.
+Having learned about layout, we are now even better equipped to structure the HTML of our memory game.
 
 ## Exercise
 
