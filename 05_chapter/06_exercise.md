@@ -6,7 +6,7 @@
 
 ### Elk Web Design: Part 3
 
-This is the final part of our ELK Design exercise! Here, we'll become more familiar with positioning elements and images, deal more with floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
+This is the final part of our ELK Design exercise! Here, we'll become more familiar with positioning elements and images using floats. Remember, floats pull whatever element they're applied to out of the normal document flow. They're your secret weapon for positioning HTML elements on a page!
 
 ### Instructions
 If you don't see the JS Bin below, please refresh the page.
