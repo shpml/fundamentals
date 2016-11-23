@@ -60,7 +60,7 @@ The command `pwd` stands for "Print Working Directory."
 We use this command when we want the command line to tell us which folder (or directory) of our computer we're currently in.
 
 Just like the Finder on a Mac, your command line interface (CLI) places you in a particular folder
-on your computer. `pwd` tells you where you're currently located in your file system. Usually, when you open the Terminal application, you start off in your "home folder," which shares the name of your username on your computer.
+on your computer. `pwd` tells you where you're currently located in your file system. Usually, when you open a terminal application, you start off in your "home folder," which shares the name of your username on your computer.
 
 If we were using Finder, we'd be able to see the files and folders that are present in this folder. In a CLI, however, if we want to see the files and folders in our current location, we need to ask for that using another command.
 
