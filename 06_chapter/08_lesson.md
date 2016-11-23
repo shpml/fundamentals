@@ -168,4 +168,4 @@ Note that the `mv` command does not need an `-r` option to move folders.
 
 ---
 
-[Here's another exercise for you](09_exercise.md) - give it a shot.
+[Here's another exercise for you](09_exercise.md) — give it a shot!
