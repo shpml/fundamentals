@@ -55,7 +55,7 @@ This CSS property is called `float`, and its common values are left, right, and 
 
 Clears are used when we want to “turn off” floating — essentially preventing elements from flowing around the floating element.
 
-A common method involves using the CSS property `clear` with the value "both." When this method is ineffective, the clearfix method — as seen above — should resolve any issues.
+A common method involves using the CSS property `clear` with the value "both." When this method is ineffective, the `clearfix` method — as seen above — should resolve any issues.
 
 #### Column Layout
 
