@@ -61,7 +61,7 @@ Now, let's add in some content and build out the navigation bar.
 
 6) Now, we'll start moving things around on the screen. Give the `nav a` links a margin of 1.8em. Set their display to inline-block.
 
-7) Looking good! Let's increase the nav's `font-size`, then reposition the whole thing with a float! Set the nav style's `font-size` to 1em and float it right.
+7) Looking good! Let's increase the nav's `font-size`, then reposition the whole thing with a float! Set the `nav` style's `font-size` to 1em and float it right.
 
 Here's what your design should start to look like:
 
