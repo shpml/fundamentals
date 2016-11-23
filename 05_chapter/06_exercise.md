@@ -46,7 +46,7 @@ Fabulous!
 
 11) Set its `text-align` to center and `line-height` to 6em.
 
-*Well done! The basics of the multi-column layout are all laid out. All that's left is to finish are some visual elements, including color.*
+*Well done! The basics of the multi-column layout are all laid out. All that's left to finish are some visual elements, including color.*
 
 12) Assign img a width of 480px.
 
