@@ -13,7 +13,7 @@ Having learned about layout, we are now even better equipped to structure the HT
 Currently, the cards in your game are all formatted vertically (and very awkwardly), and its styling is seriously lacking.
 * Start by changing the orientation of the cards so that they are structured in a conventional, two-by-two grid layout.
 * Next, create a nav bar for the game with links to the "Instructions" and "Game" sections, as if they were on two separate pages.
-* Style the navbar in a way that lets users know when they are hovering over a clickable item.
+* Style the nav bar in a way that lets users know when they are hovering over a clickable item.
 * Finally, be sure to add some color to your footer. It's always good to keep user experience (UX) in mind!
 
 **Bonus:**
