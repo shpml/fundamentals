@@ -12,7 +12,7 @@ Here's what the content will look like when you're finished styling. Fancy!
 
 If you don't see the JS Bin below, please refresh the page.
 
-We won't touch this HTML, but take a look at it before you hop over to the CSS tab. To give yourself more space, you can select the "CSS" and "Output" tabs. Also, we've provided you with the `p` style.
+We won't touch this HTML, but take a look at it before you hop over to the CSS tab. To give yourself more space, you can select the CSS and Output tabs. Also, we've provided you with the `p` style.
 
 <a class="jsbin-embed" href="https://jsbin.com/likihi/embed?html,css,output&height=600px">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
