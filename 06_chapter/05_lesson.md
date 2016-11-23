@@ -90,7 +90,7 @@ It looks like there are some folders in here! Let's find out what's inside our `
 $ cd Documents
 ```
 
-We have now navigated to the Documents folder.
+We have now navigated to the `Documents` folder.
 
 The `cd` command, which stands for "change directory," is used to navigate to a particular folder on your computer.
 
