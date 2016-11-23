@@ -24,7 +24,7 @@ Currently, the cards in your game are all formatted vertically (and very awkward
 
 1) Open up your `index.html` and `style.css` pages. By this point, they should be linked together!
 
-2) First, set your board as an inline-block element, and define the width and height of your board. Go ahead and set both width and height to 50% in your CSS file.
+2) First, set your board as an inline-block element, and define its width and height. Go ahead and set both width and height to 50% in your CSS file.
 
 3) Add a float of left and a margin of 8% to the `div`s that have a class of "card."
 
