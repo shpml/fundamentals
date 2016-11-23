@@ -65,7 +65,7 @@ Your two links should have an orange background with white text!
 ...
 ```
 
-10) Finally, add a background-color of #808080 to your footer.
+10) Finally, add a `background-color` of #808080 to your footer.
 
 
 #### Deliverable
