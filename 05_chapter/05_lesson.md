@@ -16,4 +16,4 @@
 
 ---
 
-Ready to Practice? [Click here.](03_exercise.md)
+Ready to practice? [Click here.](03_exercise.md)
