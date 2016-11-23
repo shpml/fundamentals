@@ -80,7 +80,7 @@ Music              Pictures         Public
 
 (Note: Again, on your own machine, because you may have different files and folders, you may see additional items when you enter `ls`!)
 
-If you're following along in **Git Bash on Windows**, it's all right if the files and folders listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
+If you're following along in **Git Bash on Windows**, it's alright if the files and folders listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
 
 The `ls` command, which loosely stands for "list," lists the contents of a folder.
 
