@@ -11,7 +11,7 @@
 #### Checkpoint
 
 * Why should I reset my CSS?
-* How do you create a navigation bar linking multiple HTML pages?
+* How do you create a navigation bar that links multiple HTML pages?
 
 
 #### Further Reading
