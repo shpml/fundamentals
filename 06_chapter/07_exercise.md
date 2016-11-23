@@ -20,7 +20,7 @@ Using the command line alone:
 
 4) In one of the six continents within the `World` directory is a hidden file, `.carmen_sandiego.png`. Using only the command line, find out where in the `World` is Carmen Sandiego.
 
-*Don't delete the 'World' directory yet! We'll be working with it in another exercise this unit.*
+*Don't delete the `World` directory yet! We'll be working with it in another exercise this unit.*
 
 > *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
