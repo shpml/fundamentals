@@ -116,7 +116,7 @@ copied to that folder. If the second argument is a **file**, the file in the fir
 is moved or copied to a file with the file name specified in the second argument. Hence, when we copied
 our joke, our file `joke.txt` was copied to another file called `joke2.txt`.
 
-Perhaps we should make another folder inside `funny_things` called `jokes`, and
+Perhaps we should make another folder inside `funny_things` called `jokes` and
 put our joke in there. After all, we could have funny jokes, funny pictures, and much
 more. In order to achieve this, we're going to follow a series of long-winded
 steps so we may familiarize ourselves with some more useful commands.
