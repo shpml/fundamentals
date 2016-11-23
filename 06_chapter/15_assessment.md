@@ -6,7 +6,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Close and restart your Terminal application.
+Close and restart your terminal application.
 
 1) In your command line, navigate to your home directory.
 
