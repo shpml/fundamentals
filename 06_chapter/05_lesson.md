@@ -147,7 +147,7 @@ Will list *all* files in a directory, including hidden files (files whose names 
 $ cd Downloads
 ```
 
-Calls the command `cd` to change directories. We provide it with the option of where to navigate to.
+Calls the command `cd` to change directories. We provide it with the option of where to navigate.
 
 
 
