@@ -4,9 +4,9 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Go ahead an open up "Terminal" using any of the following methods:
+Go ahead an open up Terminal using any of the following methods:
 
-1 . Navigate to your Applications folder, and double click on Terminal.
+1 . Navigate to your Applications folder, and double click on "Terminal."
 
 ![img](../assets/Graphics/where_to_find_terminal.gif)
 
