@@ -25,7 +25,7 @@ The way your computer organizes and stores files is called a **file system**. Le
 
 ![Root Directory](../assets/chapter1/root_directory.png)
 
-For the purposes of this lesson, the root directory of everything on your computer is your home directory. It's aptly represented in the GUI by a house icon (if you're using a Mac, that is).
+For the purposes of this lesson, the root directory of everything on your computer is your **home directory**. It's aptly represented in the GUI by a house icon (if you're using a Mac, that is).
 
 ![Home Directory](../assets/chapter1/home.png)
 
