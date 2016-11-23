@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.6" data-basepath=".." data-revision="Wed Nov 23 2016 21:24:43 GMT+0000 (UTC)">
+    <div class="book" data-level="5.6" data-basepath=".." data-revision="Wed Nov 23 2016 21:26:45 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2071,7 +2071,7 @@
 </code></pre>
 <h4 id="css-reset">CSS Reset</h4>
 <ul>
-<li>There is no true standard for how unstyled HTML elements are rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of its default styles and starting with a clean slate. Always link to <code>reset.css</code> in the head section of your HTML before the link to your main CSS file like so:</li>
+<li>There is no true standard for how unstyled HTML elements are rendered in various browsers. In other words, each browser assigns its own padding, margin, line-height, font-size, etc. to every element. To combat this, we reset the CSS, essentially wiping out all of its default styles and starting with a clean slate. Always link to <code>reset.css</code> in the head section of your HTML above to your main CSS file, like so:</li>
 </ul>
 <pre><code class="lang-HTML"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
@@ -2089,7 +2089,7 @@
 </code></pre>
 <h4 id="floats-and-clears">Floats and Clears</h4>
 <p>By default, block elements in HTML stack on top of each other. Floats let us change this behavior, allowing elements to sit horizontally on the page.</p>
-<p>This CSS property is called float, and its common values are left, right, and none (the default is none).</p>
+<p>This CSS property is called <code>float</code>, and its common values are left, right, and none (the default is none).</p>
 <p>Clears are used when we want to &#x201C;turn off&#x201D; floating &#x2014; essentially preventing elements from flowing around the floating element.</p>
 <p>A common method involves using the CSS property clear with the value both. When this method is ineffective, the clearfix method &#x2014; as seen above &#x2014; should resolve any issues.</p>
 <h4 id="column-layout">Column Layout</h4>
