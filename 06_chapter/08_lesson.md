@@ -10,7 +10,7 @@ We now know how to find our way around this mysterious world called the command 
 $ cd ~
 ```
 
-> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.
+> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your `Downloads`, `Pictures`, and `Documents` folders. Each user on any given computer will have their own home folder.
 
 The command above, regardless of where we are currently located, will take us to our
 home folder.
