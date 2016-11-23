@@ -35,7 +35,7 @@ We know how file and directories appear in the GUI. Now, let's find our way arou
 
 Before we get started, it's important to point out that, as smart as they seem, computers can't actually think for themselves. To ask for a specific directory or file in the command line, we need to write out a precise address (called a **path**) so that the computer knows exactly where to find it.
 
-For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. Google might venture a guess, but your command line isn't as smart.
+For example, if you Google directions to "Main Street" without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. Google might venture a guess, but your command line isn't as smart.
 
 So, we have to be more specific when interacting with our computer in the command line.
 
