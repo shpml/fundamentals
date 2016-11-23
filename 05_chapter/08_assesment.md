@@ -47,10 +47,10 @@ Your two links should have an orange background with white text!
 
 8) Now, add a `hover` state by setting the `background-color` to #ee5f3c. When you hover over the links, they should turn red. 
 
-9) After you floated your `nav` items, you should have noticed how your header became wrapped around the side of it. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
+9) After you float your `nav` items, you should notice how your header wraps around the side of the nav bar. Can you remember the CSS solution to this problem? Yep, it's the infamous `clearfix` class.
 
 * Go ahead, and add a class of "clearfix" to your nav bar.
-* In your CSS file, set your clearfix class to the following:
+* In your CSS file, set your "clearfix" class to the following:
 
 ```css
 ...
