@@ -133,7 +133,7 @@ $ command -flag -otheroption
 
 As their name implies, flags set options to tell the command line how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. For the most part, one dash is used for a short, one-letter abbreviation, while two dashes are used for a long name for the option.
 
-[More information about command line options](http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149)
+[Here's more information about command line options](http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149).
 
 For example:
 
