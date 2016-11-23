@@ -23,7 +23,7 @@ The first four semantic elements you should know are `<header>`, `<footer>`, `<m
 These elements kick off your page with introductory content such as logos, headlines, titles, and links.
 
 #### `<footer> </footer>`
-Footers wrap the content at the bottom of your web page. They often containscopyright information, links to career pages, contact information, terms of use, etc.
+Footers wrap the content at the bottom of your web page. They often contain copyright information, links to career pages, contact information, terms of use, etc.
 
 #### `<main> </main>`
 These elements contain all the primary content on the page — articles, blog posts, images, videos, etc. — and live between the `<header>` and `<footer>`.
