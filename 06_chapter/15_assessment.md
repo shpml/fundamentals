@@ -23,4 +23,4 @@ Close and restart your terminal application.
 
 ---
 
-Now, [let's keep digging through the developer toolbox!](../07_chapter/intro.md)
+[Now, let's keep digging through the developer toolbox!](../07_chapter/intro.md)
