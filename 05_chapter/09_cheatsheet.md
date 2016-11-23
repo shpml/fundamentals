@@ -11,8 +11,8 @@
 * A keyword added to selectors that indicates a particular condition of the element in which you would apply CSS styling. For example, `:hover` will apply a style when a user hovers over the element specified by the selector.
 
 #### Nav
-* A semantic element used to define a set of navigation links.
-`<nav></nav>`
+* A semantic element used to define a set of navigation links (`<nav></nav>`).
+
 
 #### Clearfix
 * A technique in CSS used to automatically clear after an element. It's generally used in column layouts in which elements are floated. It involves giving the floated elements the class "clearfix," and creating a corresponding CSS rule for that class using the pseudo-class :after.
