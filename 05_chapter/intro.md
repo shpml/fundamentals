@@ -22,4 +22,4 @@ Before we get started, look at the following code to see how you'd add a nav bar
 
 ---
 
-[On to the next lesson.](02_lesson.md)
+[On to the next lesson!](02_lesson.md)
