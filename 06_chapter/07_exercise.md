@@ -8,7 +8,7 @@ We've gone ahead and created a new directory for you called <em>World</em>. Down
 
 When you double click on the zip file, it will create a new folder next to it in your `Downloads` folder.
 
-Now that you can picture where the file is located, open the Terminal application.
+Now that you can picture where the file is located, open Terminal.
 
 Using the command line alone,
 
