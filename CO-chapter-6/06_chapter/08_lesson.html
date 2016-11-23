@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="Wed Nov 23 2016 22:33:23 GMT+0000 (UTC)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Wed Nov 23 2016 22:36:51 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2099,10 +2099,10 @@ $ ls
 <p>After running this command, we have created a copy of <code>joke.txt</code> called <code>joke2.txt</code> in the same folder. In this case, notice how the second argument was a file name, not a folder
 name. It turns out that the <code>mv</code> and <code>cp</code> commands are quite smart. When moving or copying
 a file, if the second argument is a <strong>folder</strong>, the specified file is moved or
-copied to that folder. If the second argument is a <strong>filename</strong>, the file in the first argument
+copied to that folder. If the second argument is a <strong>file</strong>, the file in the first argument
 is moved or copied to a file with the file name specified in the second argument. Hence, when we copied
 our joke, our file <code>joke.txt</code> was copied to another file called <code>joke2.txt</code>.</p>
-<p>Perhaps we should make another folder inside <code>funny_things</code> called <code>jokes</code>, and
+<p>Perhaps we should make another folder inside <code>funny_things</code> called <code>jokes</code> and
 put our joke in there. After all, we could have funny jokes, funny pictures, and much
 more. In order to achieve this, we&apos;re going to follow a series of long-winded
 steps so we may familiarize ourselves with some more useful commands.</p>
@@ -2123,7 +2123,7 @@ $ mv joke.txt jokes/joke.txt
 </code></pre><p>If you are trying to copy or remove folders and not files, we need to add &quot;an
 option&quot; to our command. Options are extra settings that we want to apply to our
 commands. Options given to commands are always of the format <code>--word</code> or <code>-letter</code>.
-As an example, let&apos;s try to copy our jokes folder.</p>
+As an example, let&apos;s try to copy our <code>jokes</code> folder.</p>
 <pre><code>$ cp -r jokes copy_of_jokes
 </code></pre><blockquote>
 <p>The <code>-r</code> option stands for &quot;recursive&quot; and must be applied to the <code>cp</code>
@@ -2136,7 +2136,7 @@ inside.</p>
 <pre><code>$ rm -r copy_of_jokes
 </code></pre><p>Note that the <code>mv</code> command does not need an <code>-r</code> option to move folders.</p>
 <hr>
-<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
+<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> &#x2014; give it a shot!</p>
 
                     
                     </section>
