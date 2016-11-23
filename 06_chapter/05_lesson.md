@@ -84,7 +84,7 @@ If you're following along in **Git Bash on Windows**, it's alright if the files 
 
 The `ls` command, which loosely stands for "list," lists the contents of a folder.
 
-It looks like there are some folders in here! Let's find out what's inside our `Documents` folder. In order to do so, we'll first navigate to the Documents folder.
+It looks like there are some folders in here! Let's find out what's inside our `Documents` folder. In order to do so, we'll first navigate to that folder.
 
 ```
 $ cd Documents
