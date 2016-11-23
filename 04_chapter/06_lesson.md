@@ -10,7 +10,7 @@
 
   2) **Optimization**: Search engines like Google will have an easier time understanding the content on your site, making it simpler for users to find.
 
-  3) **Accessibility**: Screen readers (devices that read the content on websites for users with vision and reading disabilities) can more easily navigate your site, making it more accessible for everyone.
+  3) **Accessibility**: Screen readers (devices that read the content on websites aloud for users with vision and reading disabilities) can more easily navigate your site, making it more accessible for everyone.
 
 ---
 ### Basic Semantic Elements
