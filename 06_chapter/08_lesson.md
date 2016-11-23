@@ -21,7 +21,7 @@ Great! Now that we're in our home folder, let's create a file.
 $ touch joke.txt
 ```
 
-The `touch` command creates files for us - in this case, we made a file called `joke.txt`. If we try to `touch` a file that already exists, the file will not be overwritten.
+The `touch` command creates files for us — in this case, we made a file called `joke.txt`. If we try to `touch` a file that already exists, the file will not be overwritten.
 
 Let's open `joke.txt` in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!
 
