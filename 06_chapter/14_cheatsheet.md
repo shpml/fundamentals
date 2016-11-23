@@ -22,7 +22,7 @@
 * *Synonyms*: folder, catalog, drawer
 
 ####Path
-* A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each subdirectory is followed by a forward slash.
+* A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each sub-directory is followed by a forward slash.
 * An *absolute*, or full, path begins with the root directory and specifies every directory above the terminating file or directory name.
 * A *relative* path does not include the root or parent directory names and refers to a file or directory directly below the current working directory.
 * *Synonyms*: path name
