@@ -6,7 +6,7 @@
 
 ### Elk Web Design: Part 2
 
-In this second part of the ElK Web Design, we'll work with web fonts and create a horizontal navigation bar.
+In this second part of the ELK Web Design challenge, we'll work with web fonts and create a horizontal navigation bar.
 
 Remember, this is our final design:
 
@@ -68,4 +68,4 @@ Here's what your design should start to look like:
 ![](/assets/elkwebdesign/elkdesignchapt6.png)
 
 
-[On to the next lesson.](04_lesson.md)
+[On to the next lesson!](04_lesson.md)
