@@ -9,7 +9,7 @@
 * *Synonyms*: command line interface (CLI) console
 
 ####Terminal
-* An OSX application that provides text-based access to a computer's operating system.
+* An OS X application that provides text-based access to a computer's operating system.
 * Any device or application used for data entry and display in a computer system.
 * *Synonyms*: client, computer terminal, terminal emulator
 
