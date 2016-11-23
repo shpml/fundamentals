@@ -112,7 +112,7 @@ $ cp joke.txt joke2.txt
 After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. In this case, notice how the second argument was a file name, not a folder
 name. It turns out that the `mv` and `cp` commands are quite smart. When moving or copying
 a file, if the second argument is a **folder**, the specified file is moved or
-copied to that folder. If the second argument is a **filename**, the file in the first argument
+copied to that folder. If the second argument is a **file**, the file in the first argument
 is moved or copied to a file with the file name specified in the second argument. Hence, when we copied
 our joke, our file `joke.txt` was copied to another file called `joke2.txt`.
 
