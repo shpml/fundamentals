@@ -34,7 +34,7 @@ Currently, the cards in your game are all formatted vertically (and very awkward
 
 5) Add a horizontal rule after your closing paragraph tag.
 
-6) Style your nav bar by adding a background color of #808080 in your CSS file. The nav bar should now look gray!
+6) Style your nav bar by adding a `background-color` of #808080 in your CSS file. The nav bar should now look gray!
 
 7) Color and position your navbar items. Follow the steps below:
 
