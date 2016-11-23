@@ -125,7 +125,7 @@ $ cd ..
 
 > `..` (two periods, or "dot-dot") is how we say "parent directory" to our command line.
 
-Many commands consist of three parts: the command, followed by flags (aka options), and finally, arguments.
+Many commands consist of three parts: the command, followed by flags (a.k.a., options), and finally, arguments.
 
 ```
 $ command -flag -otheroption
