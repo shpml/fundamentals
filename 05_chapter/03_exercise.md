@@ -18,7 +18,7 @@ If you don't see the JS Bin below, please refresh the page.
 
 #### Getting Started
 
-You'll be using the code editor below. First, take a look at the starter code:
+You'll be using the editor below. First, take a look at the starter code:
 
 <a class="jsbin-embed" href="http://jsbin.com/wukimet/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script>
 
