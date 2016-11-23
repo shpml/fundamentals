@@ -36,7 +36,7 @@
 * *Synonyms*: flag
 
 ####Argument
-* Follows the "command" and "options" (if any) in a command line and is used to explain what we want the command to act on.
+* Follows the "command" and "options" (if any) in a command line and is used to explain what we want the command to act upon.
 * The number of arguments used generally depends on the command; some don't need arguments, some require exactly one argument, some require many arguments, and some are flexible in the number they can take.
 
 Command | Description
