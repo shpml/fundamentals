@@ -10,7 +10,7 @@
 
 ---
 
-Oftentimes a **sitemap** or **user flow** illustrates the primary and alternate paths your users can take through your website, based on their goals.
+Oftentimes a **sitemap**, or **user flow**, illustrates the primary and alternate paths your users can take through your website, based on their goals.
 
 ![](/assets/elkwebdesign/userflow.png)
 
