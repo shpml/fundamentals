@@ -56,7 +56,7 @@ Fabulous!
 
 14) Let's prevent that from happening. You need to counteract the styles set in the `div` selector by setting new styles for "hero." Set the "hero" class' width to 100%, its display to block, and its margin to 0.
 
-15) In your HTML, wrap a section around both `div`s: Open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
+15) In your HTML, wrap a section around both `div`s; open it after the `</header>` closing tag, and close it before the opening `<footer>` tag.
 
 16) Create a CSS style for the section. Set its background to #222222 and make its color white. Set the section's overflow to auto.
 
