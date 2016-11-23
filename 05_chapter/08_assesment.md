@@ -28,7 +28,7 @@ Currently, the cards in your game are all formatted vertically (and very awkward
 
 3) Add a float of left and a margin of 8% to the `div`s that have a class of "card."
 
-4) Now, go ahead and create a nav bar with two links, "Instructions" and "Game." Add in your anchor and nav elements at the very beginning of your body tags.
+4) Now, create a nav bar with two links, "Instructions" and "Game." Add in your `anchor` and `nav` elements at the very beginning of your body tags.
 
 **NOTE**: You'll want to use hashtags to create empty links for now!
 
