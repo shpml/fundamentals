@@ -39,4 +39,4 @@ You may have noticed that we neglected to include Antarctica in the `World` dire
 
 ---
 
-[Take the Unit 6 Quiz Now!](13_quiz.md)
+[Now, take the Unit 6 quiz!](13_quiz.md)
