@@ -15,17 +15,17 @@ Here's the editor you should use to write your code:
 
 <a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-1) Set your div's font-size to 1.2em, and tell it to only stretch across 50% of the screen's width.
+1) Set your `div`'s font-size to 1.2em, and tell it to only stretch across 50% of the screen's width.
 
-2) Add the about ID to the first div and the services ID to the second div.
+2) Add the about `id` to the first `div` and the services `id` to the second `div`.
 
-3) Tell both divs to display as inline-block elements.
+3) Tell both `div`s to display as inline-block elements.
 
-4) Create CSS rules (selectors) for #about and #services.
+4) Create CSS rules (selectors) for `#about` and `#services`.
 
-5) Give #about a float of left.
+5) Give `#about` a float of left.
 
-6) Give #services a float of right.
+6) Give `#services` a float of right.
 
 At this point, you'll notice a few problems with our page:
   * The two columns are smushed together.
@@ -66,4 +66,4 @@ Fabulous!
 
 Bravo! Well done.
 
-[Now, Take the Quiz for Unit 5](10_quiz.md)
+[Now, take the quiz for Unit 5](10_quiz.md)
