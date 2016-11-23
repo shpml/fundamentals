@@ -21,7 +21,7 @@ Unlike the GUI, the command line is a *text-based interface*, where you communic
 Until the video display was introduced in the mid-1960s, the command line was the only way to interact with a computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
 fast. In fact, once you become comfortable using the CLI, you'll be amazed at how much more productive you become!
 
-We can perform actions using the command line by **entering commands**, and there is a command to perform virtually any action you can imagine! There are commands to open an application, create new files, copy files from one place to another, and more.
+We can perform actions using the command line by **entering commands**, and there is a command to perform virtually any action you can imagine. There are commands to open an application, create new files, copy files from one place to another, and more.
 
 We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as "shells," and we'll learn to use the default shell provided on Mac OS X and Ubuntu Linux, **Bash**.
 
