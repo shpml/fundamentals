@@ -16,9 +16,9 @@ Close and restart your terminal application.
 
 4) In your home directory, create a new folder called "wdi-fundamentals."
 
-5) Change the name of the "wdi-fundamentals" folder to "fundamentals."  Do not change its location.
+5) Change the name of the `wdi-fundamentals` folder to "fundamentals." Do not change its location.
 
-6) We'll be using this folder to house your Fundamentals project, so keep it clean and don't delete it.
+6) We'll be using this folder to house your Fundamentals project, so keep it clean and don't delete it!
 
 
 ---
