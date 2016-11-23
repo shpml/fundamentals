@@ -8,7 +8,7 @@
 
   1) **Organization**: If you ever need to update your code, semantic elements make it easier to find the specific block you're looking for.
 
-  2) **Optimization**: Search engines like Google will have an easier time understanding the content on your site, making it simpler for users to find your site.
+  2) **Optimization**: Search engines like Google will have an easier time understanding the content on your site, making it simpler for users to find.
 
   3) **Accessibility**: Screen readers (devices that read the content on websites for users with vision and reading disabilities) can more easily navigate your site, making it more accessible for everyone.
 
