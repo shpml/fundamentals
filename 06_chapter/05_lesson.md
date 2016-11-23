@@ -55,7 +55,7 @@ If you're following along in **Git Bash on Windows**, the message will look simi
 
 So, what did we just do?
 
-The command `pwd` stands for "Print Working Directory".
+The command `pwd` stands for "Print Working Directory."
 
 We use this command when we want the command line to tell us which folder (or directory) of our computer we'e currently in.
 
