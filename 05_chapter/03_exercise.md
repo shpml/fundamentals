@@ -36,16 +36,16 @@ We'll be using external fonts for this challenge. Let's start out by linking the
 
 *Nice! You just built a font stack. Font stacks give CSS guidance on which font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans serif font!*
 
-3) We want all headings to be bold. So, add a font-weight property to h1 and h2, and set it to 800.
+3) We want all headings to be bold. So, add a `font-weight` property to `h1` and `h2`, and set it to 800.
 
 
 #### Part 2: Navigation
 
 Now, let's add in some content and build out the navigation bar.
 
-1) Start by adding a `nav` element inside the header, between the h1 and the img.
+1) Start by adding a `nav` element inside the header, between the `h1` and the `img`.
 
-2) Create three linked menu items inside the nav: "work," "about," and "contact."
+2) Create three linked menu items inside the `nav`: "work," "about," and "contact."
 
 3) Wrap placeholder links around them like so:
 
