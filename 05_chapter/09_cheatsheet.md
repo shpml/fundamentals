@@ -15,7 +15,7 @@
 
 
 #### Clearfix
-* A technique in CSS used to automatically clear after an element. It's generally used in multi-column layouts where elements are floated. It involves giving the floated elements the class "clearfix," and creating a corresponding CSS rule for that class using the pseudo-class `:after`.
+* A technique in CSS used to automatically clear after an element. It's generally used in column layouts where elements are floated. It involves giving the floated elements the class "clearfix," and creating a corresponding CSS rule for that class using the pseudo-class `:after`.
 
 ```CSS
 .clearfix:after {
