@@ -94,7 +94,7 @@ We have now navigated to the `Documents` folder.
 
 The `cd` command, which stands for "change directory," is used to navigate to a particular folder on your computer.
 
-This is equivalent to double clicking the Documents folder in Finder to "go
+This is equivalent to double clicking the `Documents` folder in Finder to "go
 inside." We can check that we're in the right place by using `pwd`.
 
 ```
