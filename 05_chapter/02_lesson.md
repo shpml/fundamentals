@@ -20,4 +20,4 @@
 
 ---
 
-[On to the next lesson.](04_lesson.md)
+[On to the next lesson!](04_lesson.md)
