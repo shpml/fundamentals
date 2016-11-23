@@ -37,7 +37,7 @@ Before we get started, it's important to point out that, as smart as they seem, 
 
 For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. Google might venture a guess, but your command line isn't as smart.
 
-So, we have to be more specific when interacting with our computer on the command line.
+So, we have to be more specific when interacting with our computer in the command line.
 
 Your computer understands two kinds of addresses or paths: absolute and relative.
 
