@@ -21,7 +21,7 @@ The current state of your game could use some formatting and personalization.
 
 *Created with &hearts; by GA*
 
-2) Wrap the words "GA" using `span` tags, and give it a class of "name" so you can style it.
+2) Wrap the word "GA" using `span` tags, and give it a class of "name" so you can style it.
 
 3) Go into `style.css`, and color your name with #ff0000.
 
