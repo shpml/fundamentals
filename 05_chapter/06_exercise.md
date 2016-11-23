@@ -33,18 +33,18 @@ At this point, you'll notice a few problems with our page:
 
 7) Let's start with the quickest fix. Give the footer a `clear` value of both.
 
-8) Now the footer is in the right place, but the two columns are still too close together! What do you know about adding white space between HTML elements? Currently, `#services` and `#about` take up 50% of the page width each. Here's some math: You're borrowing from the page's width to add a 2% padding on all four sides, so that each div keeps a total width of 50%. So, go ahead and add a width of 46% and padding of 2%.
+8) Now the footer is in the right place, but the two columns are still too close together! What do you know about adding white space between HTML elements? Currently, `#services` and `#about` take up 50% of the page width each. Here's some math: You're borrowing from the page's width to add a 2% padding on all four sides, so that each `div` keeps a total width of 50%. So, go ahead and add a width of 46% and padding of 2%.
 
 Fabulous!
 
 9) Now, let's box up and position the four listed services in the right-hand column.
 
-  * Create an li rule, and give it a float of left.
+  * Create an `li` rule, and give it a float of left.
   * Set its width to 50% and its height to 6em.
 
-10) Give li an outline value of 3px solid #222222.
+10) Give `li` an outline value of 3px solid #222222.
 
-11) Set its text-align to center and line-height to 6em.
+11) Set its `text-align` to center and `line-height` to 6em.
 
 *Well done! The basics of the multi-column layout are all laid out. All that's left is to finish are some visual elements, including color.*
 
