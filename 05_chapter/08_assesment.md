@@ -18,7 +18,7 @@ Currently, the cards in your game are all formatted vertically (and very awkward
 
 **Bonus:**
 
-* Use the navbar items to [scroll down](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) to their respected positions on the page.
+* Use the nav bar items to [scroll down](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) to their respected positions on the page.
 
 ##### Below are the steps for completing this assignment:
 
