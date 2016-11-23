@@ -117,4 +117,4 @@ above, this user is named *Sarah*.
 
 ---
 
-[On to the next lesson.](02_lesson.md)
+[On to the next lesson!](02_lesson.md)
