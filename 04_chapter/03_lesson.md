@@ -3,7 +3,7 @@
 
 # The Box Model
 
-Now that we understand how to differentiate between inline and block elements, let's take a look at the CSS Box Model. Every HTML element on a web page is contained in a box, therefore, each one is composed of:
+Now that we understand how to differentiate between inline and block elements, let's take a look at the CSS Box Model. Every HTML element on a web page is contained in a box, therefore, each comprises:
 * The **content** within the box.
 * The **padding**, or the area outside of the content.
 * The **border**, or the line between the padding and the margin.
