@@ -15,7 +15,7 @@
 
 When you’re working on a project — say a painting, a piece of software, or an autobiography — there comes a time when you wish you had a reset button.
 
-You might already have a system in place to deal with this problem. Maybe, for example, you save your document multiple times with different names so you can return to a different stage of the project.
+You might already have a system in place to deal with this problem. Maybe, for example, you save your document multiple times with different names so that you can return to different stages of the project.
 
 ![Version Control](../assets/chapter2/version-control.gif)
 
