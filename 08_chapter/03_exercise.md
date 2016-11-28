@@ -6,7 +6,7 @@
 
 Now it's your turn to practice writing pseudocode!
 
-#### Program: Discount Eligibility?
+#### Program: Check for Discount Eligibility
 
 We'd like to create a program that checks to see whether or not movie patrons are eligible for a discount and then displays the appropriate ticket price.
 
