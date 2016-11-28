@@ -83,8 +83,8 @@ differently — it "concatenates" two strings together to make one big string.
 <br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
 
 * **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and return Boolean values.
-    * NOT (`!`) will reverse the value of any Boolean.
-        `!true` // `false`
+    * NOT (`!`) will reverse the value of any Boolean
+       ( `!true` // `false`).
     * OR  (`||`) takes in two Boolean arguments. If at least one is `true`, then it will evaluate to `true`. But, if both are `false`, it will evaluate as `false`.
     * AND (<code>&&</code>) also takes in two Boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`. Otherwise, it will evaluate to `false`.
 
