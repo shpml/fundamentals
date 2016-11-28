@@ -43,7 +43,7 @@ if (typeof(anotherData) === 'undefined') {
 }
 ```
 
-For extra context, learn more about `undefined` from [Mozilla's MDN entry for "undefined"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
+For extra context, learn more about `undefined` from [Mozilla's MDN entry for "undefined."](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 
 ### Null
