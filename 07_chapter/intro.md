@@ -49,7 +49,7 @@ Git is also an excellent tool for working collaboratively on a project, although
 
 If you don't already have Git, you can install it by downloading the latest release from [git-scm.com](http://git-scm.com/download/mac), double clicking the downloaded file, and going through the installer.
 
-If you're following along on Windows and installed Git Bash, Git should have been installed along with Git Bash, so you should be all set.
+If you're following along on Windows and installed Git Bash, Git was installed along with it, so you should be all set.
 
 > **HINT** As with any software installation, it’s always good to back up your system and data before proceeding.
 
