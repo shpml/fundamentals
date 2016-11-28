@@ -62,7 +62,7 @@ We can then **evaluate** if our value is `null`:
 ```javascript
 playerScore === null // 'The player has not scored anything.'
 ```
-What if we are provided with an input representing a player's actions on a timed game? In *Dance, Dance, Revolution*, a player must perform an action at a precise interval. It streams a set of commands a player must *dance* to. These are timed to music. The actions stream across the screen, and, as they pass by the middle of the screen, the player *must* perform an action in order to score a point. The game can evaluate the player's score in real time!
+What if we are provided with an input representing a player's actions in a timed game? In *Dance, Dance, Revolution*, a player must perform an action at a precise interval. It streams a set of commands a player must *dance* to. These are timed to music. The actions stream across the screen, and, as they pass by the middle of the screen, the player *must* perform an action in order to score a point. The game can evaluate the player's score in real time!
 ```javascript
 var userInput = null;
 userInput === null // no points... this time
