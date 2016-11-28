@@ -115,7 +115,7 @@ What happens if we're dealing with a more complicated expression? Say:
 
 `((9 + 2) * 25) - 5`
 
-Because the `-` requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, `-` will be at the top of our expression tree. Here is the full tree: First, we perform the addition, then the multiplication, and then finally the subtraction.
+Because the `-` requires `((9 + 2) * 25)` to be evaluated in order to perform the subtraction, `-` will be at the top of our expression tree. Here is the full tree: First, we perform the addition, then the multiplication, and then finally the subtraction.
 
 ![Expression Tree for ((9 + 2) * 25) - 5](../assets/chapter3/tree2.png)
 <br>
