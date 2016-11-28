@@ -56,13 +56,13 @@ The changes we've just made have now been *staged*, or added to the list of chan
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
 
-> **NOTE** Sometimes, you'll want to save *all* of the changes to files that have been made inside your repo. Instead of specifying a unique file, you can write `git add .`. This will add all of the files in the working directory to the next commit. Be careful, however, when using `git add .` - you could accidentally add files with sensitive information.
+> **NOTE** Sometimes, you'll want to save *all* of the changes to files that have been made inside your repo. Instead of specifying a unique file, you can write `git add .`. This will add all of the files in the working directory to the next commit. Be careful, however, when using `git add .` — you could accidentally add files with sensitive information.
 
 Once we're ready to officially record this version of our project, we can type:
 
     $ git commit -m "created a new post.txt file"
 
-The `-m` option allows you to include a message, describing the changes you made for your collaborators - or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
+The `-m` option allows you to include a message, describing the changes you made for your collaborators — or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
 
 ###The Git Staging Area
 
