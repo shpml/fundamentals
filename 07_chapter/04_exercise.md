@@ -22,7 +22,7 @@ This exercise will allow you to practice using Git.
 
 5) Use the `git add README.txt ` command to add the new file to the staging area. Run `git status` again — how has its output changed?
 
-6) Now that you're satisfied with the changes you've staged, commit them using <code>git commit -m "..."</code>. Give the commit an appropriate message - remember, it should be short but descriptive.
+6) Now that you're satisfied with the changes you've staged, commit them using <code>git commit -m "..."</code>. Give the commit an appropriate message — remember, it should be short but descriptive.
 
 7) Create a directory called `src`, and add a couple of files to it.
 
