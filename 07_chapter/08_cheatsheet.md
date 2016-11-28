@@ -42,7 +42,7 @@
 
 Command                                    | Description
 ---                                        | ---
-`git init`                                 | Tells Git to start monitoring the current folder you're in. In other words, for my working directory, create a new "timeline" where I can manage my source code.
+`git init`                                 | Tells Git to start monitoring the current folder I'm in. In other words, for my working directory, create a new "timeline" where I can manage my source code.
 `git status`                               | Get the current status of Git. Files that are "staged" (about to be committed) and files that are unstaged (files that have changed since the last commit but are not about to be committed) will both show up here.
 `git add path/to/directory/or/file`        | Adds a file to the "stage." The stage can be thought of as an in-between state between the last commit and what is ready to be committed. Once we run the command `git commit`, all staged files will be committed to the timeline.
 <code>git commit -m "Commit message"</code>| Commits all staged files to the timeline. If <code>-m "Commit message"</code> is committed, Git will open your default text editor (typically Vim) to enter a longer message. If for any reason Vim opens, you can close it by typing `:q`.
