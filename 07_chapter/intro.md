@@ -31,7 +31,7 @@ If you're making copies of a file every time you make a change, your file system
 
 While this method works, it has a number of major limitations:
 * It only allows you to track changes in one file. If your project consists of multiple files, you're out of luck.
-* It's extremely duplicative - before long, you may end up with 10, 20, or even 50 slightly different copies of the same file.
+* It's extremely duplicative — before long, you may end up with 10, 20, or even 50 slightly different copies of the same file.
 * It's extremely difficult (if not impossible) to see what has changed from one version to the next without opening each file and comparing the changes line by line.
 * Keeping track of parallel versions (revision A vs. revision B) is possible, but it's hard to compare one to the other, and integrating the two versions is a lot of work.
 
