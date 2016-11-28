@@ -11,7 +11,7 @@ the calculator spits back a result (in this case, 3692287654572135).
 ![Calculator](../assets/chapter3/calculator.png)
 
 That information we type into the calculator is called an **expression**: a
-collection of values (*12345*) and operations (like **+** or **x**).
+collection of values (*12345*) and operations (like `+` or `x`).
 
 The process of reducing this expression down to a single value is called **evaluation**.
 
@@ -24,7 +24,7 @@ two components: data and operators.
 
 <br>
 
-## Data (a.k.a. Values)
+## Data (a.k.a., Values)
 Calculators can only operate on numbers, but computers can perform calculations
 on many different types of data, including:
 
