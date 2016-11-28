@@ -123,7 +123,7 @@ We covered this in the previous section. As you complete the exercises in the re
 
 Once you've committed the changes you've made to the code, your local repo will be different than your remote repo. To update your remote repo on GitHub, you have to **push** those changes using the Git command `git push origin master`.
 
-Don't worry about the `origin` and `master` part just yet.
+Don't worry about the `origin` and `master` components just yet.
 
 If you're curious, here's a brief overview:
 * `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes if you want, but we'll only be working with one in Fundamentals.
@@ -151,4 +151,4 @@ Trust us – you *will* get to the point where cloning and pushing are like brea
 
 ---
 
-[Here's another exercise for you](07_exercise.md) - give it a shot!
+[Here's another exercise for you](07_exercise.md) — give it a shot!
