@@ -13,11 +13,11 @@ Simply change your working directory to the folder you'd like to track, and run 
 ```
 $ git init
 ```
-> **CAUTION** Do not execute this command in your **home directory**! It will make it very difficult to work with any other repositories! Use `pwd` to check your location if you're unsure.
+> **CAUTION** Do not execute this command in your **home directory**! It will make it difficult to work with any other repositories. Use `pwd` to check your location if you're unsure.
 
 When you take a look at your working directory in the GUI, you probably won't see any additional files, because (if you remember from Unit 6) hidden files are not visible on your computer by default. To see the `.git/` directory, you need to run `ls -a` from the command line.
 
-If you delete the hidden .git directory, you will effectively "uninitialize" your repository and lose the data Git collected for you.
+If you delete the hidden `.git` directory, you will effectively "uninitialize" your repository and lose the data Git collected for you.
 
 > **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
 
