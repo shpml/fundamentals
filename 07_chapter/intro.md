@@ -39,7 +39,7 @@ Now, imagine how much more complicated this process becomes once you start worki
 
 Software developers have built a number of tools to solve the "version control" problem for their own projects. In this course, we'll focus on one particularly popular version control program called **Git**. Git addresses all of the problems mentioned above.
 * Git tracks changes for multiple files by keeping them all in **repositories** — special directories with some hidden Git machinery.
-* Rather than saving entire separate versions of each file, Git keeps a record of the *changes* that have been made to each file, making it much more space-efficient.
+* Rather than saving entire separate versions of each file, Git keeps a record of the *changes* that have been made to each file, making it much more space efficient.
 * Because Git stores changes, rather than whole files, looking at what's changed from one iteration to the next is easy.
 * Git allows you to easily keep track of parallel versions of a project using a feature called **branching**. We won't cover this feature in this unit, but you'll use it often once you start the course.
 
@@ -65,4 +65,4 @@ This will show you what version of Git is running; your computer should return s
 
 ---
 
-[On to the next lesson.](02_lesson.md)
+[On to the next lesson!](02_lesson.md)
