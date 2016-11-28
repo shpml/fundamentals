@@ -11,7 +11,7 @@
 * An individual change to a file (or set of files).
 * It's similar to when you save a file, except that, with Git, every time you save, it creates a unique ID (a.k.a., the "SHA" or "hash") that allows you to keep a record of what changes were made when and by whom.
 * Commits usually contain a commit message — a brief description of what changes were made.
-* *Synonyms*: a revision
+* *Synonym*: a revision
 
 ####Diff
 * A diff is the difference in changes between two commits (saved changes).
