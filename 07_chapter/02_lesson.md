@@ -6,7 +6,7 @@
 
 ###Initialize a Repository
 
-To turn an ordinary directory into a Git repository (or *repo*, for short), you have to **initialize** the repository (this just means adding a hidden folder called `.git/` to your project folder, which contains all the data that Git needs to operate.
+To turn an ordinary directory into a Git repository (or *repo*, for short), you have to **initialize** the repository. This just means adding a hidden folder called `.git/` to your project folder, which contains all the data Git needs to operate.
 
 Simply change your working directory to the folder you'd like to track, and run the command:
 
