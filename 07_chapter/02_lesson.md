@@ -62,7 +62,7 @@ Once we're ready to officially record this version of our project, we can type:
 
     $ git commit -m "created a new post.txt file"
 
-The `-m` option allows you to include a message, describing the changes you made for your collaborators — or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
+The `-m` option allows you to include a message describing the changes you made for your collaborators — or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.
 
 ###The Git Staging Area
 
