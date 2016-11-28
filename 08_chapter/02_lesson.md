@@ -25,7 +25,7 @@ As tempting as it may be to jump right into a problem and start writing code, yo
 
 ## Writing Pseudocode
 
-Take, for example, a program that lets a player know whether or not he or she has passed the current level. Pseudocode for this program might look like this:
+Take, for example, a program that lets a player know whether or not he or she has passed the current level in a game. Pseudocode for this program might look like this:
 
 ```
 passingScore = 150 points
