@@ -23,7 +23,7 @@ If you delete the hidden `.git` directory, you will effectively "uninitialize" y
 
 ### Saving Changes to Your Project
 
-Unfortunately, it's not enough to simply have your files in a repo. Like the terminal, Git doesn't make any assumptions about the changes you want to save or when you want to save them - you need to explicitly tell it what to do.
+Unfortunately, it's not enough to simply house your files in a repo. Like the terminal, Git doesn't make any assumptions about the changes you want to save or when you want to save them — you need to explicitly tell it what to do.
 
 Suppose that we want to work on a blog post for General Assembly, so we create a directory on our desktop called "GA-Blog," and run `git init` from inside that directory. At the moment, this project is empty. We can confirm this by running `git status`, which asks Git to give us an update on the status of our project.
 
