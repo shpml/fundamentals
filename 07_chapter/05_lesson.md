@@ -145,7 +145,7 @@ If you ever get stuck working with Git or GitHub, don't worry, you are NOT the f
 
 1) Search online for an answer via Google or [Stack Overflow](http://stackoverflow.com).
 2) Ask classmates if they've solved a similar problem via [Slack](https://ga-students.slack.com/).
-3) Go to an instructor for help (instructors are also on Slack).
+3) Seek out help from an instructor (they are also on Slack).
 
 Trust us — you *will* get to the point where cloning and pushing are like breathing and sleeping.
 
