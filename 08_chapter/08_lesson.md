@@ -52,7 +52,7 @@ For extra context, learn more about `undefined` from [Mozilla's MDN entry for "u
 
 Here's an example: Suppose you have an application for keeping track of your possessions. You might have a string called `locationOfKeys` indicating where you can find your keys. Then, one day, your keys get lost. What's the value of `locationOfKeys` now? Well, it's "nothing" — they are lost. If `null` didn't exist, we would have to invent a special string value (perhaps `"lost"`) to signify that the keys are missing. `null` gives us a standard way of handling that kind of situation in which we can simply say `locationOfKeys = null;`
 
-That's the purpose of **null**. It is designed to represent the *lack of a value*. Whenever variables are defined without any value, they are `undefined`. This can become tricky to troubleshoot over time, as it acts as a catchall for *everything without a value*. We can **specify** our variables as `null` to represent there is no data.
+That's the purpose of `null`. It is designed to represent the *lack of a value*. Whenever variables are defined without any value, they are `undefined`. This can become tricky to troubleshoot over time, as it acts as a catchall for *everything without a value*. We can **specify** our variables as `null` to represent there is no data.
 
 ```javascript
 // we will define a variable with no value, or null.
