@@ -100,4 +100,4 @@ In order to back up your code and track your work, you'll want to commit the cha
 
 4) **Write code, even if it's not the prettiest.** At this stage, don't worry if your code is elegant, readable, or robust. Just make it work to satisfy all of your test cases.
 
-5) **"Refactor" your code.** Now that your code is functional, take some time to make your code clean/efficient/robust. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure it still gives you the correct results.
+5) **"Refactor" your code.** Now that your code is functional, take some time to make your code clean/efficient/robust. Just make sure that whatever changes you make don't break your code — you can keep an eye on this by testing your code and ensuring it still gives you the correct results.
