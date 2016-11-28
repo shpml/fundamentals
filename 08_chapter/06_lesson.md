@@ -105,7 +105,7 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike math equations). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
 
 ### Test Yourself
-Give these a try — see if you can predict the final values of `x`, `y`, and `z`. Check your answers in JS Bin by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the JS Bin Console.
+Give these a try — see if you can predict the final values of `x`, `y`, and `z`. Check your answers in JS Bin by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the JS Bin console.
 
 ##### Challenge \#1
 
