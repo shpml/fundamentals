@@ -91,9 +91,9 @@ Below are the exact rules that the Boolean operators follow when dealing with no
 | "Falsey"            |  "Truthy" |
 |-                    |-          |
 | `false`             | `true`    |
-| 0                   | All numbers except 0, including 'Infinity' (what you get after dividing by 0) |
+| 0                   | All numbers except 0, including `infinity` (what you get after dividing by 0) |
 | Empty strings ('')  | All non-empty strings |
-| Undefined, Null, and NaN ('Not A Number', a special type of numeric value) | Pretty much everything else |
+| Undefined, Null, and NaN (`Not a Number`, a special type of numeric value) | Pretty much everything else |
 
 
 In JavaScript, the Boolean operators `!`, `||`, and <code>&&</code> follow the rules below to determine how to behave:
