@@ -134,11 +134,11 @@ z = z - 1;
 
 Whoa! That last one's pretty weird — how can `z` be on both sides of the `=`? What do you think happens there?
 
-The key is remembering how the `=` operator works. Before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that, if we have any expression like `x = x + 1;`, what we are doing is taking the old value of `x`, adding 1 to it, and storing this new result back in `x`. In short, we are "incrementing" x: increasing its value by 1, no matter its original value.
+The key is remembering how the `=` operator works. Before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that, if we have any expression like `x = x + 1;`, what we are doing is taking the old value of `x`, adding 1 to it, and storing this new result back in `x`. In short, we are "incrementing" `x`: increasing its value by 1, no matter its original value.
 
 ### A Few Shortcuts
 
-The need to operate "in place" (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include shorthand syntax for these kind of operations. Some examples are shown below:
+The need to operate "in place" (in other words, storing the result back inside the original variable) is quite common in programming — so common that most languages include shorthand syntax for these kind of operations. Some examples are shown below:
 
 | Longhand Syntax | Shorthand Syntax |
 |------------------|-------------------|
