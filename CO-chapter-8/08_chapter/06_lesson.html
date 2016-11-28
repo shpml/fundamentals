@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.3" data-basepath=".." data-revision="Mon Nov 28 2016 20:09:08 GMT+0000 (UTC)">
+    <div class="book" data-level="8.3" data-basepath=".." data-revision="Mon Nov 28 2016 20:11:05 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2134,10 +2134,10 @@ x = y * y;
 y = z * z;
 z = z - <span class="hljs-number">1</span>;
 </code></pre>
-<p>Whoa! That last one&apos;s pretty weird - how can z be on both sides of the <code>=</code>? What do you think happens there?</p>
-<p>The key is remembering how the <code>=</code> operator works. Before it assigns anything to the variable on the left, <em>it first evaluates the expression on the right</em>. This means that, if we have any expression like <code>x = x + 1;</code>, what we are doing is taking the old value of <code>x</code>, adding 1 to it, and storing this new result back in <code>x</code>. In short, we are &quot;incrementing&quot; x: increasing its value by 1, no matter its original value.</p>
+<p>Whoa! That last one&apos;s pretty weird &#x2014; how can <code>z</code> be on both sides of the <code>=</code>? What do you think happens there?</p>
+<p>The key is remembering how the <code>=</code> operator works. Before it assigns anything to the variable on the left, <em>it first evaluates the expression on the right</em>. This means that, if we have any expression like <code>x = x + 1;</code>, what we are doing is taking the old value of <code>x</code>, adding 1 to it, and storing this new result back in <code>x</code>. In short, we are &quot;incrementing&quot; <code>x</code>: increasing its value by 1, no matter its original value.</p>
 <h3 id="a-few-shortcuts">A Few Shortcuts</h3>
-<p>The need to operate &quot;in place&quot; (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include shorthand syntax for these kind of operations. Some examples are shown below:</p>
+<p>The need to operate &quot;in place&quot; (in other words, storing the result back inside the original variable) is quite common in programming &#x2014; so common that most languages include shorthand syntax for these kind of operations. Some examples are shown below:</p>
 <table>
 <thead>
 <tr>
