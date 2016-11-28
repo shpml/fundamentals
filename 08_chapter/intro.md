@@ -7,7 +7,7 @@
 * Perform arithmetic and logical operations on data to produce new values.
 * Concatenate two strings together using JavaScript.
 * Write expressions that both assign and evaluate variables.
-* Explain what Null is and (generally) how it works.
+* Explain what "null" is and (generally) how it works.
 * Recognize the difference between "truth-y" and "false-y" values.
 
 ---
