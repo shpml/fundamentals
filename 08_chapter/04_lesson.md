@@ -109,7 +109,7 @@ We can represent this chain of dependencies using a logical structure called a `
 ![Expression Tree for (2 + 3) * (9 - 8)](../assets/chapter3/tree1.png)
 <br>
 
-To evaluate any point (or "node") in the tree, you simply (1) Evaluate that node's left "child," and then (2) Evaluate its right "child." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
+To evaluate any point (or "node") in the tree, you simply (1) evaluate that node's left "child," and then (2) evaluate its right "child." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
 
 What happens if we're dealing with a more complicated expression? Say:
 
