@@ -5,7 +5,7 @@
 #####By the end of this unit, you'll be able to:
 * Define a version control system and its benefits.
 * Describe how Git works.
-* Identify the Git commands used to set up a local repository and record "snapshots" of your project.
+* Identify the Git commands used to set up a local repository, and record "snapshots" of your project.
 * Push local changes to a remote repository using the command line.
 
 ---
@@ -13,7 +13,7 @@
 
 #Version Control
 
-When you’re working on a project – say a painting, a piece of software, or an autobiography – there comes a time when you wish you had a reset button.
+When you’re working on a project — say a painting, a piece of software, or an autobiography — there comes a time when you wish you had a reset button.
 
 You might already have a system in place to deal with this problem. Maybe, for example, you save your document multiple times with different names, so you can return to a different stage of the project.
 
