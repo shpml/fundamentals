@@ -100,7 +100,7 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
 ```
 
-Each of these entries represents a commit for this project and provides other useful information including: when the commit was made; who made the commit; and, if a quality message was included, a description of the code being committed.
+Each of these entries represents a commit for this project and provides other useful information including: when the commit was made; who made the commit; and, if a message was included, a description of the code being committed.
 
 ---
 
