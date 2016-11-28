@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:20:55 GMT+0000 (UTC)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:24:44 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2045,14 +2045,14 @@
 <hr>
 <h2 id="get-started-with-git">Get Started with Git</h2>
 <h3 id="initialize-a-repository">Initialize a Repository</h3>
-<p>To turn an ordinary directory into a Git repository (or <em>repo</em>, for short), you have to <strong>initialize</strong> the repository (this just means adding a hidden folder called <code>.git/</code> to your project folder, which contains all the data that Git needs to operate.</p>
+<p>To turn an ordinary directory into a Git repository (or <em>repo</em>, for short), you have to <strong>initialize</strong> the repository. This just means adding a hidden folder called <code>.git/</code> to your project folder, which contains all the data Git needs to operate.</p>
 <p>Simply change your working directory to the folder you&apos;d like to track, and run the command:</p>
 <pre><code>$ git init
 </code></pre><blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
-<p> Do not execute this command in your <strong>home directory</strong>! It will make it very difficult to work with any other repositories! Use <code>pwd</code> to check your location if you&apos;re unsure.</p>
+<p> Do not execute this command in your <strong>home directory</strong>! It will make it difficult to work with any other repositories. Use <code>pwd</code> to check your location if you&apos;re unsure.</p>
 </blockquote>
 <p>When you take a look at your working directory in the GUI, you probably won&apos;t see any additional files, because (if you remember from Unit 6) hidden files are not visible on your computer by default. To see the <code>.git/</code> directory, you need to run <code>ls -a</code> from the command line.</p>
-<p>If you delete the hidden .git directory, you will effectively &quot;uninitialize&quot; your repository and lose the data Git collected for you.</p>
+<p>If you delete the hidden <code>.git</code> directory, you will effectively &quot;uninitialize&quot; your repository and lose the data Git collected for you.</p>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
 <p> You should never manually change the internal contents of your <code>.git</code> directory, unless your name is Linus Torvalds.</p>
 </blockquote>
