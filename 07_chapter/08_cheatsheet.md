@@ -33,7 +33,7 @@
 * A copy of a repository that lives on your computer instead of on a website's server, or the act of making that copy.
 * With your clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online.
 * A clone, however, is connected to the remote version so that changes can be synced between the two.
-* You can push your local changes to the remote to keep them synced when you're online.
+* You can push your local changes to the remote version to keep them synced when you're online.
 
 ####Push
 * Pushing refers to sending your committed changes to a remote repository such as GitHub.com.
