@@ -72,7 +72,7 @@ cardOne == cardFour
 
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository. Make sure you've commented your code!
 
-#### Pushing Code Up to the Repository.
+#### Pushing Code Up to the Repository
 
 In order to back up your code and track your work, you'll want to commit the changes you've made to the project's repository. You'll have to open up the terminal and `cd` into the correct folder that holds the cloned repository for this assignment. Once you're there, complete these three steps:
 
