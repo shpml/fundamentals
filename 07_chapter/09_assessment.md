@@ -4,7 +4,7 @@
 
 # Git and GitHub Preparation
 
-In order to share our Memory Game publicly and turn in the assignment, you will need to access code that is located on GitHub's servers. Follow these instructions to get started:
+In order to share our memory game publicly and turn in the assignment, you will need to access code that is located on GitHub's servers. Follow these instructions to get started:
 
 ## Exercise
 
