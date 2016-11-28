@@ -53,7 +53,7 @@ If you're following along on Windows and installed Git Bash, Git was installed a
 
 > **HINT** As with any software installation, it’s always good to back up your system and data before proceeding.
 
-You can check to see if the installation worked by opening up the Terminal and typing:
+You can check to see if the installation worked by opening up a terminal window and typing:
 
 ```
 $ git --version
