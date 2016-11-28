@@ -38,7 +38,7 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![Side bar](../assets/chapter2/sidebar_github.gif)
 
-There are many unique GitHub features crammed on this page, but we'll only be using three of them to start.
+There are many unique GitHub features crammed on this page, but we'll only be starting with three.
 
 ---
 
