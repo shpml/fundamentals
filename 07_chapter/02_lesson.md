@@ -35,7 +35,7 @@ We should get a response like this:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status.gif)
 
-Each "save" we make to our repository is called a **commit**. This message tells us that our project has no unsaved changes.
+Each "save" we make to our repository is called a **commit**. The message above tells us that our project has no unsaved changes.
 
 Let's go ahead and make a new text file called `post.txt` inside of GA-Blog using the `touch` command.
 
