@@ -20,7 +20,7 @@ You'll also want to link your `index.html` file to the `main.js` file. Remember 
 </body>
 ```
 
->**Note** **Where To Add Script Tags**: Unlike using a `link` tag for linking CSS files, you should add your `script` tags right before the closing HTML `body` tag (`</body>`). This ensures that all of the elements and styles of your page have been loaded and are available to the browser before the `script` tags are read.
+>**Note** **Where To Add Script Tags**: Unlike using a `link` tag for linking CSS files, you should add your `script` tags right before the closing HTML `body` tag (`</body>`). This ensures that all of the elements and styles on your page have been loaded and are available to the browser before the `script` tags are read.
 
 ## Exercise
 
