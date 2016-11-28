@@ -20,11 +20,11 @@ You can use any expression you like, but it must contain at least one operation 
 
 	** Note:** Ensure the *type* of this result is correct — Remember `30` and <code>'30'</code> are not the same!
 
-2) Now, replace your first expression with a second expression. This one should evaluate to 'Hello World'.
+2) Now, replace your first expression with a second expression. This one should evaluate to `'Hello World'`.
 
 3) Finally, replace the previous expression with an expression that evaluates to the Boolean `true`. Try using two or three operations for this one!
 
 > Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.
 
 ---
-[On to the next lesson.](06_lesson.md)
+[On to the next lesson!](06_lesson.md)
