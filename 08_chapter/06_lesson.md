@@ -132,7 +132,7 @@ y = z * z;
 z = z - 1;
 ```
 
-Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?
+Whoa! That last one's pretty weird — how can `z` be on both sides of the `=`? What do you think happens there?
 
 The key is remembering how the `=` operator works. Before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that, if we have any expression like `x = x + 1;`, what we are doing is taking the old value of `x`, adding 1 to it, and storing this new result back in `x`. In short, we are "incrementing" x: increasing its value by 1, no matter its original value.
 
