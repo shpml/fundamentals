@@ -30,7 +30,7 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![File Structure](../assets/chapter2/contents_github.gif)
 
-4) **Fork button**: allows you to copy a version of this repo (`user/awesome-project`) to your own GitHub account.
+4) **Fork Button**: allows you to copy a version of this repo (`user/awesome-project`) to your own GitHub account.
 
 	![Fork button](../assets/chapter2/fork_github.gif)
 
@@ -121,7 +121,7 @@ We covered this in the previous section. As you complete the exercises in the re
 
 ### 5) Pushing
 
-Once you've committed the changes you've made to the code, your local repo will be different from your remote repo. To update your remote repo on GitHub, you have to **push** those changes using the Git command `git push origin master`.
+Once you've committed the changes you've made to the code, your local repo will be different than your remote repo. To update your remote repo on GitHub, you have to **push** those changes using the Git command `git push origin master`.
 
 Don't worry about the `origin` and `master` part just yet.
 
