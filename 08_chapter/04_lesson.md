@@ -129,7 +129,7 @@ Following this rule, our expression of `1 + 1 + 1 + 1` could also be written as 
 ![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
 <br>
 
-While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts, because there will be many times when you'll solve a problem by using one of their basic principles. When it comes down to it, computers operate with a simple, straightforward logic.
+While we've covered what seems like a lot of math in this section, don't worry — you're not going to be doing calculus in this course. It's important that we review these concepts, because there will be many times when you'll solve a problem by using one of their basic principles. When it comes down to it, computers operate with a simple, straightforward logic.
 
 ---
 
