@@ -4,7 +4,7 @@
 
 ##Publishing Work on GitHub
 
-So far, we've been making changes "locally," editing files and repositories on our computers.
+So far, we've been making changes "locally," editing files and repositories on our own computers.
 
 To collaborate with others (and back up our files just in case our computer goes out of commission) we need to connect our local repository to a "remote" repository.
 
