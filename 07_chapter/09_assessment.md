@@ -32,7 +32,7 @@ In order to share our memory game publicly and turn in the assignment, you will 
 
 6) Open up the terminal application on your computer and navigate to the `fundamentals` directory within your home directory. Once you're there, run the following Git command from the command line:
 <br>
-`git clone https://your/clone/url` (substituting the clone URL you copied above)
+`git clone https://your/clone/url` (substituting the clone URL you copied above).
 <br>
   This will copy your forked repo from GitHub to your computer so that you can work on it locally.
 
