@@ -47,7 +47,7 @@ Now, let's check our Git status:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
 
-Git has identified that a change has been made - there is now a file in our repo. However, it does not know whether or not we want that change to be saved right now. To add this change to our next commit, we can run the command:
+Git has identified that a change has been made: There is now a file in our repo. However, it does not know whether or not we want that change to be saved right now. To add this change to our next commit, we can run the command:
 
 ```
 $ git add post.txt
