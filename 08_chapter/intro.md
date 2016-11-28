@@ -8,7 +8,7 @@
 * Concatenate two strings together using JavaScript.
 * Write expressions that both assign and evaluate variables.
 * Explain what "null" is and (generally) how it works.
-* Recognize the difference between "truth-y" and "false-y" values.
+* Recognize the difference between "truthy" and "falsey" values.
 
 ---
 
