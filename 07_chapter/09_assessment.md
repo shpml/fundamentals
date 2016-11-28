@@ -18,7 +18,7 @@ In order to share our memory game publicly and turn in the assignment, you will 
 
 1) If you don't have one already, [create an account](07_exercise.md) on GitHub.com.
 
-2) Go to [this address](https://github.com/ga-students/wdi-fundamentals-memorygame) to find the repository containing the existing code. Once you're there, click the button that says "Fork" - this will create a copy of the original repository under **your** GitHub account.
+2) Go to [this address](https://github.com/ga-students/wdi-fundamentals-memorygame) to find the repository containing the existing code. Once you're there, click the button that says "Fork." This will create a copy of the original repository under **your** GitHub account.
 
 3) Take a look and confirm that you now have a copy of `wdi-fundamentals-memorygame` in your list of repositories.
 
