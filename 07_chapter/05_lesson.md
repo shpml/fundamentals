@@ -2,7 +2,7 @@
 
 ---
 
-##Publish Work on GitHub
+##Publishing Work on GitHub
 
 So far, we've been making changes "locally," editing files and repositories on our computers.
 
