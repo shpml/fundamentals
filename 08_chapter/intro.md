@@ -23,7 +23,7 @@ It's time for us to move on to the main event: programming. Now, we'll add some 
 
 As a developer, trying to "just start coding" without first identifying the problem at hand is a surefire way to waste time, frustrate yourself, and create suboptimal products. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
 
-Throughout this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of the basics is essential and will translate to your future work, whether you end up programming in JavaScript, Ruby, Python, or any other language.
+Throughout this chapter, we'll be exploring some of the more common tools and concepts available to programmers. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of the basics is essential and will translate to your future work, whether you end up programming in JavaScript, Ruby, Python, or any other language.
 
 <br>
 
