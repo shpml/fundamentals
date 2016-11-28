@@ -48,7 +48,7 @@ For extra context, learn more about `undefined` from [Mozilla's MDN entry for "u
 
 ### Null
 
-`null` values are values that you decide have **no value**. Why would I want to do this? Why not use `undefined`? As it turns out, we can't — variables in JavaScript are only `undefined` until they've been assigned a value for the first time. `null` gives us a way to "reset" the value of a variable to nothing.
+`null` values are values that you decide have **no value**. Why would I want to do this? Why not use `undefined`? As it turns out, we can't — variables in JavaScript are only `undefined` until they've been assigned a value for the first time. `null` gives us a way to "reset" the value of a variable to "nothing."
 
 Here's an example: Suppose you have an application for keeping track of your possessions. You might have a string called `locationOfKeys` indicating where you can find your keys. Then, one day, your keys get lost. What's the value of `locationOfKeys` now? Well, it's "nothing" — they are lost. If `null` didn't exist, we would have to invent a special string value (perhaps `"lost"`) to signify that the keys are missing. `null` gives us a standard way of handling that kind of situation where we can simply say `locationOfKeys = null;`
 
