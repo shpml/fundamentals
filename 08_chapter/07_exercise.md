@@ -30,9 +30,9 @@ As in the previous exercise, your job is to print the result of an expression. H
    if `x` is "David," the expression should evaluate to "Goodbye, David".
 
 Try out all of the different "test cases" mentioned above.
-If they all give you the answers that you expect, you're done!
+If they all give you the answers you expected, you're done!
 
 > *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
 ---
-[Next: Expression Oddballs](08_lesson.md)
+[On to the next lesson!](08_lesson.md)
