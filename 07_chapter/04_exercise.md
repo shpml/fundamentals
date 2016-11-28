@@ -18,7 +18,7 @@ This exercise will allow you to practice using Git.
 
   Notice that there is now a `.git` directory in `git-practice` — you'll see it if you run the `ls -a` command.
 
-4) Create a new file called `README.txt`, and run `git status`. What output do you get?
+4) Create a new file called "README.txt," and run `git status`. What output do you get?
 
 5) Use the `git add README.txt ` command to add the new file to the staging area. Run `git status` again — how has its output changed?
 
@@ -39,4 +39,4 @@ command. See how both files have been staged? Go ahead and commit the addition o
 
 ---
 
-[Next Up: Publish Work on GitHub](05_lesson.md)
+[On to the next lesson!](05_lesson.md)
