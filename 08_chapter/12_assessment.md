@@ -10,7 +10,7 @@ In your terminal, from your home directory, navigate to the `fundamentals` direc
 
 This is where you'll be writing your code for the remainder of the unit assignments.
 
-But, here's the catch! You have already written the required HTML and CSS in previous units; you'll want to use that code moving forward, so make sure you replace the HTML and CSS found within the `index.html` and `style.css` files with the code you've written in previous assignments!
+But, here's the catch! You have already written the required HTML and CSS in previous units; you'll want to use that code moving forward, so make sure you replace the HTML and CSS found within the `index.html` and `style.css` files with the code you've written previously!
 
 You'll also want to link your `index.html` file to the `main.js` file. Remember when you linked your CSS file to your HTML file? Yes, that's right! It's as simple as that! Look at the syntax below - copy the line with the script tags to your HTML file and modify the source destination so it links to your `main.js` file.
 
