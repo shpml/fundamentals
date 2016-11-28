@@ -53,7 +53,7 @@ repeat forever
     turn off heater
 
 ```
-We first need to have the user enter a target temperature (in this case it's 72). Then, we will continually check to see if the current temperature dips lower than the target temperature by 5 or more degrees. If it does, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater. It's as simple as that!
+We first need to have the user enter a target temperature (in this case, it's 72). Then, we will continually check to see if the current temperature dips lower than the target temperature by 5 or more degrees. If it does, we will turn on the heater. If the current temperature is greater than or equal to the target temperature, we will turn off the heater. It's as simple as that!
 
 Breaking down problems in this fashion will likely seem a little challenging in the beginning. But, once you gain some practice, it will become second nature.
 
