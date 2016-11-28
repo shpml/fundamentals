@@ -20,7 +20,7 @@ This exercise will allow you to practice using Git.
 
 4) Create a new file called `README.txt`, and run `git status`. What output do you get?
 
-5) Use the `git add README.txt ` command to add the new file to the staging area. Run `git status` again - how has its output changed?
+5) Use the `git add README.txt ` command to add the new file to the staging area. Run `git status` again — how has its output changed?
 
 6) Now that you're satisfied with the changes you've staged, commit them using <code>git commit -m "..."</code>. Give the commit an appropriate message - remember, it should be short but descriptive.
 
@@ -33,7 +33,7 @@ command. See how both files have been staged? Go ahead and commit the addition o
 
 10) Next, `add` the changed file and type `git diff`. What's changed? Why? What do you have to do to see a `diff` of the changes in the staging area?
 
-11) Now – without adding or committing – make another change to the same file you altered in Step 9. Look at the `status` output and the `diff` output. See how you can have both staged and unstaged changes, even when you’re talking about a single file?
+11) Now — without adding or committing – make another change to the same file you altered in Step 9. Look at the `status` output and the `diff` output. See how you can have both staged and unstaged changes, even when you’re talking about a single file?
 
 12) Finally, `add` and `commit` all outstanding changes. Use the `log` command to see all of the commits you've made so far.
 
