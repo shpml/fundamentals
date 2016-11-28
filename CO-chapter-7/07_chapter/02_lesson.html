@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:36:59 GMT+0000 (UTC)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:39:40 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2076,7 +2076,7 @@
 </blockquote>
 <p>Once we&apos;re ready to officially record this version of our project, we can type:</p>
 <pre><code>$ git commit -m &quot;created a new post.txt file&quot;
-</code></pre><p>The <code>-m</code> option allows you to include a message, describing the changes you made for your collaborators &#x2014; or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.</p>
+</code></pre><p>The <code>-m</code> option allows you to include a message describing the changes you made for your collaborators &#x2014; or your future self. These should be short but descriptive, clearly indicating what changes each commit makes to the project.</p>
 <h3 id="the-git-staging-area">The Git Staging Area</h3>
 <p>One of the unique features of Git is its &quot;Staging Area.&quot; Git allows you to add changes to the local repo in two steps:</p>
 <pre><code>$ git add &lt;your-file-name&gt;
@@ -2084,7 +2084,7 @@ $ git commit -m &quot;message&quot;
 </code></pre><p>Why stage? So that, if you make multiple changes, you can commit them separately or all at once. (Basically, it exists to help you better organize your project history).</p>
 <p><img src="../assets/chapter2/add_commit.png" alt="Git Staging Area"></p>
 <h3 id="your-commit-history">Your Commit History</h3>
-<p>When you&apos;re farther into your project, after a bunch of commits to your repository, you may want to look back and see a timeline of the changes you&apos;ve made. Git allows you to view a list of commits, along with the date the commit was submitted, the author of the commit, the commit message, AND a unique number to identify the commit by, known as an SHA. This unique number allows Git to remember each commit. (A 40-digit code is easier for Git than &quot;Version1.txt&quot; or &quot;Draft-01-2014.txt&quot;).</p>
+<p>When you&apos;re farther into your project and have made many commits to your repository, you may want to look back and see a timeline of your changes. Git allows you to view a list of commits, along with the date the commit was submitted, the author of the commit, the commit message, AND a unique number to identify the commit by, known as an SHA. This unique number allows Git to remember each commit. (A 40-digit code is easier for Git than &quot;Version1.txt&quot; or &quot;Draft-01-2014.txt&quot;).</p>
 <p>To view the timeline of changes, you can run:</p>
 <pre><code> $ git log
 </code></pre><p>This will yield a list of entries that looks like this:</p>
