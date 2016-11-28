@@ -16,7 +16,7 @@ In a lot of ways, GitHub is like Dropbox.
 
 You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and view different versions of your files.
 
-Below is what the GitHub interface looks like for a repo called `awesome-project`:
+Below is what the GitHub interface looks like for a repo called "awesome-project:"
 
 1) **Repo Name and Owner**: describe who owns the repository, what the name of the repo is, and whether the repo is public or private.
 
