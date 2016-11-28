@@ -6,7 +6,7 @@
 
 This exercise will allow you to practice using Git.
 
-1) Open your terminal, and go into to the `fundamentals` directory you created earlier. Create a new directory within it called "git-practice."
+1) Open your terminal, and navigate to the `fundamentals` directory you created earlier. Create a new directory within it called "git-practice."
 
 2) Use `cd` to navigate into that new directory. You can make sure you're in the right place by using the `pwd` command.
 
