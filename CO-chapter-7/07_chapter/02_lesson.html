@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:24:44 GMT+0000 (UTC)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Nov 28 2016 15:28:52 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2052,18 +2052,18 @@
 <p> Do not execute this command in your <strong>home directory</strong>! It will make it difficult to work with any other repositories. Use <code>pwd</code> to check your location if you&apos;re unsure.</p>
 </blockquote>
 <p>When you take a look at your working directory in the GUI, you probably won&apos;t see any additional files, because (if you remember from Unit 6) hidden files are not visible on your computer by default. To see the <code>.git/</code> directory, you need to run <code>ls -a</code> from the command line.</p>
-<p>If you delete the hidden <code>.git</code> directory, you will effectively &quot;uninitialize&quot; your repository and lose the data Git collected for you.</p>
+<p>If you delete the hidden <code>.git</code> directory, you will effectively &quot;uninitialize&quot; your repository and lose the data Git has collected for you.</p>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
 <p> You should never manually change the internal contents of your <code>.git</code> directory, unless your name is Linus Torvalds.</p>
 </blockquote>
 <h3 id="saving-changes-to-your-project">Saving Changes to Your Project</h3>
-<p>Unfortunately, it&apos;s not enough to simply have your files in a repo. Like the terminal, Git doesn&apos;t make any assumptions about the changes you want to save or when you want to save them - you need to explicitly tell it what to do.</p>
+<p>Unfortunately, it&apos;s not enough to simply house your files in a repo. Like the terminal, Git doesn&apos;t make any assumptions about the changes you want to save or when you want to save them &#x2014; you need to explicitly tell it what to do.</p>
 <p>Suppose that we want to work on a blog post for General Assembly, so we create a directory on our desktop called &quot;GA-Blog,&quot; and run <code>git init</code> from inside that directory. At the moment, this project is empty. We can confirm this by running <code>git status</code>, which asks Git to give us an update on the status of our project.</p>
 <pre><code>$ git status
 </code></pre><p>We should get a response like this:</p>
 <p><img src="../assets/chapter2/git_status.gif" alt="Git Status of GA-Blog"></p>
-<p>Each &quot;save&quot; we make to our repository is called a <strong>commit</strong>. This message tells us that our project has no unsaved changes.</p>
-<p>Let&apos;s go ahead and make a new text file called <code>post.txt</code> inside of GA-Blog using the <code>touch</code> command.</p>
+<p>Each &quot;save&quot; we make to our repository is called a <strong>commit</strong>. The message above tells us that our project has no unsaved changes.</p>
+<p>Let&apos;s go ahead and make a new text file called <code>post.txt</code> inside of <code>GA-Blog</code> using the <code>touch</code> command.</p>
 <pre><code>$ touch post.txt
 </code></pre><p>Now, let&apos;s check our Git status:</p>
 <p><img src="../assets/chapter2/git_status_untracked.gif" alt="Git Status of GA-Blog"></p>
