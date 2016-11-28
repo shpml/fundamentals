@@ -79,7 +79,7 @@ differently — it "concatenates" two strings together to make one big string.
 * **Equality** (`===`) : This operator will accept any two types of data as inputs and (just like the comparison operators) evaluate to a Boolean value. It will only evaluate `true` if both sides are completely identical in data type and value.
 <br><u>For example</u>: <code>5 === 5</code> will evaluate to `true`, while <code>5 === '5'</code> will evaluate to `false`.
 
-* **Inequality** (`!==`) : This operator will also accept any two types of data as inputs and evaluate to a Boolean value. It is essentially the reverse of the Equality operator — it compares two values to check that both the data type and value are *not* the same.
+* **Inequality** (`!==`) : This operator will also accept any two types of data as inputs and evaluate to a Boolean value. It is essentially the reverse of the equality operator — it compares two values to check that both the data type and value are *not* the same.
 <br><u>For example</u>: <code>5 !== 5</code> will evaluate to `false`, while <code>5 !== '5'</code> will evaluate to `true`.
 
 * **Logical Operators** (`!`, `||`, <code>&&</code>): These operators both take and return Boolean values.
