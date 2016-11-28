@@ -127,7 +127,7 @@ Don't worry about the `origin` and `master` components just yet.
 
 If you're curious, here's a brief overview:
 * `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes if you want, but we'll only be working with one in Fundamentals.
-* `master` refers to the **branch** on your remote repo where you're currently adding changes. Again, for now, we'll only be working on the `master` branch.
+* `master` refers to the **branch** of your remote repo where you're currently adding changes. Again, for now, we'll only be working on the `master` branch.
 
 
 ### 6) Submitting a Pull Request
