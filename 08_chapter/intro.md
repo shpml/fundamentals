@@ -36,6 +36,6 @@ As you can see in the screenshot above, JS Bin features different window panes. 
 
 To save your JS Bin session, just "Login" or "Register" at the top, and log in with GitHub. When you select "File," followed by "New," you'll open a blank workspace. The moment you begin writing code, JS Bin will generate a URL that you can bookmark and come back to at any time.
 
-JS Bin has the ability to show a "console," displaying any JavaScript code you need to run. You will need to use this feature from time to time. You can hide or display any tabs (HTML, CSS, JavaScript, or console) as needed.
+JS Bin has the ability to show a "Console," displaying any JavaScript code you need to run. You will need to use this feature from time to time. You can hide or display any tabs (HTML, CSS, JavaScript, or console) as needed.
 
 Ready to begin? [Let's go](02_lesson.md).
