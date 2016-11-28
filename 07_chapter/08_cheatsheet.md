@@ -32,7 +32,7 @@
 ####Clone
 * A copy of a repository that lives on your computer instead of on a website's server, or the act of making that copy.
 * With your clone, you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online.
-* It is, however, connected to the remote version so that changes can be synced between the two.
+* A clone, however, is connected to the remote version so that changes can be synced between the two.
 * You can push your local changes to the remote to keep them synced when you're online.
 
 ####Push
