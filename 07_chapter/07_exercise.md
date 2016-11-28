@@ -10,7 +10,7 @@ Let’s walk through this process:
 
 ### Create a GitHub account
 
-**Step 1**: To start, let’s head over to GitHub.com. The first thing we’ll do is create a username by clicking on the field at the top right of the screen.
+**Step 1**: To start, let’s head over to GitHub.com. The first thing we’ll do is create a username by clicking on the field in the top right portion of the screen.
 
  ![Choose a Username](../assets/chapter2/step1.png)
 
