@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.2" data-basepath=".." data-revision="Mon Nov 28 2016 19:18:21 GMT+0000 (UTC)">
+    <div class="book" data-level="8.2" data-basepath=".." data-revision="Mon Nov 28 2016 19:20:42 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2150,7 +2150,7 @@ differently &#x2014; it &quot;concatenates&quot; two strings together to make on
 <p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9 + 2) * 25) - 5">
 <br></p>
 <p>One last tricky one: <code>1 + 1 + 1 + 1</code>. Obviously, we know that this expression is equal to 4. But what does its tree look like?</p>
-<p>In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on the subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this Wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5 + 2)</code>, or <code>3</code>.</p>
+<p>In this case, we actually need to look to the rules of math (anyone interested in some in-depth reading on the subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this Wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5 + 2)</code>, or <code>3</code>.</p>
 <p>Following this rule, our expression of <code>1 + 1 + 1 + 1</code> could also be written as <code>((((1) + 1) + 1) + 1)</code>. Is it easier to see the tree now?</p>
 <p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1">
 <br></p>
