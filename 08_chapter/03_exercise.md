@@ -12,9 +12,9 @@ We'd like to create a program that checks to see whether or not movie patrons ar
 
 Here is the pricing structure:
 
-1) Patron are 65 or older, they are eligible for senior discounts. The ticket price for seniors is $6.00.
+1) If patrons are 65 or older, they are eligible for senior discounts. The ticket price for seniors is $6.00.
 
-2) Patrons are 25 or younger, they are eligible for student discounts. The ticket price for students is $8.00.
+2) If patrons are 25 or younger, they are eligible for student discounts. The ticket price for students is $8.00.
 
 3) All other tickets cost $10.00.
 
