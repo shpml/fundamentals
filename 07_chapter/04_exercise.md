@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-This exercise will all you to practice using Git.
+This exercise will allow you to practice using Git.
 
 1) Open your terminal, and go into to the `fundamentals` directory you created earlier. Create a new directory within it called "git-practice."
 
