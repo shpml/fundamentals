@@ -46,23 +46,23 @@ Here's an example of one card:
 var cardOne = "queen";
 ```
 
-2) Make sure you've linked your `main.js` file to your `index.html` file.
+3) Make sure you've linked your `main.js` file to your `index.html` file.
 
-3) Now that you have four cards, you'll want to compare their variables to check for equality.
+4) Now that you have four cards, you'll want to compare their variables to check for equality.
 
  >**_Reminder_**: Because you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and run this code directly in the console to see the results of your executed JS.
 
-4) Go ahead and open your `index.html` file, and then open the file in the browser. After the web page loads in Chrome, you can go to View > Developer > Developer Tools and click on the console panel.
+5) Go ahead and open your `index.html` file, and then open the file in the browser. After the web page loads in Chrome, you can go to View > Developer > Developer Tools and click on the console panel.
 
 ![](/assets/chapter5/developer.png)
 
-5) To compare the two queen variables to check for equality, type in the following code in your console and run your JavaScript:
+6) To compare the two queen variables to check for equality, type in the following code in your console and run your JavaScript:
 
 ```js
 cardOne == cardTwo
 ```
 
-6) Now, try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king, what does this expression evaluate to?
+7) Now, try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king, what does this expression evaluate to?
 
 ```js
 cardOne == cardFour
@@ -92,12 +92,12 @@ In order to back up your code and track your work, you'll want to commit the cha
 
 > **NOTE** Remember, when you're programming, you need to figure out the solution to the problem at hand before you ever start writing code. Below, you'll find a helpful general procedure you can follow:
 
-1. **Understand the problem.** In particular, try to determine (a) what you will be given and (b) what you hope to get out of the program. If you can't explain the problem in those terms, you won't be able to move further.
+1) **Understand the problem.** In particular, try to determine (a) what you will be given and (b) what you hope to get out of the program. If you can't explain the problem in those terms, you won't be able to move further.
 
-2. **Come up with test cases (and eventually, tests).** Once you've figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not it is working. For this assignment, this would include comparing the values of cards.
+2) **Come up with test cases (and eventually, tests).** Once you've figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not it is working. For this assignment, this would include comparing the values of cards.
 
-3. **Solve the problem in English.** Or any human language, really. The point is, it's a good idea to pause and avoid *touching* your keyboard until you can start to explain, clearly and precisely, both what it is you're trying to do and how you're trying to do it. If it helps, you can try sketching out the concept or outlining your procedure on paper.
+3) **Solve the problem in English.** Or any human language, really. The point is, it's a good idea to pause and avoid *touching* your keyboard until you can start to explain, clearly and precisely, both what it is you're trying to do and how you're trying to do it. If it helps, you can try sketching out the concept or outlining your procedure on paper.
 
-4. **Write code, even if it's not the prettiest.** At this stage, don't worry if your code is elegant, readable, or robust. Just make it work to satisfy all of your test cases.
+4) **Write code, even if it's not the prettiest.** At this stage, don't worry if your code is elegant, readable, or robust. Just make it work to satisfy all of your test cases.
 
-5. **"Refactor" your code.** Now that your code is functional, take some time to make your code clean/efficient/robust. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure it still gives you the correct results.
+5) **"Refactor" your code.** Now that your code is functional, take some time to make your code clean/efficient/robust. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure it still gives you the correct results.
