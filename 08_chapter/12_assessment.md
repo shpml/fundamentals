@@ -29,7 +29,7 @@ You'll also want to link your `index.html` file to the `main.js` file. Remember 
 In this section, you'll be working to create the cards that will make up your memory game. Each card will have a value of "queen" or "king," and there should be a total of four cards. Giving the cards a value means we can use comparison operators to check for equality. You'll also push your code up to your repository! Let's get started.
 
 
-##### Below are the Steps for Completing the Assignment:
+##### Below are the steps for completing the assignment:
 
 1) Navigate to the `main.js` file in Sublime.
 
