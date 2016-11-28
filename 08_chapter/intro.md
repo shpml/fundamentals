@@ -32,7 +32,7 @@ To start playing around with JavaScript, we'll be using a website called **[JS B
 
 ![JSBin Screenshot](../assets/chapter3/jsbin.png)
 
-As you can see in the screenshot above, JS Bin features different window panes. On the right, with the light background, is the *preview* pane, which displays what your code builds in real time. It automatically updates with any change, unless you uncheck the "Auto-run JS" option in the upper righthand corner of this section. On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and JavaScript. To execute these instructions, click the "Run with JS" button in the right window.
+As you can see in the screenshot above, JS Bin features different window panes. On the right, with the light background, is the *preview* pane, which displays what your code builds in real time. It automatically updates with any change, unless you uncheck the "Auto-run JS" option in the upper right-hand corner of this section. On the left, with the dark background, is the *editor*. The editor allows us to write several instructions for our computer using HTML, CSS, and JavaScript. To execute these instructions, click the "Run with JS" button in the right window.
 
 To save your JS Bin session, just "Login" or "Register" at the top, and log in with GitHub. When you select "File," followed by "New," you'll open a blank workspace. The moment you begin writing code, JS Bin will generate a URL that you can bookmark and come back to at any time.
 
