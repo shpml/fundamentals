@@ -122,7 +122,7 @@ Because the `-` requires `((9 + 2) * 25)` to be evaluated in order to perform th
 
 One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this expression is equal to 4. But what does its tree look like?
 
-In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on the subject can [check out this Wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
+In this case, we actually need to look to the rules of math (anyone interested in some in-depth reading on the subject can [check out this Wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
 
 Following this rule, our expression of `1 + 1 + 1 + 1` could also be written as `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
 
