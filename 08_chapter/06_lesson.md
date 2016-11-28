@@ -25,7 +25,7 @@ Assume that `x` is equal to 10. What values do the following expressions evaluat
 * `x * x;`
 * `3 * (x * x) - 2 * x + 5;`
 
-We can redefine our `x` variable as many times as we want. However, ***only the most recent value of `x` is retained*** Once `x` is redefined, its original value is lost forever.
+We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** Once `x` is redefined, its original value is lost forever.
 
 Consider the following JavaScript code in a JS Bin console.
 
