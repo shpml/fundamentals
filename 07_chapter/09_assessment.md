@@ -40,4 +40,4 @@ In order to share our memory game publicly and turn in the assignment, you will 
 
 ---
 
-And that's it for awhile! We'll be coming back to this project at the end of every chapter, but now it's time to move on to [Unit 8](../08_chapter/intro.md).
+And that's it for awhile! We'll be coming back to this project at the end of every chapter, but it's now time to move on to [Unit 8](../08_chapter/intro.md).
