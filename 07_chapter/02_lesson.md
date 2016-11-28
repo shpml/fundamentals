@@ -37,7 +37,7 @@ We should get a response like this:
 
 Each "save" we make to our repository is called a **commit**. The message above tells us that our project has no unsaved changes.
 
-Let's go ahead and make a new text file called `post.txt` inside of GA-Blog using the `touch` command.
+Let's go ahead and make a new text file called `post.txt` inside of `GA-Blog` using the `touch` command.
 
 ```
 $ touch post.txt
