@@ -56,13 +56,13 @@ var cardOne = "queen";
 
 ![](/assets/chapter5/developer.png)
 
-6) To compare the two queen variables to check for equality, type in the following code in your console and run your JavaScript:
+6) To compare the two `"queen"` variables to check for equality, type in the following code in your console and run your JavaScript:
 
 ```js
 cardOne == cardTwo
 ```
 
-7) Now, try to compare a king variable with a queen variable. For example, if cardOne is a queen and cardFour is a king, what does this expression evaluate to?
+7) Now, try to compare a `"king"` variable with a `"queen"` variable. For example, if `cardOne` is a queen and `cardFour` is a king, what does this expression evaluate to?
 
 ```js
 cardOne == cardFour
