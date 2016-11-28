@@ -22,7 +22,7 @@
 
 ####Repository
 * The most basic element of Git.
-* A repository is a project's folder, containing all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+* A repository is a project's folder that contains all of the project files (including documentation) and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
 
 ####Fork
 * A personal copy of another user's repository that lives on your account.
