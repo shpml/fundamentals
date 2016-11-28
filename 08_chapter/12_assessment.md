@@ -52,7 +52,7 @@ var cardOne = "queen";
 
  >**_Reminder_**: Because you're working within the JavaScript file, `main.js`, which is connected to your `index.html` file, you can open the `index.html` in the browser and run this code directly in the console to see the results of your executed JS.
 
-5) Go ahead and open your `index.html` file, and then open the file in the browser. After the web page loads in Chrome, you can go to View > Developer > Developer Tools and click on the console panel.
+5) Go ahead and open your `index.html` file, and then open the file in the browser. After the web page loads in Chrome, you can go to `View` > `Developer` > `Developer Tools` and click on the console panel.
 
 ![](/assets/chapter5/developer.png)
 
