@@ -30,13 +30,13 @@ In order to share our memory game publicly and turn in the assignment, you will 
 
   ![Image showing "clone HTTP address"](../assets/chapter2/clone_http.png)
 
-6) Open up the terminal application on your computer, and navigate to the `fundamentals` directory within your home directory. Once there, run the following Git command from the command line:
+6) Open up the terminal application on your computer and navigate to the `fundamentals` directory within your home directory. Once there, run the following Git command from the command line:
 <br>
 `git clone https://your/clone/url` (substituting the clone URL you copied above)
 <br>
   This will copy your forked repo from GitHub to your computer so that you can work on it locally.
 
-7) If you've followed these directions correctly, you should have a repository in your `fundamentals` folder called `wdi-fundamentals-memorygame`. This repository contains three folders and a couple of other files. For this project, the ONLY file we're expecting you to edit is `main.js` - it can be found at `wdi-fundamentals-memorygame/starter-code/main.js`.
+7) If you've followed these directions correctly, you should have a repository in your `fundamentals` folder called `wdi-fundamentals-memorygame`. This repository contains three folders and a couple of other files. For this project, the ONLY file we're expecting you to edit is `main.js` — it can be found at `wdi-fundamentals-memorygame/starter-code/main.js`.
 
 ---
 
