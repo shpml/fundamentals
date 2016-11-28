@@ -33,7 +33,7 @@ command. See how both files have been staged? Go ahead and commit the addition o
 
 10) Next, `add` the changed file and type `git diff`. What's changed? Why? What do you have to do to see a `diff` of the changes in the staging area?
 
-11) Now — without adding or committing – make another change to the same file you altered in Step 9. Look at the `status` output and the `diff` output. See how you can have both staged and unstaged changes, even when you’re talking about a single file?
+11) Now — without adding or committing — make another change to the same file you altered in Step 9. Look at the `status` output and the `diff` output. See how you can have both staged and unstaged changes, even when you’re talking about a single file?
 
 12) Finally, `add` and `commit` all outstanding changes. Use the `log` command to see all of the commits you've made so far.
 
