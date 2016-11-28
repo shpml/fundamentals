@@ -4,7 +4,7 @@
 
 ##Thinking Programmatically
 
-Before you set out to write a program, it's important to understand how computers "think." Computers solve problems differently than you or me. They do not learn to perform tasks, but instead need detailed, step-by-step instructions every time they perform a task.
+Before you set out to write a program, it's important to understand how computers "think." Computers solve problems differently than you or me. They do not learn to perform tasks, but instead need detailed, step-by-step instructions every time.
 
 The only knowledge a computer has is the knowledge we tell it.
 
