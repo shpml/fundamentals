@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.4" data-basepath=".." data-revision="Mon Nov 28 2016 20:30:00 GMT+0000 (UTC)">
+    <div class="book" data-level="8.4" data-basepath=".." data-revision="Mon Nov 28 2016 20:33:11 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2075,14 +2075,14 @@
 <h3 id="null">Null</h3>
 <p><code>null</code> values are values that you decide have <strong>no value</strong>. Why would I want to do this? Why not use <code>undefined</code>? As it turns out, we can&apos;t &#x2014; variables in JavaScript are only <code>undefined</code> until they&apos;ve been assigned a value for the first time. <code>null</code> gives us a way to &quot;reset&quot; the value of a variable to &quot;nothing.&quot;</p>
 <p>Here&apos;s an example: Suppose you have an application for keeping track of your possessions. You might have a string called <code>locationOfKeys</code> indicating where you can find your keys. Then, one day, your keys get lost. What&apos;s the value of <code>locationOfKeys</code> now? Well, it&apos;s &quot;nothing&quot; &#x2014; they are lost. If <code>null</code> didn&apos;t exist, we would have to invent a special string value (perhaps <code>&quot;lost&quot;</code>) to signify that the keys are missing. <code>null</code> gives us a standard way of handling that kind of situation in which we can simply say <code>locationOfKeys = null;</code></p>
-<p>That&apos;s the purpose of <code>null</code>. It is designed to represent the <em>lack of a value</em>. Whenever variables are defined without any value, they are <code>undefined</code>. This can become tricky to troubleshoot over time, as it acts as a catchall for <em>everything without a value</em>. We can <strong>specify</strong> our variables as <code>null</code> to represent there is no data.</p>
+<p>That&apos;s the purpose of <code>null</code>. It is designed to represent the <em>lack of a value</em>. Whenever variables are defined without any value, they are <code>undefined</code>. This can become tricky to troubleshoot over time, as it acts as a catchall for <em>everything without a value</em>. We can <strong>specify</strong> our variables as <code>null</code> to represent that there is no data.</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// we will define a variable with no value, or null.</span>
 <span class="hljs-keyword">var</span> playerScore = <span class="hljs-literal">null</span>;
 </code></pre>
 <p>We can then <strong>evaluate</strong> if our value is <code>null</code>:</p>
 <pre><code class="lang-javascript">playerScore === <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;The player has not scored anything.&apos;</span>
 </code></pre>
-<p>What if we are provided with an input representing a player&apos;s actions on a timed game? In <em>Dance, Dance, Revolution</em>, a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen, and, as they pass by the middle of the screen, the player <em>must</em> perform an action in order to score a point. The game can evaluate the player&apos;s score in real time!</p>
+<p>What if we are provided with an input representing a player&apos;s actions in a timed game? In <em>Dance, Dance, Revolution</em>, a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen, and, as they pass by the middle of the screen, the player <em>must</em> perform an action in order to score a point. The game can evaluate the player&apos;s score in real time!</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> userInput = <span class="hljs-literal">null</span>;
 userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">// no points... this time</span>
 </code></pre>
