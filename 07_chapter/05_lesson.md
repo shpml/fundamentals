@@ -70,7 +70,7 @@ This workflow consists of the following steps:
 
 ### 1) Forking
 
-Let's walk through an example. Consider a project like Node.js, a JavaScript framework you'll learn about in this course. Node.js is completely open source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on GitHub. If you visit the main repo, you'll see that there are more than 400 contributors who have committed changes to Node.js.
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework you'll learn about in this course. Node.js is completely open source, which means that anyone can read (and even copy) the code that makes it work — including you! The source code is publicly available [here](https://github.com/joyent/node) on GitHub. If you visit the main repo, you'll see that there are more than 400 contributors who have committed changes to Node.js.
 
 <br>
 ![Node.js Contributors](../assets/chapter2/node.png)
