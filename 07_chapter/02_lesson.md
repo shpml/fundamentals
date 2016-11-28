@@ -81,7 +81,7 @@ Why stage? So that, if you make multiple changes, you can commit them separately
 
 ### Your Commit History
 
-When you're farther into your project, after a bunch of commits to your repository, you may want to look back and see a timeline of the changes you've made. Git allows you to view a list of commits, along with the date the commit was submitted, the author of the commit, the commit message, AND a unique number to identify the commit by, known as an SHA. This unique number allows Git to remember each commit. (A 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt").
+When you're farther into your project and have made many commits to your repository, you may want to look back and see a timeline of the changes you've made. Git allows you to view a list of commits, along with the date the commit was submitted, the author of the commit, the commit message, AND a unique number to identify the commit by, known as an SHA. This unique number allows Git to remember each commit. (A 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt").
 
 To view the timeline of changes, you can run:
 
