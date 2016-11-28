@@ -84,7 +84,7 @@ Although they're primarily used with Boolean values, logical operators can also 
 
 * Being **truthy** is exactly the opposite of being "falsey;" using `!` (or, NOT) on a "truthy" value would evaluate to `false`. Anything that isn't "falsey" is "truthy," including all strings, all non-zero numbers, and (of course) `true`.
 
-As they say, "_to a hammer (read: Boolean operator), everything looks like a nail (read: Boolean value)_".
+As they say, "_To a hammer (read: Boolean operator), everything looks like a nail (read: Boolean value)_".
 
 Below are the exact rules that the Boolean operators follow when dealing with non-Boolean input values:
 
