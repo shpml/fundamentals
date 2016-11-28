@@ -44,7 +44,7 @@ command. Try typing the following lines into the JS Bin console tab and hit `ent
 * <code>typeof 3.45;</code>
 * <code>typeof true;</code>
 
-> **HINT**  You may have noticed that each of those lines ended in a `;` - in
+> **HINT**  You may have noticed that each of those lines ended in a `;` — in
 > JavaScript, a semicolon is used to denote the end of a line. Although your code
 > may execute without them, there may be cases where a missing semicolon could cause
 > unexpected results. It's best to just get in the habit of using them.
