@@ -17,7 +17,7 @@ $ git init
 
 When you take a look at your working directory in the GUI, you probably won't see any additional files, because (if you remember from Unit 6) hidden files are not visible on your computer by default. To see the `.git/` directory, you need to run `ls -a` from the command line.
 
-If you delete the hidden `.git` directory, you will effectively "uninitialize" your repository and lose the data Git collected for you.
+If you delete the hidden `.git` directory, you will effectively "uninitialize" your repository and lose the data Git has collected for you.
 
 > **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
 
