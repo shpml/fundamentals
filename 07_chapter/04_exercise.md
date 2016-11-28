@@ -16,7 +16,7 @@ This exercise will allow you to practice using Git.
 
   > **CAUTION** Before running `git init`, make sure you're not already inside another Git repository. Type `git status`. If you see `fatal: Not a git repository (or any of the parent directories): .git`, then you know you're good to go, and you can safely run `git init` within this folder.
 
-  Notice that there is now a `.git` directory in `git-practice` - you'll see it if you run the `ls -a` command.
+  Notice that there is now a `.git` directory in `git-practice` — you'll see it if you run the `ls -a` command.
 
 4) Create a new file called `README.txt`, and run `git status`. What output do you get?
 
