@@ -36,8 +36,8 @@ In this section, you'll be working to create the cards that will make up your me
 2) Create four variables that simulate the cards in your game.
 
 - They should be `string` types.
-- Two should have a value of `"queen"`, and the other two should have a value of `"king"`.
-- They will represent your cards (i.e., "queen" card).
+- Two should have a value of `'queen'`, and the other two should have a value of `'king'`.
+- They will represent your cards (i.e., `'queen'` card).
 - Name your variables `cardOne`, `cardTwo`, `cardThree`, and `cardFour`.
 
 Here's an example of one card:
