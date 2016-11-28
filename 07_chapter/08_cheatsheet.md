@@ -46,7 +46,7 @@ Command                                    | Description
 `git status`                               | Gets the current status of Git. Files that are "staged" (about to be committed) and files that are unstaged (files that have changed since the last commit but are not about to be committed) will both show up here.
 `git add path/to/directory/or/file`        | Adds a file to the "stage." The stage can be thought of as an in-between state between the last commit and what is ready to be committed. Once we run the command `git commit`, all staged files will be committed to the timeline.
 <code>git commit -m "Commit message"</code>| Commits all staged files to the timeline. If <code>-m "Commit message"</code> is committed, Git will open your default text editor (typically Vim) to enter a longer message. If for any reason Vim opens, you can close it by typing `:q`.
-`git log`                                  | Visualizes the timeline. You can scroll with the arrow keys or `j`, `k`, and exit the view by typing `q`.
+`git log`                                  | Visualizes the timeline. You can scroll with the arrow keys (or `j` and `k`) and exit the view by typing `q`.
 `git diff path/to/directory/or/file`       | Shows the tracked but unstaged changes of the given file or directory.
 `git clone http://path/to/repo`            | Creates a new local git repo copied from a remote one.
 `git push origin master`                   | Sends local changes to the tracked remote repository.
