@@ -63,7 +63,7 @@ x = 5;
 x = 15;
 2 * x;
 ```
-What does that last expression evaluate to? Or, put differently, what is the most recent value of `x` (as of that line) multiplied by `2`? If you guessed `30`, you're correct!
+What does that last expression evaluate to? Or, put differently, what is the most recent value of `x` (as of that line) multiplied by `2`? If you guessed 30, you're correct!
 
 
 
