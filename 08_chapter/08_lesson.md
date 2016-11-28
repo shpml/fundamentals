@@ -7,7 +7,7 @@
 At this point, we've covered most of what you need to know about basic expressions. However, there are a few quirks and exceptions that we've (until now) glossed over, especially related to Boolean logic. Let's take a closer look at a few:
 
 * We'll start with **undefined** and **null** values. These two values represent a lack of data.
-* Next, we will dive into **truthy** and **falsey** - the result of JavaScript's attempt to convert non-Boolean values to Booleans at runtime.
+* Next, we will dive into **truthy** and **falsey** — the result of JavaScript's attempt to convert non-Boolean values to Booleans at runtime.
 * Finally: a challenge!
 
 ### Undefined
