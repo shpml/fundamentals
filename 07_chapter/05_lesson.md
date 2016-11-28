@@ -22,7 +22,7 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
-2) **Overview*: displays the number of commits, branches, releases, and contributors to a particular repo. Selecting any one of these options will open a detailed view of that selection.
+2) **Overview**: displays the number of commits, branches, releases, and contributors to a particular repo. Selecting any one of these options will open a detailed view of that selection.
 
 	![Overview](../assets/chapter2/overview_github.gif)
 
