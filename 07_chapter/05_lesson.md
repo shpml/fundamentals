@@ -30,7 +30,7 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![File Structure](../assets/chapter2/contents_github.gif)
 
-4) **Fork button**: allows you copy a version of this repo (`user/awesome-project`) to your own GitHub account.
+4) **Fork button**: allows you to copy a version of this repo (`user/awesome-project`) to your own GitHub account.
 
 	![Fork button](../assets/chapter2/fork_github.gif)
 
