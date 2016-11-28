@@ -100,7 +100,7 @@ Next, you'll want to be able to edit the code.
 
 To make a local copy of a fork, you'll need to open up the terminal and use a Git command.
 
-You need to navigate to the place where you'd like to store the repo, and then type:
+You should navigate to the place where you'd like to store the repo and then type:
 
 ```
 git clone https://url/to/clone
