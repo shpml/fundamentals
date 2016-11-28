@@ -18,7 +18,7 @@ You have a folder in the cloud, your *remote repo*, which syncs with your comput
 
 Below is what the GitHub interface looks like for a repo called `awesome-project`:
 
-1) **Repo Name and Owner**: describe who owns the repository, what the name of the repo is, and whether the repo is public or private.
+1) **Repo Name and Owner**: describes who owns the repository, the name of the repo, and whether the repo is public or private.
 
 	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
