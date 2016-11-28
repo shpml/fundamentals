@@ -6,7 +6,7 @@
 
 Now that we've covered variables and Booleans, we can write code that simulates the cards in our memory game and compare them for a match.
 
-In your terminal, from your home directory, navigate to the `fundamentals` directory. Then, go into the memory game project repo - this repo should be named `wdi-fundamentals-memorygame`. Finally, open this project in your text editor, and bring up the `main.js`, `index.html`, and `style.css` files in the `starter-code` directory.
+In your terminal, from your home directory, navigate to the `fundamentals` directory. Then, go into the memory game project repo — this repo should be named `wdi-fundamentals-memorygame`. Finally, open this project in your text editor, and bring up the `main.js`, `index.html`, and `style.css` files in the `starter-code` directory.
 
 This is where you'll be writing your code for the remainder of the unit assignments.
 
