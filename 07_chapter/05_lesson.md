@@ -110,7 +110,7 @@ You can find the URL to clone on the right side of the forked repo on GitHub:
 
 ![Node.js Clone](../assets/chapter2/node_clone.png)
 
-By issuing the clone command, you're asking GitHub via the command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
+By issuing the clone command, you're asking GitHub via the command line for a copy of your remote repo, and this copy, or **clone**, ends up in your working directory.
 
 > **HINT** If you're following along in Git Bash in Windows, the commands to copy and paste are a little different than the default Windows copy/paste commands. The command to copy is `control + insert`, and the command to paste is `shift + insert`.
 
