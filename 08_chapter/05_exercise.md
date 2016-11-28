@@ -18,7 +18,7 @@ This item above is called a *comment* — it tells a computer to completely igno
 1) In the console tab (on the right), write an expression that evaluates to the integer `30`, then hit `enter` or `return`.
 You can use any expression you like, but it must contain at least one operation (ideally, you'll use two or more). 
 
-	** Note:** Ensure the *type* of this result is correct - Remember `30` and <code>'30'</code> are not the same!
+	** Note:** Ensure the *type* of this result is correct — Remember `30` and <code>'30'</code> are not the same!
 
 2) Now, replace your first expression with a second expression. This one should evaluate to 'Hello World'.
 
