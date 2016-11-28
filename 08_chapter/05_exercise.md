@@ -13,7 +13,7 @@ Check out the sample code in the JS Bin session below. If you don't see the JS B
 /* Your Expression Here */
 ```
 
-This item above is called a *comment* - it tells a computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
+This item above is called a *comment* — it tells a computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
 
 1) In the console tab (on the right), write an expression that evaluates to the integer `30`, then hit `enter` or `return`.
 You can use any expression you like, but it must contain at least one operation (ideally, you'll use two or more). 
