@@ -67,7 +67,7 @@ There are *many* different operators, but here are some of the most common:
 * **Arithmetic** (`+`, `-`, `*`, `/`): These operators all work as you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs and causes the whole expression to evaluate to `4`.
 
 >**Note** When given string arguments, the `+` operator actually behaves
-differently - it "concatenates" two strings together to make one big string.
+differently — it "concatenates" two strings together to make one big string.
 <br><u>For example</u>: <code>'Hello' + ' ' + 'Bob'</code> will evaluate to <code>'Hello Bob'</code>.
 
 * **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as its inputs and returns what's leftover from the division.
