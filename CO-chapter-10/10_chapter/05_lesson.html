@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Nov 29 2016 18:27:32 GMT+0000 (UTC)">
+    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Nov 29 2016 18:42:19 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2075,11 +2075,11 @@
   }
 }
 </code></pre>
-<p>To assign a value (<code>x</code>, <code>o</code>) to any cell on the board, edit the return value for the corresponding case. For example, if you want the board to read:</p>
+<p>To assign a value (<code>x</code>, <code>o</code>) to any cell on the board, edit the <code>return</code> value for the corresponding case. For example, if you want the board to read:</p>
 <pre><code>| null | null |   x  |
 | null |   o  | null |
 | null |   o  |   x  |
-</code></pre><p>You would edit the switch statement like so:</p>
+</code></pre><p>You would edit the <code>switch</code> statement like so:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cellValue = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(key)</span> </span>{
   <span class="hljs-keyword">switch</span>(key) {
     <span class="hljs-keyword">case</span> <span class="hljs-string">&apos;a&apos;</span>: <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
@@ -2097,12 +2097,12 @@
 </code></pre>
 <h3 id="who-is-the-winner">Who is the Winner?</h3>
 <p>Now, let&apos;s write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.</p>
-<p>We&apos;ll call it <code>getWinner</code>, and it will give us back either &apos;x&apos; (if X has won), &apos;o&apos; (if O has won), or <code>null</code> (if neither side has won).</p>
+<p>We&apos;ll call it <code>getWinner</code>, and it will give us back either <code>x</code> (if X has won), <code>o</code> (if O has won), or <code>null</code> (if neither side has won).</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getWinner = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
 }
 </code></pre>
 <p>So, where do we go from here?</p>
-<p>One way to determine the winner might be to check whether X has won and then to check whether O has won. And what if two functions existed that would determine this for us?</p>
+<p>One way to determine the winner might be to check whether or not X has won and then check whether or not O has won. And what if two functions existed that would determine this for us?</p>
 <p>We could call them <code>winnerIsX</code> and <code>winnerIsO</code>. <code>winnerIsX</code> could give us back <code>true</code> if X has won and <code>false</code> if it hasn&apos;t. If such functions existed, we could rewrite <code>getWinner</code> like this:</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> getWinner = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">if</span> (winnerIsX()) {
