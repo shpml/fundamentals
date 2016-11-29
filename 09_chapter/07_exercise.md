@@ -8,7 +8,7 @@ If you don't see the JS Bin below, please refresh the page. Here's the starter c
 
 <a class="jsbin-embed" href="https://jsbin.com/woriviq/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-Last time, we wrote code that took an input, `x`, and set a new `result` value according to a specific set of rules. This time, your challenge is to loop through every number from 1 to `max`, applying those exact same rules to that number and, finally, printing the result out to the console using the command `console.log(result);`.
+Last time, we wrote code that took an input, `x`, and set a new `result` value according to a specific set of rules. This time, your challenge is to loop through every number from 1 to `max`, applying those exact same rules to each number and, finally, printing the result out to the console using the command `console.log(result);`.
 
 For reference, if `max` is 20, the following should be displayed in the console:
 
