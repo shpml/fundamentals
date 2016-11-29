@@ -55,7 +55,7 @@ document.getElementById('important').className = 'highlight';
 
 ```
 
-The `highlight` class will then be added to the element with the ID `important`, along with the background-color associated with the class.
+The `highlight` class will then be added to the element with the ID `important`, along with the background color associated with the class.
 
 ![](/assets/chapter5/list2.png)
 
