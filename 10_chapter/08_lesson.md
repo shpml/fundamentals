@@ -43,7 +43,7 @@ In Chrome, you can go to `View` > `Developer` > `Developer Tools` and click on t
 
 You might notice that, at this point, the DOM closely resembles our original HTML document. However, this is a *living* model of the page, made up of node objects that can be manipulated with JavaScript.
 
-Maybe we want to use JavaScript to add a fourth list item to the page – "Feed the Cat." Then, perhaps we want to change the background-color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to "Return library books - DONE!"
+Maybe we want to use JavaScript to add a fourth list item to the page — "Feed the Cat." Then, perhaps we want to change the background-color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to "Return library books - DONE!"
 
 Now the DOM looks pretty different from our original HTML file.
 
@@ -55,7 +55,7 @@ Let's take a look at some of the methods we have available to us!
 
 ##Accessing Elements
 
-First things first - before we can work with an element, we first need to find, or *select*, the DOM node that represents it.
+First things first — before we can work with an element, we first need to find, or *select*, the DOM node that represents it.
 
 In order to find an element, we need to search through the document. The syntax for searching for an element looks something like this:
 
