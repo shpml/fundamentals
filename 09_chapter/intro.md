@@ -8,7 +8,7 @@
 
 ---
 
-In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Sounds kind of like a recipe, right?
+In the previous unit, we spent some time writing very simple programs — sets of instructions that were interpreted by our computer one at a time, in order. Sounds kind of like a recipe, right?
 
 Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA:"
 > ...
