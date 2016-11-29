@@ -10,7 +10,7 @@ Below is the starter code for your next exercise. If you don't see the JS Bin, p
 
 In this exercise we're going to practice manipulating the DOM by updating our "Reading List" site, which is a little outdated.
 
-For now, we'll run our JavaScript to update the DOM when the page loads. In the next lesson we'll take a look at how we can update the page based on a user's actions; maybe we'll add a list item when the user clicks on a button. Or, perhaps we'll remove a list item when the user clicks on an 'X' icon.
+For now, we'll run our JavaScript to update the DOM when the page loads. In the next lesson we'll take a look at how we can update the page based on a user's actions; maybe we'll add a list item when the user clicks on a button. Or, perhaps we'll remove a list item when the user clicks on an `X` icon.
 
 
 ###Instructions
