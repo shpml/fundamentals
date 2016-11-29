@@ -78,12 +78,12 @@ var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];
 ```
 
 How could you use iteration to generate a new array called `newArray` from `oldArray` so that:
-* Each value in `newArray` is the value of its corresponding element in `oldArray` plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`)
-* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`)
-* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`)
-* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`)
+* Each value in `newArray` is the value of its corresponding element in `oldArray` plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`).
+* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`).
+* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`).
+* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`).
 
-These ones are a bit tricky, so don't get discouraged if the answers don't come immediately, just keep experimenting with your code until it works!
+These ones are a bit tricky, so don't get discouraged if the answers don't come immediately, just keep experimenting with your code until they work!
 
 ---
 
