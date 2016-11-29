@@ -14,7 +14,7 @@ Replace all of your card variables with an `array` of cards. Once that is comple
 
 ##### Here are the steps for completing the assignment:
 
-1) Declare a variable, `cards`, and set it equal to an `array` of four `String` elements: `queen`, `queen`, `king`, `king`.
+1) Declare a variable, `cards`, and set it equal to an array of four `string` elements: `'queen'`, `'queen'`, `'king'`, `'king'`.
 
 
 2) Declare a variable, `cardsInPlay`, whose value is an empty array.
