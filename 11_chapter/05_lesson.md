@@ -67,7 +67,7 @@ for (var i = 2; i < tempsInF.length; i += 3) {
 }
 ```
 
-In addition to being one of the simplest ways to iterate through an array, in JavaScript (and many other languages), it is also one of the most versatile!
+In addition to being one of the simplest ways to iterate through an array, in JavaScript (and many other languages), a `for` loop is also one of the most versatile!
 
 ### Test Yourself
 
