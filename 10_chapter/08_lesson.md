@@ -342,7 +342,7 @@ For example:
 document.getElementById('important').textContent = 'Done!'
 ```
 
-This code would change the text content of the `<li>` with the id `important` to 'Done!'.
+This code would change the text content of the `li` with the ID `important` to `Done!`.
 
 ![](/assets/chapter5/thingstodo5.png)
 
