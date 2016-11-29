@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.3" data-basepath=".." data-revision="Tue Nov 29 2016 21:40:41 GMT+0000 (UTC)">
+    <div class="book" data-level="11.3" data-basepath=".." data-revision="Tue Nov 29 2016 21:47:02 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2050,13 +2050,13 @@
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> friends = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Joey&apos;</span>, <span class="hljs-string">&apos;Chandler&apos;</span>, <span class="hljs-string">&apos;Ross&apos;</span>];
 </code></pre>
 <p>We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index: 2), and so on. Great! This is an easy way to keep track of each person&apos;s location.</p>
-<p>But, suppose that Monica decides she&apos;s waited long enough for an iPhone and decides to leave the line and get an Android phone instead. What happens when Monica leaves?</p>
+<p>But, suppose that Monica decides she&apos;s waited long enough for an iPhone and leaves the line to get an Android phone instead. What happens when she leaves?</p>
 <pre><code class="lang-javascript">friends.splice(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// [&quot;Monica&quot;]</span>
 friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, &apos;Joey&apos;, &apos;Chandler&apos;, &apos;Ross&apos;]</span>
 </code></pre>
-<p>Well, Rachel stays in the same place. But suddenly, Phoebe isn&apos;t at index 2 - she&apos;s now at index <em>1</em>, while <em>Joey</em> is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, &quot;disarray,&quot; as it were.</p>
-<p>This system does a good job of keeping track of everyone&apos;s order, but its biggest drawback is that our method of referencing any element is tied to its position <em>rather than the element itself</em>. Fortunately, there are other ways of keeping track of elements - for example, labeling them.</p>
-<p>Let&apos;s imagine that every person in this totally hypothetical office has a &quot;lunch&quot; they keep in the fridge.</p>
+<p>Well, Rachel stays in the same place. But suddenly, Phoebe isn&apos;t at index 2 &#x2014; she&apos;s now at index <em>1</em>, while <em>Joey</em> is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, &quot;disarray,&quot; as it were.</p>
+<p>This system does a good job of keeping track of everyone&apos;s order, but its biggest drawback is that our method of referencing any element is tied to its position <em>rather than the element itself</em>. Fortunately, there are other ways of keeping track of elements &#x2014; for example, labeling them.</p>
+<p>Let&apos;s imagine that every person in a hypothetical office has a &quot;lunch&quot; they keep in the fridge.</p>
 <table>
 <thead>
 <tr>
@@ -2113,14 +2113,14 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 <p>This is the basic principle underlying an <strong>object</strong> (also known in some programming languages as a <em>hash</em>). An object <em>associates</em> each value with a reference called a <strong>key</strong> (in this case, the person&apos;s name). It&apos;s important to note that, because each key-value pair is independent of any of the others, the array doesn&apos;t keep a consistent &quot;order&quot; to its elements.</p>
 <p>As you start building applications, you&apos;ll find many situations where you&apos;ll want to associate keys to values.</p>
 <h2 id="objects-in-javascript">Objects in JavaScript</h2>
-<p>Much like a normal array is written using square brackets (<code>[...]</code>), an object is written using curly braces (<code>{...}</code>). Key-value pairs are separated by commas, just like individual values are in a normal array. Within each of these pairs, keys are separated from their values by colons (<code>:</code>).</p>
+<p>Much like a normal array is written using square brackets (<code>[]</code>), an object is written using curly braces (<code>{}</code>). Key-value pairs are separated by commas, just like individual values are in a normal array. Within each of these pairs, keys are separated from their values by colons (<code>:</code>).</p>
 <p>Here&apos;s what the &quot;lunch&quot; table above might look like as an object:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> lunches = { <span class="hljs-string">&apos;Josh&apos;</span> : <span class="hljs-string">&apos;pasta&apos;</span>,
                 <span class="hljs-string">&apos;Floyd&apos;</span> : <span class="hljs-string">&apos;salad&apos;</span>,
                 <span class="hljs-string">&apos;Matt&apos;</span> : <span class="hljs-string">&apos;tuna sandwich&apos;</span>,
                 <span class="hljs-string">&apos;Shannon&apos;</span> : <span class="hljs-string">&apos;soup&apos;</span> };
 </code></pre>
-<p>Elements in objects are accessed and manipulated in the same way as elements in normal arrays - using square brackets (<code>[...]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type:</p>
+<p>Elements in objects are accessed and manipulated in the same ways as elements in normal arrays &#x2014; using square brackets (<code>[]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type:</p>
 <pre><code class="lang-js">  lunches[<span class="hljs-string">&apos;Matt&apos;</span>]
 </code></pre>
 <p>If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.</p>
