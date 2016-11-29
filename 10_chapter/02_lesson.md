@@ -34,7 +34,7 @@ var tripleIt = function(x) {
 
 This function takes one parameter — `x`. The body of the function consists of one statement that says to return the parameter of the function (`x`) multiplied by 3.
 
-This is the first time we've seen a `return` statement. And its name is self-explanatory. `return` gives back the output of the function.
+This is the first time we've seen a `return` statement — and its name is self-explanatory. `return` gives back the output of the function.
 
 ## Naming Functions
 
