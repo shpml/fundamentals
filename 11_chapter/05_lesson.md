@@ -39,7 +39,7 @@ Then, we could run an almost identical command to operate on each element in `te
   tempsInC.push(fahrToCelc(tempsInF[5]));
 ```
 
-However, this code is extremely repetitive. It also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to automatically run this code according to the exact amount of elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the `for` loop.
+However, this code is extremely repetitive. It also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to automatically run this code according to the exact amount of elements in the first array. Fortunately, there is a tool perfectly suited for this task — our old friend the `for` loop.
 
 ```javascript
 for (var i = 0; i < tempsInF.length; i += 1) {
