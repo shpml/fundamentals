@@ -122,7 +122,7 @@ document.querySelector('li').innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.
 To add new elements to a web page, we'll need to use a three-step process:
 
 1) We will use the `createElement()` method to create a new element that can then be added to the page. When this node is created, it will be *empty*. This element will be stored in a variable.
-2) We will then add content to the element using the `innerHTML` or `textContent` properties we looked at in the last unit.
+2) We will then add content to the element using the `innerHTML` or `textContent` properties we looked at in this unit.
 3) Now that our element has been created, we can add it as a child of an element using the `appendChild()` method. This will add an element as the last child of the parent element.
 
 ```js
