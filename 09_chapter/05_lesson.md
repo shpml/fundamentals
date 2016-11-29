@@ -95,7 +95,7 @@ This kind of set up is so useful, and is used so frequently, that most languages
 
 ## The `for` Loop
 
-Let's make a few modifications to our while loop.
+Let's make a few modifications to our `while` loop.
 
 ![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
 
