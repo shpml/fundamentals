@@ -100,7 +100,7 @@ If you imagine an array of arrays as a grid of values (like in the example above
 
 ### Test Yourself
 
-Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
+Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the `console.log` statement?
 
 ```javascript
 var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
