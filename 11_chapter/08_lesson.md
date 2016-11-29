@@ -51,7 +51,7 @@ As you start building applications, you'll find many situations where you'll wan
 
 ## Objects in JavaScript
 
-Much like a normal array is written using square brackets (`[...]`), an object is written using curly braces (`{...}`). Key-value pairs are separated by commas, just like individual values are in a normal array. Within each of these pairs, keys are separated from their values by colons (`:`).
+Much like a normal array is written using square brackets (`[]`), an object is written using curly braces (`{}`). Key-value pairs are separated by commas, just like individual values are in a normal array. Within each of these pairs, keys are separated from their values by colons (`:`).
 
 Here's what the "lunch" table above might look like as an object:
 
