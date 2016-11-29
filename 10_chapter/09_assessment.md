@@ -31,7 +31,7 @@ To complete this assignment, you will need to utilize all of these methods.
 
 Before you start, go ahead and comment out the `if` statement from the last assignment. We'll work with it to finalize our memory game during the next unit.
 
-1) Open your `index.html` and look for your `div` with a class of `board`. We need to give this div an `id` so that we may _get_ it using JavaScript.  
+1) Open your `index.html` and look for your `div` with a class of `board`. We need to give this `div` an `id` so that we may _get_ it using JavaScript.  
 
 2) Give your `div` an `id` of `game-board`.
 
