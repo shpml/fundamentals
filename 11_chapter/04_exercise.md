@@ -20,7 +20,7 @@ Time to give it a whirl! In this exercise you'll practice setting up and updatin
 * Create a `contacts` array. This array should contain the names "Matt Smith," "Sam Davis," and "Ashley Jones."
 * Create a `findContact` function, which accepts one parameter, `index`. It should return the contact at that index.
 * Create an `addContact` function, which accepts one parameter, `name`. It should add that name to the end of the `contacts` array and return the `contacts` array.
-* Create an `updateLastContact` function, which accepts one parameter, `newName`. It should update the last contact in the `contacts` array with the `newName` and return the `contacts` array.
+* Create an `updateLastContact` function, which accepts one parameter, `newName`. It should update the last contact in the `contacts` array with the new name and return the `contacts` array.
 
 Once you're satisfied, feel free to move on to the next lesson. **Be sure to save your JS Bin session and keep your link, as you'll be using it again for another exercise in this unit.**
 
