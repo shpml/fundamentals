@@ -23,11 +23,11 @@ friends.splice(1, 1); // ["Monica"]
 friends; // ['Rachel', 'Phoebe', 'Joey', 'Chandler', 'Ross']
 ```
 
-Well, Rachel stays in the same place. But suddenly, Phoebe isn't at index 2 - she's now at index *1*, while *Joey* is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, "disarray," as it were.
+Well, Rachel stays in the same place. But suddenly, Phoebe isn't at index 2 — she's now at index *1*, while *Joey* is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, "disarray," as it were.
 
-This system does a good job of keeping track of everyone's order, but its biggest drawback is that our method of referencing any element is tied to its position *rather than the element itself*. Fortunately, there are other ways of keeping track of elements - for example, labeling them.
+This system does a good job of keeping track of everyone's order, but its biggest drawback is that our method of referencing any element is tied to its position *rather than the element itself*. Fortunately, there are other ways of keeping track of elements — for example, labeling them.
 
-Let's imagine that every person in this totally hypothetical office has a "lunch" they keep in the fridge.
+Let's imagine that every person in a hypothetical office has a "lunch" they keep in the fridge.
 
 |  Label    |  Value          |
 |:-------:  |:-------:        |
