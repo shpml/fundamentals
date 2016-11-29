@@ -100,9 +100,9 @@ Let's make a few modifications to our `while` loop.
 ![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
 
 As you can see, there are a couple of key ingredients that make our `for` loop work. We need:
-1) An "initialization," which sets up a starting situation (e.g., var x = 0).
+1) An `initialization`, which sets up a starting situation (e.g., var x = 0).
 2) A condition, which gets evaluated each time we're about to execute the block (e.g., x < 10).
-3) A 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g., x++;).
+3) A `finalExpression`, which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g., x++;).
 
 The general syntax for a `for` loop is:
 
