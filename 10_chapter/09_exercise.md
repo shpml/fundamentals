@@ -23,7 +23,7 @@ For now, we'll run our JavaScript to update the DOM when the page loads. In the 
 
 * Use the `querySelectorAll()` method to select all elements with the `current` class. Using array syntax (our trusty square brackets), find the second element with the `current` class, and update the text content to "Me Talk Pretty One Day."
 
-* Use the `getElementById()` method to find the element with the id `next`. We want to add a link to this book so we can purchase it. Change the inner HTML of this element to include an anchor: `<a href="http://www.amazon.com/Flamethrowers-Rachel-Kushner/dp/1439142017/ref=sr_1_1?ie=UTF8&qid=1458897183&sr=8-1&keywords=the+flamethrowers">The Flamethrowers</a>`
+* Use the `getElementById()` method to find the element with the ID `next`. We want to add a link to this book so we can purchase it. Change the inner HTML of this element to include an anchor: `<a href="http://www.amazon.com/Flamethrowers-Rachel-Kushner/dp/1439142017/ref=sr_1_1?ie=UTF8&qid=1458897183&sr=8-1&keywords=the+flamethrowers">The Flamethrowers</a>`.
 
 * Find the first `li` using the `querySelector()` method. Change the inner HTML to `The Wind Up <strong>Bird</strong> Chronicle`.
 
