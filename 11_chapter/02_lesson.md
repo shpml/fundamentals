@@ -16,15 +16,15 @@ The order of elements in an array matters. Let's find out why using the followin
 var myFriends = ['ellen', 'mary', 'doug', 'pat'];
 ```
 
-If we wanted to find the element 'mary', we would need to remember that it is the second element in the array.
+If we wanted to find the element `'mary'`, we would need to remember that it is the second element in the array.
 
-In the array, the position of 'mary' is identified by its index value (or just index).
+In the array, the position of `'mary'` is identified by its index value (or just index).
 
 As you can see, there are four strings (elements) contained within this array:
-- The first element (index of 0) in the array is 'ellen'.
-- The second element (index of 1) is 'mary'.
-- The third element (index of 2) is 'doug'.
-- The final element (index of 3) is 'pat'.
+- The first element (index of 0) in the array is `'ellen'`.
+- The second element (index of 1) is `'mary'`.
+- The third element (index of 2) is `'doug'`.
+- The final element (index of 3) is `'pat'`.
 
 > **Note that the index for the first position in an array is always 0**. So, even though 'mary' is the second element in the array, we would need to call it out using an index of 1.
 
