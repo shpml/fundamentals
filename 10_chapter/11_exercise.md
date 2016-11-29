@@ -13,8 +13,8 @@ Let's get some practice manipulating the DOM and adding some interactions to our
 ###Instructions
 
 1) Let's get started! Some starter code has been provided in the JS Bin for this exercise.
-2) Write the code to perform the actions listed below in the 'JavaScript' panel.
-3) Click 'Run' to see the results in the 'Console' panel.
+2) Write the code to perform the actions listed below in the "JavaScript" panel.
+3) Click "Run" to see the results in the "Console" panel.
 
 **Let's get started!**
 
