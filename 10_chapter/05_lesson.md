@@ -129,11 +129,11 @@ var winnerIsX = function() {
 }
 ```
 
-You can't execute anything yet, but stick with us – we only have a few more tiny problems to solve!
+You can't execute anything yet, but stick with us — we only have a few more tiny problems to solve!
 
 ####Winning by Rows
 
-Let's look at `winsRowX` – what does it actually mean to win a row?
+Let's look at `winsRowX` — what does it actually mean to win a row?
 
 According to our cell key from earlier, there are three cells in a row; the first row contains `a`,`b`, and `c`; the second row contains `d`,`e`, and `f`; the third row contains `g`,`h`, and `i`.
 
