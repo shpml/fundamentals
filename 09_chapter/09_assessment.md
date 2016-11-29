@@ -33,7 +33,7 @@ For this assessment, you'll use an `alert` to display messages to your user:
 
 2) If values are equal, execute an `alert` with the message "You found a match!" If values are not equal, execute an `alert` with the message "Sorry, try again."
 
-> **Info** If you are testing code that uses alerts in JS Bin, disable "auto-run JS." You can then "run with JS" when you are ready to test your code. If you do not, these alerts will be looped every few seconds!
+> **Info** If you are testing code that uses `alert`s in JS Bin, disable "Auto-run JS." You can then "Run with JS" when you are ready to test your code. If you do not, these alerts will be looped every few seconds!
 
 3) Save your `main.js` file, and open your `index.html` file in the browser to check if your alert is working. When the alerts are working properly, you should see:
 
