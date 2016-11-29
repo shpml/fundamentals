@@ -101,7 +101,7 @@ if (x > 5) {
 Try copying that whole statement into JS Bin and testing out different values for `x`. Were your answers correct?
 
 
-## Switch Statement
+## `switch` Statements
 
 As we've seen before, we can choose which condition will be executed using `if...else if...else`. If we have a long list of conditions, however, the code becomes a bit repetitive and hard to read. For example:
 
