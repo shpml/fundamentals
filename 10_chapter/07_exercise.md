@@ -6,7 +6,7 @@
 
 Let's revisit our "FizzBuzz" activity from Unit 4, incorporating what we've learned so far about writing functions.
 
-Your job this time will be to write a function called `fizzbuzz` that takes a parameter `num`. For every number from 1 to `num`, this function should print (using console.log()) one of the following values:
+Your job this time will be to write a function called `fizzbuzz` that takes a parameter, `num`. For every number from 1 to `num`, this function should print (using console.log()) one of the following values:
 
 * 'fizz' if the number is divisible by 3 (but not 5).
 * 'buzz' if the number is divisible by 5 (but not 3).
