@@ -13,7 +13,7 @@ Time to give it a whirl! In this exercise you'll practice setting up and updatin
 2) Click "Run" to run the code in the "Console" panel.
 3) Call each function from the "Console" panel. Try using different parameters to make sure they're working properly.
 
-<a class="jsbin-embed" href="http://jsbin.com/wihumu/embed?js&height600"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="http://jsbin.com/wihumu/embed?js&height600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 ### Let's get started!
 
