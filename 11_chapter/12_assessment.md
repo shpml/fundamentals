@@ -4,7 +4,7 @@
 
 # Less Code and Better Logic with Arrays
 
-We're now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represent the value of our cards and looping through a fixed number we assumed to represent the number of cards. However, with our new found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let's go ahead and edit some of our code to incorporate arrays, then write some fresh new code to create dynamic game logic!
+We're now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represent the value of our cards and looping through a fixed number we assumed to represent the number of cards. However, with our new-found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let's go ahead and edit some of our code to incorporate arrays, then write some fresh new code to create dynamic game logic!
 
 ## Exercise
 
