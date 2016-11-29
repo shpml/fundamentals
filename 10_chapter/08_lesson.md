@@ -205,7 +205,7 @@ For example, above we saw that `document.getElementsByTagName('li')` returned se
 | 5   | `<li>Saturday</li>`  |
 | 6      | `<li>Sunday</li>`  |
 
-Note how each node has an index number associated with it. These indexes are *zero based*, meaning the first node has an index of 0, the second node an index of 1, etc.
+Note how each node has an index number associated with it. These indexes are *zero based*, meaning the first node has an index of 0, the second node has an index of 1, etc.
 
 
 To locate the fourth item in that NodeList, `<li>Thursday</li>`, we could use the following syntax:
@@ -256,11 +256,11 @@ In an HTML document, elements can be nested inside of other elements.
 </html>
 ```
 
-Here, we have three `<li>` elements enclosed within opening `<ul>` and closing `</ul>` tags.
+Here, we have three `li` elements enclosed within opening and closing `ul` tags.
 
 In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.
 
-In our example, we could describe the relationship between the `<ul>` element and the three `<li>` elements as that of a *parent* and *children*, as the `<li>` elements are enclosed within the `<ul>`.
+In our example, we could describe the relationship between the `ul>` element and the three `li` elements as that of a *parent* and *children*, as the `li` elements are enclosed within the `ul`.
 
 We can use properties of an element to find and access related elements. Let's take a look at some examples below.
 
