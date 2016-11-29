@@ -15,7 +15,7 @@ if (condition1) {
 } else if (condition2) {
   // Code to be executed if condition1 is false and condition2 is true
 } else if (condition3) {
-  // Code to be executed if condition1 and condition2 are false, and condition3 is true
+  // Code to be executed if condition1 and condition2 are false and condition3 is true
 } else {
   // Code to be executed if condition1, condition2, and condition3 are false
 }
