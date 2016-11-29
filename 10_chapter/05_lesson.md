@@ -4,7 +4,7 @@
 
 #Functional JavaScript
 
-Functions can also be used as procedures – miniature, self-contained programs that are executed one line at a time whenever the function is called.
+Functions can also be used as procedures — miniature, self-contained programs that are executed one line at a time whenever the function is called.
 
 When you have a set of tasks that need to be repeated, it can often be helpful to turn that set into a function and call it each time the procedure should run.
 
