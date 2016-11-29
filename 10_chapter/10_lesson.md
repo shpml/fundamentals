@@ -70,7 +70,7 @@ document.getElementsByTagName('a')[0].setAttribute('href', 'http://newurl.com');
 
 ```
 
-Or, if we wanted to remove the id from an element, we could execute this code:
+Or, if we wanted to remove the `id` from an element, we could execute this code:
 
 ```js
 document.getElementsByTagName('a')[0].removeAttribute('id');
