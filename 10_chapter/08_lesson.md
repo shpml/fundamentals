@@ -260,7 +260,7 @@ Here, we have three `li` elements enclosed within opening and closing `ul` tags.
 
 In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.
 
-In our example, we could describe the relationship between the `ul>` element and the three `li` elements as that of a *parent* and *children*, as the `li` elements are enclosed within the `ul`.
+In our example, we could describe the relationship between the `ul` element and the three `li` elements as that of a *parent* and *children*, as the `li` elements are enclosed within the `ul`.
 
 We can use properties of an element to find and access related elements. Let's take a look at some examples below.
 
@@ -273,7 +273,7 @@ document.getElementsByTagName('li')[0].parentNode
  //=> <ul class="some-class-name">...</ul>
 ```
 
-This syntax will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element, as the `<ul>` element wraps all the `<li>` elements.
+This syntax will return the parent of the first `li` element, which, in this case, is the `ul` element, as the `ul` element wraps all the `li` elements.
 
 Other properties available to us include:
 * `previousSibling`, which will find the previous sibling of a selected element.
