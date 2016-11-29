@@ -17,7 +17,7 @@ The following solutions are for the unit exercises.
 
 ```html
 <h1>Hi, I'm awesome.</h1>
-<a href="http://twitter.com/GA">Follow me</a> on twitter.
+<a href="http://twitter.com/GA">Follow me</a> on Twitter.
 <p> Send me an <a href="mailto:me@email.com?subject=hello, awesome!">email</a>.
 ```
 
@@ -102,12 +102,12 @@ Bonus
 
 3)
 ```html
-<img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design">
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="Grumpy Cat hates bad design">
 ```
 
 4)
 ```html
-<img src="http://i.imgur.com/z9gGd0t.jpg" alt="grumpy cat hates bad design" title="grumpy cat">
+<img src="http://i.imgur.com/z9gGd0t.jpg" alt="Grumpy Cat hates bad design" title="grumpy cat">
 ```
 
 
@@ -710,13 +710,13 @@ var threeIfNull = function(num){
   if(num===null) return 3
   return num
 };
-var greatest = function(a, b, c){
-  greatest = a;
-  if (greatest < b) {
-    greatest = b;
+var greatest = function(x, y, z){
+  greatest = x;
+  if (greatest < y) {
+    greatest = y;
   }
-  if (greatest < c) {
-    greatest = c;
+  if (greatest < z) {
+    greatest = z;
   }
   return greatest;
 };
