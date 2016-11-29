@@ -117,12 +117,12 @@ for (initialization; condition; finalExpression) {
 ```javascript
 var x = 10;
 for (var i = 0; i < x; i++) {
-  console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
+  console.log('HELLO'); // This is a command to our console, telling it to display the text `'HELLO'` and advance to a new line.
 }
 ```
 
 * How many times will 'HELLO' be printed out in the console?
-* What if we changed the starting value of `i` to 1 instead of 0 (and all else is the same)? How many times would `HELLO` get printed to the console?
+* What if we changed the starting value of `i` to 1 instead of 0 (and all else is the same)? How many times would `'HELLO'` get printed to the console?
 * What if we changed the condition from <code>i < x</code> to <code>i <= x</code> (and all else is the same)?
 * What if we changed the final condition from <code>i++</code> to <code>i += 2</code> (and all else is the same)?
 Check your answers in JS Bin.
