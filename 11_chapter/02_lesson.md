@@ -26,12 +26,12 @@ As you can see, there are four strings (elements) contained within this array:
 - The third element (index of 2) is `'doug'`.
 - The final element (index of 3) is `'pat'`.
 
-> **Note that the index for the first position in an array is always 0**. So, even though 'mary' is the second element in the array, we would need to call it out using an index of 1.
+> **Note that the index for the first position in an array is always 0**. So, even though `'mary'` is the second element in the array, we would need to call it out using an index of 1.
 
 
 
 
-Now that we know this index value, to find 'mary', we would simply write:
+Now that we know this index value, to find `'mary'`, we would simply write:
 
 `myFriends[1]`
 
