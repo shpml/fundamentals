@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Nov 29 2016 18:47:07 GMT+0000 (UTC)">
+    <div class="book" data-level="10.2" data-basepath=".." data-revision="Tue Nov 29 2016 18:51:04 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2096,7 +2096,7 @@
 }
 </code></pre>
 <h3 id="who-is-the-winner">Who is the Winner?</h3>
-<p>Now, let&apos;s write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.</p>
+<p>Now, let&apos;s write a function that determines the winner based on the values of <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code>, <code>e</code>, <code>f</code>, <code>g</code>, <code>h</code>, and <code>i</code>.</p>
 <p>We&apos;ll call it <code>getWinner</code>, and it will give us back either <code>x</code> (if X has won), <code>o</code> (if O has won), or <code>null</code> (if neither side has won).</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getWinner = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
 }
@@ -2127,9 +2127,9 @@
   <span class="hljs-keyword">return</span> winsRowX() || winsColumnX() || winsDiagonalX();
 }
 </code></pre>
-<p>You can&apos;t execute anything yet, but stick with us &#x2013; we only have a few more tiny problems to solve!</p>
+<p>You can&apos;t execute anything yet, but stick with us &#x2014; we only have a few more tiny problems to solve!</p>
 <h4 id="winning-by-rows">Winning by Rows</h4>
-<p>Let&apos;s look at <code>winsRowX</code> &#x2013; what does it actually mean to win a row?</p>
+<p>Let&apos;s look at <code>winsRowX</code> &#x2014; what does it actually mean to win a row?</p>
 <p>According to our cell key from earlier, there are three cells in a row; the first row contains <code>a</code>,<code>b</code>, and <code>c</code>; the second row contains <code>d</code>,<code>e</code>, and <code>f</code>; the third row contains <code>g</code>,<code>h</code>, and <code>i</code>.</p>
 <p>If any of these three sets are all equal to <code>x</code>, then X has won via a row.</p>
 <p>Let&apos;s dive just one level deeper, with a function to test if any one of the three rows are equal to <code>x</code> (Let&apos;s call it <code>allThreeX</code>).</p>
@@ -2185,7 +2185,7 @@
 <p>Excellent! Now, <code>isWinnerX</code> should be able to tell us if X has won.</p>
 <h3 id="determining-if-o-has-won">Determining if <code>o</code> has Won</h3>
 <p>Now, we can go ahead and start writing a function called <code>allThreeO</code> to do for O what we&apos;ve done for X. But that seems pretty duplicative.</p>
-<p>There&apos;s a principle we&apos;ll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing &quot;DRY&quot; code. &quot;DRY&quot; stands for &quot;Don&apos;t Repeat Yourself&quot;. In the case of our Tic-Tac-Toe game, we&apos;re considering writing two functions that are the exact same, except for that hard-coded value of &apos;x&apos; vs &apos;o&apos;. Wouldn&apos;t it be better if we could make the function <code>allThreeX</code> more general so that it worked for both players?</p>
+<p>There&apos;s a principle we&apos;ll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing &quot;DRY&quot; code. &quot;DRY&quot; stands for &quot;Don&apos;t Repeat Yourself.&quot; In the case of our Tic-Tac-Toe game, we&apos;re considering writing two functions that are the exact same, except for our hard-coded values of <code>x</code> and <code>o</code>. Wouldn&apos;t it be better if we could make the function <code>allThreeX</code> more general so that it worked for both players?</p>
 <p>Let&apos;s see what we can do:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> allThree = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(player, cellOne, cellTwo, cellThree)</span> </span>{
   <span class="hljs-keyword">return</span> (cellOne === player) &amp;&amp; (cellTwo === player) &amp;&amp; (cellThree === player);
