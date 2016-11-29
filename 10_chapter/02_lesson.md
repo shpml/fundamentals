@@ -72,7 +72,7 @@ tripleIt(4)
 
 The function would execute its statements and evaluate to the value `12`.
 
-Just like a variable, we can use the return value of this function in any expression. For example:
+Just like a variable, we can use the `return` value of this function in any expression. For example:
 
 ```javascript
 var a = tripleIt(1);                         // a === 3
