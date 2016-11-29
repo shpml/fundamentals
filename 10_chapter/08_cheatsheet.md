@@ -109,7 +109,7 @@ document.querySelector('li').parentNode
 
 ```js
 var firstListItem = document.querySelector('li').innerHTML;
-// Remember, `querySelector()` selects the first element that matches the provided selector.
+// Remember, querySelector() selects the first element that matches the provided selector.
 ```
 
 * The syntax for updating content looks like this:
