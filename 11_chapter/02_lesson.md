@@ -73,7 +73,7 @@ Here's an example of what this can look like:
 var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
 ```
 
-You might also see it written like below; it's a bit more readable this way.
+You might also see it written like it is below; it's a bit more readable this way.
 
 ```javascript
 var arrayOfArrays = [['a', 'b', 'c'],
