@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.1" data-basepath=".." data-revision="Tue Nov 29 2016 21:06:53 GMT+0000 (UTC)">
+    <div class="book" data-level="11.1" data-basepath=".." data-revision="Tue Nov 29 2016 21:16:33 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2050,19 +2050,19 @@
 <p>The order of elements in an array matters. Let&apos;s find out why using the following example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myFriends = [<span class="hljs-string">&apos;ellen&apos;</span>, <span class="hljs-string">&apos;mary&apos;</span>, <span class="hljs-string">&apos;doug&apos;</span>, <span class="hljs-string">&apos;pat&apos;</span>];
 </code></pre>
-<p>If we wanted to find the element &apos;mary&apos;, we would need to remember that it is the second element in the array.</p>
-<p>In the array, the position of &apos;mary&apos; is identified by its index value (or just index).</p>
+<p>If we wanted to find the element <code>&apos;mary&apos;</code>, we would need to remember that it is the second element in the array.</p>
+<p>In the array, the position of <code>&apos;mary&apos;</code> is identified by its index value (or just index).</p>
 <p>As you can see, there are four strings (elements) contained within this array:</p>
 <ul>
-<li>The first element (index of 0) in the array is &apos;ellen&apos;.</li>
-<li>The second element (index of 1) is &apos;mary&apos;.</li>
-<li>The third element (index of 2) is &apos;doug&apos;.</li>
-<li>The final element (index of 3) is &apos;pat&apos;.</li>
+<li>The first element (index of 0) in the array is <code>&apos;ellen&apos;</code>.</li>
+<li>The second element (index of 1) is <code>&apos;mary&apos;</code>.</li>
+<li>The third element (index of 2) is <code>&apos;doug&apos;</code>.</li>
+<li>The final element (index of 3) is <code>&apos;pat&apos;</code>.</li>
 </ul>
 <blockquote class="clearfix alert alert-quote"><strong class="fa fa-4x fa-quote-left"></strong>
-<p>. So, even though &apos;mary&apos; is the second element in the array, we would need to call it out using an index of 1.</p>
+<p>. So, even though <code>&apos;mary&apos;</code> is the second element in the array, we would need to call it out using an index of 1.</p>
 </blockquote>
-<p>Now that we know this index value, to find &apos;mary&apos;, we would simply write:</p>
+<p>Now that we know this index value, to find <code>&apos;mary&apos;</code>, we would simply write:</p>
 <p><code>myFriends[1]</code></p>
 <p>We could save what we found in a variable like so:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> bestFriend = myFriends[<span class="hljs-number">1</span>];
@@ -2072,7 +2072,7 @@
 </code></pre>
 <p>Just like with a variable, this expression will evaluate to the value on the right.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?</p>
+<p>Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the <code>console.log</code> statement?</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myNumbers = [<span class="hljs-number">4</span>, <span class="hljs-number">65</span>, <span class="hljs-number">0</span>, <span class="hljs-number">29</span>];
 myNumbers[<span class="hljs-number">0</span>];
 myNumbers[<span class="hljs-number">1</span>] = <span class="hljs-number">10</span>;
@@ -2081,12 +2081,12 @@ myNumbers[<span class="hljs-number">1</span>] * <span class="hljs-number">2</spa
 <span class="hljs-built_in">console</span>.log(myNumbers);
 </code></pre>
 <p>Confirm your answer by entering the code above in a new JS Bin session.</p>
-<h2 id="adding-complexity-%E2%80%93-nested-arrays">Adding Complexity &#x2013; Nested Arrays</h2>
+<h2 id="adding-complexity-nested-arrays">Adding Complexity: Nested Arrays</h2>
 <p>In addition to storing numbers, strings, or Booleans as elements, arrays can also store <em>other arrays</em>.</p>
 <p>Here&apos;s an example of what this can look like:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arrayOfArrays = [[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>], [<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>], [<span class="hljs-string">&apos;g&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
-<p>You might also see it written like below; it&apos;s a bit more readable this way.</p>
+<p>You might also see it written like it is below; it&apos;s a bit more readable this way.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arrayOfArrays = [[<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;c&apos;</span>],
                      [<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>],
                      [<span class="hljs-string">&apos;g&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>]];
