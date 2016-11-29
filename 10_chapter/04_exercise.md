@@ -22,7 +22,7 @@ Write the following functions:
 * `sayHello`, which accepts one parameter, `name`. It should return a greeting to a person using his or her name (i.e., "Hello, *name*").
 * `areBothEven`, which accepts two parameters, `a` and `b`. It should return `true` if `a` and `b` are both even, or `false` if they are not.
 * `hotOrNot`, which accepts one parameter, `temp`. It should return "hot" if `temp` is above 75 degrees, or "not hot" if it is not.
-* `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3. Otherwise, it should return the value of `num`.
+* `threeIfNull`, which accepts one parameter, `num`. If num is `null`, it should return 3. Otherwise, it should return the value of `num`.
 * `greatest`, which accepts three parameters (`x`, `y`, and `z`), and returns the one with the greatest value. For example, `greatest(5, 10, 1)` would evaluate to 10.
 
 Once you've written and tested all of these functions, go ahead and move on to the next lesson.
