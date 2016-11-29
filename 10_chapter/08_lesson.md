@@ -156,7 +156,7 @@ This method will select all elements with a given class attribute.
 ```js
 document.getElementsByClassName('special')
 ```
-This method will return any elements with the class `special`. In the above example, it will return a NodeList containing the second and third list items, as they both have the class `special`.
+This method will return any elements with the class `special`. In the example above, it will return a NodeList containing the second and third list items, as they both have the class `special`.
 
 ---
 
