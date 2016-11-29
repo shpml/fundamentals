@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:29:03 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:32:00 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2240,14 +2240,14 @@
 </code></pre>
 <p>Here, we have three <code>li</code> elements enclosed within opening and closing <code>ul</code> tags.</p>
 <p>In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.</p>
-<p>In our example, we could describe the relationship between the <code>ul&gt;</code> element and the three <code>li</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>li</code> elements are enclosed within the <code>ul</code>.</p>
+<p>In our example, we could describe the relationship between the <code>ul</code> element and the three <code>li</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>li</code> elements are enclosed within the <code>ul</code>.</p>
 <p>We can use properties of an element to find and access related elements. Let&apos;s take a look at some examples below.</p>
 <h4 id="-parentnode"><code>parentNode</code></h4>
 <p>The <code>parentNode</code> property will locate the parent of an initial selection.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode
  <span class="hljs-comment">//=&gt; &lt;ul class=&quot;some-class-name&quot;&gt;...&lt;/ul&gt;</span>
 </code></pre>
-<p>This syntax will return the parent of the first <code>&lt;li&gt;</code> element, which, in this case, is the <code>&lt;ul&gt;</code> element, as the <code>&lt;ul&gt;</code> element wraps all the <code>&lt;li&gt;</code> elements.</p>
+<p>This syntax will return the parent of the first <code>li</code> element, which, in this case, is the <code>ul</code> element, as the <code>ul</code> element wraps all the <code>li</code> elements.</p>
 <p>Other properties available to us include:</p>
 <ul>
 <li><code>previousSibling</code>, which will find the previous sibling of a selected element.</li>
@@ -2281,10 +2281,10 @@
 <p>There are many properties and methods that allow us to read from or update the contents of a DOM node. Let&apos;s take a look at a couple now, and then we&apos;ll expand on others in the next unit.</p>
 <h4 id="-innerhtml"><strong><code>innerHTML</code></strong></h4>
 <p>We can use the <code>innerHTML</code> property to get and set content for an element.</p>
-<p>For example, if we want to change the HTML content for the first <code>&lt;li&gt;</code>, we could execute the following:</p>
+<p>For example, if we want to change the HTML content for the first <code>li</code>, we could execute the following:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
 </code></pre>
-<p>This would find the first <code>&lt;li&gt;</code> and change the HTML content to <code>Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.</code>. The result will look like this:</p>
+<p>This would find the first <code>li</code> and change the HTML content to <code>Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.</code>. The result will look like this:</p>
 <p><img src="../assets/elkwebdesign/innerHTML.png" alt=""></p>
 <p>If we simply want to retrieve the HTML content to use later, we can save it in a variable like so:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML;
@@ -2294,7 +2294,7 @@
 For example:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;important&apos;</span>).textContent = <span class="hljs-string">&apos;Done!&apos;</span>
 </code></pre>
-<p>This code would change the text content of the <code>&lt;li&gt;</code> with the id <code>important</code> to &apos;Done!&apos;.</p>
+<p>This code would change the text content of the <code>li</code> with the ID <code>important</code> to <code>Done!</code>.</p>
 <p><img src="../assets/chapter5/thingstodo5.png" alt=""></p>
 <hr>
 <p><a href="10_lesson.html">On to the next lesson!</a></p>
