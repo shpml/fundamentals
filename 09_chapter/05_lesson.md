@@ -25,7 +25,7 @@ while (someCondition) {
   // A block of code.
 }
 ```
-As you can see, it is written in almost exactly the same way as an `if` statement.
+As you can see, it is written in almost the exact same way as an `if` statement.
 
 ### Test Yourself
 * Consider the following code.
