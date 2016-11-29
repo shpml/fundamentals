@@ -80,7 +80,7 @@ var cellValue = function(key) {
 
 ###Who is the Winner?
 
-Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
+Now, let's write a function that determines the winner based on the values of `a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, and `i`.
 
 We'll call it `getWinner`, and it will give us back either `x` (if X has won), `o` (if O has won), or `null` (if neither side has won).
 
