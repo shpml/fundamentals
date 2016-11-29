@@ -10,7 +10,7 @@ We're now in the home stretch of creating our memory game! So far we have simula
 
 #### Requirements
 
-Replace all of your card variables with an `array` of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.
+Replace all of your card variables with an array of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.
 
 ##### Here are the steps for completing the assignment:
 
