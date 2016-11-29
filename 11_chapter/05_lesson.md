@@ -49,9 +49,9 @@ for (var i = 0; i < tempsInF.length; i += 1) {
 
 Take a minute to think about what's going on in the code above.
 
-By starting our count at zero, stopping before `i` reaches the length of the array and increasing `i` by one every time, `i` will be successively set to the index of every element in our array, allowing us to perform the same operation on each element.
+By starting our count at 0, stopping before `i` reaches the length of the array and increasing `i` by 1 every time, `i` will be successively set to the index of every element in our array, allowing us to perform the same operation on each element.
 
-We could just as easily have gone in the opposite direction - starting at the last element and ending with the first - simply by specifying different settings in the `for` loop:
+We could just as easily have gone in the opposite direction — starting at the last element and ending with the first — simply by specifying different settings in the `for` loop:
 
 ```javascript
 for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
