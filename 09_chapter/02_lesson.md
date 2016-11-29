@@ -164,13 +164,13 @@ switch (dayNumber) {
     alert('wrong value for day');
 }
 ```
-This code works exactly the same as our `if..else..if`, but, although it's slightly longer (in terms of lines), it is significantly easier to read.
+This code works exactly the same as our `if...else if...else`, but, although it's slightly longer (in terms of lines), it is significantly easier to read.
 
 In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (that is, if it is specified - if not, the program will do nothing).
 
 > **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end of the code block but will instead start executing the *next* case's code (even if `case`'s value is different from the variable's). It will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
 
-Although the `switch` statement sometimes has some advantages over `if...else if... else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition. If not, `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
+Although the `switch` statement sometimes has some advantages over `if...else if...else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition. If not, `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
 
 ### Test Yourself
 Consider the following `switch` statement:
