@@ -109,7 +109,7 @@ What will each of the following expressions evaluate to?
 * `glorp(1 + 2)`
 * `glorp(glorp(1))`
 
-Test your answers in JS Bin by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
+Test your answers in JS Bin by copying the function definition into the editor, clicking the `play` button, and typing each of these expressions into the console.
 
 >**Note**  JavaScript follows the order of operations for mathematical expressions. When mathematical operations occur, certain operators will be evaluated first. Code inside of a `()` will execute first, then multiplication and division, followed by addition and subtraction. [Check out some further reading](https://www.mathsisfun.com/operation-order-pemdas.html).
 
@@ -117,7 +117,7 @@ Test your answers in JS Bin by copying the function definition into the editor, 
 
 ## The Return Statement
 
-As mentioned above, `return` specifies the value of the function when it's executed. It also has another important job - telling the function to immediately stop whatever it's doing.
+As mentioned above, `return` specifies the value of the function when it's executed. It also has another important job — telling the function to immediately stop whatever it's doing.
 
 Consider the following program:
 
@@ -153,4 +153,4 @@ var categorize = function(x) {
 
 ---
 
-[Here's another exercise for you](04_exercise.md) - give it a shot.
+[Here's another exercise for you](04_exercise.md) — give it a shot.
