@@ -116,7 +116,7 @@ This method allows us to use our CSS selector syntax to find an element. If ther
 document.querySelector('.special')
 ```
 
-This will return the first element on the page with a `class` of `special`. You can use any of your CSS-style selectors as a parameter.
+This will return the first element on the page with a class of `special`. You can use any of your CSS-style selectors as a parameter.
 
 Other examples:
 
