@@ -213,7 +213,7 @@ To locate the fourth item in that NodeList, `<li>Thursday</li>`, we could use th
 ```js
 document.getElementsByTagName('li')[3].className = 'special'
 ```
-Directly after the `getElementsByTagName('li')`, we have the index number of the item we want to locate in square brackets, `[3]`, which would locate the item at index 3.
+Directly after the `getElementsByTagName('li')`, we have the index number of the item we want to locate in square brackets, `[3]`.
 
 This would find the fourth list item and change its class attribute to `special` (we'll take a look at the className method shortly).
 
@@ -348,4 +348,4 @@ This code would change the text content of the `<li>` with the id `important` to
 
 ---
 
-[Now, on to the next lesson.](10_lesson.md)
+[On to the next lesson!](10_lesson.md)
