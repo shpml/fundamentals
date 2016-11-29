@@ -12,7 +12,7 @@ We're now in the home stretch of creating our memory game! So far we have simula
 
 Replace all of your card variables with an `array` of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.
 
-##### Here are the steps completing this assignment:
+##### Here are the steps for completing the assignment:
 
 1) Declare a variable, `cards`, and set it equal to an `array` of four `String` elements: `queen`, `queen`, `king`, `king`.
 
