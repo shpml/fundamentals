@@ -28,7 +28,7 @@ while (someCondition) {
 As you can see, it is written in almost the exact same way as an `if` statement.
 
 ### Test Yourself
-* Consider the following code.
+* Consider the following code:
 
 ```javascript
 var x = 10;
