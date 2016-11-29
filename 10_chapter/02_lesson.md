@@ -94,7 +94,7 @@ Don't worry about this right now, however. We're focusing solely on function exp
 
 ### Test Yourself
 
-Suppose we've defined the function 'glorp' as follows:
+Suppose we've defined the function `glorp` as follows:
 
 ```javascript
 var glorp = function(someNumber) {
@@ -104,10 +104,10 @@ var glorp = function(someNumber) {
 
 What will each of the following expressions evaluate to?
 
-* glorp(10)
-* 2 * (glorp(5) + 10)
-* glorp(1 + 2)
-* glorp(glorp(1))
+* `glorp(10)`
+* `2 * (glorp(5) + 10)`
+* `glorp(1 + 2)`
+* `glorp(glorp(1))`
 
 Test your answers in JS Bin by copying the function definition into the editor, clicking the 'play' button, and typing each of these expressions into the console.
 
