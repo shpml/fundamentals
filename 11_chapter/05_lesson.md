@@ -4,11 +4,11 @@
 
 # Iterating Over Arrays
 
-In the past few units, we've only been able to operate on one value at a time. One of the most useful things about collections (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on *each value within a collection*. This process is called **iteration** - performing an action over and over again for each element in a set.
+In the past few units, we've only been able to operate on one value at a time. One of the most useful things about collections (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on *each value within a collection*. This process is called **iteration** — performing an action over and over again for each element in a set.
 
 ##Iterating with Loops
 
-Suppose that we are given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and want to convert them into another set of values - temperatures in degrees Celsius - that would then be stored in a separate array.
+Suppose that we are given an array of starting values to work with — say, temperatures in degrees Fahrenheit — and want to convert them into another set of values — temperatures in degrees Celsius — that would then be stored in a separate array.
 
 ```javascript
 var tempsInF = [100, 72, 88, 15, 25, 32];
