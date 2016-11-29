@@ -206,7 +206,7 @@ Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
 Now, we can go ahead and start writing a function called `allThreeO` to do for O what we've done for X. But that seems pretty duplicative.
 
-There's a principle we'll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code. "DRY" stands for "Don't Repeat Yourself." In the case of our Tic-Tac-Toe game, we're considering writing two functions that are the exact same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
+There's a principle we'll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code. "DRY" stands for "Don't Repeat Yourself." In the case of our Tic-Tac-Toe game, we're considering writing two functions that are the exact same, except for our hard-coded values of `x` and `o`. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
 
 Let's see what we can do:
 
