@@ -8,11 +8,11 @@ Take a look at the sample code in the JS Bin below. If you don't see the JS Bin,
 
 <a class="jsbin-embed" href="https://jsbin.com/kiyeso/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
+This exercise may be familiar to some of you — your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
 
-* If `x` is evenly divisible by 3 (for example, 3, 6, or 9), set `result` to "fizz".
-* If `x` is evenly divisible by 5 (for example, 5 or 10), set `result` to "buzz".
-* If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz".
+* If `x` is evenly divisible by 3 (for example, 3, 6, or 9), set `result` to "fizz."
+* If `x` is evenly divisible by 5 (for example, 5 or 10), set `result` to "buzz."
+* If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz."
 * If `x` is not evenly divisible by either 3 or 5 (for example, 7), set `result` to `x`.
 
 > Don't remember how to determine if something divides evenly? Look back at Unit 3 (Expressions) and review the modulus (`%`) operator.
