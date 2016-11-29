@@ -29,8 +29,8 @@ Before reading the instructions below, take a few minutes to think through the p
 | 'Suzie'     |   'Smith'   |'(415) 604-4219' |'suziesmith@email.com'|
 
 * Next, let's create a function, `addContact`, that accepts one parameter, `newContact`. This function should add the parameter to the end of the `contacts` array and return the `contacts` array. When you're done, try calling the function and passing in an object as a parameter to make sure it's working.
-* Now, let's create a `listContacts` function to list our contacts. This function should loop through the `contacts` array and log the first and last name for each contact to the console, i.e. 'John Doe'.
-* Finally, let's create a function that will search through our contacts and return the contact info for any person who has a matching first or last name. Create a `search` function, which will take one parameter, `name`. In the `search` function, use a loop to iterate through the `contacts` array and return the current contact if his or her first *or* last name matches the `name` parameter.
+* Now, let's create a `listContacts` function to list our contacts. This function should loop through the `contacts` array and log the first and last name for each contact to the console, i.e. `'John Doe'`.
+* Finally, let's create a function that will search through our `contacts` array and return the contact info for any person who has a matching first or last name. Create a `search` function, which will take one parameter, `name`. In the `search` function, use a loop to iterate through the `contacts` array and return the current contact if his or her first *or* last name matches the `name` parameter.
 
 You've done it! We now have a working contact book that allows us to store contacts, add contacts, list contacts, and find a contact by first or last name. Congratulations!
 
