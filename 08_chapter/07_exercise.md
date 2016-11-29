@@ -14,7 +14,7 @@ As in the previous exercise, your job is to print the result of an expression. H
 1. Write an expression that evaluates to 10 more than `x`;<br>
 if `x` is 10, the expression should evaluate to 20;<br>
 if `x` is 50, the expression should evaluate to 60.<br>
-Test your answer by replacing the `/* Your Expression */` comment in the JavaScript tab with `x = someValue;`, clicking the 'Run' button, writing your expression in the Console tab, and typing `enter` or `return`.
+Test your answer by replacing the `/* Your Expression */` comment in the JavaScript tab with `x = someValue;`, clicking the "Run" button, writing your expression in the Console tab, and typing `enter` or `return`.
 
 2. Now, replace that first expression with an expression that evaluates to triple the value of `x`, plus five;<br>
 if `x` is 5, the expression should evaluate to 20;<br>
