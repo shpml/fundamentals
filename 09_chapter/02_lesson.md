@@ -164,7 +164,7 @@ switch (dayNumber) {
     alert('wrong value for day');
 }
 ```
-This code works exactly the same as our `if...else if...else`, but, although it's slightly longer (in terms of lines), it is significantly easier to read.
+This code works exactly the same as `if...else if...else`, but, although it's slightly longer (in terms of lines), it is significantly easier to read.
 
 In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (that is, if it is specified - if not, the program will do nothing).
 
