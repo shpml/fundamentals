@@ -35,7 +35,7 @@ The difference between HTML and the DOM can often be a little hard to grasp for 
 
 The browser retrieves this document and creates a model of the page in memory. Most modern browsers come with tools that developers can use to look at the DOM's structure.
 
-In Chrome, you can go to *View* > *Developer* > *Developer Tools* and click on the *Elements* panel to view the DOM tree.
+In Chrome, you can go to `View` > `Developer` > `Developer Tools` and click on the "Elements" panel to view the DOM tree.
 
 ![](/assets/chapter5/developer.png)
 
