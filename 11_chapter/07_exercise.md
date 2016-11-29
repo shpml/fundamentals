@@ -18,7 +18,7 @@ Now things are starting to heat up! Let's take a short break from our contact bo
 
 #### Part 1
 
-1) Create an array, `cups`, containing numbers 1 - 10.
+1) Create an array, `cups`, containing the numbers 1 - 10.
 2) Create an empty array, `ounces`.
 3) Write a function, `convertToOunces`. It should iterate through the `cups` array, convert each item from cups to ounces, and then add that item to the `ounces` array. Return the value of `ounces` after looping through the items and before the function ends.
 
