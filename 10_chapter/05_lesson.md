@@ -8,7 +8,7 @@ Functions can also be used as procedures — miniature, self-contained programs 
 
 When you have a set of tasks that need to be repeated, it can often be helpful to turn that set into a function and call it each time the procedure should run.
 
-For instance, let's consider a French toast recipe. Every time a soaked slice of bread is ready to be cooked, we need to:
+For instance, let's consider our French toast recipe. Every time a soaked slice of bread is ready to be cooked, we need to:
 
 
 > Transfer the slices to a frying pan, and cook on a medium-low heat until brown on the bottom.
