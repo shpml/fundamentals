@@ -19,7 +19,7 @@ This time around, you won't be given any starter code. Instead, you'll need to w
 **Let's get started!**
 
 Write the following functions:
-* `sayHello`, which accepts one parameter, called `name`. It should return a greeting to a person using his or her name (i.e., "Hello, *name*").
+* `sayHello`, which accepts one parameter, `name`. It should return a greeting to a person using his or her name (i.e., "Hello, *name*").
 * `areBothEven`, which accepts two parameters, `a` and `b`. It should return `true` if `a` and `b` are both even, but `false` if they are not.
 * `hotOrNot`, which accepts one parameter, `temp`. It should return "hot" if `temp` is above 75, but should return "not hot" if it is not.
 * `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3. Otherwise, it should return the value of `num`.
