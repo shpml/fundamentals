@@ -81,7 +81,7 @@ There are a couple of methods we can use to find an individual element.
 
 ####`getElementById()`
 
-The fastest route to finding any single element is `getElementById()`. Because `id`s are unique and two elements cannot have the same value for an `id` attribute on any given HTML page, this query allows us to quickly find an individual element.
+The fastest route to finding any single element is `getElementById()`. Because IDs are unique and two elements cannot have the same value for an `id` attribute on any given HTML page, this query allows us to quickly find an individual element.
 
 HTML:
 
