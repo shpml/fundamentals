@@ -67,7 +67,7 @@ document.getElementById('main')
 
 * `.` ties the method on the right-hand side (`getElementById`) with the object on the left-hand side (`document`).
 
-* `getElementById()` is the method we want to use to find an element. We'll take a look at the methods available to us shortly. This method in particular lets us locate an element by the value of its `id` attribute.
+* `getElementById()` is the method we want to use to find an element. We'll take a look at the other methods available to us shortly. This method in particular lets us locate an element by the value of its `id` attribute.
 
 * `'main'`: Just like with the functions we've learned about earlier in this unit, we can pass in parameters for these methods to use. In this case, we want to find an element with an `id` of `main`.
 
