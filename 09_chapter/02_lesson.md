@@ -8,7 +8,7 @@
 
 Conditional statements are the expressions that allow us to test whether or not to perform an action.
 
-One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is "truthy," will run whatever code you specify. Here's an example of an `if` statement in action:
+One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is "truthy," run whatever code you specify. Here's an example of an `if` statement in action:
 
 ```javascript
 if (x > 10) {
