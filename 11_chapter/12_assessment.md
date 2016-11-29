@@ -90,7 +90,7 @@ function isTwoCards() {
 
 > **INFO** You may need to add a CSS selector that targets your `img` elements and gives them a height/width if the images you use are very large.
 
-8) In your `cardElement`'s 'click' event listener, set the `cardElement`'s innerHTML to an image of either a king or a queen. You will need to get the `data-card` attribute to decide which image to display. You can then use that 'data-card' value to decide on the image using an `if` statement.
+8) In your `cardElement`'s `'click'` event listener, set the `cardElement`'s inner HTML to an image of either a king or a queen. You will need to get the `data-card` attribute to decide which image to display. You can then use that `data-card` value to decide on the image using an `if` statement.
 
 >  **NOTE** We can create an `img` tag as a string. For example, `<img src="my_king.png" alt="King of Spades" />` is an image that would render a king of spades. We can set `cardElement`'s `innerHTML` value to a string. So, we could set `cardElement.innerHTML = '<img src="my_king.png" alt="King of Spades" />';`.
 
