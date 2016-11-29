@@ -25,7 +25,7 @@ Now things are starting to heat up! Let's take a short break from our contact bo
 #### Part 2
 
 1) Create an array, `scores`, containing the numbers 83, 40, 55, 72, 59, 88, and 99.
-2) Write a function, `passOrFail`. It should loop through the `scores` array and replace the current item with 'pass' if the score is greater than or equal to 60 and 'fail' if the score is less than 60. Return the `scores` array.
+2) Write a function, `passOrFail`. It should loop through the `scores` array and replace the current item with `'pass'` if the score is greater than or equal to 60 and `'fail'` if the score is less than 60. Return the `scores` array.
 
 Feeling comfortable with these exercises? Take a look at the last lesson!
 
