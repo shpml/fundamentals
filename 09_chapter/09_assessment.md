@@ -20,7 +20,7 @@ For this assessment, you'll use an `alert` to display messages to your user:
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76)
 
-**Note** Warning! `alert`s are _annoying_ pop ups that can be used to show a string of data to a user. They also interfere with a user's ability to interact with a web page until he or she clicks `OK`. While `alert`s are a great tool for seeing results as you learn JavaScript, you should never use them for any professional project. Why? Not only are they a nuisance, but some browsers (such as Chrome) allow users to prevent them from being displayed.
+**Note** Warning! Alerts are _annoying_ pop ups that can be used to show a string of data to a user. They also interfere with a user's ability to interact with a web page until he or she clicks `OK`. While alerts are a great tool for seeing results as you learn JavaScript, you should never use them for any professional project. Why? Not only are they a nuisance, but some browsers (such as Chrome) allow users to prevent them from being displayed.
 
 > **Note:** Curious about `alert`? Check out its documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>.
 
@@ -33,7 +33,7 @@ For this assessment, you'll use an `alert` to display messages to your user:
 
 2) If values are equal, execute an `alert` with the message "You found a match!" If values are not equal, execute an `alert` with the message "Sorry, try again."
 
-> **Info** If you are testing code that uses `alert`s in JS Bin, disable "Auto-run JS." You can then "Run with JS" when you are ready to test your code. If you do not, these alerts will be looped every few seconds!
+> **Info** If you are testing code that uses alerts in JS Bin, disable "Auto-run JS." You can then "Run with JS" when you are ready to test your code. If you do not, these alerts will be looped every few seconds!
 
 3) Save your `main.js` file, and open your `index.html` file in the browser to check if your alert is working. When the alerts are working properly, you should see:
 
@@ -46,4 +46,4 @@ We'll check for these conditionals in the following units when we learn about `o
 You'll want to keep track of all your hard work, so don't forget to ACP — **Add**, **Commit**, and **Push** — that code to GitHub!
 
 ---
-[Next up: Chapter 10](../10_chapter/intro.md)
+[On to the next lesson!](../10_chapter/intro.md)
