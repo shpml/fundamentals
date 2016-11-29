@@ -37,7 +37,7 @@ while (x > 5) {
 }
 ```
 
-How many times will this loop run? What will the final value of `x` be when it finishes?
+How many times will this loop run? What will the final value of `x` be when it is finished?
 
 * Here's another loop. This loop uses `y++`, which is a more common way of writing `y += 1`.
 
