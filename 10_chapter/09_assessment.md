@@ -67,7 +67,7 @@ Setting an HTML tag's attributes:
 <article id="trogdor" class="burninating"></article>
 ```
 
-Finding an ID and setting it as equal to a variable:
+Finding an `id` and setting it as equal to a variable:
 
 ```js
 document.getElementById('trogdor');
