@@ -68,9 +68,9 @@ The DOM specifies that the browser should use a **DOM Tree** to structure this c
 
 ![](/assets/chapter5/dom.png)
 
-Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.
+Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the DOM is updated, those changes are reflected on screen.
 
-We can get and set attributes for these nodes. Perhaps we want to add a class or update styling to change the background color for an element. We can also access and change the content – maybe we want to change the text in the third `li` to read "Return library books - DONE!" We can even add new nodes to or remove nodes from the page.
+We can get and set attributes for these nodes. Perhaps we want to add a class or update styling to change the background color for an element. We can also access and change the content — maybe we want to change the text in the third `li` to read "Return library books — DONE!" We can even add new nodes to or remove nodes from the page.
 
 Once we get some functions under our belt we'll take a look at how we can use some of JavaScript's "built-in" functions to interact with the DOM and add more complex interactions to our sites.
 
