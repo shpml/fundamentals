@@ -168,7 +168,7 @@ This method will locate all elements that match a given tag name.
 ```js
 document.getElementsByTagName('li')
 ```
-Here, this query returns all `<li>` elements. The NodeList will contain all seven `<li>`.
+Here, this query returns all `li` elements. The NodeList will contain all seven `li`.
 
 ___
 
