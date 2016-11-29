@@ -114,9 +114,10 @@ OK! Now we're getting somewhere. Instead of solving one big problem, we're solvi
 Let's first focus on `winnerIsX`.
 
 In Tic-Tac-Toe, there are three possible ways X can win:
-1. All cells in a row contain an `x`.
-2. All cells in a column contain an `x`.
-3. All cells in a diagonal contain an `x`.
+
+1) All cells in a row contain an `x`.
+2) All cells in a column contain an `x`.
+3) All cells in a diagonal contain an `x`.
 
 Wouldn't it be great if we had functions to determine these, too? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`.
 
