@@ -14,7 +14,7 @@ In this unit, we covered some game-changing concepts (pun intended). For example
 
 Based on whether or not your users discover a match, notify them with a winning or losing message in a pop-up box using `alert`. In some of our other exercises, we have used `console.log` to provide feedback regarding our code. However, as we start to have a more "user-facing" mindset, we need to begin to code in a way that makes more sense for the user. For our game, this means notifying the user about a win or loss with a pop-up notification rather than on the console, a place where most users don't look.
 
-We can use **alert** to display a pop-up message to a user. In a JavaScript file, you could write `alert('Hello, friends.');` and you would create a pop up from your browser that displays the string 'Hello, friends'.
+We can use **alert** to display a pop-up message to a user. In a JavaScript file, you could write `alert('Hello, friends.');` and you would create a pop up from your browser that displays the string `'Hello, friends'`.
 
 For this assessment, you'll use an alert to display messages to your user:
 
