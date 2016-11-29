@@ -51,7 +51,7 @@ var cellValue = function(key) {
 }
 ```
 
-To assign a value (`x`, `o`) to any cell on the board, edit the return value for the corresponding case. For example, if you want the board to read:
+To assign a value (`x`, `o`) to any cell on the board, edit the `return` value for the corresponding case. For example, if you want the board to read:
 
 ```
 | null | null |   x  |
@@ -59,7 +59,7 @@ To assign a value (`x`, `o`) to any cell on the board, edit the return value for
 | null |   o  |   x  |
 ```
 
-You would edit the switch statement like so:
+You would edit the `switch` statement like so:
 
 ```javascript
 var cellValue = function(key) {
