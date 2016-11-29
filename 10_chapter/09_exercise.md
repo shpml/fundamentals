@@ -8,7 +8,7 @@ Below is the starter code for your next exercise. If you don't see the JS Bin, p
 
 <a class="jsbin-embed" href="http://jsbin.com/guvuva/1/embed?html&height600">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
-In this exercise we're going to practice manipulating the DOM by updating our Reading List site, which is a little outdated.
+In this exercise we're going to practice manipulating the DOM by updating our "Reading List" site, which is a little outdated.
 
 For now, we'll run our JavaScript to update the DOM when the page loads. In the next lesson we'll take a look at how we can update the page based on a user's actions; maybe we'll add a list item when the user clicks on a button. Or, perhaps we'll remove a list item when the user clicks on an 'X' icon.
 
@@ -17,7 +17,7 @@ For now, we'll run our JavaScript to update the DOM when the page loads. In the 
 
 1) Let's get started! Some starter code has been provided in the JS Bin for this exercise.
 2) Write the code to perform the actions listed below in the 'JavaScript' panel.
-3) Click 'Run' to see the results in the 'Console' panel.
+3) Click "Run" to see the results in the 'Console' panel.
 
 **Let's get started!**
 
