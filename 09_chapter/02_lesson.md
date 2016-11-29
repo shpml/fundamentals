@@ -128,7 +128,7 @@ if(dayNumber === 0){
 }
 ```
 
-What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of it is repeated - for example,
+What this code does, fundamentally, is pretty simple — it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of it is repeated — for example,
   `} else if(dayNumber === __ ) {`
 is repeated seven times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every time it appears, which is a bit of a pain.
 
