@@ -70,10 +70,10 @@ document.getElementById('main')
 |  Method      |  Description  |
 |:-------:    |:-------:|
 | `getElementById()`  | Select an element by the value of its `id` attribute. |
-| `querySelector()` | Select the first element that matches the provided selector using CSS-style syntax.  |
+| `querySelector()` | Select the first element that matches the provided selector using CSS style syntax.  |
 | `document.getElementsByClassName()`   | Select all elements that have a given class name.    |
 | `document.getElementsByTagName()`     | Select all elements that have a given tag name.   |
-| `document.querySelectorAll()`   | Select all elements that match the provided selector using CSS-style syntax.   |
+| `document.querySelectorAll()`   | Select all elements that match the provided selector using CSS style syntax.   |
 
 ###Traversing the DOM
 
