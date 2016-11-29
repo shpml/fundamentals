@@ -80,7 +80,7 @@ document.getElementsByTagName('a')[0].removeAttribute('id');
 
 #Events
 
-In order to create interactive and responsive sites, we'll often want to update the DOM based on a user's actions. For example, when a user clicks on the menu icon, a sidebar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of the field. These actions are called **events**.
+In order to create interactive and responsive sites, we'll often want to update the DOM based on a user's actions. For example, when a user clicks on the menu icon, a side bar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of the field. These actions are called **events**.
 
 We can set up **event handlers** in our scripts that will listen, or wait, for an event to occur and then trigger a function.
 
