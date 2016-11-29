@@ -94,7 +94,7 @@ function isTwoCards() {
 
 >  **NOTE** We can create an `img` tag as a string. For example, `<img src="my_king.png" alt="King of Spades" />` is an image that would render a king of spades. We can set `cardElement`'s `innerHTML` value to a string. So, we could set `cardElement.innerHTML = '<img src="my_king.png" alt="King of Spades" />';`.
 
-9) When `isMatch()` has run, you should remove _all_ innerHTML of every card to reset the game board.
+9) When `isMatch()` has run, you should remove _all_ inner HTML of every card to reset the game board.
 
 10) Once completed, you should have a working game that displays cards when clicked and tells you if you have a match or not! Congratulations! You have come a long way!
 
