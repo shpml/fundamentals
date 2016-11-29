@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:22:21 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:29:03 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2203,12 +2203,12 @@
 </tr>
 </tbody>
 </table>
-<p>Note how each node has an index number associated with it. These indexes are <em>zero based</em>, meaning the first node has an index of 0, the second node an index of 1, etc.</p>
+<p>Note how each node has an index number associated with it. These indexes are <em>zero based</em>, meaning the first node has an index of 0, the second node has an index of 1, etc.</p>
 <p>To locate the fourth item in that NodeList, <code>&lt;li&gt;Thursday&lt;/li&gt;</code>, we could use the following syntax:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">3</span>].className = <span class="hljs-string">&apos;special&apos;</span>
 </code></pre>
-<p>Directly after the <code>getElementsByTagName(&apos;li&apos;)</code>, we have the index number of the item we want to locate in square brackets, <code>[3]</code>, which would locate the item at index 3.</p>
-<p>This would find the fourth list item and change its class attribute to <code>special</code> (we&apos;ll take a look at the className method shortly).</p>
+<p>Directly after the <code>getElementsByTagName(&apos;li&apos;)</code>, we have the index number of the item we want to locate in square brackets, <code>[3]</code>.</p>
+<p>This would find the fourth list item and change its class attribute to <code>special</code> (We&apos;ll take a look at the <code>className</code> method shortly).</p>
 <p>We could also use a loop to iterate through the elements in the NodeList and do something with each.</p>
 <p>For example:</p>
 <pre><code class="lang-js">
@@ -2238,9 +2238,9 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
-<p>Here, we have three <code>&lt;li&gt;</code> elements enclosed within opening <code>&lt;ul&gt;</code> and closing <code>&lt;/ul&gt;</code> tags.</p>
+<p>Here, we have three <code>li</code> elements enclosed within opening and closing <code>ul</code> tags.</p>
 <p>In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.</p>
-<p>In our example, we could describe the relationship between the <code>&lt;ul&gt;</code> element and the three <code>&lt;li&gt;</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>&lt;li&gt;</code> elements are enclosed within the <code>&lt;ul&gt;</code>.</p>
+<p>In our example, we could describe the relationship between the <code>ul&gt;</code> element and the three <code>li</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>li</code> elements are enclosed within the <code>ul</code>.</p>
 <p>We can use properties of an element to find and access related elements. Let&apos;s take a look at some examples below.</p>
 <h4 id="-parentnode"><code>parentNode</code></h4>
 <p>The <code>parentNode</code> property will locate the parent of an initial selection.</p>
@@ -2297,7 +2297,7 @@ For example:</p>
 <p>This code would change the text content of the <code>&lt;li&gt;</code> with the id <code>important</code> to &apos;Done!&apos;.</p>
 <p><img src="../assets/chapter5/thingstodo5.png" alt=""></p>
 <hr>
-<p><a href="10_lesson.html">Now, on to the next lesson.</a></p>
+<p><a href="10_lesson.html">On to the next lesson!</a></p>
 
                     
                     </section>
