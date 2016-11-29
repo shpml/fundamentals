@@ -39,7 +39,7 @@ Before you start, go ahead and comment out the `if` statement from the last assi
 
 4) Save your changes!
 
-###### Create the HTML for the Cards Using JavaScript:
+###### Create the HTML for the Cards Using JavaScript
 
 5) Get an element with the ID of `game-board` and set it to a variable.
 
