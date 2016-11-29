@@ -41,9 +41,9 @@ Before you start, go ahead and comment out the `if` statement from the last assi
 
 ###### Create the HTML for the Cards Using JavaScript
 
-5) Get an element with the ID of `game-board` and set it to a variable.
+5) Get an element with the `id` of `game-board` and set it to a variable.
 
-6) Assuming your memory card game consists of four cards, create a `for loop` that creates an HTML element for each card. Each HTML element should be a `div`, as well as the class `card` (This will help when you add CSS).
+6) Assuming your memory card game consists of four cards, create a `for` loop that creates an HTML element for each card. Each HTML element should be a `div` and have the class `card` (This will help when you add CSS).
 
 7) Append each newly created card to the `div` with the ID `game-board`.
 
