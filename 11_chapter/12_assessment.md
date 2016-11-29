@@ -86,7 +86,7 @@ function isTwoCards() {
 
 >  **NOTE** `this` refers to whatever called the function. For example, we add the `eventListener` of `'click'` to a **card** and then call `isTwoCards`. In our example above, `this` is referring to _this card_. If this is confusing, don't worry! We'll cover `this` extensively in WDI.
 
-7) We have the ability to 'flip' a card. This will require us to grab images first. Look through pixabay.com, and find and download an image of a [King](https://pixabay.com/en/photos/?image_type=&cat=&min_width=&min_height=&q=playing+cards+king+&order=popular) and [Queen](https://pixabay.com/en/photos/?image_type=&cat=&min_width=&min_height=&q=playing+cards+queen+&order=popular) to your liking. Once you've downloaded these images, add them to your project's folder. It's best to place them in the _root_ directory of that folder.
+7) We have the ability to "flip" a card. This will require us to grab images first. Look through pixabay.com, and find and download images of a [king](https://pixabay.com/en/photos/?image_type=&cat=&min_width=&min_height=&q=playing+cards+king+&order=popular) and [queen](https://pixabay.com/en/photos/?image_type=&cat=&min_width=&min_height=&q=playing+cards+queen+&order=popular) that are to your liking. Once you've downloaded these images, add them to your project's folder. It's best to place them in the _root_ directory of that folder.
 
 > **INFO** You may need to add a CSS selector that targets your `img` elements and gives them a height/width if the images you use are very large.
 
