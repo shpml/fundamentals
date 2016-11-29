@@ -20,7 +20,7 @@ var nameOfMyFunction = function(x) {
 
 As you can see, the first line begins with `nameOfMyFunction`, followed by the word `function`, which is how we'd like to refer to that function later on.
 
-Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are called **parameters** of a function. Above, we only used one parameter, `x`.
+Next, we write a list of the input values we'd like to use, enclosed in parentheses and separated by commas. These values are known as **parameters** of the function. Above, we only used one parameter, `x`.
 
 Finally, we write the body of our function, enclosed by a pair of curly braces (`{}`).
 
