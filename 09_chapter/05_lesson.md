@@ -18,7 +18,7 @@ We're going to make one small (but very important) change to this — instead of
 ![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
 <br>
 
-Now, we have a loop. So long as our condition remains true (or at least "truthy"), we will continue to run that block of code over and over again. This type of loop is called a `while` loop and can be found in nearly every programming language. Here's the general rule for writing `while` loops in JavaScript.
+Now, we have a loop. So long as our condition remains true (or at least "truthy"), we will continue to run that block of code over and over again. This type of loop is called a `while` loop and can be found in nearly every programming language. Here's the general rule for writing `while` loops in JavaScript:
 
 ```javascript
 while (someCondition) {
