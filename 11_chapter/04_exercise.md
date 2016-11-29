@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Time to give it a whirl! In this exercise you'll practice setting up and updating a contacts array. Later in this unit we'll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, enter new contacts, list contacts, and search contacts by first or last name.
+Time to give it a whirl! In this exercise you'll practice setting up and updating a `contacts` array. Later in this unit we'll be adding some complexity and creating a more robust contact book that allows us to store more detailed information, enter new contacts, list contacts, and search contacts by first or last name.
 
 
 ## Instructions
