@@ -26,7 +26,7 @@ var avgOfTen = function(a, b, c, d, e, f, g, h, i, j) {
     return (a + b + c + d + e + f + g + h + i + j) / 10;
 }
 ```
-OK, now try writing `function avgOfOneHundred()`.
+OK, now try writing the function `avgOfOneHundred()`.
 
 Or don't. It would be exhausting to write 100 identical variations of this function. The more variables we want to keep track of, the more code we have to write. Now, the length of our code is growing even though our program is not growing in complexity.
 
