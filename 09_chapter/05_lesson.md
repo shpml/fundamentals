@@ -6,7 +6,7 @@ We've covered how we can tell our programs to make decisions. Now, let's look at
 
 ## The `while` Loop
 
-To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running a block of code, it "loops" back to the beginning and starts again.
+To tell your program to repeat something, you use a tool called a **loop** — once your program has finished running a block of code, it "loops" back to the beginning and starts again.
 
 Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten.
 
