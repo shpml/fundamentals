@@ -62,19 +62,19 @@ var lunches = { 'Josh' : 'pasta',
                 'Shannon' : 'soup' };
 ```
 
-Elements in objects are accessed and manipulated in the same way as elements in normal arrays — using square brackets (`[]`). In this case, if we wanted to access the value stored under 'Matt', we could type:
+Elements in objects are accessed and manipulated in the same way as elements in normal arrays — using square brackets (`[]`). In this case, if we wanted to access the value stored under `'Matt'`, we could type:
 
   ```js
   lunches['Matt']
   ```
 
-If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.
+If we wanted to alter that value, we could perform an assignment, just like we might in a normal array.
 
   ```js
   lunches['Matt'] = 'turkey sandwich'
   ```
 
-Adding new key-value pairs looks just like assignment - you simply set your new key as the reference, and assign your new value as the value.
+Adding new key-value pairs looks just like assignment — you simply set your new key as the reference and assign your new value as the value.
 
   ```js
   lunches['Elena'] = 'meatloaf'
