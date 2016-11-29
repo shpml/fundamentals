@@ -20,7 +20,7 @@ Replace all of your card variables with an array of cards. Once that is complete
 2) Declare a variable, `cardsInPlay`, whose value is an empty array.
 
 
-3) You will now need to set up each card within the `createBoard()` function. To accomplish this, loop through your `cards` array and give each element an attribute that equals the card value (e.g., "queen"). See the example below.
+3) You will now need to set up each card within the `createBoard()` function. To accomplish this, loop through your `cards` array and give each element an attribute that equals the card value (e.g., `'queen'`). See the example below.
 
 ```js
 // instead of looping through a fixed number
