@@ -153,7 +153,7 @@ animals.indexOf('bee');  // Evaluates to -1
 ###Adding and Removing Elements in an Array
 
 ####.push() and .pop()
-`.push()` and `.pop()` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. In particular, `.push()` a convenient way to build up an array over time - you're simply adding another item to the list.
+`.push()` and `.pop()` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. In particular, `.push()` a convenient way to build up an array over time — you're simply adding another item to the list.
 
 ```javascript
 var ghosts = ['blinky', 'inky', 'pinky'];
