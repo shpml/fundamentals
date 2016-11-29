@@ -16,7 +16,7 @@ var friends = ['Rachel', 'Monica', 'Phoebe', 'Joey', 'Chandler', 'Ross'];
 
 We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index: 2), and so on. Great! This is an easy way to keep track of each person's location.
 
-But, suppose that Monica decides she's waited long enough for an iPhone and decides to leave the line and get an Android phone instead. What happens when Monica leaves?
+But, suppose that Monica decides she's waited long enough for an iPhone and leaves the line to get an Android phone instead. What happens when she leaves?
 
 ```javascript
 friends.splice(1, 1); // ["Monica"]
