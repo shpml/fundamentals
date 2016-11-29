@@ -59,7 +59,7 @@ for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
 }
 ```
 
-We could even choose to only operate on every third element by changing the value we increment i, like so (see `i += 3` ?):
+We could even choose to only operate on every third element by changing the value at which we increment `i`, like so (see `i += 3` ?):
 
 ```javascript
 for (var i = 2; i < tempsInF.length; i += 3) {
