@@ -109,12 +109,12 @@ var pet = {
   }
 ```
 What code could we write to perform the following tasks?
-* Retrieve the value for 'name' from the object.
-* Assign the value for 'age' to 13.
-* Add a new key, 'favoriteFood', with the value 'crickets'.
+* Retrieve the value for `'name'` from the object.
+* Assign the value for `'age'` to 13.
+* Add a new key, `'favoriteFood'`, with the value `'crickets'`.
 
 >**NOTE** You'll learn more about objects throughout WDI and use them for far more complex use cases than tracking lunches.
 
 ---
 
-[Let's move on to one last exercise - this time on objects.](10_exercise.md)
+[Let's move on to one last exercise — this time on objects.](10_exercise.md)
