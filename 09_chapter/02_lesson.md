@@ -103,7 +103,7 @@ Try copying that whole statement into JS Bin and testing out different values fo
 
 ## Switch Statement
 
-As we've seen before, we can choose which condition will be executed using `if...else if...else`. If we have a long list of conditions, however, the code becomes a bit repetitive and hard to read. For example:
+As we've seen before, we can choose which condition will be executed using `if...else` and `if...else`. If we have a long list of conditions, however, the code becomes a bit repetitive and hard to read. For example:
 
 ```javascript
 // day of the week in a number, Sunday is 0, Saturday is 6
