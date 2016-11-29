@@ -319,12 +319,12 @@ There are many properties and methods that allow us to read from or update the c
 
 We can use the `innerHTML` property to get and set content for an element.
 
-For example, if we want to change the HTML content for the first `<li>`, we could execute the following:
+For example, if we want to change the HTML content for the first `li`, we could execute the following:
 
 ```js
 document.getElementsByTagName('li')[0].innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.';
 ```
-This would find the first `<li>` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.`. The result will look like this:
+This would find the first `li` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.`. The result will look like this:
 
 ![](/assets/elkwebdesign/innerHTML.png)
 
