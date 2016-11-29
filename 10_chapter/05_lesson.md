@@ -30,7 +30,7 @@ In Tic-Tac-Toe, there are nine possible values (one for every cell on the board)
 | g | h | i |
 ```
 
-Each of these values will start as `null`, until a user assigns them a new value, either 'o' or 'x'.
+Each of these values will start as `null`, until a user assigns them a new value, either `o` or `x`.
 
 To play around with this invisible Tic-Tac-Toe board, we've provided some code:
 
