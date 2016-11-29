@@ -46,4 +46,4 @@ We'll check for these conditionals in the following units when we learn about `o
 You'll want to keep track of all your hard work, so don't forget to ACP — **Add**, **Commit**, and **Push** — that code to GitHub!
 
 ---
-[On to the next lesson!](../10_chapter/intro.md)
+[Next up: Unit 10!](../10_chapter/intro.md)
