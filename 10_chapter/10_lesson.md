@@ -89,13 +89,13 @@ The syntax for setting up an event handler looks like this:
 ```js
   element.addEventListener('nameOfEvent', functionToRun);
 ```
-* `element` refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button element.
+* `element` refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button's element.
 
 * `.` ties the method on the right-hand side (`addEventListener`) with the element on the left-hand side.
 
 * `addEventListener()` is the method we'll use to tie an event listener to an element.
 
-* `'nameOfEvent'` is name of the event we want to listen for. For example, we may want to wait until a user triggers a 'click' event on an element.
+* `'nameOfEvent'` is name of the event we want to listen for. For example, we may want to wait until a user triggers a `click` event on an element.
 
 * `'functionToRun'` is name of the function we want to run when the event occurs.
 
