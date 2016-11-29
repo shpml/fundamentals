@@ -89,7 +89,7 @@ Confused? Here's the play-by-play:
 * `z` is now 5, therefore <code>z < 5</code> is now **false** (because 5 is **not** less than 5). The block does not get executed again.
 * And, we're done!
 
-What's most interesting about this kind of set up is that, if we changed that condition from <code>z < 5</code> to <code>z < 10</code>, or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, controllable number of times - it will never get stuck in an infinite loop.
+What's most interesting about this kind of set up is that, if we changed that condition from <code>z < 5</code> to <code>z < 10</code> or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, controllable number of times — it will never get stuck in an infinite loop.
 
 This kind of set up is so useful, and is used so frequently, that most languages include a special kind of loop for just this kind of behavior, known as a `for` loop.
 
