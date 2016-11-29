@@ -4,7 +4,7 @@
 
 ##Your Turn
 
-Take a look at the sample code in the JS Bin below. If you don't see the JS Bin below, please refresh the page.
+Take a look at the sample code in the JS Bin below. If you don't see the JS Bin, please refresh the page.
 
 <a class="jsbin-embed" href="https://jsbin.com/kiyeso/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
@@ -23,4 +23,4 @@ To test your code, set a value for `x` in the editor and click "Run." Did you ge
 
 ---
 
-[Next: Loops](05_lesson.md)
+[On to the next lesson!](05_lesson.md)
