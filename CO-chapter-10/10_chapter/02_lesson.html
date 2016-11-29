@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.1" data-basepath=".." data-revision="Tue Nov 29 2016 17:43:17 GMT+0000 (UTC)">
+    <div class="book" data-level="10.1" data-basepath=".." data-revision="Tue Nov 29 2016 17:49:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2078,14 +2078,14 @@
 <p>To actually <em>evaluate</em> a function, we have to <strong>call</strong> that function as follows:</p>
 <pre><code class="lang-javascript">nameOfMyFunction();
 </code></pre>
-<p>In the case of <code>var tripleIt = function(x)</code>, if we wanted to call the function by passing the value 4, we would write:</p>
+<p>In the case of <code>var tripleIt = function(x)</code>, if we wanted to call the function by passing the value <code>4</code>, we would write:</p>
 <pre><code class="lang-javascript">tripleIt(<span class="hljs-number">4</span>)
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p>: In this case, the number <code>4</code> that&apos;s used when the function is called is known as an <strong>argument</strong>.</p>
 </blockquote>
 <p>The function would execute its statements and evaluate to the value <code>12</code>.</p>
-<p>Just like a variable, we can use the return value of this function in any expression. For example:</p>
+<p>Just like a variable, we can use the <code>return</code> value of this function in any expression. For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = tripleIt(<span class="hljs-number">1</span>);                         <span class="hljs-comment">// a === 3</span>
 <span class="hljs-keyword">var</span> b = <span class="hljs-number">100</span> * tripleIt(<span class="hljs-number">4</span>);                   <span class="hljs-comment">// b === 1200</span>
 <span class="hljs-keyword">var</span> c = <span class="hljs-number">200</span> + (tripleIt(<span class="hljs-number">20</span>) / tripleIt(<span class="hljs-number">10</span>)); <span class="hljs-comment">// c === 202</span>
