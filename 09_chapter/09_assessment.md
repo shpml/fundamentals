@@ -22,11 +22,11 @@ For this assessment, you'll use an `alert` to display messages to your user:
 
 **Note** Warning! `alert`s are _annoying_ pop ups that can be used to show a string of data to a user. They also interfere with a user's ability to interact with a web page until he or she clicks `OK`. While `alert`s are a great tool for seeing results as you learn JavaScript, you should never use them for any professional project. Why? Not only are they a nuisance, but some browsers (such as Chrome) allow users to prevent them from being displayed.
 
-> **Note:** Curious about `alert()`? Check out the documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>
+> **Note:** Curious about `alert`? Check out its documentation <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert" target="_blank">here</a>.
 
 
 
-##### Below are the Steps for Completing the Assignment:
+##### Below are the steps for completing the assignment:
 
 1) In your `main.js` file, create an `if else` statement that checks for equality between two of your cards (you choose which ones).
 * An `if` statement should consist of a Boolean checking for equality between two created variables. You should have a condition to compare two king variables, two queen variables, and one of each. Start by comparing `cardTwo` with `cardFour` (using `===`).
