@@ -29,7 +29,7 @@ For now, we'll run our JavaScript to update the DOM when the page loads. In the 
 
 * Find the fourth list item using the `querySelectorAll()` method. Change the text to "I'm the fourth!"
 
-* Use the `getElementsByTagName` method to select all `<li>` elements. Then, use a for loop to iterate through these elements and change the text content to "JavaScript rules!"
+* Use the `getElementsByTagName` method to select all `li` elements. Then, use a `for` loop to iterate through these elements and change the text content to "JavaScript rules!"
 
 * Use the `getElementsByClassName` method to select all elements with the `current` class. Then, use array syntax to select the first item from that class and change the inner HTML to "Manipulating the DOM is fun!"
 
