@@ -33,11 +33,11 @@ fizz
 fizzbuzz
 ```
 
-Once again, there's no starter code for this exercise - just open up a new session in [JS Bin](https://jsbin.com). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous unit!
+Once again, there's no starter code for this exercise — just open up a new session in [JS Bin](https://jsbin.com). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous unit!
 
 Test your code for several different input values. What do you get if `num` is 1? 10? 30?
 
-If you're satisfied that your code is working as expected, go ahead and move on to the next lesson.
+If you're satisfied that your code is working as expected, go ahead and move on.
 
 > *Stuck? Check out the [solutions](../exercise-solutions.md) to see what you can do.*
 
