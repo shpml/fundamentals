@@ -109,7 +109,7 @@ We could call them `winnerIsX` and `winnerIsO`. `winnerIsX` could give us back `
 
 OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems. So, how do we determine whether X or O won?
 
-###Determining if `x` has won
+###Determining if `x` has Won
 
 Let's first focus on `winnerIsX`.
 
@@ -201,7 +201,7 @@ var allThreeX = function(cellOne, cellTwo, cellThree) {
 
 Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
-###Determining if `o` has won
+###Determining if `o` has Won
 
 Now, we can go ahead and start writing a function called `allThreeO` to do for O what we've done for X. But that seems pretty duplicative.
 
