@@ -30,9 +30,9 @@ for (var i = 0; i < cards.length; i++) {
   ...
 
   // this will set the card's 'data-card' to be the element of the array
-  // data- attributes are meant to store data about an element that is not
-  // tied to a style.
-  // i.e. "king"
+  // data — attributes are meant to store data about an element that is not
+  // tied to a style,
+  // i.e., 'king'.
   cardElement.setAttribute('data-card', cards[i]);
 
   ...
