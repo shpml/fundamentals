@@ -30,7 +30,7 @@
   * Editing a value in a nested array is exactly like editing a value in a non-nested array, the only difference is how you reference the value you want to change (e.g., <code>myNestedArray[0][3] = 'z';</code>).
 
 ### Additional Array Features
-  * In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.
+  * In addition to storing a set of values, arrays also have a number of in-built properties and functions they can use.
   * `.length` gives you the length of the array you call it on.
   * `.push()` adds a new element to the end of an array and returns that element.
   * `.pop()` removes the last element in an array and returns that element.
