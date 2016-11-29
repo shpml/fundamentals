@@ -16,7 +16,7 @@ Based on whether or not your users discover a match, notify them with a winning 
 
 We can use **alert** to display a pop-up message to a user. In a JavaScript file, you could write `alert('Hello, friends.');` and you would create a pop up from your browser that displays the string `'Hello, friends'`.
 
-For this assessment, you'll use an alert to display messages to your user:
+For this assessment, you'll use an `alert` to display messages to your user:
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/1S1E0E3Q3m1K1G2L3C1A/Image%202016-03-06%20at%208.24.46%20AM.png?v=6094ee76)
 
