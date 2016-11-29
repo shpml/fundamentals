@@ -65,7 +65,7 @@ while (z < 5) {
 }
 ```
 
-Q: How many times does this loop run? What's the final value of myString?
+Q: How many times does this loop run? What's the final value of `myString`?
 
 A: Each time this loop runs, the value of `z` increases by 1. Because its initial value is 0 and the condition becomes `false` the moment that z becomes 5, our loop will run exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
 
