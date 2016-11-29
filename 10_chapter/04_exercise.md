@@ -13,7 +13,7 @@ This time around, you won't be given any starter code. Instead, you'll need to w
 ###Instructions
 
 1) Write the code for the functions described below using JS Bin's JavaScript tab.
-2) Click `run` to run the code.
+2) Click `Run` to run the code.
 3) Try *calling* each function from the console tab. If you do not see the console tab, click the "Console" button at the top of the JS Bin window. Use different parameters to make sure the functions work as expected.
 
 **Let's get started!**
