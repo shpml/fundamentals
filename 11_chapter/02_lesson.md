@@ -90,7 +90,7 @@ var x = arrayOfArrays[1]; // Evaluates to ['d', 'e', 'f']
 x[0]; // Evaluates to 'd'
   ```
 
-But, the variable `x` there is unnecessary - it's just standing in for <code>['d', 'e', 'f']</code>. We can access that element directly from `arrayOfArrays` using the following syntax:
+But, the variable `x` there is unnecessary — it's just standing in for <code>['d', 'e', 'f']</code>. We can access that element directly from `arrayOfArrays` using the following syntax:
 
 ```javascript
 arrayOfArrays[1][0]; // Evaluates to 'd'
