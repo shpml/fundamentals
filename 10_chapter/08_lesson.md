@@ -215,7 +215,7 @@ document.getElementsByTagName('li')[3].className = 'special'
 ```
 Directly after the `getElementsByTagName('li')`, we have the index number of the item we want to locate in square brackets, `[3]`.
 
-This would find the fourth list item and change its class attribute to `special` (we'll take a look at the className method shortly).
+This would find the fourth list item and change its class attribute to `special` (We'll take a look at the `className` method shortly).
 
 We could also use a loop to iterate through the elements in the NodeList and do something with each.
 
