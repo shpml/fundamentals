@@ -51,7 +51,7 @@ Now the DOM looks pretty different from our original HTML file.
 
 JavaScript comes with some "built-in" functions that allow us to access and update these nodes. We can call on these functions using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as **methods**.
 
-Let's take a look at some of the methods we have available to us!
+Let's take a look at some of the methods available to us!
 
 ##Accessing Elements
 
