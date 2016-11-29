@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Let's revisit our 'FizzBuzz' activity from Unit 4, incorporating what we've learned so far about writing functions.
+Let's revisit our "FizzBuzz" activity from Unit 4, incorporating what we've learned so far about writing functions.
 
 Your job this time will be to write a function called `fizzbuzz` that takes a parameter `num`. For every number from 1 to `num`, this function should print (using console.log()) one of the following values:
 
