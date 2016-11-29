@@ -91,7 +91,7 @@ var getWinner = function() {
 
 So, where do we go from here?
 
-One way to determine the winner might be to check whether X has won and then to check whether O has won. And what if two functions existed that would determine this for us?
+One way to determine the winner might be to check whether or not X has won and then to check whether or not O has won. And what if two functions existed that would determine this for us?
 
 We could call them `winnerIsX` and `winnerIsO`. `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
 
