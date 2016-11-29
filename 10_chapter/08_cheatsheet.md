@@ -43,8 +43,8 @@ var someFunc = function(x) {
 ### Best Practices for Writing Functions
 * In addition to functionality, making your code readable is one of your most critical considerations.
 * Here are some guidelines to keep in mind:
-  * Keep you functions small - don't try to do too much in one step.
-  * Use good naming for functions and variables. Call things what they are!
+  * Keep you functions small — don't try to do too much in one step.
+  * Use good names for functions and variables. Call things what they are!
   * Avoid repetitive code where possible.
   * Generally, don't hard-code specific values into your program if you can help it.
 
