@@ -26,7 +26,7 @@
                          ['d','e','f'],
                          ['g','h','i']];
   ```
-  You could access the element 'f' by writing `myNestedArray[1][2]`.
+  You could access the element `'f'` by writing `myNestedArray[1][2]`.
   * Editing a value in a nested array is exactly like editing a value in a non-nested array, the only difference is how you reference the value you want to change (e.g., <code>myNestedArray[0][3] = 'z';</code>).
 
 ### Additional Array Features
