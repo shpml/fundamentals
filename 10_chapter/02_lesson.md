@@ -32,7 +32,7 @@ var tripleIt = function(x) {
 }
 ```
 
-This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (`x`) multiplied by 3.
+This function takes one parameter — `x`. The body of the function consists of one statement that says to return the parameter of the function (`x`) multiplied by 3.
 
 This is the first time we've seen a `return` statement. And its name is self-explanatory. `return` gives back the output of the function.
 
@@ -42,7 +42,7 @@ Function names should describe what the function does as best as possible; a gen
 
 You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't include spaces.
 
-To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word after the first one (e.g., `nameOfMyFunction` – see the resemblance to a camel's humps?)
+To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word after the first one (e.g., `nameOfMyFunction` — see the resemblance to a camel's humps?)
 
 Here are some good (and bad) examples of function names:
 
