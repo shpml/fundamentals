@@ -62,7 +62,7 @@ To actually *evaluate* a function, we have to **call** that function as follows:
 nameOfMyFunction();
 ```
 
-In the case of `var tripleIt = function(x)`, if we wanted to call the function by passing the value 4, we would write:
+In the case of `var tripleIt = function(x)`, if we wanted to call the function by passing the value `4`, we would write:
 
 ```javascript
 tripleIt(4)
