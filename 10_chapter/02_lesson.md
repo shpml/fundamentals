@@ -115,7 +115,7 @@ Test your answers in JS Bin by copying the function definition into the editor, 
 
 ---
 
-## The Return Statement
+## The `return` Statement
 
 As mentioned above, `return` specifies the value of the function when it's executed. It also has another important job — telling the function to immediately stop whatever it's doing.
 
