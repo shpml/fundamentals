@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Nov 29 2016 22:27:45 GMT+0000 (UTC)">
+    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Nov 29 2016 22:33:17 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2104,17 +2104,17 @@
 }
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p>  <code>this</code> refers to whatever called the function. For example, we add the eventListener of &apos;click&apos; to a <strong>card</strong> and then call <code>isTwoCards</code>. In our example above, <em>this</em> is referring to <em>this card</em>. If this is confusing, don&apos;t worry! We&apos;ll cover this extensively in WDI.</p>
+<p>  <code>this</code> refers to whatever called the function. For example, we add the <code>eventListener</code> of <code>&apos;click&apos;</code> to a <strong>card</strong> and then call <code>isTwoCards</code>. In our example above, <code>this</code> is referring to <em>this card</em>. If this is confusing, don&apos;t worry! We&apos;ll cover <code>this</code> extensively in WDI.</p>
 </blockquote>
-<p>7) We have the ability to &apos;flip&apos; a card. This will require us to grab images first. Look through pixabay.com, and find and download an image of a <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+king+&amp;order=popular" target="_blank">King</a> and <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+queen+&amp;order=popular" target="_blank">Queen</a> to your liking. Once you&apos;ve downloaded these images, add them to your project&apos;s folder. It&apos;s best to place them in the <em>root</em> directory of that folder.</p>
+<p>7) We have the ability to &quot;flip&quot; a card. This will require us to grab images first. Look through pixabay.com, and find and download images of a <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+king+&amp;order=popular" target="_blank">king</a> and <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+queen+&amp;order=popular" target="_blank">queen</a> that are to your liking. Once you&apos;ve downloaded these images, add them to your project&apos;s folder. It&apos;s best to place them in the <em>root</em> directory of that folder.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
 <p> You may need to add a CSS selector that targets your <code>img</code> elements and gives them a height/width if the images you use are very large.</p>
 </blockquote>
-<p>8) In your <code>cardElement</code>&apos;s &apos;click&apos; event listener, set the <code>cardElement</code>&apos;s innerHTML to an image of either a king or a queen. You will need to get the <code>data-card</code> attribute to decide which image to display. You can then use that &apos;data-card&apos; value to decide on the image using an <code>if</code> statement.</p>
+<p>8) In your <code>cardElement</code>&apos;s <code>&apos;click&apos;</code> event listener, set the <code>cardElement</code>&apos;s inner HTML to an image of either a king or a queen. You will need to get the <code>data-card</code> attribute to decide which image to display. You can then use that <code>data-card</code> value to decide on the image using an <code>if</code> statement.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p>  We can create an <code>img</code> tag as a string. For example, <code>&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;</code> is an image that would render a king of spades. We can set <code>cardElement</code>&apos;s <code>innerHTML</code> value to a string. So, we could set <code>cardElement.innerHTML = &apos;&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;&apos;;</code>.</p>
 </blockquote>
-<p>9) When <code>isMatch()</code> has run, you should remove <em>all</em> innerHTML of every card to reset the game board.</p>
+<p>9) When <code>isMatch()</code> has run, you should remove <em>all</em> inner HTML of every card to reset the game board.</p>
 <p>10) Once completed, you should have a working game that displays cards when clicked and tells you if you have a match or not! Congratulations! You have come a long way!</p>
 <h4 id="deliverable">Deliverable</h4>
 <p>When you&apos;re finished, don&apos;t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your code to your GitHub repository!</p>
