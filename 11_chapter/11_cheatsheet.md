@@ -56,8 +56,8 @@
   * An object can be defined by enclosing a list of key-value pairs in curly braces (`{}`). Each key-value pair is written as `someKey : someValue`, and each pair is separated by commas.
   * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the object, e.g., <code>myObject['myKey']</code>.
   * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array, e.g., <code>myObject['myKey'] = 'aValue'</code>.
-  * Adding a new key-value pair to an object is easy - it looks just like an assignment operation, e.g., <code>myObject['someNewKey'] = 'someNewValue'</code>.
-  * Nesting for objects works *exactly* the same as it does for ordinary arrays.
+  * Adding a new key-value pair to an object is easy — it looks just like an assignment operation, e.g., <code>myObject['someNewKey'] = 'someNewValue'</code>.
+  * Nesting for objects works in the *exact* same way it does for ordinary arrays.
 
 ---
 [It's project time!](12_assessment.md)
