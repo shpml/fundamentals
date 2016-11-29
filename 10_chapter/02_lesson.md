@@ -132,7 +132,7 @@ var doAThing = function(x) {
 
 If `x` is greater than 10, the computer will run the `if` statement and hit that first `return` statement (`x + 10`).
 
-This will *immediately end the function* - that second `return` statement won't be reached.
+This will *immediately end the function* — that second `return` statement won't be reached.
 
 ### Test Yourself
 
