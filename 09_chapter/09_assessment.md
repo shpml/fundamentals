@@ -43,7 +43,7 @@ We'll check for these conditionals in the following units when we learn about `o
 
 #### Deliverable
 
-You'll want to keep track of all your hard work, so don't forget to ACP — **Add**, **Commit**, and **Push** — that code to GitHub!
+You'll want to keep track of all your hard work, so don't forget to ACP — **add**, **commit**, and **push** — that code to GitHub!
 
 ---
 [Next up: Unit 10!](../10_chapter/intro.md)
