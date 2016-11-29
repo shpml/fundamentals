@@ -51,7 +51,7 @@ Just like with a variable, this expression will evaluate to the value on the rig
 
 ### Test Yourself
 
-Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
+Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the `console.log` statement?
 
 ```javascript
 var myNumbers = [4, 65, 0, 29];
@@ -63,7 +63,7 @@ console.log(myNumbers);
 ```
 Confirm your answer by entering the code above in a new JS Bin session.
 
-## Adding Complexity – Nested Arrays
+## Adding Complexity: Nested Arrays
 
 In addition to storing numbers, strings, or Booleans as elements, arrays can also store *other arrays*.
 
