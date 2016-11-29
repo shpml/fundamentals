@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:18:58 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Tue Nov 29 2016 19:22:21 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2146,13 +2146,13 @@
 <p>This method will select all elements with a given class attribute.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&apos;special&apos;</span>)
 </code></pre>
-<p>This method will return any elements with the class <code>special</code>. In the above example, it will return a NodeList containing the second and third list items, as they both have the class <code>special</code>.</p>
+<p>This method will return any elements with the class <code>special</code>. In the example above, it will return a NodeList containing the second and third list items, as they both have the class <code>special</code>.</p>
 <hr>
 <h4 id="-document-getelementsbytagname"><code>document.getElementsByTagName()</code></h4>
 <p>This method will locate all elements that match a given tag name.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)
 </code></pre>
-<p>Here, this query returns all <code>&lt;li&gt;</code> elements. The NodeList will contain all seven <code>&lt;li&gt;</code>.</p>
+<p>Here, this query returns all <code>li</code> elements. The NodeList will contain all seven <code>li</code>.</p>
 <hr>
 <h4 id="-document-queryselectorall"><code>document.querySelectorAll()</code></h4>
 <p>Similar to our <code>querySelector()</code> method, this method lets us use our CSS selector syntax to select one or more elements.</p>
@@ -2163,7 +2163,7 @@
 <h4 id="working-with-nodelists">Working with NodeLists</h4>
 <p>Any time there is even the <em>potential</em> for a method to return more than one element, such as with <code>getElementsByClassName()</code>, <code>getElementsByTagName()</code>, and <code>querySelectorAll</code>, a NodeList will be returned, <em>even if only one element is found that matches the query</em>.</p>
 <p>These NodeLists are <strong>collections</strong> that are numbered, similar to the arrays we&apos;ll be looking at in Unit 11.</p>
-<p>When we get this list, we can select a single item to work with using array syntax &#x2013; a set of square brackets.</p>
+<p>When we get this list, we can select a single item to work with using array syntax &#x2014; a set of square brackets (<code>[]</code>).</p>
 <p>For example, above we saw that <code>document.getElementsByTagName(&apos;li&apos;)</code> returned seven list items. The NodeList that was returned would look like this:</p>
 <table>
 <thead>
