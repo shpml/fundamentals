@@ -13,7 +13,7 @@ Suppose that we were to take our `if` statement from the previous lesson and loo
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 <br>
 
-We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
+We're going to make one small (but very important) change to this — instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
 
 ![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
 <br>
