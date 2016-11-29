@@ -36,7 +36,7 @@ What if we were shown the output (`f(x)`) for each of the following values of `x
 
 We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input. In algebra, this relationship is written as `f(x) = 2 * x`. Familiar, right?
 
-Functions play a similar role in programming. JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
+Functions play a similar role in programming. JavaScript functions, like mathematical functions, perform transformations. They take input values and return an output value.
 
 # The Document Object Model
 
