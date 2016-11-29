@@ -62,7 +62,7 @@ var lunches = { 'Josh' : 'pasta',
                 'Shannon' : 'soup' };
 ```
 
-Elements in objects are accessed and manipulated in the same way as elements in normal arrays - using square brackets (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type:
+Elements in objects are accessed and manipulated in the same ways as elements in normal arrays — using square brackets (`[]`). In this case, if we wanted to access the value stored under 'Matt', we could type:
 
   ```js
   lunches['Matt']
