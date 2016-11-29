@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Nov 29 2016 22:21:03 GMT+0000 (UTC)">
+    <div class="book" data-level="11.6" data-basepath=".." data-revision="Tue Nov 29 2016 22:27:45 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,14 +2044,14 @@
                         <p><strong>WDI Fundamentals Unit 11</strong></p>
 <hr>
 <h1 id="less-code-and-better-logic-with-arrays">Less Code and Better Logic with Arrays</h1>
-<p>We&apos;re now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represent the value of our cards and looping through a fixed number we assumed to represent the number of cards. However, with our new found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let&apos;s go ahead and edit some of our code to incorporate arrays, then write some fresh new code to create dynamic game logic!</p>
+<p>We&apos;re now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represent the value of our cards and looping through a fixed number we assumed to represent the number of cards. However, with our new-found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let&apos;s go ahead and edit some of our code to incorporate arrays, then write some fresh new code to create dynamic game logic!</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
-<p>Replace all of your card variables with an <code>array</code> of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.</p>
-<h5 id="here-are-the-steps-completing-this-assignment">Here are the steps completing this assignment:</h5>
-<p>1) Declare a variable, <code>cards</code>, and set it equal to an <code>array</code> of four <code>String</code> elements: <code>queen</code>, <code>queen</code>, <code>king</code>, <code>king</code>.</p>
+<p>Replace all of your card variables with an array of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.</p>
+<h5 id="here-are-the-steps-for-completing-the-assignment">Here are the steps for completing the assignment:</h5>
+<p>1) Declare a variable, <code>cards</code>, and set it equal to an array of four string elements: <code>&apos;queen&apos;</code>, <code>&apos;queen&apos;</code>, <code>&apos;king&apos;</code>, <code>&apos;king&apos;</code>.</p>
 <p>2) Declare a variable, <code>cardsInPlay</code>, whose value is an empty array.</p>
-<p>3) You will now need to set up each card within the <code>createBoard()</code> function. To accomplish this, loop through your <code>cards</code> array and give each element an attribute that equals the card value (e.g., &quot;queen&quot;). See the example below.</p>
+<p>3) You will now need to set up each card within the <code>createBoard()</code> function. To accomplish this, loop through your <code>cards</code> array and give each element an attribute that equals the card value (e.g., <code>&apos;queen&apos;</code>). See the example below.</p>
 <pre><code class="lang-js"><span class="hljs-comment">// instead of looping through a fixed number</span>
 <span class="hljs-comment">// loop through the length of the cards</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; cards.length; i++) {
@@ -2059,16 +2059,16 @@
   ...
 
   <span class="hljs-comment">// this will set the card&apos;s &apos;data-card&apos; to be the element of the array</span>
-  <span class="hljs-comment">// data- attributes are meant to store data about an element that is not</span>
-  <span class="hljs-comment">// tied to a style.</span>
-  <span class="hljs-comment">// i.e. &quot;king&quot;</span>
+  <span class="hljs-comment">// data &#x2014; attributes are meant to store data about an element that is not</span>
+  <span class="hljs-comment">// tied to a style,</span>
+  <span class="hljs-comment">// i.e., &apos;king&apos;.</span>
   cardElement.setAttribute(<span class="hljs-string">&apos;data-card&apos;</span>, cards[i]);
 
   ...
 
 }
 </code></pre>
-<p>4) Add a &apos;click&apos; event listener to each card element that runs a function, <code>isTwoCards</code>. See below.</p>
+<p>4) Add a <code>click</code> event listener to each card element that runs a function, <code>isTwoCards</code>. See below.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;cards.length; i++) {
 
   ...
@@ -2086,17 +2086,17 @@
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isTwoCards</span><span class="hljs-params">()</span> </span>{
 
   <span class="hljs-comment">// add card to array of cards in play</span>
-  <span class="hljs-comment">// &apos;this&apos; hasn&apos;t been covered in this prework, but</span>
+  <span class="hljs-comment">// &apos;this&apos; hasn&apos;t been covered in this pre-work, but</span>
   <span class="hljs-comment">// for now, just know it gives you access to the card the user clicked on</span>
   cardsInPlay.push(<span class="hljs-keyword">this</span>.getAttribute(<span class="hljs-string">&apos;data-card&apos;</span>));
 
-  <span class="hljs-comment">// if you have two cards in play check for a match</span>
+  <span class="hljs-comment">// if you have two cards in play, check for a match</span>
   <span class="hljs-keyword">if</span> (cardsInPlay.length === <span class="hljs-number">2</span>) {
 
-    <span class="hljs-comment">// pass the cardsInPlay as an argument to isMatch function</span>
+    <span class="hljs-comment">// pass the cardsInPlay as an argument to the isMatch function</span>
     isMatch(cardsInPlay);
 
-    <span class="hljs-comment">// clear cards in play array for next try</span>
+    <span class="hljs-comment">// clear cards in play array for your next try</span>
     cardsInPlay = [];
 
   }
