@@ -40,7 +40,7 @@ for (var i = 0; i < cards.length; i++) {
 }
 ```
 
-4) Add a 'click' event listener to each card element that runs a function, `isTwoCards`. See below.
+4) Add a `click` event listener to each card element that runs a function, `isTwoCards`. See below.
 
 ```js
 for (var i=0; i<cards.length; i++) {
@@ -66,17 +66,17 @@ for (var i=0; i<cards.length; i++) {
 function isTwoCards() {
 
   // add card to array of cards in play
-  // 'this' hasn't been covered in this prework, but
+  // 'this' hasn't been covered in this pre-work, but
   // for now, just know it gives you access to the card the user clicked on
   cardsInPlay.push(this.getAttribute('data-card'));
 
-  // if you have two cards in play check for a match
+  // if you have two cards in play, check for a match
   if (cardsInPlay.length === 2) {
 
-    // pass the cardsInPlay as an argument to isMatch function
+    // pass the cardsInPlay as an argument to the isMatch function
     isMatch(cardsInPlay);
 
-    // clear cards in play array for next try
+    // clear cards in play array for your next try
     cardsInPlay = [];
 
   }
