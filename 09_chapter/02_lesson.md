@@ -31,7 +31,7 @@ A flow chart is a visual diagram that tells us how to behave, depending on a cer
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 <br>
 
-As you can see, people progressing through this diagram would need to make a decision. Depending on whether or not our condition is "truthy," they would either enter the block of code or skip it over entirely.
+As you can see, people progressing through this diagram would need to make a decision. Depending on whether or not our condition is "truthy," they would either enter the block of code or skip over it entirely.
 
 `if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
 
