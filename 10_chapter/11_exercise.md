@@ -26,7 +26,7 @@ Let's get some practice manipulating the DOM and adding some interactions to our
 
 * When a user clicks on the button with the ID `chill`, loop through all list items and add the class `cool` to each. Test it out! Each list item should have a blue border after the user clicks on the button.
 
-* When the user clicks on the first list item, add an item to the end of the list that says 'JavaScript is Fun!'.
+* When the user clicks on the first list item, add an item to the end of the list that says "JavaScript is Fun!"
 
 
 Feeling confident? [Test your understanding of functions and the DOM with this next quiz.](12_quiz.md)
