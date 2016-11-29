@@ -35,7 +35,7 @@ fizz
 buzz
 ```
 
-Testing any number less than 20 should give you a subset of that result - in other words, if `max` is 5, we get the following:
+Testing any number less than 20 should give you a subset of that result — in other words, if `max` is 5, we get the following:
 
 ```
 1
