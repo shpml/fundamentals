@@ -21,7 +21,7 @@ Besides `createElement`, the `document` object comes with other methods that hel
 
 To complete this assignment, you will need to utilize all of these methods.
 
->**Note:** In order to append your card elements, you're going to need something to append to. We're going to change the HTML content of one of our tags so that we may use JavaScript to _select_ that tag. In order to find an element that you want to append to, use JavaScript's document object to run either 'getElementById' or 'querySelector'.
+>**Note:** In order to append your card elements, you're going to need something to append to. We're going to change the HTML content of one of our tags so that we may use JavaScript to _select_ that tag. In order to find an element that you want to append to, use JavaScript's document object to run either `getElementById` or `querySelector`.
 
 ## Exercise
 
