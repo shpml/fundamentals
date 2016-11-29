@@ -191,7 +191,7 @@ Any time there is even the *potential* for a method to return more than one elem
 
 These NodeLists are **collections** that are numbered, similar to the arrays we'll be looking at in Unit 11.
 
-When we get this list, we can select a single item to work with using array syntax – a set of square brackets.
+When we get this list, we can select a single item to work with using array syntax — a set of square brackets (`[]`).
 
 For example, above we saw that `document.getElementsByTagName('li')` returned seven list items. The NodeList that was returned would look like this:
 
