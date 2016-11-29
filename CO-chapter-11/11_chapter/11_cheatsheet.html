@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.5" data-basepath=".." data-revision="Tue Nov 29 2016 22:06:49 GMT+0000 (UTC)">
+    <div class="book" data-level="11.5" data-basepath=".." data-revision="Tue Nov 29 2016 22:16:19 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2066,13 +2066,13 @@ variable (e.g., <code>myArray[1] = &apos;f&apos;</code>).</li>
                      [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
                      [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
-<p>You could access the element &apos;f&apos; by writing <code>myNestedArray[1][2]</code>.</p>
+<p>You could access the element <code>&apos;f&apos;</code> by writing <code>myNestedArray[1][2]</code>.</p>
 </li>
 <li>Editing a value in a nested array is exactly like editing a value in a non-nested array, the only difference is how you reference the value you want to change (e.g., <code>myNestedArray[0][3] = &apos;z&apos;;</code>).</li>
 </ul>
 <h3 id="additional-array-features">Additional Array Features</h3>
 <ul>
-<li>In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.</li>
+<li>In addition to storing a set of values, arrays also have a number of in-built properties and functions they can use.</li>
 <li><code>.length</code> gives you the length of the array you call it on.</li>
 <li><code>.push()</code> adds a new element to the end of an array and returns that element.</li>
 <li><code>.pop()</code> removes the last element in an array and returns that element.</li>
@@ -2092,10 +2092,12 @@ variable (e.g., <code>myArray[1] = &apos;f&apos;</code>).</li>
 <h2 id="collections-objects">Collections: Objects</h2>
 <h3 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h3>
 <ul>
-<li>A typical array works by referencing elements solely based on their positions, e.g., &quot;the first element, the second element ...&quot; etc. But, if the elements are ever rearranged, all of the references to specific elements need to be updated.</li>
-<li>An object generates an enduring relationship between a reference (called a <strong>key</strong>) and the value to which it refers. Each key-value pairing is totally independent of any others.<h3 id="objects-in-javascript">Objects in JavaScript</h3>
-</li>
-<li>An object can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
+<li>A typical array works by referencing elements solely based on their positions, e.g., &quot;the first element, the second element... &quot; etc. But, if the elements are ever rearranged, all of the references to specific elements need to be updated.</li>
+<li>An object generates an enduring relationship between a reference (called a <strong>key</strong>) and the value to which it refers. Each key-value pairing is totally independent of any others.</li>
+</ul>
+<h3 id="objects-in-javascript">Objects in JavaScript</h3>
+<ul>
+<li>An object can be defined by enclosing a list of key-value pairs in curly braces (<code>{}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
 <li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the object, e.g., <code>myObject[&apos;myKey&apos;]</code>.</li>
 <li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array, e.g., <code>myObject[&apos;myKey&apos;] = &apos;aValue&apos;</code>.</li>
 <li>Adding a new key-value pair to an object is easy - it looks just like an assignment operation, e.g., <code>myObject[&apos;someNewKey&apos;] = &apos;someNewValue&apos;</code>.</li>
