@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.6" data-basepath=".." data-revision="Wed Nov 30 2016 15:37:41 GMT+0000 (UTC)">
+    <div class="book" data-level="10.6" data-basepath=".." data-revision="Wed Nov 30 2016 15:40:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,25 +2044,25 @@
                         <p><strong>WDI Fundamentals Unit 10</strong></p>
 <hr>
 <h1 id="functions-and-the-dom-cheat-sheet">Functions and the DOM Cheat Sheet</h1>
-<p>Here are some notes on what&apos;s been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.</p>
+<p>Here are some notes on what&apos;s been covered in this chapter. Feel free to copy this and extend it to make your own cheat sheet.</p>
 <h2 id="functions">Functions</h2>
 <h3 id="defining-and-using-javascript-functions">Defining and Using JavaScript Functions</h3>
 <ul>
-<li>A <strong>function</strong> is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).</li>
-<li>Functions must be <strong>defined</strong> before they can be used. To define a function, use the following recipe:</li>
+<li>A <strong>function</strong> is a custom operation that can be run on command. It can be used both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing, then do that thing).</li>
+<li>Functions must be <strong>defined</strong> before they can be used. To define a function, use the following syntax:</li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myFunctionName = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
   <span class="hljs-comment">// Body of the function</span>
 }
 </code></pre>
 <ul>
-<li>To use, or <strong>call</strong> a function, simply type the name of your function, followed by <code>()</code> (plus any inputs that you might be passing in).</li>
+<li>To use, or <strong>call</strong>, a function, simply type the name of your function, followed by <code>()</code> (plus any inputs you might be passing in).</li>
 </ul>
 <pre><code class="lang-javascript">myFunctionName()
 </code></pre>
 <h3 id="-return-statements"><code>return</code> Statements</h3>
 <ul>
-<li>In addition to specifying a final value for the function to give back as a result, a <code>return</code> statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not <code>x</code>.</li>
+<li>In addition to specifying a final value for a function to give back as a result, a <code>return</code> statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than 10, it will stop executing at its second line and return 15, not <code>x</code>.</li>
 </ul>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someFunc = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
@@ -2074,27 +2074,27 @@
 <h2 id="using-functions-in-the-field">Using Functions in the Field</h2>
 <h3 id="best-practices-for-writing-functions">Best Practices for Writing Functions</h3>
 <ul>
-<li>In addition to functionality, making your code readable is one of the most critical things to consider.</li>
-<li>Here are some guidelines that you can keep in mind:<ul>
+<li>In addition to functionality, making your code readable is one of your most critical considerations.</li>
+<li>Here are some guidelines to keep in mind:<ul>
 <li>Keep you functions small - don&apos;t try to do too much in one step.</li>
 <li>Use good naming for functions and variables. Call things what they are!</li>
-<li>Avoid repetitive code, where possible.</li>
+<li>Avoid repetitive code where possible.</li>
 <li>Generally, don&apos;t hard-code specific values into your program if you can help it.</li>
 </ul>
 </li>
 </ul>
 <h3 id="problem-solving-with-functions">Problem Solving with Functions</h3>
 <ul>
-<li>Sometimes, when you&apos;re trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.</li>
+<li>Sometimes, when you&apos;re trying to figure out how to break apart a problem, it can be helpful to imagine the functions that could accomplish specific pieces.</li>
 <li>Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this <a href="http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29" target="_blank">decomposition</a>.</li>
 </ul>
 <h2 id="the-dom">The DOM</h2>
 <ul>
-<li>The <strong>Document Object Model (DOM)</strong> provides a structured representation of the HTML document and defines the way that structure can be access from programs to update the structure, content and style.</li>
+<li>The <strong>Document Object Model (DOM)</strong> provides a structured representation of the HTML document and defines the way it can be accessed by programs to update structure, content, and style.</li>
 </ul>
 <h3 id="accessing-the-dom">Accessing the DOM</h3>
 <ul>
-<li>Before we can work with an element, we first need to locate that element in the document. The syntax for searching for an element looks like this:</li>
+<li>Before we can work with an element, we need to first locate that element in the document. The syntax for searching for an element looks like this:</li>
 </ul>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;main&apos;</span>)
 </code></pre>
@@ -2115,7 +2115,7 @@
 </tr>
 <tr>
 <td style="text-align:center"><code>querySelector()</code></td>
-<td style="text-align:center">Select the first element that matches the provided selector. Uses CSS style syntax.</td>
+<td style="text-align:center">Select the first element that matches the provided selector using CSS-style syntax.</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>document.getElementsByClassName()</code></td>
@@ -2127,13 +2127,13 @@
 </tr>
 <tr>
 <td style="text-align:center"><code>document.querySelectorAll()</code></td>
-<td style="text-align:center">Select all elements that match the provided selector. Uses CSS style syntax for the selector.</td>
+<td style="text-align:center">Select all elements that match the provided selector using CSS-style syntax.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="traversing-the-dom">Traversing the DOM</h3>
 <ul>
-<li>Once an element has been selected, this element can be used to select another element based on its relationship to it. This is referred to as <strong>traversing the DOM</strong>.</li>
+<li>Once an element has been selected, this element can be used to select another element based on their relationship. This is referred to as <strong>traversing the DOM</strong>.</li>
 </ul>
 <table>
 <thead>
@@ -2173,7 +2173,7 @@
 <h3 id="manipulating-the-dom">Manipulating the DOM</h3>
 <h4 id="accessing-and-updating-content">Accessing and Updating Content</h4>
 <ul>
-<li>There are several properties that we can use to access or update content:</li>
+<li>There are several properties we can use to access or update content:</li>
 </ul>
 <table>
 <thead>
@@ -2197,7 +2197,7 @@
 <li>The syntax for getting content looks like this:</li>
 </ul>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;li&apos;</span>).innerHTML;
-<span class="hljs-comment">// remember, `querySelector()` selects the first element that matches the provided selector</span>
+<span class="hljs-comment">// Remember, `querySelector()` selects the first element that matches the provided selector.</span>
 </code></pre>
 <ul>
 <li>The syntax for updating content looks like this:</li>
@@ -2205,12 +2205,10 @@
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;li&apos;</span>).innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
 </code></pre>
 <h4 id="adding-content">Adding Content</h4>
-<p>To add new elements to the page, we&apos;ll need to use a three step process:</p>
-<ol>
-<li>We will use the <code>createElement()</code> method to create a new element, which can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.</li>
-<li>We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we looked at in the last lesson.</li>
-<li>Now that our element has been created we can add it as a child of an element using the <code>appendChild()</code> method. This will add an element as the last child of the parent element.</li>
-</ol>
+<p>To add new elements to a web page, we&apos;ll need to use a three-step process:</p>
+<p>1) We will use the <code>createElement()</code> method to create a new element that can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.
+2) We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we looked at in the last unit.
+3) Now that our element has been created, we can add it as a child of an element using the <code>appendChild()</code> method. This will add an element as the last child of the parent element.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> newListItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;li&apos;</span>);
 newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</span>;
 <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;ul&apos;</span>).appendChild(newListItem);
@@ -2235,7 +2233,7 @@ newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</sp
 <pre><code class="lang-js">  element.addEventListener(<span class="hljs-string">&apos;nameOfEvent&apos;</span>, functionToRun);
 </code></pre>
 <ul>
-<li>There are many different types of events we can listen for. Here are a few events that are available to us:</li>
+<li>There are many different types of events we can listen for. Here are a few handlers available to us:</li>
 </ul>
 <table>
 <thead>
@@ -2247,39 +2245,39 @@ newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</sp
 <tbody>
 <tr>
 <td style="text-align:center">&apos;click&apos;</td>
-<td style="text-align:center">When the button (usually a mouse button) is pressed and released on a single element</td>
+<td style="text-align:center">When a button (usually a mouse button) is pressed and released on a single element.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;keydown&apos;</td>
-<td style="text-align:center">When the user first presses a key on the keyboard</td>
+<td style="text-align:center">When the user first presses a key on the keyboard.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;keyup&apos;</td>
-<td style="text-align:center">When the user releases a key on the keyboard</td>
+<td style="text-align:center">When the user releases a key on the keyboard.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;focus&apos;</td>
-<td style="text-align:center">When an element has received focus</td>
+<td style="text-align:center">When an element has received focus.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;blur&apos;</td>
-<td style="text-align:center">When an element loses focus</td>
+<td style="text-align:center">When an element loses focus.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;submit&apos;</td>
-<td style="text-align:center">When the user submits a form</td>
+<td style="text-align:center">When the user submits a form.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;load&apos;</td>
-<td style="text-align:center">When the page has finished loading</td>
+<td style="text-align:center">When the page has finished loading.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;resize&apos;</td>
-<td style="text-align:center">When the browser window has been resized</td>
+<td style="text-align:center">When the browser window has been resized.</td>
 </tr>
 <tr>
 <td style="text-align:center">&apos;scroll&apos;</td>
-<td style="text-align:center">When the user scrolls up or down on the page</td>
+<td style="text-align:center">When the user scrolls up or down on the page.</td>
 </tr>
 </tbody>
 </table>

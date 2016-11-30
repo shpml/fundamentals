@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11" data-basepath=".." data-revision="Wed Nov 30 2016 15:37:41 GMT+0000 (UTC)">
+    <div class="book" data-level="11" data-basepath=".." data-revision="Wed Nov 30 2016 15:40:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,36 +2043,36 @@
                     
                         <p><strong>WDI Fundamentals Unit 11</strong></p>
 <hr>
-<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this Unit, you&apos;ll be able to:</h5>
+<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this unit, you&apos;ll be able to:</h5>
 <ul>
-<li>Create collections - arrays and objects - and retrieve values from them</li>
-<li>Operate on all the elements within a collection using loops and iterators</li>
-<li>Explain how arrays and objects differ</li>
+<li>Create collections &#x2014; arrays and objects &#x2014; and retrieve values from them.</li>
+<li>Operate on all the elements within a collection using loops and iterators.</li>
+<li>Explain the difference between arrays and objects.</li>
 </ul>
 <hr>
-<p>Congratulations, you&apos;ve almost made it to the end of WDI Fundamentals!</p>
-<p>In Unit 10, you learned to create your own functions that could generate specific behaviors. If you wanted to get the average of three variables, <code>x</code>, <code>y</code>, and <code>z</code>, you could write the following:</p>
+<p>Congratulations, you&apos;re nearly to the end of WDI Fundamentals!</p>
+<p>In Unit 10, you learned to create your own functions that generate specific behaviors. For example, if you wanted to get the average of three variables, <code>x</code>, <code>y</code>, and <code>z</code>, you could write the following code:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> avgOfThree = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x, y, z)</span> </span>{
     <span class="hljs-keyword">return</span> (x + y + z) / <span class="hljs-number">3</span>;
 }
 </code></pre>
-<p>However, this is a <em>very</em> specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify <a href="https://jsbin.com/wajevud/edit?js,console" target="_blank">the code in JS Bin</a> like so:</p>
+<p>However, this is a <em>very</em> specific use case. What if you want to be able to find the average of 10 numbers? Try modifying <a href="https://jsbin.com/wajevud/edit?js,console" target="_blank">the code in JS Bin</a> like so:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> avgOfTen = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(a, b, c, d, e, f, g, h, i, j)</span> </span>{
     <span class="hljs-keyword">return</span> (a + b + c + d + e + f + g + h + i + j) / <span class="hljs-number">10</span>;
 }
 </code></pre>
-<p>Ok, now try writing <code>function avgOfOneHundred()</code>.</p>
-<p>Or don&apos;t. It would be exhausting to write a hundred different identical variations of this function. The more variables we want to keep track of, the more code we have to write &#x2013; the length of our code is growing even though our program is not growing in complexity.</p>
-<p>To keep our code DRY (as we learned in the <a href="../05_chapter/05_lesson.html">last Unit</a>), we should hand our function a <em>set</em> of values (of any size) and tell it to work with that.</p>
-<p>We can do this using a type of data called a <strong>collection</strong>.</p>
-<p>Collections, as the name implies, are groups of (generally, similar) values.</p>
-<p>Here are some examples of real world collections:</p>
+<p>OK, now try writing the function <code>avgOfOneHundred()</code>.</p>
+<p>Or don&apos;t. It would be exhausting to write 100 identical variations of this function. The more variables we want to keep track of, the more code we have to write. Now, the length of our code is growing even though our program is not growing in complexity.</p>
+<p>To keep our code DRY (as we learned in the <a href="../05_chapter/05_lesson.html">last unit</a>), we should hand our function a <em>set</em> of values (of any size) and tell it to work with that.</p>
+<p>We can accomplish this using a type of data called a <strong>collection</strong>.</p>
+<p>Collections, as the name implies, are groups of (generally similar) values.</p>
+<p>Here are some examples of real-world collections:</p>
 <ul>
-<li>a list of groceries to buy</li>
-<li>a stack of books to read</li>
-<li>a queue of people waiting to get into a movie</li>
+<li>A list of groceries to buy</li>
+<li>A stack of books to read</li>
+<li>A queue of people waiting to get into a movie</li>
 </ul>
-<p>In this unit, we will see how all of these things (and more) can be turned into collections &#x2013; both ordered collections and unordered collections &#x2013; and why this is a really important tool to add to your belt.</p>
+<p>In this unit, we&apos;ll see how all of these examples (and more) can be turned into both ordered and unordered collections, and why knowing how to create collections is such an essential programming skill.</p>
 <p><a href="02_lesson.html">Let&apos;s get started.</a></p>
 
                     

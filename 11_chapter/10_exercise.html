@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.3.1" data-basepath=".." data-revision="Wed Nov 30 2016 15:37:56 GMT+0000 (UTC)">
+    <div class="book" data-level="11.3.1" data-basepath=".." data-revision="Wed Nov 30 2016 15:40:50 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2045,18 +2045,16 @@
 <hr>
 <h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <p>Now that we have a way to store keys and values, we can add some complexity to our contact book. Are you ready?</p>
-<p>Again, our goal is to create a contact book that allows us to store contact info (we&apos;ll want to store first name, last name, phone, and email), add a new contact, list contacts, and find contacts by first or last name.</p>
-<p>Before taking a look at the instructions below, take a few minutes to think through the problem and try your hand at breaking things down into steps by writing out pseudo-code. Although the instructions will guide you through building the program, it&apos;s helpful to get practice thinking about how you would approach different problems. Programmatic thinking gets easier with practice!</p>
-<p>Instructions</p>
-<ol>
-<li>Write the code to perform the actions listed below, using JS Bin editor. If you don&apos;t see the JS Bin below, please refresh the page.</li>
-<li>Click &apos;Run&apos; to run the code in the Console panel.</li>
-<li>Call each function from the Console panel. Try using different parameters to make sure they&apos;re working properly.</li>
-</ol>
+<p>Again, our goal is to create a contact book that allows us to store contact info (including first name, last name, phone, and email address), add a new contact, list contacts, and find contacts by first or last name.</p>
+<p>Before reading the instructions below, take a few minutes to think through the problem and try your hand at writing out pseudocode. Although the instructions will guide you through the steps for building the program, it&apos;s helpful to practice thinking about your own approach. Programmatic thinking becomes easier with practice!</p>
+<h2 id="instructions">Instructions</h2>
+<p>1) Write the code to perform the actions listed below using JS Bin editor. If you don&apos;t see the JS Bin, please refresh the page.
+2) Click &quot;Run&quot; to run the code in the &quot;Console&quot; panel.
+3) Call each function from the &quot;Console&quot; panel. Try using different parameters to make sure they&apos;re working properly.</p>
 <p><a class="jsbin-embed" href="http://jsbin.com/hotibob/embed?js&amp;height600" target="_blank">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script></p>
 <h3 id="let-s-get-started">Let&apos;s get started!</h3>
 <ul>
-<li>Create an array called <code>contacts</code>. The contacts array should contain three objects, one for each contact stored in our book. Here&apos;s the contact information for each person:</li>
+<li>Create an array called <code>contacts</code>. The <code>contacts</code> array should contain three objects, one for each contact stored in our book. Here&apos;s the contact information for each person:</li>
 </ul>
 <table>
 <thead>
@@ -2089,11 +2087,11 @@
 </tbody>
 </table>
 <ul>
-<li>Next let&apos;s create a function <code>addContact</code> that accepts one parameter, <code>newContact</code>. This function should add the newContact to the end of the contacts array and return the contacts array. When you&apos;re done, try calling the function and passing in an object as a parameter to make sure it&apos;s working.</li>
-<li>Now let&apos;s create a <code>listContacts</code> function to list our contacts. This function should loop through the contacts array and logs the first and last name for each contact to the console, i.e. &apos;John Doe&apos;.</li>
-<li>Now let&apos;s create a function that will search through our contacts and return the contact info for any person that has a matching first or last name. Create a <code>search</code> function, which will take one parameter, <code>name</code>. In the <code>search</code> function, use a loop to iterate through the contacts array and return the current contact if their first <em>or</em> last name matches the <code>name</code> parameter.</li>
+<li>Next, let&apos;s create a function, <code>addContact</code>, that accepts one parameter, <code>newContact</code>. This function should add the parameter to the end of the <code>contacts</code> array and return the <code>contacts</code> array. When you&apos;re done, try calling the function and passing in an object as a parameter to make sure it&apos;s working.</li>
+<li>Now, let&apos;s create a <code>listContacts</code> function to list our contacts. This function should loop through the <code>contacts</code> array and log the first and last name for each contact to the console, i.e. <code>&apos;John Doe&apos;</code>.</li>
+<li>Finally, let&apos;s create a function that will search through our <code>contacts</code> array and return the contact info for any person who has a matching first or last name. Create a <code>search</code> function, which will take one parameter, <code>name</code>. In the <code>search</code> function, use a loop to iterate through the <code>contacts</code> array and return the current contact if his or her first <em>or</em> last name matches the <code>name</code> parameter.</li>
 </ul>
-<p>Woohoo! You&apos;ve done it! We now have a working contact book that allows us to store contacts, add contacts, list contacts, and find a contact by first or last name. Congratulations!</p>
+<p>You&apos;ve done it! We now have a working contact book that allows us to store contacts, add contacts, list contacts, and find a contact by first or last name. Congratulations!</p>
 <blockquote>
 <p><em>Stuck? Check out the <a href="../exercise-solutions.html">solutions</a> to see what you can do.</em></p>
 </blockquote>

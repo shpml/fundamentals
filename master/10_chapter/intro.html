@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10" data-basepath=".." data-revision="Wed Nov 30 2016 15:37:41 GMT+0000 (UTC)">
+    <div class="book" data-level="10" data-basepath=".." data-revision="Wed Nov 30 2016 15:40:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,23 +2043,23 @@
                     
                         <p><strong>WDI Fundamentals Unit 10</strong></p>
 <hr>
-<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this Unit, you&apos;ll be able to:</h5>
+<h5 id="by-the-end-of-this-unit-you-ll-be-able-to">By the end of this unit, you&apos;ll be able to:</h5>
 <ul>
-<li>Define a function with one or more parameters</li>
-<li>Execute a function within a program or in the console</li>
-<li>Given a function and a set of arguments, predict the output of a function</li>
-<li>Use selectors and methods to access and update HTML using the DOM</li>
+<li>Define a function with one or more parameters.</li>
+<li>Execute a function within a program or in the console.</li>
+<li>Given a function and a set of arguments, predict the output of that function.</li>
+<li>Use selectors and methods to access and update HTML using the DOM.</li>
 </ul>
 <hr>
 <h1 id="functions">Functions</h1>
-<p>Now that we&apos;ve had the opportunity to learn the basics of JavaScript including data types and control flow; now it&apos;s time to learn functional programming.</p>
-<p>But first... a little math.</p>
+<p>We&apos;ve had the opportunity to learn the basics of JavaScript, including data types and control flow. Now it&apos;s time to learn functional programming.</p>
+<p>But first, a little math.</p>
 <p><strong>Function</strong> is a term that comes out of mathematics. You may remember seeing it in a high school algebra class. The basic idea of a function is simple - it&apos;s a relationship between a set of inputs and a set of outputs.</p>
 <p>Consider the relationship between a variable <code>x</code> and the function <code>f</code>. The function <code>f</code> takes the input <code>x</code> and spits out a single output (<code>f(x)</code>).</p>
 <p><br></p>
 <p><center><img src="../assets/chapter5/function.png"></center>
 <br></p>
-<p>If we were shown the output (<code>f(x)</code>) for each value of <code>x</code>:</p>
+<p>What if we were shown the output (<code>f(x)</code>) for each of the following values of <code>x</code>?</p>
 <table>
 <thead>
 <tr>
@@ -2090,16 +2090,16 @@
 </tr>
 </tbody>
 </table>
-<p>We could figure out that the relationship between <code>x</code> and <code>f(x)</code> is that the output is equal to double the input.  In algebra, this relationship is written as <code>f(x) = 2 * x</code>. Nothing unfamiliar going on here, right?</p>
-<p>Functions play a similar role in programming &#x2013; JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.</p>
+<p>We could figure out that the relationship between <code>x</code> and <code>f(x)</code> is that the output is equal to double the input. In algebra, this relationship is written as <code>f(x) = 2 * x</code>. Familiar, right?</p>
+<p>Functions play a similar role in programming. JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.</p>
 <h1 id="the-document-object-model">The Document Object Model</h1>
-<p>In previous units, we&apos;ve relied on <code>console.log</code> and <code>alert</code> to give feedback to users. Later in this unit we&apos;ll look at how we can provide more meaningful feedback and make our sites more &quot;user friendly&quot; by allowing users to interact with our site and see its contents updated in real time.</p>
+<p>In previous units, we&apos;ve relied on <code>console.log</code> and <code>alert</code> to give feedback to users. Later in this unit we&apos;ll look at how we can provide more meaningful feedback and make our sites more &quot;user friendly&quot; by allowing users to interact with our site and see its contents update in real time.</p>
 <p>Let&apos;s take a look at the following HTML page:</p>
 <pre><code class="lang-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>To Do List<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>To-Do List<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Things To Do<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
@@ -2115,7 +2115,7 @@
 <p>The DOM specifies that the browser should use a <strong>DOM Tree</strong> to structure this model:</p>
 <p><img src="../assets/chapter5/dom.png" alt=""></p>
 <p>Each element in the HTML document is represented by a <strong>DOM node</strong>. You can think of a node as a <em>live object</em> that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.</p>
-<p>We can get and set attributes for these nodes &#x2013; perhaps we want to add a class or update styling to change the background color for an element. We can access and change the content &#x2013; maybe we want to change the text in the third <code>li</code> to read &quot;Return library books - DONE!&quot; Or we can even add new nodes to or remove nodes from the page.</p>
+<p>We can get and set attributes for these nodes. Perhaps we want to add a class or update styling to change the background color for an element. We can also access and change the content &#x2013; maybe we want to change the text in the third <code>li</code> to read &quot;Return library books - DONE!&quot; We can even add new nodes to or remove nodes from the page.</p>
 <p>Once we get some functions under our belt we&apos;ll take a look at how we can use some of JavaScript&apos;s &quot;built-in&quot; functions to interact with the DOM and add more complex interactions to our sites.</p>
 <p>Ready to dig in? <a href="02_lesson.html">Let&apos;s take a look at functions.</a></p>
 

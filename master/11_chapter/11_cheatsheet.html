@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.5" data-basepath=".." data-revision="Wed Nov 30 2016 15:37:41 GMT+0000 (UTC)">
+    <div class="book" data-level="11.5" data-basepath=".." data-revision="Wed Nov 30 2016 15:40:31 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,66 +2043,68 @@
                     
                         <p><strong>WDI Fundamentals Unit 11</strong></p>
 <hr>
-<h1 id="collections-cheatsheet">Collections Cheatsheet</h1>
-<h2 id="collections-arrays">Collections - Arrays</h2>
+<h1 id="collections-cheat-sheet">Collections Cheat Sheet</h1>
+<h2 id="collections-arrays">Collections: Arrays</h2>
 <h3 id="what-is-an-array">What is an Array?</h3>
 <ul>
-<li>An array is an ordered list of values; these values can be strings, booleans,
-numbers... even other arrays.</li>
-<li>The values within an array, called <strong>elements</strong>, are accessed by their
-position (via a value called an <strong>index</strong>) within the array.</li>
-<li>An array can be defined by enclosing a list of values within square braces,
-like so : <code>var myArray = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;]</code></li>
-<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the
-end of the array. e.g. <code>myArray[2]</code></li>
-<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a
-variable. e.g. <code>myArray[1] = &apos;f&apos;</code></li>
+<li>An array is an ordered list of values. These values can be strings, Booleans,
+numbers &#x2014; even other arrays.</li>
+<li>The values within an array, known as <strong>elements</strong>, are accessed by their
+position within the array (via a value called an <strong>index</strong>).</li>
+<li>An array can be defined by enclosing a list of values within square brackets
+like so: <code>var myArray = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;]</code>.</li>
+<li>To retrieve the value at some index (<code>i</code>) from an array, add <code>[</code><em>i</em><code>]</code> to the
+end of the array (e.g., <code>myArray[2]</code>).</li>
+<li>To edit the value at some index (<code>i</code>), simply act as if you were assigning a
+variable (e.g., <code>myArray[1] = &apos;f&apos;</code>).</li>
 </ul>
-<h3 id="adding-complexity-nested-arrays">Adding Complexity - Nested Arrays</h3>
+<h3 id="adding-complexity-nested-arrays">Adding Complexity: Nested Arrays</h3>
 <ul>
-<li>As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called <strong>nesting</strong>.</li>
-<li><p>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&apos;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,</p>
+<li>As mentioned above, arrays can contain other arrays as elements. The process of putting arrays inside other arrays (or just generally, putting items inside other items) is called <strong>nesting</strong>.</li>
+<li><p>To retrieve a value from a nested array, use one set of square brackets for every level of nesting. The first set should hold the element&apos;s index in the outermost array, the second set should hold the index in the next-outermost, etc. Consider how you would work with following nested array:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myNestedArray = [[<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>],
                      [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
                      [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
-<p>you could access the element &apos;f&apos; by writing <code>myNestedArray[1][2]</code>.</p>
+<p>You could access the element <code>&apos;f&apos;</code> by writing <code>myNestedArray[1][2]</code>.</p>
 </li>
-<li>Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change. e.g. <code>myNestedArray[0][3] = &apos;z&apos;;</code></li>
+<li>Editing a value in a nested array is exactly like editing a value in a non-nested array, the only difference is how you reference the value you want to change (e.g., <code>myNestedArray[0][3] = &apos;z&apos;;</code>).</li>
 </ul>
 <h3 id="additional-array-features">Additional Array Features</h3>
 <ul>
-<li>In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.</li>
+<li>In addition to storing a set of values, arrays also have a number of in-built properties and functions they can use.</li>
 <li><code>.length</code> gives you the length of the array you call it on.</li>
-<li><code>.push()</code> adds a new element to the end of an array, and returns that element.</li>
-<li><code>.pop()</code> removes the last element in an array, and returns that element.</li>
-<li><code>.indexOf()</code> searches within your array for the first element that matches its parameter, and returns the index of that match; if no match is found, it returns -1.</li>
+<li><code>.push()</code> adds a new element to the end of an array and returns that element.</li>
+<li><code>.pop()</code> removes the last element in an array and returns that element.</li>
+<li><code>.indexOf()</code> searches within your array for the first element that matches its parameter and returns the index of that match. If no match is found, it returns -1.</li>
 </ul>
 <h2 id="iterating-over-arrays">Iterating Over Arrays</h2>
 <h3 id="iterating-with-loops">Iterating with Loops</h3>
 <ul>
-<li><p><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function <code>someFunction</code> for every element in array <code>myArray</code>, from left to right.</p>
+<li><p><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function, <code>someFunction</code>, for every element in an array, <code>myArray</code>, working from left to right.</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i += <span class="hljs-number">1</span>) {
     someFunction(myArray[i]);
   }
 </code></pre>
 </li>
-<li>To change the way that you iterate through the array, just change the settings of your <code>for</code> loop.</li>
+<li>To change the way you iterate through the array, simply change the settings of your <code>for</code> loop.</li>
 </ul>
-<h2 id="collections-objects">Collections - Objects</h2>
+<h2 id="collections-objects">Collections: Objects</h2>
 <h3 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h3>
 <ul>
-<li>A typical array works by referencing elements solely based on their position, e.g. &quot;the first element, the second element ...&quot; etc. But if the elements are ever rearranged, all of the references to specific elements need to be updated.</li>
-<li>An object generates an enduring relationship between a reference (called a <strong>key</strong>) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.<h3 id="objects-in-javascript">Objects in JavaScript</h3>
-</li>
-<li>An object can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
-<li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the object. e.g. <code>myObject[&apos;myKey&apos;]</code></li>
-<li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myObject[&apos;myKey&apos;] = &apos;aValue&apos;</code></li>
-<li>Adding a new key-value pair to an object is easy - it looks just like an assignment operation. e.g. <code>myObject[&apos;someNewKey&apos;] = &apos;someNewValue&apos;</code></li>
-<li>Nesting for objects works <em>exactly</em> like it does for ordinary arrays.</li>
+<li>A typical array works by referencing elements solely based on their positions, e.g., &quot;the first element, the second element... &quot; etc. But, if the elements are ever rearranged, all of the references to specific elements need to be updated.</li>
+<li>An object generates an enduring relationship between a reference (called a <strong>key</strong>) and the value to which it refers. Each key-value pairing is totally independent of any others.</li>
+</ul>
+<h3 id="objects-in-javascript">Objects in JavaScript</h3>
+<ul>
+<li>An object can be defined by enclosing a list of key-value pairs in curly braces (<code>{}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
+<li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the object, e.g., <code>myObject[&apos;myKey&apos;]</code>.</li>
+<li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array, e.g., <code>myObject[&apos;myKey&apos;] = &apos;aValue&apos;</code>.</li>
+<li>Adding a new key-value pair to an object is easy &#x2014; it looks just like an assignment operation, e.g., <code>myObject[&apos;someNewKey&apos;] = &apos;someNewValue&apos;</code>.</li>
+<li>Nesting for objects works in the <em>exact</em> same way it does for ordinary arrays.</li>
 </ul>
 <hr>
-<p><a href="12_assessment.html">Project Time!</a></p>
+<p><a href="12_assessment.html">It&apos;s project time!</a></p>
 
                     
                     </section>
