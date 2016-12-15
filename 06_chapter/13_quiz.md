@@ -11,4 +11,4 @@ If you don't see the quiz below, please refresh the page.
 ---
 If you have any feedback regarding this unit, [we would love to hear from you](https://ga-immersives.typeform.com/to/sTJ6M0)!
 
-Once you're finished, [let's review what has been covered in this unit.](14_cheatsheet.md)
+[Next, review what has been covered in this unit.](14_cheatsheet.md)

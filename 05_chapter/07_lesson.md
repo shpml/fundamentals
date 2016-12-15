@@ -9,22 +9,19 @@
 
 ## Reminder: Don't Use IDs in CSS
 
-You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, and any style specified with an ID isn't reusable. Also, IDs can override classes, making a codebase more difficult to maintain when it gets larger.
+You are technically allowed to use CSS IDs, but these are almost never used by professional developers because of their specificity. CSS classes give you the ability to reuse styles, whereas any style specified with an ID can only be used once. Also, IDs can override classes, making a code base more difficult to maintain as it gets larger.
 
-Overall, using classes in your CSS will help with the scalability of your design, and help you write cleaner code.
-
+Overall, using classes in your CSS will help with the scalability of your design and your ability to write cleaner code.
 
 ## Reminder: Using IDs in JavaScript
 
-When writing JavaScript, IDs are valuable to help you access and alter different elements on your page. This process is called DOM Manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript, but remember, when writing CSS, style and select using classes!
-
-
+When writing JavaScript, IDs are useful for accessing and altering different elements on your page. This process is called DOM manipulation. You'll learn more about manipulating the DOM once we dive deeper into JavaScript. For now, remember to style and select using classes when writing your CSS!
 
 #### Checkpoint
 
 * What does the `<aside>` tag do?
-* How would you go about creating three columns on your webpage?
+* How would you go about creating three columns on your web page?
 
 ---
 
-[Practice building columns!](06_exercise.md)
+[Let's practice building columns!](06_exercise.md)
