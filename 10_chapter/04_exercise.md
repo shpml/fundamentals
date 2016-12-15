@@ -19,11 +19,12 @@ This time around, you won't be given any starter code. Instead, you'll need to w
 **Let's get started!**
 
 Write the following functions:
-* `sayHello`, which accepts one parameter, called `name`. It should return a greeting to a person using his or her name (i.e., "Hello, *name*").
-* `areBothEven`, which accepts two parameters, `a` and `b`. It should return `true` if `a` and `b` are both even, but `false` if they are not.
-* `hotOrNot`, which accepts one parameter, `temp`. It should return "hot" if `temp` is above 75, but should return "not hot" if it is not.
-* `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3. Otherwise, it should return the value of `num`.
-* `greatest`, which accepts three parameters (`x`, `y`, and `z`), and returns the one with the greatest value. For example, `greatest(5, 10, 1)` would evaluate to 10.
+* `sayHello`, which accepts one parameter, called `name`; it should return a greeting to a person with that name, i.e. "Hello, *name*".
+* `areBothEven`, which accepts two parameters, `a` and `b`; it should return `true` if `a` and `b` are both even, but `false` otherwise.
+* `hotOrNot`, which accepts one parameter, `temp`; it should return "hot" if `temp` is above 75, but should return "not hot" otherwise.
+* `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3, but otherwise, it should return the value of `num`.
+* `greatest`, which accepts three parameters (`a`, `b`, and `c`), and returns the one with the greatest value. For example, `greatest(5, 10, 1)` would evaluate to 10.
+
 
 Once you've written and tested all of these functions, go ahead and move on to the next lesson.
 
