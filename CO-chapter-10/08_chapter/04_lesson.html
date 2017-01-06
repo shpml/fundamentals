@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.2" data-basepath=".." data-revision="Fri Jan 06 2017 17:24:39 GMT+0000 (UTC)">
+    <div class="book" data-level="8.2" data-basepath=".." data-revision="Fri Jan 06 2017 17:27:41 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,35 +2044,34 @@
                         <p><strong>WDI Fundamentals Unit 8</strong></p>
 <hr>
 <h1 id="data-operators-and-expressions">Data, Operators, and Expressions</h1>
-<p>You&apos;ve probably picked up a scientific calculator at some point in the past and
-started playing around with it. You punch in a big number (for example, 9876435),
-then <code>x</code>, and then another big number (say, 373848221), hit the <code>=</code> button, and
+<p>Chances are, you&apos;ve probably played around with a scientific calculator at some point in the past. You punch in a big number (for example, 9876435),
+then <code>x</code>, and then another big number (say, 373848221), and hit the <code>=</code> button. Then, 
 the calculator spits back a result (in this case, 3692287654572135).</p>
 <p><img src="../assets/chapter3/calculator.png" alt="Calculator"></p>
-<p>That thing that we type into the calculator is called an <strong>expression</strong>: a
-collection of values (<em>12345</em>) and operations (like <strong>+</strong> or <strong>x</strong>).</p>
+<p>That information we type into the calculator is called an <strong>expression</strong>: a
+collection of values (<em>12345</em>) and operations (like <code>+</code> or <code>x</code>).</p>
 <p>The process of reducing this expression down to a single value is called <strong>evaluation</strong>.</p>
-<p>The JS Bin console is similar in many ways to this calculator. It accepts an
-expression (in JavaScript) from the user and attempts to evaluate that expression,
+<p>The JS Bin console is similar in many ways to a scientific calculator. It accepts an
+expression (in JavaScript) from its user and attempts to evaluate that expression,
 yielding a single value.</p>
-<p>Before we tackle fully-fledged JavaScript expressions, let&apos;s first look at their
+<p>Before we tackle fully fledged JavaScript expressions, let&apos;s look at their
 two components: data and operators.</p>
 <p><br></p>
-<h2 id="data-a-k-a-values">Data (a.k.a. Values)</h2>
+<h2 id="data-a-k-a-values">Data (a.k.a., Values)</h2>
 <p>Calculators can only operate on numbers, but computers can perform calculations
-on many different kinds of data, including:</p>
+on many different types of data, including:</p>
 <ul>
-<li><p><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&apos;re considered the same.<br>
+<li><p><strong>Numbers</strong>: This is pretty self-explanatory. Some languages draw a distinction between integers (whole numbers) and floating point numbers (decimals), but in JavaScript, they&apos;re considered the same.<br>
 <u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>, <code>99.99</code></p>
 </li>
-<li><p><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&apos;single-quote&apos;</code> (also sometimes called &apos;string literals&apos;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>&apos;hello&apos;</code>, <code>&apos;goodbye&apos;</code>, <code>&apos;moc.liamg@gmail.com&apos;</code></p>
+<li><p><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters such as punctuation, spaces, or parentheses). They come in two varieties, <code>&apos;single-quote&apos;</code> (sometimes called &apos;string literals&apos;) and <code>&quot;double-quote&quot;</code>. Although there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>&apos;hello&apos;</code>, <code>&apos;goodbye&apos;</code>, <code>&apos;moc.liamg@gmail.com&apos;</code></p>
 </li>
-<li><p><strong>Booleans</strong>: This one&apos;s probably new for you. Boolean-type data only has two
-possible values, <code>true</code> and <code>false</code>.</p>
+<li><p><strong>Booleans</strong>: This one is probably new for you. Boolean-type data only has two
+possible values, <code>true</code> or <code>false</code>.</p>
 </li>
 </ul>
-<p>If you forget what type of data you&apos;re dealing with, you can run the <code>typeof</code>
-command. Try typing the following lines into the JS Bin console tab and hit <code>enter</code> - what responses do you get?</p>
+<p>If you forget which type of data you&apos;re dealing with, you can run the <code>typeof</code>
+command. Try typing the following lines into the JS Bin console tab and hit <code>enter</code>. What responses do you get?</p>
 <ul>
 <li><code>typeof &apos;hello&apos;;</code></li>
 <li><code>typeof 24;</code></li>
@@ -2080,14 +2079,14 @@ command. Try typing the following lines into the JS Bin console tab and hit <cod
 <li><code>typeof true;</code></li>
 </ul>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p>  You may have noticed that each of those lines ended in a <code>;</code> - in
+<p>  You may have noticed that each of those lines ended in a <code>;</code> &#x2014; in
 JavaScript, a semicolon is used to denote the end of a line. Although your code
-may execute without them, there are cases where a missing semicolon can cause
-unexpected results. Just get in the habit of using them.</p>
+may execute without them, there may be cases where a missing semicolon could cause
+unexpected results. It&apos;s best to just get in the habit of using them.</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Try to predict the types of each of the following bits of data. Check your answers
-with <code>typeof</code> in the JS Bin console tab - were you correct?</p>
+with <code>typeof</code> in the JS Bin console tab:</p>
 <ul>
 <li><code>24</code></li>
 <li><code>&apos;99&apos;</code></li>
@@ -2095,41 +2094,41 @@ with <code>typeof</code> in the JS Bin console tab - were you correct?</p>
 <li><code>false</code></li>
 </ul>
 <h2 id="operators">Operators</h2>
-<p>Of course, simply having data sitting around isn&apos;t very useful. Operators take
-values as their inputs (also known as <strong>arguments</strong>) and produce new data as output.
-There are <em>many</em> different operators out there, but here are some of the common ones:</p>
+<p>Of course, having data that simply sits around isn&apos;t very useful. Operators take
+values as their inputs (also known as <strong>arguments</strong>) and produce new data as their outputs.
+There are <em>many</em> different operators, but here are some of the most common:</p>
 <ul>
-<li><strong>Arithmetic</strong> (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>): These all work like you&apos;d expect. In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs, and causes that whole expression to evaluate to <code>4</code>.</li>
+<li><strong>Arithmetic</strong> (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>): These operators all work as you&apos;d expect. In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs and causes the whole expression to evaluate to <code>4</code>.</li>
 </ul>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> When given String arguments, the <code>+</code> operator actually behaves
-differently - it &apos;concatenates&apos; two strings together to make one big string.
+<p> When given string arguments, the <code>+</code> operator actually behaves
+differently &#x2014; it &quot;concatenates&quot; two strings together to make one big string.
 <br><u>For example</u>: <code>&apos;Hello&apos; + &apos; &apos; + &apos;Bob&apos;</code> will evaluate to <code>&apos;Hello Bob&apos;</code>.</p>
 </blockquote>
 <ul>
-<li><p><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&apos;s leftover from the division.
+<li><p><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as its inputs and returns what&apos;s leftover from the division.
 <br><u>For example</u>: <code>15 % 4</code> will evaluate to <code>3</code>.</p>
 </li>
-<li><p><strong>Comparison</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
+<li><p><strong>Comparison</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but, unlike the previous operators, they return <em>Boolean</em> values.
 <br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</p>
 </li>
-<li><p><strong>Equality</strong> (<code>===</code>) : This operator will accept any two types of data as input, and (just like the Comparison operators) will also evaluate to a boolean value. It will only evaluate <code>true</code> if both sides are completely identical in data type and value.
+<li><p><strong>Equality</strong> (<code>===</code>) : This operator will accept any two types of data as inputs and (just like the comparison operators) evaluate to a Boolean value. It will only evaluate <code>true</code> if both sides are completely identical in data type and value.
 <br><u>For example</u>: <code>5 === 5</code> will evaluate to <code>true</code>, while <code>5 === &apos;5&apos;</code> will evaluate to <code>false</code>.</p>
 </li>
-<li><p><strong>Inequality</strong> (<code>!==</code>) : This operator will also accept any two types of data as input and evaluate to a boolean value. It is essentially the reverse of the Equality operator &#x2014; it compares two values to check that both the data type and value are <em>not</em> the same.
+<li><p><strong>Inequality</strong> (<code>!==</code>) : This operator will also accept any two types of data as inputs and evaluate to a Boolean value. It is essentially the reverse of the equality operator &#x2014; it compares two values to check that both the data type and value are <em>not</em> the same.
 <br><u>For example</u>: <code>5 !== 5</code> will evaluate to <code>false</code>, while <code>5 !== &apos;5&apos;</code> will evaluate to <code>true</code>.</p>
 </li>
-<li><p><strong>Logical Operators</strong> (<code>!</code>, <code>||</code>, <code>&amp;&amp;</code>): These operators both take and give back boolean values.</p>
+<li><p><strong>Logical Operators</strong> (<code>!</code>, <code>||</code>, <code>&amp;&amp;</code>): These operators both take and return Boolean values.</p>
 <ul>
-<li>NOT (<code>!</code>) will reverse the value of any boolean.
-  <code>!true</code> // <code>false</code></li>
-<li>OR  (<code>||</code>) takes in two boolean arguments; if at least one is <code>true</code>, then it will evaluate to <code>true</code>, but if both are <code>false</code> it will evaluate as <code>false</code>.</li>
-<li>AND (<code>&amp;&amp;</code>) also takes in two boolean arguments; however, it will only evaluate as <code>true</code> if both of the arguments are <code>true</code>; otherwise, it will evaluate to <code>false</code>.</li>
+<li>NOT (<code>!</code>) will reverse the value of any Boolean
+ ( <code>!true</code> // <code>false</code>).</li>
+<li>OR  (<code>||</code>) takes in two Boolean arguments. If at least one is <code>true</code>, then it will evaluate to <code>true</code>. But, if both are <code>false</code>, it will evaluate as <code>false</code>.</li>
+<li>AND (<code>&amp;&amp;</code>) also takes in two Boolean arguments; however, it will only evaluate as <code>true</code> if both of the arguments are <code>true</code>. Otherwise, it will evaluate to <code>false</code>.</li>
 </ul>
 </li>
 </ul>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Can you predict what the results of these operations will be? Check your answers against the console in JS Bin.</p>
+<p>Can you predict the results of the following operations? Check your answers against the console in JS Bin.</p>
 <ul>
 <li><code>true &amp;&amp; false;</code></li>
 <li><code>45 % 6;</code></li>
@@ -2140,24 +2139,24 @@ differently - it &apos;concatenates&apos; two strings together to make one big s
 <p>So, what happens when we bring several of these operators and values together?</p>
 <p>Consider the following expression:</p>
 <p><code>(2 + 3) * (9 - 8)</code></p>
-<p>In order to perform the multiplication, we need to first know what we&apos;re multiplying &#x2013; the <code>*</code> operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.</p>
+<p>In order to perform the multiplication, we need to first know what we&apos;re multiplying. The <code>*</code> operator must wait until both of the expressions in parentheses are evaluated before it can proceed.</p>
 <p>We can represent this chain of dependencies using a logical structure called a <code>tree</code>.</p>
 <p><img src="../assets/chapter3/tree1.png" alt="Expression Tree for (2 + 3) * (9 - 8)">
 <br></p>
-<p>To evaluate any point (or &apos;node&apos;) in the tree, you simply (1) evaluate that node&apos;s left &apos;child&apos;, and then (2) evaluate its right &apos;child&apos;.&quot; In this case, to evaluate at the <code>*</code>, we first evaluate the <code>+</code> node, then the <code>-</code> node.</p>
-<p>What happens if we&apos;re dealing with a more complicated expression? Say...</p>
+<p>To evaluate any point (or &quot;node&quot;) in the tree, you simply (1) evaluate that node&apos;s left &quot;child,&quot; and then (2) evaluate its right &quot;child.&quot; In this case, to evaluate at the <code>*</code>, we first evaluate the <code>+</code> node, then the <code>-</code> node.</p>
+<p>What happens if we&apos;re dealing with a more complicated expression? Say:</p>
 <p><code>((9 + 2) * 25) - 5</code></p>
-<p>Since the <code>-</code> requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that <code>-</code> will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.</p>
+<p>Because the <code>-</code> requires <code>((9 + 2) * 25)</code> to be evaluated in order to perform the subtraction, <code>-</code> will be at the top of our expression tree. Here is the full tree: First, we perform the addition, then the multiplication, and then finally the subtraction.</p>
 <p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9 + 2) * 25) - 5">
 <br></p>
-<p>One last tricky one: <code>1 + 1 + 1 + 1</code>. Obviously, we know that this is equal to 4. But what does the tree look like?</p>
-<p>In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this Wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as being <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5 + 2)</code>, or <code>3</code>.</p>
-<p>Following this rule, our expression of <code>1 + 1 + 1 + 1</code> could also be written <code>((((1) + 1) + 1) + 1)</code>. Is it easier to see the tree now?</p>
+<p>One last tricky one: <code>1 + 1 + 1 + 1</code>. Obviously, we know that this expression is equal to 4. But what does its tree look like?</p>
+<p>In this case, we actually need to look to the rules of math (anyone interested in some in-depth reading on the subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this Wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5 + 2)</code>, or <code>3</code>.</p>
+<p>Following this rule, our expression of <code>1 + 1 + 1 + 1</code> could also be written as <code>((((1) + 1) + 1) + 1)</code>. Is it easier to see the tree now?</p>
 <p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1">
 <br></p>
-<p>While we&apos;ve covered what seems like a lot of math in this section, don&apos;t worry &#x2013; you&apos;re not going to be doing calculus in this course. It&apos;s important that we review these concepts because there will be many times that you&apos;ll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.</p>
+<p>While we&apos;ve covered what seems like a lot of math in this section, don&apos;t worry &#x2014; you&apos;re not going to be doing calculus in this course. It&apos;s important that we review these concepts, because there will be many times when you&apos;ll solve a problem by using one of their basic principles. When it comes down to it, computers operate with a simple, straightforward logic.</p>
 <hr>
-<p>Think you&apos;ve got it? <a href="05_exercise.html">Let&apos;s do an exercise to cement what we&apos;ve learned.</a></p>
+<p>Think you&apos;ve got it? <a href="05_exercise.html">Let&apos;s cement what we&apos;ve learned with an exercise.</a></p>
 
                     
                     </section>

@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.4" data-basepath=".." data-revision="Fri Jan 06 2017 17:24:39 GMT+0000 (UTC)">
+    <div class="book" data-level="8.4" data-basepath=".." data-revision="Fri Jan 06 2017 17:27:41 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2044,70 +2044,70 @@
                         <p><strong>WDI Fundamentals Unit 8</strong></p>
 <hr>
 <h1 id="boolean-logic">Boolean Logic</h1>
-<p>At this point, we&apos;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, especially related to boolean logic. Let&apos;s take a closer look at some of them.</p>
+<p>At this point, we&apos;ve covered most of what you need to know about basic expressions. However, there are a few quirks and exceptions that we&apos;ve (until now) glossed over, especially related to Boolean logic. Let&apos;s take a closer look at a few:</p>
 <ul>
 <li>We&apos;ll start with <strong>undefined</strong> and <strong>null</strong> values. These two values represent a lack of data.</li>
-<li>Next, we will dive into <strong>truthy</strong> and <strong>falsey</strong> - the result of JavaScript&apos;s attempt to convert non-boolean values to booleans at runtime.</li>
-<li>Finally: a challenge!</li>
+<li>Next, we will dive into <strong>truthy</strong> and <strong>falsey</strong> &#x2014; the result of JavaScript&apos;s attempt to convert non-Boolean values to Booleans at run time.</li>
+<li>And, finally: a challenge!</li>
 </ul>
 <h3 id="undefined">Undefined</h3>
-<p>You&apos;ve just opened a JavaScript console. You want to define a new variable but aren&apos;t sure what the value is <em>just yet</em>.  </p>
+<p>Say you&apos;ve just opened a JavaScript console. You want to define a new variable but aren&apos;t sure what the value is <em>just yet</em>.  </p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someData;
 </code></pre>
 <p>Without <strong>assigning</strong> a value to a variable, that variable becomes <code>undefined</code>. We can see this in real time:</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(someData);
 <span class="hljs-comment">// =&gt; &apos;undefined&apos;</span>
 </code></pre>
-<p>Checking to see if a variable is <code>undefined</code> is totally possible, and it is important because it allows you to verify that a variable exists before you use it, preventing potential errors from being thrown.  See below:</p>
+<p>Checking to see if a variable is <code>undefined</code> is possible and is an important step, because it allows you to verify that a variable exists before you use it, preventing potential errors. See below:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (someData === <span class="hljs-literal">undefined</span>) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
   someData = <span class="hljs-string">&apos;We are now assigning a value.&apos;</span>;
 }
 </code></pre>
-<p>Another way to check for <code>undefined</code> is to use <code>typeof</code>. This way is possible because <code>undefined</code> is a specific Object and its own data type.</p>
+<p>Another way to check for <code>undefined</code> is to use <code>typeof</code>. This method is possible because <code>undefined</code> is a specific object and its own data type.</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// we need a new variable...</span>
 <span class="hljs-keyword">var</span> anotherData;
 <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span>(anotherData) === <span class="hljs-string">&apos;undefined&apos;</span>) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;No definition found&apos;</span>);
 }
 </code></pre>
-<p>For extra context, read more about <code>undefined</code> from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" target="_blank">Mozilla&apos;s MDN entry for Undefined</a>.</p>
+<p>For extra context, learn more about <code>undefined</code> from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined" target="_blank">Mozilla&apos;s MDN entry for &quot;undefined.&quot;</a></p>
 <h3 id="null">Null</h3>
-<p>Null values are values that you decide have <strong>no value</strong>. But why would I want to do this? Why not use <code>undefined</code>? As it turns out, we can&apos;t - variables in JavaScript are only <code>undefined</code> until they&apos;ve been assigned a variable for the first time. <code>null</code> gives us a way to &apos;reset&apos; the value of a variable to nothing.</p>
-<p>Here&apos;s an example. Suppose you have an application for keeping track of your things. You might have a string called <code>locationOfKeys</code> which indicates where your keys are. Then, one day, your keys get lost. What&apos;s the value of <code>locationOfKeys</code> now? Well, it&apos;s &apos;nothing&apos; - they&apos;re lost. If <code>null</code> didn&apos;t exist, we would have to invent a special string value (perhaps <code>&quot;lost&quot;</code>) to signify that the keys are missing. <code>null</code> gives us a standard way of handling that kind of situation where we can simply say <code>locationOfKeys = null;</code></p>
-<p>That&apos;s the purpose of <strong>null</strong>. It is designed to represent the <em>lack of a value</em>. Whenever variables are defined without any value, they are <code>undefined</code>. This can become tricky to troubleshoot over time and it is a catch-all for <em>everything without a value</em>. We can <strong>specify</strong> our variables as <code>null</code> to represent there is no data.</p>
-<pre><code class="lang-javascript"><span class="hljs-comment">// we will define a variable with no value, or null</span>
+<p><code>null</code> values are values that you decide have <strong>no value</strong>. Why would I want to do this? Why not use <code>undefined</code>? As it turns out, we can&apos;t &#x2014; variables in JavaScript are only <code>undefined</code> until they&apos;ve been assigned a value for the first time. <code>null</code> gives us a way to &quot;reset&quot; the value of a variable to &quot;nothing.&quot;</p>
+<p>Here&apos;s an example: Suppose you have an application for keeping track of your possessions. You might have a string called <code>locationOfKeys</code> indicating where you can find your keys. Then, one day, your keys get lost. What&apos;s the value of <code>locationOfKeys</code> now? Well, it&apos;s &quot;nothing&quot; &#x2014; they are lost. If <code>null</code> didn&apos;t exist, we would have to invent a special string value (perhaps <code>&quot;lost&quot;</code>) to signify that the keys are missing. <code>null</code> gives us a standard way of handling that kind of situation in which we can simply say <code>locationOfKeys = null;</code></p>
+<p>That&apos;s the purpose of <code>null</code>. It is designed to represent the <em>lack of a value</em>. Whenever variables are defined without any value, they are <code>undefined</code>. This can become tricky to troubleshoot over time, as it acts as a catchall for <em>everything without a value</em>. We can <strong>specify</strong> our variables as <code>null</code> to represent that there is no data.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// we will define a variable with no value, or null.</span>
 <span class="hljs-keyword">var</span> playerScore = <span class="hljs-literal">null</span>;
 </code></pre>
 <p>We can then <strong>evaluate</strong> if our value is <code>null</code>:</p>
 <pre><code class="lang-javascript">playerScore === <span class="hljs-literal">null</span> <span class="hljs-comment">// &apos;The player has not scored anything.&apos;</span>
 </code></pre>
-<p>What if we are provided with a user&apos;s input to represent a player&apos;s actions on a timed game? In <em>Dance, Dance, Revolution</em> a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen and as they pass by the middle of the screen the player <em>must</em> perform an action (or they don&apos;t score a point). The game can evaluate the player&apos;s score in real time!</p>
+<p>What if we are provided with an input representing a player&apos;s actions in a timed game? In <em>Dance, Dance, Revolution</em>, a player must perform an action at a precise interval. It streams a set of commands a player must <em>dance</em> to. These are timed to music. The actions stream across the screen, and, as they pass by the middle of the screen, the player <em>must</em> perform an action in order to score a point. The game can evaluate the player&apos;s score in real time!</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> userInput = <span class="hljs-literal">null</span>;
-userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">// no points.. this time</span>
+userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">// no points... this time</span>
 </code></pre>
-<h3 id="-falsey-truthy">&apos;falsey&apos; / &apos;truthy&apos;</h3>
-<p>We&apos;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&apos;Happy birthday, &apos; + &apos;Tom&apos;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
+<h3 id="-falsey-truthy">&quot;Falsey&quot; / &quot;Truthy&quot;</h3>
+<p>We&apos;ve seen in our first few lessons that some operators can behave differently depending on the kind of values on which they are operating. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&apos;Happy birthday, &apos; + &apos;Tom&apos;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
 <p>Another example of operators with value-dependent behavior are the logical operators:</p>
 <ul>
 <li>NOT(<code>!</code>)</li>
 <li>OR (<code>||</code>)</li>
 <li>AND (<code>&amp;&amp;</code>)</li>
 </ul>
-<p>Although they&apos;re primarily used with boolean values, logical operators can also accept inputs that are strings and numbers, among others. When this happens, the logical operators categorize their inputs as being either &apos;falsey&apos; or &apos;truthy&apos;. But what do these words mean?</p>
+<p>Although they&apos;re primarily used with Boolean values, logical operators can also accept inputs that are strings and numbers, among others. When this happens, the logical operators categorize their inputs as being either &quot;falsey&quot; or &quot;truthy.&quot; But what do these words mean?</p>
 <ul>
-<li><p>To be <strong>falsey</strong> means that boolean operators act in mostly the same way that they would if the value was <code>false</code>. For instance, using <code>!</code> (NOT) on a &quot;falsey&quot; value will evaluate to <code>true</code>, just as if you&apos;d written <code>!false</code>. The &quot;falsey&quot; category of values includes: the number <code>0</code>, empty strings (<code>&apos;&apos;</code>), <code>null</code>, and <code>undefined</code>. <code>false</code> is, of course, also &quot;falsey&quot;.</p>
+<li><p>To be <strong>falsey</strong> means that Boolean operators act in mostly the same way that they would if the value was <code>false</code>. For instance, using <code>!</code> (or, NOT) on a &quot;falsey&quot; value will evaluate to <code>true</code>, just as if you&apos;d written <code>!false</code>. The &quot;falsey&quot; category of values includes the number <code>0</code>, empty strings (<code>&apos;&apos;</code>), <code>null</code>, and <code>undefined</code>. <code>false</code> is, of course, also &quot;falsey.&quot;</p>
 </li>
-<li><p>Being <strong>truthy</strong> is exactly the opposite of being &quot;falsey&quot;; using <code>!</code> (NOT) on a &quot;truthy&quot; value would evaluate to <code>false</code>. Anything that isn&apos;t &quot;falsey&quot; is &quot;truthy&quot;, including all strings, all non-zero numbers, and (of course) <code>true</code>.</p>
+<li><p>Being <strong>truthy</strong> is exactly the opposite of being &quot;falsey;&quot; using <code>!</code> (or, NOT) on a &quot;truthy&quot; value would evaluate to <code>false</code>. Anything that isn&apos;t &quot;falsey&quot; is &quot;truthy,&quot; including all strings, all non-zero numbers, and (of course) <code>true</code>.</p>
 </li>
 </ul>
-<p>As they say, &quot;<em>to a hammer (read: boolean operator), everything looks like a nail (read: boolean value)</em>&quot;.</p>
-<p>Below are the exact rules that the boolean operators follow when dealing with non-boolean input values.</p>
+<p>As they say, &quot;<em>To a hammer (read: Boolean operator), everything looks like a nail (read: Boolean value).</em>&quot;</p>
+<p>Below are the exact rules that the Boolean operators follow when dealing with non-Boolean input values:</p>
 <table>
 <thead>
 <tr>
-<th>&apos;Falsey&apos;</th>
-<th>&apos;Truthy&apos;</th>
+<th>&quot;Falsey&quot;</th>
+<th>&quot;Truthy&quot;</th>
 </tr>
 </thead>
 <tbody>
@@ -2117,25 +2117,25 @@ userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">
 </tr>
 <tr>
 <td>0</td>
-<td>All numbers except 0, including &apos;Infinity&apos; (what you get after dividing by 0)</td>
+<td>All numbers except 0, including <code>infinity</code> (what you get after dividing by 0)</td>
 </tr>
 <tr>
 <td>Empty strings (&apos;&apos;)</td>
 <td>All non-empty strings</td>
 </tr>
 <tr>
-<td>Undefined, Null, and NaN (&apos;Not A Number&apos;, a special type of numeric value)</td>
+<td>Undefined, Null, and NaN (<code>Not a Number</code>, a special type of numeric value)</td>
 <td>Pretty much everything else</td>
 </tr>
 </tbody>
 </table>
-<p>In JavaScript, the boolean operators <code>!</code>, <code>||</code>, and <code>&amp;&amp;</code> follow the rules below to determine how to behave.</p>
+<p>In JavaScript, the Boolean operators <code>!</code>, <code>||</code>, and <code>&amp;&amp;</code> follow the rules below to determine how to behave:</p>
 <ul>
-<li>NOT: If the input is &quot;truthy&quot;, return <code>false</code>; if the input is &quot;falsey&quot;, return <code>true</code>.</li>
-<li>OR: Return the first &quot;truthy&quot; value; if both values are &quot;falsey&quot;, return the last &quot;falsey&quot; value.</li>
-<li>AND: Return the first &quot;falsey&quot; value; if both values are &quot;truthy&quot;, return the last &quot;truthy&quot; value.</li>
+<li>NOT: If the input is &quot;truthy,&quot; return <code>false</code>; if the input is &quot;falsey,&quot; return <code>true</code>.</li>
+<li>OR: Return the first &quot;truthy&quot; value; if both values are &quot;falsey,&quot; return the last &quot;falsey&quot; value.</li>
+<li>AND: Return the first &quot;falsey&quot; value; if both values are &quot;truthy,&quot; return the last &quot;truthy&quot; value.</li>
 </ul>
-<p>Take a look at the following table and see if you can predict the results in the last three columns given the values for A and B in each row.</p>
+<p>Take a look at the following table, and see if you can predict the results in the last three columns given the values for A and B in each row.</p>
 <table>
 <thead>
 <tr>
@@ -2188,10 +2188,10 @@ userInput === <span class="hljs-literal">null</span> <span class="hljs-comment">
 <li><code>null || 3</code></li>
 </ul>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> Think about your memory game for a moment... how could you use this knowledge to compare cards?</p>
+<p> Think about your memory game for a moment. How could you use this knowledge to compare cards?</p>
 </blockquote>
 <hr>
-<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
+<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> &#x2014; give it a shot.</p>
 
                     
                     </section>
