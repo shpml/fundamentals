@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="11.6" data-basepath=".." data-revision="Fri Jan 06 2017 05:08:22 GMT+0000 (UTC)">
+    <div class="book" data-level="11.6" data-basepath=".." data-revision="Fri Jan 06 2017 16:57:21 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1832,6 +1832,27 @@
                 
             
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_chapter/10_exercise.html">
+            
+                
+                    <a href="../11_chapter/10_exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="11.4" data-path="11_chapter/09_quiz.html">
@@ -2023,14 +2044,14 @@
                         <p><strong>WDI Fundamentals Unit 11</strong></p>
 <hr>
 <h1 id="less-code-and-better-logic-with-arrays">Less Code and Better Logic with Arrays</h1>
-<p>We&apos;re now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represented the value of the cards and looping through a fixed number we assumed to represent the number of cards. However, with our new found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let&apos;s go ahead and edit some of our code utilizing arrays as well as write some fresh new code to create some dynamic game logic!</p>
+<p>We&apos;re now in the home stretch of creating our memory game! So far we have simulated cards in our game by creating variables that represent the value of our cards and looping through a fixed number we assumed to represent the number of cards. However, with our new-found knowledge of arrays, we can now better simulate the cards in our game in a way that will be more versatile and require less lines of code! So, let&apos;s go ahead and edit some of our code to incorporate arrays, then write some fresh new code to create dynamic game logic!</p>
 <h2 id="exercise">Exercise</h2>
 <h4 id="requirements">Requirements</h4>
-<p>Replace all your card variables with an <code>array</code> of cards. Once that is complete, organize all your code into functions. Then create two more functions, one which will check if two cards are in play, and the other should check if two cards are a match.</p>
-<h5 id="below-are-the-steps-to-complete-the-assignment">Below are the steps to complete the assignment.</h5>
-<p>1) Declare a variable, <code>cards</code>, and set it equal to an <code>array</code> of four <code>String</code> elements: <code>queen</code>, <code>queen</code>, <code>king</code>, <code>king</code>.</p>
+<p>Replace all of your card variables with an array of cards. Once that is complete, organize all your code into functions. Then, create two more functions; one should check if two cards are in play, and the other should check if two cards are a match.</p>
+<h5 id="here-are-the-steps-for-completing-the-assignment">Here are the steps for completing the assignment:</h5>
+<p>1) Declare a variable, <code>cards</code>, and set it equal to an array of four string elements: <code>&apos;queen&apos;</code>, <code>&apos;queen&apos;</code>, <code>&apos;king&apos;</code>, <code>&apos;king&apos;</code>.</p>
 <p>2) Declare a variable, <code>cardsInPlay</code>, whose value is an empty array.</p>
-<p>3) You will now need to set up each card during the <code>createBoard()</code> function. To do this, loop through your <code>cards</code> array and give each element an attribute that equals the card value (e.g. &quot;queen&quot;). See the example below.</p>
+<p>3) You will now need to set up each card within the <code>createBoard()</code> function. To accomplish this, loop through your <code>cards</code> array and give each element an attribute that equals the card value (e.g., <code>&apos;queen&apos;</code>). See the example below.</p>
 <pre><code class="lang-js"><span class="hljs-comment">// instead of looping through a fixed number</span>
 <span class="hljs-comment">// loop through the length of the cards</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; cards.length; i++) {
@@ -2038,16 +2059,16 @@
   ...
 
   <span class="hljs-comment">// this will set the card&apos;s &apos;data-card&apos; to be the element of the array</span>
-  <span class="hljs-comment">// data- attributes are meant to store data about an element that is not</span>
-  <span class="hljs-comment">// tied to a style.</span>
-  <span class="hljs-comment">// i.e. &quot;king&quot;</span>
+  <span class="hljs-comment">// data &#x2014; attributes are meant to store data about an element that is not</span>
+  <span class="hljs-comment">// tied to a style,</span>
+  <span class="hljs-comment">// i.e., &apos;king&apos;.</span>
   cardElement.setAttribute(<span class="hljs-string">&apos;data-card&apos;</span>, cards[i]);
 
   ...
 
 }
 </code></pre>
-<p>4) Add a click event listener to each card element that runs a function, <code>isTwoCards</code>. See below.</p>
+<p>4) Add a <code>click</code> event listener to each card element that runs a function, <code>isTwoCards</code>. See below.</p>
 <pre><code class="lang-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>; i&lt;cards.length; i++) {
 
   ...
@@ -2065,17 +2086,17 @@
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isTwoCards</span><span class="hljs-params">()</span> </span>{
 
   <span class="hljs-comment">// add card to array of cards in play</span>
-  <span class="hljs-comment">// &apos;this&apos; hasn&apos;t been covered in this prework, but</span>
+  <span class="hljs-comment">// &apos;this&apos; hasn&apos;t been covered in this pre-work, but</span>
   <span class="hljs-comment">// for now, just know it gives you access to the card the user clicked on</span>
   cardsInPlay.push(<span class="hljs-keyword">this</span>.getAttribute(<span class="hljs-string">&apos;data-card&apos;</span>));
 
-  <span class="hljs-comment">// if you have two cards in play check for a match</span>
+  <span class="hljs-comment">// if you have two cards in play, check for a match</span>
   <span class="hljs-keyword">if</span> (cardsInPlay.length === <span class="hljs-number">2</span>) {
 
-    <span class="hljs-comment">// pass the cardsInPlay as an argument to isMatch function</span>
+    <span class="hljs-comment">// pass the cardsInPlay as an argument to the isMatch function</span>
     isMatch(cardsInPlay);
 
-    <span class="hljs-comment">// clear cards in play array for next try</span>
+    <span class="hljs-comment">// clear cards in play array for your next try</span>
     cardsInPlay = [];
 
   }
@@ -2083,26 +2104,26 @@
 }
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p>  <code>this</code> is referring to whatever called the function. For example, we add the eventListener of click to a <strong>card</strong> and then call isTwoCards. In our example above, <em>this</em> is referring to <em>this card</em>. If this is confusing, don&apos;t worry! We&apos;ll cover this extensively in WDI.</p>
+<p>  <code>this</code> refers to whatever called the function. For example, we add the <code>eventListener</code> of <code>&apos;click&apos;</code> to a <strong>card</strong> and then call <code>isTwoCards</code>. In our example above, <code>this</code> is referring to <em>this card</em>. If this is confusing, don&apos;t worry! We&apos;ll cover <code>this</code> extensively in WDI.</p>
 </blockquote>
-<p>7) We have the ability to &apos;flip&apos; the card. This will require us to grab images first. Look through pixabay.com and find and download an image of a <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+king+&amp;order=popular" target="_blank">King</a> and <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+queen+&amp;order=popular" target="_blank">Queen</a> to your liking. Once you&apos;ve downloaded these images, add them to your project&apos;s folder. It would be best to place them in the <em>root</em> directory of that folder.</p>
+<p>7) We have the ability to &quot;flip&quot; a card. This will require us to grab images first. Look through pixabay.com, and find and download images of a <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+king+&amp;order=popular" target="_blank">king</a> and <a href="https://pixabay.com/en/photos/?image_type=&amp;cat=&amp;min_width=&amp;min_height=&amp;q=playing+cards+queen+&amp;order=popular" target="_blank">queen</a> that are to your liking. Once you&apos;ve downloaded these images, add them to your project&apos;s folder. It&apos;s best to place them in the <em>root</em> directory of that folder.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-info"></strong>
 <p> You may need to add a CSS selector that targets your <code>img</code> elements and gives them a height/width if the images you use are very large.</p>
 </blockquote>
-<p>8) In your <code>cardElement</code>&apos;s <code>click</code> event listener, set the <code>cardElement</code>&apos;s innerHTML to an image of either a King of Queen. You will need to get the <code>data-card</code> attribute to decide which image to display. You can then use that &apos;data-card&apos; value to decide which image to use using an if statement.</p>
+<p>8) In your <code>cardElement</code>&apos;s <code>&apos;click&apos;</code> event listener, set the <code>cardElement</code>&apos;s inner HTML to an image of either a king or a queen. You will need to get the <code>data-card</code> attribute to decide which image to display. You can then use that <code>data-card</code> value to decide on the image using an <code>if</code> statement.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p>  We can create an <code>img</code> tag as a string. For example... <code>&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;</code> is an image that would render a King of Spades. We can set <code>cardElement</code>&apos;s <code>innerHTML</code> value to a string. So, we could set <code>cardElement.innerHTML = &apos;&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;&apos;;</code>.</p>
+<p>  We can create an <code>img</code> tag as a string. For example, <code>&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;</code> is an image that would render a king of spades. We can set <code>cardElement</code>&apos;s <code>innerHTML</code> value to a string. So, we could set <code>cardElement.innerHTML = &apos;&lt;img src=&quot;my_king.png&quot; alt=&quot;King of Spades&quot; /&gt;&apos;;</code>.</p>
 </blockquote>
-<p>9) When <code>isMatch()</code> is ran, you should remove <em>all</em> innerHTML of every card to reset the game board.</p>
+<p>9) When <code>isMatch()</code> has run, you should remove <em>all</em> inner HTML of every card to reset the game board.</p>
 <p>10) Once completed, you should have a working game that displays cards when clicked and tells you if you have a match or not! Congratulations! You have come a long way!</p>
 <h4 id="deliverable">Deliverable</h4>
-<p>When finished, don&apos;t forget to <strong>add</strong>, <strong>commit</strong> and <strong>push</strong> your code to your GitHub repository!</p>
-<p>Now it&apos;s time to submit you code! Submit your link to your GitHub repository via <a href="https://ga-immersives.typeform.com/to/UHC5Yp" target="_blank">this form</a>.</p>
-<p><em>Don&apos;t worry if you had trouble finishing up the memory game. Go ahead and submit what you have and you&apos;ll be able to review it with your instructor soon enough!</em></p>
-<h4 id="taking-it-further-on-your-own">Taking it further on your own</h4>
-<p>Our game could use a few finishing touches. Take some time to think about how you might reset the game board to play again. What if you wanted to keep track of score?</p>
+<p>When you&apos;re finished, don&apos;t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your code to your GitHub repository!</p>
+<p>Now it&apos;s time to submit you code. Submit your link to your GitHub repository via <a href="https://ga-immersives.typeform.com/to/UHC5Yp" target="_blank">this form</a>.</p>
+<p><em>Don&apos;t worry if you had trouble finishing up the memory game. Go ahead and submit what you have, and you&apos;ll be able to review it with your instructor soon enough!</em></p>
+<h4 id="taking-it-further">Taking It Further</h4>
+<p>Our game could use a few finishing touches. Take some time to think about how you might reset the game board to play again. What if you wanted to keep track of your score?</p>
 <hr>
-<p>How was your Fundamentals Experience? Take a <a href="feedback.html">quick survey</a> to give us your feedback!</p>
+<p>How was your Fundamentals experience? Take a <a href="feedback.html">quick survey</a> to give us your feedback!</p>
 
                     
                     </section>
