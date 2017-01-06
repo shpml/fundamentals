@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.4" data-basepath=".." data-revision="Fri Jan 06 2017 17:36:38 GMT+0000 (UTC)">
+    <div class="book" data-level="10.4" data-basepath=".." data-revision="Fri Jan 06 2017 18:54:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2049,8 +2049,8 @@
 <h4 id="-createelement-and-appendchild"><strong><code>createElement()</code> and <code>appendChild()</code></strong></h4>
 <p>To add new elements to a web page, we&apos;ll need to use a three-step process:</p>
 <p>1) We will use the <code>createElement()</code> method to create a new element that can then be added to the page. When this node is created, it will be <em>empty</em>. This element will be stored in a variable.
-2) We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we learned in the last unit.
-3) Now that our element has been created, we can add it as a child of an element using the <code>appendChild()</code> method. This will add an element as the last child of the parent element.</p>
+2) We will then add content to the element using the <code>innerHTML</code> or <code>textContent</code> properties we learned in the last lesson.
+3) Now that our element has been created, we can add it as a child of an element using the <code>appendChild()</code> method. This will add the element as the last child of the parent element.</p>
 <p>To add a fourth item to our list, we can execute the following code:</p>
 <pre><code class="lang-js"><span class="hljs-comment">// First up, let&apos;s create a new list item and store it in a variable.</span>
 <span class="hljs-keyword">var</span> newListItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;li&apos;</span>);
@@ -2075,30 +2075,30 @@ newListItem.textContent = <span class="hljs-string">&apos;Feed the cat&apos;</sp
 <p>Then, we can use JavaScript to add this class:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;important&apos;</span>).className = <span class="hljs-string">&apos;highlight&apos;</span>;
 </code></pre>
-<p>The <code>.highlight</code> class will then be added to the element with the id <code>important</code>, along with the background-color associated with the class.</p>
+<p>The <code>highlight</code> class will then be added to the element with the ID <code>important</code>, along with the background color associated with the class.</p>
 <p><img src="../assets/chapter5/list2.png" alt=""></p>
 <h4 id="-setattribute-removeattribute"><code>setAttribute()</code>, <code>removeAttribute()</code></h4>
 <p>We can set and remove attributes from elements using the <code>setAttribute()</code> and <code>removeAttribute()</code> methods.</p>
 <p>For example, if we want to update the <code>href</code> attribute on an anchor, we could do the following:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].setAttribute(<span class="hljs-string">&apos;href&apos;</span>, <span class="hljs-string">&apos;http://newurl.com&apos;</span>);
 </code></pre>
-<p>Or, if we wanted to remove the id from an element, we could execute this code:</p>
+<p>Or, if we wanted to remove the <code>id</code> from an element, we could execute this code:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;a&apos;</span>)[<span class="hljs-number">0</span>].removeAttribute(<span class="hljs-string">&apos;id&apos;</span>);
 </code></pre>
 <h1 id="events">Events</h1>
-<p>In order to create interactive and responsive sites, we&apos;ll often want to update the DOM based on a user&apos;s actions. For example, when a user clicks on the menu icon, a sidebar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of the field. These actions are called <strong>events</strong>.</p>
+<p>In order to create interactive and responsive sites, we&apos;ll often want to update the DOM based on a user&apos;s actions. For example, when a user clicks on the menu icon, a side bar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of that field. These actions are called <strong>events</strong>.</p>
 <p>We can set up <strong>event handlers</strong> in our scripts that will listen, or wait, for an event to occur and then trigger a function.</p>
 <p>The syntax for setting up an event handler looks like this:</p>
 <pre><code class="lang-js">  element.addEventListener(<span class="hljs-string">&apos;nameOfEvent&apos;</span>, functionToRun);
 </code></pre>
 <ul>
-<li><p><code>element</code> refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button element.</p>
+<li><p><code>element</code> refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button&apos;s element.</p>
 </li>
 <li><p><code>.</code> ties the method on the right-hand side (<code>addEventListener</code>) with the element on the left-hand side.</p>
 </li>
 <li><p><code>addEventListener()</code> is the method we&apos;ll use to tie an event listener to an element.</p>
 </li>
-<li><p><code>&apos;nameOfEvent&apos;</code> is name of the event we want to listen for. For example, we may want to wait until a user triggers a &apos;click&apos; event on an element.</p>
+<li><p><code>&apos;nameOfEvent&apos;</code> is name of the event we want to listen for. For example, we may want to wait until a user triggers a <code>click</code> event on an element.</p>
 </li>
 <li><p><code>&apos;functionToRun&apos;</code> is name of the function we want to run when the event occurs.</p>
 </li>

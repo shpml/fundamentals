@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="10.3" data-basepath=".." data-revision="Fri Jan 06 2017 17:37:00 GMT+0000 (UTC)">
+    <div class="book" data-level="10.3" data-basepath=".." data-revision="Fri Jan 06 2017 18:54:47 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2067,17 +2067,17 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
 <p>The browser retrieves this document and creates a model of the page in memory. Most modern browsers come with tools that developers can use to look at the DOM&apos;s structure.</p>
-<p>In Chrome, you can go to <em>View</em> &gt; <em>Developer</em> &gt; <em>Developer Tools</em> and click on the <em>Elements</em> panel to view the DOM tree.</p>
+<p>In Chrome, you can go to <code>View</code> &gt; <code>Developer</code> &gt; <code>Developer Tools</code> and click on the &quot;Elements&quot; panel to view the DOM tree.</p>
 <p><img src="../assets/chapter5/developer.png" alt=""></p>
 <p><img src="../assets/chapter5/thingstodo.png" alt=""></p>
 <p>You might notice that, at this point, the DOM closely resembles our original HTML document. However, this is a <em>living</em> model of the page, made up of node objects that can be manipulated with JavaScript.</p>
-<p>Maybe we want to use JavaScript to add a fourth list item to the page &#x2013; &quot;Feed the Cat.&quot; Then, perhaps we want to change the background-color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to &quot;Return library books - DONE!&quot;</p>
+<p>Maybe we want to use JavaScript to add a fourth list item to the page &#x2014; &quot;Feed the Cat.&quot; Then, perhaps we want to change the background color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to &quot;Return library books &#x2014; DONE!&quot;</p>
 <p>Now the DOM looks pretty different from our original HTML file.</p>
 <p><img src="../assets/chapter5/thingstodo2.png" alt=""></p>
 <p>JavaScript comes with some &quot;built-in&quot; functions that allow us to access and update these nodes. We can call on these functions using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as <strong>methods</strong>.</p>
-<p>Let&apos;s take a look at some of the methods we have available to us!</p>
+<p>Let&apos;s take a look at some of the methods available to us!</p>
 <h2 id="accessing-elements">Accessing Elements</h2>
-<p>First things first - before we can work with an element, we first need to find, or <em>select</em>, the DOM node that represents it.</p>
+<p>First things first &#x2014; before we can work with an element, we first need to find, or <em>select</em>, the DOM node that represents it.</p>
 <p>In order to find an element, we need to search through the document. The syntax for searching for an element looks something like this:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;main&apos;</span>)
 </code></pre>
@@ -2086,7 +2086,7 @@
 </li>
 <li><p><code>.</code> ties the method on the right-hand side (<code>getElementById</code>) with the object on the left-hand side (<code>document</code>).</p>
 </li>
-<li><p><code>getElementById()</code> is the method we want to use to find an element. We&apos;ll take a look at the methods available to us shortly. This method in particular lets us locate an element by the value of its <code>id</code> attribute.</p>
+<li><p><code>getElementById()</code> is the method we want to use to find an element. We&apos;ll take a look at the other methods available to us shortly. This method in particular lets us locate an element by the value of its <code>id</code> attribute.</p>
 </li>
 <li><p><code>&apos;main&apos;</code>: Just like with the functions we&apos;ve learned about earlier in this unit, we can pass in parameters for these methods to use. In this case, we want to find an element with an <code>id</code> of <code>main</code>.</p>
 </li>
@@ -2120,7 +2120,7 @@
 <p>This method allows us to use our CSS selector syntax to find an element. If there are multiple elements on the page matching the selector, it will return the <em>first</em> of the matching elements. It is important to note that this a recent addition to the DOM and is not supported by older browsers.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.special&apos;</span>)
 </code></pre>
-<p>This will return the first element on the page with a <code>class</code> of <code>special</code>. You can use any of your CSS-style selectors as a parameter.</p>
+<p>This will return the first element on the page with a class of <code>special</code>. You can use any of your CSS style selectors as a parameter.</p>
 <p>Other examples:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#sidebar&apos;</span>) <span class="hljs-comment">// This will find the element that has an id of sidebar.</span>
 <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;ul &gt; li&apos;</span>) <span class="hljs-comment">// This will find the first li that is a direct child of the ul.</span>
@@ -2146,13 +2146,13 @@
 <p>This method will select all elements with a given class attribute.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&apos;special&apos;</span>)
 </code></pre>
-<p>This method will return any elements with the class <code>special</code>. In the above example, it will return a NodeList containing the second and third list items, as they both have the class <code>special</code>.</p>
+<p>This method will return any elements with the class <code>special</code>. In the example above, it will return a NodeList containing the second and third list items, as they both have the class <code>special</code>.</p>
 <hr>
 <h4 id="-document-getelementsbytagname"><code>document.getElementsByTagName()</code></h4>
 <p>This method will locate all elements that match a given tag name.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)
 </code></pre>
-<p>Here, this query returns all <code>&lt;li&gt;</code> elements. The NodeList will contain all seven <code>&lt;li&gt;</code>.</p>
+<p>Here, this query returns all <code>li</code> elements. The NodeList will contain all seven <code>li</code>.</p>
 <hr>
 <h4 id="-document-queryselectorall"><code>document.querySelectorAll()</code></h4>
 <p>Similar to our <code>querySelector()</code> method, this method lets us use our CSS selector syntax to select one or more elements.</p>
@@ -2163,7 +2163,7 @@
 <h4 id="working-with-nodelists">Working with NodeLists</h4>
 <p>Any time there is even the <em>potential</em> for a method to return more than one element, such as with <code>getElementsByClassName()</code>, <code>getElementsByTagName()</code>, and <code>querySelectorAll</code>, a NodeList will be returned, <em>even if only one element is found that matches the query</em>.</p>
 <p>These NodeLists are <strong>collections</strong> that are numbered, similar to the arrays we&apos;ll be looking at in Unit 11.</p>
-<p>When we get this list, we can select a single item to work with using array syntax &#x2013; a set of square brackets.</p>
+<p>When we get this list, we can select a single item to work with using array syntax &#x2014; a set of square brackets (<code>[]</code>).</p>
 <p>For example, above we saw that <code>document.getElementsByTagName(&apos;li&apos;)</code> returned seven list items. The NodeList that was returned would look like this:</p>
 <table>
 <thead>
@@ -2203,12 +2203,12 @@
 </tr>
 </tbody>
 </table>
-<p>Note how each node has an index number associated with it. These indexes are <em>zero based</em>, meaning the first node has an index of 0, the second node an index of 1, etc.</p>
+<p>Note how each node has an index number associated with it. These indexes are <em>zero based</em>, meaning the first node has an index of 0, the second node has an index of 1, etc.</p>
 <p>To locate the fourth item in that NodeList, <code>&lt;li&gt;Thursday&lt;/li&gt;</code>, we could use the following syntax:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">3</span>].className = <span class="hljs-string">&apos;special&apos;</span>
 </code></pre>
-<p>Directly after the <code>getElementsByTagName(&apos;li&apos;)</code>, we have the index number of the item we want to locate in square brackets, <code>[3]</code>, which would locate the item at index 3.</p>
-<p>This would find the fourth list item and change its class attribute to <code>special</code> (we&apos;ll take a look at the className method shortly).</p>
+<p>Directly after the <code>getElementsByTagName(&apos;li&apos;)</code>, we have the index number of the item we want to locate in square brackets, <code>[3]</code>.</p>
+<p>This would find the fourth list item and change its class attribute to <code>special</code> (We&apos;ll take a look at the <code>className</code> method shortly).</p>
 <p>We could also use a loop to iterate through the elements in the NodeList and do something with each.</p>
 <p>For example:</p>
 <pre><code class="lang-js">
@@ -2238,16 +2238,16 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
 </code></pre>
-<p>Here, we have three <code>&lt;li&gt;</code> elements enclosed within opening <code>&lt;ul&gt;</code> and closing <code>&lt;/ul&gt;</code> tags.</p>
+<p>Here, we have three <code>li</code> elements enclosed within opening and closing <code>ul</code> tags.</p>
 <p>In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.</p>
-<p>In our example, we could describe the relationship between the <code>&lt;ul&gt;</code> element and the three <code>&lt;li&gt;</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>&lt;li&gt;</code> elements are enclosed within the <code>&lt;ul&gt;</code>.</p>
+<p>In our example, we could describe the relationship between the <code>ul</code> element and the three <code>li</code> elements as that of a <em>parent</em> and <em>children</em>, as the <code>li</code> elements are enclosed within the <code>ul</code>.</p>
 <p>We can use properties of an element to find and access related elements. Let&apos;s take a look at some examples below.</p>
 <h4 id="-parentnode"><code>parentNode</code></h4>
 <p>The <code>parentNode</code> property will locate the parent of an initial selection.</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode
  <span class="hljs-comment">//=&gt; &lt;ul class=&quot;some-class-name&quot;&gt;...&lt;/ul&gt;</span>
 </code></pre>
-<p>This syntax will return the parent of the first <code>&lt;li&gt;</code> element, which, in this case, is the <code>&lt;ul&gt;</code> element, as the <code>&lt;ul&gt;</code> element wraps all the <code>&lt;li&gt;</code> elements.</p>
+<p>This syntax will return the parent of the first <code>li</code> element, which, in this case, is the <code>ul</code> element, as the <code>ul</code> element wraps all the <code>li</code> elements.</p>
 <p>Other properties available to us include:</p>
 <ul>
 <li><code>previousSibling</code>, which will find the previous sibling of a selected element.</li>
@@ -2281,10 +2281,10 @@
 <p>There are many properties and methods that allow us to read from or update the contents of a DOM node. Let&apos;s take a look at a couple now, and then we&apos;ll expand on others in the next unit.</p>
 <h4 id="-innerhtml"><strong><code>innerHTML</code></strong></h4>
 <p>We can use the <code>innerHTML</code> property to get and set content for an element.</p>
-<p>For example, if we want to change the HTML content for the first <code>&lt;li&gt;</code>, we could execute the following:</p>
+<p>For example, if we want to change the HTML content for the first <code>li</code>, we could execute the following:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">&apos;Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.&apos;</span>;
 </code></pre>
-<p>This would find the first <code>&lt;li&gt;</code> and change the HTML content to <code>Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.</code>. The result will look like this:</p>
+<p>This would find the first <code>li</code> and change the HTML content to <code>Email &lt;a href=&quot;mom@gmail.com&quot;&gt;Mom&lt;/a&gt;.</code>. The result will look like this:</p>
 <p><img src="../assets/elkwebdesign/innerHTML.png" alt=""></p>
 <p>If we simply want to retrieve the HTML content to use later, we can save it in a variable like so:</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> firstListItem = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].innerHTML;
@@ -2294,10 +2294,10 @@
 For example:</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;important&apos;</span>).textContent = <span class="hljs-string">&apos;Done!&apos;</span>
 </code></pre>
-<p>This code would change the text content of the <code>&lt;li&gt;</code> with the id <code>important</code> to &apos;Done!&apos;.</p>
+<p>This code would change the text content of the <code>li</code> with the ID <code>important</code> to <code>Done!</code>.</p>
 <p><img src="../assets/chapter5/thingstodo5.png" alt=""></p>
 <hr>
-<p><a href="10_lesson.html">Now, on to the next lesson.</a></p>
+<p><a href="10_lesson.html">On to the next lesson!</a></p>
 
                     
                     </section>
