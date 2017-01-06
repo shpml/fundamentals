@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.3.1" data-basepath=".." data-revision="Fri Jan 06 2017 16:58:11 GMT+0000 (UTC)">
+    <div class="book" data-level="5.3.1" data-basepath=".." data-revision="Fri Jan 06 2017 17:25:18 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2045,37 +2045,37 @@
 <hr>
 <h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <h3 id="elk-web-design-part-2">Elk Web Design: Part 2</h3>
-<p>In this second part of the ElK Web Design, we&apos;ll be working with web fonts and creating a horizontal navigation bar.</p>
-<p>Remember the final design looks like this:</p>
+<p>In this second part of the ELK Web Design challenge, we&apos;ll work with web fonts and create a horizontal navigation bar.</p>
+<p>Remember, this is our final design:</p>
 <p><img src="../assets/elkwebdesign/elkwebdesign.png" alt=""></p>
 <h3 id="instructions">Instructions</h3>
 <p>If you don&apos;t see the JS Bin below, please refresh the page.</p>
-<h4 id="getting-started">Getting started</h4>
-<p>You&apos;ll be using the code editor below. Take a look at the starter code in the editor below first.</p>
+<h4 id="getting-started">Getting Started</h4>
+<p>You&apos;ll be using the editor below. First, take a look at the starter code:</p>
 <p><a class="jsbin-embed" href="http://jsbin.com/wukimet/embed?html,css,outputheight=600px" target="_blank">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.19"></script></p>
 <h4 id="part-1-web-fonts">Part 1: Web Fonts</h4>
-<p>We&apos;ll  be using external fonts for this challenge. Let&apos;s start out by linking external fonts in your HTML.</p>
-<p>1 . Add the following code to the head of your HTML file.</p>
+<p>We&apos;ll be using external fonts for this challenge. Let&apos;s start out by linking these fonts in your HTML.</p>
+<p>1) Add the following code to the head of your HTML file.</p>
 <pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://fonts.googleapis.com/css?family=Open+Sans:400,800&quot;</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">&quot;stylesheet&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/css&quot;</span>&gt;</span>
 </code></pre>
-<p>2 . Now you need to tell CSS where to use the font. Change the font-family declaration in you body&apos;s style rule to &apos;Open Sans&apos;, sans-serif. Remember to put &apos;Open Sans&apos; in quotes so CSS reads them together.</p>
-<p><em>Nice! You just built a font stack. Font stacks give CSS guidance on what font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans-serif font!</em></p>
-<p>3 . We want all headings bold. So, add a font-weight property to h1, h2 and set it to 800.</p>
+<p>2) Now, you need to tell your CSS where to use the font. Change the <code>font-family</code> declaration in your body&apos;s style rule to &quot;Open Sans, sans serif.&quot; Remember to put Open Sans in quotes so the CSS reads them together.</p>
+<p><em>Nice! You just built a font stack. Font stacks give CSS guidance on which font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans serif font!</em></p>
+<p>3) We want all headings to be bold. So, add a <code>font-weight</code> property to <code>h1</code> and <code>h2</code>, and set it to 800.</p>
 <h4 id="part-2-navigation">Part 2: Navigation</h4>
-<p>Now, let&apos;s put in some content and build out the navigation bar.</p>
-<p>1 . Start by adding a <code>nav</code> element inside the header, between the h1 and the img.</p>
-<p>2 . Create three linked menu items inside the nav: &quot;work,&quot; &quot;about,&quot; and &quot;contact.&quot;</p>
-<p>3 . Wrap placeholder links around them like this:</p>
+<p>Now, let&apos;s add in some content and build out the navigation bar.</p>
+<p>1) Start by adding a <code>nav</code> element inside the header, between the <code>h1</code> and the <code>img</code>.</p>
+<p>2) Create three linked menu items inside the <code>nav</code>: &quot;work,&quot; &quot;about,&quot; and &quot;contact.&quot;</p>
+<p>3) Wrap placeholder links around them like so:</p>
 <pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>work<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 </code></pre>
-<p>4 . Now Let&apos;s put some rules in place to format our navigation. In your CSS, put two new, empty selectors: nav and nav a.</p>
-<p>5 . Rather than resetting all our CSS, let&apos;s manually reset the default link state. Set nav a&apos;s text-decoration value to none, and set its color to black.</p>
-<p><em>Add: <code>text-decoration: none</code>; to the <code>nav a</code> css property to remove the default blue and underlining from links.</em></p>
-<p>6 . Now, we&apos;ll start moving things around on the screen. Give the nav a links 1.8em of margin. And set their display to inline-block.</p>
-<p>7 . Looking good! Let&apos;s increase the nav&apos;s font-size, then reposition the whole thing with a float! Set the nav style&apos;s font-size to 1em and then, float it right.</p>
-<p>What was that? Your very first float! Here&apos;s what your design should start looking like:</p>
+<p>4) Now, let&apos;s put some rules in place to format our navigation. In your CSS, add two new empty selectors: <code>nav</code> and <code>nav a</code>.</p>
+<p>5) Rather than resetting all our CSS, let&apos;s manually reset its default link state. Set <code>nav a</code>&apos;s <code>text-decoration</code> value to none, and set its color to black.</p>
+<p><em>Add <code>text-decoration: none;</code> to the <code>nav a</code> CSS property to remove the default blue color and underlining from your links.</em></p>
+<p>6) Now, we&apos;ll start moving things around on the screen. Give the <code>nav a</code> links a margin of 1.8em. Set their display to inline-block.</p>
+<p>7) Looking good! Let&apos;s increase the nav&apos;s <code>font-size</code>, then reposition the whole thing with a float! Set the <code>nav</code> style&apos;s <code>font-size</code> to 1em and float it right.</p>
+<p>Here&apos;s what your design should start to look like:</p>
 <p><img src="../assets/elkwebdesign/elkdesignchapt6.png" alt=""></p>
-<p><a href="04_lesson.html">On to the next lesson.</a></p>
+<p><a href="04_lesson.html">On to the next lesson!</a></p>
 
                     
                     </section>

@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="Fri Jan 06 2017 16:58:11 GMT+0000 (UTC)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Fri Jan 06 2017 17:25:18 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2047,13 +2047,13 @@
 <p>We now know how to find our way around this mysterious world called the command line. Now, let&apos;s perform some lasting actions, such as creating some files and folders. Before we start, let&apos;s make sure that we are in our home folder like so:</p>
 <pre><code>$ cd ~
 </code></pre><blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> <code>~</code> (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.</p>
+<p> <code>~</code> (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your <code>Downloads</code>, <code>Pictures</code>, and <code>Documents</code> folders. Each user on any given computer will have their own home folder.</p>
 </blockquote>
 <p>The command above, regardless of where we are currently located, will take us to our
 home folder.</p>
 <p>Great! Now that we&apos;re in our home folder, let&apos;s create a file.</p>
 <pre><code>$ touch joke.txt
-</code></pre><p>The <code>touch</code> command creates files for us - in this case, we made a file called <code>joke.txt</code>. If we try to <code>touch</code> a file that already exists, the file will not be overwritten.</p>
+</code></pre><p>The <code>touch</code> command creates files for us &#x2014; in this case, we made a file called <code>joke.txt</code>. If we try to <code>touch</code> a file that already exists, the file will not be overwritten.</p>
 <p>Let&apos;s open <code>joke.txt</code> in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!</p>
 <pre><code>$ open joke.txt
 </code></pre><p>If you&apos;re following along using <strong>Git Bash on Windows</strong>, that command probably didn&apos;t work! Instead, you&apos;ll want to use the following command to open the file. To do so, just type the name of the file you want to open:</p>
@@ -2096,13 +2096,13 @@ $ ls
 </code></pre><blockquote>
 <p>The <code>cp</code> command is used to copy specified files or folders to a specified location.</p>
 </blockquote>
-<p>After running this command, we have created a copy of <code>joke.txt</code> called <code>joke2.txt</code> in the same folder. In this case, notice how, the second argument was a file name, not a folder
+<p>After running this command, we have created a copy of <code>joke.txt</code> called <code>joke2.txt</code> in the same folder. In this case, notice how the second argument was a file name, not a folder
 name. It turns out that the <code>mv</code> and <code>cp</code> commands are quite smart. When moving or copying
 a file, if the second argument is a <strong>folder</strong>, the specified file is moved or
-copied to that folder. If the second argument is a <strong>filename</strong>, the file in the first argument
+copied to that folder. If the second argument is a <strong>file</strong>, the file in the first argument
 is moved or copied to a file with the file name specified in the second argument. Hence, when we copied
 our joke, our file <code>joke.txt</code> was copied to another file called <code>joke2.txt</code>.</p>
-<p>Perhaps we should make another folder inside <code>funny_things</code> called <code>jokes</code>, and
+<p>Perhaps we should make another folder inside <code>funny_things</code> called <code>jokes</code> and
 put our joke in there. After all, we could have funny jokes, funny pictures, and much
 more. In order to achieve this, we&apos;re going to follow a series of long-winded
 steps so we may familiarize ourselves with some more useful commands.</p>
@@ -2123,7 +2123,7 @@ $ mv joke.txt jokes/joke.txt
 </code></pre><p>If you are trying to copy or remove folders and not files, we need to add &quot;an
 option&quot; to our command. Options are extra settings that we want to apply to our
 commands. Options given to commands are always of the format <code>--word</code> or <code>-letter</code>.
-As an example, let&apos;s try to copy our jokes folder.</p>
+As an example, let&apos;s try to copy our <code>jokes</code> folder.</p>
 <pre><code>$ cp -r jokes copy_of_jokes
 </code></pre><blockquote>
 <p>The <code>-r</code> option stands for &quot;recursive&quot; and must be applied to the <code>cp</code>
@@ -2136,7 +2136,7 @@ inside.</p>
 <pre><code>$ rm -r copy_of_jokes
 </code></pre><p>Note that the <code>mv</code> command does not need an <code>-r</code> option to move folders.</p>
 <hr>
-<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
+<p><a href="09_exercise.html">Here&apos;s another exercise for you</a> &#x2014; give it a shot!</p>
 
                     
                     </section>

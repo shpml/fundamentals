@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="4.2" data-basepath=".." data-revision="Fri Jan 06 2017 16:58:11 GMT+0000 (UTC)">
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="Fri Jan 06 2017 17:25:18 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2043,28 +2043,34 @@
                     
                         <h2 id="-wdi-fundamentals-unit-4"><strong>WDI Fundamentals Unit 4</strong></h2>
 <h1 id="the-box-model">The Box Model</h1>
-<p>Now that we&apos;ve really understood how to differentiate between inline and block elements, it&apos;s time to take a look at the CSS Box Model. Every html element on a webpage in a box. Therefore, every element has the <strong>content</strong> within it, <strong>padding</strong> or the area outside of the content, the <strong>border</strong> or the line between padding and the content and lastly, the <strong>margin</strong> the area outside the border that separates the element from other elements.</p>
+<p>Now that we understand how to differentiate between inline and block elements, it&apos;s time to take a look at the CSS Box Model. Every HTML element on a webpage is in a box, therefore, every element has:</p>
+<ul>
+<li>The <strong>content</strong> within the box</li>
+<li>The <strong>padding</strong>, or the area outside of the content</li>
+<li>The <strong>border</strong>, or the line between padding and margin</li>
+<li>The <strong>margin</strong>, or the area outside the border that separates the element from other elements on the page.</li>
+</ul>
 <p><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/4o0byeriss?seo=false&amp;videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" width="100%" height="100%"></iframe></div></div></p>
 <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 
 
 <h4 id="more-on-the-box-model">More on the Box Model</h4>
-<p>In the video above, we mainly discussed how to set shorthand properties for values for padding that are the same. However, often times you&apos;ll want to set properties that have different values. Here&apos;s how your syntax would look like for different padding values for each side of an HTML element.</p>
+<p>In the video above, we mainly discussed how to set shorthand properties for padding values that are the same. However, there will be many cases where you&apos;ll want to set properties that have different values. Here&apos;s how your syntax would look like for different padding values for each side of an HTML element.</p>
 <pre><code class="lang-html">div {
     background: #c0dec5;
     padding: 2em 3em 0 3em;
 }
 </code></pre>
-<p>This means that the top padding will be 2em, the right padding is 3em, the bottom padding 0 and the left padding 3em. Check out the diagram below to see how this works!</p>
+<p>This means that the top padding will be 2em, the right padding is 3em, the bottom padding is 0, and the left padding is 3em. This diagram will help you visualize how this works:</p>
 <p><img src="../assets/elkwebdesign/trouble.png" alt="">.</p>
-<p>Other times you&apos;ll want to have padding or margin that are same value for your left and right margins and another value that&apos;s the same for your top and bottom value. For example, to set your <em>top and bottom</em> padding to 0 and your <em>left and right</em> padding to 20% of an em, see below:</p>
+<p>There will also be instances when you want to have the same padding or margin value for your left and right margins, and another value for your top and bottom margins. For example, to set your <em>top and bottom</em> padding to 0 and your <em>left and right</em> padding to 20% of an em, you would set it up like so:</p>
 <pre><code class="lang-html">div {
     padding: 0 .2em;
 }
 </code></pre>
 <h4 id="checkpoint">Checkpoint</h4>
 <ul>
-<li>How would set a solid border of red that&apos;s 4px for an <code>p</code> element?</li>
+<li>How would you set a solid border of red that&apos;s 4px for a <code>p</code> element?</li>
 <li>How would you center a wrapper for your website?</li>
 </ul>
 <h4 id="further-reading">Further Reading</h4>
@@ -2072,7 +2078,7 @@
 <li>Learn more about CSS shorthand on the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties" target="_blank">Mozilla Developer Network</a></li>
 </ul>
 <hr>
-<p><a href="04_exercise.html">Ready to try coding it out?</a></p>
+<p><a href="04_exercise.html">Ready to try coding it out yourself?</a></p>
 
                     
                     </section>
