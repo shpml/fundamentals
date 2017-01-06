@@ -2,11 +2,11 @@
 
 ---
 
-##Publish Work on GitHub
+##Publishing Work on GitHub
 
-So far, we've been making changes "locally," editing files and repositories on our computers.
+So far, we've been making changes "locally," editing files and repositories on our own computers.
 
-To collaborate with others (and also back up our files just in case our computer goes out of commission), we need to connect our local repository to a "remote" repository.
+To collaborate with others (and back up our files just in case our computer goes out of commission), we need to connect our local repository to a "remote" repository.
 
 ### What is GitHub?
 
@@ -18,11 +18,11 @@ You have a folder in the cloud, your *remote repo*, which syncs with your comput
 
 Below is what the GitHub interface looks like for a repo called `awesome-project`:
 
-1) **Repo Name and Owner**: describe who owns the repository, the name of the repo, and whether the repo is public or private.
+1) **Repo Name and Owner**: describes who owns the repository, the name of the repo, and whether the repo is public or private.
 
 	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
-2) **Overview**: displays the number of commits, branches, releases, and contributors to a particular repo. Selecting any one of these options will open a detailed view of your selection.
+2) **Overview**: displays the number of commits, branches, releases, and contributors to a particular repo. Choosing any one of these options will open a detailed view of your selection.
 
 	![Overview](../assets/chapter2/overview_github.gif)
 
@@ -30,7 +30,7 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![File Structure](../assets/chapter2/contents_github.gif)
 
-4) **Fork button**: allows you copy a version of this repo (`user/awesome-project`) to your own GitHub account.
+4) **Fork Button**: allows you to copy a version of this repo (`user/awesome-project`) to your own GitHub account.
 
 	![Fork button](../assets/chapter2/fork_github.gif)
 
@@ -38,10 +38,9 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 	![Side bar](../assets/chapter2/sidebar_github.gif)
 
-There are many unique GitHub features crammed on this page, but we'll only be using three of them to start.
+There are many unique GitHub features crammed on this page, but we'll only be starting with three.
 
 ---
-
 
 ## Our GitHub Flow
 
@@ -64,43 +63,37 @@ This workflow consists of the following steps:
 5) Pushing
 6) Submitting a pull request
 
-**Don't worry**, we are going to cover this step by step in plenty of detail.
+**Don't worry**, we're going to cover this process step by step, in plenty of detail.
 
+### 1) Forking
 
-
-### 1. Forking
-
-Let's walk through an example. Consider a project like Node.js, a JavaScript framework you'll learn about in this course. Node.js is completely open source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on GitHub; if you visit the main repo, you'll see that there are more than 400 contributors who have made committed changes to Node.js.
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework you'll learn about in this course. Node.js is completely open source, which means that anyone can read (and even copy) the code that makes it work — including you! The source code is publicly available [here](https://github.com/joyent/node) on GitHub. If you visit the main repo, you'll see that there are more than 400 contributors who have committed changes to Node.js.
 
 <br>
 ![Node.js Contributors](../assets/chapter2/node.png)
 <br>
 
-Although it is open source and anyone can read or contribute to its code, Node.js is **maintained** by a company called Joyent. Not all of these 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing the code to break. Changes need to be inspected and approved before they can officially be added to the project.
+Although it is open source and anyone can read or contribute to its code, Node.js is **maintained** by a company called Joyent. Not all of these 400+ contributors have the ability to edit the original Joyent repo — that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing the code to break. Changes need to be inspected and approved before they can officially be added to the project.
 
 To create a copy of Joyent's repo, you would need to **fork** it by clicking the button we highlighted above.
 
 ![Forking GIF](../assets/chapter2/fork_node.gif)
 
-
 > **CAUTION** Don't follow these steps just yet. Read this chapter, and then you'll have a chance to try it out yourself in the [Unit 2 Assignment](09_assessment.md).
 
 "Forking" adds a copy of someone else's GitHub repo to *your* GitHub account.
 
-The forked repo is not perfectly identical, but it includes all the same source files, issues, and commit history.
+The forked repo is not perfectly identical, but it includes all of the same source files, issues, and commit history.
 
-By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will (everyone does), Node.js won't be affected.
+By forking Joyent's repo, you can have a full working copy of the Node.js source code to play with. When you break something, which you will (everyone does), Node.js won't be affected.
 
-
-
-
-### 2. Cloning
+### 2) Cloning
 
 Next, you'll want to be able to edit the code.
 
 To make a local copy of a fork, you'll need to open up the terminal and use a Git command.
 
-You need to navigate to the place where you'd like to store the repo, and then type:
+You should navigate to the place where you'd like to store the repo and then type:
 
 ```
 git clone https://url/to/clone
@@ -114,41 +107,39 @@ By issuing the clone command, you're asking GitHub via the command line for a co
 
 > **HINT** If you're following along in Git Bash in Windows, the commands to copy and paste are a little different than the default Windows copy/paste commands. The command to copy is `control + insert`, and the command to paste is `shift + insert`.
 
-
-### 3 & 4. Editing and Committing
+### 3 & 4) Editing and Committing
 
 We covered this in the previous section. As you complete the exercises in the rest of Fundamentals, you'll need to repeat this step frequently.
 
-### 5. Pushing
+### 5) Pushing
 
-Once you've committed the changes you've made to the code, your local repo will be different from your remote repo. To update your remote repo on GitHub, you have to **push** those changes using the Git command `git push origin master`.
+Once you've committed the changes you've made to the code, your local repo will be different than your remote repo. To update your remote repo on GitHub, you have to **push** those changes using the Git command `git push origin master`.
 
-Don't worry about the `origin` and `master` part just yet.
+Don't worry about the `origin` and `master` components just yet.
 
 If you're curious, here's a brief overview:
-* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes if you want, but we're only going to work with one in Fundamentals.
-* `master` refers to the **branch** on your remote repo where you are currently adding your changes. Again, for now, we're just going to be working on the `master` branch.
+* `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes if you want, but we'll only be working with one in Fundamentals.
+* `master` refers to the **branch** of your remote repo where you're currently adding changes. Again, for now, we'll only be working on the `master` branch.
 
-
-### 6. Submitting a Pull Request
+### 6) Submitting a Pull Request
 
 Once your changes are pushed to your remote repository on GitHub, you can notify the original repo owner of your changes by submitting a **pull request**.
 
-A pull request is effectively saying "Hello, maintainer of project X, I made some changes here in my forked copy, and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
+A pull request is effectively saying "Hello, maintainer of project X, I made some changes here in my forked copy, and I think they're pretty good. You should add them to your repository." Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
 
-We're going to cover how to submit a pull request in a later chapter.
+We'll cover how to submit a pull request in a later chapter.
 
 
 ## Confused?
 
 If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first. When you don't understand something, we encourage you to follow this three-step process:
 
-1. Search online for an answer via Google or [Stack Overflow](http://stackoverflow.com).
-2. Ask classmates if they've solved a similar problem via [Slack](https://ga-students.slack.com/).
-3. Go to an instructor for help (instructors are also on Slack).
+1) Search online for an answer via Google or [Stack Overflow](http://stackoverflow.com).
+2) Ask classmates if they've solved a similar problem via [Slack](https://ga-students.slack.com/).
+3) Seek out help from an instructor (they are also on Slack).
 
-Trust us – you *will* get to the point where cloning and pushing are like breathing and sleeping.
+Trust us — you *will* get to the point where cloning and pushing are like breathing and sleeping.
 
 ---
 
-[Here's another exercise for you](07_exercise.md) - give it a shot!
+[Here's another exercise for you](07_exercise.md) — give it a shot!
