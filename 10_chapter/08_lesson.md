@@ -35,7 +35,7 @@ The difference between HTML and the DOM can often be a little hard to grasp for 
 
 The browser retrieves this document and creates a model of the page in memory. Most modern browsers come with tools that developers can use to look at the DOM's structure.
 
-In Chrome, you can go to *View* > *Developer* > *Developer Tools* and click on the *Elements* panel to view the DOM tree.
+In Chrome, you can go to `View` > `Developer` > `Developer Tools` and click on the "Elements" panel to view the DOM tree.
 
 ![](/assets/chapter5/developer.png)
 
@@ -43,7 +43,7 @@ In Chrome, you can go to *View* > *Developer* > *Developer Tools* and click on t
 
 You might notice that, at this point, the DOM closely resembles our original HTML document. However, this is a *living* model of the page, made up of node objects that can be manipulated with JavaScript.
 
-Maybe we want to use JavaScript to add a fourth list item to the page – "Feed the Cat." Then, perhaps we want to change the background-color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to "Return library books - DONE!"
+Maybe we want to use JavaScript to add a fourth list item to the page — "Feed the Cat." Then, perhaps we want to change the background color of the first list item to yellow using JavaScript. Lastly, we may want to change the text content of the third list item to "Return library books — DONE!"
 
 Now the DOM looks pretty different from our original HTML file.
 
@@ -51,11 +51,11 @@ Now the DOM looks pretty different from our original HTML file.
 
 JavaScript comes with some "built-in" functions that allow us to access and update these nodes. We can call on these functions using dot notation. These functions are no different than the functions we just covered, but they are more commonly known as **methods**.
 
-Let's take a look at some of the methods we have available to us!
+Let's take a look at some of the methods available to us!
 
 ##Accessing Elements
 
-First things first - before we can work with an element, we first need to find, or *select*, the DOM node that represents it.
+First things first — before we can work with an element, we first need to find, or *select*, the DOM node that represents it.
 
 In order to find an element, we need to search through the document. The syntax for searching for an element looks something like this:
 
@@ -67,7 +67,7 @@ document.getElementById('main')
 
 * `.` ties the method on the right-hand side (`getElementById`) with the object on the left-hand side (`document`).
 
-* `getElementById()` is the method we want to use to find an element. We'll take a look at the methods available to us shortly. This method in particular lets us locate an element by the value of its `id` attribute.
+* `getElementById()` is the method we want to use to find an element. We'll take a look at the other methods available to us shortly. This method in particular lets us locate an element by the value of its `id` attribute.
 
 * `'main'`: Just like with the functions we've learned about earlier in this unit, we can pass in parameters for these methods to use. In this case, we want to find an element with an `id` of `main`.
 
@@ -116,7 +116,7 @@ This method allows us to use our CSS selector syntax to find an element. If ther
 document.querySelector('.special')
 ```
 
-This will return the first element on the page with a `class` of `special`. You can use any of your CSS-style selectors as a parameter.
+This will return the first element on the page with a class of `special`. You can use any of your CSS style selectors as a parameter.
 
 Other examples:
 
@@ -156,7 +156,7 @@ This method will select all elements with a given class attribute.
 ```js
 document.getElementsByClassName('special')
 ```
-This method will return any elements with the class `special`. In the above example, it will return a NodeList containing the second and third list items, as they both have the class `special`.
+This method will return any elements with the class `special`. In the example above, it will return a NodeList containing the second and third list items, as they both have the class `special`.
 
 ---
 
@@ -168,7 +168,7 @@ This method will locate all elements that match a given tag name.
 ```js
 document.getElementsByTagName('li')
 ```
-Here, this query returns all `<li>` elements. The NodeList will contain all seven `<li>`.
+Here, this query returns all `li` elements. The NodeList will contain all seven `li`.
 
 ___
 
@@ -191,7 +191,7 @@ Any time there is even the *potential* for a method to return more than one elem
 
 These NodeLists are **collections** that are numbered, similar to the arrays we'll be looking at in Unit 11.
 
-When we get this list, we can select a single item to work with using array syntax – a set of square brackets.
+When we get this list, we can select a single item to work with using array syntax — a set of square brackets (`[]`).
 
 For example, above we saw that `document.getElementsByTagName('li')` returned seven list items. The NodeList that was returned would look like this:
 
@@ -205,7 +205,7 @@ For example, above we saw that `document.getElementsByTagName('li')` returned se
 | 5   | `<li>Saturday</li>`  |
 | 6      | `<li>Sunday</li>`  |
 
-Note how each node has an index number associated with it. These indexes are *zero based*, meaning the first node has an index of 0, the second node an index of 1, etc.
+Note how each node has an index number associated with it. These indexes are *zero based*, meaning the first node has an index of 0, the second node has an index of 1, etc.
 
 
 To locate the fourth item in that NodeList, `<li>Thursday</li>`, we could use the following syntax:
@@ -213,9 +213,9 @@ To locate the fourth item in that NodeList, `<li>Thursday</li>`, we could use th
 ```js
 document.getElementsByTagName('li')[3].className = 'special'
 ```
-Directly after the `getElementsByTagName('li')`, we have the index number of the item we want to locate in square brackets, `[3]`, which would locate the item at index 3.
+Directly after the `getElementsByTagName('li')`, we have the index number of the item we want to locate in square brackets, `[3]`.
 
-This would find the fourth list item and change its class attribute to `special` (we'll take a look at the className method shortly).
+This would find the fourth list item and change its class attribute to `special` (We'll take a look at the `className` method shortly).
 
 We could also use a loop to iterate through the elements in the NodeList and do something with each.
 
@@ -256,11 +256,11 @@ In an HTML document, elements can be nested inside of other elements.
 </html>
 ```
 
-Here, we have three `<li>` elements enclosed within opening `<ul>` and closing `</ul>` tags.
+Here, we have three `li` elements enclosed within opening and closing `ul` tags.
 
 In programming, relationships between the document and its elements are often described in terms similar to those one would use to describe a family tree.
 
-In our example, we could describe the relationship between the `<ul>` element and the three `<li>` elements as that of a *parent* and *children*, as the `<li>` elements are enclosed within the `<ul>`.
+In our example, we could describe the relationship between the `ul` element and the three `li` elements as that of a *parent* and *children*, as the `li` elements are enclosed within the `ul`.
 
 We can use properties of an element to find and access related elements. Let's take a look at some examples below.
 
@@ -273,7 +273,7 @@ document.getElementsByTagName('li')[0].parentNode
  //=> <ul class="some-class-name">...</ul>
 ```
 
-This syntax will return the parent of the first `<li>` element, which, in this case, is the `<ul>` element, as the `<ul>` element wraps all the `<li>` elements.
+This syntax will return the parent of the first `li` element, which, in this case, is the `ul` element, as the `ul` element wraps all the `li` elements.
 
 Other properties available to us include:
 * `previousSibling`, which will find the previous sibling of a selected element.
@@ -319,12 +319,12 @@ There are many properties and methods that allow us to read from or update the c
 
 We can use the `innerHTML` property to get and set content for an element.
 
-For example, if we want to change the HTML content for the first `<li>`, we could execute the following:
+For example, if we want to change the HTML content for the first `li`, we could execute the following:
 
 ```js
 document.getElementsByTagName('li')[0].innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.';
 ```
-This would find the first `<li>` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.`. The result will look like this:
+This would find the first `li` and change the HTML content to `Email <a href="mom@gmail.com">Mom</a>.`. The result will look like this:
 
 ![](/assets/elkwebdesign/innerHTML.png)
 
@@ -342,10 +342,10 @@ For example:
 document.getElementById('important').textContent = 'Done!'
 ```
 
-This code would change the text content of the `<li>` with the id `important` to 'Done!'.
+This code would change the text content of the `li` with the ID `important` to `Done!`.
 
 ![](/assets/chapter5/thingstodo5.png)
 
 ---
 
-[Now, on to the next lesson.](10_lesson.md)
+[On to the next lesson!](10_lesson.md)

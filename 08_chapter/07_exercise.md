@@ -6,15 +6,14 @@
 
 Check out the sample code in the JS Bin session below. If you don't see the JS Bin, please refresh the page.
 
-
 <a class="jsbin-embed" href="https://jsbin.com/qeruxex/embed?js,console&height600">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 As in the previous exercise, your job is to print the result of an expression. However, this time your expressions will need to depend on the variable `x`.
 
-1) Write an expression that evaluates to 10 more than `x`;<br>
-   if `x` is 10, the expression should evaluate to 20;<br>
-   if `x` is 50, the expression should evaluate to 60.<br>
-   Test your answer by replacing the `/* Your Expression */` comment in the JavaScript tab with `x = someValue;`, clicking the `run` button, writing your expression in the console tab, and typing `enter` or `return`.
+1. Write an expression that evaluates to 10 more than `x`;<br>
+if `x` is 10, the expression should evaluate to 20;<br>
+if `x` is 50, the expression should evaluate to 60.<br>
+Test your answer by replacing the `/* Your Expression */` comment in the JavaScript tab with `x = someValue;`, clicking the "Run" button, writing your expression in the Console tab, and typing `enter` or `return`.
 
 2) Now, replace that first expression with an expression that evaluates to triple the value of `x` plus 5;<br>
    if `x` is 5, the expression should evaluate to 20;<br>

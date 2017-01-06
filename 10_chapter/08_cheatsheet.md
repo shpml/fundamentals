@@ -43,8 +43,8 @@ var someFunc = function(x) {
 ### Best Practices for Writing Functions
 * In addition to functionality, making your code readable is one of your most critical considerations.
 * Here are some guidelines to keep in mind:
-  * Keep you functions small - don't try to do too much in one step.
-  * Use good naming for functions and variables. Call things what they are!
+  * Keep your functions small — don't try to do too much in one step.
+  * Use good names for functions and variables. Call things what they are!
   * Avoid repetitive code where possible.
   * Generally, don't hard-code specific values into your program if you can help it.
 
@@ -70,10 +70,10 @@ document.getElementById('main')
 |  Method      |  Description  |
 |:-------:    |:-------:|
 | `getElementById()`  | Select an element by the value of its `id` attribute. |
-| `querySelector()` | Select the first element that matches the provided selector using CSS-style syntax.  |
+| `querySelector()` | Select the first element that matches the provided selector using CSS style syntax.  |
 | `document.getElementsByClassName()`   | Select all elements that have a given class name.    |
 | `document.getElementsByTagName()`     | Select all elements that have a given tag name.   |
-| `document.querySelectorAll()`   | Select all elements that match the provided selector using CSS-style syntax.   |
+| `document.querySelectorAll()`   | Select all elements that match the provided selector using CSS style syntax.   |
 
 ###Traversing the DOM
 
@@ -109,7 +109,7 @@ document.querySelector('li').parentNode
 
 ```js
 var firstListItem = document.querySelector('li').innerHTML;
-// Remember, `querySelector()` selects the first element that matches the provided selector.
+// Remember, querySelector() selects the first element that matches the provided selector.
 ```
 
 * The syntax for updating content looks like this:
@@ -122,8 +122,8 @@ document.querySelector('li').innerHTML = 'Email <a href="mom@gmail.com">Mom</a>.
 To add new elements to a web page, we'll need to use a three-step process:
 
 1) We will use the `createElement()` method to create a new element that can then be added to the page. When this node is created, it will be *empty*. This element will be stored in a variable.
-2) We will then add content to the element using the `innerHTML` or `textContent` properties we looked at in the last unit.
-3) Now that our element has been created, we can add it as a child of an element using the `appendChild()` method. This will add an element as the last child of the parent element.
+2) We will then add content to the element using the `innerHTML` or `textContent` properties we looked at in this unit.
+3) Now that our element has been created, we can add it as a child of an element using the `appendChild()` method. This will add the element as the last child of the parent element.
 
 ```js
 var newListItem = document.createElement('li');

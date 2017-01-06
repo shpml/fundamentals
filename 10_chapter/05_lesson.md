@@ -4,11 +4,11 @@
 
 #Functional JavaScript
 
-Functions can also be used as procedures – miniature, self-contained programs that are executed one line at a time whenever the function is called.
+Functions can also be used as procedures — miniature, self-contained programs that are executed one line at a time whenever the function is called.
 
 When you have a set of tasks that need to be repeated, it can often be helpful to turn that set into a function and call it each time the procedure should run.
 
-For instance, let's consider a French toast recipe. Every time a soaked slice of bread is ready to be cooked, we need to:
+For instance, let's consider our French toast recipe. Every time a soaked slice of bread is ready to be cooked, we need to:
 
 
 > Transfer the slices to a frying pan, and cook on a medium-low heat until brown on the bottom.
@@ -30,7 +30,7 @@ In Tic-Tac-Toe, there are nine possible values (one for every cell on the board)
 | g | h | i |
 ```
 
-Each of these values will start as `null`, until a user assigns them a new value, either 'o' or 'x'.
+Each of these values will start as `null`, until a user assigns them a new value, either `o` or `x`.
 
 To play around with this invisible Tic-Tac-Toe board, we've provided some code:
 
@@ -51,7 +51,7 @@ var cellValue = function(key) {
 }
 ```
 
-To assign a value (`x`, `o`) to any cell on the board, edit the return value for the corresponding case. For example, if you want the board to read:
+To assign a value (`x`, `o`) to any cell on the board, edit the `return` value for the corresponding case. For example, if you want the board to read:
 
 ```
 | null | null |   x  |
@@ -59,7 +59,7 @@ To assign a value (`x`, `o`) to any cell on the board, edit the return value for
 | null |   o  |   x  |
 ```
 
-You would edit the switch statement like so:
+You would edit the `switch` statement like so:
 
 ```javascript
 var cellValue = function(key) {
@@ -80,9 +80,9 @@ var cellValue = function(key) {
 
 ###Who is the Winner?
 
-Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
+Now, let's write a function that determines the winner based on the values of `a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, and `i`.
 
-We'll call it `getWinner`, and it will give us back either 'x' (if X has won), 'o' (if O has won), or `null` (if neither side has won).
+We'll call it `getWinner`, and it will give us back either `x` (if X has won), `o` (if O has won), or `null` (if neither side has won).
 
 ```javascript
 var getWinner = function() {
@@ -91,7 +91,7 @@ var getWinner = function() {
 
 So, where do we go from here?
 
-One way to determine the winner might be to check whether X has won and then to check whether O has won. And what if two functions existed that would determine this for us?
+One way to determine the winner might be to check whether or not X has won and then check whether or not O has won. And what if two functions existed that would determine this for us?
 
 We could call them `winnerIsX` and `winnerIsO`. `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
 
@@ -109,14 +109,15 @@ We could call them `winnerIsX` and `winnerIsO`. `winnerIsX` could give us back `
 
 OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems. So, how do we determine whether X or O won?
 
-###Determining if `x` has won
+###Determining if `x` has Won
 
 Let's first focus on `winnerIsX`.
 
 In Tic-Tac-Toe, there are three possible ways X can win:
-1. All cells in a row contain an `x`.
-2. All cells in a column contain an `x`.
-3. All cells in a diagonal contain an `x`.
+
+1) All cells in a row contain an `x`.
+2) All cells in a column contain an `x`.
+3) All cells in a diagonal contain an `x`.
 
 Wouldn't it be great if we had functions to determine these, too? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`.
 
@@ -128,11 +129,11 @@ var winnerIsX = function() {
 }
 ```
 
-You can't execute anything yet, but stick with us – we only have a few more tiny problems to solve!
+You can't execute anything yet, but stick with us — we only have a few more tiny problems to solve!
 
 ####Winning by Rows
 
-Let's look at `winsRowX` – what does it actually mean to win a row?
+Let's look at `winsRowX` — what does it actually mean to win a row?
 
 According to our cell key from earlier, there are three cells in a row; the first row contains `a`,`b`, and `c`; the second row contains `d`,`e`, and `f`; the third row contains `g`,`h`, and `i`.
 
@@ -201,11 +202,11 @@ var allThreeX = function(cellOne, cellTwo, cellThree) {
 
 Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
-###Determining if `o` has won
+###Determining if `o` has Won
 
 Now, we can go ahead and start writing a function called `allThreeO` to do for O what we've done for X. But that seems pretty duplicative.
 
-There's a principle we'll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code. "DRY" stands for "Don't Repeat Yourself". In the case of our Tic-Tac-Toe game, we're considering writing two functions that are the exact same, except for that hard-coded value of 'x' vs 'o'. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
+There's a principle we'll emphasize in this course; one that is so universally accepted that it has a name. This principle states that: If you find yourself writing almost the exact same code in two places, you should take a moment to figure out how you can reorganize. We often refer to this concept as writing "DRY" code. "DRY" stands for "Don't Repeat Yourself." In the case of our Tic-Tac-Toe game, we're considering writing two functions that are the exact same, except for our hard-coded values of `x` and `o`. Wouldn't it be better if we could make the function `allThreeX` more general so that it worked for both players?
 
 Let's see what we can do:
 

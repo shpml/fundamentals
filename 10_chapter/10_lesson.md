@@ -12,8 +12,8 @@ Now that you've practiced accessing and updating the DOM, let's take a look at s
 To add new elements to a web page, we'll need to use a three-step process:
 
 1) We will use the `createElement()` method to create a new element that can then be added to the page. When this node is created, it will be *empty*. This element will be stored in a variable.
-2) We will then add content to the element using the `innerHTML` or `textContent` properties we learned in the last unit.
-3) Now that our element has been created, we can add it as a child of an element using the `appendChild()` method. This will add an element as the last child of the parent element.
+2) We will then add content to the element using the `innerHTML` or `textContent` properties we learned in the last lesson.
+3) Now that our element has been created, we can add it as a child of an element using the `appendChild()` method. This will add the element as the last child of the parent element.
 
 To add a fourth item to our list, we can execute the following code:
 
@@ -55,7 +55,7 @@ document.getElementById('important').className = 'highlight';
 
 ```
 
-The `.highlight` class will then be added to the element with the id `important`, along with the background-color associated with the class.
+The `highlight` class will then be added to the element with the ID `important`, along with the background color associated with the class.
 
 ![](/assets/chapter5/list2.png)
 
@@ -70,7 +70,7 @@ document.getElementsByTagName('a')[0].setAttribute('href', 'http://newurl.com');
 
 ```
 
-Or, if we wanted to remove the id from an element, we could execute this code:
+Or, if we wanted to remove the `id` from an element, we could execute this code:
 
 ```js
 document.getElementsByTagName('a')[0].removeAttribute('id');
@@ -80,7 +80,7 @@ document.getElementsByTagName('a')[0].removeAttribute('id');
 
 #Events
 
-In order to create interactive and responsive sites, we'll often want to update the DOM based on a user's actions. For example, when a user clicks on the menu icon, a sidebar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of the field. These actions are called **events**.
+In order to create interactive and responsive sites, we'll often want to update the DOM based on a user's actions. For example, when a user clicks on the menu icon, a side bar menu should slide out from the side of the page. Or, if a user has typed an incorrect format into a form field, the field should be outlined in red as he or she tabs out of that field. These actions are called **events**.
 
 We can set up **event handlers** in our scripts that will listen, or wait, for an event to occur and then trigger a function.
 
@@ -89,13 +89,13 @@ The syntax for setting up an event handler looks like this:
 ```js
   element.addEventListener('nameOfEvent', functionToRun);
 ```
-* `element` refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button element.
+* `element` refers to the DOM node to which we want to tie the event. For example, if we want to trigger an event when a user clicks on a button, the element would be that button's element.
 
 * `.` ties the method on the right-hand side (`addEventListener`) with the element on the left-hand side.
 
 * `addEventListener()` is the method we'll use to tie an event listener to an element.
 
-* `'nameOfEvent'` is name of the event we want to listen for. For example, we may want to wait until a user triggers a 'click' event on an element.
+* `'nameOfEvent'` is name of the event we want to listen for. For example, we may want to wait until a user triggers a `click` event on an element.
 
 * `'functionToRun'` is name of the function we want to run when the event occurs.
 

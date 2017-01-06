@@ -16,9 +16,9 @@ We've had the opportunity to learn the basics of JavaScript, including data type
 
 But first, a little math.
 
-**Function** is a term that comes out of mathematics. You may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
+**Function** is a term that comes out of mathematics. You may remember seeing it in a high school algebra class. The basic idea of a function is simple — it's a relationship between a set of inputs and a set of outputs.
 
-Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
+Consider the relationship between a variable, `x`, and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
 
 <br>
 <center><img src="../assets/chapter5/function.png"></center>
@@ -36,7 +36,7 @@ What if we were shown the output (`f(x)`) for each of the following values of `x
 
 We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input. In algebra, this relationship is written as `f(x) = 2 * x`. Familiar, right?
 
-Functions play a similar role in programming. JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
+Functions play a similar role in programming. JavaScript functions, like mathematical functions, perform transformations. They take input values and return an output value.
 
 # The Document Object Model
 
@@ -64,13 +64,13 @@ Let's take a look at the following HTML page:
 
 The browser pulls in this HTML document, parses it, and creates an object model of the page in memory. This model is called the **Document Object Model (DOM)**.
 
-The DOM specifies that the browser should use a **DOM Tree** to structure this model:
+The DOM specifies that the browser should use a **DOM Tree** to structure this code:
 
 ![](/assets/chapter5/dom.png)
 
-Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the model is updated, those changes are reflected on screen.
+Each element in the HTML document is represented by a **DOM node**. You can think of a node as a *live object* that you can access and change using JavaScript. When the DOM is updated, those changes are reflected on screen.
 
-We can get and set attributes for these nodes. Perhaps we want to add a class or update styling to change the background color for an element. We can also access and change the content – maybe we want to change the text in the third `li` to read "Return library books - DONE!" We can even add new nodes to or remove nodes from the page.
+We can get and set attributes for these nodes. Perhaps, for example, we want to add a class or update styling to change the background color for an element. We can also access and change their content — maybe we want to change the text in the third `li` to read "Return library books — DONE!" We can even add new nodes to or remove nodes from the page.
 
 Once we get some functions under our belt we'll take a look at how we can use some of JavaScript's "built-in" functions to interact with the DOM and add more complex interactions to our sites.
 
