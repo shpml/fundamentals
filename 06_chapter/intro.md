@@ -14,14 +14,14 @@ Most computer users move their mouses, click on icons, and drag and drop files f
 
 When you're using the computer this way, you're using what's called a Graphical User Interface, or GUI. In a GUI (pronounced "gooey"), you communicate with your computer using a combination of text, images, and gestures.
 
-But you are on a journey toward transcending ordinary computer users. You're becoming a developer, and developers like to interact with computers in a different way – through the command line interface (CLI).
+But you are on a journey toward transcending ordinary computer users. You're becoming a developer, and developers like to interact with computers in a different way — through the command line interface (CLI).
 
 Unlike the GUI, the command line is a *text-based interface*, where you communicate with your computer using text alone.
 
 Until the video display was introduced in the mid-1960s, the command line was the only way to interact with a computer. Today, the CLI is still preferred by programmers because it is explicit, simple, and (most importantly)
 fast. In fact, once you become comfortable using the CLI, you'll be amazed at how much more productive you become!
 
-We can perform actions using the command line by **entering commands**, and there is a command to perform virtually any action you can imagine! There are commands to open an application, create new files, copy files from one place to another, and more.
+We can perform actions using the command line by **entering commands**, and there is a command to perform virtually any action you can imagine. There are commands to open an application, create new files, copy files from one place to another, and more.
 
 We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as "shells," and we'll learn to use the default shell provided on Mac OS X and Ubuntu Linux, **Bash**.
 
@@ -91,7 +91,7 @@ When you open Terminal, you will see a window like this:
 
 > **NOTE** Practice using Spotlight to open files and applications on your computer. It'll make you more efficient as you navigate back and forth often between Terminal, your text editor, and your browser.
 
-Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **Return**.
+Open up a terminal with Bash. To do this on a Mac, press **⌘ + Space** to bring up Spotlight, then type in "terminal" and press **return**.
 
 **Windows users:**
 When you open Git Bash, you will see a window like this:
@@ -102,11 +102,11 @@ Double click on the Git Bash icon to open a new session.
 
 ---
 
-The Terminal window is where you'll tell the computer what to do, and where the computer will display its reply. Let's break this window down:
+The terminal window is where you'll tell the computer what to do, and where the computer will display its reply. Let's break this window down:
 
 - The **prompt** is the `$` that automatically shows up on the end of the first
-line. It's the command line equivalent of "standby" and indicates Terminal is
-ready to accept your **command**. We'll learn a few commands later in this lesson.
+line. It's the command line equivalent of "standby" and indicates the terminal is
+ready to accept your **command**. We'll learn a few commands later in this unit.
 
 - The **cursor** follows the prompt, and the text you type will appear here — just
 like in every other setting where you've seen a cursor.
@@ -117,4 +117,4 @@ above, this user is named *Sarah*.
 
 ---
 
-[On to the next lesson.](02_lesson.md)
+[On to the next lesson!](02_lesson.md)

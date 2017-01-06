@@ -10,7 +10,7 @@ We now know how to find our way around this mysterious world called the command 
 $ cd ~
 ```
 
-> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your Downloads, Pictures, and Documents folders. Each user on any given computer will have their own home folder.
+> **HINT** `~` (tilde) is a shortcut to refer to your home folder. This is the folder on your computer containing your `Downloads`, `Pictures`, and `Documents` folders. Each user on any given computer will have their own home folder.
 
 The command above, regardless of where we are currently located, will take us to our
 home folder.
@@ -21,7 +21,7 @@ Great! Now that we're in our home folder, let's create a file.
 $ touch joke.txt
 ```
 
-The `touch` command creates files for us - in this case, we made a file called `joke.txt`. If we try to `touch` a file that already exists, the file will not be overwritten.
+The `touch` command creates files for us — in this case, we made a file called `joke.txt`. If we try to `touch` a file that already exists, the file will not be overwritten.
 
 Let's open `joke.txt` in our default text editor so we can write a joke in it. Can we do that from our command line? Of course!
 
@@ -109,14 +109,14 @@ $ cp joke.txt joke2.txt
 
 > The `cp` command is used to copy specified files or folders to a specified location.
 
-After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. In this case, notice how, the second argument was a file name, not a folder
+After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. In this case, notice how the second argument was a file name, not a folder
 name. It turns out that the `mv` and `cp` commands are quite smart. When moving or copying
 a file, if the second argument is a **folder**, the specified file is moved or
-copied to that folder. If the second argument is a **filename**, the file in the first argument
+copied to that folder. If the second argument is a **file**, the file in the first argument
 is moved or copied to a file with the file name specified in the second argument. Hence, when we copied
 our joke, our file `joke.txt` was copied to another file called `joke2.txt`.
 
-Perhaps we should make another folder inside `funny_things` called `jokes`, and
+Perhaps we should make another folder inside `funny_things` called `jokes` and
 put our joke in there. After all, we could have funny jokes, funny pictures, and much
 more. In order to achieve this, we're going to follow a series of long-winded
 steps so we may familiarize ourselves with some more useful commands.
@@ -145,7 +145,7 @@ $ mv joke.txt jokes/joke.txt
 If you are trying to copy or remove folders and not files, we need to add "an
 option" to our command. Options are extra settings that we want to apply to our
 commands. Options given to commands are always of the format `--word` or `-letter`.
-As an example, let's try to copy our jokes folder.
+As an example, let's try to copy our `jokes` folder.
 
 ```
 $ cp -r jokes copy_of_jokes
@@ -168,4 +168,4 @@ Note that the `mv` command does not need an `-r` option to move folders.
 
 ---
 
-[Here's another exercise for you](09_exercise.md) - give it a shot.
+[Here's another exercise for you](09_exercise.md) — give it a shot!

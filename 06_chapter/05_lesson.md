@@ -6,7 +6,7 @@
 
 We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer! There are commands to open an application, create new files, copy files from one place to another, and more.
 
-Let's start typing commands together. In your open Terminal window, type `hello?` and press Enter:
+Let's start typing commands together. In your open terminal window, type `hello?` and press "enter:"
 
 ```
 $ hello?
@@ -33,7 +33,7 @@ Again, we get a similar response:
 -bash: Where: command not found
 ```
 
-Great. We've established that our command line doesn't understand plain Englisha and that we'll have to use special words to make up our commands. Let's try this one to start:
+Great. We've established that our command line doesn't understand plain English, and that we'll have to use special words while writing our commands. Let's try this one to start:
 
 ```
 $ pwd
@@ -55,12 +55,12 @@ If you're following along in **Git Bash on Windows**, the message will look simi
 
 So, what did we just do?
 
-The command `pwd` stands for "Print Working Directory".
+The command `pwd` stands for "Print Working Directory."
 
-We use this command when we want the command line to tell us which folder (or directory) of our computer we'e currently in.
+We use this command when we want the command line to tell us which folder (or directory) of our computer we're currently in.
 
 Just like the Finder on a Mac, your command line interface (CLI) places you in a particular folder
-on your computer. `pwd` tells you where you're currently located in your file system. Usually, when you open the Terminal application, you start off in your "home folder," which shares the name of your username on your computer.
+on your computer. `pwd` tells you where you're currently located in your file system. Usually, when you open a terminal application, you start off in your "home folder," which shares the name of your username on your computer.
 
 If we were using Finder, we'd be able to see the files and folders that are present in this folder. In a CLI, however, if we want to see the files and folders in our current location, we need to ask for that using another command.
 
@@ -80,21 +80,21 @@ Music              Pictures         Public
 
 (Note: Again, on your own machine, because you may have different files and folders, you may see additional items when you enter `ls`!)
 
-If you're following along in **Git Bash on Windows**, it's all right if the files and folders listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
+If you're following along in **Git Bash on Windows**, it's alright if the files and folders listed out look a little different, but you should still see similar folders such as `Desktop`, `Documents`, and `Downloads`.
 
 The `ls` command, which loosely stands for "list," lists the contents of a folder.
 
-It looks like there are some folders in here. Let's find out what's inside our `Documents` folder. In order to do so, we'll first navigate to the Documents folder.
+It looks like there are some folders in here! Let's find out what's inside our `Documents` folder. In order to do so, we'll first navigate to that folder.
 
 ```
 $ cd Documents
 ```
 
-We have now navigated to the Documents folder.
+We have now navigated to the `Documents` folder.
 
 The `cd` command, which stands for "change directory," is used to navigate to a particular folder on your computer.
 
-This is equivalent to double clicking the Documents folder in Finder to "go
+This is equivalent to double clicking the `Documents` folder in Finder to "go
 inside." We can check that we're in the right place by using `pwd`.
 
 ```
@@ -125,15 +125,15 @@ $ cd ..
 
 > `..` (two periods, or "dot-dot") is how we say "parent directory" to our command line.
 
-Many commands consist of three parts: the command, followed by flags (aka options), and finally, arguments.
+Many commands consist of three parts: the command, followed by flags (a.k.a., options), and finally, arguments.
 
 ```
 $ command -flag -otheroption
 ```
 
-As their name implies, flags set options to tell the command how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. Usually, one dash is used for a short, one-letter abbreviation, while two dashes are used for a long name for the option.
+As their name implies, flags set options to tell the command line how to do what it's about to do. There may be zero or more options. Options usually start with one or two dashes. For the most part, one dash is used for a short, one-letter abbreviation, while two dashes are used for a long name for the option.
 
-[More information about command line options](http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149)
+[Here's more information about command line options](http://catb.org/esr/writings/taoup/html/ch10s05.html#id2948149).
 
 For example:
 
@@ -147,7 +147,7 @@ Will list *all* files in a directory, including hidden files (files whose names 
 $ cd Downloads
 ```
 
-Calls the command `cd` to change directories. We provide it with the option of where to navigate to.
+Calls the command `cd` to change directories. We provide it with the option of where to navigate.
 
 
 

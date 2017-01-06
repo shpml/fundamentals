@@ -9,7 +9,7 @@
 * *Synonyms*: command line interface (CLI) console
 
 ####Terminal
-* An OSX application that provides text-based access to a computer's operating system.
+* An OS X application that provides text-based access to a computer's operating system.
 * Any device or application used for data entry and display in a computer system.
 * *Synonyms*: client, computer terminal, terminal emulator
 
@@ -18,11 +18,11 @@
 * *Synonyms*: NTFS (Windows' File System), HFS+ (Apple's File System), file allocation table, GFS (Global File System)
 
 ####Directory
-* An organizational unit, or container, used to organize computer files into a hierarchical structure.
+* A unit, or container, used to organize computer files into a hierarchical structure.
 * *Synonyms*: folder, catalog, drawer
 
 ####Path
-* A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each subdirectory is followed by a forward slash.
+* A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each sub-directory is followed by a forward slash.
 * An *absolute*, or full, path begins with the root directory and specifies every directory above the terminating file or directory name.
 * A *relative* path does not include the root or parent directory names and refers to a file or directory directly below the current working directory.
 * *Synonyms*: path name
@@ -36,7 +36,7 @@
 * *Synonyms*: flag
 
 ####Argument
-* Follows the "command" and "options" (if any) in a command line and is used to explain what we want the command to act on.
+* Follows the "command" and "options" (if any) in a command line and is used to explain what we want the command to act upon.
 * The number of arguments used generally depends on the command; some don't need arguments, some require exactly one argument, some require many arguments, and some are flexible in the number they can take.
 
 Command | Description
@@ -50,7 +50,7 @@ Command | Description
 `mv [-options] [path/to/file] [NEW_FILE_NAME]` | Renames a file or directory
 
 
-On Mac, your Terminal comes with a manual. To access more (*a lot more*) information about any command, type <code>man</code>, followed by the command name, and press <kbd>Enter</kbd>:
+On Mac, your terminal comes with a manual. To access more (*a lot more*) information about any command, type <code>man</code>, followed by the command name, and press <kbd>Enter</kbd>:
 
 ![manual](../assets/chapter1/terminal_man.gif)
 

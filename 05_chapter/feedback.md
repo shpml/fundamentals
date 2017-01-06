@@ -8,4 +8,4 @@
 
 ---
 
-Now [let's move onto learning about more developer tools!](../06_chapter/intro.md)
+Now, [let's move on to learn about more developer tools!](../06_chapter/intro.md)

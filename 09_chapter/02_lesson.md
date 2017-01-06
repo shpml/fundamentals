@@ -4,11 +4,11 @@
 
 # Conditionals
 
-## `if..else` Statements
+## `if...else` Statements
 
-Conditional statements are the expressions that allow us to test whether or not to perform some action.
+Conditional statements are the expressions that allow us to test whether or not to perform an action.
 
-One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is 'truthy', will run whatever code you specify. Here's an example of an `if` statement in action.
+One of these conditionals is an `if` statement. An `if` statement will take in a condition and, if that condition is "truthy," run whatever code you specify. Here's an example of an `if` statement in action:
 
 ```javascript
 if (x > 10) {
@@ -17,23 +17,23 @@ if (x > 10) {
 }
 ```
 
-The condition is what's inside the parentheses; if that condition is 'truthy', the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
+The condition is what's inside the parentheses. If that condition is "truthy," the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
-Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
+Let's take a step back for a minute and consider something that's closer to our own experience: a flow chart.
 
 ![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
 
 *<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
 <br>
 
-A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
+A flow chart is a visual diagram that tells us how to behave, depending on a certain set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
 
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 <br>
 
-As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is 'truthy', they would either enter the block of code or skip it over entirely.
+As you can see, people progressing through this diagram would need to make a decision. Depending on whether or not our condition is "truthy," they would either enter the block of code or skip over it entirely.
 
-`if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
+`if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test. However, *this second condition will only be tested if the first condition fails*.
 
 ```javascript
 if (x > 10) {
@@ -46,7 +46,7 @@ if (x > 10) {
 <aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
 <br>
 
-<p style="clear: both;">We can add as many `else if` statements as we want - just keep tacking them on.</p>
+<p style="clear: both;">We can add as many `else if` statements as we want — we just keep tacking them on.</p>
 
 ```javascript
 if (x > 10) {
@@ -61,7 +61,7 @@ if (x > 10) {
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
 <br>
 
-However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
+However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so:
 
 ```javascript
 if (x > 10) {
@@ -98,12 +98,12 @@ if (x > 5) {
   * `x` is 4?
 * Under what circumstances will `y` be assigned a value of 100?
 
-Try copying that whole statement into JS Bin, and testing out different values for `x`. Were your answers correct?
+Try copying that whole statement into JS Bin and testing out different values for `x`. Were your answers correct?
 
 
-## Switch Statement
+## `switch` Statements
 
-As we've seen before, we can choose which condition will be executed using `if...else if...else`; however, if we have a lot of conditions, the code becomes a bit repetitive and hard to read. For example:
+As we've seen before, we can choose which condition will be executed using `if...else if...else`. If we have a long list of conditions, however, the code becomes a bit repetitive and hard to read. For example:
 
 ```javascript
 // day of the week in a number, Sunday is 0, Saturday is 6
@@ -128,9 +128,9 @@ if(dayNumber === 0){
 }
 ```
 
-What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
+What this code does fundamentally is pretty simple — it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of it is repeated — for example,
   `} else if(dayNumber === __ ) {`
-is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
+is repeated seven times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every time it appears, which is a bit of a pain.
 
 Enter the `switch` statement:
 
@@ -164,16 +164,16 @@ switch (dayNumber) {
     alert('wrong value for day');
 }
 ```
-This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
+This code works exactly the same as `if...else if...else`, but, although it's slightly longer (in terms of lines), it is significantly easier to read.
 
-In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated; if there is a `case` listed for the value that it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified - if not, the program will do nothing).
+In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (that is, if it is specified; if not, the program will do nothing).
 
-> **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end, but will instead start  executing the *next* case's code (even if `case`'s value is different from the variable'), and will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
+> **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end of the code block but will instead start executing the *next* case's code (even if `case`'s value is different from the variable's). It will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
 
-Although the `switch` statement sometimes has some advantages over `if...else if... else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
+Although the `switch` statement sometimes has some advantages over `if...else if...else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition. If not, `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
 
 ### Test Yourself
-Consider the following `switch` statement.
+Consider the following `switch` statement:
 
 ```javascript
 switch (2 * x) {
@@ -194,7 +194,7 @@ switch (2 * x) {
 }
 ```
 
-What value will `y` be assigned when `x` is ...
+What value will `y` be assigned when `x` is...
 * 1?
 * 4?
 * 0?
@@ -202,4 +202,4 @@ What value will `y` be assigned when `x` is ...
 
 ---
 
-[Let's do another exercise.](04_exercise.md)
+[Now, let's do another exercise.](04_exercise.md)

@@ -42,7 +42,6 @@ There are many unique GitHub features crammed on this page, but we'll only be st
 
 ---
 
-
 ## Our GitHub Flow
 
 There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to do so.
@@ -64,9 +63,7 @@ This workflow consists of the following steps:
 5) Pushing
 6) Submitting a pull request
 
-**Don't worry**, we're going to cover this process step by step in plenty of detail.
-
-
+**Don't worry**, we're going to cover this process step by step, in plenty of detail.
 
 ### 1) Forking
 
@@ -82,7 +79,6 @@ To create a copy of Joyent's repo, you would need to **fork** it by clicking the
 
 ![Forking GIF](../assets/chapter2/fork_node.gif)
 
-
 > **CAUTION** Don't follow these steps just yet. Read this chapter, and then you'll have a chance to try it out yourself in the [Unit 2 Assignment](09_assessment.md).
 
 "Forking" adds a copy of someone else's GitHub repo to *your* GitHub account.
@@ -90,9 +86,6 @@ To create a copy of Joyent's repo, you would need to **fork** it by clicking the
 The forked repo is not perfectly identical, but it includes all of the same source files, issues, and commit history.
 
 By forking Joyent's repo, you can have a full working copy of the Node.js source code to play with. When you break something, which you will (everyone does), Node.js won't be affected.
-
-
-
 
 ### 2) Cloning
 
@@ -114,7 +107,6 @@ By issuing the clone command, you're asking GitHub via the command line for a co
 
 > **HINT** If you're following along in Git Bash in Windows, the commands to copy and paste are a little different than the default Windows copy/paste commands. The command to copy is `control + insert`, and the command to paste is `shift + insert`.
 
-
 ### 3 & 4) Editing and Committing
 
 We covered this in the previous section. As you complete the exercises in the rest of Fundamentals, you'll need to repeat this step frequently.
@@ -128,7 +120,6 @@ Don't worry about the `origin` and `master` components just yet.
 If you're curious, here's a brief overview:
 * `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on GitHub). You can have many remotes if you want, but we'll only be working with one in Fundamentals.
 * `master` refers to the **branch** of your remote repo where you're currently adding changes. Again, for now, we'll only be working on the `master` branch.
-
 
 ### 6) Submitting a Pull Request
 
