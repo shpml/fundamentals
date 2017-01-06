@@ -11,11 +11,10 @@
 
 * Why do we need to use floats and clearfix?
 * What are the three properties of floats?
-* What does the `:after` pseudo class do?
+* What does the `:after` pseudo-class do?
 
 #### Further Reading
 
-Float and Clear
 * http://learnlayout.com/float.html
 * http://learnlayout.com/clear.html
 * http://learnlayout.com/clearfix.html
@@ -25,4 +24,4 @@ Float and Clear
 
 ---
 
-[On to the next lesson.](05_lesson.md)
+[On to the next lesson!](05_lesson.md)

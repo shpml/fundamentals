@@ -67,6 +67,7 @@ While most quizzes and assignments won't be formally graded, your WDI instructor
 
 If you have any concerns, feel free to reach out to your producer or instructor.
 
+If you have any concerns about your progress, feel free to reach out to your producer.
 
 ### Getting Help
 
