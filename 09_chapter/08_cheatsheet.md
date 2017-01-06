@@ -15,7 +15,7 @@ if (condition1) {
 } else if (condition2) {
   // Code to be executed if condition1 is false and condition2 is true
 } else if (condition3) {
-  // Code to be executed if condition1 and condition2 are false, and condition3 is true
+  // Code to be executed if condition1 and condition2 are false and condition3 is true
 } else {
   // Code to be executed if condition1, condition2, and condition3 are false
 }
@@ -47,7 +47,7 @@ switch (expression) {
 * A loop's condition is re-evaluated each time the code block finishes running.
 
 ### `for` Loops
-* A 'for' loop will generally run a fixed number of times, not indefinitely.
+* A `for` loop will generally for run a fixed number of times, not indefinitely.
 * The three parameters for a `for` loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.
 
 [Let's put this into practice!](09_assessment.md)

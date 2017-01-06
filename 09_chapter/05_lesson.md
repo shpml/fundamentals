@@ -6,29 +6,29 @@ We've covered how we can tell our programs to make decisions. Now, let's look at
 
 ## The `while` Loop
 
-To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running a block of code, it "loops" back to the beginning and starts again.
+To tell your program to repeat something, you use a tool called a **loop** — once your program has finished running a block of code, it "loops" back to the beginning and starts again.
 
 Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten.
 
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 <br>
 
-We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
+We're going to make one small (but very important) change to this — instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
 
 ![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
 <br>
 
-Now, we have a loop. So long as our condition remains true (or at least "truthy"), we will continue to run that block of code over and over again. This type of loop is called a `while` loop and can be found in nearly every programming language. Here's the general rule for writing `while` loops in JavaScript.
+Now, we have a loop. So long as our condition remains true (or at least "truthy"), we will continue to run that block of code over and over again. This type of loop is called a `while` loop and can be found in nearly every programming language. Here's the general rule for writing `while` loops in JavaScript:
 
 ```javascript
 while (someCondition) {
   // A block of code.
 }
 ```
-As you can see, it is written in almost exactly the same way as an `if` statement.
+As you can see, it is written in almost the exact same way as an `if` statement.
 
 ### Test Yourself
-* Consider the following code.
+* Consider the following code:
 
 ```javascript
 var x = 10;
@@ -37,7 +37,7 @@ while (x > 5) {
 }
 ```
 
-How many times will this loop run? What will the final value of `x` be when it finishes?
+How many times will this loop run? What will the final value of `x` be when it is finished?
 
 * Here's another loop. This loop uses `y++`, which is a more common way of writing `y += 1`.
 
@@ -65,9 +65,9 @@ while (z < 5) {
 }
 ```
 
-Q: How many times does this loop run? What's the final value of myString?
+Q: How many times does this loop run? What's the final value of `myString`?
 
-A: Each time this loop runs, the value of `z` increases by 1. Because its initial value is 0 and the condition becomes `false` the moment that z becomes 5, our loop will run exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
+A: Each time this loop runs, the value of `z` increases by 1. Because its initial value is 0 and the condition becomes `false` the moment that `z` becomes 5, our loop will run exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
 
 Confused? Here's the play-by-play:
 * `z` is set to 0 and `myString` is set to "".
@@ -89,20 +89,20 @@ Confused? Here's the play-by-play:
 * `z` is now 5, therefore <code>z < 5</code> is now **false** (because 5 is **not** less than 5). The block does not get executed again.
 * And, we're done!
 
-What's most interesting about this kind of set up is that. if we changed that condition from <code>z < 5</code> to <code>z < 10</code>, or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, controllable number of times - it will never get stuck in an infinite loop.
+What's most interesting about this kind of set up is that, if we changed that condition from <code>z < 5</code> to <code>z < 10</code> or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, controllable number of times — it will never get stuck in an infinite loop.
 
 This kind of set up is so useful, and is used so frequently, that most languages include a special kind of loop for just this kind of behavior, known as a `for` loop.
 
 ## The `for` Loop
 
-Let's make a few modifications to our while loop.
+Let's make a few modifications to our `while` loop.
 
 ![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
 
-As you can see, there are a couple of key ingredients to making our `for` loop work. We need:
-1) An "initialization," which sets up a starting situation (e.g., var x = 0).
+As you can see, there are a couple of key ingredients that make our `for` loop work. We need:
+1) An `initialization`, which sets up a starting situation (e.g., var x = 0).
 2) A condition, which gets evaluated each time we're about to execute the block (e.g., x < 10).
-3) A 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g., x++;).
+3) A `finalExpression`, which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g., x++;).
 
 The general syntax for a `for` loop is:
 
@@ -117,12 +117,12 @@ for (initialization; condition; finalExpression) {
 ```javascript
 var x = 10;
 for (var i = 0; i < x; i++) {
-  console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
+  console.log('HELLO'); // This is a command to our console, telling it to display the text `'HELLO'` and advance to a new line.
 }
 ```
 
-* How many times will 'HELLO' be printed out in the console?
-* What if we changed the starting value of `i` to 1 instead of 0 (and all else is the same)? How many times would `HELLO` get printed to the console?
+* How many times will `'HELLO'` be printed out in the console?
+* What if we changed the starting value of `i` to 1 instead of 0 (and all else is the same)? How many times would `'HELLO'` get printed to the console?
 * What if we changed the condition from <code>i < x</code> to <code>i <= x</code> (and all else is the same)?
 * What if we changed the final condition from <code>i++</code> to <code>i += 2</code> (and all else is the same)?
 Check your answers in JS Bin.

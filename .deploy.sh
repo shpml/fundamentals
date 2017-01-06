@@ -7,8 +7,8 @@ rev=$(git rev-parse --short HEAD)
 cd ../dist
 
 git init
-git config user.name "Jesse Shawl"
-git config user.email "jesse@jshawl.com"
+git config user.name "Matt Brendzel"
+git config user.email "matt.brendzel@generalassemb.ly"
 
 git remote add upstream "https://$GH_TOKEN@github.com/ga-wdi/fundamentals.git"
 git fetch upstream

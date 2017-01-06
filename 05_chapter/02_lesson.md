@@ -11,13 +11,13 @@
 #### Checkpoint
 
 * Why should I reset my CSS?
-* How do you create a navigation bar linking multiple HTML pages?
+* How do you create a navigation bar that links multiple HTML pages?
 
 
 #### Further Reading
 
-* Learn more about [a popular CSS reset](http://meyerweb.com/eric/tools/css/reset/) and [download a copy](http://meyerweb.com/eric/tools/css/reset/reset.css).
+* Learn more about [a popular CSS reset](http://meyerweb.com/eric/tools/css/reset/), and [download a copy](http://meyerweb.com/eric/tools/css/reset/reset.css).
 
 ---
 
-[On to the next lesson.](04_lesson.md)
+[On to the next lesson!](04_lesson.md)
