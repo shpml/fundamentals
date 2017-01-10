@@ -12,7 +12,7 @@
 
 # Functions
 
-We've had the opportunity to learn the basics of JavaScript, including data types and control flow. Now it's time to learn functional programming.
+We've had the opportunity to learn the basics of JavaScript, including data types and control flow. Now it's time to learn functions.
 
 But first, a little math.
 
