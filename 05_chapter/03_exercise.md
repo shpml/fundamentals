@@ -36,7 +36,7 @@ We'll be using external fonts for this challenge. Let's start out by linking the
 
 *Nice! You just built a font stack. Font stacks give CSS guidance on which font to use if the preferred font is unavailable. Now, if the Google servers ever go down, your site will display with a default sans serif font!*
 
-3) We want all headings to be bold. So, add a `font-weight` property to `h1` and `h2`, and set it to 800.
+3) All headings are inherently set to bold– but it's best practice to use the numerical `font-weight` specified in the font stack. So, add a `font-weight` property to `h1` and `h2`, and set it to 800.
 
 
 #### Part 2: Navigation
@@ -68,4 +68,4 @@ Here's what your design should start to look like:
 ![](/assets/elkwebdesign/elkdesignchapt6.png)
 
 
-[On to the next lesson!](04_lesson.md)
+[On to the next lesson!](07_lesson.md)
