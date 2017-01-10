@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="5.4.1" data-basepath=".." data-revision="Tue Jan 10 2017 16:00:50 GMT+0000 (UTC)">
+    <div class="book" data-level="5.4.1" data-basepath=".." data-revision="Tue Jan 10 2017 16:15:06 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2051,35 +2051,34 @@
 <p>Here&apos;s the editor you should use to write your code:</p>
 <p><a class="jsbin-embed" href="http://jsbin.com/luzubuy/embed?html,css,outputheight=600px" target="_blank">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script></p>
 <p>1) Set your <code>div</code>&apos;s font-size to 1.2em, and tell it to only stretch across 50% of the screen&apos;s width.</p>
-<p>2) Add the about <code>id</code> to the first <code>div</code> and the services <code>id</code> to the second <code>div</code>.</p>
-<p>3) Tell both <code>div</code>s to display as inline-block elements.</p>
-<p>4) Create CSS rules (selectors) for <code>#about</code> and <code>#services</code>.</p>
-<p>5) Give <code>#about</code> a float of left.</p>
-<p>6) Give <code>#services</code> a float of right.</p>
+<p>2) Note that the <code>div</code>s both have classes applied: <code>about</code> and <code>services</code>. Set both <code>div</code>s to display as inline-block elements.</p>
+<p>3) Create CSS rules (selectors) for <code>.about</code> and <code>.services</code>.</p>
+<p>4) Give <code>.about</code> a float of left.</p>
+<p>5) Give <code>.services</code> a float of right.</p>
 <p>At this point, you&apos;ll notice a few problems with our page:</p>
 <ul>
 <li>The two columns are smushed together.</li>
 <li>The footer is behaving oddly.</li>
 </ul>
-<p>7) Let&apos;s start with the quickest fix. Give the footer a <code>clear</code> value of both.</p>
-<p>8) Now the footer is in the right place, but the two columns are still too close together! What do you know about adding white space between HTML elements? Currently, <code>#services</code> and <code>#about</code> take up 50% of the page width each. Here&apos;s some math: You&apos;re borrowing from the page&apos;s width to add a 2% padding on all four sides, so that each <code>div</code> keeps a total width of 50%. So, go ahead and add a width of 46% and padding of 2%.</p>
+<p>6) Let&apos;s start with the quickest fix. Give the footer a <code>clear</code> value of <code>both</code>. Now the footer is in the right place.</p>
+<p>7) To fix the columns, first note that <code>.services</code> and <code>.about</code> take up 50% of the page width each. You have to borrow from the page&apos;s width to add a 2% padding on all four sides, so that each <code>div</code> keeps a total width of 50%. So, go ahead and add a <code>width</code> of 46% and <code>padding</code> of 2%.</p>
 <p>Fabulous!</p>
-<p>9) Now, let&apos;s box up and position the four listed services in the right-hand column.</p>
+<p>8) Now, let&apos;s box up and position the four listed services in the right-hand column.</p>
 <ul>
 <li>Create an <code>li</code> rule, and give it a float of left.</li>
 <li>Set its width to 50% and its height to 6em.</li>
 </ul>
-<p>10) Give <code>li</code> an outline value of 3px solid #222222.</p>
-<p>11) Set its <code>text-align</code> to center and <code>line-height</code> to 6em.</p>
+<p>9) Give <code>li</code> an outline value of 3px solid #222222.</p>
+<p>10) Set its <code>text-align</code> to center and <code>line-height</code> to 6em.</p>
 <p><em>Well done! The basics of the multi-column layout are all laid out. All that&apos;s left to finish are some visual elements, including color.</em></p>
-<p>12) Assign <code>img</code> a width of 480px.</p>
-<p>13) Flip to your HTML, and wrap a new <code>div</code> with the class &quot;hero&quot; around the main image.</p>
+<p>11) Assign <code>img</code> a width of 480px.</p>
+<p>12) Flip to your HTML, and wrap a new <code>div</code> with the class &quot;hero&quot; around the main image.</p>
 <p><em>Your <code>img</code> might freak out, but don&apos;t worry. It&apos;s because the &quot;hero&quot; <code>div</code> is grabbing the default <code>div</code> style written for your columns.</em></p>
-<p>14) Let&apos;s prevent that from happening. You need to counteract the styles set in the <code>div</code> selector by setting new styles for &quot;hero.&quot; Set the &quot;hero&quot; class&apos; width to 100%, its display to block, and its margin to 0.</p>
-<p>15) In your HTML, wrap a section around both <code>div</code>s; open it after the <code>&lt;/header&gt;</code> closing tag, and close it before the opening <code>&lt;footer&gt;</code> tag.</p>
-<p>16) Create a CSS style for the section. Set its background to #222222 and make its color white. Set the section&apos;s overflow to auto.</p>
-<p>17) Set the <code>h2</code> color to pale yellow: #fffebb. Set <code>h2</code>&apos;s <code>border-bottom</code> to #fffebb as well.</p>
-<p>18). Set the <code>li</code> color to black and its background to white.</p>
+<p>13) Let&apos;s prevent that from happening. You need to counteract the styles set in the <code>div</code> selector by setting new styles for &quot;hero.&quot; Set the &quot;hero&quot; class&apos; width to 100%, its display to block, and its margin to 0.</p>
+<p>14) In your HTML, wrap a section around both <code>div</code>s; open it after the <code>&lt;/header&gt;</code> closing tag, and close it before the opening <code>&lt;footer&gt;</code> tag.</p>
+<p>15) Create a CSS style for the section. Set its background to #222222 and make its color white. Set the section&apos;s overflow to auto.</p>
+<p>16) Set the <code>h2</code> color to pale yellow: #fffebb. Set <code>h2</code>&apos;s <code>border-bottom</code> to #fffebb as well.</p>
+<p>17). Set the <code>li</code> color to black and its background to white.</p>
 <p>Bravo! Well done.</p>
 <p><a href="10_quiz.html">Now, take the quiz for Unit 5</a>.</p>
 
