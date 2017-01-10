@@ -33,7 +33,9 @@ fizz
 fizzbuzz
 ```
 
-Once again, there's no starter code for this exercise — just open up a new session in [JS Bin](https://jsbin.com). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous unit!
+Once again, there's no starter code for this exercise — just use the [JS Bin](https://jsbin.com) below. If you don't see the JS Bin, please refresh the page. Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous unit! 
+
+<a class="jsbin-embed" href="https://jsbin.com/vaxesa/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.40.3"></script>
 
 Test your code for several different input values. What do you get if `num` is 1? 10? 30?
 
