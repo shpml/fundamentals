@@ -11,7 +11,7 @@ JavaScript comes with several "built-in" functions we can call on using dot nota
 For example, let's look at `document.createElement('div')`, which creates an HTML `div` element (a `div` will come to visually represent a card in the browser).
 
 - `document` is a readily available JS object with built-in properties and methods associated with it.
-- `document` comes with the method `createElement`.
+- `createElement` is a method within the `document` object.
   - This method performs the functionality of creating a new HTML element.
   - Just like with the functions we've learned about, we can pass in arguments for these methods to use.
 
