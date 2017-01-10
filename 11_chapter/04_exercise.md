@@ -24,7 +24,7 @@ Time to give it a whirl! In this exercise you'll practice setting up and updatin
 
 Once you're satisfied, feel free to move on to the next lesson. **Be sure to save your JS Bin session and keep your link, as you'll be using it again for another exercise in this unit.**
 
-> *Stuck? Check out the [solutions](https://github.com/generalassembly-studio/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
+> *Stuck? Check out the [solutions](https://github.com/GA-WDI/fundamentals/blob/master/exercise-solutions.md) to see what you can do.*
 
 ---
 [Ready to move on? Here's the next lesson.](05_lesson.md)
