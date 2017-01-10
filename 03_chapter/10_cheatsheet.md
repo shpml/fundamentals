@@ -34,12 +34,6 @@ A class attribute is added to an HTML element in order to provide a “hook” t
 #### ID
 An ID attribute is added to an HTML element in order to provide a “hook” to refer to that element in your CSS. CSS ID selectors begin with a “#”. Unlike classes, IDs can only be used one time per page.
 
-#### Horizontal Rule
-Add a horizontal line across your page using the `hr` tag.
-
-#### Line Break
-Break up a block of text using the `br` tag.
-
 #### Image
 Add images to your HTML using the `img` tag. Tell the browser the source of the image file with an `src` attribute.
 
