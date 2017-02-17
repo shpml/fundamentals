@@ -28,6 +28,16 @@ We want to make these documents scannable & easily readable. Every time you're t
 
 Err on the side of having too many paragraphs if possible, even if a paragraph is only one or two sentences. It'll be easier to read.
 
+### Use single backticks for inline code
+
+Call out smaller bits of inline code that appears within a sentence.
+
+_Examples_
+- Create a variable called `fullName` that contains a string with your first and last name.
+- Change the `width` of the `div` to `50%` to see how the layout changes.
+- A `<ul>` parent element can contain an infinite number of `<li>` children elements.
+
+
 ### Use triple-tick code blocks for highlighting on GitHub
 
 Use triple-tick code blocks with languages to make code auto-syntax-highlighted.
