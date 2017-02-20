@@ -1,4 +1,4 @@
-![GA Logo](assets/GA_logo.png)
+![GA Logo](assets/GA-logo.png)
 <br>
 <br>
 
@@ -20,8 +20,8 @@ Make sure you read below before continuing as we've outlined some important tips
 ## Suggestions for Success:
 
 * Set a study schedule for yourself, and stick to it!
-	* Ideally, set aside chunks of 2-3 hours at a time so you can get through full sets of lessons and exercises. 
-* Find a distraction-free workspace. 
+	* Ideally, set aside chunks of 2-3 hours at a time so you can get through full sets of lessons and exercises.
+* Find a distraction-free workspace.
 * Take breaks if you get stuck.  Many developers find taking a walk, talking to a friend, or just taking a brain-break, helps them come back to a problem refreshed and with a new perspective.
 * Don't be afraid to ask for help! More on this later...
 

@@ -44,7 +44,13 @@ Quizzes are hosted in Typeform and are linked from this project. To suggest chan
 
 ### Deployment
 
-Builds and deploys are handled automatically via Travis CI.
+Builds and deploys are handled automatically via Travis CI. To deploy a new version:
+
+1. Create a branch with the version name.
+2. Create a new release against the updated branch as the Target.
+3. Mark the new release as a pre-release and publish.
+4. The new release will trigger a build in Travis, which generates a directory in the gh-pages branch. This takes ~20 minutes.
+5. The new release will be available at `fundamentals.generalassemb.ly/newRelease`
 
 ### Additional Resources
 
