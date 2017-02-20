@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="8.3" data-basepath=".." data-revision="Fri Feb 17 2017 16:16:37 GMT+0000 (UTC)">
+    <div class="book" data-level="8.3" data-basepath=".." data-revision="Mon Feb 20 2017 14:50:42 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2026,7 +2026,7 @@
 <p>One major calculator function that we haven&apos;t mentioned so far is <strong>memory</strong>. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript&apos;s answer to this is <strong>variables</strong>.</p>
 <p>Suppose that we wanted to save the result of our expression, <code>(99 * 746) - (837 * 23)</code>, and then multiply the whole thing by <code>2</code> later. We could store our first result in a variable <code>x</code> using <code>=</code> (the &apos;assignment&apos; operator) as follows:</p>
 <p><code>var x = (99 * 746) - (837 * 23);</code></p>
-<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-2x fa-lightbulb-o"></strong>
 <p>  The <b>keyword</b> <code>var</code> stands for <code>variable</code> and is used to <em>declare</em> a variable the first time we use it. A variable <em>can</em> be declared without using the keyword <code>var</code>, but this has major implications on where that variable is stored and what code can access it. You&apos;ll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using <code>var</code>.</p>
 </blockquote>
 <p>When we want to then use this result, we simply substitute <code>x</code> for wherever our original expression might have gone; for instance, we could write <code>x * 2;</code> and this expression would evaluate to double whatever value was stored in <code>x</code>.</p>
@@ -2049,7 +2049,7 @@ x
 <span class="hljs-comment">// =&gt; 3</span>
 </code></pre>
 <p>On the first line, we are <em>assigning</em> the variable <code>x</code> equal to the integer <code>1</code>.  Then, on the next line, we are <em>reassigning</em> the variable <code>x</code> and setting it equal to the following: <code>2</code> plus the most recent value of x (in this case, <code>1</code>). <code>x</code> would now be equal to the integer <code>3</code>.  </p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p>  Beginners often confuse the assignment operator (<code>=</code>) and the equality operators (<code>==</code>, <code>===</code>). Remember, if you want to compare two values, you use a double equal or triple equal sign. Using a single equal sign, as described above, does not compare values; instead, a single equal sign assigns a value to a variable. See below.</p>
 <pre><code class="lang-javascript">x
 <span class="hljs-comment">// =&gt; 3</span>
@@ -2069,7 +2069,7 @@ x = <span class="hljs-number">15</span>;
 <span class="hljs-number">2</span> * x;
 </code></pre>
 <p>What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you&apos;re correct!</p>
-<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-2x fa-lightbulb-o"></strong>
 <p> <code>=</code> is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it&apos;s finished its &quot;assignment&quot; work. In particular, the <code>=</code> operator evaluates to whatever the expression to the right of the <code>=</code> evaluates to. In other words, the expression <code>x = 2</code> returns <code>2</code>.</p>
 </blockquote>
 <p>Sometimes, we find variables on both sides of the <code>=</code>. Suppose we have two variables, <code>x</code> and <code>y</code>, as in the example below.</p>

@@ -48,7 +48,7 @@
     
 
         
-    <div class="book" data-level="4.1" data-basepath=".." data-revision="Fri Feb 17 2017 16:16:19 GMT+0000 (UTC)">
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="Mon Feb 20 2017 14:50:26 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -1414,7 +1414,7 @@ switch (dayNumber) {
 </code></pre>
 <p>This code works exactly the same as our <code>if..else..if</code>, but although it&apos;s slightly longer (in terms of lines), it is significantly easier to read.</p>
 <p>In a <code>switch</code> statement, the variable in parentheses (in this case, <code>dayNumber</code>) gets evaluated; if there is a <code>case</code> listed for the value that it evaluates to, the code between <code>case __:</code> and <code>break</code> will be executed. If there is no <code>case</code> that matches the value of the variable, the <code>default</code> will be executed (if it is specified - if not, the program will do nothing).</p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
 <p>: If there is no <code>break;</code> at the end of a <code>case</code>, the computer will not skip to the end, but will instead start  executing the <em>next</em> case&apos;s code (even if <code>case</code>&apos;s value is different from the variable&apos;), and will continue doing so until it eventually hits a <code>break;</code> statement. For this reason, <code>default</code> never needs a <code>break;</code> statement, because it&apos;s the last <code>case</code> in the <code>switch</code>.</p>
 </blockquote>
 <p>Although the <code>switch</code> statement sometimes has some advantages over <code>if...else if... else</code>, it also has some major disadvantages. For instance, a <code>switch</code> statement will only work if you are testing the same variable (or expression) in every condition; if not, the <code>if...else if...else</code> is your only option. Also, depending on the circumstances, using <code>if...else if...else</code> might scan more naturally.</p>

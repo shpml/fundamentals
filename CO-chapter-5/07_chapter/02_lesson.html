@@ -42,7 +42,7 @@
     
 
         
-    <div class="book" data-level="7.1" data-basepath=".." data-revision="Fri Feb 17 2017 16:17:27 GMT+0000 (UTC)">
+    <div class="book" data-level="7.1" data-basepath=".." data-revision="Mon Feb 20 2017 14:51:32 GMT+0000 (UTC)">
     
 
 <div class="book-summary">
@@ -2048,12 +2048,12 @@
 <p>To turn an ordinary directory into a Git repository (or <em>repo</em> for short), you have to <strong>initialize</strong> the repository (this just means adding a hidden folder called <code>.git/</code> to your project folder, which contains all the data that Git needs to operate.</p>
 <p>Simply change your working directory to the folder you&apos;d like to track and run the command:</p>
 <pre><code>$ git init
-</code></pre><blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+</code></pre><blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> Do not execute this command in your <strong>home directory</strong>! It will make it very difficult to work with any other repositories! Use <code>pwd</code> to check your location if you&apos;re unsure.</p>
 </blockquote>
 <p>When you take a look at your working directory in the GUI you probably won&apos;t see any additional files, because (if you remember from Unit 6) hidden files are not visible by default on your computer.  To see the <code>.git/</code> directory you need to run <code>ls -a</code> from command line.</p>
 <p>If you delete the hidden .git directory, you will effectively &quot;uninitialize&quot; your repository and you will lose the data Git collected for you.</p>
-<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-2x fa-exclamation-triangle"></strong>
 <p> You should never manually change the internal contents of your <code>.git</code> directory, unless your name is Linus Torvalds.</p>
 </blockquote>
 <h3 id="saving-changes-to-your-project">Saving Changes to Your Project</h3>
@@ -2071,7 +2071,7 @@
 <pre><code>$ git add post.txt
 </code></pre><p>The changes we&apos;ve just made have now been <em>staged</em>, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or <em>unstaged</em>. If we run <code>git status</code> again, we&apos;ll see that the addition of <code>post.txt</code> is staged and ready to be committed:</p>
 <p><img src="../assets/chapter2/git_status_staged.gif" alt="Git Status of GA-Blog"></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
 <p> Sometimes, you&apos;ll want to save <em>all</em> of the changes to files that have been made inside your repo. Instead of specifying a unique file, you can write <code>git add .</code> - this will add all of the files in the working directory to the next commit. Be careful, though, when using <code>git add .</code> - you could accidentally add files with sensitive information.</p>
 </blockquote>
 <p>Once we&apos;re ready to officially record this version of our project, we can type:</p>
