@@ -20,23 +20,23 @@ Below is what the GitHub interface looks like for a repo called `awesome-project
 
 1) **Repo Name and Owner**: describes who owns the repository, the name of the repo, and whether the repo is public or private.
 
-	![Repo Name and Owner](../assets/chapter2/username_github.gif)
+![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
 2) **Overview**: displays the number of commits, branches, releases, and contributors to a particular repo. Choosing any one of these options will open a detailed view of your selection.
 
-	![Overview](../assets/chapter2/overview_github.gif)
+![Overview](../assets/chapter2/overview_github.gif)
 
 3) **Repo File Structure**: displays the contents of the repo. Selecting any file or folder will open a detailed view of that file and allow you to edit its content directly.
 
-	![File Structure](../assets/chapter2/contents_github.gif)
+![File Structure](../assets/chapter2/contents_github.gif)
 
 4) **Fork Button**: allows you to copy a version of this repo (`user/awesome-project`) to your own GitHub account.
 
-	![Fork button](../assets/chapter2/fork_github.gif)
+![Fork button](../assets/chapter2/fork_github.gif)
 
 5) **Side Bar**: allows you to respond to issues, create pull requests, and change the settings for this repo.
 
-	![Side bar](../assets/chapter2/sidebar_github.gif)
+![Side bar](../assets/chapter2/sidebar_github.gif)
 
 There are many unique GitHub features crammed on this page, but we'll only be starting with three.
 
