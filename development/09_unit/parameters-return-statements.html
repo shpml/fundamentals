@@ -1,0 +1,2494 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Parameters and Return Statements | WDI Fundamentals</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../09_unit/parameters-return-statements-exercise.html" />
+    
+    
+    <link rel="prev" href="../09_unit/defining-calling-functions-exercise.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    <div class="book" data-level="9.2" data-basepath=".." data-revision="Thu Mar 02 2017 21:00:48 GMT+0000 (UTC)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Welcome
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="00_unit/units-and-lessons.html">
+            
+                
+                    <a href="../00_unit/units-and-lessons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Units &amp; Lessons
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="00_unit/exercises-quizzes-assignments.html">
+            
+                
+                    <a href="../00_unit/exercises-quizzes-assignments.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Exercises, Quizzes &amp; Assignments
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_unit/developer-foundations-intro.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Developer Foundations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_unit/internet-fundamentals.html">
+            
+                
+                    <a href="../01_unit/internet-fundamentals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Internet Fundamentals
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_unit/intro-to-programming-languages.html">
+            
+                
+                    <a href="../01_unit/intro-to-programming-languages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Intro to Programming Languages
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_unit/think-like-a-developer.html">
+            
+                
+                    <a href="../01_unit/think-like-a-developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Think Like a Developer
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_unit/developer-foundations-quiz.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01_unit/developer-foundations-cheatsheet.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_unit/developer-tools-intro.html">
+            
+                
+                    <a href="../02_unit/developer-tools-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Developer Tools
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_unit/git-bash-and-terminal.html">
+            
+                
+                    <a href="../02_unit/git-bash-and-terminal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Git Bash and Terminal
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_unit/text-editors-and-browsers.html">
+            
+                
+                    <a href="../02_unit/text-editors-and-browsers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Text Editors and Browsers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_unit/sublime-text.html">
+            
+                
+                    <a href="../02_unit/sublime-text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Sublime Text
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_unit/file-systems.html">
+            
+                
+                    <a href="../02_unit/file-systems.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        File Systems
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_unit/navigating-the-command-line.html">
+            
+                
+                    <a href="../02_unit/navigating-the-command-line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Navigating the Command Line
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="02_unit/navigating-the-command-line-exercise.html">
+            
+                
+                    <a href="../02_unit/navigating-the-command-line-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_unit/controlling-files-with-command-line.html">
+            
+                
+                    <a href="../02_unit/controlling-files-with-command-line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Controlling Files with Command Line
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="02_unit/controlling-files-with-command-line-exercise.html">
+            
+                
+                    <a href="../02_unit/controlling-files-with-command-line-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_unit/developer-tools-quiz-a.html">
+            
+                
+                    <a href="../02_unit/developer-tools-quiz-a.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02_unit/version-control-and-git.html">
+            
+                
+                    <a href="../02_unit/version-control-and-git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Version Control and Git
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02_unit/track-changes-with-git.html">
+            
+                
+                    <a href="../02_unit/track-changes-with-git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Track Changes with Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="02_unit/track-changes-with-git-exercise.html">
+            
+                
+                    <a href="../02_unit/track-changes-with-git-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02_unit/intro-to-github.html">
+            
+                
+                    <a href="../02_unit/intro-to-github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Intro to Github
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="02_unit/intro-to-github-exercise.html">
+            
+                
+                    <a href="../02_unit/intro-to-github-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02_unit/developer-tools-quiz-b.html">
+            
+                
+                    <a href="../02_unit/developer-tools-quiz-b.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02_unit/developer-tools-cheatsheet.html">
+            
+                
+                    <a href="../02_unit/developer-tools-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02_unit/developer-tools-assignment.html">
+            
+                
+                    <a href="../02_unit/developer-tools-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        Unit 2 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_unit/intro-to-html-intro.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Introduction to HTML
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_unit/html-elements.html">
+            
+                
+                    <a href="../03_unit/html-elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTML Elements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="03_unit/html-elements-exercise.html">
+            
+                
+                    <a href="../03_unit/html-elements-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_unit/html-boilerplate.html">
+            
+                
+                    <a href="../03_unit/html-boilerplate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        HTML Boilerplate
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="03_unit/hyperlinks-exercise.html">
+            
+                
+                    <a href="../03_unit/hyperlinks-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_unit/intro-to-html-quiz.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_unit/intro-to-html-cheatsheet.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_unit/intro-to-html-assignment.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Unit 3 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_unit/intro-to-css-intro.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Introduction to CSS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_unit/adding-color.html">
+            
+                
+                    <a href="../04_unit/adding-color.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Adding Color
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04_unit/adding-color-exercise.html">
+            
+                
+                    <a href="../04_unit/adding-color-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_unit/fonts-and-text.html">
+            
+                
+                    <a href="../04_unit/fonts-and-text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Fonts and Text
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_unit/classes-and-ids.html">
+            
+                
+                    <a href="../04_unit/classes-and-ids.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Classes and IDs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_unit/linking-html-and-css.html">
+            
+                
+                    <a href="../04_unit/linking-html-and-css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Linking HTML and CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_unit/working-with-images.html">
+            
+                
+                    <a href="../04_unit/working-with-images.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Working with Images
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="04_unit/working-with-images-exercise.html">
+            
+                
+                    <a href="../04_unit/working-with-images-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_unit/choosing-the-right-markup.html">
+            
+                
+                    <a href="../04_unit/choosing-the-right-markup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Choosing the Right Markup
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_unit/intro-to-css-quiz.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04_unit/intro-to-css-cheatsheet.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="04_unit/intro-to-css-assignment.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Unit 4 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_unit/layout-basics-intro.html">
+            
+                
+                    <a href="../05_unit/layout-basics-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Layout Basics
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_unit/semantic-elements.html">
+            
+                
+                    <a href="../05_unit/semantic-elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Semantic Elements
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_unit/div-and-span.html">
+            
+                
+                    <a href="../05_unit/div-and-span.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Div and Span
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_unit/the-box-model.html">
+            
+                
+                    <a href="../05_unit/the-box-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        The Box Model
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="05_unit/the-box-model-exercise.html">
+            
+                
+                    <a href="../05_unit/the-box-model-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_unit/header-footer-nav.html">
+            
+                
+                    <a href="../05_unit/header-footer-nav.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Header, Footer, Nav
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="05_unit/header-footer-nav-exercise.html">
+            
+                
+                    <a href="../05_unit/header-footer-nav-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_unit/layout-basics-quiz.html">
+            
+                
+                    <a href="../05_unit/layout-basics-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_unit/layout-basics-cheatsheet.html">
+            
+                
+                    <a href="../05_unit/layout-basics-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_unit/layout-basics-assignment.html">
+            
+                
+                    <a href="../05_unit/layout-basics-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Unit 5 Assignment
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.7.1" data-path="05_unit/pulse-check.html">
+            
+                
+                    <a href="../05_unit/pulse-check.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.1.</b>
+                        
+                        Pulse Check
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_unit/navigation-and-page-layout-intro.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Navigation and Page Layout
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_unit/vertical-navigation.html">
+            
+                
+                    <a href="../06_unit/vertical-navigation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Vertical Navigation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_unit/floating-and-clearing.html">
+            
+                
+                    <a href="../06_unit/floating-and-clearing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Floating and Clearing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_unit/horizontal-navigation.html">
+            
+                
+                    <a href="../06_unit/horizontal-navigation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Horizontal Navigation
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="06_unit/horizontal-navigation-exercise.html">
+            
+                
+                    <a href="../06_unit/horizontal-navigation-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_unit/column-layout.html">
+            
+                
+                    <a href="../06_unit/column-layout.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Column Layout
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="06_unit/column-layout-exercise.html">
+            
+                
+                    <a href="../06_unit/column-layout-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="06_unit/navigation-and-page-layout-quiz.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="06_unit/navigation-and-page-layout-cheatsheet.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="06_unit/navigation-and-page-layout-assignment.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        Unit 6 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_unit/js-intro.html">
+            
+                
+                    <a href="../07_unit/js-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Introduction to JavaScript
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_unit/pseudocode.html">
+            
+                
+                    <a href="../07_unit/pseudocode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Pseudocode
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="07_unit/pseudocode-exercise.html">
+            
+                
+                    <a href="../07_unit/pseudocode-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_unit/data-types.html">
+            
+                
+                    <a href="../07_unit/data-types.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Data Types
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="07_unit/data-types-exercise.html">
+            
+                
+                    <a href="../07_unit/data-types-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_unit/expressions-evals.html">
+            
+                
+                    <a href="../07_unit/expressions-evals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Expressions and Evaluations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="07_unit/expressions-evals-exercise.html">
+            
+                
+                    <a href="../07_unit/expressions-evals-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_unit/js-intro-quiz.html">
+            
+                
+                    <a href="../07_unit/js-intro-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="07_unit/js-intro-cheatsheet.html">
+            
+                
+                    <a href="../07_unit/js-intro-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="07_unit/js-intro-assignment.html">
+            
+                
+                    <a href="../07_unit/js-intro-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Unit 7 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_unit/control-flow-intro.html">
+            
+                
+                    <a href="../08_unit/control-flow-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Control Flow in JS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_unit/logical-operators-booleans.html">
+            
+                
+                    <a href="../08_unit/logical-operators-booleans.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Comparison and Logical Operators and Booleans
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="08_unit/logical-operators-booleans-exercise.html">
+            
+                
+                    <a href="../08_unit/logical-operators-booleans-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_unit/conditionals.html">
+            
+                
+                    <a href="../08_unit/conditionals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Conditionals
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.2.1" data-path="08_unit/conditionals-exercise.html">
+            
+                
+                    <a href="../08_unit/conditionals-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_unit/switch-ternary.html">
+            
+                
+                    <a href="../08_unit/switch-ternary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Switch and Ternary Operators
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.3.1" data-path="08_unit/switch-ternary-exercise.html">
+            
+                
+                    <a href="../08_unit/switch-ternary-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_unit/arrays.html">
+            
+                
+                    <a href="../08_unit/arrays.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        Introduction to Arrays
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="08_unit/arrays-exercise.html">
+            
+                
+                    <a href="../08_unit/arrays-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_unit/loops.html">
+            
+                
+                    <a href="../08_unit/loops.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        Loops
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.5.1" data-path="08_unit/loops-exercise.html">
+            
+                
+                    <a href="../08_unit/loops-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_unit/control-flow-quiz.html">
+            
+                
+                    <a href="../08_unit/control-flow-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="08_unit/control-flow-cheatsheet.html">
+            
+                
+                    <a href="../08_unit/control-flow-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="08_unit/control-flow-assignment.html">
+            
+                
+                    <a href="../08_unit/control-flow-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.8.</b>
+                        
+                        Unit 8 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_unit/functions-intro.html">
+            
+                
+                    <a href="../09_unit/functions-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Functions
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_unit/defining-calling-functions.html">
+            
+                
+                    <a href="../09_unit/defining-calling-functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Defining and Calling Functions
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="09_unit/defining-calling-functions-exercise.html">
+            
+                
+                    <a href="../09_unit/defining-calling-functions-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="9.2" data-path="09_unit/parameters-return-statements.html">
+            
+                
+                    <a href="../09_unit/parameters-return-statements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Parameters and Return Statements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.2.1" data-path="09_unit/parameters-return-statements-exercise.html">
+            
+                
+                    <a href="../09_unit/parameters-return-statements-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_unit/scope.html">
+            
+                
+                    <a href="../09_unit/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Scope
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.3.1" data-path="09_unit/scope-exercise.html">
+            
+                
+                    <a href="../09_unit/scope-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_unit/functions-quiz.html">
+            
+                
+                    <a href="../09_unit/functions-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09_unit/functions-cheatsheet.html">
+            
+                
+                    <a href="../09_unit/functions-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="09_unit/functions-assignment.html">
+            
+                
+                    <a href="../09_unit/functions-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        Unit 9 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_unit/objects-intro.html">
+            
+                
+                    <a href="../10_unit/objects-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Objects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_unit/creating-objects.html">
+            
+                
+                    <a href="../10_unit/creating-objects.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Creating Objects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="10_unit/creating-objects-exercise.html">
+            
+                
+                    <a href="../10_unit/creating-objects-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_unit/methods.html">
+            
+                
+                    <a href="../10_unit/methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Methods
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.2.1" data-path="10_unit/methods-exercise.html">
+            
+                
+                    <a href="../10_unit/methods-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_unit/json.html">
+            
+                
+                    <a href="../10_unit/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        JSON
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.3.1" data-path="10_unit/json-exercise.html">
+            
+                
+                    <a href="../10_unit/json-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_unit/objects-quiz.html">
+            
+                
+                    <a href="../10_unit/objects-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_unit/objects-cheatsheet.html">
+            
+                
+                    <a href="../10_unit/objects-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="10_unit/objects-assignment.html">
+            
+                
+                    <a href="../10_unit/objects-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Unit 10 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="11_unit/dom-intro.html">
+            
+                
+                    <a href="../11_unit/dom-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        The DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="11_unit/accessing-the-dom.html">
+            
+                
+                    <a href="../11_unit/accessing-the-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Accessing the DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="11_unit/accessing-the-dom-exercise.html">
+            
+                
+                    <a href="../11_unit/accessing-the-dom-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="11_unit/manipulating-the-dom.html">
+            
+                
+                    <a href="../11_unit/manipulating-the-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Manipulating the DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.2.1" data-path="11_unit/manipulating-the-dom-exercise.html">
+            
+                
+                    <a href="../11_unit/manipulating-the-dom-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="11_unit/events.html">
+            
+                
+                    <a href="../11_unit/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_unit/events-exercise.html">
+            
+                
+                    <a href="../11_unit/events-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="11_unit/dom-quiz.html">
+            
+                
+                    <a href="../11_unit/dom-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="11_unit/dom-cheatsheet.html">
+            
+                
+                    <a href="../11_unit/dom-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="11_unit/dom-assignment.html">
+            
+                
+                    <a href="../11_unit/dom-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.6.</b>
+                        
+                        Unit 11 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="11_unit/feedback.html">
+            
+                
+                    <a href="../11_unit/feedback.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.7.</b>
+                        
+                        Pulse Check
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="exercise-solutions.html">
+            
+                
+                    <a href="../exercise-solutions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Exercise Solutions
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="license.html">
+            
+                
+                    <a href="../license.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Copyright &amp; Terms of Service
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Share on Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Share on Google</button>
+                <button type="button" data-sharing="facebook" class="button">Share on Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Share on Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Share on Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >WDI Fundamentals</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p><strong>WDI Fundamentals Unit 9</strong></p>
+<hr>
+<h1 id="parameters-and-return-statements">Parameters and Return Statements</h1>
+<p>Now that we know how to call functions, let&apos;s see how we can add more details to our functions through parameters and arguments.</p>
+<h3 id="why-are-parameters-useful">Why are parameters useful?</h3>
+<p>Let&apos;s imagine that we are tasked with creating a program to calculate the total amount, including sales tax, for each item at a coffee shop. </p>
+<p>Take a look at this function that will calculate the total amount for a latte:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> latteTotal = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">var</span> price = <span class="hljs-number">4.50</span>;
+  <span class="hljs-keyword">var</span> salesTaxRate = <span class="hljs-number">.10</span>;
+  <span class="hljs-keyword">var</span> totalAmount = price + (price * salesTaxRate);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The total is $&quot;</span> + totalAmount);
+};
+
+latteTotal();
+</code></pre>
+<p>What would we do if we also wanted to find the the total amount for Americanos?</p>
+<p>We could create another function for that total:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> americanoTotal = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">var</span> price = <span class="hljs-number">5.00</span>;
+  <span class="hljs-keyword">var</span> salesTaxRate = <span class="hljs-number">.10</span>;
+  <span class="hljs-keyword">var</span> totalAmount = price + (price * salesTaxRate);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The total is $&quot;</span> + totalAmount);
+};
+
+americanoTotal();
+</code></pre>
+<p>What if we wanted to find the total for every item in the coffee shop, including drinks and baked goods?</p>
+<p>We don&apos;t want to have to create a separate function for each item &#x2014; that&apos;s a lot of work on our end.</p>
+<p>It will also burden our program with repeated code, which we want to avoid.</p>
+<p>Remember, keep it DRY! (Don&apos;t Repeat Yourself).</p>
+<p>Wouldn&apos;t it be nice if we had some way to provide the total amount function with the information it needs to calculate the total, including sales tax, for any product?</p>
+<p>In this lesson, we&apos;ll take a look at how we can do just that using <strong>parameters</strong>.</p>
+<h3 id="syntax-parameters-and-arguments">Syntax - Parameters and Arguments</h3>
+<p><strong>Parameters</strong> are the names listed in the function definition.</p>
+<p>Let&apos;s take a look at how we can provide our function with a price for each item so we won&apos;t need to create a separate function every time we want to calculate the total amount for a product. </p>
+<p>We will also provide our function with the sales tax rate each time since the coffee shop has locations in different states.</p>
+<p>Let&apos;s take a look:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> calculateTotal = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(price, salesTaxRate)</span> </span>{
+  <span class="hljs-keyword">var</span> totalAmount = price + (price * salesTaxRate);
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The total is $&quot;</span> + totalAmount);
+};
+
+calculateTotal(<span class="hljs-number">5.5</span>, <span class="hljs-number">.10</span>);
+calculateTotal(<span class="hljs-number">4.75</span>, <span class="hljs-number">.12</span>);
+</code></pre>
+<p>Let&apos;s break this down:</p>
+<ol>
+<li>Notice that the parentheses after the word <code>function</code> are no longer empty! Here we have the words <code>price</code> and <code>salesTaxRate</code>. These are the <strong>parameters</strong>. Notice that our parameters are in a comma-separated list. Here we are telling our function that we are going to provide it with a <code>price</code> and a <code>salesTaxRate</code>.<ul>
+<li>There is nothing special about the words <code>price</code> and <code>salesTaxRate</code>. We are just using descriptive names in order to remember what information we are providing our function.</li>
+</ul>
+</li>
+<li>When we call the function, we provide it with the values for <code>price</code> and <code>salesTaxRate</code> like so: <code>calculateTotal(4.75, .10);</code>. These are called <strong>arguments</strong>. Each one of these arguments corresponds to a parameter in the function definition.<ul>
+<li>Order is important here. In the first example where the function is called above, the first argument that is provided, <code>5.5</code>, will correspond with the first parameter we provided for the function, <code>price</code>. The second argument, <code>.10</code>, will correspond with the second parameter, <code>salesTaxRate</code>. For the second example, what does <code>4.75</code> correspond to? <code>.12</code>?</li>
+</ul>
+</li>
+</ol>
+<p>To write functions with more than one parameter, use a comma separated list:</p>
+<p>e.g., (parameter1, parameter2, parameter3, parameter4, etc.)</p>
+<p>Here is an example of a function with four parameters:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> greetUser = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(firstName, lastName, year, city)</span> </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Hello &quot;</span> + firstName + <span class="hljs-string">&quot; &quot;</span> + lastName + <span class="hljs-string">&quot; born in &quot;</span>+ year + <span class="hljs-string">&quot; from &quot;</span> + city + <span class="hljs-string">&quot;!&quot;</span> );
+};
+</code></pre>
+<p>What would happen if we called the function with the following arguments?</p>
+<pre><code class="lang-js">greetUser(<span class="hljs-string">&quot;Bruce&quot;</span>, <span class="hljs-string">&quot;Wayne&quot;</span>, <span class="hljs-number">1939</span>, <span class="hljs-string">&quot;Gotham&quot;</span>);
+</code></pre>
+<p>We would get this result:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// =&gt; &quot;Hello Bruce Wayne born in 1939 from Gotham!&quot;</span>
+</code></pre>
+<p>What would happen if we called the function with the same arguments in a different order?</p>
+<pre><code class="lang-js">greetUser(<span class="hljs-string">&quot;Bruce&quot;</span>, <span class="hljs-number">1939</span>, <span class="hljs-string">&quot;Gotham&quot;</span>, <span class="hljs-string">&quot;Wayne&quot;</span>);
+</code></pre>
+<p>We would get this result:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// =&gt; &quot;Hello Bruce 1939 born in Gotham from Wayne!&quot;</span>
+</code></pre>
+<p>Take a look at this chart summarizing parameters and arguments:</p>
+<p><img src="http://circuits-assets.generalassemb.ly/prod/asset/5017/Slide-16-Chart.svg" alt=""></p>
+<h4 id="test-yourself">Test Yourself</h4>
+<p>Alright! Now it&apos;s time for you to test yourself.</p>
+<p>Refresh the page if you don&apos;t see the JS Bin Console below.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/qozaziqodu/edit?js,console" target="_blank">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.40.3"></script></p>
+<ol>
+<li>In the &quot;JavaScript&quot; panel in JS Bin, define a function <code>makeCone</code>.</li>
+<li>It should accept two parameters, <code>flavor</code> and <code>numberScoops</code>.</li>
+<li><p>The function should take the parameters and log the following to the console: <code>&quot;Coming right up! One {flavor} ice cream cone with {numberScoops} scoops.&quot;</code></p>
+<blockquote>
+<p>Hint: You&apos;ll want to use string concatenation (<code>+</code>) to combine the variables with the human-readable text when logging the message to the console. </p>
+</blockquote>
+</li>
+<li>Now, call that function, passing in <code>&quot;chocolate&quot;</code> and <code>3</code> as the arguments.</li>
+<li>Hit the &quot;Run&quot; button in the &quot;Console&quot; panel and you should see <code>&quot;Coming right up! One chocolate ice cream cone with 3 scoops.&quot;</code> displayed in the &quot;Console&quot; panel.</li>
+</ol>
+<p><br></p>
+<blockquote>
+<p>Answer:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> makeCone = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(flavor, numberScoops)</span> </span>{
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Coming right up! One &quot;</span> + flavor + <span class="hljs-string">&quot; ice cream cone with &quot;</span> + numberScoops + <span class="hljs-string">&quot; scoops.&quot;</span>);
+};
+
+makeCone(<span class="hljs-string">&quot;chocolate&quot;</span>, <span class="hljs-number">3</span>);
+</code></pre>
+</blockquote>
+<p>Great job!</p>
+<h2 id="return-statements">Return Statements</h2>
+<p>We now know how to communicate with functions in one direction, by passing values to functions using parameters and arguments.</p>
+<p>But, functions can also communicate back to you and return values.</p>
+<h4 id="why-use-return-statements">Why use return statements?</h4>
+<p>Sometimes we don&apos;t necessarily want to show or log something immediately to the console, or update something on the page.</p>
+<p>Instead, we might just want to update a variable within a function, or even call another function without showing its effects.</p>
+<p>To do this, we use a <code>return</code> statement.</p>
+<p>Let&apos;s look at an example of updating a variable within a function:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Here this function &quot;spits out&quot; the sum of the parameters x and y</span>
+<span class="hljs-keyword">var</span> sum = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(x, y)</span> </span>{
+  <span class="hljs-keyword">return</span> x + y;
+};
+
+<span class="hljs-comment">// We then save that sum to the variable totalSum.</span>
+<span class="hljs-keyword">var</span> totalSum = sum(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+<span class="hljs-comment">// =&gt; 7</span>
+<span class="hljs-comment">// The variable totalSum will now hold the value 7.</span>
+</code></pre>
+<h4 id="storing-a-return-value-in-a-variable">Storing a return value in a variable</h4>
+<p>The <code>return</code> statement <em>stops the execution of a function</em> and returns a value from that function.</p>
+<p>When we <code>return</code> something, it ends the function&apos;s execution and &quot;spits out&quot; whatever we are returning.</p>
+<p>We can then store this returned value in another variable.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> addBonusPoints = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(score)</span> </span>{
+    <span class="hljs-keyword">if</span> (score &gt; <span class="hljs-number">50</span>) {
+        <span class="hljs-keyword">return</span> score + (score * <span class="hljs-number">.10</span>);
+          <span class="hljs-comment">// if score is 55, then 60.5 will be returned</span>
+    }
+
+    <span class="hljs-keyword">return</span> score;
+};
+
+<span class="hljs-keyword">var</span> totalPoints = addBonusPoints(<span class="hljs-number">55</span>);
+<span class="hljs-comment">// =&gt; 60.5</span>
+<span class="hljs-comment">// The variable totalPoints will now hold 60.5</span>
+</code></pre>
+<ol>
+<li>Because the score in this case is greater than 50, we will hit the return statement <code>return score + (score * .10);</code> and the function will stop running after that point.</li>
+<li>This means that the code inside the function block that is below the <code>return</code> statement will never be executed and will be ignored completely.</li>
+</ol>
+<p>Pretty powerful, right?</p>
+<h4 id="exiting-a-function">Exiting a function</h4>
+<p>We can also use <code>return;</code> by itself as a way to exit the function and prevent any code after it from running.</p>
+<p>Take a look at this example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rockAndRoll = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(muted)</span> </span>{
+   <span class="hljs-keyword">var</span> song = <span class="hljs-string">&quot;It&apos;s only Rock &apos;N&apos; Roll&quot;</span>;
+   <span class="hljs-keyword">var</span> artist = <span class="hljs-string">&quot;Rolling Stones&quot;</span>;
+
+   <span class="hljs-keyword">if</span> (muted === <span class="hljs-literal">true</span>) {
+       <span class="hljs-keyword">return</span>; <span class="hljs-comment">// Here we use return as a way to exit a function, instead of returning any value</span>
+   }
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Now playing: &quot;</span> + song + <span class="hljs-string">&quot; by &quot;</span> + artist);
+};
+
+rockAndRoll(<span class="hljs-literal">true</span>);
+</code></pre>
+<p>Here, we use <code>return;</code> as a way to exit the function instead of returning any value.</p>
+<p>So when we call the function passing in <code>true</code> as an argument for <code>muted</code>, this statement will never run:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Now playing: &quot;</span> + song + <span class="hljs-string">&quot; by &quot;</span> + artist);
+</code></pre>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Alright! Now it&apos;s time for you to test yourself.</p>
+<p>Refresh the page if you don&apos;t see the JS Bin Console below.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/koraxan/edit?js,console" target="_blank">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.40.3"></script></p>
+<p>Take a look at the function provided in the JS Bin session above.</p>
+<p>Where will the function stop if we provide the following values for <code>number</code> when we call the function? What value will be returned in each case?</p>
+<ul>
+<li>5</li>
+<li>10</li>
+<li>20</li>
+</ul>
+<p>Check yourself by calling the function three times in the &quot;Console&quot; panel in JS Bin (the right panel), passing in each number above as the argument for <code>number</code>.</p>
+<blockquote>
+<p>Hint: To call the function, use the following syntax: <code>functionName(argument)</code>.</p>
+</blockquote>
+<hr>
+<p><a href="parameters-return-statements-exercise.html">Here&apos;s another exercise for you</a> - give it a shot.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../09_unit/defining-calling-functions-exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../09_unit/parameters-return-statements-exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"richquotes":{"todos":true},"ga":{"token":"UA-59130211-1","configuration":"auto"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>
