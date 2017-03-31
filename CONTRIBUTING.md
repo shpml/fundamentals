@@ -32,19 +32,25 @@ $ gitbook build
 `"This doesn't"`
 ```
 
-### Making Changes
+### Requesting Changes
 
-To make changes to the content, fork the GitHub repo and file a pull request.
+To request changes to the content, create an issue using a clear with the unit and lesson or activity (ie `Unit 6.5 Quiz Numbering is off`).
 
-Please take a look at existing [issues](https://github.com/generalassembly/fundamentals/issues) to find ways to contribute.
+Please take a look at existing [issues](https://github.com/generalassembly/fundamentals/issues) before creating new issues.
 
 ### Quiz Format
 
-Quizzes are hosted in Typeform and are linked from this project. To suggest changes to quizzes, shoot an email to AskImmersives@generalassemb.ly.
+Quizzes are hosted in Typeform and are linked from this project. To request changes to quizzes, create an issue following the guidelines above.
 
 ### Deployment
 
-Builds and deploys are handled automatically via Travis CI.
+Builds and deploys are handled automatically via Travis CI. To deploy a new version:
+
+1. Create a branch with the version name.
+2. Create a new release against the updated branch as the Target.
+3. Mark the new release as a pre-release and publish.
+4. The new release will trigger a build in Travis, which generates a directory in the gh-pages branch. This takes ~20 minutes.
+5. The new release will be available at `fundamentals.generalassemb.ly/newRelease`
 
 ### Additional Resources
 
