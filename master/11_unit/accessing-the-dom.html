@@ -1,0 +1,2549 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Accessing the DOM | WDI Fundamentals</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../11_unit/accessing-the-dom-exercise.html" />
+    
+    
+    <link rel="prev" href="../11_unit/dom-intro.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-richquotes/plugin.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    <div class="book" data-level="11.1" data-basepath=".." data-revision="Mon Apr 03 2017 06:03:05 GMT+0000 (UTC)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Welcome
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="00_unit/units-and-lessons.html">
+            
+                
+                    <a href="../00_unit/units-and-lessons.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Units &amp; Lessons
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="00_unit/exercises-quizzes-assignments.html">
+            
+                
+                    <a href="../00_unit/exercises-quizzes-assignments.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Exercises, Quizzes &amp; Assignments
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_unit/developer-foundations-intro.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Developer Foundations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_unit/internet-fundamentals.html">
+            
+                
+                    <a href="../01_unit/internet-fundamentals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Internet Fundamentals
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_unit/intro-to-programming-languages.html">
+            
+                
+                    <a href="../01_unit/intro-to-programming-languages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Intro to Programming Languages
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_unit/think-like-a-developer.html">
+            
+                
+                    <a href="../01_unit/think-like-a-developer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Think Like a Developer
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01_unit/developer-foundations-quiz.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01_unit/developer-foundations-cheatsheet.html">
+            
+                
+                    <a href="../01_unit/developer-foundations-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_unit/developer-tools-intro.html">
+            
+                
+                    <a href="../02_unit/developer-tools-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Developer Tools
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_unit/git-bash-and-terminal.html">
+            
+                
+                    <a href="../02_unit/git-bash-and-terminal.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Git Bash and Terminal
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_unit/text-editors-and-browsers.html">
+            
+                
+                    <a href="../02_unit/text-editors-and-browsers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Text Editors and Browsers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_unit/sublime-text.html">
+            
+                
+                    <a href="../02_unit/sublime-text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Sublime Text
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_unit/file-systems.html">
+            
+                
+                    <a href="../02_unit/file-systems.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        File Systems
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_unit/navigating-the-command-line.html">
+            
+                
+                    <a href="../02_unit/navigating-the-command-line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Navigating the Command Line
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="02_unit/navigating-the-command-line-exercise.html">
+            
+                
+                    <a href="../02_unit/navigating-the-command-line-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_unit/controlling-files-with-command-line.html">
+            
+                
+                    <a href="../02_unit/controlling-files-with-command-line.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Controlling Files with Command Line
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="02_unit/controlling-files-with-command-line-exercise.html">
+            
+                
+                    <a href="../02_unit/controlling-files-with-command-line-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_unit/developer-tools-quiz-a.html">
+            
+                
+                    <a href="../02_unit/developer-tools-quiz-a.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02_unit/version-control-and-git.html">
+            
+                
+                    <a href="../02_unit/version-control-and-git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Version Control and Git
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02_unit/track-changes-with-git.html">
+            
+                
+                    <a href="../02_unit/track-changes-with-git.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Track Changes with Git
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="02_unit/track-changes-with-git-exercise.html">
+            
+                
+                    <a href="../02_unit/track-changes-with-git-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02_unit/intro-to-github.html">
+            
+                
+                    <a href="../02_unit/intro-to-github.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Intro to Github
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="02_unit/intro-to-github-exercise.html">
+            
+                
+                    <a href="../02_unit/intro-to-github-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02_unit/developer-tools-quiz-b.html">
+            
+                
+                    <a href="../02_unit/developer-tools-quiz-b.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02_unit/developer-tools-cheatsheet.html">
+            
+                
+                    <a href="../02_unit/developer-tools-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02_unit/developer-tools-assignment.html">
+            
+                
+                    <a href="../02_unit/developer-tools-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        Unit 2 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_unit/intro-to-html-intro.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Introduction to HTML
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_unit/html-elements.html">
+            
+                
+                    <a href="../03_unit/html-elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        HTML Elements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="03_unit/html-elements-exercise.html">
+            
+                
+                    <a href="../03_unit/html-elements-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_unit/html-boilerplate.html">
+            
+                
+                    <a href="../03_unit/html-boilerplate.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        HTML Boilerplate
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="03_unit/hyperlinks-exercise.html">
+            
+                
+                    <a href="../03_unit/hyperlinks-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_unit/intro-to-html-quiz.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_unit/intro-to-html-cheatsheet.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_unit/intro-to-html-assignment.html">
+            
+                
+                    <a href="../03_unit/intro-to-html-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Unit 3 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_unit/intro-to-css-intro.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Introduction to CSS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_unit/adding-color.html">
+            
+                
+                    <a href="../04_unit/adding-color.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Adding Color
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="04_unit/adding-color-exercise.html">
+            
+                
+                    <a href="../04_unit/adding-color-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_unit/fonts-and-text.html">
+            
+                
+                    <a href="../04_unit/fonts-and-text.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Fonts and Text
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_unit/classes-and-ids.html">
+            
+                
+                    <a href="../04_unit/classes-and-ids.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Classes and IDs
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_unit/linking-html-and-css.html">
+            
+                
+                    <a href="../04_unit/linking-html-and-css.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Linking HTML and CSS
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_unit/working-with-images.html">
+            
+                
+                    <a href="../04_unit/working-with-images.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Working with Images
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.5.1" data-path="04_unit/working-with-images-exercise.html">
+            
+                
+                    <a href="../04_unit/working-with-images-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_unit/choosing-the-right-markup.html">
+            
+                
+                    <a href="../04_unit/choosing-the-right-markup.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Choosing the Right Markup
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_unit/intro-to-css-quiz.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04_unit/intro-to-css-cheatsheet.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="04_unit/intro-to-css-assignment.html">
+            
+                
+                    <a href="../04_unit/intro-to-css-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        Unit 4 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_unit/layout-basics-intro.html">
+            
+                
+                    <a href="../05_unit/layout-basics-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Layout Basics
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_unit/semantic-elements.html">
+            
+                
+                    <a href="../05_unit/semantic-elements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Semantic Elements
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_unit/div-and-span.html">
+            
+                
+                    <a href="../05_unit/div-and-span.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Div and Span
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_unit/the-box-model.html">
+            
+                
+                    <a href="../05_unit/the-box-model.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        The Box Model
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="05_unit/the-box-model-exercise.html">
+            
+                
+                    <a href="../05_unit/the-box-model-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_unit/header-footer-nav.html">
+            
+                
+                    <a href="../05_unit/header-footer-nav.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Header, Footer, Nav
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="05_unit/header-footer-nav-exercise.html">
+            
+                
+                    <a href="../05_unit/header-footer-nav-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_unit/layout-basics-quiz.html">
+            
+                
+                    <a href="../05_unit/layout-basics-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_unit/layout-basics-cheatsheet.html">
+            
+                
+                    <a href="../05_unit/layout-basics-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_unit/layout-basics-assignment.html">
+            
+                
+                    <a href="../05_unit/layout-basics-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Unit 5 Assignment
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.7.1" data-path="05_unit/pulse-check.html">
+            
+                
+                    <a href="../05_unit/pulse-check.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.1.</b>
+                        
+                        Pulse Check
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_unit/navigation-and-page-layout-intro.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Navigation and Page Layout
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_unit/vertical-navigation.html">
+            
+                
+                    <a href="../06_unit/vertical-navigation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Vertical Navigation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_unit/floating-and-clearing.html">
+            
+                
+                    <a href="../06_unit/floating-and-clearing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Floating and Clearing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_unit/horizontal-navigation.html">
+            
+                
+                    <a href="../06_unit/horizontal-navigation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Horizontal Navigation
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="06_unit/horizontal-navigation-exercise.html">
+            
+                
+                    <a href="../06_unit/horizontal-navigation-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_unit/column-layout.html">
+            
+                
+                    <a href="../06_unit/column-layout.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Column Layout
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.4.1" data-path="06_unit/column-layout-exercise.html">
+            
+                
+                    <a href="../06_unit/column-layout-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="06_unit/navigation-and-page-layout-quiz.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="06_unit/navigation-and-page-layout-cheatsheet.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="06_unit/navigation-and-page-layout-assignment.html">
+            
+                
+                    <a href="../06_unit/navigation-and-page-layout-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        Unit 6 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_unit/js-intro.html">
+            
+                
+                    <a href="../07_unit/js-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Introduction to JavaScript
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_unit/pseudocode.html">
+            
+                
+                    <a href="../07_unit/pseudocode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Pseudocode
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="07_unit/pseudocode-exercise.html">
+            
+                
+                    <a href="../07_unit/pseudocode-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_unit/data-types.html">
+            
+                
+                    <a href="../07_unit/data-types.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Data Types
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.2.1" data-path="07_unit/data-types-exercise.html">
+            
+                
+                    <a href="../07_unit/data-types-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_unit/expressions-evals.html">
+            
+                
+                    <a href="../07_unit/expressions-evals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Expressions and Evaluations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.3.1" data-path="07_unit/expressions-evals-exercise.html">
+            
+                
+                    <a href="../07_unit/expressions-evals-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_unit/js-intro-quiz.html">
+            
+                
+                    <a href="../07_unit/js-intro-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="07_unit/js-intro-cheatsheet.html">
+            
+                
+                    <a href="../07_unit/js-intro-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="07_unit/js-intro-assignment.html">
+            
+                
+                    <a href="../07_unit/js-intro-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        Unit 7 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_unit/control-flow-intro.html">
+            
+                
+                    <a href="../08_unit/control-flow-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Control Flow in JS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_unit/logical-operators-booleans.html">
+            
+                
+                    <a href="../08_unit/logical-operators-booleans.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Comparison and Logical Operators and Booleans
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="08_unit/logical-operators-booleans-exercise.html">
+            
+                
+                    <a href="../08_unit/logical-operators-booleans-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_unit/conditionals.html">
+            
+                
+                    <a href="../08_unit/conditionals.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Conditionals
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.2.1" data-path="08_unit/conditionals-exercise.html">
+            
+                
+                    <a href="../08_unit/conditionals-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_unit/switch-ternary.html">
+            
+                
+                    <a href="../08_unit/switch-ternary.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Switch and Ternary Operators
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.3.1" data-path="08_unit/switch-ternary-exercise.html">
+            
+                
+                    <a href="../08_unit/switch-ternary-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_unit/arrays.html">
+            
+                
+                    <a href="../08_unit/arrays.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        Introduction to Arrays
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.4.1" data-path="08_unit/arrays-exercise.html">
+            
+                
+                    <a href="../08_unit/arrays-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_unit/loops.html">
+            
+                
+                    <a href="../08_unit/loops.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        Loops
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.5.1" data-path="08_unit/loops-exercise.html">
+            
+                
+                    <a href="../08_unit/loops-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_unit/control-flow-quiz.html">
+            
+                
+                    <a href="../08_unit/control-flow-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="08_unit/control-flow-cheatsheet.html">
+            
+                
+                    <a href="../08_unit/control-flow-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="08_unit/control-flow-assignment.html">
+            
+                
+                    <a href="../08_unit/control-flow-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.8.</b>
+                        
+                        Unit 8 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_unit/functions-intro.html">
+            
+                
+                    <a href="../09_unit/functions-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Functions
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_unit/defining-calling-functions.html">
+            
+                
+                    <a href="../09_unit/defining-calling-functions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Defining and Calling Functions
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="09_unit/defining-calling-functions-exercise.html">
+            
+                
+                    <a href="../09_unit/defining-calling-functions-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_unit/parameters-return-statements.html">
+            
+                
+                    <a href="../09_unit/parameters-return-statements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Parameters and Return Statements
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.2.1" data-path="09_unit/parameters-return-statements-exercise.html">
+            
+                
+                    <a href="../09_unit/parameters-return-statements-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_unit/scope.html">
+            
+                
+                    <a href="../09_unit/scope.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Scope
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.3.1" data-path="09_unit/scope-exercise.html">
+            
+                
+                    <a href="../09_unit/scope-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_unit/functions-quiz.html">
+            
+                
+                    <a href="../09_unit/functions-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09_unit/functions-cheatsheet.html">
+            
+                
+                    <a href="../09_unit/functions-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="09_unit/functions-assignment.html">
+            
+                
+                    <a href="../09_unit/functions-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        Unit 9 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_unit/objects-intro.html">
+            
+                
+                    <a href="../10_unit/objects-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Objects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_unit/creating-objects.html">
+            
+                
+                    <a href="../10_unit/creating-objects.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Creating Objects
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="10_unit/creating-objects-exercise.html">
+            
+                
+                    <a href="../10_unit/creating-objects-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_unit/methods.html">
+            
+                
+                    <a href="../10_unit/methods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Methods
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.2.1" data-path="10_unit/methods-exercise.html">
+            
+                
+                    <a href="../10_unit/methods-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_unit/json.html">
+            
+                
+                    <a href="../10_unit/json.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        JSON
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.3.1" data-path="10_unit/json-exercise.html">
+            
+                
+                    <a href="../10_unit/json-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_unit/objects-quiz.html">
+            
+                
+                    <a href="../10_unit/objects-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_unit/objects-cheatsheet.html">
+            
+                
+                    <a href="../10_unit/objects-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="10_unit/objects-assignment.html">
+            
+                
+                    <a href="../10_unit/objects-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Unit 10 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="11_unit/dom-intro.html">
+            
+                
+                    <a href="../11_unit/dom-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        The DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="11.1" data-path="11_unit/accessing-the-dom.html">
+            
+                
+                    <a href="../11_unit/accessing-the-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Accessing the DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="11_unit/accessing-the-dom-exercise.html">
+            
+                
+                    <a href="../11_unit/accessing-the-dom-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="11_unit/manipulating-the-dom.html">
+            
+                
+                    <a href="../11_unit/manipulating-the-dom.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Manipulating the DOM
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.2.1" data-path="11_unit/manipulating-the-dom-exercise.html">
+            
+                
+                    <a href="../11_unit/manipulating-the-dom-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="11_unit/events.html">
+            
+                
+                    <a href="../11_unit/events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.3.1" data-path="11_unit/events-exercise.html">
+            
+                
+                    <a href="../11_unit/events-exercise.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.1.</b>
+                        
+                        Exercise
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="11_unit/dom-quiz.html">
+            
+                
+                    <a href="../11_unit/dom-quiz.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Quiz
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="11_unit/dom-cheatsheet.html">
+            
+                
+                    <a href="../11_unit/dom-cheatsheet.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        Cheat Sheet
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="11_unit/dom-assignment.html">
+            
+                
+                    <a href="../11_unit/dom-assignment.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.6.</b>
+                        
+                        Unit 11 Assignment
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="11_unit/feedback.html">
+            
+                
+                    <a href="../11_unit/feedback.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.7.</b>
+                        
+                        Pulse Check
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="exercise-solutions.html">
+            
+                
+                    <a href="../exercise-solutions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Exercise Solutions
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="license.html">
+            
+                
+                    <a href="../license.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Copyright &amp; Terms of Service
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">Published with GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Share on Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Share on Google</button>
+                <button type="button" data-sharing="facebook" class="button">Share on Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Share on Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Share on Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >WDI Fundamentals</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p><strong>WDI Fundamentals Unit 11</strong></p>
+<hr>
+<h1 id="accessing-the-dom">Accessing the DOM</h1>
+<p>Before we can update a page, we need to find, or select, the element(s) that we want to update.</p>
+<p><img src="http://circuits-assets.generalassemb.ly/prod/asset/4604/Slide-5-Steps.svg" alt=""></p>
+<h2 id="objects-review">Objects Review</h2>
+<p>Before we dig in, let&apos;s briefly review <em>properties</em> and <em>methods</em>.</p>
+<p>Each element in the HTML document (including the document itself) is represented by a DOM node.</p>
+<p>Each one of these nodes is an <em>object</em> that has built-in properties and methods that can be used to access and update that node.</p>
+<p>You&apos;ll recall that <strong>properties</strong> are characteristics associated with an object. In other words, properties tell us about an object.</p>
+<p>We can <em>get</em> and <em>set</em> object properties using dot notation:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Here&apos;s how we would get the color property:</span>
+myBicycle.color
+
+<span class="hljs-comment">// Here&apos;s how we would set the color property for the myBicycle object</span>
+myBicycle.color = <span class="hljs-string">&quot;blue&quot;</span>;
+</code></pre>
+<p><strong>Methods</strong> are the actions that can be performed on objects.</p>
+<pre><code class="lang-js">myBicycle.accelerate();
+</code></pre>
+<p>Here, we use the object name <code>myBicycle</code>, followed by a period, followed by the method name, <em>followed by parenthesis</em>.</p>
+<h2 id="accessing-elements">Accessing Elements</h2>
+<p>Now let&apos;s learn about how we can find, or access, elements.</p>
+<p>In order to find an element, we need to search through the document. The syntax for the search looks something like this:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;main-nav&apos;</span>)
+</code></pre>
+<p>Let&apos;s break this syntax down.</p>
+<ol>
+<li><code>document</code>&#x2009;&#x2014;&#x2009;Refers to the document object. Any time we want to find an element, we&apos;ll need to access it through the document object. This will allow us to search throughout the entire page.</li>
+<li><code>.</code> The dot ties the method on the right-hand side (<code>getElementById</code>) with the object on the left-hand side (<code>document</code>).</li>
+<li><code>getElementById()</code>&#x2009;&#x2014;&#x2009;Is the method we want to use to find an element. This particular method allows us to locate an element by the value of its <code>id</code> attribute. We&apos;ll take a look at the other methods available to us later in the lesson.</li>
+<li><code>&apos;main&apos;</code>&#x2009;&#x2014;&#x2009;Just like with the functions we learned about earlier in this unit, we can pass in arguments for these methods to use. In this case, we want to find an element that has an <code>id</code> of <code>main-nav</code>.</li>
+</ol>
+<blockquote>
+<p>Important Note: As with all methods, using proper syntax here is important. These methods are case sensitive.</p>
+<p>Typing in <code>document.getElementByID</code> with a capital D will <em>not</em> work and throws an error.</p>
+</blockquote>
+<h2 id="selecting-an-individual-element">Selecting an Individual Element</h2>
+<p>Now, let&apos;s explore how to select an individual element.</p>
+<p>There are two methods we can use: <code>getElementById()</code> and <code>querySelector()</code></p>
+<p>Here&apos;s a closer look at both.</p>
+<p><img src="http://circuits-assets.generalassemb.ly/prod/asset/4605/Slide-12-Method-Circle.svg" width="500px"></p>
+<h3 id="selecting-an-individual-element-with-getelementbyid">Selecting an Individual Element with <code>getElementById()</code></h3>
+<p>The fastest route to finding any single element is <code>getElementById()</code>.</p>
+<p>As you know from HTML and CSS, IDs are like labels we attach to elements in our HTML file by adding an <code>id</code> attribute to a specific element.</p>
+<p>We can use IDs to select, or target, an element that we want to update. Because only one element on a page can have that specific ID, JavaScript&apos;s <code>getElementById()</code> query allows us to quickly find this individual element.</p>
+<p>First, we will add an <code>id</code> attribute to the element that we want to update. In this case, we&apos;ve added the <code>id</code> <code>about</code> to the div that wraps, or contains, the about content.</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- HTML --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;about&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>We can then use JavaScript to search through the document object and find the element with an <code>id</code> of <code>about</code>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> sidebar = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;about&apos;</span>);
+</code></pre>
+<h4 id="caching-the-selection">Caching the Selection</h4>
+<p>Here, we are storing the results of the <code>document.getElementById(&apos;sidebar&apos;)</code> query in the variable <code>sidebar</code>.</p>
+<p>If we&apos;d like to work with that element multiple times, a variable should be used to store, or <strong>cache</strong>, the results of our query. One of the benefits of caching is peformance. By saving the result of the query to a variable, you don&apos;t have to execute the query multiple times (which can be costly for complex queries or large web pages).</p>
+<p>When we store an element in a variable, we are storing a reference to the location of that element in the DOM tree.</p>
+<p>We can then use any methods we would normally use on an element on that variable.</p>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Take a look at the following HTML:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;special&quot;</span>&gt;</span>Feed the cat<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Take out the trash<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Mow the lawn<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>How could we use the <code>getElementById</code> method to select the list item with an id of <code>special</code>?</p>
+<blockquote>
+<p>(  Answer: <code>document.getElementById(&apos;special&apos;)</code>)</p>
+</blockquote>
+<h3 id="selecting-an-individual-element-with-queryselector">Selecting an Individual Element with <code>querySelector()</code></h3>
+<p>Great! Now that you&apos;ve got that under your belt, let&apos;s talk about using <code>querySelector()</code>.</p>
+<p><code>querySelector()</code> is a method that allows us to use our CSS selector syntax to find an element.</p>
+<p>If there are multiple elements on a page that match the selector, it will return the first of those matching elements.</p>
+<p>Similar to <code>getElementById()</code>, we are only selecting one element.</p>
+<blockquote>
+<p>It is important to note that this is a recent addition to the DOM and is not supported by older browsers.</p>
+</blockquote>
+<p><code>document.querySelector(&apos;.special&apos;)</code></p>
+<p>This code will return the <em>first</em> element on the page with <code>class</code> of <code>special</code>. You can use any of your CSS-style selectors as a parameter.</p>
+<h4 id="other-examples">Other Examples</h4>
+<p>Let&apos;s look at a few other examples.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#sidebar&apos;</span>)
+</code></pre>
+<p>This will return the <em>first</em> element that has an id of <code>sidebar</code>.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p> Note &#x2014; remember, ids should be unique. However, if someone has coded the page and erroneously added duplicate ids, <code>querySelector</code> will only return the first.</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;ul li&apos;</span>)
+</code></pre>
+<p>This will return the <em>first</em> <code>&lt;li&gt;</code> that is a descendant of the <code>&lt;ul&gt;</code>.</p>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Take a look at the following HTML:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;special&quot;</span>&gt;</span>Feed the cat<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;complete&quot;</span>&gt;</span>Take out the trash<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Mow the lawn<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>How could we use the <code>querySelector</code> method to select the element that has the class <code>complete</code>?</p>
+<blockquote>
+<p>(  Answer: <code>document.querySelector(&apos;.complete&apos;)</code>)</p>
+</blockquote>
+<h2 id="selecting-multiple-elements">Selecting Multiple Elements</h2>
+<p>So far, the methods we&apos;ve used to search through the <code>document</code> object have only been returning a single element.</p>
+<p>But sometimes we&apos;ll want to find and work with several elements at once.</p>
+<p>There are several methods we can use to return a <strong>NodeList</strong>, or <em>list of node objects</em>, to manipulate.</p>
+<p>Let&apos;s take a look at some of the methods we can use to search through the document and find multiple elements.</p>
+<p><img src="http://circuits-assets.generalassemb.ly/prod/asset/5145/Slide-34-Method-Circle2.svg" width="500px"></p>
+<p>We&apos;ll be referencing this HTML snippet for each of our methods:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Tasks<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;complete&quot;</span>&gt;</span>Feed the cat<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Mow the lawn<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Wash the dishes<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;complete&quot;</span>&gt;</span>Take out the trash<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h3 id="selecting-multiple-elements-mdash-document-getelementsbyclassname">Selecting Multiple Elements &#x2014; <code>document.getElementsByClassName()</code></h3>
+<p>First, let&apos;s focus on <code>document.getElementsByClassName()</code>. This method allows you to select all elements with a given class attribute.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&apos;complete&apos;</span>)
+</code></pre>
+<p>This will return any elements that have the class <code>complete</code>. In our &quot;Tasks&quot; example, this will return a <em>NodeList</em> containing the first and fourth list items, as they both have the class <code>complete</code>.</p>
+<h3 id="selecting-multiple-elements-mdash-document-getelementsbytagname">Selecting Multiple Elements &#x2014; <code>document.getElementsByTagName()</code></h3>
+<p>Let&apos;s keep it going with <code>document.getElementsByTagName()</code></p>
+<p>This method locates all elements that match a given tag name.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)
+</code></pre>
+<p>Here, this query will return all <code>&lt;li&gt;</code> elements. In this case, the NodeList will contain all four <code>&lt;li&gt;</code>s.</p>
+<h3 id="selecting-multiple-elements-mdash-document-queryselectorall">Selecting Multiple Elements &#x2014; <code>document.querySelectorAll()</code></h3>
+<p>Now, let&apos;s try out <code>document.querySelectorAll()</code></p>
+<p>While this command may look similar to our <code>querySelector()</code> method, the <code>querySelectorAll()</code> method allows us to use our CSS selector syntax to select one or more elements.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&apos;.complete&apos;</span>)
+</code></pre>
+<p>This will return any elements with the class <code>complete</code>. In the example above, this will return a NodeList containing the first and fourth list items, as they both have the class <code>complete</code>.</p>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Spend a few minutes writing out the following on paper or whiteboarding:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Pizza Toppings<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;vegetarian&quot;</span>&gt;</span>Green Peppers<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;vegetarian&quot;</span>&gt;</span>Jalapenos<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Pepperoni<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Sausage<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<ol>
+<li><p>How could we use the <code>getElementsByClassName</code> method to select all elements with the class <code>vegetarian</code>?</p>
+</li>
+<li><p>How could we use the <code>getElementsByTagName</code> method to select all <code>&lt;li&gt;</code>s?</p>
+</li>
+<li><p>How could we use the <code>querySelectorAll</code> method to
+select all elements with a class <code>vegetarian</code>?</p>
+</li>
+</ol>
+<blockquote>
+<p>(Answers: 1. <code>document.getElementsByClassName(&apos;vegetarian&apos;)</code> 2. <code>document.getElementsByTagName(&apos;li&apos;)</code> 3. <code>document.querySelectorAll(&apos;. vegetarian&apos;)</code> )</p>
+</blockquote>
+<h2 id="nodelists">NodeLists</h2>
+<p>Now that you&apos;ve got that down, let&apos;s work more with <code>NodeLists</code>.</p>
+<p>Any time there is the potential for a method to return more than one element, such as with <code>getElementsByClassName()</code>, <code>getElementsByTagName()</code>, and <code>querySelectorAll()</code>, a NodeList will be returned, even if only one element is found that matches that query.</p>
+<p>These NodeLists are <strong>collections</strong> and are numbered similar to the arrays we explored in an earlier unit.</p>
+<p>Once we get our collection, we can select a single node using array syntax (a set of square brackets).</p>
+<p>For example, we saw that <code>document.getElementsByTagName(&apos;li&apos;)</code> returned four list items. The NodeList would look like this:</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><code>&lt;li class=&quot;complete&quot;&gt;Feed the cat&lt;/li&gt;</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>&lt;li&gt;Mow the lawn&lt;/li&gt;</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>&lt;li&gt;Wash the dishes&lt;/li&gt;</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>&lt;li class=&quot;complete&quot;&gt;Take out the trash&lt;/li&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>To locate the third item in our NodeList, <code>&lt;li&gt;Wash the dishes&lt;/li&gt;</code>, we could use the following syntax:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">2</span>]
+</code></pre>
+<p>These indexes are just like the indexes we used when we learned about arrays.</p>
+<p>We can also use a loop to iterate through each element in the NodeList and change each item.</p>
+<p>Let&apos;s look at an example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> listItems = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; listItems.length; i += <span class="hljs-number">1</span>) {
+  listItems[i].className = <span class="hljs-string">&apos;due&apos;</span>;
+}
+</code></pre>
+<p>This would loop through the NodeList and change the class name for each item to <code>due</code>.</p>
+<blockquote>
+<p>We&apos;ll take a look at the <code>className</code> method in the next lesson. For now just note how we can update all elements in a selection by looping through the elements.</p>
+</blockquote>
+<h2 id="traversing-the-dom">Traversing the DOM</h2>
+<p>Once we&apos;ve selected an individual element, we can then either make a change to this element or select another element based on its relationship to the first one.</p>
+<p>You&apos;ll often hear this referred to as <strong>traversing the DOM</strong>.</p>
+<p>In an HTML document, elements can be nested inside of other elements.</p>
+<p><img src="assets/accessing-the-dom/nesting.svg" width="530px"></p>
+<p>In programming, relationships between the document and elements are often described in the same terms one would use to describe a family tree.</p>
+<p><img src="assets/accessing-the-dom/relationships.svg" width="400px"></p>
+<p>JavaScript has properties we can use to find an element based on an initial selection criteria. For example, the <code>parentNode</code> property can be used to locate the parent of an initial selection:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>)[<span class="hljs-number">0</span>].parentNode
+</code></pre>
+<p>This will return the parent of the first <code>&lt;li&gt;</code> element, which, in this case, is the <code>&lt;ul&gt;</code> element, as it wraps all the <code>&lt;li&gt;</code> elements.</p>
+<p><img src="assets/accessing-the-dom/parent.png" alt=""></p>
+<p>Some other properties we can use include:</p>
+<ul>
+<li><p><code>nextSibling</code> &#x2014; Will find the next sibling of a selected element.</p>
+<blockquote>
+<p>Note: A sibling is an element with the same parent. For example, calling <code>nextSibling</code> on the first <code>li</code> in the picture above will return the second <code>li</code>.</p>
+</blockquote>
+</li>
+<li><p><code>previousSibling</code> &#x2014; Will find the previous sibling of a selected element.</p>
+<blockquote>
+<p>Note: For example, calling <code>previousSibling</code> on the second <code>li</code> in the picture above will return the first <code>li</code>.</p>
+</blockquote>
+</li>
+<li><p><code>firstChild</code> &#x2014; Will find the first child of a selected element.</p>
+</li>
+<li><code>lastChild</code> &#x2014; Will find the last child of a selected element.</li>
+</ul>
+<hr>
+<p><a href="accessing-the-dom-exercise.html">Let&apos;s practice accessing the DOM!</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../11_unit/dom-intro.html" class="navigation navigation-prev " aria-label="Previous page: The DOM"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../11_unit/accessing-the-dom-exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"richquotes":{"todos":true},"ga":{"token":"UA-59130211-1","configuration":"auto"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-59130211-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>

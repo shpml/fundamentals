@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Manipulation</title>
+</head>
+<body>
+
+	<form>
+		<input id="email" type="email" placeholder="Email Address">
+	</form>
+
+	<script>
+		// First in our JS, let's find the email input field.
+		var emailInputField = document.getElementById('email');
+
+
+		// Next let's set up that function we want to run when the blur event occurs:
+
+		function tabAway () {
+			alert("Field is no longer in focus");
+
+		}
+
+		// Finally, let's add our event handler that will trigger the function when the user hits tab or clicks out of the email field (the 'blur' event).
+		emailInputField.addEventListener('blur', tabAway);
+	</script>
+	
+</body>
+</html>
