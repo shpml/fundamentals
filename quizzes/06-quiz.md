@@ -2,12 +2,12 @@
 
 ---
 
-#### Typeform Admin Link: 
+#### Typeform Admin Link:
 
 https://admin.typeform.com/form/2905688/fields/#/
 
 
-#### Typeform Embed: 
+#### Typeform Embed:
 
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/bnMkt7" data-text="Unit 6: Navigation and Page Layout" style="width:100%;height:500px;"></div>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
@@ -18,10 +18,10 @@ https://admin.typeform.com/form/2905688/fields/#/
 
 Which of the following demonstrates the correct way to link your main CSS and reset CSS files?
 
-- <body> <link rel="stylesheet" type="text/css" href="reset.css"> <link rel="stylesheet" type="text/css" href="style.css"> </body> 
+- <body> <link rel="stylesheet" type="text/css" href="reset.css"> <link rel="stylesheet" type="text/css" href="style.css"> </body>
 - <head> <link rel="stylesheet" type="text/css" href="style.css"> <link rel="stylesheet" type="text/css" href="reset.css"> </head>
-- <head> <a href="reset.css"></a> <a href="style.css"></a> </head> 
-* <head> <link rel="stylesheet" type="text/css" href="reset.css"> <link rel="stylesheet" type="text/css" href="style.css"> </head> 
+- <head> <a href="reset.css"></a> <a href="style.css"></a> </head>
+* <head> <link rel="stylesheet" type="text/css" href="reset.css"> <link rel="stylesheet" type="text/css" href="style.css"> </head>
 
 
 _Response_
@@ -31,7 +31,7 @@ Make sure you link to your CSS reset file before your main CSS file– both with
 ---
 
 *Question 2*
-How would you create a simple navigation bar with links to the following pages: 
+How would you create a simple navigation bar with links to the following pages:
 
 - Home
 - About
@@ -39,10 +39,10 @@ How would you create a simple navigation bar with links to the following pages:
 - Contact
 
 
-- <div> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="cool.html">Cool Stuff!</a> <a href="contact.html">Contact</a> </div> 
-- <nav> Home | About | Cool Stuff! | Contact </nav> 
-- <nav> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="cool.html">Cool Stuff!</a> <a href="contact.html">Contact</a> </nav> 
-- <nav> <a href="index.html"> Home | About | Cool Stuff! | Contact </a> </nav> 
+- <div> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="cool.html">Cool Stuff!</a> <a href="contact.html">Contact</a> </div>
+- <nav> Home | About | Cool Stuff! | Contact </nav>
+* <nav> <a href="index.html">Home</a> <a href="about.html">About</a> <a href="cool.html">Cool Stuff!</a> <a href="contact.html">Contact</a> </nav>
+- <nav> <a href="index.html"> Home | About | Cool Stuff! | Contact </a> </nav>
 
 _Response_
 
@@ -54,7 +54,7 @@ You can create simple navigation bars using the nav tag, with a series of anchor
 
 Which of the following is an example of a pseudo-class?
 
-- a:hover { color: blue; }
+* a:hover { color: blue; }
 - .hover a { color: blue; }
 - a.hover { color: blue; }
 - .hover { color: blue; }
@@ -69,7 +69,7 @@ Pseudo-classes allow you to add special styling to selectors and can be identifi
 
 Which of the following represent the most popular values assigned to the CSS "float" attribute?
 
-- left, right, none
+* left, right, none
 - left, right, both
 - top, right, left, bottom
 - top, right, left, bottom, all, none
@@ -85,7 +85,7 @@ HTML elements are floated horizontally, allowing for boxes to be moved to the le
 What does the CSS property "clear" accomplish?
 
 - The clear property controls the opacity of an element.
-- The clear property tells the browser that you've floated elements, and that the next element should begin on its own new line.
+* The clear property tells the browser that you've floated elements, and that the next element should begin on its own new line.
 - The clear property specifies which elements should be floated.
 - The clear property removes floats from the element(s) before it.
 
@@ -97,12 +97,12 @@ The clear property tells the browser that you've floated elements and that the n
 
 *Question 6*
 
-Which CSS declaration can be added to move the elements into horizontal alignment?
+Which CSS declaration can be added to move the elements into horizontal alignment in the order they appear in HTML?
 
 - text-align: center;
 - float: right;
 - float: none;
-- float: left;
+* float: left;
 
 _Response_
 
@@ -113,9 +113,9 @@ The float: left; declaration directs elements to move horizontally and to the le
 *Question 7*
 
 Which of the following allows us to add a gray (#aaaaaa) hover state to the nav links as illustrated below?
- 
+
 - a:hover { color: #aaaaaa; }
-- a:hover { background-color: #aaaaaa; }
+* a:hover { background-color: #aaaaaa; }
 - a { text-hover: #aaaaaa; }
 - .hover { background-color: #aaaaaa; }
 
@@ -144,7 +144,7 @@ Column layout uses floats to position block elements next to one another on the 
 
 Which CSS property and value would change the layout on the left to the layout on the right?
 
-* float: left; 
+* float: left;
 - float: right;
 - float: none;
 - float: all;
@@ -159,7 +159,7 @@ The float: left; declaration will position the three articles horizontally in th
 
 Which semantic HTML5 element would you use to create a sidebar?
 
-* <aside> 
+* <aside>
 - <sidebar>
 - <main>
 - <footer>

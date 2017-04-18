@@ -2,12 +2,12 @@
 
 ---
 
-#### Typeform Admin Link: 
+#### Typeform Admin Link:
 
 https://admin.typeform.com/form/2905677/fields/#/
 
 
-#### Typeform Embed: 
+#### Typeform Embed:
 
 <!-- Change the width and height values to suit you best -->
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/weR0hs" data-text="Unit 3: Intro to HTML" style="width:100%;height:500px;"></div>
@@ -33,8 +33,8 @@ Fill in the blank: Tags __________ to content.
 
 - assign meaning but not structure
 - assign meaning and style
-- assign meaning and structure
-- assign structure and style 
+* assign meaning and structure
+- assign structure and style
 
 _Response_
 
@@ -68,7 +68,7 @@ Which of the following is the correct syntax for an anchor tag, linking to ebay.
 
 _Response_
 
-The tags, attribute, full url, and anchor text must all be in order: 
+The tags, attribute, full url, and anchor text must all be in order:
 <a href="http://www.ebay.com">Buy This!</a>
 
 
@@ -94,7 +94,7 @@ The <angle brackets> are an indication of HTML syntax; the {curly braces} are an
 Fill in the blanks: Web Browsers ___________ HTML. Text editors allow you to ___________ HTML.
 
 
-- render | write
+* render | write
 - write | render
 - edit | view
 - edit | render
@@ -142,8 +142,7 @@ If you want to edit the text in the h1 tag in your code and view the results in 
 - 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Sublime Text. | 3. Update the <h1> text in Sublime Text. | 4. Save the HTML file. | 5. Navigate back to the HTML file in the File System. | 6. Open the HTML file with Chrome.
 - 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Sublime Text. | 3. Save the HTML file. | 4. Update the <h1> text in Sublime Text. | 5. Navigate back to the HTML file in the File System. | 6. Open the HTML file with Chrome.
 - 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Sublime Text. | 3. Update the <title> text in Sublime Text. | 4. Save the HTML file. | 5. Navigate back to the HTML file in the File System. | 6. Open the HTML file with Chrome.
-- 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Google Chrome. | 3. Update the <h1> text in Google Chrome. | 4. Navigate back to the HTML file in the File System. | 5. Open the HTML file with Sublime Text. | 6. Save the HTML file. 
+- 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Google Chrome. | 3. Update the <h1> text in Google Chrome. | 4. Navigate back to the HTML file in the File System. | 5. Open the HTML file with Sublime Text. | 6. Save the HTML file.
 
 _Response_
 1. Navigate to the HTML file in the File System. | 2. Open the HTML file with Sublime Text. | 3. Update the <h1> text in Sublime Text. | 4. Save the HTML file. | 5. Navigate back to the HTML file in the File System. | 6. Open the HTML file with Chrome.
-

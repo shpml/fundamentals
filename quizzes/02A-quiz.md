@@ -2,12 +2,12 @@
 
 ---
 
-#### Typeform Admin Link: 
+#### Typeform Admin Link:
 
 https://admin.typeform.com/form/2905692/fields/#/
 
 
-#### Typeform Embed: 
+#### Typeform Embed:
 
 <!-- Change the width and height values to suit you best -->
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/TtsxJI?" data-text="Unit 2A: Navigating the Command Line" style="width:100%;height:500px;"></div>
@@ -82,7 +82,7 @@ What was Ada's working directory at the _beginning_ of this terminal session?
 - desktop
 - adalovelace$
 - Users
-* adalovelace 
+* adalovelace
 
 _Response_
 
@@ -94,9 +94,9 @@ The working directory was Ada's home directory, "adalovelace".  The full, or abs
 
 What does the desktop directory of Ada's computer contain?
 
-- A folder named "ls" 
-* Analytical_Engine.txt, scientific_memoirs.pdf, and a directory called "notes" 
-- Both of the above 
+- A folder named "ls"
+* Analytical_Engine.txt, scientific_memoirs.pdf, and a directory called "notes"
+- Both of the above
 - The folder is empty
 
 _Response_

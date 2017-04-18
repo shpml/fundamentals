@@ -2,12 +2,12 @@
 
 ---
 
-#### Typeform Admin Link: 
+#### Typeform Admin Link:
 
 https://admin.typeform.com/form/2905694/fields/#/
 
 
-#### Typeform Embed: 
+#### Typeform Embed:
 
 <!-- Change the width and height values to suit you best -->
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/z6nZwq" data-text="Unit 2B: Git and Github" style="width:100%;height:500px;"></div>
@@ -37,7 +37,7 @@ What is a repository?
 
 - A website that points to a directory
 - A database that contains multiple directories
-- An single file that acts as a directory for data
+- A single file that acts as a directory for data
 * A central place where data is stored and maintained
 
 _Response_
