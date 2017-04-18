@@ -2,12 +2,12 @@
 
 ---
 
-#### Typeform Admin Link: 
+#### Typeform Admin Link:
 
 https://admin.typeform.com/form/2905679/fields/#/
 
 
-#### Typeform Embed: 
+#### Typeform Embed:
 
 <!-- Change the width and height values to suit you best -->
 <div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/ECUlMg" data-text="Unit 4: Intro to CSS" style="width:100%;height:500px;"></div>
@@ -53,7 +53,7 @@ Let's say you want to change the appearance of the text on your site. You want t
 
 Hint: Use http://www.color-hex.com/
 
-- text-style: center; color: #0000FF; font-style: "Times New Roman"; 
+- text-style: center; color: #0000FF; font-style: "Times New Roman";
 - text-align: center; color: #00FF00; font-family: Times New Roman;
 - text-align: center; color: #0000FF; font-family: "Times New Roman";
 - text-align: center; color: #0000FF; font-family: Times New Roman;
@@ -61,8 +61,8 @@ Hint: Use http://www.color-hex.com/
 
 _Response_
 
-Center the text with `text-align: center;` 
-Color the text blue with `color: #0000FF;` 
+Center the text with `text-align: center;`
+Color the text blue with `color: #0000FF;`
 Define the font with font-family: "Times New Roman";
 
 ---
@@ -101,7 +101,7 @@ Separating CSS from HTML allows for improved content accessibility, increased fl
 
 *Question 6*
 
-According to best practices, class selectors are used to style _________, and ID selectors are used to style _________. 
+According to best practices, class selectors are used to style _________, and ID selectors are used to style _________.
 
 However, you should avoid using _________ selectors.
 
