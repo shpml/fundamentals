@@ -3,7 +3,7 @@ with
 ![GA Logo](assets/GA-logo.png)
 <br>
 <br>
-Dear Quirky 30 Student
+Dear Quirky 30 Student,
 
 We are excited to partner with General Assembly to offer you this incredible life changing opportunity and to be part of your journey in your new career. We welcome you and hope you will enjoy the adventure. We are fully committed to making this process fun, powerful and remarkable to ensure that your life is never the same.
 
