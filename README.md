@@ -1,9 +1,5 @@
-![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
-[![Build Status](https://travis-ci.org/GA-WDI/fundamentals.svg)](https://travis-ci.org/GA-WDI/fundamentals)
-
 # Overview
-> Fundamentals is our global WDI prework, focused on foundational skills in HTML, CSS and Javascript.  Fundamentals also aims to familiarize students with tools they will use in class, including text editors and Github, and provides students the opportunity to practice good study habits and programmatic thinking.
+> Fundamentals of HTML, CSS and Javascript.  
 
 # Fundamentals Units
 
@@ -20,12 +16,3 @@
 | 9  |  Functions | Defining and Calling Functions, Parameters and Return Statements, Scope |
 | 10  |  Objects | Creating Objects, Object Method, JSON and This|
 | 11  |  The Dom | Accessing and Manipulating the DOM |
-
-
-Read more about our [contribution guidelines](CONTRIBUTING.md).
-
-Check out the [issues](https://github.com/generalassembly/fundamentals/issues) we're already planning on addressing.
-
-## Licensing
-All content is licensed under a CC­BY­NC­SA 4.0 license.
-All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
